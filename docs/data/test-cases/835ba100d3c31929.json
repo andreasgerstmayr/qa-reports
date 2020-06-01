@@ -1,0 +1,53 @@
+{
+  "uid" : "835ba100d3c31929",
+  "name" : "QA 219",
+  "fullName" : "QA #219 on centos7-container",
+  "time" : {
+    "start" : 1591031318000,
+    "stop" : 1591031318000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 219\n\ncheck pmdbg -l and pmdbg.h agree\n\n\n\nShould be obsolete now, as pmdbg uses pmdbg.h\n\n\n\nCopyright (c) 2009 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 219</p>\n<p>check pmdbg -l and pmdbg.h agree</p>\n<p>Should be obsolete now, as pmdbg uses pmdbg.h</p>\n<p>Copyright (c) 2009 Silicon Graphics, Inc.  All Rights Reserved.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "new style /usr/include/pcp/pmdbg.h, nothing to test",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos7-container"
+  }, {
+    "name" : "host",
+    "value" : "centos7-container"
+  }, {
+    "name" : "epic",
+    "value" : "other"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/219",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/219.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "835ba100d3c31929.json",
+  "parameterValues" : [ ]
+}

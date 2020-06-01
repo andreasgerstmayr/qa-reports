@@ -1,0 +1,53 @@
+{
+  "uid" : "254e916bdad37f26",
+  "name" : "QA 222",
+  "fullName" : "QA #222 on centos7-container",
+  "time" : {
+    "start" : 1591031325000,
+    "stop" : 1591031325000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 222\n\nCheck symlinks in $PCP_PMDAS_DIR\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 222</p>\n<p>Check symlinks in $PCP_PMDAS_DIR</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos7-container"
+  }, {
+    "name" : "host",
+    "value" : "centos7-container"
+  }, {
+    "name" : "epic",
+    "value" : "other"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/222",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/222.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "254e916bdad37f26.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,56 @@
+{
+  "uid" : "6f45503836671aa8",
+  "name" : "QA 1026",
+  "fullName" : "QA #1026 on centos8-container",
+  "time" : {
+    "start" : 1591036593000,
+    "stop" : 1591036593000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 1026\n\nTest for pmdumptext regressions\n\n\n\nseq=`basename $0`\n\necho \"QA output created by $seq\"\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 1026</p>\n<p>Test for pmdumptext regressions</p>\n<p>seq=<code>basename $0</code></p>\n<p>echo &quot;QA output created by $seq&quot;</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "$PCPQA_CLOSE_X_SERVER not set in ./common.config",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos8-container"
+  }, {
+    "name" : "host",
+    "value" : "centos8-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmdumptext"
+  }, {
+    "name" : "epic",
+    "value" : "remote"
+  }, {
+    "name" : "epic",
+    "value" : "kernel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1026",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1026.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6f45503836671aa8.json",
+  "parameterValues" : [ ]
+}

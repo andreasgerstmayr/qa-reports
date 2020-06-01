@@ -1,0 +1,59 @@
+{
+  "uid" : "2a4444e3d454e58e",
+  "name" : "QA 386",
+  "fullName" : "QA #386 on fedora31-container",
+  "time" : {
+    "start" : 1591032670000,
+    "stop" : 1591032672000,
+    "duration" : 2000
+  },
+  "description" : "PCP QA Test No. 386\n\nRun pducheck using valgrind (see also 284)\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 386</p>\n<p>Run pducheck using valgrind (see also 284)</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "epic",
+    "value" : "pdu"
+  }, {
+    "name" : "epic",
+    "value" : "mem_leak"
+  }, {
+    "name" : "epic",
+    "value" : "valgrind"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/386",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/386.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2a4444e3d454e58e.json",
+  "parameterValues" : [ ]
+}

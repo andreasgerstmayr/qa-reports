@@ -1,114 +1,114 @@
 {
-  "total" : 51,
+  "total" : 195,
   "items" : [ {
     "uid" : "5a28ff24753a3a2fae74f89ef3f1cd8e",
     "name" : "local",
     "statistic" : {
-      "failed" : 6,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 505,
+      "failed" : 145,
+      "broken" : 66,
+      "skipped" : 1027,
+      "passed" : 6280,
       "unknown" : 0,
-      "total" : 511
-    }
-  }, {
-    "uid" : "3c2fd161d37da8eab58e0d7dcc419317",
-    "name" : "sanity",
-    "statistic" : {
-      "failed" : 6,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 505,
-      "unknown" : 0,
-      "total" : 511
-    }
-  }, {
-    "uid" : "406aa5a43aec57d653931a45997f9f42",
-    "name" : "folio",
-    "statistic" : {
-      "failed" : 6,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 15,
-      "unknown" : 0,
-      "total" : 21
-    }
-  }, {
-    "uid" : "52497e13949698221a3ea335add2284b",
-    "name" : "pmlc",
-    "statistic" : {
-      "failed" : 6,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 8,
-      "unknown" : 0,
-      "total" : 14
+      "total" : 7518
     }
   }, {
     "uid" : "38c62ee5555e24c5ef9c0f8f81c54954",
     "name" : "libpcp",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 18,
       "broken" : 0,
-      "skipped" : 0,
-      "passed" : 140,
+      "skipped" : 76,
+      "passed" : 764,
       "unknown" : 0,
-      "total" : 140
+      "total" : 858
     }
   }, {
-    "uid" : "e6e002a8210bff4f1628acabbbef5e27",
-    "name" : "ostest",
+    "uid" : "d3d9ff8cbe08306f1e266702a88dfa54",
+    "name" : "pmcd",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 18,
       "broken" : 0,
-      "skipped" : 0,
-      "passed" : 119,
+      "skipped" : 64,
+      "passed" : 374,
       "unknown" : 0,
-      "total" : 119
-    }
-  }, {
-    "uid" : "2374fd5fa88405976f599a9f8b93b314",
-    "name" : "pmdumplog",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 84,
-      "unknown" : 0,
-      "total" : 84
-    }
-  }, {
-    "uid" : "1e21c98df92b2dfeb3b0dc0b8f990f9f",
-    "name" : "archive",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 77,
-      "unknown" : 0,
-      "total" : 77
+      "total" : 456
     }
   }, {
     "uid" : "234fba4e9e83ccf1955cb5f9de00f3a3",
     "name" : "pmns",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 15,
       "broken" : 0,
-      "skipped" : 0,
-      "passed" : 70,
+      "skipped" : 12,
+      "passed" : 303,
       "unknown" : 0,
-      "total" : 70
+      "total" : 330
     }
   }, {
-    "uid" : "594502bde0e141f8a6ea8eb6a2b5e58c",
-    "name" : "pmlogextract",
+    "uid" : "e6e002a8210bff4f1628acabbbef5e27",
+    "name" : "ostest",
     "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 49,
+      "failed" : 14,
+      "broken" : 5,
+      "skipped" : 66,
+      "passed" : 431,
       "unknown" : 0,
-      "total" : 49
+      "total" : 516
+    }
+  }, {
+    "uid" : "817d2dda6a5d27390d5d4ca371ecfe05",
+    "name" : "python",
+    "statistic" : {
+      "failed" : 13,
+      "broken" : 56,
+      "skipped" : 222,
+      "passed" : 801,
+      "unknown" : 0,
+      "total" : 1092
+    }
+  }, {
+    "uid" : "e8ebae4dce1cfd14a5aeebc116659810",
+    "name" : "kernel",
+    "statistic" : {
+      "failed" : 13,
+      "broken" : 3,
+      "skipped" : 142,
+      "passed" : 958,
+      "unknown" : 0,
+      "total" : 1116
+    }
+  }, {
+    "uid" : "ddc65f1f0a1a5121e18a1565440d8c42",
+    "name" : "pmlogger",
+    "statistic" : {
+      "failed" : 12,
+      "broken" : 0,
+      "skipped" : 79,
+      "passed" : 467,
+      "unknown" : 0,
+      "total" : 558
+    }
+  }, {
+    "uid" : "cc481a6b16e017ad87bb089a75f26fac",
+    "name" : "",
+    "statistic" : {
+      "failed" : 11,
+      "broken" : 0,
+      "skipped" : 31,
+      "passed" : 198,
+      "unknown" : 0,
+      "total" : 240
+    }
+  }, {
+    "uid" : "9d4cfa60006d1a0e2c91ec1019757767",
+    "name" : "pmprobe",
+    "statistic" : {
+      "failed" : 10,
+      "broken" : 0,
+      "skipped" : 6,
+      "passed" : 140,
+      "unknown" : 0,
+      "total" : 156
     }
   } ]
 }

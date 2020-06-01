@@ -1,0 +1,28 @@
+QA output created by 1672
+Creating temporary sasldb, add user running QA to it
+Verify saslpasswd2 has successfully added a new user
+USER@HOST: userPassword
+Ensure pmcd can read the password file
+Start pmcd with this shiny new sasldb
+
+=== method: plain, authentication with invalid password ===
+authentication failure
+
+=== method: plain, authentication with correct password ===
+
+pmcd.feature.authentication
+    value 1
+
+=== method: login, authentication with invalid password ===
+authentication failure
+
+=== method: login, authentication with correct password ===
+
+pmcd.feature.authentication
+    value 1
+
+=== method: digest-md5, authentication with invalid password ===
+
+=== method: digest-md5, authentication with correct password ===
+[Mon Jun  1 19:17:45] pminfo(98149) Alert: No worthy mechs found
+pminfo: Cannot connect to PMCD on host "pcp://localhost?method=digest-md5&username=pcpqa&password=y": Authentication - no mechanism available

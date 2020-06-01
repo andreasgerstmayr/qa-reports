@@ -1,0 +1,59 @@
+{
+  "uid" : "8b1ef6e53cae5e9b",
+  "name" : "QA 066",
+  "fullName" : "QA #066 on debian10-container",
+  "time" : {
+    "start" : 1591031354000,
+    "stop" : 1591031358000,
+    "duration" : 4000
+  },
+  "description" : "PCP QA Test No. 066\n\nTest PMCD correctly restores original access control list after\n\nreconfiguration with a bad config file.\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 066</p>\n<p>Test PMCD correctly restores original access control list after</p>\n<p>reconfiguration with a bad config file.</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Cannot find two remote hosts running pmcd",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian10-container"
+  }, {
+    "name" : "host",
+    "value" : "debian10-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmcd"
+  }, {
+    "name" : "epic",
+    "value" : "ostest"
+  }, {
+    "name" : "epic",
+    "value" : "remote"
+  }, {
+    "name" : "epic",
+    "value" : "folio"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/066",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/066.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8b1ef6e53cae5e9b.json",
+  "parameterValues" : [ ]
+}

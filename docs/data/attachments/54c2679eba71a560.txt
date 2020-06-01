@@ -1,0 +1,37 @@
+pmdabcc config:
+# Installed by PCP QA test 1156 on Mon Jun  1 18:57:49 UTC 2020
+[pmda]
+modules = execsnoop
+prefix = bcc.
+[execsnoop]
+module = execsnoop
+cluster = 8
+command = echo
+args = PCP
+Log for pmdabcc on e4c2a05926f7 started Mon Jun  1 18:57:51 2020
+
+[Mon Jun  1 18:57:51] pmdabcc(958436) Info: Initializing, currently in 'notready' state.
+[Mon Jun  1 18:57:51] pmdabcc(958436) Info: Enabled modules:
+[Mon Jun  1 18:57:51] pmdabcc(958436) Info: ['execsnoop']
+[Mon Jun  1 18:57:51] pmdabcc(958436) Info: Configuring modules:
+[Mon Jun  1 18:57:51] pmdabcc(958436) Info: execsnoop
+[Mon Jun  1 18:57:51] pmdabcc(958436) Info: Modules configured.
+[Mon Jun  1 18:57:51] pmdabcc(958436) Info: Initializing modules:
+[Mon Jun  1 18:57:51] pmdabcc(958436) Info: execsnoop
+[Mon Jun  1 18:57:51] pmdabcc(958436) Info: execsnoop: Initialized.
+[Mon Jun  1 18:57:51] pmdabcc(958436) Info: Modules initialized.
+[Mon Jun  1 18:57:51] pmdabcc(958436) Info: Registering metrics:
+[Mon Jun  1 18:57:51] pmdabcc(958436) Info: execsnoop
+[Mon Jun  1 18:57:51] pmdabcc(958436) Info: Metrics registered.
+[Mon Jun  1 18:57:51] pmdabcc(958436) Info: Registering helpers:
+[Mon Jun  1 18:57:51] pmdabcc(958436) Info: execsnoop
+[Mon Jun  1 18:57:51] pmdabcc(958436) Info: Helpers registered.
+[Mon Jun  1 18:57:51] pmdabcc(958436) Info: Compiling modules:
+[Mon Jun  1 18:57:51] pmdabcc(958436) Info: execsnoop
+modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1020-azure
+chdir(/lib/modules/5.3.0-1020-azure/build): No such file or directory
+[Mon Jun  1 18:57:51] pmdabcc(958436) Error: execsnoop: Failed to compile BPF module <text>
+[Mon Jun  1 18:57:51] pmdabcc(958436) Error: execsnoop: Module NOT active!
+[Mon Jun  1 18:57:51] pmdabcc(958436) Error: Failed to compile module execsnoop, aborting.
+
+Log finished Mon Jun  1 18:57:51 2020

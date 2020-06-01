@@ -1,0 +1,56 @@
+{
+  "uid" : "b370f3485bd82fd4",
+  "name" : "QA 573",
+  "fullName" : "QA #573 on centos8-container",
+  "time" : {
+    "start" : 1591033613000,
+    "stop" : 1591033613000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 573\n\nExtended prologue (aka preamble) record for pmlogger\n\n\n\nCopyright (c) 2017 Ken McDonell.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 573</p>\n<p>Extended prologue (aka preamble) record for pmlogger</p>\n<p>Copyright (c) 2017 Ken McDonell.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos8-container"
+  }, {
+    "name" : "host",
+    "value" : "centos8-container"
+  }, {
+    "name" : "epic",
+    "value" : "other"
+  }, {
+    "name" : "epic",
+    "value" : "remote"
+  }, {
+    "name" : "epic",
+    "value" : "pmdumplog"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/573",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/573.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b370f3485bd82fd4.json",
+  "parameterValues" : [ ]
+}

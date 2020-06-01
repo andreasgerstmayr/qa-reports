@@ -1,0 +1,40 @@
+pmdabcc config:
+# Installed by PCP QA test 1155 on Mon Jun  1 19:06:08 UTC 2020
+[pmda]
+modules = tcplife
+prefix = bcc.
+[tcplife]
+module = tcplife
+cluster = 3
+dport = 80
+Log for pmdabcc on c8b243a204dc started Mon Jun  1 19:06:09 2020
+
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: Initializing, currently in 'notready' state.
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: Enabled modules:
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: ['tcplife']
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: Configuring modules:
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: tcplife
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: Modules configured.
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: Initializing modules:
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: tcplife
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: tcplife: Filtering on remote ports: [80].
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: tcplife: Using BPF source file modules/tcplife.bpf.
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: tcplife: Initialized.
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: Modules initialized.
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: Registering metrics:
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: tcplife
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: Metrics registered.
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: Registering helpers:
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: tcplife
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: Helpers registered.
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: Compiling modules:
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: tcplife
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: tcplife: Testing BCC compatilibility, possible errors below are safe to ignore.
+chdir(/lib/modules/5.3.0-1020-azure/build): No such file or directory
+[Mon Jun  1 19:06:09] pmdabcc(86015) Info: tcplife: Tested BCC compatilibility, possible errors above are safe to ignore.
+chdir(/lib/modules/5.3.0-1020-azure/build): No such file or directory
+[Mon Jun  1 19:06:09] pmdabcc(86015) Error: tcplife: Failed to compile BPF text
+[Mon Jun  1 19:06:09] pmdabcc(86015) Error: tcplife: Module NOT active!
+[Mon Jun  1 19:06:09] pmdabcc(86015) Error: Failed to compile module tcplife, aborting.
+
+Log finished Mon Jun  1 19:06:09 2020

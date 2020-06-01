@@ -1,0 +1,50 @@
+{
+  "uid" : "5aff06424890cfee",
+  "name" : "QA 589",
+  "fullName" : "QA #589 on debian11-container",
+  "time" : {
+    "start" : 1591033517000,
+    "stop" : 1591033517000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 589\n\nmake sure that telnet-probe does what its supposed to\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 589</p>\n<p>make sure that telnet-probe does what its supposed to</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "./getpmcdhosts: unable to get 1 host(s) with options: \"-L -n 1\"",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian11-container"
+  }, {
+    "name" : "host",
+    "value" : "debian11-container"
+  }, {
+    "name" : "epic",
+    "value" : "remote"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/589",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/589.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5aff06424890cfee.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,56 @@
+{
+  "uid" : "7f4b5bc795d24754",
+  "name" : "QA 308",
+  "fullName" : "QA #308 on ubuntu1804-direct",
+  "time" : {
+    "start" : 1591032799000,
+    "stop" : 1591032799000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 308\n\npmlogger and pmlc for proc metrics ... indom problems\n\npv #452417\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 308</p>\n<p>pmlogger and pmlc for proc metrics ... indom problems</p>\n<p>pv #452417</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Cannot get first remote pmcd host with proc.psinfo.ppid metrics",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "epic",
+    "value" : "pmlc"
+  }, {
+    "name" : "epic",
+    "value" : "pmlogger"
+  }, {
+    "name" : "epic",
+    "value" : ""
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/308",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/308.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7f4b5bc795d24754.json",
+  "parameterValues" : [ ]
+}

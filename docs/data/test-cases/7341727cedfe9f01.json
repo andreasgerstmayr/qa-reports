@@ -1,0 +1,81 @@
+{
+  "uid" : "7341727cedfe9f01",
+  "name" : "QA 893",
+  "fullName" : "QA #893 on fedora31-container",
+  "time" : {
+    "start" : 1591035983000,
+    "stop" : 1591035986000,
+    "duration" : 3000
+  },
+  "description" : "PCP QA Test No. 893\n\nExercise fix for RH BZ 1365424 where init script terminates\n\nlike-named processes.\n\n\n\nReally a test for _get_pids_by_name() from /etc/pcp.env, as invoked\n\nfrom the pmcd \"rc\" script.\n\n\n\nCopyright (c) 2016 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform fedora31 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 893</p>\n<p>Exercise fix for RH BZ 1365424 where init script terminates</p>\n<p>like-named processes.</p>\n<p>Really a test for _get_pids_by_name() from /etc/pcp.env, as invoked</p>\n<p>from the pmcd &quot;rc&quot; script.</p>\n<p>Copyright (c) 2016 Red Hat.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform fedora31 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 893.out.bad)\n2c2,3\n< Local pmcd count: 1\n---\n> ./893: line 40: /tmp/893-821134.pmcd/pmcd: Permission denied\n> Local pmcd count: 0\n3a5\n> /usr/libexec/pcp/bin/pmsignal: line 123: kill: (821163) - No such process\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds\nPMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds\nPMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 893\n\nExercise fix for RH BZ 1365424 where init script terminates\n\nlike-named processes.\n\n\n\nReally a test for _get_pids_by_name() from /etc/pcp.env, as invoked\n\nfrom the pmcd \"rc\" script.\n\n\n\nCopyright (c) 2016 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform fedora31 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 893.out.bad)\n2c2,3\n< Local pmcd count: 1\n---\n> ./893: line 40: /tmp/893-821134.pmcd/pmcd: Permission denied\n> Local pmcd count: 0\n3a5\n> /usr/libexec/pcp/bin/pmsignal: line 123: kill: (821163) - No such process\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds\nPMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds\nPMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8d7bf781034fb948",
+      "name" : "893.out.bad",
+      "source" : "8d7bf781034fb948.txt",
+      "type" : "text/plain",
+      "size" : 211
+    }, {
+      "uid" : "fee71e46ee5446cb",
+      "name" : "893.full",
+      "source" : "fee71e46ee5446cb.txt",
+      "type" : "text/plain",
+      "size" : 369
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmcd"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/893",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/893.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "7341727cedfe9f01.json",
+  "parameterValues" : [ ]
+}

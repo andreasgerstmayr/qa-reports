@@ -1,0 +1,56 @@
+{
+  "uid" : "340168f2e9c0a7ca",
+  "name" : "QA 1029",
+  "fullName" : "QA #1029 on debian10-container",
+  "time" : {
+    "start" : 1591037494000,
+    "stop" : 1591037494000,
+    "duration" : 0
+  },
+  "description" : "Test libqmc event tracing functionality\n\n\n\nseq=`basename $0`\n\necho \"QA output created by $seq\"\n\n",
+  "descriptionHtml" : "<p>Test libqmc event tracing functionality</p>\n<p>seq=<code>basename $0</code></p>\n<p>echo &quot;QA output created by $seq&quot;</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "$PCPQA_CLOSE_X_SERVER not set in ./common.config",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian10-container"
+  }, {
+    "name" : "host",
+    "value" : "debian10-container"
+  }, {
+    "name" : "epic",
+    "value" : "libpcp_qmc"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "pmstore"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1029",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1029.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "340168f2e9c0a7ca.json",
+  "parameterValues" : [ ]
+}

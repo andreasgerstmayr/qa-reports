@@ -1,0 +1,53 @@
+{
+  "uid" : "772f01c0cecde75e",
+  "name" : "QA 975",
+  "fullName" : "QA #975 on fedora31-container",
+  "time" : {
+    "start" : 1591036467000,
+    "stop" : 1591036472000,
+    "duration" : 5000
+  },
+  "description" : "PCP QA Test No. 975\n\nExercise iostat2pcp with locally installed iostat.\n\n\n\nCopyright (c) 2014 Red Hat.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 975</p>\n<p>Exercise iostat2pcp with locally installed iostat.</p>\n<p>Copyright (c) 2014 Red Hat.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmimport"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/975",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/975.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "772f01c0cecde75e.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,56 @@
+{
+  "uid" : "75745ebe1e3f9110",
+  "name" : "QA 543",
+  "fullName" : "QA #543 on debian10-container",
+  "time" : {
+    "start" : 1591034336000,
+    "stop" : 1591034339000,
+    "duration" : 3000
+  },
+  "description" : "PCP QA Test No. 543\n\nexercises the -m option to pmlogger_daily\n\n\n\nNote: this test will fail in the few days after a daylight savings\n\nchange as the sample NOTICES file is not quite right\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 543</p>\n<p>exercises the -m option to pmlogger_daily</p>\n<p>Note: this test will fail in the few days after a daylight savings</p>\n<p>change as the sample NOTICES file is not quite right</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian10-container"
+  }, {
+    "name" : "host",
+    "value" : "debian10-container"
+  }, {
+    "name" : "epic",
+    "value" : "logutil"
+  }, {
+    "name" : "epic",
+    "value" : "remote"
+  }, {
+    "name" : "epic",
+    "value" : "pmlogextract"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/543",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/543.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "75745ebe1e3f9110.json",
+  "parameterValues" : [ ]
+}

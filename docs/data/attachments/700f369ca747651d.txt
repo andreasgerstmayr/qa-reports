@@ -1,0 +1,38 @@
+pmdabcc config:
+# Installed by PCP QA test 1158 on Mon Jun  1 19:06:28 UTC 2020
+[pmda]
+modules = biotop
+prefix = bcc.
+[biotop]
+module = biotop
+cluster = 10
+interval = 5
+debug = True
+Log for pmdabcc on c8b243a204dc started Mon Jun  1 19:06:30 2020
+
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: Initializing, currently in 'notready' state.
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: Enabled modules:
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: ['biotop']
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: Configuring modules:
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: biotop
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: Modules configured.
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: Initializing modules:
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: biotop
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: biotop: Debug logging enabled.
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: biotop: Updating disk cache...
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: biotop: Initialized.
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: Modules initialized.
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: Registering metrics:
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: biotop
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: Metrics registered.
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: Registering helpers:
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: biotop
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: Helpers registered.
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: Compiling modules:
+[Mon Jun  1 19:06:30] pmdabcc(89895) Info: biotop
+chdir(/lib/modules/5.3.0-1020-azure/build): No such file or directory
+[Mon Jun  1 19:06:30] pmdabcc(89895) Error: biotop: Failed to compile BPF module b'/var/lib/pcp/pmdas/bcc/modules/biotop.bpf'
+[Mon Jun  1 19:06:30] pmdabcc(89895) Error: biotop: Module NOT active!
+[Mon Jun  1 19:06:30] pmdabcc(89895) Error: Failed to compile module biotop, aborting.
+
+Log finished Mon Jun  1 19:06:30 2020

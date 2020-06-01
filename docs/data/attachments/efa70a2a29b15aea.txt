@@ -1,0 +1,34 @@
+pmdabcc config:
+# Installed by PCP QA test 1126 on Mon Jun  1 19:02:59 UTC 2020
+[pmda]
+modules = ext4dist
+prefix = bcc.
+[ext4dist]
+module = fs.ext4dist
+cluster = 5
+Log for pmdabcc on c8b243a204dc started Mon Jun  1 19:03:01 2020
+
+[Mon Jun  1 19:03:01] pmdabcc(66549) Info: Initializing, currently in 'notready' state.
+[Mon Jun  1 19:03:01] pmdabcc(66549) Info: Enabled modules:
+[Mon Jun  1 19:03:01] pmdabcc(66549) Info: ['ext4dist']
+[Mon Jun  1 19:03:01] pmdabcc(66549) Info: Configuring modules:
+[Mon Jun  1 19:03:01] pmdabcc(66549) Info: ext4dist
+[Mon Jun  1 19:03:01] pmdabcc(66549) Info: Modules configured.
+[Mon Jun  1 19:03:01] pmdabcc(66549) Info: Initializing modules:
+[Mon Jun  1 19:03:01] pmdabcc(66549) Info: ext4dist
+[Mon Jun  1 19:03:01] pmdabcc(66549) Info: ext4dist: Initialized.
+[Mon Jun  1 19:03:01] pmdabcc(66549) Info: Modules initialized.
+[Mon Jun  1 19:03:01] pmdabcc(66549) Info: Registering metrics:
+[Mon Jun  1 19:03:01] pmdabcc(66549) Info: ext4dist
+[Mon Jun  1 19:03:01] pmdabcc(66549) Info: Metrics registered.
+[Mon Jun  1 19:03:01] pmdabcc(66549) Info: Registering helpers:
+[Mon Jun  1 19:03:01] pmdabcc(66549) Info: ext4dist
+[Mon Jun  1 19:03:01] pmdabcc(66549) Info: Helpers registered.
+[Mon Jun  1 19:03:01] pmdabcc(66549) Info: Compiling modules:
+[Mon Jun  1 19:03:01] pmdabcc(66549) Info: ext4dist
+chdir(/lib/modules/5.3.0-1020-azure/build): No such file or directory
+[Mon Jun  1 19:03:01] pmdabcc(66549) Error: ext4dist: Failed to compile BPF text
+[Mon Jun  1 19:03:01] pmdabcc(66549) Error: ext4dist: Module NOT active!
+[Mon Jun  1 19:03:01] pmdabcc(66549) Error: Failed to compile module ext4dist, aborting.
+
+Log finished Mon Jun  1 19:03:01 2020

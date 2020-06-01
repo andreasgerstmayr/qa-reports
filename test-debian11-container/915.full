@@ -1,0 +1,20 @@
+interface=10.88.0.2
+pmproxy_was_running=true
+
+pmcd.feature.local
+    value 1
+pminfo: Cannot connect to PMCD on host "10.88.0.2": Connection refused
+
+pmcd.pmlogger.host
+    inst [808419 or "808419"] value "f3fc340f0608"
+    inst [888093 or "888093"] value "f3fc340f0608"
+    inst [0 or "primary"] value "f3fc340f0608"
+Connected to primary pmlogger at localhost
+Goodbye
+Connected to primary pmlogger at 10.88.0.2
+Goodbye
+pminfo: Cannot connect to PMCD on host "localhost@10.88.0.2": Connection refused
+
+pmcd.feature.local
+    value 1
+Restart pmproxy ...

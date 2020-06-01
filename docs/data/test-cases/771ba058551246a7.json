@@ -1,0 +1,59 @@
+{
+  "uid" : "771ba058551246a7",
+  "name" : "QA 1661",
+  "fullName" : "QA #1661 on centos8-container",
+  "time" : {
+    "start" : 1591039058000,
+    "stop" : 1591039058000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 1661\n\nTest pmproxy libpcp_web discovery file descriptor leaks\n\n\n\nCopyright (c) 2019 Red Hat.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 1661</p>\n<p>Test pmproxy libpcp_web discovery file descriptor leaks</p>\n<p>Copyright (c) 2019 Red Hat.  All Rights Reserved.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "pmseries command line utility not installed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos8-container"
+  }, {
+    "name" : "host",
+    "value" : "centos8-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmproxy"
+  }, {
+    "name" : "epic",
+    "value" : "libpcp_web"
+  }, {
+    "name" : "epic",
+    "value" : "pmlogger"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1661",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1661.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "771ba058551246a7.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,75 @@
+{
+  "uid" : "b7297d0d94e1ee0d",
+  "name" : "QA 250",
+  "fullName" : "QA #250 on centos7-container",
+  "time" : {
+    "start" : 1591031486000,
+    "stop" : 1591031487000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 250\n\nRebuild -u should be idempotent in this case\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos7 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 250</p>\n<p>Rebuild -u should be idempotent in this case</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform centos7 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 250.out.bad)\n10a11\n> sudo: unable to execute ./Rebuild: Permission denied\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h ed1244330104 -f sample.milliseconds\nPMDA probe: pminfo -h ed1244330104 -f sampledso.milliseconds\nPMDA probe: pminfo -h ed1244330104 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 250\n\nRebuild -u should be idempotent in this case\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos7 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 250.out.bad)\n10a11\n> sudo: unable to execute ./Rebuild: Permission denied\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h ed1244330104 -f sample.milliseconds\nPMDA probe: pminfo -h ed1244330104 -f sampledso.milliseconds\nPMDA probe: pminfo -h ed1244330104 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a8b718ea90a0f073",
+      "name" : "250.out.bad",
+      "source" : "a8b718ea90a0f073.txt",
+      "type" : "text/plain",
+      "size" : 218
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos7-container"
+  }, {
+    "name" : "host",
+    "value" : "centos7-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmns"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/250",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/250.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "b7297d0d94e1ee0d.json",
+  "parameterValues" : [ ]
+}

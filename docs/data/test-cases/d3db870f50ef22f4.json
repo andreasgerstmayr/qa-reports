@@ -1,0 +1,78 @@
+{
+  "uid" : "d3db870f50ef22f4",
+  "name" : "QA 573",
+  "fullName" : "QA #573 on ubuntu1804-direct",
+  "time" : {
+    "start" : 1591034342000,
+    "stop" : 1591034342000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 573\n\nExtended prologue (aka preamble) record for pmlogger\n\n\n\nCopyright (c) 2017 Ken McDonell.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner direct --platform ubuntu1804 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 573</p>\n<p>Extended prologue (aka preamble) record for pmlogger</p>\n<p>Copyright (c) 2017 Ken McDonell.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner direct --platform ubuntu1804 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 573.out.bad)\n4c4\n<     2.3.3 (pmcd.pmlogger.host): inst [INST] value \"HOSTNAME\"\n---\n>     2.3.3 (pmcd.pmlogger.host): inst [INST] value \"fv-az86.internal.cloudapp.net\"\n23c23\n<     2.3.3 (pmcd.pmlogger.host): inst [INST] value \"HOSTNAME\"\n---\n>     2.3.3 (pmcd.pmlogger.host): inst [INST] value \"fv-az86.internal.cloudapp.net\"\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h fv-az86 -f sample.milliseconds\nPMDA probe: pminfo -h fv-az86 -f sampledso.milliseconds\nPMDA probe: pminfo -h fv-az86 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 573\n\nExtended prologue (aka preamble) record for pmlogger\n\n\n\nCopyright (c) 2017 Ken McDonell.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner direct --platform ubuntu1804 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 573.out.bad)\n4c4\n<     2.3.3 (pmcd.pmlogger.host): inst [INST] value \"HOSTNAME\"\n---\n>     2.3.3 (pmcd.pmlogger.host): inst [INST] value \"fv-az86.internal.cloudapp.net\"\n23c23\n<     2.3.3 (pmcd.pmlogger.host): inst [INST] value \"HOSTNAME\"\n---\n>     2.3.3 (pmcd.pmlogger.host): inst [INST] value \"fv-az86.internal.cloudapp.net\"\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h fv-az86 -f sample.milliseconds\nPMDA probe: pminfo -h fv-az86 -f sampledso.milliseconds\nPMDA probe: pminfo -h fv-az86 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6d363975af0ff2c0",
+      "name" : "573.out.bad",
+      "source" : "6d363975af0ff2c0.txt",
+      "type" : "text/plain",
+      "size" : 1082
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "epic",
+    "value" : "other"
+  }, {
+    "name" : "epic",
+    "value" : "remote"
+  }, {
+    "name" : "epic",
+    "value" : "pmdumplog"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/573",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/573.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "d3db870f50ef22f4.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,1 @@
+gcc -I/usr/include/pcp/.. -fPIC -fno-strict-aliasing -D_GNU_SOURCE  -Wall -O2 -g -DPCP_VERSION=\"5.2.0\" -I/usr/include/pcp/.. -I/usr/include/pcp -Wl,-z,relro  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -Wall -L/usr/lib64  '-DSEQ="1166"' '-DTMP="/tmp/1166-129336"' -o /tmp/1166-129336 src/qa_libpcp_compat.c -lpcp

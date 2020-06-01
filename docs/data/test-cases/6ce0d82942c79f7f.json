@@ -1,0 +1,53 @@
+{
+  "uid" : "6ce0d82942c79f7f",
+  "name" : "QA 598",
+  "fullName" : "QA #598 on debian10-container",
+  "time" : {
+    "start" : 1591034599000,
+    "stop" : 1591034599000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 598\n\nMr. Curly meets the ternary operator.\n\n\n\nCopyright (c) 2017 Ken McDonell.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 598</p>\n<p>Mr. Curly meets the ternary operator.</p>\n<p>Copyright (c) 2017 Ken McDonell.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian10-container"
+  }, {
+    "name" : "host",
+    "value" : "debian10-container"
+  }, {
+    "name" : "epic",
+    "value" : "derive"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/598",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/598.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6ce0d82942c79f7f.json",
+  "parameterValues" : [ ]
+}

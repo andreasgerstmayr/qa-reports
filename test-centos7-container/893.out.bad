@@ -1,0 +1,5 @@
+QA output created by 893
+./893: line 40: /tmp/893-45865.pmcd/pmcd: Permission denied
+Local pmcd count: 0
+Terminating local pmcd process
+/usr/libexec/pcp/bin/pmsignal: line 123: kill: (45895) - No such process

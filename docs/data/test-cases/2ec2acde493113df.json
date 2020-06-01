@@ -1,0 +1,59 @@
+{
+  "uid" : "2ec2acde493113df",
+  "name" : "QA 324",
+  "fullName" : "QA #324 on centos8-container",
+  "time" : {
+    "start" : 1591032300000,
+    "stop" : 1591032314000,
+    "duration" : 14000
+  },
+  "description" : "PCP QA Test No. 324\n\nInstall/Remove for txmon pmda\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 324</p>\n<p>Install/Remove for txmon pmda</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos8-container"
+  }, {
+    "name" : "host",
+    "value" : "centos8-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.txmon"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.proc"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.install"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/324",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/324.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2ec2acde493113df.json",
+  "parameterValues" : [ ]
+}

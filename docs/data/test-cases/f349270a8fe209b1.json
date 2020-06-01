@@ -1,0 +1,84 @@
+{
+  "uid" : "f349270a8fe209b1",
+  "name" : "QA 033",
+  "fullName" : "QA #033 on debian11-container",
+  "time" : {
+    "start" : 1591030275000,
+    "stop" : 1591030275000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 033\n\ncheck filesys metrics for root fs\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian11 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 033</p>\n<p>check filesys metrics for root fs</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform debian11 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 033.out.bad)\n3d2\n<     inst [DISK] value NUMBER\n5d3\n<     inst [DISK] value NUMBER\n7d4\n<     inst [DISK] value NUMBER\n9d5\n<     inst [DISK] value NUMBER\n11d6\n<     inst [DISK] value NUMBER\n13d7\n<     inst [DISK] value NUMBER\n15d8\n<     inst [DISK] value STRING\n17d9\n<     inst [DISK] value NUMBER\n19d10\n<     inst [DISK] value NUMBER\n21d11\n<     inst [DISK] value NUMBER\n23d12\n<     inst [DISK] value NUMBER\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h f3fc340f0608 -f sample.milliseconds\nPMDA probe: pminfo -h f3fc340f0608 -f sampledso.milliseconds\nPMDA probe: pminfo -h f3fc340f0608 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 033\n\ncheck filesys metrics for root fs\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian11 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 033.out.bad)\n3d2\n<     inst [DISK] value NUMBER\n5d3\n<     inst [DISK] value NUMBER\n7d4\n<     inst [DISK] value NUMBER\n9d5\n<     inst [DISK] value NUMBER\n11d6\n<     inst [DISK] value NUMBER\n13d7\n<     inst [DISK] value NUMBER\n15d8\n<     inst [DISK] value STRING\n17d9\n<     inst [DISK] value NUMBER\n19d10\n<     inst [DISK] value NUMBER\n21d11\n<     inst [DISK] value NUMBER\n23d12\n<     inst [DISK] value NUMBER\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h f3fc340f0608 -f sample.milliseconds\nPMDA probe: pminfo -h f3fc340f0608 -f sampledso.milliseconds\nPMDA probe: pminfo -h f3fc340f0608 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "38ea05a1edda645e",
+      "name" : "033.out.bad",
+      "source" : "38ea05a1edda645e.txt",
+      "type" : "text/plain",
+      "size" : 200
+    }, {
+      "uid" : "54aa3df46825e23a",
+      "name" : "033.full",
+      "source" : "54aa3df46825e23a.txt",
+      "type" : "text/plain",
+      "size" : 29
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian11-container"
+  }, {
+    "name" : "host",
+    "value" : "debian11-container"
+  }, {
+    "name" : "epic",
+    "value" : "kernel"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "ostest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/033",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/033.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f349270a8fe209b1.json",
+  "parameterValues" : [ ]
+}

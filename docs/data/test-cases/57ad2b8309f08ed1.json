@@ -1,0 +1,84 @@
+{
+  "uid" : "57ad2b8309f08ed1",
+  "name" : "QA 681",
+  "fullName" : "QA #681 on debian11-container",
+  "time" : {
+    "start" : 1591034575000,
+    "stop" : 1591034616000,
+    "duration" : 41000
+  },
+  "description" : "PCP QA Test No. 681\n\nExercise __pmProcessExec() and friends from libpcp with valgrind\n\n... same test as 036 (that one's without valgrind)\n\n\n\nCopyright (c) 2017-2018 Ken McDonell.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian11 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 681</p>\n<p>Exercise __pmProcessExec() and friends from libpcp with valgrind</p>\n<p>... same test as 036 (that one's without valgrind)</p>\n<p>Copyright (c) 2017-2018 Ken McDonell.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform debian11 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 681.out.bad)\n70,76c70\n< my arg echoer ...\n< [0] TMP.sh\n< [1] blah;trickme|foo\n< [2] cat\n< [3] and\n< [4] dog\n< __pmProcessExec -> 0\n---\n> __pmProcessExec -> 101 exit=101\n79c73\n< __pmProcessExec: pid=PID wait_pid=PID exit=0\n---\n> __pmProcessExec: pid=PID wait_pid=PID exit=101\n82a77,79\n> execve(0x50be220(TMP.sh), 0x50be4b0, 0x1fff000288) failed, errno 13\n> EXEC FAILED: I can't recover from execve() failing, so I'm dying.\n> Add more stringent tests in PRE(sys_execve), or work out how to recover.\n91,96d87\n< my arg echoer ...\n< [0] TMP.sh\n< [1] blah;trickme|foo\n< [2] cat\n< [3] and\n< [4] dog\n98c89\n< __pmProcessPipeClose() -> 0\n---\n> __pmProcessPipeClose() -> 101 exit=101\n101c92\n< __pmProcessPipeClose: pid=PID wait_pid=PID exit=0\n---\n> __pmProcessPipeClose: pid=PID wait_pid=PID exit=101\n104a96,98\n> execve(0x50be230(TMP.sh), 0x50be4c0, 0x1fff000290) failed, errno 13\n> EXEC FAILED: I can't recover from execve() failing, so I'm dying.\n> Add more stringent tests in PRE(sys_execve), or work out how to recover.\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h f3fc340f0608 -f sample.milliseconds\nPMDA probe: pminfo -h f3fc340f0608 -f sampledso.milliseconds\nPMDA probe: pminfo -h f3fc340f0608 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 681\n\nExercise __pmProcessExec() and friends from libpcp with valgrind\n\n... same test as 036 (that one's without valgrind)\n\n\n\nCopyright (c) 2017-2018 Ken McDonell.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian11 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 681.out.bad)\n70,76c70\n< my arg echoer ...\n< [0] TMP.sh\n< [1] blah;trickme|foo\n< [2] cat\n< [3] and\n< [4] dog\n< __pmProcessExec -> 0\n---\n> __pmProcessExec -> 101 exit=101\n79c73\n< __pmProcessExec: pid=PID wait_pid=PID exit=0\n---\n> __pmProcessExec: pid=PID wait_pid=PID exit=101\n82a77,79\n> execve(0x50be220(TMP.sh), 0x50be4b0, 0x1fff000288) failed, errno 13\n> EXEC FAILED: I can't recover from execve() failing, so I'm dying.\n> Add more stringent tests in PRE(sys_execve), or work out how to recover.\n91,96d87\n< my arg echoer ...\n< [0] TMP.sh\n< [1] blah;trickme|foo\n< [2] cat\n< [3] and\n< [4] dog\n98c89\n< __pmProcessPipeClose() -> 0\n---\n> __pmProcessPipeClose() -> 101 exit=101\n101c92\n< __pmProcessPipeClose: pid=PID wait_pid=PID exit=0\n---\n> __pmProcessPipeClose: pid=PID wait_pid=PID exit=101\n104a96,98\n> execve(0x50be230(TMP.sh), 0x50be4c0, 0x1fff000290) failed, errno 13\n> EXEC FAILED: I can't recover from execve() failing, so I'm dying.\n> Add more stringent tests in PRE(sys_execve), or work out how to recover.\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h f3fc340f0608 -f sample.milliseconds\nPMDA probe: pminfo -h f3fc340f0608 -f sampledso.milliseconds\nPMDA probe: pminfo -h f3fc340f0608 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "20953aeb417fcb3",
+      "name" : "681.out.bad",
+      "source" : "20953aeb417fcb3.txt",
+      "type" : "text/plain",
+      "size" : 4209
+    }, {
+      "uid" : "3b8b2d0874536170",
+      "name" : "681.full",
+      "source" : "3b8b2d0874536170.txt",
+      "type" : "text/plain",
+      "size" : 12299
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian11-container"
+  }, {
+    "name" : "host",
+    "value" : "debian11-container"
+  }, {
+    "name" : "epic",
+    "value" : "valgrind"
+  }, {
+    "name" : "epic",
+    "value" : "libpcp"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/681",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/681.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "57ad2b8309f08ed1.json",
+  "parameterValues" : [ ]
+}

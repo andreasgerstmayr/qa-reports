@@ -1,0 +1,78 @@
+{
+  "uid" : "1bdc512ffd337731",
+  "name" : "QA 469",
+  "fullName" : "QA #469 on centos7-container",
+  "time" : {
+    "start" : 1591033057000,
+    "stop" : 1591033058000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 469\n\ntest for long help text exceeding maximum length\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos7 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 469</p>\n<p>test for long help text exceeding maximum length</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform centos7 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 469.out.bad)\n1a2,11\n> kernel.percpu.softirqs.RCU, full help text is too long: 251\n> kernel.percpu.softirqs.HRTIMER, full help text is too long: 251\n> kernel.percpu.softirqs.SCHED, full help text is too long: 251\n> kernel.percpu.softirqs.TASKLET, full help text is too long: 251\n> kernel.percpu.softirqs.IRQ_POLL, full help text is too long: 251\n> kernel.percpu.softirqs.BLOCK, full help text is too long: 251\n> kernel.percpu.softirqs.NET_RX, full help text is too long: 251\n> kernel.percpu.softirqs.NET_TX, full help text is too long: 251\n> kernel.percpu.softirqs.TIMER, full help text is too long: 251\n> kernel.percpu.softirqs.HI, full help text is too long: 251\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h ed1244330104 -f sample.milliseconds\nPMDA probe: pminfo -h ed1244330104 -f sampledso.milliseconds\nPMDA probe: pminfo -h ed1244330104 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 469\n\ntest for long help text exceeding maximum length\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos7 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 469.out.bad)\n1a2,11\n> kernel.percpu.softirqs.RCU, full help text is too long: 251\n> kernel.percpu.softirqs.HRTIMER, full help text is too long: 251\n> kernel.percpu.softirqs.SCHED, full help text is too long: 251\n> kernel.percpu.softirqs.TASKLET, full help text is too long: 251\n> kernel.percpu.softirqs.IRQ_POLL, full help text is too long: 251\n> kernel.percpu.softirqs.BLOCK, full help text is too long: 251\n> kernel.percpu.softirqs.NET_RX, full help text is too long: 251\n> kernel.percpu.softirqs.NET_TX, full help text is too long: 251\n> kernel.percpu.softirqs.TIMER, full help text is too long: 251\n> kernel.percpu.softirqs.HI, full help text is too long: 251\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h ed1244330104 -f sample.milliseconds\nPMDA probe: pminfo -h ed1244330104 -f sampledso.milliseconds\nPMDA probe: pminfo -h ed1244330104 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "53a3e7e6bb323f4b",
+      "name" : "469.out.bad",
+      "source" : "53a3e7e6bb323f4b.txt",
+      "type" : "text/plain",
+      "size" : 649
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos7-container"
+  }, {
+    "name" : "host",
+    "value" : "centos7-container"
+  }, {
+    "name" : "epic",
+    "value" : "help"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : ""
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/469",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/469.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "1bdc512ffd337731.json",
+  "parameterValues" : [ ]
+}

@@ -1,49 +1,549 @@
-PMDA probe: pminfo -h e9f5d26cb401 -f sample.milliseconds
-PMDA probe: pminfo -h e9f5d26cb401 -f sampledso.milliseconds
-PMDA probe: pminfo -h e9f5d26cb401 -f simple.numfetch
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[0%] 000
 [0%] 001
-[1%] 002 1s ...
-[2%] 004
-[4%] 005
-[5%] 007
-[6%] 010
-[8%] 026
-[9%] 027
-[10%] 031
-[12%] 034
-[13%] 048
-[14%] 055
-[16%] 059
-[17%] 068
-[18%] 074
-[20%] 080
-[21%] 085
-[22%] 087
-[24%] 091
-[25%] 107
-[26%] 112
-[28%] 127
-[29%] 137
-[30%] 146
-[32%] 153
-[33%] 154
-[34%] 155
-[36%] 178
-[37%] 201
-[38%] 207
-[40%] 208
-[41%] 210
-[42%] 213
-[44%] 232
-[45%] 234
-[46%] 249
-[48%] 256
-[49%] 263
-[50%] 278
-[52%] 299
-[53%] 338
-[54%] 345
-[56%] 354 - output mismatch (see 354.out.bad)
+[0%] 002 1s ...
+[0%] 003 - output mismatch (see 003.out.bad)
+2a3,57
+> filesys.avail: pmFetch: no value available
+> filesys.avail: pmFetch: no value available
+> filesys.avail: pmFetch: no value available
+> filesys.avail: pmFetch: no value available
+> filesys.avail: pmFetch: no value available
+> filesys.blocksize: pmFetch: no value available
+> filesys.blocksize: pmFetch: no value available
+> filesys.blocksize: pmFetch: no value available
+> filesys.blocksize: pmFetch: no value available
+> filesys.blocksize: pmFetch: no value available
+> filesys.capacity: pmFetch: no value available
+> filesys.capacity: pmFetch: no value available
+> filesys.capacity: pmFetch: no value available
+> filesys.capacity: pmFetch: no value available
+> filesys.capacity: pmFetch: no value available
+> filesys.free: pmFetch: no value available
+> filesys.free: pmFetch: no value available
+> filesys.free: pmFetch: no value available
+> filesys.free: pmFetch: no value available
+> filesys.free: pmFetch: no value available
+> filesys.freefiles: pmFetch: no value available
+> filesys.freefiles: pmFetch: no value available
+> filesys.freefiles: pmFetch: no value available
+> filesys.freefiles: pmFetch: no value available
+> filesys.freefiles: pmFetch: no value available
+> filesys.full: pmFetch: no value available
+> filesys.full: pmFetch: no value available
+> filesys.full: pmFetch: no value available
+> filesys.full: pmFetch: no value available
+> filesys.full: pmFetch: no value available
+> filesys.maxfiles: pmFetch: no value available
+> filesys.maxfiles: pmFetch: no value available
+> filesys.maxfiles: pmFetch: no value available
+> filesys.maxfiles: pmFetch: no value available
+> filesys.maxfiles: pmFetch: no value available
+> filesys.mountdir: pmFetch: no value available
+> filesys.mountdir: pmFetch: no value available
+> filesys.mountdir: pmFetch: no value available
+> filesys.mountdir: pmFetch: no value available
+> filesys.mountdir: pmFetch: no value available
+> filesys.readonly: pmFetch: no value available
+> filesys.readonly: pmFetch: no value available
+> filesys.readonly: pmFetch: no value available
+> filesys.readonly: pmFetch: no value available
+> filesys.readonly: pmFetch: no value available
+> filesys.used: pmFetch: no value available
+> filesys.used: pmFetch: no value available
+> filesys.used: pmFetch: no value available
+> filesys.used: pmFetch: no value available
+> filesys.used: pmFetch: no value available
+> filesys.usedfiles: pmFetch: no value available
+> filesys.usedfiles: pmFetch: no value available
+> filesys.usedfiles: pmFetch: no value available
+> filesys.usedfiles: pmFetch: no value available
+> filesys.usedfiles: pmFetch: no value available
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[0%] 004
+[0%] 005
+[0%] 006
+[0%] 007
+[0%] 008 [not run] No qualified results file (008.out.e4c2a05926f7) for the localhost
+[0%] 010
+[0%] 011
+[0%] 012
+[0%] 013
+[0%] 014
+[1%] 015
+[1%] 016
+[1%] 017
+[1%] 018
+[1%] 019
+[1%] 020
+[1%] 021
+[1%] 022
+[1%] 023
+[1%] 024 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1 -a sample"
+[1%] 025
+[1%] 026
+[1%] 027
+[2%] 028
+[2%] 029
+[2%] 030
+[2%] 031
+[2%] 032
+[2%] 033 - output mismatch (see 033.out.bad)
+3d2
+<     inst [DISK] value NUMBER
+5d3
+<     inst [DISK] value NUMBER
+7d4
+<     inst [DISK] value NUMBER
+9d5
+<     inst [DISK] value NUMBER
+11d6
+<     inst [DISK] value NUMBER
+13d7
+<     inst [DISK] value NUMBER
+15d8
+<     inst [DISK] value STRING
+17d9
+<     inst [DISK] value NUMBER
+19d10
+<     inst [DISK] value NUMBER
+21d11
+<     inst [DISK] value NUMBER
+23d12
+<     inst [DISK] value NUMBER
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[2%] 034
+[2%] 035
+[2%] 036 - output mismatch (see 036.out.bad)
+34,41c34,35
+< my arg echoer ...
+< [0] TMP.sh
+< [1] blah;trickme|foo
+< [2] cat
+< [3] and
+< [4] dog
+< __pmProcessExec: pid=PID wait_pid=PID exit=0
+< __pmProcessExec -> 0
+---
+> __pmProcessExec: pid=PID wait_pid=PID exit=127
+> __pmProcessExec -> 127 exit=127
+46,51d39
+< my arg echoer ...
+< [0] TMP.sh
+< [1] blah;trickme|foo
+< [2] cat
+< [3] and
+< [4] dog
+53,54c41,42
+< __pmProcessPipeClose: pid=PID wait_pid=PID exit=0
+< __pmProcessPipeClose() -> 0
+---
+> __pmProcessPipeClose: pid=PID wait_pid=PID exit=127
+> __pmProcessPipeClose() -> 127 exit=127
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[2%] 037
+[2%] 038
+[2%] 039
+[2%] 040
+[3%] 041
+[3%] 042 [not run] Cannot find a working 'docker images' command
+[3%] 043
+[3%] 044
+[3%] 045
+[3%] 046
+[3%] 047 [not run] Cannot find a working 'docker images' command
+[3%] 048
+[3%] 049
+[3%] 050
+[3%] 051 - output mismatch (see 051.out.bad)
+786a787
+> [DATE] pmcd(PID) Error: Permission clash for ...
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[3%] 052
+[3%] 053
+[4%] 054 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n1"
+[4%] 055
+[4%] 056
+[4%] 057
+[4%] 058
+[4%] 059
+[4%] 060
+[4%] 061
+[4%] 062
+[4%] 063 [failed, exit status 126] - output mismatch (see 063.out.bad)
+2c2
+< __pmOptFetchRedo returns: 0
+---
+> ./063: line 36: /tmp/063-196132: Permission denied
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[4%] 064
+[4%] 065
+[4%] 066 [not run] Cannot find two remote hosts running pmcd
+[5%] 067
+[5%] 068
+[5%] 069 [not run] Cannot find first remote host running pmcd
+[5%] 070 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[5%] 071
+[5%] 072 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[5%] 073
+[5%] 074
+[5%] 075 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1 -a sample"
+[5%] 076
+[5%] 077 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-n 1 -L"
+[5%] 078
+[5%] 079
+[5%] 080
+[6%] 081 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-p single -n 1 -v pcp>=2"
+[6%] 082
+[6%] 083 [not run] Cannot find first remote host running pmcd v2.x
+[6%] 084
+[6%] 085
+[6%] 086 [not run] Unable to find two other hosts
+[6%] 087
+[6%] 088
+[6%] 089
+[6%] 090
+[6%] 091
+[6%] 092
+[6%] 093
+[7%] 094
+[7%] 095
+[7%] 096
+[7%] 097
+[7%] 098
+[7%] 099
+[7%] 100
+[7%] 101
+[7%] 102
+[7%] 103
+[7%] 104
+[7%] 105
+[7%] 106
+[8%] 107
+[8%] 108
+[8%] 109
+[8%] 110
+[8%] 111
+[8%] 112
+[8%] 113 [not run] System has active loop devices, bailing
+[8%] 114
+[8%] 115 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-n 1 -L"
+[8%] 116 [not run] PCPQA_HYPHEN_HOST is not set in ./common.config
+[8%] 117 [not run] network.ip checks for linux done in test 216
+[8%] 118
+[8%] 119
+[9%] 120
+[9%] 121
+[9%] 122 [not run] Cannot find big endian host running pmdatrace
+[9%] 123
+[9%] 124
+[9%] 125
+[9%] 127
+[9%] 128
+[9%] 129
+[9%] 130 [not run] TODO: Need to reconcile rpc.server metrics for PCP_PLATFORM linux
+[9%] 131 [not run] PCPQA_FAR_PMCD is not set in ./common.config
+[9%] 132
+[9%] 133
+[10%] 134
+[10%] 135
+[10%] 136
+[10%] 137
+[10%] 138
+[10%] 139
+[10%] 140
+[10%] 141
+[10%] 142
+[10%] 143
+[10%] 144
+[10%] 145
+[10%] 146
+[10%] 147
+[11%] 149
+[11%] 150
+[11%] 151
+[11%] 152
+[11%] 153
+[11%] 154
+[11%] 155
+[11%] 156
+[11%] 157
+[11%] 158
+[11%] 159 [not run] No cisco router set via $PCPQA_CISCO_ROUTER in ./common.config
+[11%] 160
+[11%] 161
+[12%] 163
+[12%] 165
+[12%] 166
+[12%] 167
+[12%] 168
+[12%] 169
+[12%] 170
+[12%] 171
+[12%] 172
+[12%] 173
+[12%] 174
+[12%] 175
+[12%] 176
+[13%] 177
+[13%] 178
+[13%] 179
+[13%] 180
+[13%] 181
+[13%] 182
+[13%] 186
+[13%] 187 [not run] Cannot find a remote host running pmcd
+[13%] 188
+[13%] 189
+[13%] 190
+[13%] 191
+[13%] 192
+[14%] 193
+[14%] 194
+[14%] 195
+[14%] 196
+[14%] 197
+[14%] 198
+[14%] 199
+[14%] 200
+[14%] 201
+[14%] 202
+[14%] 203
+[14%] 204
+[14%] 205
+[15%] 206
+[15%] 207
+[15%] 208
+[15%] 209
+[15%] 210
+[15%] 211
+[15%] 213
+[15%] 214
+[15%] 215 [not run] pmsocks is not installed and/or not configured
+[15%] 216
+[15%] 217
+[15%] 218
+[15%] 219 [not run] new style /usr/include/pcp/pmdbg.h, nothing to test
+[15%] 220
+[16%] 221
+[16%] 222
+[16%] 224
+[16%] 225
+[16%] 226
+[16%] 227
+[16%] 228
+[16%] 229
+[16%] 230
+[16%] 231
+[16%] 232
+[16%] 233
+[16%] 234
+[17%] 235
+[17%] 236
+[17%] 237
+[17%] 238
+[17%] 239
+[17%] 240
+[17%] 241
+[17%] 242
+[17%] 243
+[17%] 244 - output mismatch (see 244.out.bad)
+140a141,142
+> Job for pmlogger.service failed because the service did not take the steps required by its unit configuration.
+> See "systemctl status pmlogger.service" and "journalctl -xe" for details.
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[17%] 245
+[17%] 246
+[17%] 247
+[18%] 248
+[18%] 249
+[18%] 250 - output mismatch (see 250.out.bad)
+10a11
+> sudo: unable to execute ./Rebuild: Permission denied
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[18%] 251
+[18%] 252
+[18%] 253
+[18%] 254
+[18%] 255
+[18%] 256
+[18%] 257 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-s linux -b 32 -m pmcd.version>2.0 -n 1 -a sample"
+[18%] 258
+[18%] 259
+[18%] 260
+[19%] 261
+[19%] 262 [not run] pmsocks is not installed and/or not configured
+[19%] 263
+[19%] 264
+[19%] 265
+[19%] 266
+[19%] 267
+[19%] 268
+[19%] 269
+[19%] 270
+[19%] 271
+[19%] 272 [not run] ./getpmcdhosts: unable to get 2 host(s) with options: "-n 2 -L -a sample -v pcp>=2 -s IRIX64"
+[19%] 273
+[20%] 274
+[20%] 275
+[20%] 276 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[20%] 277
+[20%] 278
+[20%] 279
+[20%] 280
+[20%] 281
+[20%] 282
+[20%] 283
+[20%] 285
+[20%] 286
+[20%] 287
+[21%] 288
+[21%] 289
+[21%] 291
+[21%] 292
+[21%] 293
+[21%] 294
+[21%] 295
+[21%] 296
+[21%] 297 - output mismatch (see 297.out.bad)
+23a24,25
+> __pmDecodeError: got error PDU (code=24, fromversion=2)
+> DATE	N	N	N	N	N	N	N	N	N
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[21%] 298
+[21%] 299
+[21%] 300
+[21%] 301
+[21%] 302
+[22%] 303
+[22%] 304 - output mismatch (see 304.out.bad)
+12a13,14
+> Log finished DATE
+> 
+36a39,40
+> Log finished DATE
+> 
+56a61,62
+> Log finished DATE
+> 
+79a86,87
+> Log finished DATE
+> 
+101a110,111
+> Log finished DATE
+> 
+109a120,121
+> Log finished DATE
+> 
+133a146,147
+> 
+> Log finished DATE
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[22%] 305
+[22%] 306
+[22%] 307 [not run] metric network.tcp.drops is not available
+[22%] 308 [not run] Cannot get first remote pmcd host with proc.psinfo.ppid metrics
+[22%] 309
+[22%] 310
+[22%] 312
+[22%] 313
+[22%] 314
+[22%] 315
+[22%] 316
+[23%] 317
+[23%] 318
+[23%] 319
+[23%] 320
+[23%] 321
+[23%] 322 [not run] ./getpmcdhosts failed to find a suitable host
+[23%] 323
+[23%] 324
+[23%] 325 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[23%] 326
+[23%] 327
+[23%] 328
+[23%] 334
+[24%] 335
+[24%] 336
+[24%] 337
+[24%] 338
+[24%] 339
+[24%] 340 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-n 1 -L -v pcp>=2"
+[24%] 341
+[24%] 342
+[24%] 343
+[24%] 344 - output mismatch (see 344.out.bad)
+18a19,20
+> __pmConnectLocal: Warning: error attaching DSO "/tmp/344-396324.so"
+> /tmp/344-396324.so: failed to map segment from shared object
+20,23c22
+< qa.colour PMID: 400.0.5
+<     inst [0 or "red"] value 101
+<     inst [1 or "green"] value 202
+<     inst [2 or "blue"] value 303
+---
+> qa.colour: pmLookupDesc: No PMCD agent for domain of request
+691a691,693
+> __pmConnectLocal: Warning: error attaching DSO "TMP.$DSO_SUFFIX"
+> TMP.$DSO_SUFFIX: failed to map segment from shared object
+> 
+693d694
+< NotifyEndLocalContext: DSO PMDA TMP.$DSO_SUFFIX (400) notified of context 0 close
+697,699c698
+< 
+< qa.string.write_me PMID: 400.0.29
+<     value 13
+---
+> qa.string.write_me: pmLookupDesc: No PMCD agent for domain of request
+965a965,967
+> __pmConnectLocal: Warning: error attaching DSO "TMP.$DSO_SUFFIX"
+> TMP.$DSO_SUFFIX: failed to map segment from shared object
+> 
+967d968
+< NotifyEndLocalContext: DSO PMDA TMP.$DSO_SUFFIX (400) notified of context 0 close
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[24%] 345
+[24%] 346
+[24%] 347
+[25%] 348 [not run] KVM sysfs interface not available
+[25%] 349
+[25%] 350
+[25%] 351
+[25%] 352
+[25%] 353 [not run] pmsocks is not configured
+[25%] 354 - output mismatch (see 354.out.bad)
 103a104,105
 > Log finished DATE
 > 
@@ -75,40 +575,3765 @@ PMDA probe: pminfo -h e9f5d26cb401 -f simple.numfetch
 > 
 > Log finished DATE
 Check local PMCD is still alive ...
-PMDA probe: pminfo -h e9f5d26cb401 -f sample.milliseconds
-PMDA probe: pminfo -h e9f5d26cb401 -f sampledso.milliseconds
-PMDA probe: pminfo -h e9f5d26cb401 -f simple.numfetch
-[57%] 359
-[58%] 369
-[60%] 385
-[61%] 397
-[62%] 401
-[64%] 403
-[65%] 404
-[66%] 407
-[68%] 416
-[69%] 435
-[70%] 436
-[72%] 437
-[73%] 453
-[74%] 548
-[76%] 561
-[77%] 562
-[78%] 567
-[80%] 568
-[81%] 569
-[82%] 574
-[84%] 646
-[85%] 689
-[86%] 702
-[88%] 707
-[89%] 900
-[90%] 970
-[92%] 978
-[93%] 1044
-[94%] 1098
-[96%] 1229
-[97%] 1274
-[98%] 1368
-Failures: 354
-Failed 1 of 75 tests
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[25%] 355
+[25%] 356
+[25%] 357
+[25%] 358
+[25%] 359
+[25%] 360 [not run] ./getpmcdhosts: unable to get 2 host(s) with options: "-L -v pcp>=2 -n 2 -a sample"
+[26%] 361 [not run] One or more cgroups already in use
+[26%] 362
+[26%] 363
+[26%] 364
+[26%] 365 [not run] Cannot find first remote host running pmcd
+[26%] 367
+[26%] 368
+[26%] 369
+[26%] 370 [not run] no qualified output for sysstat version 12.3.1
+[26%] 371 [not run] perl Spreadsheet::Read module not installed
+[26%] 372 [not run] perl Spreadsheet::Read module not installed
+[26%] 373
+[26%] 374 [not run] Cannot find a 64-bit host running PCP
+[26%] 375 [not run] Cannot find a 64-bit host running PCP
+[27%] 376
+[27%] 377 [not run] HAVE_BITFIELDS_LTOR is false
+[27%] 378
+[27%] 379
+[27%] 380
+[27%] 381 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1 -P -a sample"
+[27%] 382
+[27%] 383
+[27%] 384
+[27%] 385
+[27%] 386
+[27%] 387
+[27%] 388
+[28%] 389
+[28%] 390
+[28%] 391
+[28%] 392 - output mismatch (see 392.out.bad)
+2a3
+> sudo: unable to execute ./Rebuild: Permission denied
+5,6d5
+< hw.new_hw PMID: 1.44.2
+< hw.hub.nasid PMID: 1.44.8
+10d8
+< hpux.new_irix PMID: 1.10.2
+16c14,15
+< foo.bar PMID: 1.2.0
+---
+> sudo: unable to execute ./Rebuild: Permission denied
+> hw.old_hw PMID: 1.44.0
+18,19c17
+< hw.new_hw PMID: 1.44.2
+< hw.hub.nasid PMID: 1.44.8
+---
+> hpux.old_irix PMID: 1.10.0
+21c19,20
+< hpux.new_irix PMID: 1.10.2
+---
+> hpux.hub.nasid PMID: 1.44.8
+> foo.bar PMID: 1.2.0
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[28%] 393
+[28%] 394
+[28%] 395
+[28%] 396
+[28%] 397
+[28%] 398
+[28%] 399
+[28%] 400
+[28%] 401
+[29%] 402
+[29%] 403
+[29%] 404
+[29%] 405
+[29%] 406
+[29%] 407
+[29%] 408
+[29%] 409
+[29%] 410
+[29%] 411
+[29%] 412
+[29%] 413
+[29%] 414
+[30%] 415
+[30%] 416
+[30%] 417
+[30%] 418
+[30%] 419
+[30%] 420 [not run] Not yet working - libpcp_gui recording
+[30%] 421
+[30%] 422
+[30%] 423
+[30%] 424
+[30%] 425
+[30%] 426
+[30%] 427
+[31%] 428
+[31%] 429 - output mismatch (see 429.out.bad)
+2,5c2
+< Rebuilding the Performance Metrics Name Space (PMNS) in TMPDIR ...
+< Rebuild: merging the following PMNS files: 
+< root
+< Rebuild: PMNS is unchanged.
+---
+> sudo: unable to execute ./Rebuild: Permission denied
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[31%] 430
+[31%] 431
+[31%] 432
+[31%] 433
+[31%] 434
+[31%] 435
+[31%] 436
+[31%] 437
+[31%] 438
+[31%] 439
+[31%] 440
+[31%] 441
+[32%] 442 [not run] Insufficient free space (9144 MB, need 10240 MB)
+[32%] 443
+[32%] 444
+[32%] 445
+[32%] 446
+[32%] 447
+[32%] 448
+[32%] 449
+[32%] 450
+[32%] 451
+[32%] 452
+[32%] 453
+[32%] 454
+[33%] 455
+[33%] 456
+[33%] 457
+[33%] 458
+[33%] 459
+[33%] 460
+[33%] 461
+[33%] 462
+[33%] 463
+[33%] 464
+[33%] 465
+[33%] 466
+[33%] 467
+[34%] 468
+[34%] 469 - output mismatch (see 469.out.bad)
+1a2,11
+> kernel.percpu.softirqs.RCU, full help text is too long: 251
+> kernel.percpu.softirqs.HRTIMER, full help text is too long: 251
+> kernel.percpu.softirqs.SCHED, full help text is too long: 251
+> kernel.percpu.softirqs.TASKLET, full help text is too long: 251
+> kernel.percpu.softirqs.IRQ_POLL, full help text is too long: 251
+> kernel.percpu.softirqs.BLOCK, full help text is too long: 251
+> kernel.percpu.softirqs.NET_RX, full help text is too long: 251
+> kernel.percpu.softirqs.NET_TX, full help text is too long: 251
+> kernel.percpu.softirqs.TIMER, full help text is too long: 251
+> kernel.percpu.softirqs.HI, full help text is too long: 251
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[34%] 470
+[34%] 471 - output mismatch (see 471.out.bad)
+3c3
+< Error: You must be root (uid 0) to update the pmcd(1) configuration.
+---
+> ./471: line 30: /tmp/471-462488.script: Permission denied
+6a7
+> sudo: unable to execute /tmp/471-462488.script: Permission denied
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[34%] 472
+[34%] 473
+[34%] 474
+[34%] 475
+[34%] 476 [not run] libpcp not built with fault injection enabled
+[34%] 477 [not run] libpcp not built with fault injection enabled
+[34%] 478 [not run] libpcp not built with fault injection enabled
+[34%] 479
+[34%] 480 [not run] libpcp not built with fault injection enabled
+[35%] 481
+[35%] 482
+[35%] 483
+[35%] 484
+[35%] 485
+[35%] 486
+[35%] 487
+[35%] 488
+[35%] 489
+[35%] 490
+[35%] 491
+[35%] 492
+[35%] 493
+[36%] 494
+[36%] 495
+[36%] 496
+[36%] 497
+[36%] 498
+[36%] 499
+[36%] 501
+[36%] 502
+[36%] 503
+[36%] 504 [not run] libpcp not built with fault injection enabled
+[36%] 505
+[36%] 506 [not run] Insufficient free space (9131 MB, need 10240 MB)
+[36%] 507
+[36%] 508
+[37%] 509
+[37%] 510
+[37%] 511
+[37%] 512 [not run] libpcp not built with fault injection & lock tracing enabled
+[37%] 513
+[37%] 514
+[37%] 515
+[37%] 516
+[37%] 517
+[37%] 518
+[37%] 519 [not run] Cannot find first remote host running pmcd
+[37%] 520
+[37%] 521
+[38%] 522
+[38%] 523
+[38%] 524
+[38%] 525
+[38%] 526
+[38%] 527
+[38%] 528
+[38%] 529
+[38%] 530
+[38%] 531
+[38%] 532
+[38%] 533
+[38%] 534
+[39%] 535
+[39%] 536
+[39%] 537
+[39%] 538
+[39%] 539
+[39%] 540 [not run] libpcp not built with fault injection enabled
+[39%] 541
+[39%] 542
+[39%] 543 [not run] Noone listening on smtp port 25
+[39%] 544
+[39%] 545 [not run] pmsocks is not installed and/or not configured
+[39%] 546
+[39%] 547
+[40%] 548
+[40%] 549
+[40%] 550
+[40%] 551
+[40%] 552
+[40%] 553
+[40%] 554
+[40%] 555 [not run] No /etc/*syslog.conf -- probably using a different syslog package
+[40%] 556
+[40%] 557
+[40%] 558
+[40%] 559
+[40%] 560
+[41%] 561
+[41%] 562
+[41%] 563
+[41%] 564
+[41%] 565
+[41%] 566
+[41%] 567
+[41%] 568
+[41%] 569
+[41%] 571
+[41%] 572
+[41%] 573
+[41%] 574
+[42%] 575
+[42%] 576
+[42%] 577
+[42%] 578
+[42%] 579
+[42%] 580
+[42%] 581
+[42%] 582
+[42%] 583 [not run] Cannot find first remote host running pmcd
+[42%] 585
+[42%] 586
+[42%] 587
+[42%] 588
+[42%] 589 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[43%] 590
+[43%] 591
+[43%] 592
+[43%] 593
+[43%] 594
+[43%] 595
+[43%] 596
+[43%] 597
+[43%] 598
+[43%] 599
+[43%] 600
+[43%] 601
+[43%] 602
+[44%] 603 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[44%] 604
+[44%] 605
+[44%] 606
+[44%] 607
+[44%] 608
+[44%] 609
+[44%] 610
+[44%] 611
+[44%] 612
+[44%] 613
+[44%] 614
+[44%] 615
+[45%] 616
+[45%] 617
+[45%] 618
+[45%] 619
+[45%] 620
+[45%] 621
+[45%] 622 [not run] PCPQA_HYPHEN_HOST is not set in ./common.config
+[45%] 623
+[45%] 624
+[45%] 625
+[45%] 626
+[45%] 627
+[45%] 628
+[46%] 629
+[46%] 630
+[46%] 632
+[46%] 633
+[46%] 634
+[46%] 635 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[46%] 636
+[46%] 637
+[46%] 638
+[46%] 639
+[46%] 640
+[46%] 641
+[46%] 642
+[47%] 643
+[47%] 644
+[47%] 645
+[47%] 646
+[47%] 647
+[47%] 648
+[47%] 649
+[47%] 650
+[47%] 651 [not run] need sensible setup, not simply hostname => localhost
+[47%] 652
+[47%] 653
+[47%] 654 [not run] no GFS2 module to load and not builtin
+[47%] 655 [not run] no GFS2 module to load and not builtin
+[47%] 656
+[48%] 657
+[48%] 658
+[48%] 659
+[48%] 662 [not run] Redis server not running locally
+[48%] 664
+[48%] 665
+[48%] 666
+[48%] 667
+[48%] 668 [not run] missing docker permissions or service
+[48%] 669
+[48%] 670
+[48%] 671
+[48%] 672
+[49%] 673
+[49%] 674 - output mismatch (see 674.out.bad)
+3c3
+< ./674.sh: It is me, QA 674
+---
+> ./674: line 43: ./674.sh: Permission denied
+6c6,7
+< TMP/674.sh: It is me, QA 674
+---
+> Cannot find a pcp-674.sh command to execute
+> Please install pcp system tools package
+9c10,11
+< TMP/674.sh: It is me, QA 674
+---
+> Cannot find a pcp-674.sh command to execute
+> Please install pcp system tools package
+12c14,15
+< TMP/674.sh: It is me, QA 674
+---
+> Cannot find a pcp-../674.sh command to execute
+> Please install pcp system tools package
+15c18,19
+< TMP/674.sh: It is me, QA 674
+---
+> Cannot find a pcp-/tmp/674-651580/674.sh command to execute
+> Please install pcp system tools package
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[49%] 675
+[49%] 676
+[49%] 677
+[49%] 678
+[49%] 679
+[49%] 680
+[49%] 681 - output mismatch (see 681.out.bad)
+70,76c70
+< my arg echoer ...
+< [0] TMP.sh
+< [1] blah;trickme|foo
+< [2] cat
+< [3] and
+< [4] dog
+< __pmProcessExec -> 0
+---
+> __pmProcessExec -> 101 exit=101
+79c73
+< __pmProcessExec: pid=PID wait_pid=PID exit=0
+---
+> __pmProcessExec: pid=PID wait_pid=PID exit=101
+82a77,79
+> execve(0x56e0950(TMP.sh), 0x56e0be0, 0x1fff000228) failed, errno 13
+> EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+> Add more stringent tests in PRE(sys_execve), or work out how to recover.
+91,96d87
+< my arg echoer ...
+< [0] TMP.sh
+< [1] blah;trickme|foo
+< [2] cat
+< [3] and
+< [4] dog
+98c89
+< __pmProcessPipeClose() -> 0
+---
+> __pmProcessPipeClose() -> 101 exit=101
+101c92
+< __pmProcessPipeClose: pid=PID wait_pid=PID exit=0
+---
+> __pmProcessPipeClose: pid=PID wait_pid=PID exit=101
+104a96,98
+> execve(0x56e0960(TMP.sh), 0x56e0bf0, 0x1fff000220) failed, errno 13
+> EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+> Add more stringent tests in PRE(sys_execve), or work out how to recover.
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[49%] 682
+[49%] 683
+[49%] 684
+[49%] 685
+[50%] 686
+[50%] 687 - output mismatch (see 687.out.bad)
+11,12c11,12
+<  pmlogger [-...C...] ...
+<  The -C option will cause the configuration file ...
+---
+> man: can't set the locale; make sure $LC_* and $LANG are correct
+> No manual entry for pmlogger
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[50%] 688
+[50%] 689
+[50%] 690
+[50%] 691
+[50%] 692
+[50%] 693
+[50%] 694
+[50%] 695
+[50%] 696
+[50%] 697
+[50%] 698
+[51%] 699
+[51%] 700
+[51%] 701
+[51%] 702
+[51%] 703 [not run] No one is home on the default http port 80
+[51%] 704
+[51%] 705
+[51%] 706
+[51%] 707
+[51%] 708
+[51%] 710
+[51%] 711
+[51%] 712
+[52%] 713
+[52%] 714
+[52%] 715
+[52%] 716
+[52%] 717
+[52%] 718
+[52%] 719
+[52%] 720
+[52%] 721
+[52%] 722
+[52%] 723
+[52%] 724
+[52%] 725
+[52%] 726
+[53%] 728
+[53%] 729
+[53%] 730
+[53%] 731
+[53%] 732
+[53%] 733
+[53%] 734 [not run] No remote hosts available
+[53%] 735 [failed, exit status 1] - output mismatch (see 735.out.bad)
+2,34c2,4
+< Control group list for current process checks out
+< 
+< Checking logged control group proc data ...
+< 
+< == Fetching proc.psinfo.cgroups metric - procpid-4.14.5-root-005.tgz
+< 
+< proc.psinfo.cgroups
+<     inst [N or "000001 /usr/lib/systemd/systemd"] value "cpuset:/;hugetlb:/;memory:/init.scope;pids:/init.scope;devices:/init.scope;freezer:/;blkio:/init.scope;net_cls,net_prio:/;perf_event:/;cpu,cpuacct:/init.scope;name=systemd:/init.scope;:/init.scope"
+<     inst [N or "000996 /usr/libexec/docker/docker-containerd-current"] value "cpuset:/;hugetlb:/;memory:/system.slice/docker-containerd.service;pids:/system.slice/docker-containerd.service;devices:/system.slice/docker-containerd.service;freezer:/;blkio:/system.slice/docker-containerd.service;net_cls,net_prio:/;perf_event:/;cpu,cpuacct:/system.slice/docker-containerd.service;name=systemd:/system.slice/docker-containerd.service;:/system.slice/docker-containerd.service"
+<     inst [N or "026287 /usr/libexec/docker/docker-containerd-shim-current"] value "cpuset:/;hugetlb:/;memory:/system.slice/docker-containerd.service;pids:/system.slice/docker-containerd.service;devices:/system.slice/docker-containerd.service;freezer:/;blkio:/system.slice/docker-containerd.service;net_cls,net_prio:/;perf_event:/;cpu,cpuacct:/system.slice/docker-containerd.service;name=systemd:/system.slice/docker-containerd.service;:/system.slice/docker-containerd.service"
+<     inst [N or "026304 /bin/prometheus"] value "cpuset:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;hugetlb:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;memory:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;pids:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;devices:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;freezer:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;blkio:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;net_cls,net_prio:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;perf_event:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope"
+< 
+< == Fetching proc.id.container metric - procpid-4.14.5-root-005.tgz
+< 
+< proc.id.container
+<     inst [N or "000001 /usr/lib/systemd/systemd"] value ""
+<     inst [N or "000996 /usr/libexec/docker/docker-containerd-current"] value ""
+<     inst [N or "026287 /usr/libexec/docker/docker-containerd-shim-current"] value ""
+<     inst [N or "026304 /bin/prometheus"] value "0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736"
+< 
+< == Fetching proc.psinfo.cgroups metric - procpid-4.18.13-root-006.tgz
+< 
+< proc.psinfo.cgroups
+<     inst [N or "000001 /usr/lib/systemd/systemd"] value "blkio:/;devices:/;freezer:/;hugetlb:/;perf_event:/;cpu,cpuacct:/;cpuset:/;net_cls,net_prio:/;pids:/;memory:/;name=systemd:/init.scope;:/init.scope"
+<     inst [N or "025731 podman"] value "blkio:/;devices:/user.slice;freezer:/;hugetlb:/;perf_event:/;cpu,cpuacct:/;cpuset:/;net_cls,net_prio:/;pids:/user.slice/user-1000.slice/user@1000.service;memory:/user.slice/user-1000.slice/user@1000.service;name=systemd:/user.slice/user-1000.slice/user@1000.service/gnome-terminal-server.service;:/user.slice/user-1000.slice/user@1000.service/gnome-terminal-server.service"
+<     inst [N or "025951 /bin/prometheus"] value "blkio:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;devices:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;freezer:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;hugetlb:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;perf_event:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;cpu,cpuacct:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;cpuset:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;net_cls,net_prio:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;pids:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope"
+< 
+< == Fetching proc.id.container metric - procpid-4.18.13-root-006.tgz
+< 
+< proc.id.container
+<     inst [N or "000001 /usr/lib/systemd/systemd"] value ""
+<     inst [N or "025731 podman"] value ""
+<     inst [N or "025951 /bin/prometheus"] value "06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c"
+---
+> Mismatch on control group list:
+> PCP cgroups: perf_event:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope;rdma:/;cpu,cpuacct:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope;pids:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope;blkio:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope;hugetlb:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope;freezer:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope;cpuset:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope;net_cls,net_prio:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope;memory:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope
+> SYS cgroups: perf_event:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope;rdma:/;cpu,cpuacct:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope;pids:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope;blkio:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope;hugetlb:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope;freezer:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope;cpuset:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope;net_cls,net_prio:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope;memory:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope;devices:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope;name=systemd:/machine.slice/libpod-e4c2a05926f7a7556534a8218a41e71665c5b3b01719ccf6880edd63b0c9cbd9.scope;:/system.slice/runner-provisioner.service
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[53%] 736
+[53%] 737
+[53%] 738
+[53%] 739
+[53%] 740
+[54%] 741
+[54%] 742
+[54%] 743
+[54%] 744
+[54%] 745
+[54%] 746
+[54%] 747
+[54%] 748
+[54%] 749 [not run] No systemtap stap executable found
+[54%] 750
+[54%] 751
+[54%] 752
+[54%] 753
+[55%] 754
+[55%] 755
+[55%] 756
+[55%] 757
+[55%] 758
+[55%] 759 [not run] unbound-control not installed
+[55%] 760 [not run] Noones home on the default ActiveMQ REST port 8161
+[55%] 761
+[55%] 762
+[55%] 763
+[55%] 764
+[55%] 765
+[55%] 766 - output mismatch (see 766.out.bad)
+3c3,5
+< Discovered pmcd servers:
+---
+> [Mon Jun  1 18:16:28] pmfind(733073) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+> [Mon Jun  1 18:16:28] pmfind(733073) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+> No pmcd servers discovered
+7c9,10
+< Discovered pmcd servers:
+---
+> [Mon Jun  1 18:16:28] pmfind(733080) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+> No pmcd servers discovered
+9a13,14
+> [Mon Jun  1 18:16:28] pmfind(733087) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+> [Mon Jun  1 18:16:28] pmfind(733087) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+11a17
+> [Mon Jun  1 18:16:28] pmfind(733094) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+13a20
+> [Mon Jun  1 18:16:28] pmfind(733101) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[56%] 767
+[56%] 768
+[56%] 769
+[56%] 770 [not run] libpcp not built with fault injection enabled
+[56%] 771
+[56%] 772
+[56%] 773
+[56%] 774
+[56%] 775
+[56%] 776
+[56%] 777
+[56%] 778 [not run] Cannot run psql as the postgres user, postgresql not installed or running?
+[56%] 779
+[57%] 780 [not run] Redis server not running locally
+[57%] 781
+[57%] 783
+[57%] 784
+[57%] 785
+[57%] 786
+[57%] 787
+[57%] 788
+[57%] 789 [not run] Zimbra not installed
+[57%] 790
+[57%] 791
+[57%] 792
+[57%] 793
+[57%] 794 [not run] Cannot find a working 'docker images' command
+[58%] 795 [not run] perl Spreadsheet::ReadSXC module not installed
+[58%] 796 [not run] Noones home on the default elasticsearch port 9200
+[58%] 797
+[58%] 798
+[58%] 799
+[58%] 800
+[58%] 801
+[58%] 802
+[58%] 803
+[58%] 804
+[58%] 805 - output mismatch (see 805.out.bad)
+8c8
+< Check postfix metrics have appeared ... X metrics and Y values
+---
+> Check postfix metrics have appeared ... X metrics and 3 values
+12,22c12
+<     inst [0 or "total"] value 0
+<     inst [1 or "0-5 mins"] value 1
+<     inst [2 or "5-10 mins"] value 0
+<     inst [3 or "10-20 mins"] value 1
+<     inst [4 or "20-40 mins"] value 0
+<     inst [5 or "40-80 mins"] value 1
+<     inst [6 or "80-160 mins"] value 0
+<     inst [7 or "160-320 mins"] value 1
+<     inst [8 or "320-640 mins"] value 0
+<     inst [9 or "640-1280 mins"] value 1
+<     inst [10 or "1280+ mins"] value 10
+---
+> Error: Try again. Information not currently available
+25,35c15
+<     inst [0 or "total"] value 10
+<     inst [1 or "0-5 mins"] value 9
+<     inst [2 or "5-10 mins"] value 8
+<     inst [3 or "10-20 mins"] value 7
+<     inst [4 or "20-40 mins"] value 6
+<     inst [5 or "40-80 mins"] value 5
+<     inst [6 or "80-160 mins"] value 4
+<     inst [7 or "160-320 mins"] value 3
+<     inst [8 or "320-640 mins"] value 2
+<     inst [9 or "640-1280 mins"] value 1
+<     inst [10 or "1280+ mins"] value 0
+---
+> Error: Try again. Information not currently available
+38,48c18
+<     inst [0 or "total"] value 10
+<     inst [1 or "0-5 mins"] value 9
+<     inst [2 or "5-10 mins"] value 8
+<     inst [3 or "10-20 mins"] value 7
+<     inst [4 or "20-40 mins"] value 6
+<     inst [5 or "40-80 mins"] value 5
+<     inst [6 or "80-160 mins"] value 4
+<     inst [7 or "160-320 mins"] value 3
+<     inst [8 or "320-640 mins"] value 2
+<     inst [9 or "640-1280 mins"] value 1
+<     inst [10 or "1280+ mins"] value 0
+---
+> Error: Try again. Information not currently available
+51,61c21
+<     inst [0 or "total"] value 9
+<     inst [1 or "0-5 mins"] value 0
+<     inst [2 or "5-10 mins"] value 1
+<     inst [3 or "10-20 mins"] value 2
+<     inst [4 or "20-40 mins"] value 3
+<     inst [5 or "40-80 mins"] value 4
+<     inst [6 or "80-160 mins"] value 5
+<     inst [7 or "160-320 mins"] value 6
+<     inst [8 or "320-640 mins"] value 7
+<     inst [9 or "640-1280 mins"] value 8
+<     inst [10 or "1280+ mins"] value 9
+---
+> Error: Try again. Information not currently available
+64,74c24
+<     inst [0 or "total"] value 0
+<     inst [1 or "0-5 mins"] value 1
+<     inst [2 or "5-10 mins"] value 2
+<     inst [3 or "10-20 mins"] value 3
+<     inst [4 or "20-40 mins"] value 4
+<     inst [5 or "40-80 mins"] value 5
+<     inst [6 or "80-160 mins"] value 6
+<     inst [7 or "160-320 mins"] value 7
+<     inst [8 or "320-640 mins"] value 8
+<     inst [9 or "640-1280 mins"] value 9
+<     inst [10 or "1280+ mins"] value 10
+---
+> Error: Try again. Information not currently available
+87,97c37
+<     inst [0 or "total"] value 0
+<     inst [1 or "0-5 mins"] value 1
+<     inst [2 or "5-10 mins"] value 0
+<     inst [3 or "10-20 mins"] value 1
+<     inst [4 or "20-40 mins"] value 0
+<     inst [5 or "40-80 mins"] value 1
+<     inst [6 or "80-160 mins"] value 0
+<     inst [7 or "160-320 mins"] value 1
+<     inst [8 or "320-640 mins"] value 0
+<     inst [9 or "640-1280 mins"] value 1
+<     inst [10 or "1280+ mins"] value 10
+---
+> Error: Try again. Information not currently available
+100,110c40
+<     inst [0 or "total"] value 10
+<     inst [1 or "0-5 mins"] value 9
+<     inst [2 or "5-10 mins"] value 8
+<     inst [3 or "10-20 mins"] value 7
+<     inst [4 or "20-40 mins"] value 6
+<     inst [5 or "40-80 mins"] value 5
+<     inst [6 or "80-160 mins"] value 4
+<     inst [7 or "160-320 mins"] value 3
+<     inst [8 or "320-640 mins"] value 2
+<     inst [9 or "640-1280 mins"] value 1
+<     inst [10 or "1280+ mins"] value 0
+---
+> Error: Try again. Information not currently available
+113,123c43
+<     inst [0 or "total"] value 10
+<     inst [1 or "0-5 mins"] value 9
+<     inst [2 or "5-10 mins"] value 8
+<     inst [3 or "10-20 mins"] value 7
+<     inst [4 or "20-40 mins"] value 6
+<     inst [5 or "40-80 mins"] value 5
+<     inst [6 or "80-160 mins"] value 4
+<     inst [7 or "160-320 mins"] value 3
+<     inst [8 or "320-640 mins"] value 2
+<     inst [9 or "640-1280 mins"] value 1
+<     inst [10 or "1280+ mins"] value 0
+---
+> Error: Try again. Information not currently available
+126,136c46
+<     inst [0 or "total"] value 9
+<     inst [1 or "0-5 mins"] value 0
+<     inst [2 or "5-10 mins"] value 1
+<     inst [3 or "10-20 mins"] value 2
+<     inst [4 or "20-40 mins"] value 3
+<     inst [5 or "40-80 mins"] value 4
+<     inst [6 or "80-160 mins"] value 5
+<     inst [7 or "160-320 mins"] value 6
+<     inst [8 or "320-640 mins"] value 7
+<     inst [9 or "640-1280 mins"] value 8
+<     inst [10 or "1280+ mins"] value 9
+---
+> Error: Try again. Information not currently available
+139,149c49
+<     inst [0 or "total"] value 0
+<     inst [1 or "0-5 mins"] value 1
+<     inst [2 or "5-10 mins"] value 2
+<     inst [3 or "10-20 mins"] value 3
+<     inst [4 or "20-40 mins"] value 4
+<     inst [5 or "40-80 mins"] value 5
+<     inst [6 or "80-160 mins"] value 6
+<     inst [7 or "160-320 mins"] value 7
+<     inst [8 or "320-640 mins"] value 8
+<     inst [9 or "640-1280 mins"] value 9
+<     inst [10 or "1280+ mins"] value 10
+---
+> Error: Try again. Information not currently available
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[58%] 806
+[58%] 807
+[59%] 808
+[59%] 810
+[59%] 811
+[59%] 812
+[59%] 813
+[59%] 814
+[59%] 815
+[59%] 816
+[59%] 817
+[59%] 818
+[59%] 819 [not run] Noones home on the default elasticsearch port 9200
+[59%] 820
+[59%] 821
+[60%] 823
+[60%] 824
+[60%] 825 [not run] Noones home on the default DS 389 port
+[60%] 826
+[60%] 827
+[60%] 828
+[60%] 829
+[60%] 830
+[60%] 831
+[60%] 832
+[60%] 833
+[60%] 834
+[60%] 835 [not run] Noones home on the default memcached port 11211
+[61%] 836
+[61%] 837
+[61%] 838
+[61%] 839
+[61%] 840
+[61%] 841
+[61%] 842
+[61%] 843
+[61%] 844
+[61%] 845 - output mismatch (see 845.out.bad)
+10,18c10,17
+< capacity is in range
+< used is in range
+< free is in range
+< maxfiles is in range
+< usedfiles is in range
+< freefiles is in range
+< full is in range
+< blocksize is in range
+< avail is in range
+---
+> Traceback (most recent call last):
+>   File "/var/lib/pcp/testsuite/src/fsstats.python", line 61, in <module>
+>     sts = manager.run()
+>   File "/usr/lib64/python3.7/site-packages/pcp/pmcc.py", line 686, in run
+>     self._printer.report(self)
+>   File "/var/lib/pcp/testsuite/src/fsstats.python", line 49, in report
+>     filesys[self._device], mounts[self._fspath]))
+> KeyError: 'overlay'
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[61%] 846 - output mismatch (see 846.out.bad)
+3,65c3,4
+< Note: timezone set to local timezone of host "time.greenwich.com" from archive
+< 
+< Log Label (Log Format Version 2)
+< Performance metrics from host time.greenwich.com
+<     commencing Tue Jan 26 01:02:00.000000 2010
+<     ending     Tue Jan 26 13:02:00.000000 2010
+< 
+< Descriptions for Metrics in the Log ...
+< PMID: 245.0.5 (metric.e)
+<     Data Type: string  InDom: PM_INDOM_NULL 0xffffffff
+<     Semantics: instant  Units: none
+< PMID: 245.0.4 (metric.d)
+<     Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+<     Semantics: instant  Units: none
+< PMID: 245.0.3 (metric.c)
+<     Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+<     Semantics: instant  Units: none
+< PMID: 245.0.2 (metric.b)
+<     Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+<     Semantics: counter  Units: none
+< PMID: 245.0.1 (metric.a)
+<     Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+<     Semantics: counter  Units: none
+< 
+< Instance Domains in the Log ...
+< 
+< Temporal Index
+< 		Log Vol    end(meta)     end(log)
+< 01:02:00.000000	      0          132          132
+< 01:02:00.000000	      0          372          132
+< 13:02:00.000000	      0          372          788
+< 
+< [164 bytes]
+< 01:02:00.000000 5 metrics
+<     245.0.1 (metric.a): value 100
+<     245.0.2 (metric.b): value 200
+<     245.0.3 (metric.c): value 300
+<     245.0.4 (metric.d): value 1
+<     245.0.5 (metric.e): value "foo bar first"
+< 
+< [164 bytes]
+< 05:02:00.000000 5 metrics
+<     245.0.1 (metric.a): value 110
+<     245.0.2 (metric.b): value 200
+<     245.0.3 (metric.c): value 290
+<     245.0.4 (metric.d): value 2
+<     245.0.5 (metric.e): value "foo bar second"
+< 
+< [164 bytes]
+< 09:02:00.000000 5 metrics
+<     245.0.1 (metric.a): value 120
+<     245.0.2 (metric.b): value 200
+<     245.0.3 (metric.c): value 280
+<     245.0.4 (metric.d): value 3
+<     245.0.5 (metric.e): value "foo bar third"
+< 
+< [164 bytes]
+< 13:02:00.000000 5 metrics
+<     245.0.1 (metric.a): value 130
+<     245.0.2 (metric.b): value 200
+<     245.0.3 (metric.c): value 270
+<     245.0.4 (metric.d): value 4
+<     245.0.5 (metric.e): value "foo bar last"
+---
+> Error: Perl module Spreadsheet::Read needs to be installed either from
+> your distro or downloaded and installed from CPAN
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[61%] 847 [not run] Cannot find a working 'docker images' command
+[61%] 848
+[62%] 849
+[62%] 851
+[62%] 852
+[62%] 853
+[62%] 854
+[62%] 855
+[62%] 856
+[62%] 857
+[62%] 858
+[62%] 859
+[62%] 860
+[62%] 861
+[62%] 862
+[63%] 863 [not run] No binary named python2 found
+[63%] 864 [not run] pcp-collectl not installed
+[63%] 865
+[63%] 866 [not run] libpcp not built with fault injection enabled
+[63%] 867 [not run] Redis server not running locally
+[63%] 868
+[63%] 869
+[63%] 870
+[63%] 871
+[63%] 872
+[63%] 873 [not run] only tested on single CPU systems
+[63%] 874
+[63%] 875
+[63%] 876 [not run] XFS module not present: modprobe: FATAL: Module xfs not found in directory /lib/modules/5.3.0-1020-azure
+[64%] 877
+[64%] 878
+[64%] 879
+[64%] 880
+[64%] 881
+[64%] 882
+[64%] 883
+[64%] 884
+[64%] 885
+[64%] 886
+[64%] 887
+[64%] 888
+[64%] 889
+[65%] 890
+[65%] 891
+[65%] 892
+[65%] 893 - output mismatch (see 893.out.bad)
+2c2,3
+< Local pmcd count: 1
+---
+> ./893: line 40: /tmp/893-821134.pmcd/pmcd: Permission denied
+> Local pmcd count: 0
+3a5
+> /usr/libexec/pcp/bin/pmsignal: line 123: kill: (821163) - No such process
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[65%] 894
+[65%] 895
+[65%] 896
+[65%] 897
+[65%] 898
+[65%] 899
+[65%] 900
+[65%] 901
+[65%] 902
+[66%] 903
+[66%] 904
+[66%] 905 [not run] Cannot find a PCP 2.7 QA host
+[66%] 906
+[66%] 907
+[66%] 908
+[66%] 909
+[66%] 910
+[66%] 911
+[66%] 912 [not run] Noone home on default NutCracker port 22222
+[66%] 913 [not run] Noone home on default Redis port 6379
+[66%] 914
+[66%] 915
+[67%] 916
+[67%] 917 [not run] upstream policy package not loaded
+[67%] 918
+[67%] 919
+[67%] 920
+[67%] 921
+[67%] 922
+[67%] 923
+[67%] 924
+[67%] 925
+[67%] 926
+[67%] 927
+[67%] 928
+[68%] 929
+[68%] 930
+[68%] 931
+[68%] 932
+[68%] 933
+[68%] 934
+[68%] 935
+[68%] 936
+[68%] 937
+[68%] 938
+[68%] 939
+[68%] 940 [not run] upstream container policy package not loaded
+[68%] 941
+[68%] 942
+[69%] 943 - output mismatch (see 943.out.bad)
+207c207
+< proc.psinfo.tty_pgrp COUNT
+---
+> proc.psinfo.tty_pgrp 0
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[69%] 944
+[69%] 945
+[69%] 946
+[69%] 947
+[69%] 948
+[69%] 949
+[69%] 950
+[69%] 951
+[69%] 952
+[69%] 953
+[69%] 954 [not run] libpcp not built with -DPM_MULTI_THREAD_DEBUG
+[69%] 955
+[70%] 956
+[70%] 957
+[70%] 958
+[70%] 959
+[70%] 960 [not run] No ds389 directory log files accessible
+[70%] 961
+[70%] 962
+[70%] 963
+[70%] 964
+[70%] 965
+[70%] 966
+[70%] 967 [not run] No zsh executable
+[70%] 968
+[71%] 969
+[71%] 970
+[71%] 971
+[71%] 972
+[71%] 973
+[71%] 974
+[71%] 975
+[71%] 976
+[71%] 977
+[71%] 978
+[71%] 979
+[71%] 980
+[71%] 981
+[72%] 982
+[72%] 983
+[72%] 984
+[72%] 985 - output mismatch (see 985.out.bad)
+3,65c3,4
+< Note: timezone set to local timezone of host "time.greenwich.com" from archive
+< 
+< Log Label (Log Format Version 2)
+< Performance metrics from host time.greenwich.com
+<     commencing Tue Jan 26 01:02:00.000000 2010
+<     ending     Tue Jan 26 13:02:00.000000 2010
+< 
+< Descriptions for Metrics in the Log ...
+< PMID: 245.0.5 (metric.e)
+<     Data Type: string  InDom: PM_INDOM_NULL 0xffffffff
+<     Semantics: instant  Units: none
+< PMID: 245.0.4 (metric.d)
+<     Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+<     Semantics: instant  Units: none
+< PMID: 245.0.3 (metric.c)
+<     Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+<     Semantics: instant  Units: none
+< PMID: 245.0.2 (metric.b)
+<     Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+<     Semantics: counter  Units: none
+< PMID: 245.0.1 (metric.a)
+<     Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+<     Semantics: counter  Units: none
+< 
+< Instance Domains in the Log ...
+< 
+< Temporal Index
+< 		Log Vol    end(meta)     end(log)
+< 01:02:00.000000	      0          132          132
+< 01:02:00.000000	      0          372          132
+< 13:02:00.000000	      0          372          788
+< 
+< [164 bytes]
+< 01:02:00.000000 5 metrics
+<     245.0.1 (metric.a): value 100
+<     245.0.2 (metric.b): value 200
+<     245.0.3 (metric.c): value 300
+<     245.0.4 (metric.d): value 1
+<     245.0.5 (metric.e): value "foo bar first"
+< 
+< [164 bytes]
+< 05:02:00.000000 5 metrics
+<     245.0.1 (metric.a): value 110
+<     245.0.2 (metric.b): value 200
+<     245.0.3 (metric.c): value 290
+<     245.0.4 (metric.d): value 2
+<     245.0.5 (metric.e): value "foo bar second"
+< 
+< [164 bytes]
+< 09:02:00.000000 5 metrics
+<     245.0.1 (metric.a): value 120
+<     245.0.2 (metric.b): value 200
+<     245.0.3 (metric.c): value 280
+<     245.0.4 (metric.d): value 3
+<     245.0.5 (metric.e): value "foo bar third"
+< 
+< [164 bytes]
+< 13:02:00.000000 5 metrics
+<     245.0.1 (metric.a): value 130
+<     245.0.2 (metric.b): value 200
+<     245.0.3 (metric.c): value 270
+<     245.0.4 (metric.d): value 4
+<     245.0.5 (metric.e): value "foo bar last"
+---
+> Error: Perl module Spreadsheet::Read needs to be installed either from
+> your distro or downloaded and installed from CPAN
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[72%] 986 [not run] perl Spreadsheet::ReadSXC module not installed
+[72%] 987
+[72%] 988
+[72%] 989
+[72%] 990
+[72%] 991
+[72%] 992
+[72%] 993
+[72%] 994
+[73%] 995
+[73%] 996
+[73%] 997
+[73%] 998
+[73%] 999
+[73%] 1000
+[73%] 1001 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[73%] 1002 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[73%] 1003 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[73%] 1004 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[73%] 1005 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[73%] 1006 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[73%] 1007 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[73%] 1008 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1009 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1010 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1011 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1012 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1013 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1014 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1015 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1016 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1021 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1022 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1023 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1024
+[74%] 1025 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[75%] 1026 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[75%] 1027 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[75%] 1028 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[75%] 1029 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[75%] 1030
+[75%] 1031 [not run] perl Slurm module not installed
+[75%] 1032 [not run] Redis server not running locally
+[75%] 1033
+[75%] 1034 [not run] no named stats file(s)
+[75%] 1035 [not run] Oracle PMDA not configured
+[75%] 1036
+[75%] 1037
+[75%] 1038
+[76%] 1039
+[76%] 1040
+[76%] 1041 [not run] no socket, libvirtd not running?
+[76%] 1042 [not run] Redis server not running locally
+[76%] 1043
+[76%] 1044
+[76%] 1045
+[76%] 1046
+[76%] 1047
+[76%] 1048
+[76%] 1049
+[76%] 1050
+[76%] 1051
+[77%] 1052
+[77%] 1053
+[77%] 1054
+[77%] 1055
+[77%] 1056
+[77%] 1057
+[77%] 1058
+[77%] 1059
+[77%] 1060
+[77%] 1061 [not run] targetcli not installed
+[77%] 1062
+[77%] 1063
+[77%] 1064
+[78%] 1065
+[78%] 1066
+[78%] 1067
+[78%] 1068
+[78%] 1069
+[78%] 1070 [not run] perl Spreadsheet::Read module not installed
+[78%] 1071
+[78%] 1072
+[78%] 1073
+[78%] 1074
+[78%] 1075
+[78%] 1076
+[78%] 1077
+[78%] 1078
+[79%] 1079
+[79%] 1080
+[79%] 1081 [not run] No binary named python2 found
+[79%] 1082
+[79%] 1083
+[79%] 1084
+[79%] 1085
+[79%] 1086
+[79%] 1087
+[79%] 1088
+[79%] 1089
+[79%] 1090 [not run] Redis server not running locally
+[79%] 1091
+[80%] 1092
+[80%] 1093
+[80%] 1094
+[80%] 1095
+[80%] 1096
+[80%] 1097
+[80%] 1098
+[80%] 1099
+[80%] 1100
+[80%] 1101
+[80%] 1102
+[80%] 1103
+[80%] 1104
+[81%] 1105
+[81%] 1106
+[81%] 1107
+[81%] 1108
+[81%] 1109
+[81%] 1110
+[81%] 1111
+[81%] 1112
+[81%] 1113
+[81%] 1114
+[81%] 1115 [failed, exit status 1] - output mismatch (see 1115.out.bad)
+40c40,42
+< === report metric values ===
+---
+> [Mon Jun  1 18:43:52] pmdabcc(920349) Error: sysfork: Failed to compile BPF module b'/var/lib/pcp/pmdas/bcc/modules/sysfork.bpf'
+> [Mon Jun  1 18:43:52] pmdabcc(920349) Error: sysfork: Module NOT active!
+> [Mon Jun  1 18:43:52] pmdabcc(920349) Error: Failed to compile module sysfork, aborting.
+42,55c44,45
+< bcc.proc.sysfork PMID: 149.2.0 [fork rate]
+<     Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+<     Semantics: counter  Units: count
+< Help:
+< fork rate
+<     value OK
+< === verify metric values ===
+< 
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 18:43:52 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[81%] 1116 [failed, exit status 1] - output mismatch (see 1116.out.bad)
+42,43c42,44
+< === report metric values ===
+< found value 20971520 +- 10%
+---
+> [Mon Jun  1 18:45:04] pmdabcc(922644) Error: bioperpid: Failed to compile BPF module b'/var/lib/pcp/pmdas/bcc/modules/biotop.bpf'
+> [Mon Jun  1 18:45:04] pmdabcc(922644) Error: bioperpid: Module NOT active!
+> [Mon Jun  1 18:45:04] pmdabcc(922644) Error: Failed to compile module bioperpid, aborting.
+45,50c46,47
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 18:45:04 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[81%] 1117 [failed, exit status 1] - output mismatch (see 1117.out.bad)
+44,47c44,46
+< === report metric values ===
+< OK
+< === check metric labels ===
+< OK
+---
+> [Mon Jun  1 18:46:16] pmdabcc(924937) Error: biolatency: Failed to compile BPF module b'/var/lib/pcp/pmdas/bcc/modules/biolatency.bpf'
+> [Mon Jun  1 18:46:16] pmdabcc(924937) Error: biolatency: Module NOT active!
+> [Mon Jun  1 18:46:16] pmdabcc(924937) Error: Failed to compile module biolatency, aborting.
+49,54c48,49
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 18:46:16 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[82%] 1118 [failed, exit status 1] - output mismatch (see 1118.out.bad)
+42,45c42,44
+< === report metric values ===
+< OK
+< === check metric labels ===
+< OK
+---
+> [Mon Jun  1 18:47:29] pmdabcc(927229) Error: runqlat: Failed to compile BPF module <text>
+> [Mon Jun  1 18:47:29] pmdabcc(927229) Error: runqlat: Module NOT active!
+> [Mon Jun  1 18:47:29] pmdabcc(927229) Error: Failed to compile module runqlat, aborting.
+47,52c46,47
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 18:47:29 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[82%] 1119
+[82%] 1120
+[82%] 1121
+[82%] 1122
+[82%] 1123 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[82%] 1124 [failed, exit status 1] - output mismatch (see 1124.out.bad)
+46,47c46,52
+< === report metric values ===
+< OK
+---
+> [Mon Jun  1 18:49:09] pmdabcc(934000) Error: tracepoint_hits: Failed to compile tracepoint probe 'random:urandom_read', disabling.
+> [Mon Jun  1 18:49:09] pmdabcc(934000) Info: tracepoint_hits: Compiling 0 tracepoints: []
+> modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1020-azure
+> chdir(/lib/modules/5.3.0-1020-azure/build): No such file or directory
+> [Mon Jun  1 18:49:09] pmdabcc(934000) Error: tracepoint_hits: Failed to compile BPF module <text>
+> [Mon Jun  1 18:49:09] pmdabcc(934000) Error: tracepoint_hits: Module NOT active!
+> [Mon Jun  1 18:49:09] pmdabcc(934000) Error: Failed to compile module tracepoint_hits, aborting.
+49,54c54,55
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 18:49:09 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[82%] 1126 [not run] mkfs.ext4 not installed
+[82%] 1127 [failed, exit status 1] - output mismatch (see 1127.out.bad)
+46,47c46,48
+< === report metric values ===
+< OK
+---
+> [Mon Jun  1 18:50:22] pmdabcc(936344) Error: uprobe_hits: Failed to compile BPF module <text>
+> [Mon Jun  1 18:50:22] pmdabcc(936344) Error: uprobe_hits: Module NOT active!
+> [Mon Jun  1 18:50:22] pmdabcc(936344) Error: Failed to compile module uprobe_hits, aborting.
+49,54c50,51
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 18:50:22 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[82%] 1128
+[82%] 1129
+[82%] 1130
+[82%] 1131
+[83%] 1132
+[83%] 1133
+[83%] 1134
+[83%] 1135
+[83%] 1136
+[83%] 1137
+[83%] 1138
+[83%] 1139
+[83%] 1140
+[83%] 1141 [not run] pcpupstream module not loaded
+[83%] 1142
+[83%] 1143
+[83%] 1144
+[84%] 1145 [not run] libpcp not built with fault injection enabled
+[84%] 1146
+[84%] 1147
+[84%] 1148
+[84%] 1149
+[84%] 1150 [failed, exit status 1] - output mismatch (see 1150.out.bad)
+48,49c48,50
+< === report metric values ===
+< OK
+---
+> [Mon Jun  1 18:54:13] pmdabcc(950975) Error: usdt_hits: Failed to compile BPF module <text>
+> [Mon Jun  1 18:54:13] pmdabcc(950975) Error: usdt_hits: Module NOT active!
+> [Mon Jun  1 18:54:13] pmdabcc(950975) Error: Failed to compile module usdt_hits, aborting.
+51,56c52,53
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 18:54:13 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[84%] 1151 [not run] libjvm.so not found
+[84%] 1152 [not run] libjvm.so not found
+[84%] 1153 [failed, exit status 1] - output mismatch (see 1153.out.bad)
+42,49c42,44
+< === report metric values for open ===
+< OK
+< === report metric values for read ===
+< OK
+< === report metric values for write ===
+< OK
+< === report metric values for fsync ===
+< OK
+---
+> [Mon Jun  1 18:56:28] pmdabcc(954100) Error: xfsdist: Failed to compile BPF module <text>
+> [Mon Jun  1 18:56:28] pmdabcc(954100) Error: xfsdist: Module NOT active!
+> [Mon Jun  1 18:56:28] pmdabcc(954100) Error: Failed to compile module xfsdist, aborting.
+51,56c46,47
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 18:56:28 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[84%] 1154 [not run] zfs kernel module not present
+[84%] 1155 [failed, exit status 1] - output mismatch (see 1155.out.bad)
+46,70c46
+< === report metric values for pid ===
+< OK
+< === report metric values for comm ===
+< OK
+< === report metric values for laddr ===
+< OK
+< === report metric values for lport ===
+< OK
+< === report metric values for daddr ===
+< OK
+< === report metric values for dport ===
+< OK
+< === report metric values for tx ===
+< OK
+< === report metric values for rx ===
+< OK
+< === report metric values for duration ===
+< OK
+< 
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[84%] 1156 [failed, exit status 1] - output mismatch (see 1156.out.bad)
+42,54c42,44
+< hello world
+< hello PCP
+< hello test
+< === report metric values for comm ===
+< OK
+< === report metric values for pid ===
+< OK
+< === report metric values for ppid ===
+< OK
+< === report metric values for ret ===
+< OK
+< === report metric values for args ===
+< OK
+---
+> [Mon Jun  1 18:57:51] pmdabcc(958436) Error: execsnoop: Failed to compile BPF module <text>
+> [Mon Jun  1 18:57:51] pmdabcc(958436) Error: execsnoop: Module NOT active!
+> [Mon Jun  1 18:57:51] pmdabcc(958436) Error: Failed to compile module execsnoop, aborting.
+56,61c46,47
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 18:57:51 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[84%] 1157 [not run] sch_netem kernel module not available
+[84%] 1158 [failed, exit status 1] - output mismatch (see 1158.out.bad)
+46,63c46,48
+< === report metric values for pid ===
+< OK
+< === report metric values for comm ===
+< OK
+< === report metric values for direction ===
+< OK
+< === report metric values for major ===
+< OK
+< === report metric values for minor ===
+< OK
+< === report metric values for disk ===
+< OK
+< === report metric values for io ===
+< OK
+< === report metric values for bytes ===
+< found value 20971520 +- 10%
+< === report metric values for duration ===
+< OK
+---
+> [Mon Jun  1 18:59:03] pmdabcc(960816) Error: biotop: Failed to compile BPF module b'/var/lib/pcp/pmdas/bcc/modules/biotop.bpf'
+> [Mon Jun  1 18:59:03] pmdabcc(960816) Error: biotop: Module NOT active!
+> [Mon Jun  1 18:59:03] pmdabcc(960816) Error: Failed to compile module biotop, aborting.
+65,70c50,51
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 18:59:03 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[85%] 1159
+[85%] 1160 [not run] ping not installed
+[85%] 1161 [not run] ping not installed
+[85%] 1162
+[85%] 1163
+[85%] 1164
+[85%] 1165 [failed, exit status 1] - output mismatch (see 1165.out.bad)
+44,45c44,46
+< === report metric values ===
+< OK
+---
+> [Mon Jun  1 19:00:34] pmdabcc(964041) Error: klockstat: Failed to compile BPF module <text>
+> [Mon Jun  1 19:00:34] pmdabcc(964041) Error: klockstat: Module NOT active!
+> [Mon Jun  1 19:00:34] pmdabcc(964041) Error: Failed to compile module klockstat, aborting.
+47,52c48,49
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 19:00:34 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[85%] 1166 - output mismatch (see 1166.out.bad)
+3,32c3
+< __pmGetAPIConfig test: OK
+< __pmOpenLog test: expect to see standard log format
+< Log for 1166 on HOST started DATE
+< 
+< G'day cobber
+< __pmNoMem test: expect to see a message
+< [DATE] qa_libpcp_compat(PID) Warning: 1166: malloc(123456) failed: Cannot allocate memory
+< __pmNotifyErr test: expect to see standard message format
+< [DATE] qa_libpcp_compat(PID) Notice: Hullo world! The answer is 42
+< __pmPrintDesc test:
+<     Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+<     Semantics: counter  Units: Mbyte / sec
+< __pmtimeval* tests:
+< Add (expect 1234.567000): 1234.567000
+< Inc (expect 1234.567000): 1234.567000
+< Sub (expect 1234.567000): 1234.567000
+< Dec (expect 1234.567000): 1234.567000
+< Now: OK
+< Stamp: (expect 01:02:03.456) 01:02:03.456
+< HighResStamp: (expect 02:01:00.123456789) 02:01:00.123456789
+< __pmPathSeparator test: OK
+< __pmGetUsername test: OK
+< pmFreeHighResResult test:
+< __pmFreeHighResResult(ADDR)
+< pmSpecLocalPMDA test:
+< Expected error: pmSpecLocal(foo): bad op in spec
+< pmSpecLocal(clear): OK
+< pmSpecLocal(add,...): OK
+< __pmSetProcessIdentity test: (expect failure)
+< [DATE] qa_libpcp_compat(PID) Critical: cannot find the no-such-user user to switch to
+---
+> ./1166: line 52: /tmp/1166-965938: Permission denied
+35,64c6
+< __pmGetAPIConfig test: OK
+< __pmOpenLog test: expect to see standard log format
+< Log for 1166 on HOST started DATE
+< 
+< G'day cobber
+< __pmNoMem test: expect to see a message
+< [DATE] qa_libpcp_compat(PID) Warning: 1166: malloc(123456) failed: Cannot allocate memory
+< __pmNotifyErr test: expect to see standard message format
+< [DATE] qa_libpcp_compat(PID) Notice: Hullo world! The answer is 42
+< __pmPrintDesc test:
+<     Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+<     Semantics: counter  Units: Mbyte / sec
+< __pmtimeval* tests:
+< Add (expect 1234.567000): 1234.567000
+< Inc (expect 1234.567000): 1234.567000
+< Sub (expect 1234.567000): 1234.567000
+< Dec (expect 1234.567000): 1234.567000
+< Now: OK
+< Stamp: (expect 01:02:03.456) 01:02:03.456
+< HighResStamp: (expect 02:01:00.123456789) 02:01:00.123456789
+< __pmPathSeparator test: OK
+< __pmGetUsername test: OK
+< pmFreeHighResResult test:
+< __pmFreeHighResResult(ADDR)
+< pmSpecLocalPMDA test:
+< Expected error: pmSpecLocal(foo): bad op in spec
+< pmSpecLocal(clear): OK
+< pmSpecLocal(add,...): OK
+< __pmSetProcessIdentity test: (expect failure)
+< [DATE] qa_libpcp_compat(PID) Critical: cannot find the no-such-user user to switch to
+---
+> ./1166: line 66: /tmp/1166-965938: Permission denied
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[85%] 1167
+[85%] 1168 - output mismatch (see 1168.out.bad)
+45d44
+< [ ] - bcc.kernel.lock.mutex.spin.avg["inst"] - nanosec
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[85%] 1169
+[85%] 1170 [failed, exit status 1] - output mismatch (see 1170.out.bad)
+44,59c44,46
+< === report metric values for pid ===
+< OK
+< === report metric values for comm ===
+< OK
+< === report metric values for laddr ===
+< OK
+< === report metric values for lport ===
+< OK
+< === report metric values for daddr ===
+< OK
+< === report metric values for dport ===
+< OK
+< === report metric values for rx ===
+< OK
+< === report metric values for tx ===
+< OK
+---
+> [Mon Jun  1 19:03:11] pmdabcc(970151) Error: tcptop: Failed to compile BPF module <text>
+> [Mon Jun  1 19:03:11] pmdabcc(970151) Error: tcptop: Module NOT active!
+> [Mon Jun  1 19:03:11] pmdabcc(970151) Error: Failed to compile module tcptop, aborting.
+61,66c48,49
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 19:03:11 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[85%] 1171 [failed, exit status 1] - output mismatch (see 1171.out.bad)
+42,56c42
+< 
+< === start test program ===
+< 
+< === stop profiling ===
+< bcc.proc.profile old value="{"status": "started", "data": null}" new value="stop"
+< 
+< === verify captured stack frames ===
+< OK
+< 
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Could not start profiling, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[86%] 1172 [failed, exit status 1] - output mismatch (see 1172.out.bad)
+44,46c44,46
+< === generate syscall activity ===
+< === report metric values ===
+< OK
+---
+> [Mon Jun  1 19:03:45] pmdabcc(974277) Error: syscount: Failed to compile BPF module <text>
+> [Mon Jun  1 19:03:45] pmdabcc(974277) Error: syscount: Module NOT active!
+> [Mon Jun  1 19:03:45] pmdabcc(974277) Error: Failed to compile module syscount, aborting.
+48,53c48,49
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 19:03:45 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[86%] 1173 [failed, exit status 1] - output mismatch (see 1173.out.bad)
+46,51c46,48
+< === generate ucall activity ===
+< done
+< === report metric values for ucall count ===
+< OK
+< === report metric values for ucall cml lat ===
+< OK
+---
+> [Mon Jun  1 19:05:58] pmdabcc(976852) Error: ucalls: Failed to compile BPF module <text>
+> [Mon Jun  1 19:05:58] pmdabcc(976852) Error: ucalls: Module NOT active!
+> [Mon Jun  1 19:05:58] pmdabcc(976852) Error: Failed to compile module ucalls, aborting.
+53,58c50,51
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 19:05:58 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[86%] 1174
+[86%] 1175 [not run] libjvm.so not found
+[86%] 1176 [not run] only ext4 works reliably with cachestat
+[86%] 1177
+[86%] 1178 [failed, exit status 1] - output mismatch (see 1178.out.bad)
+46,47c46,48
+< === report metric values ===
+< OK
+---
+> [Mon Jun  1 19:06:19] pmdabcc(979436) Error: tcpperpid: Failed to compile BPF module <text>
+> [Mon Jun  1 19:06:19] pmdabcc(979436) Error: tcpperpid: Module NOT active!
+> [Mon Jun  1 19:06:19] pmdabcc(979436) Error: Failed to compile module tcpperpid, aborting.
+49,54c50,51
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 19:06:19 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[86%] 1179 [not run] libjvm.so not found
+[86%] 1180
+[86%] 1181 [failed, exit status 1] - output mismatch (see 1181.out.bad)
+46,47c46,48
+< === report metric values ===
+< OK
+---
+> [Mon Jun  1 19:07:45] pmdabcc(982186) Error: kprobe_hits: Failed to compile BPF module <text>
+> [Mon Jun  1 19:07:45] pmdabcc(982186) Error: kprobe_hits: Module NOT active!
+> [Mon Jun  1 19:07:45] pmdabcc(982186) Error: Failed to compile module kprobe_hits, aborting.
+49,54c50,51
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 19:07:45 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[86%] 1182
+[86%] 1183
+[86%] 1184
+[87%] 1185
+[87%] 1186
+[87%] 1187
+[87%] 1188 [not run] no device-mapper devices
+[87%] 1189
+[87%] 1190 - output mismatch (see 1190.out.bad)
+19c19,22
+< $PCP_PMDAS_DIR/pipe/pipe.conf ... OK
+---
+> $PCP_PMDAS_DIR/pipe/pipe.conf ... BAD (QA text found)
+>   empty-line   pcpqa   echo
+>   echo-all     pcpqa   echo $0
+>   echo-two     pcpqa   echo $1 $2
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[87%] 1191 - output mismatch (see 1191.out.bad)
+6c6
+<     Data Type: double  InDom: 144.5120 0x24001400
+---
+>     Data Type: double  InDom: 144.6144 0x24001800
+14c14
+<     Data Type: double  InDom: 144.5121 0x24001401
+---
+>     Data Type: double  InDom: 144.6145 0x24001801
+22c22
+<     Data Type: double  InDom: 144.5122 0x24001402
+---
+>     Data Type: double  InDom: 144.6146 0x24001802
+30c30
+<     Data Type: double  InDom: 144.5123 0x24001403
+---
+>     Data Type: double  InDom: 144.6147 0x24001803
+38c38
+<     Data Type: double  InDom: 144.5124 0x24001404
+---
+>     Data Type: double  InDom: 144.6148 0x24001804
+46c46
+<     Data Type: double  InDom: 144.6145 0x24001801
+---
+>     Data Type: double  InDom: 144.7169 0x24001c01
+57c57
+<     Data Type: double  InDom: 144.6144 0x24001800
+---
+>     Data Type: double  InDom: 144.7168 0x24001c00
+68c68
+<     Data Type: double  InDom: 144.6146 0x24001802
+---
+>     Data Type: double  InDom: 144.7170 0x24001c02
+93c93
+<     Data Type: double  InDom: 144.7168 0x24001c00
+---
+>     Data Type: double  InDom: 144.8192 0x24002000
+131c131
+<     Data Type: double  InDom: 144.7169 0x24001c01
+---
+>     Data Type: double  InDom: 144.8193 0x24002001
+140c140
+<     Data Type: double  InDom: 144.7170 0x24001c02
+---
+>     Data Type: double  InDom: 144.8194 0x24002002
+149c149
+<     Data Type: double  InDom: 144.7171 0x24001c03
+---
+>     Data Type: double  InDom: 144.8195 0x24002003
+158c158
+<     Data Type: double  InDom: 144.7172 0x24001c04
+---
+>     Data Type: double  InDom: 144.8196 0x24002004
+167c167
+<     Data Type: double  InDom: 144.7173 0x24001c05
+---
+>     Data Type: double  InDom: 144.8197 0x24002005
+176c176
+<     Data Type: double  InDom: 144.7174 0x24001c06
+---
+>     Data Type: double  InDom: 144.8198 0x24002006
+185c185
+<     Data Type: double  InDom: 144.7175 0x24001c07
+---
+>     Data Type: double  InDom: 144.8199 0x24002007
+194c194
+<     Data Type: double  InDom: 144.7176 0x24001c08
+---
+>     Data Type: double  InDom: 144.8200 0x24002008
+203c203
+<     Data Type: double  InDom: 144.7177 0x24001c09
+---
+>     Data Type: double  InDom: 144.8201 0x24002009
+212c212
+<     Data Type: double  InDom: 144.7178 0x24001c0a
+---
+>     Data Type: double  InDom: 144.8202 0x2400200a
+221c221
+<     Data Type: double  InDom: 144.7179 0x24001c0b
+---
+>     Data Type: double  InDom: 144.8203 0x2400200b
+230c230
+<     Data Type: double  InDom: 144.7180 0x24001c0c
+---
+>     Data Type: double  InDom: 144.8204 0x2400200c
+237c237
+<     Data Type: double  InDom: 144.7181 0x24001c0d
+---
+>     Data Type: double  InDom: 144.8205 0x2400200d
+244c244
+<     Data Type: double  InDom: 144.7182 0x24001c0e
+---
+>     Data Type: double  InDom: 144.8206 0x2400200e
+251c251
+<     Data Type: double  InDom: 144.7183 0x24001c0f
+---
+>     Data Type: double  InDom: 144.8207 0x2400200f
+258c258
+<     Data Type: double  InDom: 144.7184 0x24001c10
+---
+>     Data Type: double  InDom: 144.8208 0x24002010
+265c265
+<     Data Type: double  InDom: 144.7185 0x24001c11
+---
+>     Data Type: double  InDom: 144.8209 0x24002011
+272c272
+<     Data Type: double  InDom: 144.7186 0x24001c12
+---
+>     Data Type: double  InDom: 144.8210 0x24002012
+286c286
+<     Data Type: double  InDom: 144.7188 0x24001c14
+---
+>     Data Type: double  InDom: 144.8212 0x24002014
+298c298
+<     Data Type: double  InDom: 144.7189 0x24001c15
+---
+>     Data Type: double  InDom: 144.8213 0x24002015
+306c306
+<     Data Type: double  InDom: 144.7190 0x24001c16
+---
+>     Data Type: double  InDom: 144.8214 0x24002016
+314c314
+<     Data Type: double  InDom: 144.7191 0x24001c17
+---
+>     Data Type: double  InDom: 144.8215 0x24002017
+322c322
+<     Data Type: double  InDom: 144.7192 0x24001c18
+---
+>     Data Type: double  InDom: 144.8216 0x24002018
+330c330
+<     Data Type: double  InDom: 144.7193 0x24001c19
+---
+>     Data Type: double  InDom: 144.8217 0x24002019
+337c337
+<     Data Type: double  InDom: 144.7194 0x24001c1a
+---
+>     Data Type: double  InDom: 144.8218 0x2400201a
+344c344
+<     Data Type: double  InDom: 144.7195 0x24001c1b
+---
+>     Data Type: double  InDom: 144.8219 0x2400201b
+351c351
+<     Data Type: double  InDom: 144.7196 0x24001c1c
+---
+>     Data Type: double  InDom: 144.8220 0x2400201c
+358c358
+<     Data Type: double  InDom: 144.7197 0x24001c1d
+---
+>     Data Type: double  InDom: 144.8221 0x2400201d
+365c365
+<     Data Type: double  InDom: 144.7198 0x24001c1e
+---
+>     Data Type: double  InDom: 144.8222 0x2400201e
+372c372
+<     Data Type: double  InDom: 144.7199 0x24001c1f
+---
+>     Data Type: double  InDom: 144.8223 0x2400201f
+379c379
+<     Data Type: double  InDom: 144.7200 0x24001c20
+---
+>     Data Type: double  InDom: 144.8224 0x24002020
+386c386
+<     Data Type: double  InDom: 144.7201 0x24001c21
+---
+>     Data Type: double  InDom: 144.8225 0x24002021
+401c401
+<     Data Type: double  InDom: 144.7202 0x24001c22
+---
+>     Data Type: double  InDom: 144.8226 0x24002022
+408c408
+<     Data Type: double  InDom: 144.7203 0x24001c23
+---
+>     Data Type: double  InDom: 144.8227 0x24002023
+415c415
+<     Data Type: double  InDom: 144.7204 0x24001c24
+---
+>     Data Type: double  InDom: 144.8228 0x24002024
+608c608
+<     Data Type: double  InDom: 144.7231 0x24001c3f
+---
+>     Data Type: double  InDom: 144.8255 0x2400203f
+617c617
+<     Data Type: double  InDom: 144.7233 0x24001c41
+---
+>     Data Type: double  InDom: 144.8257 0x24002041
+624c624
+<     Data Type: double  InDom: 144.7232 0x24001c40
+---
+>     Data Type: double  InDom: 144.8256 0x24002040
+631c631
+<     Data Type: double  InDom: 144.7234 0x24001c42
+---
+>     Data Type: double  InDom: 144.8258 0x24002042
+640c640
+<     Data Type: double  InDom: 144.7236 0x24001c44
+---
+>     Data Type: double  InDom: 144.8260 0x24002044
+647c647
+<     Data Type: double  InDom: 144.7235 0x24001c43
+---
+>     Data Type: double  InDom: 144.8259 0x24002043
+654c654
+<     Data Type: double  InDom: 144.7237 0x24001c45
+---
+>     Data Type: double  InDom: 144.8261 0x24002045
+661c661
+<     Data Type: double  InDom: 144.7238 0x24001c46
+---
+>     Data Type: double  InDom: 144.8262 0x24002046
+670c670
+<     Data Type: double  InDom: 144.7240 0x24001c48
+---
+>     Data Type: double  InDom: 144.8264 0x24002048
+677c677
+<     Data Type: double  InDom: 144.7239 0x24001c47
+---
+>     Data Type: double  InDom: 144.8263 0x24002047
+726c726
+<     Data Type: double  InDom: 144.8192 0x24002000
+---
+>     Data Type: double  InDom: 144.9216 0x24002400
+734c734
+<     Data Type: double  InDom: 144.9216 0x24002400
+---
+>     Data Type: double  InDom: 144.10240 0x24002800
+742c742
+<     Data Type: double  InDom: 144.10240 0x24002800
+---
+>     Data Type: double  InDom: 144.11264 0x24002c00
+750c750
+<     Data Type: double  InDom: 144.11264 0x24002c00
+---
+>     Data Type: double  InDom: 144.12288 0x24003000
+765c765
+<     Data Type: double  InDom: 144.12289 0x24003001
+---
+>     Data Type: double  InDom: 144.13313 0x24003401
+776c776
+<     Data Type: double  InDom: 144.12288 0x24003000
+---
+>     Data Type: double  InDom: 144.13312 0x24003400
+787c787
+<     Data Type: double  InDom: 144.12290 0x24003002
+---
+>     Data Type: double  InDom: 144.13314 0x24003402
+1204c1204
+<     Data Type: double  InDom: 144.14685 0x2400395d
+---
+>     Data Type: double  InDom: 144.15709 0x24003d5d
+1293c1293
+<     Data Type: double  InDom: 144.14423 0x24003857
+---
+>     Data Type: double  InDom: 144.15447 0x24003c57
+1319c1319
+<     Data Type: double  InDom: 144.14425 0x24003859
+---
+>     Data Type: double  InDom: 144.15449 0x24003c59
+1345c1345
+<     Data Type: double  InDom: 144.14427 0x2400385b
+---
+>     Data Type: double  InDom: 144.15451 0x24003c5b
+1378c1378
+<     Data Type: double  InDom: 144.14687 0x2400395f
+---
+>     Data Type: double  InDom: 144.15711 0x24003d5f
+1418c1418
+<     Data Type: double  InDom: 144.14689 0x24003961
+---
+>     Data Type: double  InDom: 144.15713 0x24003d61
+1437c1437
+<     Data Type: double  InDom: 144.14691 0x24003963
+---
+>     Data Type: double  InDom: 144.15715 0x24003d63
+1456c1456
+<     Data Type: double  InDom: 144.14693 0x24003965
+---
+>     Data Type: double  InDom: 144.15717 0x24003d65
+1475c1475
+<     Data Type: double  InDom: 144.14429 0x2400385d
+---
+>     Data Type: double  InDom: 144.15453 0x24003c5d
+1501c1501
+<     Data Type: double  InDom: 144.14695 0x24003967
+---
+>     Data Type: double  InDom: 144.15719 0x24003d67
+1527c1527
+<     Data Type: double  InDom: 144.14697 0x24003969
+---
+>     Data Type: double  InDom: 144.15721 0x24003d69
+1546c1546
+<     Data Type: double  InDom: 144.14699 0x2400396b
+---
+>     Data Type: double  InDom: 144.15723 0x24003d6b
+1565c1565
+<     Data Type: double  InDom: 144.14431 0x2400385f
+---
+>     Data Type: double  InDom: 144.15455 0x24003c5f
+1591c1591
+<     Data Type: double  InDom: 144.14433 0x24003861
+---
+>     Data Type: double  InDom: 144.15457 0x24003c61
+1617c1617
+<     Data Type: double  InDom: 144.14435 0x24003863
+---
+>     Data Type: double  InDom: 144.15459 0x24003c63
+1671c1671
+<     Data Type: double  InDom: 144.14437 0x24003865
+---
+>     Data Type: double  InDom: 144.15461 0x24003c65
+1697c1697
+<     Data Type: double  InDom: 144.14439 0x24003867
+---
+>     Data Type: double  InDom: 144.15463 0x24003c67
+1723c1723
+<     Data Type: double  InDom: 144.14441 0x24003869
+---
+>     Data Type: double  InDom: 144.15465 0x24003c69
+1749c1749
+<     Data Type: double  InDom: 144.14443 0x2400386b
+---
+>     Data Type: double  InDom: 144.15467 0x24003c6b
+1775c1775
+<     Data Type: double  InDom: 144.14445 0x2400386d
+---
+>     Data Type: double  InDom: 144.15469 0x24003c6d
+1801c1801
+<     Data Type: double  InDom: 144.14447 0x2400386f
+---
+>     Data Type: double  InDom: 144.15471 0x24003c6f
+1827c1827
+<     Data Type: double  InDom: 144.14449 0x24003871
+---
+>     Data Type: double  InDom: 144.15473 0x24003c71
+1853c1853
+<     Data Type: double  InDom: 144.14451 0x24003873
+---
+>     Data Type: double  InDom: 144.15475 0x24003c73
+1928c1928
+<     Data Type: double  InDom: 144.14453 0x24003875
+---
+>     Data Type: double  InDom: 144.15477 0x24003c75
+1947c1947
+<     Data Type: double  InDom: 144.14455 0x24003877
+---
+>     Data Type: double  InDom: 144.15479 0x24003c77
+1966c1966
+<     Data Type: double  InDom: 144.14457 0x24003879
+---
+>     Data Type: double  InDom: 144.15481 0x24003c79
+1985c1985
+<     Data Type: double  InDom: 144.14459 0x2400387b
+---
+>     Data Type: double  InDom: 144.15483 0x24003c7b
+2039c2039
+<     Data Type: double  InDom: 144.14461 0x2400387d
+---
+>     Data Type: double  InDom: 144.15485 0x24003c7d
+2058c2058
+<     Data Type: double  InDom: 144.14463 0x2400387f
+---
+>     Data Type: double  InDom: 144.15487 0x24003c7f
+2077c2077
+<     Data Type: double  InDom: 144.14465 0x24003881
+---
+>     Data Type: double  InDom: 144.15489 0x24003c81
+2096c2096
+<     Data Type: double  InDom: 144.14467 0x24003883
+---
+>     Data Type: double  InDom: 144.15491 0x24003c83
+2136c2136
+<     Data Type: double  InDom: 144.14469 0x24003885
+---
+>     Data Type: double  InDom: 144.15493 0x24003c85
+2155c2155
+<     Data Type: double  InDom: 144.14471 0x24003887
+---
+>     Data Type: double  InDom: 144.15495 0x24003c87
+2174c2174
+<     Data Type: double  InDom: 144.14473 0x24003889
+---
+>     Data Type: double  InDom: 144.15497 0x24003c89
+2193c2193
+<     Data Type: double  InDom: 144.14475 0x2400388b
+---
+>     Data Type: double  InDom: 144.15499 0x24003c8b
+2247c2247
+<     Data Type: double  InDom: 144.14477 0x2400388d
+---
+>     Data Type: double  InDom: 144.15501 0x24003c8d
+2266c2266
+<     Data Type: double  InDom: 144.14479 0x2400388f
+---
+>     Data Type: double  InDom: 144.15503 0x24003c8f
+2285c2285
+<     Data Type: double  InDom: 144.14481 0x24003891
+---
+>     Data Type: double  InDom: 144.15505 0x24003c91
+2304c2304
+<     Data Type: double  InDom: 144.14483 0x24003893
+---
+>     Data Type: double  InDom: 144.15507 0x24003c93
+2344c2344
+<     Data Type: double  InDom: 144.14485 0x24003895
+---
+>     Data Type: double  InDom: 144.15509 0x24003c95
+2363c2363
+<     Data Type: double  InDom: 144.14487 0x24003897
+---
+>     Data Type: double  InDom: 144.15511 0x24003c97
+2382c2382
+<     Data Type: double  InDom: 144.14489 0x24003899
+---
+>     Data Type: double  InDom: 144.15513 0x24003c99
+2401c2401
+<     Data Type: double  InDom: 144.14491 0x2400389b
+---
+>     Data Type: double  InDom: 144.15515 0x24003c9b
+2427c2427
+<     Data Type: double  InDom: 144.14493 0x2400389d
+---
+>     Data Type: double  InDom: 144.15517 0x24003c9d
+2446c2446
+<     Data Type: double  InDom: 144.14495 0x2400389f
+---
+>     Data Type: double  InDom: 144.15519 0x24003c9f
+2465c2465
+<     Data Type: double  InDom: 144.14497 0x240038a1
+---
+>     Data Type: double  InDom: 144.15521 0x24003ca1
+2484c2484
+<     Data Type: double  InDom: 144.14499 0x240038a3
+---
+>     Data Type: double  InDom: 144.15523 0x24003ca3
+2510c2510
+<     Data Type: double  InDom: 144.14501 0x240038a5
+---
+>     Data Type: double  InDom: 144.15525 0x24003ca5
+2529c2529
+<     Data Type: double  InDom: 144.14503 0x240038a7
+---
+>     Data Type: double  InDom: 144.15527 0x24003ca7
+2548c2548
+<     Data Type: double  InDom: 144.14505 0x240038a9
+---
+>     Data Type: double  InDom: 144.15529 0x24003ca9
+2567c2567
+<     Data Type: double  InDom: 144.14507 0x240038ab
+---
+>     Data Type: double  InDom: 144.15531 0x24003cab
+2607c2607
+<     Data Type: double  InDom: 144.14509 0x240038ad
+---
+>     Data Type: double  InDom: 144.15533 0x24003cad
+2626c2626
+<     Data Type: double  InDom: 144.14511 0x240038af
+---
+>     Data Type: double  InDom: 144.15535 0x24003caf
+2645c2645
+<     Data Type: double  InDom: 144.14513 0x240038b1
+---
+>     Data Type: double  InDom: 144.15537 0x24003cb1
+2664c2664
+<     Data Type: double  InDom: 144.14515 0x240038b3
+---
+>     Data Type: double  InDom: 144.15539 0x24003cb3
+2690c2690
+<     Data Type: double  InDom: 144.14517 0x240038b5
+---
+>     Data Type: double  InDom: 144.15541 0x24003cb5
+2709c2709
+<     Data Type: double  InDom: 144.14519 0x240038b7
+---
+>     Data Type: double  InDom: 144.15543 0x24003cb7
+2728c2728
+<     Data Type: double  InDom: 144.14521 0x240038b9
+---
+>     Data Type: double  InDom: 144.15545 0x24003cb9
+2747c2747
+<     Data Type: double  InDom: 144.14523 0x240038bb
+---
+>     Data Type: double  InDom: 144.15547 0x24003cbb
+2773c2773
+<     Data Type: double  InDom: 144.14525 0x240038bd
+---
+>     Data Type: double  InDom: 144.15549 0x24003cbd
+2792c2792
+<     Data Type: double  InDom: 144.14527 0x240038bf
+---
+>     Data Type: double  InDom: 144.15551 0x24003cbf
+2811c2811
+<     Data Type: double  InDom: 144.14529 0x240038c1
+---
+>     Data Type: double  InDom: 144.15553 0x24003cc1
+2830c2830
+<     Data Type: double  InDom: 144.14531 0x240038c3
+---
+>     Data Type: double  InDom: 144.15555 0x24003cc3
+2870c2870
+<     Data Type: double  InDom: 144.14533 0x240038c5
+---
+>     Data Type: double  InDom: 144.15557 0x24003cc5
+2889c2889
+<     Data Type: double  InDom: 144.14535 0x240038c7
+---
+>     Data Type: double  InDom: 144.15559 0x24003cc7
+2908c2908
+<     Data Type: double  InDom: 144.14537 0x240038c9
+---
+>     Data Type: double  InDom: 144.15561 0x24003cc9
+2927c2927
+<     Data Type: double  InDom: 144.14539 0x240038cb
+---
+>     Data Type: double  InDom: 144.15563 0x24003ccb
+2953c2953
+<     Data Type: double  InDom: 144.14541 0x240038cd
+---
+>     Data Type: double  InDom: 144.15565 0x24003ccd
+2972c2972
+<     Data Type: double  InDom: 144.14543 0x240038cf
+---
+>     Data Type: double  InDom: 144.15567 0x24003ccf
+2991c2991
+<     Data Type: double  InDom: 144.14545 0x240038d1
+---
+>     Data Type: double  InDom: 144.15569 0x24003cd1
+3010c3010
+<     Data Type: double  InDom: 144.14547 0x240038d3
+---
+>     Data Type: double  InDom: 144.15571 0x24003cd3
+3036c3036
+<     Data Type: double  InDom: 144.14549 0x240038d5
+---
+>     Data Type: double  InDom: 144.15573 0x24003cd5
+3055c3055
+<     Data Type: double  InDom: 144.14551 0x240038d7
+---
+>     Data Type: double  InDom: 144.15575 0x24003cd7
+3074c3074
+<     Data Type: double  InDom: 144.14553 0x240038d9
+---
+>     Data Type: double  InDom: 144.15577 0x24003cd9
+3093c3093
+<     Data Type: double  InDom: 144.14555 0x240038db
+---
+>     Data Type: double  InDom: 144.15579 0x24003cdb
+3133c3133
+<     Data Type: double  InDom: 144.14557 0x240038dd
+---
+>     Data Type: double  InDom: 144.15581 0x24003cdd
+3152c3152
+<     Data Type: double  InDom: 144.14559 0x240038df
+---
+>     Data Type: double  InDom: 144.15583 0x24003cdf
+3171c3171
+<     Data Type: double  InDom: 144.14561 0x240038e1
+---
+>     Data Type: double  InDom: 144.15585 0x24003ce1
+3190c3190
+<     Data Type: double  InDom: 144.14563 0x240038e3
+---
+>     Data Type: double  InDom: 144.15587 0x24003ce3
+3216c3216
+<     Data Type: double  InDom: 144.14565 0x240038e5
+---
+>     Data Type: double  InDom: 144.15589 0x24003ce5
+3235c3235
+<     Data Type: double  InDom: 144.14567 0x240038e7
+---
+>     Data Type: double  InDom: 144.15591 0x24003ce7
+3254c3254
+<     Data Type: double  InDom: 144.14569 0x240038e9
+---
+>     Data Type: double  InDom: 144.15593 0x24003ce9
+3273c3273
+<     Data Type: double  InDom: 144.14571 0x240038eb
+---
+>     Data Type: double  InDom: 144.15595 0x24003ceb
+3299c3299
+<     Data Type: double  InDom: 144.14573 0x240038ed
+---
+>     Data Type: double  InDom: 144.15597 0x24003ced
+3318c3318
+<     Data Type: double  InDom: 144.14575 0x240038ef
+---
+>     Data Type: double  InDom: 144.15599 0x24003cef
+3337c3337
+<     Data Type: double  InDom: 144.14577 0x240038f1
+---
+>     Data Type: double  InDom: 144.15601 0x24003cf1
+3356c3356
+<     Data Type: double  InDom: 144.14579 0x240038f3
+---
+>     Data Type: double  InDom: 144.15603 0x24003cf3
+3396c3396
+<     Data Type: double  InDom: 144.14581 0x240038f5
+---
+>     Data Type: double  InDom: 144.15605 0x24003cf5
+3415c3415
+<     Data Type: double  InDom: 144.14583 0x240038f7
+---
+>     Data Type: double  InDom: 144.15607 0x24003cf7
+3434c3434
+<     Data Type: double  InDom: 144.14585 0x240038f9
+---
+>     Data Type: double  InDom: 144.15609 0x24003cf9
+3453c3453
+<     Data Type: double  InDom: 144.14587 0x240038fb
+---
+>     Data Type: double  InDom: 144.15611 0x24003cfb
+3479c3479
+<     Data Type: double  InDom: 144.14589 0x240038fd
+---
+>     Data Type: double  InDom: 144.15613 0x24003cfd
+3498c3498
+<     Data Type: double  InDom: 144.14591 0x240038ff
+---
+>     Data Type: double  InDom: 144.15615 0x24003cff
+3517c3517
+<     Data Type: double  InDom: 144.14593 0x24003901
+---
+>     Data Type: double  InDom: 144.15617 0x24003d01
+3536c3536
+<     Data Type: double  InDom: 144.14595 0x24003903
+---
+>     Data Type: double  InDom: 144.15619 0x24003d03
+3562c3562
+<     Data Type: double  InDom: 144.14597 0x24003905
+---
+>     Data Type: double  InDom: 144.15621 0x24003d05
+3581c3581
+<     Data Type: double  InDom: 144.14599 0x24003907
+---
+>     Data Type: double  InDom: 144.15623 0x24003d07
+3600c3600
+<     Data Type: double  InDom: 144.14601 0x24003909
+---
+>     Data Type: double  InDom: 144.15625 0x24003d09
+3619c3619
+<     Data Type: double  InDom: 144.14603 0x2400390b
+---
+>     Data Type: double  InDom: 144.15627 0x24003d0b
+3659c3659
+<     Data Type: double  InDom: 144.14605 0x2400390d
+---
+>     Data Type: double  InDom: 144.15629 0x24003d0d
+3678c3678
+<     Data Type: double  InDom: 144.14607 0x2400390f
+---
+>     Data Type: double  InDom: 144.15631 0x24003d0f
+3697c3697
+<     Data Type: double  InDom: 144.14609 0x24003911
+---
+>     Data Type: double  InDom: 144.15633 0x24003d11
+3716c3716
+<     Data Type: double  InDom: 144.14611 0x24003913
+---
+>     Data Type: double  InDom: 144.15635 0x24003d13
+3742c3742
+<     Data Type: double  InDom: 144.14613 0x24003915
+---
+>     Data Type: double  InDom: 144.15637 0x24003d15
+3761c3761
+<     Data Type: double  InDom: 144.14615 0x24003917
+---
+>     Data Type: double  InDom: 144.15639 0x24003d17
+3780c3780
+<     Data Type: double  InDom: 144.14617 0x24003919
+---
+>     Data Type: double  InDom: 144.15641 0x24003d19
+3799c3799
+<     Data Type: double  InDom: 144.14619 0x2400391b
+---
+>     Data Type: double  InDom: 144.15643 0x24003d1b
+3825c3825
+<     Data Type: double  InDom: 144.14621 0x2400391d
+---
+>     Data Type: double  InDom: 144.15645 0x24003d1d
+3844c3844
+<     Data Type: double  InDom: 144.14623 0x2400391f
+---
+>     Data Type: double  InDom: 144.15647 0x24003d1f
+3863c3863
+<     Data Type: double  InDom: 144.14625 0x24003921
+---
+>     Data Type: double  InDom: 144.15649 0x24003d21
+3882c3882
+<     Data Type: double  InDom: 144.14627 0x24003923
+---
+>     Data Type: double  InDom: 144.15651 0x24003d23
+3922c3922
+<     Data Type: double  InDom: 144.14629 0x24003925
+---
+>     Data Type: double  InDom: 144.15653 0x24003d25
+3941c3941
+<     Data Type: double  InDom: 144.14631 0x24003927
+---
+>     Data Type: double  InDom: 144.15655 0x24003d27
+3960c3960
+<     Data Type: double  InDom: 144.14633 0x24003929
+---
+>     Data Type: double  InDom: 144.15657 0x24003d29
+3979c3979
+<     Data Type: double  InDom: 144.14635 0x2400392b
+---
+>     Data Type: double  InDom: 144.15659 0x24003d2b
+4005c4005
+<     Data Type: double  InDom: 144.14637 0x2400392d
+---
+>     Data Type: double  InDom: 144.15661 0x24003d2d
+4024c4024
+<     Data Type: double  InDom: 144.14639 0x2400392f
+---
+>     Data Type: double  InDom: 144.15663 0x24003d2f
+4043c4043
+<     Data Type: double  InDom: 144.14641 0x24003931
+---
+>     Data Type: double  InDom: 144.15665 0x24003d31
+4062c4062
+<     Data Type: double  InDom: 144.14643 0x24003933
+---
+>     Data Type: double  InDom: 144.15667 0x24003d33
+4088c4088
+<     Data Type: double  InDom: 144.14645 0x24003935
+---
+>     Data Type: double  InDom: 144.15669 0x24003d35
+4107c4107
+<     Data Type: double  InDom: 144.14647 0x24003937
+---
+>     Data Type: double  InDom: 144.15671 0x24003d37
+4126c4126
+<     Data Type: double  InDom: 144.14649 0x24003939
+---
+>     Data Type: double  InDom: 144.15673 0x24003d39
+4145c4145
+<     Data Type: double  InDom: 144.14651 0x2400393b
+---
+>     Data Type: double  InDom: 144.15675 0x24003d3b
+4185c4185
+<     Data Type: double  InDom: 144.14653 0x2400393d
+---
+>     Data Type: double  InDom: 144.15677 0x24003d3d
+4204c4204
+<     Data Type: double  InDom: 144.14655 0x2400393f
+---
+>     Data Type: double  InDom: 144.15679 0x24003d3f
+4223c4223
+<     Data Type: double  InDom: 144.14657 0x24003941
+---
+>     Data Type: double  InDom: 144.15681 0x24003d41
+4242c4242
+<     Data Type: double  InDom: 144.14659 0x24003943
+---
+>     Data Type: double  InDom: 144.15683 0x24003d43
+4268c4268
+<     Data Type: double  InDom: 144.14661 0x24003945
+---
+>     Data Type: double  InDom: 144.15685 0x24003d45
+4287c4287
+<     Data Type: double  InDom: 144.14663 0x24003947
+---
+>     Data Type: double  InDom: 144.15687 0x24003d47
+4306c4306
+<     Data Type: double  InDom: 144.14665 0x24003949
+---
+>     Data Type: double  InDom: 144.15689 0x24003d49
+4325c4325
+<     Data Type: double  InDom: 144.14667 0x2400394b
+---
+>     Data Type: double  InDom: 144.15691 0x24003d4b
+4351c4351
+<     Data Type: double  InDom: 144.14669 0x2400394d
+---
+>     Data Type: double  InDom: 144.15693 0x24003d4d
+4370c4370
+<     Data Type: double  InDom: 144.14671 0x2400394f
+---
+>     Data Type: double  InDom: 144.15695 0x24003d4f
+4389c4389
+<     Data Type: double  InDom: 144.14673 0x24003951
+---
+>     Data Type: double  InDom: 144.15697 0x24003d51
+4408c4408
+<     Data Type: double  InDom: 144.14675 0x24003953
+---
+>     Data Type: double  InDom: 144.15699 0x24003d53
+4448c4448
+<     Data Type: double  InDom: 144.14677 0x24003955
+---
+>     Data Type: double  InDom: 144.15701 0x24003d55
+4467c4467
+<     Data Type: double  InDom: 144.14679 0x24003957
+---
+>     Data Type: double  InDom: 144.15703 0x24003d57
+4486c4486
+<     Data Type: double  InDom: 144.14681 0x24003959
+---
+>     Data Type: double  InDom: 144.15705 0x24003d59
+4505c4505
+<     Data Type: double  InDom: 144.14683 0x2400395b
+---
+>     Data Type: double  InDom: 144.15707 0x24003d5b
+4566c4566
+<     Data Type: double  InDom: 144.15360 0x24003c00
+---
+>     Data Type: double  InDom: 144.16384 0x24004000
+4573c4573
+<     Data Type: double  InDom: 144.15361 0x24003c01
+---
+>     Data Type: double  InDom: 144.16385 0x24004001
+4580c4580
+<     Data Type: double  InDom: 144.15363 0x24003c03
+---
+>     Data Type: double  InDom: 144.16387 0x24004003
+4588c4588
+<     Data Type: double  InDom: 144.15364 0x24003c04
+---
+>     Data Type: double  InDom: 144.16388 0x24004004
+4602c4602
+<     Data Type: double  InDom: 144.16384 0x24004000
+---
+>     Data Type: double  InDom: 144.17408 0x24004400
+4610c4610
+<     Data Type: double  InDom: 144.16385 0x24004001
+---
+>     Data Type: double  InDom: 144.17409 0x24004401
+4618c4618
+<     Data Type: double  InDom: 144.16386 0x24004002
+---
+>     Data Type: double  InDom: 144.17410 0x24004402
+4626c4626
+<     Data Type: double  InDom: 144.16387 0x24004003
+---
+>     Data Type: double  InDom: 144.17411 0x24004403
+4634c4634
+<     Data Type: double  InDom: 144.16388 0x24004004
+---
+>     Data Type: double  InDom: 144.17412 0x24004404
+4642c4642
+<     Data Type: double  InDom: 144.17408 0x24004400
+---
+>     Data Type: double  InDom: 144.18432 0x24004800
+4650c4650
+<     Data Type: double  InDom: 144.17409 0x24004401
+---
+>     Data Type: double  InDom: 144.18433 0x24004801
+4658c4658
+<     Data Type: double  InDom: 144.17410 0x24004402
+---
+>     Data Type: double  InDom: 144.18434 0x24004802
+4666c4666
+<     Data Type: double  InDom: 144.17411 0x24004403
+---
+>     Data Type: double  InDom: 144.18435 0x24004803
+4674c4674
+<     Data Type: double  InDom: 144.17412 0x24004404
+---
+>     Data Type: double  InDom: 144.18436 0x24004804
+4682c4682
+<     Data Type: double  InDom: 144.18476 0x2400482c
+---
+>     Data Type: double  InDom: 144.19500 0x24004c2c
+4689c4689
+<     Data Type: double  InDom: 144.18473 0x24004829
+---
+>     Data Type: double  InDom: 144.19497 0x24004c29
+4696c4696
+<     Data Type: double  InDom: 144.18475 0x2400482b
+---
+>     Data Type: double  InDom: 144.19499 0x24004c2b
+4703c4703
+<     Data Type: double  InDom: 144.18477 0x2400482d
+---
+>     Data Type: double  InDom: 144.19501 0x24004c2d
+4710c4710
+<     Data Type: double  InDom: 144.18474 0x2400482a
+---
+>     Data Type: double  InDom: 144.19498 0x24004c2a
+4717c4717
+<     Data Type: double  InDom: 144.18481 0x24004831
+---
+>     Data Type: double  InDom: 144.19505 0x24004c31
+4724c4724
+<     Data Type: double  InDom: 144.18478 0x2400482e
+---
+>     Data Type: double  InDom: 144.19502 0x24004c2e
+4731c4731
+<     Data Type: double  InDom: 144.18480 0x24004830
+---
+>     Data Type: double  InDom: 144.19504 0x24004c30
+4738c4738
+<     Data Type: double  InDom: 144.18482 0x24004832
+---
+>     Data Type: double  InDom: 144.19506 0x24004c32
+4745c4745
+<     Data Type: double  InDom: 144.18479 0x2400482f
+---
+>     Data Type: double  InDom: 144.19503 0x24004c2f
+4752c4752
+<     Data Type: double  InDom: 144.18435 0x24004803
+---
+>     Data Type: double  InDom: 144.19459 0x24004c03
+4759c4759
+<     Data Type: double  InDom: 144.18434 0x24004802
+---
+>     Data Type: double  InDom: 144.19458 0x24004c02
+4766c4766
+<     Data Type: double  InDom: 144.18432 0x24004800
+---
+>     Data Type: double  InDom: 144.19456 0x24004c00
+4773c4773
+<     Data Type: double  InDom: 144.18433 0x24004801
+---
+>     Data Type: double  InDom: 144.19457 0x24004c01
+4783c4783
+<     Data Type: double  InDom: 144.18438 0x24004806
+---
+>     Data Type: double  InDom: 144.19462 0x24004c06
+4790c4790
+<     Data Type: double  InDom: 144.18437 0x24004805
+---
+>     Data Type: double  InDom: 144.19461 0x24004c05
+4797c4797
+<     Data Type: double  InDom: 144.18450 0x24004812
+---
+>     Data Type: double  InDom: 144.19474 0x24004c12
+4804c4804
+<     Data Type: double  InDom: 144.18452 0x24004814
+---
+>     Data Type: double  InDom: 144.19476 0x24004c14
+4811c4811
+<     Data Type: double  InDom: 144.18439 0x24004807
+---
+>     Data Type: double  InDom: 144.19463 0x24004c07
+4818c4818
+<     Data Type: double  InDom: 144.18449 0x24004811
+---
+>     Data Type: double  InDom: 144.19473 0x24004c11
+4825c4825
+<     Data Type: double  InDom: 144.18451 0x24004813
+---
+>     Data Type: double  InDom: 144.19475 0x24004c13
+4832c4832
+<     Data Type: double  InDom: 144.18442 0x2400480a
+---
+>     Data Type: double  InDom: 144.19466 0x24004c0a
+4839c4839
+<     Data Type: double  InDom: 144.18447 0x2400480f
+---
+>     Data Type: double  InDom: 144.19471 0x24004c0f
+4846c4846
+<     Data Type: double  InDom: 144.18448 0x24004810
+---
+>     Data Type: double  InDom: 144.19472 0x24004c10
+4853c4853
+<     Data Type: double  InDom: 144.18445 0x2400480d
+---
+>     Data Type: double  InDom: 144.19469 0x24004c0d
+4860c4860
+<     Data Type: double  InDom: 144.18446 0x2400480e
+---
+>     Data Type: double  InDom: 144.19470 0x24004c0e
+4867c4867
+<     Data Type: double  InDom: 144.18469 0x24004825
+---
+>     Data Type: double  InDom: 144.19493 0x24004c25
+4874c4874
+<     Data Type: double  InDom: 144.18470 0x24004826
+---
+>     Data Type: double  InDom: 144.19494 0x24004c26
+4881c4881
+<     Data Type: double  InDom: 144.18471 0x24004827
+---
+>     Data Type: double  InDom: 144.19495 0x24004c27
+4888c4888
+<     Data Type: double  InDom: 144.18472 0x24004828
+---
+>     Data Type: double  InDom: 144.19496 0x24004c28
+4895c4895
+<     Data Type: double  InDom: 144.18440 0x24004808
+---
+>     Data Type: double  InDom: 144.19464 0x24004c08
+4902c4902
+<     Data Type: double  InDom: 144.18441 0x24004809
+---
+>     Data Type: double  InDom: 144.19465 0x24004c09
+4909c4909
+<     Data Type: double  InDom: 144.18444 0x2400480c
+---
+>     Data Type: double  InDom: 144.19468 0x24004c0c
+4916c4916
+<     Data Type: double  InDom: 144.18465 0x24004821
+---
+>     Data Type: double  InDom: 144.19489 0x24004c21
+4923c4923
+<     Data Type: double  InDom: 144.18467 0x24004823
+---
+>     Data Type: double  InDom: 144.19491 0x24004c23
+4930c4930
+<     Data Type: double  InDom: 144.18454 0x24004816
+---
+>     Data Type: double  InDom: 144.19478 0x24004c16
+4937c4937
+<     Data Type: double  InDom: 144.18464 0x24004820
+---
+>     Data Type: double  InDom: 144.19488 0x24004c20
+4944c4944
+<     Data Type: double  InDom: 144.18466 0x24004822
+---
+>     Data Type: double  InDom: 144.19490 0x24004c22
+4951c4951
+<     Data Type: double  InDom: 144.18457 0x24004819
+---
+>     Data Type: double  InDom: 144.19481 0x24004c19
+4958c4958
+<     Data Type: double  InDom: 144.18462 0x2400481e
+---
+>     Data Type: double  InDom: 144.19486 0x24004c1e
+4965c4965
+<     Data Type: double  InDom: 144.18463 0x2400481f
+---
+>     Data Type: double  InDom: 144.19487 0x24004c1f
+4972c4972
+<     Data Type: double  InDom: 144.18460 0x2400481c
+---
+>     Data Type: double  InDom: 144.19484 0x24004c1c
+4979c4979
+<     Data Type: double  InDom: 144.18461 0x2400481d
+---
+>     Data Type: double  InDom: 144.19485 0x24004c1d
+4986c4986
+<     Data Type: double  InDom: 144.18455 0x24004817
+---
+>     Data Type: double  InDom: 144.19479 0x24004c17
+4993c4993
+<     Data Type: double  InDom: 144.18456 0x24004818
+---
+>     Data Type: double  InDom: 144.19480 0x24004c18
+5000c5000
+<     Data Type: double  InDom: 144.18459 0x2400481b
+---
+>     Data Type: double  InDom: 144.19483 0x24004c1b
+5007c5007
+<     Data Type: double  InDom: 144.18468 0x24004824
+---
+>     Data Type: double  InDom: 144.19492 0x24004c24
+5014c5014
+<     Data Type: double  InDom: 144.18458 0x2400481a
+---
+>     Data Type: double  InDom: 144.19482 0x24004c1a
+5021c5021
+<     Data Type: double  InDom: 144.18453 0x24004815
+---
+>     Data Type: double  InDom: 144.19477 0x24004c15
+5028c5028
+<     Data Type: double  InDom: 144.18443 0x2400480b
+---
+>     Data Type: double  InDom: 144.19467 0x24004c0b
+5035c5035
+<     Data Type: double  InDom: 144.18436 0x24004804
+---
+>     Data Type: double  InDom: 144.19460 0x24004c04
+5042c5042
+<     Data Type: double  InDom: 144.19456 0x24004c00
+---
+>     Data Type: double  InDom: 144.20480 0x24005000
+5059c5059
+<     Data Type: double  InDom: 144.19457 0x24004c01
+---
+>     Data Type: double  InDom: 144.20481 0x24005001
+5085c5085
+<     Data Type: double  InDom: 144.20484 0x24005004
+---
+>     Data Type: double  InDom: 144.21508 0x24005404
+5111c5111
+<     Data Type: double  InDom: 144.20480 0x24005000
+---
+>     Data Type: double  InDom: 144.21504 0x24005400
+5125c5125
+<     Data Type: double  InDom: 144.20481 0x24005001
+---
+>     Data Type: double  InDom: 144.21505 0x24005401
+5132c5132
+<     Data Type: double  InDom: 144.20487 0x24005007
+---
+>     Data Type: double  InDom: 144.21511 0x24005407
+5157c5157
+<     Data Type: double  InDom: 144.20483 0x24005003
+---
+>     Data Type: double  InDom: 144.21507 0x24005403
+5205c5205
+<     Data Type: double  InDom: 144.21504 0x24005400
+---
+>     Data Type: double  InDom: 144.22528 0x24005800
+5219c5219
+<     Data Type: double  InDom: 144.21515 0x2400540b
+---
+>     Data Type: double  InDom: 144.22539 0x2400580b
+5254c5254
+<     Data Type: double  InDom: 144.21513 0x24005409
+---
+>     Data Type: double  InDom: 144.22537 0x24005809
+5277c5277
+<     Data Type: double  InDom: 144.22528 0x24005800
+---
+>     Data Type: double  InDom: 144.23552 0x24005c00
+5285c5285
+<     Data Type: double  InDom: 144.23552 0x24005c00
+---
+>     Data Type: double  InDom: 144.24576 0x24006000
+5301c5301
+<     Data Type: double  InDom: 144.24585 0x24006009
+---
+>     Data Type: double  InDom: 144.25609 0x24006409
+5313c5313
+<     Data Type: double  InDom: 144.24583 0x24006007
+---
+>     Data Type: double  InDom: 144.25607 0x24006407
+5335c5335
+<     Data Type: double  InDom: 144.24581 0x24006005
+---
+>     Data Type: double  InDom: 144.25605 0x24006405
+5379c5379
+<     Data Type: double  InDom: 144.24658 0x24006052
+---
+>     Data Type: double  InDom: 144.25682 0x24006452
+5390c5390
+<     Data Type: double  InDom: 144.24649 0x24006049
+---
+>     Data Type: double  InDom: 144.25673 0x24006449
+5405c5405
+<     Data Type: double  InDom: 144.24650 0x2400604a
+---
+>     Data Type: double  InDom: 144.25674 0x2400644a
+5462c5462
+<     Data Type: double  InDom: 144.24582 0x24006006
+---
+>     Data Type: double  InDom: 144.25606 0x24006406
+5498c5498
+<     Data Type: double  InDom: 144.24659 0x24006053
+---
+>     Data Type: double  InDom: 144.25683 0x24006453
+5506c5506
+<     Data Type: double  InDom: 144.24660 0x24006054
+---
+>     Data Type: double  InDom: 144.25684 0x24006454
+5514c5514
+<     Data Type: double  InDom: 144.24661 0x24006055
+---
+>     Data Type: double  InDom: 144.25685 0x24006455
+5578c5578
+<     Data Type: double  InDom: 144.24642 0x24006042
+---
+>     Data Type: double  InDom: 144.25666 0x24006442
+5593c5593
+<     Data Type: double  InDom: 144.24643 0x24006043
+---
+>     Data Type: double  InDom: 144.25667 0x24006443
+5636c5636
+<     Data Type: double  InDom: 144.24651 0x2400604b
+---
+>     Data Type: double  InDom: 144.25675 0x2400644b
+6142c6142
+<     Data Type: double  InDom: 144.24652 0x2400604c
+---
+>     Data Type: double  InDom: 144.25676 0x2400644c
+6662c6662
+<     Data Type: double  InDom: 144.24614 0x24006026
+---
+>     Data Type: double  InDom: 144.25638 0x24006426
+6677c6677
+<     Data Type: double  InDom: 144.24615 0x24006027
+---
+>     Data Type: double  InDom: 144.25639 0x24006427
+6727c6727
+<     Data Type: double  InDom: 144.24628 0x24006034
+---
+>     Data Type: double  InDom: 144.25652 0x24006434
+6742c6742
+<     Data Type: double  InDom: 144.24629 0x24006035
+---
+>     Data Type: double  InDom: 144.25653 0x24006435
+6806c6806
+<     Data Type: double  InDom: 144.24674 0x24006062
+---
+>     Data Type: double  InDom: 144.25698 0x24006462
+6915c6915
+<     Data Type: double  InDom: 144.24584 0x24006008
+---
+>     Data Type: double  InDom: 144.25608 0x24006408
+7031c7031
+<     Data Type: double  InDom: 144.24676 0x24006064
+---
+>     Data Type: double  InDom: 144.25700 0x24006464
+7076c7076
+<     Data Type: double  InDom: 144.24601 0x24006019
+---
+>     Data Type: double  InDom: 144.25625 0x24006419
+7130c7130
+<     Data Type: double  InDom: 144.24621 0x2400602d
+---
+>     Data Type: double  InDom: 144.25645 0x2400642d
+7145c7145
+<     Data Type: double  InDom: 144.24622 0x2400602e
+---
+>     Data Type: double  InDom: 144.25646 0x2400642e
+7195c7195
+<     Data Type: double  InDom: 144.24635 0x2400603b
+---
+>     Data Type: double  InDom: 144.25659 0x2400643b
+7210c7210
+<     Data Type: double  InDom: 144.24636 0x2400603c
+---
+>     Data Type: double  InDom: 144.25660 0x2400643c
+7302c7302
+<     Data Type: double  InDom: 144.25609 0x24006409
+---
+>     Data Type: double  InDom: 144.26633 0x24006809
+7314c7314
+<     Data Type: double  InDom: 144.25607 0x24006407
+---
+>     Data Type: double  InDom: 144.26631 0x24006807
+7336c7336
+<     Data Type: double  InDom: 144.25605 0x24006405
+---
+>     Data Type: double  InDom: 144.26629 0x24006805
+7380c7380
+<     Data Type: double  InDom: 144.25682 0x24006452
+---
+>     Data Type: double  InDom: 144.26706 0x24006852
+7391c7391
+<     Data Type: double  InDom: 144.25673 0x24006449
+---
+>     Data Type: double  InDom: 144.26697 0x24006849
+7406c7406
+<     Data Type: double  InDom: 144.25674 0x2400644a
+---
+>     Data Type: double  InDom: 144.26698 0x2400684a
+7463c7463
+<     Data Type: double  InDom: 144.25606 0x24006406
+---
+>     Data Type: double  InDom: 144.26630 0x24006806
+7499c7499
+<     Data Type: double  InDom: 144.25683 0x24006453
+---
+>     Data Type: double  InDom: 144.26707 0x24006853
+7507c7507
+<     Data Type: double  InDom: 144.25684 0x24006454
+---
+>     Data Type: double  InDom: 144.26708 0x24006854
+7515c7515
+<     Data Type: double  InDom: 144.25685 0x24006455
+---
+>     Data Type: double  InDom: 144.26709 0x24006855
+7579c7579
+<     Data Type: double  InDom: 144.25666 0x24006442
+---
+>     Data Type: double  InDom: 144.26690 0x24006842
+7594c7594
+<     Data Type: double  InDom: 144.25667 0x24006443
+---
+>     Data Type: double  InDom: 144.26691 0x24006843
+7637c7637
+<     Data Type: double  InDom: 144.25675 0x2400644b
+---
+>     Data Type: double  InDom: 144.26699 0x2400684b
+8143c8143
+<     Data Type: double  InDom: 144.25676 0x2400644c
+---
+>     Data Type: double  InDom: 144.26700 0x2400684c
+8663c8663
+<     Data Type: double  InDom: 144.25638 0x24006426
+---
+>     Data Type: double  InDom: 144.26662 0x24006826
+8678c8678
+<     Data Type: double  InDom: 144.25639 0x24006427
+---
+>     Data Type: double  InDom: 144.26663 0x24006827
+8728c8728
+<     Data Type: double  InDom: 144.25652 0x24006434
+---
+>     Data Type: double  InDom: 144.26676 0x24006834
+8743c8743
+<     Data Type: double  InDom: 144.25653 0x24006435
+---
+>     Data Type: double  InDom: 144.26677 0x24006835
+8807c8807
+<     Data Type: double  InDom: 144.25698 0x24006462
+---
+>     Data Type: double  InDom: 144.26722 0x24006862
+8916c8916
+<     Data Type: double  InDom: 144.25608 0x24006408
+---
+>     Data Type: double  InDom: 144.26632 0x24006808
+9032c9032
+<     Data Type: double  InDom: 144.25700 0x24006464
+---
+>     Data Type: double  InDom: 144.26724 0x24006864
+9077c9077
+<     Data Type: double  InDom: 144.25625 0x24006419
+---
+>     Data Type: double  InDom: 144.26649 0x24006819
+9131c9131
+<     Data Type: double  InDom: 144.25645 0x2400642d
+---
+>     Data Type: double  InDom: 144.26669 0x2400682d
+9146c9146
+<     Data Type: double  InDom: 144.25646 0x2400642e
+---
+>     Data Type: double  InDom: 144.26670 0x2400682e
+9196c9196
+<     Data Type: double  InDom: 144.25659 0x2400643b
+---
+>     Data Type: double  InDom: 144.26683 0x2400683b
+9211c9211
+<     Data Type: double  InDom: 144.25660 0x2400643c
+---
+>     Data Type: double  InDom: 144.26684 0x2400683c
+9296c9296
+<     Data Type: double  InDom: 144.26624 0x24006800
+---
+>     Data Type: double  InDom: 144.27648 0x24006c00
+9489c9489
+<     Data Type: double  InDom: 144.26651 0x2400681b
+---
+>     Data Type: double  InDom: 144.27675 0x24006c1b
+9555c9555
+<     Data Type: double  InDom: 144.26653 0x2400681d
+---
+>     Data Type: double  InDom: 144.27677 0x24006c1d
+9581c9581
+<     Data Type: double  InDom: 144.26652 0x2400681c
+---
+>     Data Type: double  InDom: 144.27676 0x24006c1c
+9607c9607
+<     Data Type: double  InDom: 144.26654 0x2400681e
+---
+>     Data Type: double  InDom: 144.27678 0x24006c1e
+9673c9673
+<     Data Type: double  InDom: 144.26656 0x24006820
+---
+>     Data Type: double  InDom: 144.27680 0x24006c20
+9699c9699
+<     Data Type: double  InDom: 144.26655 0x2400681f
+---
+>     Data Type: double  InDom: 144.27679 0x24006c1f
+9725c9725
+<     Data Type: double  InDom: 144.26657 0x24006821
+---
+>     Data Type: double  InDom: 144.27681 0x24006c21
+9739c9739
+<     Data Type: double  InDom: 144.26658 0x24006822
+---
+>     Data Type: double  InDom: 144.27682 0x24006c22
+9805c9805
+<     Data Type: double  InDom: 144.26660 0x24006824
+---
+>     Data Type: double  InDom: 144.27684 0x24006c24
+9831c9831
+<     Data Type: double  InDom: 144.26659 0x24006823
+---
+>     Data Type: double  InDom: 144.27683 0x24006c23
+9899c9899
+<     Data Type: double  InDom: 144.26667 0x2400682b
+---
+>     Data Type: double  InDom: 144.27691 0x24006c2b
+9934c9934
+<     Data Type: double  InDom: 144.26672 0x24006830
+---
+>     Data Type: double  InDom: 144.27696 0x24006c30
+9966c9966
+<     Data Type: double  InDom: 144.26676 0x24006834
+---
+>     Data Type: double  InDom: 144.27700 0x24006c34
+10003c10003
+<     Data Type: double  InDom: 144.26681 0x24006839
+---
+>     Data Type: double  InDom: 144.27705 0x24006c39
+10033c10033
+<     Data Type: double  InDom: 144.26685 0x2400683d
+---
+>     Data Type: double  InDom: 144.27709 0x24006c3d
+10065c10065
+<     Data Type: double  InDom: 144.26689 0x24006841
+---
+>     Data Type: double  InDom: 144.27713 0x24006c41
+10088c10088
+<     Data Type: double  InDom: 144.26692 0x24006844
+---
+>     Data Type: double  InDom: 144.27716 0x24006c44
+10132c10132
+<     Data Type: double  InDom: 144.26698 0x2400684a
+---
+>     Data Type: double  InDom: 144.27722 0x24006c4a
+10144c10144
+<     Data Type: double  InDom: 144.26700 0x2400684c
+---
+>     Data Type: double  InDom: 144.27724 0x24006c4c
+10152c10152
+<     Data Type: double  InDom: 144.26699 0x2400684b
+---
+>     Data Type: double  InDom: 144.27723 0x24006c4b
+10209c10209
+<     Data Type: double  InDom: 144.26708 0x24006854
+---
+>     Data Type: double  InDom: 144.27732 0x24006c54
+10245c10245
+<     Data Type: double  InDom: 144.26713 0x24006859
+---
+>     Data Type: double  InDom: 144.27737 0x24006c59
+10274c10274
+<     Data Type: double  InDom: 144.26716 0x2400685c
+---
+>     Data Type: double  InDom: 144.27740 0x24006c5c
+10319c10319
+<     Data Type: double  InDom: 144.26721 0x24006861
+---
+>     Data Type: double  InDom: 144.27745 0x24006c61
+10327c10327
+<     Data Type: double  InDom: 144.26722 0x24006862
+---
+>     Data Type: double  InDom: 144.27746 0x24006c62
+10357c10357
+<     Data Type: double  InDom: 144.26726 0x24006866
+---
+>     Data Type: double  InDom: 144.27750 0x24006c66
+10369c10369
+<     Data Type: double  InDom: 144.26728 0x24006868
+---
+>     Data Type: double  InDom: 144.27752 0x24006c68
+10377c10377
+<     Data Type: double  InDom: 144.26727 0x24006867
+---
+>     Data Type: double  InDom: 144.27751 0x24006c67
+10406c10406
+<     Data Type: double  InDom: 144.26732 0x2400686c
+---
+>     Data Type: double  InDom: 144.27756 0x24006c6c
+10443c10443
+<     Data Type: double  InDom: 144.26737 0x24006871
+---
+>     Data Type: double  InDom: 144.27761 0x24006c71
+10466c10466
+<     Data Type: double  InDom: 144.26740 0x24006874
+---
+>     Data Type: double  InDom: 144.27764 0x24006c74
+10496c10496
+<     Data Type: double  InDom: 144.26744 0x24006878
+---
+>     Data Type: double  InDom: 144.27768 0x24006c78
+10514c10514
+<     Data Type: double  InDom: 144.26745 0x24006879
+---
+>     Data Type: double  InDom: 144.27769 0x24006c79
+10544c10544
+<     Data Type: double  InDom: 144.26749 0x2400687d
+---
+>     Data Type: double  InDom: 144.27773 0x24006c7d
+10574c10574
+<     Data Type: double  InDom: 144.26753 0x24006881
+---
+>     Data Type: double  InDom: 144.27777 0x24006c81
+10585c10585
+<     Data Type: double  InDom: 144.26755 0x24006883
+---
+>     Data Type: double  InDom: 144.27779 0x24006c83
+10592c10592
+<     Data Type: double  InDom: 144.26754 0x24006882
+---
+>     Data Type: double  InDom: 144.27778 0x24006c82
+10599c10599
+<     Data Type: double  InDom: 144.26756 0x24006884
+---
+>     Data Type: double  InDom: 144.27780 0x24006c84
+10620c10620
+<     Data Type: double  InDom: 144.26759 0x24006887
+---
+>     Data Type: double  InDom: 144.27783 0x24006c87
+10631c10631
+<     Data Type: double  InDom: 144.26761 0x24006889
+---
+>     Data Type: double  InDom: 144.27785 0x24006c89
+10638c10638
+<     Data Type: double  InDom: 144.26760 0x24006888
+---
+>     Data Type: double  InDom: 144.27784 0x24006c88
+10659c10659
+<     Data Type: double  InDom: 144.28672 0x24007000
+---
+>     Data Type: double  InDom: 144.29696 0x24007400
+10667c10667
+<     Data Type: double  InDom: 144.28673 0x24007001
+---
+>     Data Type: double  InDom: 144.29697 0x24007401
+10675c10675
+<     Data Type: double  InDom: 144.28674 0x24007002
+---
+>     Data Type: double  InDom: 144.29698 0x24007402
+10683c10683
+<     Data Type: double  InDom: 144.28675 0x24007003
+---
+>     Data Type: double  InDom: 144.29699 0x24007403
+10691c10691
+<     Data Type: double  InDom: 144.28676 0x24007004
+---
+>     Data Type: double  InDom: 144.29700 0x24007404
+10699c10699
+<     Data Type: double  InDom: 144.29696 0x24007400
+---
+>     Data Type: double  InDom: 144.30720 0x24007800
+10707c10707
+<     Data Type: double  InDom: 144.29697 0x24007401
+---
+>     Data Type: double  InDom: 144.30721 0x24007801
+10715c10715
+<     Data Type: double  InDom: 144.29698 0x24007402
+---
+>     Data Type: double  InDom: 144.30722 0x24007802
+10723c10723
+<     Data Type: double  InDom: 144.29699 0x24007403
+---
+>     Data Type: double  InDom: 144.30723 0x24007803
+10731c10731
+<     Data Type: double  InDom: 144.29700 0x24007404
+---
+>     Data Type: double  InDom: 144.30724 0x24007804
+10739c10739
+<     Data Type: double  InDom: 144.30720 0x24007800
+---
+>     Data Type: double  InDom: 144.31744 0x24007c00
+10748c10748
+<     Data Type: double  InDom: 144.30721 0x24007801
+---
+>     Data Type: double  InDom: 144.31745 0x24007c01
+10755c10755
+<     Data Type: double  InDom: 144.31744 0x24007c00
+---
+>     Data Type: double  InDom: 144.32768 0x24008000
+10790c10790
+<     Data Type: double  InDom: 144.32773 0x24008005
+---
+>     Data Type: double  InDom: 144.33797 0x24008405
+10798c10798
+<     Data Type: double  InDom: 144.32770 0x24008002
+---
+>     Data Type: double  InDom: 144.33794 0x24008402
+10806c10806
+<     Data Type: double  InDom: 144.32774 0x24008006
+---
+>     Data Type: double  InDom: 144.33798 0x24008406
+10814c10814
+<     Data Type: double  InDom: 144.32769 0x24008001
+---
+>     Data Type: double  InDom: 144.33793 0x24008401
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[87%] 1192 [not run] No podman binary found
+[87%] 1193
+[87%] 1194
+[87%] 1195
+[87%] 1196
+[87%] 1197
+[88%] 1198
+[88%] 1199
+[88%] 1202
+[88%] 1203
+[88%] 1207
+[88%] 1211 [not run] Redis server not running locally
+[88%] 1212 [not run] Redis server not running locally
+[88%] 1214 [not run] Redis server not running locally
+[88%] 1217
+[88%] 1218
+[88%] 1219
+[88%] 1220 [not run] no tty assigned
+[88%] 1221
+[89%] 1222
+[89%] 1224
+[89%] 1227
+[89%] 1229
+[89%] 1231
+[89%] 1234
+[89%] 1238
+[89%] 1239
+[89%] 1240
+[89%] 1242
+[89%] 1243 - output mismatch (see 1243.out.bad)
+1a2,3
+> ./1243: line 107: /tmp/1243-1004842.discover/localhost.sh: Permission denied
+> ./1243: line 109: /tmp/1243-1004842.discover/hostnames.sh: Permission denied
+3c5
+< get pod --show-all -o jsonpath={.items[*].status.podIP}
+---
+> cat: /tmp/1243-1004842.kubectl.args: No such file or directory
+6,7c8
+< Discovered pmcd servers:
+<   >= 2 pcp://IP_ADDRESS:44321 lines
+---
+> No pmcd servers discovered
+11a13,18
+> execve(0x5839c00(DISCOVER_DIR/hostnames.sh), 0x5839bb0, 0x1ffeffffb8) failed, errno 13
+> EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+> Add more stringent tests in PRE(sys_execve), or work out how to recover.
+> execve(0x583b020(DISCOVER_DIR/localhost.sh), 0x583afd0, 0x1ffeffffb8) failed, errno 13
+> EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+> Add more stringent tests in PRE(sys_execve), or work out how to recover.
+18a26,31
+> execve(0x583d210(DISCOVER_DIR/hostnames.sh), 0x583d1c0, 0x1ffeffffb8) failed, errno 13
+> EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+> Add more stringent tests in PRE(sys_execve), or work out how to recover.
+> execve(0x583d260(DISCOVER_DIR/localhost.sh), 0x583d210, 0x1ffeffffb8) failed, errno 13
+> EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+> Add more stringent tests in PRE(sys_execve), or work out how to recover.
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[89%] 1245
+[89%] 1247
+[89%] 1255
+[90%] 1257
+[90%] 1258
+[90%] 1265
+[90%] 1266
+[90%] 1267
+[90%] 1269
+[90%] 1274
+[90%] 1276 [not run] missing docker permissions or service
+[90%] 1287
+[90%] 1289
+[90%] 1294
+[90%] 1297 - output mismatch (see 1297.out.bad)
+7d6
+<      pmie: primary engine: PCP_LOG_DIR/pmie/HOSTNAME/pmie.log
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[90%] 1299
+[91%] 1301
+[91%] 1303
+[91%] 1304
+[91%] 1306
+[91%] 1310
+[91%] 1318
+[91%] 1321
+[91%] 1323
+[91%] 1324
+[91%] 1326
+[91%] 1330
+[91%] 1331
+[91%] 1337 [not run] Microsoft SQL Server tools not installed
+[92%] 1338
+[92%] 1340
+[92%] 1342
+[92%] 1343
+[92%] 1344
+[92%] 1347
+[92%] 1349
+[92%] 1350
+[92%] 1351
+[92%] 1354
+[92%] 1357 [not run] No podman binary found
+[92%] 1358 [not run] No podman binary found
+[92%] 1359
+[93%] 1362 [not run] Cannot run psql as the postgres user, postgresql not installed or running?
+[93%] 1367
+[93%] 1368
+[93%] 1369
+[93%] 1372
+[93%] 1379 [not run] Redis server not running locally
+[93%] 1383
+[93%] 1385
+[93%] 1388 [not run] Redis server not running locally
+[93%] 1390
+[93%] 1393
+[93%] 1395
+[93%] 1396
+[94%] 1397
+[94%] 1398
+[94%] 1399
+[94%] 1401 [not run] Redis server not running locally
+[94%] 1403
+[94%] 1407 [not run] need DISPLAY or PCPQA_CLOSE_X_SERVER
+[94%] 1408 [not run] need DISPLAY or PCPQA_CLOSE_X_SERVER
+[94%] 1415
+[94%] 1416
+[94%] 1422
+[94%] 1423
+[94%] 1433 [not run] Redis server not running locally
+[94%] 1434
+[94%] 1435
+[95%] 1436
+[95%] 1437
+[95%] 1455
+[95%] 1457 [not run] Redis server not running locally
+[95%] 1480 [not run] No sensors found, probably a VM
+[95%] 1489
+[95%] 1490
+[95%] 1495
+[95%] 1511
+[95%] 1543 [not run] Redis server not running locally
+[95%] 1544 [not run] Redis server not running locally
+[95%] 1545
+[95%] 1546
+[96%] 1547
+[96%] 1566
+[96%] 1573 [not run] Redis server not running locally
+[96%] 1588
+[96%] 1598 [not run] statsd PMDA not installed
+[96%] 1599 [not run] statsd PMDA not installed
+[96%] 1600 [not run] Redis server not running locally
+[96%] 1601 [not run] Redis server not running locally
+[96%] 1602 [not run] Redis server not running locally
+[96%] 1622 [not run] upstream policy package not loaded
+[96%] 1623
+[96%] 1644
+[96%] 1660
+[97%] 1661 [not run] Redis server not running locally
+[97%] 1671
+[97%] 1672
+[97%] 1680 [not run] missing required ovs-vsctl command
+[97%] 1690 [not run] Redis server not running locally
+[97%] 1692
+[97%] 1694
+[97%] 1695 [not run] Redis server not running locally
+[97%] 1696 [not run] Redis server not running locally
+[97%] 1700 - output mismatch (see 1700.out.bad)
+78c78
+<     value ""
+---
+>     value "modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1020-azure"
+172c172
+<             "error": "",
+---
+>             "error": "modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1020-azure\n",
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[97%] 1701
+[97%] 1702
+[97%] 1703
+[98%] 1704 [failed, exit status 1] - output mismatch (see 1704.out.bad)
+13,14c13
+< found metric bpftrace.scripts.testscript.probes with matching value 2
+< === check metrics ===
+---
+> Timeout (10s) while waiting for metric bpftrace.scripts.testscript.probes to match value 2, script data:
+16,20c15
+< bpftrace.scripts.testscript.data.signals PMID: 151.100.10 [@signals variable of bpftrace script]
+<     Data Type: 64-bit unsigned int  InDom: 151.100010 0x25c186aa
+<     Semantics: counter  Units: none
+< Help:
+< @signals variable of bpftrace script
+---
+> bpftrace.scripts.testscript.data.signals
+23,43c18,40
+< bpftrace.scripts.testscript.data.signals PMID: 151.100.10 [@signals variable of bpftrace script]
+<     Data Type: 64-bit unsigned int  InDom: 151.100010 0x25c186aa
+<     Semantics: counter  Units: none
+< Help:
+< @signals variable of bpftrace script
+<     inst [0 or "17"] value 1
+< 
+< bpftrace.scripts.testscript.data.signals PMID: 151.100.10 [@signals variable of bpftrace script]
+<     Data Type: 64-bit unsigned int  InDom: 151.100010 0x25c186aa
+<     Semantics: counter  Units: none
+< Help:
+< @signals variable of bpftrace script
+<     inst [1 or "15"] value 1
+<     inst [0 or "17"] value 1
+< 
+< === remove bpftrace agent ===
+< Culling the Performance Metrics Name Space ...
+< bpftrace ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bpftrace metrics have gone away ... OK
+---
+> bpftrace.scripts.testscript.data_bytes
+>     value 0
+> 
+> bpftrace.scripts.testscript.code
+>     value "// name: testscript
+> tracepoint:syscalls:sys_enter_kill /args->pid == 1072469/ { @signals[args->sig] = count(); }"
+> 
+> bpftrace.scripts.testscript.probes
+>     value 0
+> 
+> bpftrace.scripts.testscript.error
+>     value "modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1020-azure
+> definitions.h:13:3: error: unknown type name 'u64'
+> definitions.h:14:3: error: unknown type name 's64'"
+> 
+> bpftrace.scripts.testscript.exit_code
+>     value 1
+> 
+> bpftrace.scripts.testscript.pid
+>     value 1072475
+> 
+> bpftrace.scripts.testscript.status
+>     value "error"
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[98%] 1705 - output mismatch (see 1705.out.bad)
+41c41,42
+<     value "Can't attach to PROBES probes because it exceeds the current limit of PROBES probes.
+---
+>     value "modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1020-azure
+> Can't attach to PROBES probes because it exceeds the current limit of PROBES probes.
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[98%] 1706
+[98%] 1707
+[98%] 1708 [not run] statsd PMDA not installed
+[98%] 1709 [not run] statsd PMDA not installed
+[98%] 1710 [not run] statsd PMDA not installed
+[98%] 1711 [not run] statsd PMDA not installed
+[98%] 1712 [not run] statsd PMDA not installed
+[98%] 1713 [not run] statsd PMDA not installed
+[98%] 1714 [not run] statsd PMDA not installed
+[98%] 1715 [not run] statsd PMDA not installed
+[98%] 1716 [not run] statsd PMDA not installed
+[99%] 1717 [not run] statsd PMDA not installed
+[99%] 1718 [not run] statsd PMDA not installed
+[99%] 1719 [not run] statsd PMDA not installed
+[99%] 1720 [not run] statsd PMDA not installed
+[99%] 1721
+[99%] 1722
+[99%] 1723
+[99%] 1724
+[99%] 1768 - output mismatch (see 1768.out.bad)
+2,13d1
+< Discovered host pcp://slick:44321 [243f90596d76cf23e8da47476ec452a2adbe0b32]
+< + cp TMPDIR/243f90596d76cf23e8da47476ec452a2adbe0b32 PCP_SYSCONF_DIR/pmie/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32
+< + cp TMPDIR/243f90596d76cf23e8da47476ec452a2adbe0b32 PCP_SYSCONF_DIR/pmlogger/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32
+< Discovered host pcp://slack:44321 [8d00c4cf51d11bb9dced8a0e7507542653635377]
+< + cp TMPDIR/8d00c4cf51d11bb9dced8a0e7507542653635377 PCP_SYSCONF_DIR/pmie/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377
+< + cp TMPDIR/8d00c4cf51d11bb9dced8a0e7507542653635377 PCP_SYSCONF_DIR/pmlogger/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377
+< Discovered host pcp://localhost:44321?container=b0cd2cc912a3 [7745e45ed37ca712f418ec7b871c04fc898b9276]
+< + cp TMPDIR/7745e45ed37ca712f418ec7b871c04fc898b9276 PCP_SYSCONF_DIR/pmie/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276
+< + cp TMPDIR/7745e45ed37ca712f418ec7b871c04fc898b9276 PCP_SYSCONF_DIR/pmlogger/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276
+< Discovered host pcp://localhost:44321?container=77475e5fa09c [68dcffbdd4111d3ee82bb855286e3e35da828ca2]
+< + cp TMPDIR/68dcffbdd4111d3ee82bb855286e3e35da828ca2 PCP_SYSCONF_DIR/pmie/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2
+< + cp TMPDIR/68dcffbdd4111d3ee82bb855286e3e35da828ca2 PCP_SYSCONF_DIR/pmlogger/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h e4c2a05926f7 -f sample.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f sampledso.milliseconds
+PMDA probe: pminfo -h e4c2a05926f7 -f simple.numfetch
+[99%] 1793
+[99%] 1855 [not run] rabbitmq not running on default port:15672
+[99%] 1896
+[99%] 4751
+Not run: 008 024 042 047 054 066 069 070 072 075 077 081 083 086 113 115 116 117 122 130 131 159 187 215 219 257 262 272 276 307 308 322 325 340 348 353 360 361 365 370 371 372 374 375 377 381 420 442 476 477 478 480 504 506 512 519 540 543 545 555 583 589 603 622 635 651 654 655 662 668 703 734 749 759 760 770 778 780 789 794 795 796 819 825 835 847 863 864 866 867 873 876 905 912 913 917 940 954 960 967 986 1001 1002 1003 1004 1005 1006 1007 1008 1009 1010 1011 1012 1013 1014 1015 1016 1021 1022 1023 1025 1026 1027 1028 1029 1031 1032 1034 1035 1041 1042 1061 1070 1081 1090 1123 1126 1141 1145 1151 1152 1154 1157 1160 1161 1175 1176 1179 1188 1192 1211 1212 1214 1220 1276 1337 1357 1358 1362 1379 1388 1401 1407 1408 1433 1457 1480 1543 1544 1573 1598 1599 1600 1601 1602 1622 1661 1680 1690 1695 1696 1708 1709 1710 1711 1712 1713 1714 1715 1716 1717 1718 1719 1720 1855
+Failures: 003 033 036 051 063 244 250 297 304 344 354 392 429 469 471 674 681 687 735 766 805 845 846 893 943 985 1115 1116 1117 1118 1124 1127 1150 1153 1155 1156 1158 1165 1166 1168 1170 1171 1172 1173 1178 1181 1190 1191 1243 1297 1700 1704 1705 1768
+Failed 54 of 1124 tests

@@ -1,0 +1,40 @@
+pmdabcc config:
+# Installed by PCP QA test 1178 on Mon Jun  1 18:55:44 UTC 2020
+[pmda]
+modules = tcpperpid
+prefix = bcc.
+[tcpperpid]
+module = tcpperpid
+cluster = 11
+dport = 80
+Log for pmdabcc on 24d533d34f13 started Mon Jun  1 18:55:46 2020
+
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: Initializing, currently in 'notready' state.
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: Enabled modules:
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: ['tcpperpid']
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: Configuring modules:
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: tcpperpid
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: Modules configured.
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: Initializing modules:
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: tcpperpid
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: tcpperpid: Filtering on remote ports: [80].
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: tcpperpid: Using BPF source file modules/tcplife.bpf.
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: tcpperpid: Initialized.
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: Modules initialized.
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: Registering metrics:
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: tcpperpid
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: Metrics registered.
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: Registering helpers:
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: tcpperpid
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: Helpers registered.
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: Compiling modules:
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: tcpperpid
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: tcpperpid: Testing BCC compatilibility, possible errors below are safe to ignore.
+chdir(/lib/modules/5.3.0-1020-azure/build): No such file or directory
+[Mon Jun  1 18:55:46] pmdabcc(12120) Info: tcpperpid: Tested BCC compatilibility, possible errors above are safe to ignore.
+chdir(/lib/modules/5.3.0-1020-azure/build): No such file or directory
+[Mon Jun  1 18:55:46] pmdabcc(12120) Error: tcpperpid: Failed to compile BPF text
+[Mon Jun  1 18:55:46] pmdabcc(12120) Error: tcpperpid: Module NOT active!
+[Mon Jun  1 18:55:46] pmdabcc(12120) Error: Failed to compile module tcpperpid, aborting.
+
+Log finished Mon Jun  1 18:55:46 2020

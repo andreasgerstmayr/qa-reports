@@ -1,0 +1,39 @@
+pmdabcc config:
+# Installed by PCP QA test 1171 on Mon Jun  1 19:03:20 UTC 2020
+[pmda]
+modules = profile
+prefix = bcc.
+[profile]
+module = profile
+cluster = 14
+=== _pmdabcc_wait_for_metric: after 0 secs, metrics should be available ===
+=== _pmdabcc_wait_for_metric: after another 1 secs, values are available ===
+
+bcc.proc.profile
+    value "{"status": "stopped", "data": null}"
+Log for pmdabcc on e4c2a05926f7 started Mon Jun  1 19:03:22 2020
+
+[Mon Jun  1 19:03:22] pmdabcc(972186) Info: Initializing, currently in 'notready' state.
+[Mon Jun  1 19:03:22] pmdabcc(972186) Info: Enabled modules:
+[Mon Jun  1 19:03:22] pmdabcc(972186) Info: ['profile']
+[Mon Jun  1 19:03:22] pmdabcc(972186) Info: Configuring modules:
+[Mon Jun  1 19:03:22] pmdabcc(972186) Info: profile
+[Mon Jun  1 19:03:22] pmdabcc(972186) Info: Modules configured.
+[Mon Jun  1 19:03:22] pmdabcc(972186) Info: Initializing modules:
+[Mon Jun  1 19:03:22] pmdabcc(972186) Info: profile
+[Mon Jun  1 19:03:22] pmdabcc(972186) Info: profile: Initialized.
+[Mon Jun  1 19:03:22] pmdabcc(972186) Info: Modules initialized.
+[Mon Jun  1 19:03:22] pmdabcc(972186) Info: Registering metrics:
+[Mon Jun  1 19:03:22] pmdabcc(972186) Info: profile
+[Mon Jun  1 19:03:22] pmdabcc(972186) Info: Metrics registered.
+[Mon Jun  1 19:03:22] pmdabcc(972186) Info: Registering helpers:
+[Mon Jun  1 19:03:22] pmdabcc(972186) Info: Helpers registered.
+[Mon Jun  1 19:03:22] pmdabcc(972186) Info: Compiling modules:
+[Mon Jun  1 19:03:22] pmdabcc(972186) Info: profile
+[Mon Jun  1 19:03:22] pmdabcc(972186) Info: Modules compiled.
+[Mon Jun  1 19:03:22] pmdabcc(972186) Info: Ready to process requests.
+[Mon Jun  1 19:03:24] pmdabcc(972186) Info: profile: Starting profiling...
+modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1020-azure
+chdir(/lib/modules/5.3.0-1020-azure/build): No such file or directory
+[Mon Jun  1 19:03:24] pmdabcc(972186) Error: profile: Failed to compile BPF module <text>
+[Mon Jun  1 19:03:24] pmdabcc(972186) Error: profile: Failed to compile BPF code!

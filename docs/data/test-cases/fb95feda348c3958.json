@@ -1,0 +1,53 @@
+{
+  "uid" : "fb95feda348c3958",
+  "name" : "QA 1016",
+  "fullName" : "QA #1016 on fedora31-container",
+  "time" : {
+    "start" : 1591036553000,
+    "stop" : 1591036554000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 1016\n\nTest QmcContext functionality\n\n\n\nseq=`basename $0`\n\necho \"QA output created by $seq\"\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 1016</p>\n<p>Test QmcContext functionality</p>\n<p>seq=<code>basename $0</code></p>\n<p>echo &quot;QA output created by $seq&quot;</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "$PCPQA_CLOSE_X_SERVER not set in ./common.config",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "epic",
+    "value" : "libpcp_qmc"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1016",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1016.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fb95feda348c3958.json",
+  "parameterValues" : [ ]
+}

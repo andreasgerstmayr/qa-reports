@@ -1,0 +1,84 @@
+{
+  "uid" : "5ec74df802dfdadb",
+  "name" : "QA 1155",
+  "fullName" : "QA #1155 on debian10-container",
+  "time" : {
+    "start" : 1591038367000,
+    "stop" : 1591038377000,
+    "duration" : 10000
+  },
+  "description" : "PCP QA Test No. 1155\n\nExercise the BCC PMDA tcplife module - install, remove and values.\n\n\n\nCopyright (c) 2018 Andreas Gerstmayr.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian10 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 1155</p>\n<p>Exercise the BCC PMDA tcplife module - install, remove and values.</p>\n<p>Copyright (c) 2018 Andreas Gerstmayr.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform debian10 reproduce\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "[failed, exit status 1] - output mismatch (see 1155.out.bad)\n46,70c46\n< === report metric values for pid ===\n< OK\n< === report metric values for comm ===\n< OK\n< === report metric values for laddr ===\n< OK\n< === report metric values for lport ===\n< OK\n< === report metric values for daddr ===\n< OK\n< === report metric values for dport ===\n< OK\n< === report metric values for tx ===\n< OK\n< === report metric values for rx ===\n< OK\n< === report metric values for duration ===\n< OK\n< \n< === remove bcc agent ===\n< Culling the Performance Metrics Name Space ...\n< bcc ... done\n< Updating the PMCD control file, and notifying PMCD ...\n< [...removing files...]\n< Check bcc metrics have gone away ... OK\n---\n> BPF compilation error, test failed\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h c8b243a204dc -f sample.milliseconds\nPMDA probe: pminfo -h c8b243a204dc -f sampledso.milliseconds\nPMDA probe: pminfo -h c8b243a204dc -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 1155\n\nExercise the BCC PMDA tcplife module - install, remove and values.\n\n\n\nCopyright (c) 2018 Andreas Gerstmayr.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian10 reproduce",
+    "status" : "broken",
+    "statusMessage" : "[failed, exit status 1] - output mismatch (see 1155.out.bad)\n46,70c46\n< === report metric values for pid ===\n< OK\n< === report metric values for comm ===\n< OK\n< === report metric values for laddr ===\n< OK\n< === report metric values for lport ===\n< OK\n< === report metric values for daddr ===\n< OK\n< === report metric values for dport ===\n< OK\n< === report metric values for tx ===\n< OK\n< === report metric values for rx ===\n< OK\n< === report metric values for duration ===\n< OK\n< \n< === remove bcc agent ===\n< Culling the Performance Metrics Name Space ...\n< bcc ... done\n< Updating the PMCD control file, and notifying PMCD ...\n< [...removing files...]\n< Check bcc metrics have gone away ... OK\n---\n> BPF compilation error, test failed\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h c8b243a204dc -f sample.milliseconds\nPMDA probe: pminfo -h c8b243a204dc -f sampledso.milliseconds\nPMDA probe: pminfo -h c8b243a204dc -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "bf480bf7a3686d89",
+      "name" : "1155.out.bad",
+      "source" : "bf480bf7a3686d89.txt",
+      "type" : "text/plain",
+      "size" : 1292
+    }, {
+      "uid" : "b5bd4575d945b55c",
+      "name" : "1155.full",
+      "source" : "b5bd4575d945b55c.txt",
+      "type" : "text/plain",
+      "size" : 2174
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian10-container"
+  }, {
+    "name" : "host",
+    "value" : "debian10-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.bcc"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "python"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1155",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1155.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "5ec74df802dfdadb.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,18 @@
+QA output created by 913
+
+=== redis agent installation ===
+Remove: cannot find domain.h (or similar) to determine the Performance Metrics Domain
+Updating the Performance Metrics Name Space (PMNS) ...
+Terminate PMDA if already installed ...
+[...install files, make output...]
+Updating the PMCD control file, and notifying PMCD ...
+Check redis metrics have appeared ... X metrics and Y values
+
+=== verify redis metrics ===
+
+=== remove redis agent ===
+Culling the Performance Metrics Name Space ...
+redis ... done
+Updating the PMCD control file, and notifying PMCD ...
+[...removing files...]
+Check redis metrics have gone away ... OK

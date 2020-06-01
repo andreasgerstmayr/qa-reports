@@ -1,0 +1,78 @@
+{
+  "uid" : "6b852da4fa3090d7",
+  "name" : "QA 1067",
+  "fullName" : "QA #1067 on debian11-container",
+  "time" : {
+    "start" : 1591036257000,
+    "stop" : 1591036257000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 1067\n\nExercise the zbxpcp Zabbix integration module.\n\n\n\nCopyright (c) 2015 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian11 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 1067</p>\n<p>Exercise the zbxpcp Zabbix integration module.</p>\n<p>Copyright (c) 2015 Red Hat.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform debian11 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "no qualified output\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h f3fc340f0608 -f sample.milliseconds\nPMDA probe: pminfo -h f3fc340f0608 -f sampledso.milliseconds\nPMDA probe: pminfo -h f3fc340f0608 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 1067\n\nExercise the zbxpcp Zabbix integration module.\n\n\n\nCopyright (c) 2015 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian11 reproduce",
+    "status" : "failed",
+    "statusMessage" : "no qualified output\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h f3fc340f0608 -f sample.milliseconds\nPMDA probe: pminfo -h f3fc340f0608 -f sampledso.milliseconds\nPMDA probe: pminfo -h f3fc340f0608 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5af08ffb3c8c6e50",
+      "name" : "1067.out.bad",
+      "source" : "5af08ffb3c8c6e50.txt",
+      "type" : "text/plain",
+      "size" : 99
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian11-container"
+  }, {
+    "name" : "host",
+    "value" : "debian11-container"
+  }, {
+    "name" : "epic",
+    "value" : "zbxpcp"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.sample"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1067",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1067.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "6b852da4fa3090d7.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,53 @@
+{
+  "uid" : "b977972d01a8d17d",
+  "name" : "QA 929",
+  "fullName" : "QA #929 on debian11-container",
+  "time" : {
+    "start" : 1591035759000,
+    "stop" : 1591035760000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 929\n\npmlogger_daily optimization for only one archive (pmlogmv not pmlogextract)\n\nand -M option (don't rewrite, merge or move)\n\n\n\nCopyright (c) 2014 Ken McDonell. All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 929</p>\n<p>pmlogger_daily optimization for only one archive (pmlogmv not pmlogextract)</p>\n<p>and -M option (don't rewrite, merge or move)</p>\n<p>Copyright (c) 2014 Ken McDonell. All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian11-container"
+  }, {
+    "name" : "host",
+    "value" : "debian11-container"
+  }, {
+    "name" : "epic",
+    "value" : "logutil"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/929",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/929.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b977972d01a8d17d.json",
+  "parameterValues" : [ ]
+}

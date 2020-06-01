@@ -1,0 +1,53 @@
+{
+  "uid" : "1491bb56dc39133e",
+  "name" : "QA 168",
+  "fullName" : "QA #168 on ubuntu1804-direct",
+  "time" : {
+    "start" : 1591031688000,
+    "stop" : 1591031703000,
+    "duration" : 15000
+  },
+  "description" : "PCP QA Test No. 168\n\npmlogmerge shall abort if descriptors non consistent across archives\n\npv 933456\n\n\n\nCopyright (c) 2005 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 168</p>\n<p>pmlogmerge shall abort if descriptors non consistent across archives</p>\n<p>pv 933456</p>\n<p>Copyright (c) 2005 Silicon Graphics, Inc.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "epic",
+    "value" : "pmlogextract"
+  }, {
+    "name" : "epic",
+    "value" : ""
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/168",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/168.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1491bb56dc39133e.json",
+  "parameterValues" : [ ]
+}

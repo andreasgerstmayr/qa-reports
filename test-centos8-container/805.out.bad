@@ -1,0 +1,66 @@
+QA output created by 805
+
+=== postfix agent installation ===
+Updating the Performance Metrics Name Space (PMNS) ...
+Terminate PMDA if already installed ...
+[...install files, make output...]
+Updating the PMCD control file, and notifying PMCD ...
+Check postfix metrics have appeared ... X metrics and 3 values
+=== verify postfix values - postfix-log-001.gz ===
+
+postfix.queues.active
+Error: Try again. Information not currently available
+
+postfix.queues.deferred
+Error: Try again. Information not currently available
+
+postfix.queues.hold
+Error: Try again. Information not currently available
+
+postfix.queues.incoming
+Error: Try again. Information not currently available
+
+postfix.queues.maildrop
+Error: Try again. Information not currently available
+
+postfix.received
+    inst [0 or "local"] value 0
+    inst [1 or "smtp"] value 0
+
+postfix.sent
+    inst [0 or "smtp"] value 0
+=== done ===
+
+=== verify postfix values - postfix-log-002.gz ===
+
+postfix.queues.active
+Error: Try again. Information not currently available
+
+postfix.queues.deferred
+Error: Try again. Information not currently available
+
+postfix.queues.hold
+Error: Try again. Information not currently available
+
+postfix.queues.incoming
+Error: Try again. Information not currently available
+
+postfix.queues.maildrop
+Error: Try again. Information not currently available
+
+postfix.received
+    inst [0 or "local"] value 1
+    inst [1 or "smtp"] value 0
+
+postfix.sent
+    inst [0 or "smtp"] value 1
+    inst [1 or "local"] value 1
+=== done ===
+
+
+=== remove postfix agent ===
+Culling the Performance Metrics Name Space ...
+postfix ... done
+Updating the PMCD control file, and notifying PMCD ...
+[...removing files...]
+Check postfix metrics have gone away ... OK

@@ -1,0 +1,14 @@
+pmdabpftrace config:
+# Installed by PCP QA test 1704 on Mon Jun  1 19:31:43 UTC 2020
+[dynamic_scripts]
+enabled = true
+auth_enabled = false
+Log for pmdabpftrace on e4c2a05926f7 started Mon Jun  1 19:31:45 2020
+
+[Mon Jun  1 19:31:45] pmdabpftrace(1072441) Info: manager: started pmdabpftrace process manager
+[Mon Jun  1 19:31:45] pmdabpftrace(1072441) Info: manager: using bpftrace v0.10.0
+[Mon Jun  1 19:31:47] pmdabpftrace(1072441) Info: script: starting script sb2e448cc5a204ccf8cdc356bdc54f6af (name=testscript)...
+[Mon Jun  1 19:31:47] pmdabpftrace(1072441) Info: script: started script sb2e448cc5a204ccf8cdc356bdc54f6af (name=testscript, PID=1072475)
+[Mon Jun  1 19:31:47] pmdabpftrace(1072441) Info: script: stopped script sb2e448cc5a204ccf8cdc356bdc54f6af (name=testscript, PID=1072475) due to error: modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1020-azure
+definitions.h:13:3: error: unknown type name 'u64'
+definitions.h:14:3: error: unknown type name 's64'

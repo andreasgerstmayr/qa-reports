@@ -1,0 +1,54 @@
+
+=== postfix agent installation ===
+Updating the Performance Metrics Name Space (PMNS) ...
+Terminate PMDA if already installed ...
+Updating the PMCD control file, and notifying PMCD ...
+Starting pmcd ... 
+Check postfix metrics have appeared ... 5 warnings, 7 metrics and 3 values
+=== verify postfix values - postfix-log-001.gz ===
+=== done ===
+
+=== verify postfix values - postfix-log-002.gz ===
+=== done ===
+
+PMDA log file ...
+Log for pmdapostfix on ed1244330104 started Mon Jun  1 18:16:53 2020
+
+[Mon Jun  1 18:16:53] pmdapostfix(102085) Info: qshape cmd: /tmp/805-101299.qshape  <qname>
+[Mon Jun  1 18:16:53] pmdapostfix(102085) Info: logfile: /tmp/805-101299.logfile
+Can't exec "/tmp/805-101299.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Mon Jun  1 18:16:54] pmdapostfix(102085) Info: couldn't execute '/tmp/805-101299.qshape  maildrop'
+Can't exec "/tmp/805-101299.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Mon Jun  1 18:16:54] pmdapostfix(102085) Info: couldn't execute '/tmp/805-101299.qshape  incoming'
+Can't exec "/tmp/805-101299.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Mon Jun  1 18:16:54] pmdapostfix(102085) Info: couldn't execute '/tmp/805-101299.qshape  hold'
+Can't exec "/tmp/805-101299.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Mon Jun  1 18:16:54] pmdapostfix(102085) Info: couldn't execute '/tmp/805-101299.qshape  active'
+Can't exec "/tmp/805-101299.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Mon Jun  1 18:16:54] pmdapostfix(102085) Info: couldn't execute '/tmp/805-101299.qshape  deferred'
+Can't exec "/tmp/805-101299.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Mon Jun  1 18:16:55] pmdapostfix(102085) Info: couldn't execute '/tmp/805-101299.qshape  maildrop'
+Can't exec "/tmp/805-101299.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Mon Jun  1 18:16:55] pmdapostfix(102085) Info: couldn't execute '/tmp/805-101299.qshape  incoming'
+Can't exec "/tmp/805-101299.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Mon Jun  1 18:16:55] pmdapostfix(102085) Info: couldn't execute '/tmp/805-101299.qshape  hold'
+Can't exec "/tmp/805-101299.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Mon Jun  1 18:16:55] pmdapostfix(102085) Info: couldn't execute '/tmp/805-101299.qshape  active'
+Can't exec "/tmp/805-101299.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Mon Jun  1 18:16:55] pmdapostfix(102085) Info: couldn't execute '/tmp/805-101299.qshape  deferred'
+Can't exec "/tmp/805-101299.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Mon Jun  1 18:16:56] pmdapostfix(102085) Info: couldn't execute '/tmp/805-101299.qshape  maildrop'
+Can't exec "/tmp/805-101299.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Mon Jun  1 18:16:56] pmdapostfix(102085) Info: couldn't execute '/tmp/805-101299.qshape  incoming'
+Can't exec "/tmp/805-101299.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Mon Jun  1 18:16:56] pmdapostfix(102085) Info: couldn't execute '/tmp/805-101299.qshape  hold'
+Can't exec "/tmp/805-101299.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Mon Jun  1 18:16:56] pmdapostfix(102085) Info: couldn't execute '/tmp/805-101299.qshape  active'
+Can't exec "/tmp/805-101299.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Mon Jun  1 18:16:56] pmdapostfix(102085) Info: couldn't execute '/tmp/805-101299.qshape  deferred'
+
+=== remove postfix agent ===
+Culling the Performance Metrics Name Space ...
+postfix ... done
+Updating the PMCD control file, and notifying PMCD ...
+Check postfix metrics have gone away ... OK

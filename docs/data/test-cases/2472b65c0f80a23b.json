@@ -1,0 +1,53 @@
+{
+  "uid" : "2472b65c0f80a23b",
+  "name" : "QA 489",
+  "fullName" : "QA #489 on debian11-container",
+  "time" : {
+    "start" : 1591033039000,
+    "stop" : 1591033047000,
+    "duration" : 8000
+  },
+  "description" : "PCP QA Test No. 489\n\nexercise pmdaCacheStoreKey()\n\n\n\nCopyright (c) 2011 Ken McDonell.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 489</p>\n<p>exercise pmdaCacheStoreKey()</p>\n<p>Copyright (c) 2011 Ken McDonell.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian11-container"
+  }, {
+    "name" : "host",
+    "value" : "debian11-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/489",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/489.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2472b65c0f80a23b.json",
+  "parameterValues" : [ ]
+}

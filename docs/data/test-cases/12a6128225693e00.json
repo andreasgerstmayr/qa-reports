@@ -1,0 +1,78 @@
+{
+  "uid" : "12a6128225693e00",
+  "name" : "QA 687",
+  "fullName" : "QA #687 on centos7-container",
+  "time" : {
+    "start" : 1591034806000,
+    "stop" : 1591034806000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 687\n\npmlogger -C checkout\n\n\n\nCopyright (c) 2018 Ken McDonell.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos7 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 687</p>\n<p>pmlogger -C checkout</p>\n<p>Copyright (c) 2018 Ken McDonell.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform centos7 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 687.out.bad)\n11,12c11\n<  pmlogger [-...C...] ...\n<  The -C option will cause the configuration file ...\n---\n> No manual entry for pmlogger\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h ed1244330104 -f sample.milliseconds\nPMDA probe: pminfo -h ed1244330104 -f sampledso.milliseconds\nPMDA probe: pminfo -h ed1244330104 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 687\n\npmlogger -C checkout\n\n\n\nCopyright (c) 2018 Ken McDonell.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos7 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 687.out.bad)\n11,12c11\n<  pmlogger [-...C...] ...\n<  The -C option will cause the configuration file ...\n---\n> No manual entry for pmlogger\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h ed1244330104 -f sample.milliseconds\nPMDA probe: pminfo -h ed1244330104 -f sampledso.milliseconds\nPMDA probe: pminfo -h ed1244330104 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1fb95da4d3a86779",
+      "name" : "687.out.bad",
+      "source" : "1fb95da4d3a86779.txt",
+      "type" : "text/plain",
+      "size" : 466
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos7-container"
+  }, {
+    "name" : "host",
+    "value" : "centos7-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmlogger"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "man"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/687",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/687.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "12a6128225693e00.json",
+  "parameterValues" : [ ]
+}

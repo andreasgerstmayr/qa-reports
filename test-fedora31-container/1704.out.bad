@@ -1,0 +1,40 @@
+QA output created by 1704
+
+=== bpftrace agent installation ===
+Updating the Performance Metrics Name Space (PMNS) ...
+Terminate PMDA if already installed ...
+[...install files, make output...]
+Updating the PMCD control file, and notifying PMCD ...
+Check bpftrace metrics have appeared ... 7 metrics and X values
+
+=== start bpftrace script ===
+bpftrace.control.register old value="{}" new value="// name: testscript
+tracepoint:syscalls:sys_enter_kill /args->pid == PID/ { @signals[args->sig] = count(); }"
+Timeout (10s) while waiting for metric bpftrace.scripts.testscript.probes to match value 2, script data:
+
+bpftrace.scripts.testscript.data.signals
+No value(s) available!
+
+bpftrace.scripts.testscript.data_bytes
+    value 0
+
+bpftrace.scripts.testscript.code
+    value "// name: testscript
+tracepoint:syscalls:sys_enter_kill /args->pid == 1072469/ { @signals[args->sig] = count(); }"
+
+bpftrace.scripts.testscript.probes
+    value 0
+
+bpftrace.scripts.testscript.error
+    value "modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1020-azure
+definitions.h:13:3: error: unknown type name 'u64'
+definitions.h:14:3: error: unknown type name 's64'"
+
+bpftrace.scripts.testscript.exit_code
+    value 1
+
+bpftrace.scripts.testscript.pid
+    value 1072475
+
+bpftrace.scripts.testscript.status
+    value "error"

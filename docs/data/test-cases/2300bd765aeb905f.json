@@ -1,0 +1,53 @@
+{
+  "uid" : "2300bd765aeb905f",
+  "name" : "QA 789",
+  "fullName" : "QA #789 on fedora31-container",
+  "time" : {
+    "start" : 1591035434000,
+    "stop" : 1591035434000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 789\n\nBasic zimbra PMDA checkout\n\n\n\nCopyright (c) 2019 Ken McDonell.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 789</p>\n<p>Basic zimbra PMDA checkout</p>\n<p>Copyright (c) 2019 Ken McDonell.  All Rights Reserved.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Zimbra not installed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.zimbra"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/789",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/789.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2300bd765aeb905f.json",
+  "parameterValues" : [ ]
+}

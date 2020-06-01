@@ -1,0 +1,81 @@
+{
+  "uid" : "a734f024c0d9560c",
+  "name" : "QA 1297",
+  "fullName" : "QA #1297 on debian10-container",
+  "time" : {
+    "start" : 1591038861000,
+    "stop" : 1591038862000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 1297\n\nExercise systemd pmie start/stop (BZ 1650999)\n\n\n\nCopyright (c) 2018 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian10 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 1297</p>\n<p>Exercise systemd pmie start/stop (BZ 1650999)</p>\n<p>Copyright (c) 2018 Red Hat.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform debian10 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 1297.out.bad)\n7d6\n<      pmie: primary engine: PCP_LOG_DIR/pmie/HOSTNAME/pmie.log\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h c8b243a204dc -f sample.milliseconds\nPMDA probe: pminfo -h c8b243a204dc -f sampledso.milliseconds\nPMDA probe: pminfo -h c8b243a204dc -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 1297\n\nExercise systemd pmie start/stop (BZ 1650999)\n\n\n\nCopyright (c) 2018 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian10 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 1297.out.bad)\n7d6\n<      pmie: primary engine: PCP_LOG_DIR/pmie/HOSTNAME/pmie.log\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h c8b243a204dc -f sample.milliseconds\nPMDA probe: pminfo -h c8b243a204dc -f sampledso.milliseconds\nPMDA probe: pminfo -h c8b243a204dc -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "950bb5577f39e908",
+      "name" : "1297.out.bad",
+      "source" : "950bb5577f39e908.txt",
+      "type" : "text/plain",
+      "size" : 125
+    }, {
+      "uid" : "e24e3f512b9c6bda",
+      "name" : "1297.full",
+      "source" : "e24e3f512b9c6bda.txt",
+      "type" : "text/plain",
+      "size" : 93
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian10-container"
+  }, {
+    "name" : "host",
+    "value" : "debian10-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmieutil"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1297",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1297.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a734f024c0d9560c.json",
+  "parameterValues" : [ ]
+}

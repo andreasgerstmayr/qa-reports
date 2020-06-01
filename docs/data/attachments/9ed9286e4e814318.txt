@@ -1,0 +1,33 @@
+pmdabcc config:
+# Installed by PCP QA test 1115 on Mon Jun  1 18:58:52 UTC 2020
+[pmda]
+modules = sysfork
+prefix = bcc.
+[sysfork]
+module = sysfork
+cluster = 2
+Log for pmdabcc on c8b243a204dc started Mon Jun  1 18:58:54 2020
+
+[Mon Jun  1 18:58:54] pmdabcc(52264) Info: Initializing, currently in 'notready' state.
+[Mon Jun  1 18:58:54] pmdabcc(52264) Info: Enabled modules:
+[Mon Jun  1 18:58:54] pmdabcc(52264) Info: ['sysfork']
+[Mon Jun  1 18:58:54] pmdabcc(52264) Info: Configuring modules:
+[Mon Jun  1 18:58:54] pmdabcc(52264) Info: sysfork
+[Mon Jun  1 18:58:54] pmdabcc(52264) Info: Modules configured.
+[Mon Jun  1 18:58:54] pmdabcc(52264) Info: Initializing modules:
+[Mon Jun  1 18:58:54] pmdabcc(52264) Info: sysfork
+[Mon Jun  1 18:58:54] pmdabcc(52264) Info: sysfork: Initialized.
+[Mon Jun  1 18:58:54] pmdabcc(52264) Info: Modules initialized.
+[Mon Jun  1 18:58:54] pmdabcc(52264) Info: Registering metrics:
+[Mon Jun  1 18:58:54] pmdabcc(52264) Info: sysfork
+[Mon Jun  1 18:58:54] pmdabcc(52264) Info: Metrics registered.
+[Mon Jun  1 18:58:54] pmdabcc(52264) Info: Registering helpers:
+[Mon Jun  1 18:58:54] pmdabcc(52264) Info: Helpers registered.
+[Mon Jun  1 18:58:54] pmdabcc(52264) Info: Compiling modules:
+[Mon Jun  1 18:58:54] pmdabcc(52264) Info: sysfork
+chdir(/lib/modules/5.3.0-1020-azure/build): No such file or directory
+[Mon Jun  1 18:58:54] pmdabcc(52264) Error: sysfork: Failed to compile BPF module b'/var/lib/pcp/pmdas/bcc/modules/sysfork.bpf'
+[Mon Jun  1 18:58:54] pmdabcc(52264) Error: sysfork: Module NOT active!
+[Mon Jun  1 18:58:54] pmdabcc(52264) Error: Failed to compile module sysfork, aborting.
+
+Log finished Mon Jun  1 18:58:54 2020

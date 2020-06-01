@@ -1,49 +1,549 @@
-PMDA probe: pminfo -h a1c3ed352404 -f sample.milliseconds
-PMDA probe: pminfo -h a1c3ed352404 -f sampledso.milliseconds
-PMDA probe: pminfo -h a1c3ed352404 -f simple.numfetch
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[0%] 000
 [0%] 001
-[1%] 002 0s ...
-[2%] 004
-[4%] 005
-[5%] 007
-[6%] 010
-[8%] 026
-[9%] 027
-[10%] 031
-[12%] 034
-[13%] 048
-[14%] 055
-[16%] 059
-[17%] 068
-[18%] 074
-[20%] 080
-[21%] 085
-[22%] 087
-[24%] 091
-[25%] 107
-[26%] 112
-[28%] 127
-[29%] 137
-[30%] 146
-[32%] 153
-[33%] 154
-[34%] 155
-[36%] 178
-[37%] 201
-[38%] 207
-[40%] 208
-[41%] 210
-[42%] 213
-[44%] 232
-[45%] 234
-[46%] 249
-[48%] 256
-[49%] 263
-[50%] 278
-[52%] 299
-[53%] 338
-[54%] 345
-[56%] 354 - output mismatch (see 354.out.bad)
+[0%] 002 1s ...
+[0%] 003 - output mismatch (see 003.out.bad)
+2a3,57
+> filesys.avail: pmFetch: no value available
+> filesys.avail: pmFetch: no value available
+> filesys.avail: pmFetch: no value available
+> filesys.avail: pmFetch: no value available
+> filesys.avail: pmFetch: no value available
+> filesys.blocksize: pmFetch: no value available
+> filesys.blocksize: pmFetch: no value available
+> filesys.blocksize: pmFetch: no value available
+> filesys.blocksize: pmFetch: no value available
+> filesys.blocksize: pmFetch: no value available
+> filesys.capacity: pmFetch: no value available
+> filesys.capacity: pmFetch: no value available
+> filesys.capacity: pmFetch: no value available
+> filesys.capacity: pmFetch: no value available
+> filesys.capacity: pmFetch: no value available
+> filesys.free: pmFetch: no value available
+> filesys.free: pmFetch: no value available
+> filesys.free: pmFetch: no value available
+> filesys.free: pmFetch: no value available
+> filesys.free: pmFetch: no value available
+> filesys.freefiles: pmFetch: no value available
+> filesys.freefiles: pmFetch: no value available
+> filesys.freefiles: pmFetch: no value available
+> filesys.freefiles: pmFetch: no value available
+> filesys.freefiles: pmFetch: no value available
+> filesys.full: pmFetch: no value available
+> filesys.full: pmFetch: no value available
+> filesys.full: pmFetch: no value available
+> filesys.full: pmFetch: no value available
+> filesys.full: pmFetch: no value available
+> filesys.maxfiles: pmFetch: no value available
+> filesys.maxfiles: pmFetch: no value available
+> filesys.maxfiles: pmFetch: no value available
+> filesys.maxfiles: pmFetch: no value available
+> filesys.maxfiles: pmFetch: no value available
+> filesys.mountdir: pmFetch: no value available
+> filesys.mountdir: pmFetch: no value available
+> filesys.mountdir: pmFetch: no value available
+> filesys.mountdir: pmFetch: no value available
+> filesys.mountdir: pmFetch: no value available
+> filesys.readonly: pmFetch: no value available
+> filesys.readonly: pmFetch: no value available
+> filesys.readonly: pmFetch: no value available
+> filesys.readonly: pmFetch: no value available
+> filesys.readonly: pmFetch: no value available
+> filesys.used: pmFetch: no value available
+> filesys.used: pmFetch: no value available
+> filesys.used: pmFetch: no value available
+> filesys.used: pmFetch: no value available
+> filesys.used: pmFetch: no value available
+> filesys.usedfiles: pmFetch: no value available
+> filesys.usedfiles: pmFetch: no value available
+> filesys.usedfiles: pmFetch: no value available
+> filesys.usedfiles: pmFetch: no value available
+> filesys.usedfiles: pmFetch: no value available
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[0%] 004
+[0%] 005
+[0%] 006
+[0%] 007
+[0%] 008 [not run] No qualified results file (008.out.24d533d34f13) for the localhost
+[0%] 010
+[0%] 011
+[0%] 012
+[0%] 013
+[0%] 014
+[1%] 015
+[1%] 016
+[1%] 017
+[1%] 018
+[1%] 019
+[1%] 020
+[1%] 021
+[1%] 022
+[1%] 023
+[1%] 024 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1 -a sample"
+[1%] 025
+[1%] 026
+[1%] 027
+[2%] 028
+[2%] 029
+[2%] 030
+[2%] 031
+[2%] 032
+[2%] 033 - output mismatch (see 033.out.bad)
+3d2
+<     inst [DISK] value NUMBER
+5d3
+<     inst [DISK] value NUMBER
+7d4
+<     inst [DISK] value NUMBER
+9d5
+<     inst [DISK] value NUMBER
+11d6
+<     inst [DISK] value NUMBER
+13d7
+<     inst [DISK] value NUMBER
+15d8
+<     inst [DISK] value STRING
+17d9
+<     inst [DISK] value NUMBER
+19d10
+<     inst [DISK] value NUMBER
+21d11
+<     inst [DISK] value NUMBER
+23d12
+<     inst [DISK] value NUMBER
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[2%] 034
+[2%] 035
+[2%] 036 - output mismatch (see 036.out.bad)
+34,41c34,35
+< my arg echoer ...
+< [0] TMP.sh
+< [1] blah;trickme|foo
+< [2] cat
+< [3] and
+< [4] dog
+< __pmProcessExec: pid=PID wait_pid=PID exit=0
+< __pmProcessExec -> 0
+---
+> __pmProcessExec: pid=PID wait_pid=PID exit=127
+> __pmProcessExec -> 127 exit=127
+46,51d39
+< my arg echoer ...
+< [0] TMP.sh
+< [1] blah;trickme|foo
+< [2] cat
+< [3] and
+< [4] dog
+53,54c41,42
+< __pmProcessPipeClose: pid=PID wait_pid=PID exit=0
+< __pmProcessPipeClose() -> 0
+---
+> __pmProcessPipeClose: pid=PID wait_pid=PID exit=127
+> __pmProcessPipeClose() -> 127 exit=127
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[2%] 037
+[2%] 038
+[2%] 039
+[2%] 040
+[3%] 041
+[3%] 042 [not run] No docker binary found
+[3%] 043
+[3%] 044
+[3%] 045
+[3%] 046
+[3%] 047 [not run] No docker binary found
+[3%] 048
+[3%] 049
+[3%] 050
+[3%] 051 - output mismatch (see 051.out.bad)
+598d597
+< pmcd config[line 7]: Warning: access control error for host 'HOST': Invalid argument
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[3%] 052
+[3%] 053
+[4%] 054 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n1"
+[4%] 055
+[4%] 056
+[4%] 057
+[4%] 058
+[4%] 059
+[4%] 060
+[4%] 061
+[4%] 062
+[4%] 063 [failed, exit status 126] - output mismatch (see 063.out.bad)
+2c2
+< __pmOptFetchRedo returns: 0
+---
+> ./063: line 36: /tmp/063-10173: Permission denied
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[4%] 064
+[4%] 065
+[4%] 066 [not run] Cannot find two remote hosts running pmcd
+[5%] 067
+[5%] 068
+[5%] 069 [not run] Cannot find first remote host running pmcd
+[5%] 070 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[5%] 071
+[5%] 072 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[5%] 073
+[5%] 074
+[5%] 075 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1 -a sample"
+[5%] 076
+[5%] 077 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-n 1 -L"
+[5%] 078
+[5%] 079
+[5%] 080
+[6%] 081 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-p single -n 1 -v pcp>=2"
+[6%] 082
+[6%] 083 [not run] Cannot find first remote host running pmcd v2.x
+[6%] 084
+[6%] 085
+[6%] 086 [not run] Unable to find two other hosts
+[6%] 087
+[6%] 088
+[6%] 089
+[6%] 090
+[6%] 091
+[6%] 092
+[6%] 093
+[7%] 094
+[7%] 095
+[7%] 096
+[7%] 097
+[7%] 098
+[7%] 099
+[7%] 100
+[7%] 101
+[7%] 102
+[7%] 103
+[7%] 104
+[7%] 105
+[7%] 106
+[8%] 107
+[8%] 108
+[8%] 109
+[8%] 110
+[8%] 111
+[8%] 112
+[8%] 113 [not run] System has active loop devices, bailing
+[8%] 114
+[8%] 115 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-n 1 -L"
+[8%] 116 [not run] PCPQA_HYPHEN_HOST is not set in ./common.config
+[8%] 117 [not run] network.ip checks for linux done in test 216
+[8%] 118
+[8%] 119
+[9%] 120
+[9%] 121
+[9%] 122 [not run] Cannot find big endian host running pmdatrace
+[9%] 123
+[9%] 124
+[9%] 125
+[9%] 127
+[9%] 128
+[9%] 129
+[9%] 130 [not run] TODO: Need to reconcile rpc.server metrics for PCP_PLATFORM linux
+[9%] 131 [not run] PCPQA_FAR_PMCD is not set in ./common.config
+[9%] 132
+[9%] 133
+[10%] 134
+[10%] 135
+[10%] 136
+[10%] 137
+[10%] 138
+[10%] 139
+[10%] 140
+[10%] 141
+[10%] 142
+[10%] 143
+[10%] 144
+[10%] 145
+[10%] 146
+[10%] 147
+[11%] 149
+[11%] 150
+[11%] 151
+[11%] 152
+[11%] 153
+[11%] 154
+[11%] 155
+[11%] 156
+[11%] 157
+[11%] 158
+[11%] 159 [not run] No cisco router set via $PCPQA_CISCO_ROUTER in ./common.config
+[11%] 160
+[11%] 161
+[12%] 163
+[12%] 165
+[12%] 166
+[12%] 167
+[12%] 168
+[12%] 169
+[12%] 170
+[12%] 171
+[12%] 172
+[12%] 173
+[12%] 174
+[12%] 175
+[12%] 176
+[13%] 177
+[13%] 178
+[13%] 179
+[13%] 180
+[13%] 181
+[13%] 182
+[13%] 186
+[13%] 187 [not run] Cannot find a remote host running pmcd
+[13%] 188
+[13%] 189
+[13%] 190
+[13%] 191
+[13%] 192
+[14%] 193
+[14%] 194
+[14%] 195
+[14%] 196
+[14%] 197
+[14%] 198
+[14%] 199
+[14%] 200
+[14%] 201
+[14%] 202
+[14%] 203
+[14%] 204
+[14%] 205
+[15%] 206
+[15%] 207
+[15%] 208
+[15%] 209
+[15%] 210
+[15%] 211
+[15%] 213
+[15%] 214
+[15%] 215 [not run] pmsocks is not installed and/or not configured
+[15%] 216
+[15%] 217
+[15%] 218
+[15%] 219 [not run] new style /usr/include/pcp/pmdbg.h, nothing to test
+[15%] 220
+[16%] 221
+[16%] 222
+[16%] 224
+[16%] 225
+[16%] 226
+[16%] 227
+[16%] 228
+[16%] 229
+[16%] 230
+[16%] 231
+[16%] 232
+[16%] 233
+[16%] 234
+[17%] 235
+[17%] 236
+[17%] 237
+[17%] 238
+[17%] 239
+[17%] 240
+[17%] 241
+[17%] 242
+[17%] 243
+[17%] 244 - output mismatch (see 244.out.bad)
+140a141,142
+> Job for pmlogger.service failed because the service did not take the steps required by its unit configuration.
+> See "systemctl status pmlogger.service" and "journalctl -xe" for details.
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[17%] 245
+[17%] 246
+[17%] 247
+[18%] 248
+[18%] 249
+[18%] 250 - output mismatch (see 250.out.bad)
+10a11
+> sudo: unable to execute ./Rebuild: Permission denied
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[18%] 251
+[18%] 252
+[18%] 253
+[18%] 254
+[18%] 255
+[18%] 256
+[18%] 257 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-s linux -b 32 -m pmcd.version>2.0 -n 1 -a sample"
+[18%] 258
+[18%] 259
+[18%] 260
+[19%] 261
+[19%] 262 [not run] pmsocks is not installed and/or not configured
+[19%] 263
+[19%] 264
+[19%] 265
+[19%] 266
+[19%] 267
+[19%] 268
+[19%] 269
+[19%] 270
+[19%] 271
+[19%] 272 [not run] ./getpmcdhosts: unable to get 2 host(s) with options: "-n 2 -L -a sample -v pcp>=2 -s IRIX64"
+[19%] 273
+[20%] 274
+[20%] 275
+[20%] 276 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[20%] 277
+[20%] 278
+[20%] 279
+[20%] 280
+[20%] 281
+[20%] 282
+[20%] 283
+[20%] 285
+[20%] 286
+[20%] 287
+[21%] 288
+[21%] 289
+[21%] 291
+[21%] 292
+[21%] 293
+[21%] 294
+[21%] 295
+[21%] 296
+[21%] 297 - output mismatch (see 297.out.bad)
+23a24,25
+> __pmDecodeError: got error PDU (code=24, fromversion=2)
+> DATE	N	N	N	N	N	N	N	N	N
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[21%] 298
+[21%] 299
+[21%] 300
+[21%] 301
+[21%] 302
+[22%] 303
+[22%] 304 - output mismatch (see 304.out.bad)
+12a13,14
+> Log finished DATE
+> 
+36a39,40
+> Log finished DATE
+> 
+56a61,62
+> Log finished DATE
+> 
+79a86,87
+> Log finished DATE
+> 
+101a110,111
+> Log finished DATE
+> 
+109a120,121
+> Log finished DATE
+> 
+133a146,147
+> 
+> Log finished DATE
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[22%] 305
+[22%] 306
+[22%] 307 [not run] metric network.tcp.drops is not available
+[22%] 308 [not run] Cannot get first remote pmcd host with proc.psinfo.ppid metrics
+[22%] 309
+[22%] 310
+[22%] 312
+[22%] 313
+[22%] 314
+[22%] 315
+[22%] 316
+[23%] 317
+[23%] 318
+[23%] 319
+[23%] 320
+[23%] 321
+[23%] 322 [not run] ./getpmcdhosts failed to find a suitable host
+[23%] 323
+[23%] 324
+[23%] 325 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[23%] 326
+[23%] 327
+[23%] 328
+[23%] 334
+[24%] 335
+[24%] 336
+[24%] 337
+[24%] 338
+[24%] 339
+[24%] 340 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-n 1 -L -v pcp>=2"
+[24%] 341
+[24%] 342
+[24%] 343
+[24%] 344 - output mismatch (see 344.out.bad)
+18a19,20
+> __pmConnectLocal: Warning: error attaching DSO "/tmp/344-84561.so"
+> /tmp/344-84561.so: failed to map segment from shared object
+20,23c22
+< qa.colour PMID: 400.0.5
+<     inst [0 or "red"] value 101
+<     inst [1 or "green"] value 202
+<     inst [2 or "blue"] value 303
+---
+> qa.colour: pmLookupDesc: No PMCD agent for domain of request
+691a691,693
+> __pmConnectLocal: Warning: error attaching DSO "TMP.$DSO_SUFFIX"
+> TMP.$DSO_SUFFIX: failed to map segment from shared object
+> 
+693d694
+< NotifyEndLocalContext: DSO PMDA TMP.$DSO_SUFFIX (400) notified of context 0 close
+697,699c698
+< 
+< qa.string.write_me PMID: 400.0.29
+<     value 13
+---
+> qa.string.write_me: pmLookupDesc: No PMCD agent for domain of request
+965a965,967
+> __pmConnectLocal: Warning: error attaching DSO "TMP.$DSO_SUFFIX"
+> TMP.$DSO_SUFFIX: failed to map segment from shared object
+> 
+967d968
+< NotifyEndLocalContext: DSO PMDA TMP.$DSO_SUFFIX (400) notified of context 0 close
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[24%] 345
+[24%] 346
+[24%] 347
+[25%] 348 [not run] KVM sysfs interface not available
+[25%] 349
+[25%] 350
+[25%] 351
+[25%] 352
+[25%] 353 [not run] pmsocks is not configured
+[25%] 354 - output mismatch (see 354.out.bad)
 103a104,105
 > Log finished DATE
 > 
@@ -75,40 +575,1898 @@ PMDA probe: pminfo -h a1c3ed352404 -f simple.numfetch
 > 
 > Log finished DATE
 Check local PMCD is still alive ...
-PMDA probe: pminfo -h a1c3ed352404 -f sample.milliseconds
-PMDA probe: pminfo -h a1c3ed352404 -f sampledso.milliseconds
-PMDA probe: pminfo -h a1c3ed352404 -f simple.numfetch
-[57%] 359
-[58%] 369
-[60%] 385
-[61%] 397
-[62%] 401
-[64%] 403
-[65%] 404
-[66%] 407
-[68%] 416
-[69%] 435
-[70%] 436
-[72%] 437
-[73%] 453
-[74%] 548
-[76%] 561
-[77%] 562
-[78%] 567
-[80%] 568
-[81%] 569
-[82%] 574
-[84%] 646
-[85%] 689
-[86%] 702
-[88%] 707
-[89%] 900
-[90%] 970
-[92%] 978
-[93%] 1044
-[94%] 1098
-[96%] 1229
-[97%] 1274
-[98%] 1368
-Failures: 354
-Failed 1 of 75 tests
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[25%] 355
+[25%] 356
+[25%] 357
+[25%] 358
+[25%] 359
+[25%] 360 [not run] ./getpmcdhosts: unable to get 2 host(s) with options: "-L -v pcp>=2 -n 2 -a sample"
+[26%] 361 [not run] One or more cgroups already in use
+[26%] 362
+[26%] 363
+[26%] 364
+[26%] 365 [not run] Cannot find first remote host running pmcd
+[26%] 367
+[26%] 368
+[26%] 369
+[26%] 370 [not run] no qualified output for sysstat version 11.7.3
+[26%] 371 [not run] perl Spreadsheet::Read module not installed
+[26%] 372 [not run] perl Spreadsheet::Read module not installed
+[26%] 373
+[26%] 374 [not run] Cannot find a 64-bit host running PCP
+[26%] 375 [not run] Cannot find a 64-bit host running PCP
+[27%] 376
+[27%] 377 [not run] HAVE_BITFIELDS_LTOR is false
+[27%] 378
+[27%] 379
+[27%] 380
+[27%] 381 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1 -P -a sample"
+[27%] 382
+[27%] 383
+[27%] 384
+[27%] 385
+[27%] 386
+[27%] 387
+[27%] 388
+[28%] 389
+[28%] 390
+[28%] 391
+[28%] 392 - output mismatch (see 392.out.bad)
+2a3
+> sudo: unable to execute ./Rebuild: Permission denied
+5,6d5
+< hw.new_hw PMID: 1.44.2
+< hw.hub.nasid PMID: 1.44.8
+10d8
+< hpux.new_irix PMID: 1.10.2
+16c14,15
+< foo.bar PMID: 1.2.0
+---
+> sudo: unable to execute ./Rebuild: Permission denied
+> hw.old_hw PMID: 1.44.0
+18,19c17
+< hw.new_hw PMID: 1.44.2
+< hw.hub.nasid PMID: 1.44.8
+---
+> hpux.old_irix PMID: 1.10.0
+21c19,20
+< hpux.new_irix PMID: 1.10.2
+---
+> hpux.hub.nasid PMID: 1.44.8
+> foo.bar PMID: 1.2.0
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[28%] 393
+[28%] 394
+[28%] 395
+[28%] 396
+[28%] 397
+[28%] 398
+[28%] 399
+[28%] 400
+[28%] 401
+[29%] 402
+[29%] 403
+[29%] 404
+[29%] 405
+[29%] 406
+[29%] 407
+[29%] 408
+[29%] 409
+[29%] 410
+[29%] 411
+[29%] 412
+[29%] 413
+[29%] 414
+[30%] 415
+[30%] 416
+[30%] 417
+[30%] 418
+[30%] 419
+[30%] 420 [not run] Not yet working - libpcp_gui recording
+[30%] 421
+[30%] 422
+[30%] 423
+[30%] 424
+[30%] 425
+[30%] 426
+[30%] 427
+[31%] 428
+[31%] 429 - output mismatch (see 429.out.bad)
+2,5c2
+< Rebuilding the Performance Metrics Name Space (PMNS) in TMPDIR ...
+< Rebuild: merging the following PMNS files: 
+< root
+< Rebuild: PMNS is unchanged.
+---
+> sudo: unable to execute ./Rebuild: Permission denied
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[31%] 430
+[31%] 431
+[31%] 432
+[31%] 433
+[31%] 434
+[31%] 435
+[31%] 436
+[31%] 437
+[31%] 438
+[31%] 439
+[31%] 440
+[31%] 441
+[32%] 442
+[32%] 443
+[32%] 444
+[32%] 445
+[32%] 446
+[32%] 447
+[32%] 448
+[32%] 449
+[32%] 450
+[32%] 451
+[32%] 452
+[32%] 453
+[32%] 454
+[33%] 455
+[33%] 456
+[33%] 457
+[33%] 458
+[33%] 459
+[33%] 460
+[33%] 461
+[33%] 462
+[33%] 463
+[33%] 464
+[33%] 465
+[33%] 466
+[33%] 467
+[34%] 468
+[34%] 469 - output mismatch (see 469.out.bad)
+1a2,11
+> kernel.percpu.softirqs.RCU, full help text is too long: 251
+> kernel.percpu.softirqs.HRTIMER, full help text is too long: 251
+> kernel.percpu.softirqs.SCHED, full help text is too long: 251
+> kernel.percpu.softirqs.TASKLET, full help text is too long: 251
+> kernel.percpu.softirqs.IRQ_POLL, full help text is too long: 251
+> kernel.percpu.softirqs.BLOCK, full help text is too long: 251
+> kernel.percpu.softirqs.NET_RX, full help text is too long: 251
+> kernel.percpu.softirqs.NET_TX, full help text is too long: 251
+> kernel.percpu.softirqs.TIMER, full help text is too long: 251
+> kernel.percpu.softirqs.HI, full help text is too long: 251
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[34%] 470
+[34%] 471 - output mismatch (see 471.out.bad)
+3c3
+< Error: You must be root (uid 0) to update the pmcd(1) configuration.
+---
+> ./471: line 30: /tmp/471-22322.script: Permission denied
+6a7
+> sudo: unable to execute /tmp/471-22322.script: Permission denied
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[34%] 472
+[34%] 473
+[34%] 474
+[34%] 475
+[34%] 476 [not run] libpcp not built with fault injection enabled
+[34%] 477 [not run] libpcp not built with fault injection enabled
+[34%] 478 [not run] libpcp not built with fault injection enabled
+[34%] 479
+[34%] 480 [not run] libpcp not built with fault injection enabled
+[35%] 481
+[35%] 482
+[35%] 483
+[35%] 484
+[35%] 485
+[35%] 486
+[35%] 487
+[35%] 488
+[35%] 489
+[35%] 490
+[35%] 491
+[35%] 492
+[35%] 493
+[36%] 494
+[36%] 495
+[36%] 496
+[36%] 497
+[36%] 498
+[36%] 499
+[36%] 501
+[36%] 502
+[36%] 503
+[36%] 504 [not run] libpcp not built with fault injection enabled
+[36%] 505
+[36%] 506
+[36%] 507
+[36%] 508
+[37%] 509
+[37%] 510
+[37%] 511
+[37%] 512 [not run] libpcp not built with fault injection & lock tracing enabled
+[37%] 513
+[37%] 514
+[37%] 515
+[37%] 516
+[37%] 517
+[37%] 518
+[37%] 519 [not run] Cannot find first remote host running pmcd
+[37%] 520
+[37%] 521
+[38%] 522
+[38%] 523
+[38%] 524
+[38%] 525
+[38%] 526
+[38%] 527
+[38%] 528
+[38%] 529
+[38%] 530
+[38%] 531
+[38%] 532
+[38%] 533
+[38%] 534
+[39%] 535
+[39%] 536
+[39%] 537
+[39%] 538
+[39%] 539
+[39%] 540 [not run] libpcp not built with fault injection enabled
+[39%] 541
+[39%] 542
+[39%] 543 [not run] Noone listening on smtp port 25
+[39%] 544
+[39%] 545 [not run] pmsocks is not installed and/or not configured
+[39%] 546
+[39%] 547
+[40%] 548
+[40%] 549
+[40%] 550
+[40%] 551
+[40%] 552
+[40%] 553
+[40%] 554
+[40%] 555 [not run] No /etc/*syslog.conf -- probably using a different syslog package
+[40%] 556
+[40%] 557
+[40%] 558
+[40%] 559
+[40%] 560
+[41%] 561
+[41%] 562
+[41%] 563
+[41%] 564
+[41%] 565
+[41%] 566
+[41%] 567
+[41%] 568
+[41%] 569
+[41%] 571
+[41%] 572
+[41%] 573
+[41%] 574
+[42%] 575
+[42%] 576
+[42%] 577
+[42%] 578
+[42%] 579
+[42%] 580
+[42%] 581
+[42%] 582
+[42%] 583 [not run] Cannot find first remote host running pmcd
+[42%] 585
+[42%] 586
+[42%] 587
+[42%] 588
+[42%] 589 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[43%] 590
+[43%] 591
+[43%] 592
+[43%] 593
+[43%] 594
+[43%] 595
+[43%] 596
+[43%] 597
+[43%] 598
+[43%] 599
+[43%] 600
+[43%] 601
+[43%] 602
+[44%] 603 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[44%] 604
+[44%] 605
+[44%] 606
+[44%] 607
+[44%] 608
+[44%] 609
+[44%] 610
+[44%] 611
+[44%] 612
+[44%] 613
+[44%] 614
+[44%] 615
+[45%] 616
+[45%] 617
+[45%] 618
+[45%] 619
+[45%] 620
+[45%] 621
+[45%] 622 [not run] PCPQA_HYPHEN_HOST is not set in ./common.config
+[45%] 623
+[45%] 624
+[45%] 625
+[45%] 626
+[45%] 627
+[45%] 628
+[46%] 629
+[46%] 630
+[46%] 632
+[46%] 633
+[46%] 634
+[46%] 635 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[46%] 636
+[46%] 637
+[46%] 638
+[46%] 639
+[46%] 640
+[46%] 641
+[46%] 642
+[47%] 643
+[47%] 644
+[47%] 645
+[47%] 646
+[47%] 647
+[47%] 648
+[47%] 649
+[47%] 650
+[47%] 651 [not run] need sensible setup, not simply hostname => localhost
+[47%] 652
+[47%] 653
+[47%] 654 [not run] no GFS2 module to load and not builtin
+[47%] 655 [not run] no GFS2 module to load and not builtin
+[47%] 656
+[48%] 657 [not run] PMDA not built with dmstats support
+[48%] 658
+[48%] 659
+[48%] 662 [not run] pmseries command line utility not installed
+[48%] 664
+[48%] 665
+[48%] 666
+[48%] 667
+[48%] 668 [not run] No docker binary installed
+[48%] 669
+[48%] 670
+[48%] 671
+[48%] 672
+[49%] 673
+[49%] 674 - output mismatch (see 674.out.bad)
+3c3
+< ./674.sh: It is me, QA 674
+---
+> ./674: line 43: ./674.sh: Permission denied
+6c6,7
+< TMP/674.sh: It is me, QA 674
+---
+> Cannot find a pcp-674.sh command to execute
+> Please install pcp system tools package
+9c10,11
+< TMP/674.sh: It is me, QA 674
+---
+> Cannot find a pcp-674.sh command to execute
+> Please install pcp system tools package
+12c14,15
+< TMP/674.sh: It is me, QA 674
+---
+> Cannot find a pcp-../674.sh command to execute
+> Please install pcp system tools package
+15c18,19
+< TMP/674.sh: It is me, QA 674
+---
+> Cannot find a pcp-/tmp/674-79476/674.sh command to execute
+> Please install pcp system tools package
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[49%] 675
+[49%] 676
+[49%] 677
+[49%] 678
+[49%] 679
+[49%] 680
+[49%] 681 - output mismatch (see 681.out.bad)
+70,76c70
+< my arg echoer ...
+< [0] TMP.sh
+< [1] blah;trickme|foo
+< [2] cat
+< [3] and
+< [4] dog
+< __pmProcessExec -> 0
+---
+> __pmProcessExec -> 101 exit=101
+79c73
+< __pmProcessExec: pid=PID wait_pid=PID exit=0
+---
+> __pmProcessExec: pid=PID wait_pid=PID exit=101
+82a77,79
+> execve(0xa2c9990(TMP.sh), 0xa2c9c20, 0x1fff000238) failed, errno 13
+> EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+> Add more stringent tests in PRE(sys_execve), or work out how to recover.
+91,96d87
+< my arg echoer ...
+< [0] TMP.sh
+< [1] blah;trickme|foo
+< [2] cat
+< [3] and
+< [4] dog
+98c89
+< __pmProcessPipeClose() -> 0
+---
+> __pmProcessPipeClose() -> 101 exit=101
+101c92
+< __pmProcessPipeClose: pid=PID wait_pid=PID exit=0
+---
+> __pmProcessPipeClose: pid=PID wait_pid=PID exit=101
+104a96,98
+> execve(0xa2c99a0(TMP.sh), 0xa2c9c30, 0x1fff000240) failed, errno 13
+> EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+> Add more stringent tests in PRE(sys_execve), or work out how to recover.
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[49%] 682
+[49%] 683
+[49%] 684
+[49%] 685
+[50%] 686
+[50%] 687 - output mismatch (see 687.out.bad)
+10a11,12
+> man: can't set the locale; make sure $LC_* and $LANG are correct
+> col: Invalid or incomplete multibyte or wide character
+12d13
+<  The -C option will cause the configuration file ...
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[50%] 688
+[50%] 689
+[50%] 690
+[50%] 691
+[50%] 692
+[50%] 693
+[50%] 694
+[50%] 695
+[50%] 696
+[50%] 697
+[50%] 698
+[51%] 699
+[51%] 700
+[51%] 701
+[51%] 702
+[51%] 703 [not run] No one is home on the default http port 80
+[51%] 704
+[51%] 705
+[51%] 706
+[51%] 707
+[51%] 708
+[51%] 710
+[51%] 711
+[51%] 712
+[52%] 713
+[52%] 714
+[52%] 715
+[52%] 716
+[52%] 717
+[52%] 718
+[52%] 719
+[52%] 720
+[52%] 721
+[52%] 722
+[52%] 723
+[52%] 724 [not run] No support for service discovery
+[52%] 725
+[52%] 726
+[53%] 728
+[53%] 729
+[53%] 730
+[53%] 731
+[53%] 732
+[53%] 733
+[53%] 734 [not run] No remote hosts available
+[53%] 735 [failed, exit status 1] - output mismatch (see 735.out.bad)
+2,34c2,4
+< Control group list for current process checks out
+< 
+< Checking logged control group proc data ...
+< 
+< == Fetching proc.psinfo.cgroups metric - procpid-4.14.5-root-005.tgz
+< 
+< proc.psinfo.cgroups
+<     inst [N or "000001 /usr/lib/systemd/systemd"] value "cpuset:/;hugetlb:/;memory:/init.scope;pids:/init.scope;devices:/init.scope;freezer:/;blkio:/init.scope;net_cls,net_prio:/;perf_event:/;cpu,cpuacct:/init.scope;name=systemd:/init.scope;:/init.scope"
+<     inst [N or "000996 /usr/libexec/docker/docker-containerd-current"] value "cpuset:/;hugetlb:/;memory:/system.slice/docker-containerd.service;pids:/system.slice/docker-containerd.service;devices:/system.slice/docker-containerd.service;freezer:/;blkio:/system.slice/docker-containerd.service;net_cls,net_prio:/;perf_event:/;cpu,cpuacct:/system.slice/docker-containerd.service;name=systemd:/system.slice/docker-containerd.service;:/system.slice/docker-containerd.service"
+<     inst [N or "026287 /usr/libexec/docker/docker-containerd-shim-current"] value "cpuset:/;hugetlb:/;memory:/system.slice/docker-containerd.service;pids:/system.slice/docker-containerd.service;devices:/system.slice/docker-containerd.service;freezer:/;blkio:/system.slice/docker-containerd.service;net_cls,net_prio:/;perf_event:/;cpu,cpuacct:/system.slice/docker-containerd.service;name=systemd:/system.slice/docker-containerd.service;:/system.slice/docker-containerd.service"
+<     inst [N or "026304 /bin/prometheus"] value "cpuset:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;hugetlb:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;memory:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;pids:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;devices:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;freezer:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;blkio:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;net_cls,net_prio:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;perf_event:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope"
+< 
+< == Fetching proc.id.container metric - procpid-4.14.5-root-005.tgz
+< 
+< proc.id.container
+<     inst [N or "000001 /usr/lib/systemd/systemd"] value ""
+<     inst [N or "000996 /usr/libexec/docker/docker-containerd-current"] value ""
+<     inst [N or "026287 /usr/libexec/docker/docker-containerd-shim-current"] value ""
+<     inst [N or "026304 /bin/prometheus"] value "0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736"
+< 
+< == Fetching proc.psinfo.cgroups metric - procpid-4.18.13-root-006.tgz
+< 
+< proc.psinfo.cgroups
+<     inst [N or "000001 /usr/lib/systemd/systemd"] value "blkio:/;devices:/;freezer:/;hugetlb:/;perf_event:/;cpu,cpuacct:/;cpuset:/;net_cls,net_prio:/;pids:/;memory:/;name=systemd:/init.scope;:/init.scope"
+<     inst [N or "025731 podman"] value "blkio:/;devices:/user.slice;freezer:/;hugetlb:/;perf_event:/;cpu,cpuacct:/;cpuset:/;net_cls,net_prio:/;pids:/user.slice/user-1000.slice/user@1000.service;memory:/user.slice/user-1000.slice/user@1000.service;name=systemd:/user.slice/user-1000.slice/user@1000.service/gnome-terminal-server.service;:/user.slice/user-1000.slice/user@1000.service/gnome-terminal-server.service"
+<     inst [N or "025951 /bin/prometheus"] value "blkio:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;devices:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;freezer:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;hugetlb:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;perf_event:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;cpu,cpuacct:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;cpuset:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;net_cls,net_prio:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;pids:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope"
+< 
+< == Fetching proc.id.container metric - procpid-4.18.13-root-006.tgz
+< 
+< proc.id.container
+<     inst [N or "000001 /usr/lib/systemd/systemd"] value ""
+<     inst [N or "025731 podman"] value ""
+<     inst [N or "025951 /bin/prometheus"] value "06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c"
+---
+> Mismatch on control group list:
+> PCP cgroups: perf_event:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope;cpuset:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope;devices:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope;pids:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope;blkio:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope;cpu,cpuacct:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope;net_cls,net_prio:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope;memory:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope;rdma:/;freezer:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope
+> SYS cgroups: perf_event:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope;cpuset:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope;devices:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope;pids:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope;blkio:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope;cpu,cpuacct:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope;net_cls,net_prio:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope;memory:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope;rdma:/;freezer:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope;hugetlb:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope;name=systemd:/machine.slice/libpod-24d533d34f13218780c83e22ee736dd69089b350e6c0ad865a2b0b9a985b463f.scope;:/system.slice/runner-provisioner.service
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[53%] 736
+[53%] 737
+[53%] 738
+[53%] 739
+[53%] 740
+[54%] 741
+[54%] 742
+[54%] 743
+[54%] 744
+[54%] 745
+[54%] 746
+[54%] 747
+[54%] 748
+[54%] 749 [not run] No systemtap stap executable found
+[54%] 750
+[54%] 751
+[54%] 752
+[54%] 753
+[55%] 754
+[55%] 755
+[55%] 756
+[55%] 757
+[55%] 758
+[55%] 759 [not run] unbound-control not installed
+[55%] 760 [not run] Noones home on the default ActiveMQ REST port 8161
+[55%] 761
+[55%] 762
+[55%] 763
+[55%] 764
+[55%] 765
+[55%] 766 [not run] No support for service discovery
+[56%] 767
+[56%] 768
+[56%] 769
+[56%] 770 [not run] libpcp not built with fault injection enabled
+[56%] 771
+[56%] 772
+[56%] 773
+[56%] 774
+[56%] 775 [not run] No support for service discovery
+[56%] 776 [not run] No support for service discovery
+[56%] 777
+[56%] 778 [not run] Cannot run psql as the postgres user, postgresql not installed or running?
+[56%] 779
+[57%] 780 [not run] pmseries command line utility not installed
+[57%] 781
+[57%] 783
+[57%] 784
+[57%] 785
+[57%] 786
+[57%] 787
+[57%] 788
+[57%] 789 [not run] Zimbra not installed
+[57%] 790
+[57%] 791
+[57%] 792
+[57%] 793
+[57%] 794 [not run] No docker binary found
+[58%] 795 [not run] perl Spreadsheet::ReadSXC module not installed
+[58%] 796 [not run] Noones home on the default elasticsearch port 9200
+[58%] 797
+[58%] 798
+[58%] 799
+[58%] 800
+[58%] 801
+[58%] 802
+[58%] 803
+[58%] 804
+[58%] 805 - output mismatch (see 805.out.bad)
+8c8
+< Check postfix metrics have appeared ... X metrics and Y values
+---
+> Check postfix metrics have appeared ... X metrics and 3 values
+12,22c12
+<     inst [0 or "total"] value 0
+<     inst [1 or "0-5 mins"] value 1
+<     inst [2 or "5-10 mins"] value 0
+<     inst [3 or "10-20 mins"] value 1
+<     inst [4 or "20-40 mins"] value 0
+<     inst [5 or "40-80 mins"] value 1
+<     inst [6 or "80-160 mins"] value 0
+<     inst [7 or "160-320 mins"] value 1
+<     inst [8 or "320-640 mins"] value 0
+<     inst [9 or "640-1280 mins"] value 1
+<     inst [10 or "1280+ mins"] value 10
+---
+> Error: Try again. Information not currently available
+25,35c15
+<     inst [0 or "total"] value 10
+<     inst [1 or "0-5 mins"] value 9
+<     inst [2 or "5-10 mins"] value 8
+<     inst [3 or "10-20 mins"] value 7
+<     inst [4 or "20-40 mins"] value 6
+<     inst [5 or "40-80 mins"] value 5
+<     inst [6 or "80-160 mins"] value 4
+<     inst [7 or "160-320 mins"] value 3
+<     inst [8 or "320-640 mins"] value 2
+<     inst [9 or "640-1280 mins"] value 1
+<     inst [10 or "1280+ mins"] value 0
+---
+> Error: Try again. Information not currently available
+38,48c18
+<     inst [0 or "total"] value 10
+<     inst [1 or "0-5 mins"] value 9
+<     inst [2 or "5-10 mins"] value 8
+<     inst [3 or "10-20 mins"] value 7
+<     inst [4 or "20-40 mins"] value 6
+<     inst [5 or "40-80 mins"] value 5
+<     inst [6 or "80-160 mins"] value 4
+<     inst [7 or "160-320 mins"] value 3
+<     inst [8 or "320-640 mins"] value 2
+<     inst [9 or "640-1280 mins"] value 1
+<     inst [10 or "1280+ mins"] value 0
+---
+> Error: Try again. Information not currently available
+51,61c21
+<     inst [0 or "total"] value 9
+<     inst [1 or "0-5 mins"] value 0
+<     inst [2 or "5-10 mins"] value 1
+<     inst [3 or "10-20 mins"] value 2
+<     inst [4 or "20-40 mins"] value 3
+<     inst [5 or "40-80 mins"] value 4
+<     inst [6 or "80-160 mins"] value 5
+<     inst [7 or "160-320 mins"] value 6
+<     inst [8 or "320-640 mins"] value 7
+<     inst [9 or "640-1280 mins"] value 8
+<     inst [10 or "1280+ mins"] value 9
+---
+> Error: Try again. Information not currently available
+64,74c24
+<     inst [0 or "total"] value 0
+<     inst [1 or "0-5 mins"] value 1
+<     inst [2 or "5-10 mins"] value 2
+<     inst [3 or "10-20 mins"] value 3
+<     inst [4 or "20-40 mins"] value 4
+<     inst [5 or "40-80 mins"] value 5
+<     inst [6 or "80-160 mins"] value 6
+<     inst [7 or "160-320 mins"] value 7
+<     inst [8 or "320-640 mins"] value 8
+<     inst [9 or "640-1280 mins"] value 9
+<     inst [10 or "1280+ mins"] value 10
+---
+> Error: Try again. Information not currently available
+87,97c37
+<     inst [0 or "total"] value 0
+<     inst [1 or "0-5 mins"] value 1
+<     inst [2 or "5-10 mins"] value 0
+<     inst [3 or "10-20 mins"] value 1
+<     inst [4 or "20-40 mins"] value 0
+<     inst [5 or "40-80 mins"] value 1
+<     inst [6 or "80-160 mins"] value 0
+<     inst [7 or "160-320 mins"] value 1
+<     inst [8 or "320-640 mins"] value 0
+<     inst [9 or "640-1280 mins"] value 1
+<     inst [10 or "1280+ mins"] value 10
+---
+> Error: Try again. Information not currently available
+100,110c40
+<     inst [0 or "total"] value 10
+<     inst [1 or "0-5 mins"] value 9
+<     inst [2 or "5-10 mins"] value 8
+<     inst [3 or "10-20 mins"] value 7
+<     inst [4 or "20-40 mins"] value 6
+<     inst [5 or "40-80 mins"] value 5
+<     inst [6 or "80-160 mins"] value 4
+<     inst [7 or "160-320 mins"] value 3
+<     inst [8 or "320-640 mins"] value 2
+<     inst [9 or "640-1280 mins"] value 1
+<     inst [10 or "1280+ mins"] value 0
+---
+> Error: Try again. Information not currently available
+113,123c43
+<     inst [0 or "total"] value 10
+<     inst [1 or "0-5 mins"] value 9
+<     inst [2 or "5-10 mins"] value 8
+<     inst [3 or "10-20 mins"] value 7
+<     inst [4 or "20-40 mins"] value 6
+<     inst [5 or "40-80 mins"] value 5
+<     inst [6 or "80-160 mins"] value 4
+<     inst [7 or "160-320 mins"] value 3
+<     inst [8 or "320-640 mins"] value 2
+<     inst [9 or "640-1280 mins"] value 1
+<     inst [10 or "1280+ mins"] value 0
+---
+> Error: Try again. Information not currently available
+126,136c46
+<     inst [0 or "total"] value 9
+<     inst [1 or "0-5 mins"] value 0
+<     inst [2 or "5-10 mins"] value 1
+<     inst [3 or "10-20 mins"] value 2
+<     inst [4 or "20-40 mins"] value 3
+<     inst [5 or "40-80 mins"] value 4
+<     inst [6 or "80-160 mins"] value 5
+<     inst [7 or "160-320 mins"] value 6
+<     inst [8 or "320-640 mins"] value 7
+<     inst [9 or "640-1280 mins"] value 8
+<     inst [10 or "1280+ mins"] value 9
+---
+> Error: Try again. Information not currently available
+139,149c49
+<     inst [0 or "total"] value 0
+<     inst [1 or "0-5 mins"] value 1
+<     inst [2 or "5-10 mins"] value 2
+<     inst [3 or "10-20 mins"] value 3
+<     inst [4 or "20-40 mins"] value 4
+<     inst [5 or "40-80 mins"] value 5
+<     inst [6 or "80-160 mins"] value 6
+<     inst [7 or "160-320 mins"] value 7
+<     inst [8 or "320-640 mins"] value 8
+<     inst [9 or "640-1280 mins"] value 9
+<     inst [10 or "1280+ mins"] value 10
+---
+> Error: Try again. Information not currently available
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[58%] 806
+[58%] 807
+[59%] 808
+[59%] 810
+[59%] 811
+[59%] 812
+[59%] 813
+[59%] 814
+[59%] 815
+[59%] 816
+[59%] 817
+[59%] 818
+[59%] 819 [not run] Noones home on the default elasticsearch port 9200
+[59%] 820
+[59%] 821
+[60%] 823
+[60%] 824
+[60%] 825 [not run] Noones home on the default DS 389 port
+[60%] 826
+[60%] 827
+[60%] 828
+[60%] 829
+[60%] 830
+[60%] 831
+[60%] 832
+[60%] 833
+[60%] 834
+[60%] 835 [not run] Noones home on the default memcached port 11211
+[61%] 836
+[61%] 837
+[61%] 838
+[61%] 839
+[61%] 840 [not run] No support for service discovery
+[61%] 841
+[61%] 842
+[61%] 843
+[61%] 844
+[61%] 845 - output mismatch (see 845.out.bad)
+10,18c10,17
+< capacity is in range
+< used is in range
+< free is in range
+< maxfiles is in range
+< usedfiles is in range
+< freefiles is in range
+< full is in range
+< blocksize is in range
+< avail is in range
+---
+> Traceback (most recent call last):
+>   File "/var/lib/pcp/testsuite/src/fsstats.python", line 61, in <module>
+>     sts = manager.run()
+>   File "/usr/lib64/python3.6/site-packages/pcp/pmcc.py", line 686, in run
+>     self._printer.report(self)
+>   File "/var/lib/pcp/testsuite/src/fsstats.python", line 49, in report
+>     filesys[self._device], mounts[self._fspath]))
+> KeyError: 'overlay'
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[61%] 846 [not run] perl Spreadsheet::XLSX module not installed
+[61%] 847 [not run] No docker binary found
+[61%] 848
+[62%] 849
+[62%] 851
+[62%] 852
+[62%] 853
+[62%] 854
+[62%] 855
+[62%] 856
+[62%] 857
+[62%] 858
+[62%] 859
+[62%] 860
+[62%] 861
+[62%] 862
+[63%] 863
+[63%] 864 [not run] pcp-collectl not installed
+[63%] 865
+[63%] 866 [not run] libpcp not built with fault injection enabled
+[63%] 867 [not run] pmseries command line utility not installed
+[63%] 868
+[63%] 869
+[63%] 870
+[63%] 871
+[63%] 872
+[63%] 873 [not run] only tested on single CPU systems
+[63%] 874
+[63%] 875
+[63%] 876 [not run] XFS module not present: modprobe: FATAL: Module xfs not found in directory /lib/modules/5.3.0-1020-azure
+[64%] 877
+[64%] 878
+[64%] 879
+[64%] 880
+[64%] 881
+[64%] 882
+[64%] 883
+[64%] 884
+[64%] 885
+[64%] 886
+[64%] 887
+[64%] 888
+[64%] 889
+[65%] 890
+[65%] 891
+[65%] 892
+[65%] 893 - output mismatch (see 893.out.bad)
+2c2,3
+< Local pmcd count: 1
+---
+> ./893: line 40: /tmp/893-120811.pmcd/pmcd: Permission denied
+> Local pmcd count: 0
+3a5
+> /usr/libexec/pcp/bin/pmsignal: line 123: kill: (120841) - No such process
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[65%] 894
+[65%] 895
+[65%] 896
+[65%] 897
+[65%] 898
+[65%] 899
+[65%] 900
+[65%] 901
+[65%] 902
+[66%] 903
+[66%] 904
+[66%] 905 [not run] Cannot find a PCP 2.7 QA host
+[66%] 906
+[66%] 907
+[66%] 908
+[66%] 909
+[66%] 910
+[66%] 911
+[66%] 912 [not run] NutCracker PMDA is not installed
+[66%] 913 [not run] Noone home on default Redis port 6379
+[66%] 914
+[66%] 915
+[67%] 916
+[67%] 917 [not run] upstream policy package not loaded
+[67%] 918
+[67%] 919
+[67%] 920
+[67%] 921
+[67%] 922
+[67%] 923
+[67%] 924
+[67%] 925
+[67%] 926
+[67%] 927
+[67%] 928
+[68%] 929
+[68%] 930
+[68%] 931
+[68%] 932
+[68%] 933
+[68%] 934
+[68%] 935
+[68%] 936
+[68%] 937
+[68%] 938
+[68%] 939
+[68%] 940 [not run] upstream container policy package not loaded
+[68%] 941
+[68%] 942
+[69%] 943 - output mismatch (see 943.out.bad)
+207c207
+< proc.psinfo.tty_pgrp COUNT
+---
+> proc.psinfo.tty_pgrp 0
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[69%] 944
+[69%] 945
+[69%] 946 [not run] No support for service discovery
+[69%] 947
+[69%] 948
+[69%] 949
+[69%] 950 [not run] No support for service discovery
+[69%] 951
+[69%] 952
+[69%] 953
+[69%] 954 [not run] libpcp not built with -DPM_MULTI_THREAD_DEBUG
+[69%] 955
+[70%] 956
+[70%] 957
+[70%] 958
+[70%] 959
+[70%] 960 [not run] No logconv.pl script installed
+[70%] 961
+[70%] 962
+[70%] 963
+[70%] 964
+[70%] 965
+[70%] 966
+[70%] 967 [not run] No zsh executable
+[70%] 968
+[71%] 969
+[71%] 970
+[71%] 971
+[71%] 972
+[71%] 973
+[71%] 974
+[71%] 975
+[71%] 976
+[71%] 977
+[71%] 978
+[71%] 979
+[71%] 980
+[71%] 981
+[72%] 982
+[72%] 983
+[72%] 984
+[72%] 985 [not run] perl Spreadsheet::ParseExcel module not installed
+[72%] 986 [not run] perl Spreadsheet::ReadSXC module not installed
+[72%] 987
+[72%] 988
+[72%] 989
+[72%] 990
+[72%] 991
+[72%] 992
+[72%] 993
+[72%] 994
+[73%] 995
+[73%] 996
+[73%] 997
+[73%] 998
+[73%] 999
+[73%] 1000
+[73%] 1001 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[73%] 1002 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[73%] 1003 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[73%] 1004 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[73%] 1005 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[73%] 1006 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[73%] 1007 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[73%] 1008 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1009 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1010 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1011 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1012 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1013 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1014 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1015 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1016 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1021 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1022 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1023 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[74%] 1024
+[74%] 1025 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[75%] 1026 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[75%] 1027 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[75%] 1028 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[75%] 1029 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[75%] 1030
+[75%] 1031 [not run] perl Slurm module not installed
+[75%] 1032 [not run] pmseries command line utility not installed
+[75%] 1033
+[75%] 1034 [not run] no named stats file(s)
+[75%] 1035 [not run] Oracle PMDA not configured
+[75%] 1036
+[75%] 1037
+[75%] 1038
+[76%] 1039
+[76%] 1040
+[76%] 1041 [not run] no socket, libvirtd not running?
+[76%] 1042 [not run] pmseries command line utility not installed
+[76%] 1043
+[76%] 1044
+[76%] 1045
+[76%] 1046
+[76%] 1047
+[76%] 1048
+[76%] 1049
+[76%] 1050
+[76%] 1051
+[77%] 1052
+[77%] 1053
+[77%] 1054
+[77%] 1055
+[77%] 1056
+[77%] 1057
+[77%] 1058
+[77%] 1059
+[77%] 1060
+[77%] 1061 [not run] targetcli not installed
+[77%] 1062
+[77%] 1063
+[77%] 1064
+[78%] 1065
+[78%] 1066
+[78%] 1067 [not run] No zabbix_agentd binary found
+[78%] 1068
+[78%] 1069
+[78%] 1070 [not run] perl Spreadsheet::Read module not installed
+[78%] 1071
+[78%] 1072
+[78%] 1073
+[78%] 1074
+[78%] 1075
+[78%] 1076
+[78%] 1077
+[78%] 1078
+[79%] 1079
+[79%] 1080
+[79%] 1081
+[79%] 1082
+[79%] 1083
+[79%] 1084
+[79%] 1085
+[79%] 1086
+[79%] 1087 [not run] bind2 PMDA needs perl module List::MoreUtils
+[79%] 1088
+[79%] 1089
+[79%] 1090 [not run] pmseries command line utility not installed
+[79%] 1091
+[80%] 1092
+[80%] 1093
+[80%] 1094
+[80%] 1095
+[80%] 1096
+[80%] 1097
+[80%] 1098
+[80%] 1099
+[80%] 1100
+[80%] 1101
+[80%] 1102
+[80%] 1103
+[80%] 1104
+[81%] 1105
+[81%] 1106
+[81%] 1107
+[81%] 1108
+[81%] 1109
+[81%] 1110
+[81%] 1111
+[81%] 1112
+[81%] 1113
+[81%] 1114
+[81%] 1115 [failed, exit status 1] - output mismatch (see 1115.out.bad)
+40c40,42
+< === report metric values ===
+---
+> [Mon Jun  1 18:43:54] pmdabcc(80702) Error: sysfork: Failed to compile BPF module b'/var/lib/pcp/pmdas/bcc/modules/sysfork.bpf'
+> [Mon Jun  1 18:43:54] pmdabcc(80702) Error: sysfork: Module NOT active!
+> [Mon Jun  1 18:43:54] pmdabcc(80702) Error: Failed to compile module sysfork, aborting.
+42,55c44,45
+< bcc.proc.sysfork PMID: 149.2.0 [fork rate]
+<     Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+<     Semantics: counter  Units: count
+< Help:
+< fork rate
+<     value OK
+< === verify metric values ===
+< 
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 18:43:54 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[81%] 1116 [failed, exit status 1] - output mismatch (see 1116.out.bad)
+42,43c42,44
+< === report metric values ===
+< found value 20971520 +- 10%
+---
+> [Mon Jun  1 18:45:06] pmdabcc(83070) Error: bioperpid: Failed to compile BPF module b'/var/lib/pcp/pmdas/bcc/modules/biotop.bpf'
+> [Mon Jun  1 18:45:06] pmdabcc(83070) Error: bioperpid: Module NOT active!
+> [Mon Jun  1 18:45:06] pmdabcc(83070) Error: Failed to compile module bioperpid, aborting.
+45,50c46,47
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 18:45:06 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[81%] 1117 [failed, exit status 1] - output mismatch (see 1117.out.bad)
+44,47c44,46
+< === report metric values ===
+< OK
+< === check metric labels ===
+< OK
+---
+> [Mon Jun  1 18:46:18] pmdabcc(85442) Error: biolatency: Failed to compile BPF module b'/var/lib/pcp/pmdas/bcc/modules/biolatency.bpf'
+> [Mon Jun  1 18:46:18] pmdabcc(85442) Error: biolatency: Module NOT active!
+> [Mon Jun  1 18:46:18] pmdabcc(85442) Error: Failed to compile module biolatency, aborting.
+49,54c48,49
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 18:46:18 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[82%] 1118 [failed, exit status 1] - output mismatch (see 1118.out.bad)
+42,52c42
+< === report metric values ===
+< OK
+< === check metric labels ===
+< OK
+< 
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> BPF compilation error, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[82%] 1119
+[82%] 1120
+[82%] 1121
+[82%] 1122
+[82%] 1123 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[82%] 1124 [failed, exit status 1] - output mismatch (see 1124.out.bad)
+46,54c46
+< === report metric values ===
+< OK
+< 
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> BPF compilation error, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[82%] 1126 [not run] mkfs.ext4 not installed
+[82%] 1127 [failed, exit status 1] - output mismatch (see 1127.out.bad)
+46,54c46
+< === report metric values ===
+< OK
+< 
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> BPF compilation error, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[82%] 1128
+[82%] 1129
+[82%] 1130
+[82%] 1131
+[83%] 1132 [not run] python openpyxl module not installed
+[83%] 1133
+[83%] 1134
+[83%] 1135
+[83%] 1136
+[83%] 1137
+[83%] 1138
+[83%] 1139
+[83%] 1140
+[83%] 1141 [not run] pcpupstream module not loaded
+[83%] 1142
+[83%] 1143
+[83%] 1144
+[84%] 1145 [not run] libpcp not built with fault injection enabled
+[84%] 1146
+[84%] 1147
+[84%] 1148
+[84%] 1149
+[84%] 1150 [failed, exit status 1] - output mismatch (see 1150.out.bad)
+48,56c48
+< === report metric values ===
+< OK
+< 
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> BPF compilation error, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[84%] 1151 [not run] libjvm.so not found
+[84%] 1152 [not run] libjvm.so not found
+[84%] 1153 [failed, exit status 1] - output mismatch (see 1153.out.bad)
+42,56c42
+< === report metric values for open ===
+< OK
+< === report metric values for read ===
+< OK
+< === report metric values for write ===
+< OK
+< === report metric values for fsync ===
+< OK
+< 
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> BPF compilation error, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[84%] 1154 [not run] zpool tool not installed
+[84%] 1155 [failed, exit status 1] - output mismatch (see 1155.out.bad)
+46,70c46
+< === report metric values for pid ===
+< OK
+< === report metric values for comm ===
+< OK
+< === report metric values for laddr ===
+< OK
+< === report metric values for lport ===
+< OK
+< === report metric values for daddr ===
+< OK
+< === report metric values for dport ===
+< OK
+< === report metric values for tx ===
+< OK
+< === report metric values for rx ===
+< OK
+< === report metric values for duration ===
+< OK
+< 
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> BPF compilation error, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[84%] 1156 [failed, exit status 1] - output mismatch (see 1156.out.bad)
+42,61c42
+< hello world
+< hello PCP
+< hello test
+< === report metric values for comm ===
+< OK
+< === report metric values for pid ===
+< OK
+< === report metric values for ppid ===
+< OK
+< === report metric values for ret ===
+< OK
+< === report metric values for args ===
+< OK
+< 
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> BPF compilation error, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[84%] 1157 [not run] sch_netem kernel module not available
+[84%] 1158 [failed, exit status 1] - output mismatch (see 1158.out.bad)
+46,63c46,48
+< === report metric values for pid ===
+< OK
+< === report metric values for comm ===
+< OK
+< === report metric values for direction ===
+< OK
+< === report metric values for major ===
+< OK
+< === report metric values for minor ===
+< OK
+< === report metric values for disk ===
+< OK
+< === report metric values for io ===
+< OK
+< === report metric values for bytes ===
+< found value 20971520 +- 10%
+< === report metric values for duration ===
+< OK
+---
+> [Mon Jun  1 18:51:57] pmdabcc(119864) Error: biotop: Failed to compile BPF module b'/var/lib/pcp/pmdas/bcc/modules/biotop.bpf'
+> [Mon Jun  1 18:51:57] pmdabcc(119864) Error: biotop: Module NOT active!
+> [Mon Jun  1 18:51:57] pmdabcc(119864) Error: Failed to compile module biotop, aborting.
+65,70c50,51
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Log finished Mon Jun  1 18:51:58 2020
+> PMDA was not ready in 60 seconds, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[85%] 1159
+[85%] 1160
+[85%] 1161
+[85%] 1162
+[85%] 1163
+[85%] 1164
+[85%] 1165 [failed, exit status 1] - output mismatch (see 1165.out.bad)
+44,52c44
+< === report metric values ===
+< OK
+< 
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> BPF compilation error, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[85%] 1166 - output mismatch (see 1166.out.bad)
+3,32c3
+< __pmGetAPIConfig test: OK
+< __pmOpenLog test: expect to see standard log format
+< Log for 1166 on HOST started DATE
+< 
+< G'day cobber
+< __pmNoMem test: expect to see a message
+< [DATE] qa_libpcp_compat(PID) Warning: 1166: malloc(123456) failed: Cannot allocate memory
+< __pmNotifyErr test: expect to see standard message format
+< [DATE] qa_libpcp_compat(PID) Notice: Hullo world! The answer is 42
+< __pmPrintDesc test:
+<     Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+<     Semantics: counter  Units: Mbyte / sec
+< __pmtimeval* tests:
+< Add (expect 1234.567000): 1234.567000
+< Inc (expect 1234.567000): 1234.567000
+< Sub (expect 1234.567000): 1234.567000
+< Dec (expect 1234.567000): 1234.567000
+< Now: OK
+< Stamp: (expect 01:02:03.456) 01:02:03.456
+< HighResStamp: (expect 02:01:00.123456789) 02:01:00.123456789
+< __pmPathSeparator test: OK
+< __pmGetUsername test: OK
+< pmFreeHighResResult test:
+< __pmFreeHighResResult(ADDR)
+< pmSpecLocalPMDA test:
+< Expected error: pmSpecLocal(foo): bad op in spec
+< pmSpecLocal(clear): OK
+< pmSpecLocal(add,...): OK
+< __pmSetProcessIdentity test: (expect failure)
+< [DATE] qa_libpcp_compat(PID) Critical: cannot find the no-such-user user to switch to
+---
+> ./1166: line 52: /tmp/1166-129336: Permission denied
+35,64c6
+< __pmGetAPIConfig test: OK
+< __pmOpenLog test: expect to see standard log format
+< Log for 1166 on HOST started DATE
+< 
+< G'day cobber
+< __pmNoMem test: expect to see a message
+< [DATE] qa_libpcp_compat(PID) Warning: 1166: malloc(123456) failed: Cannot allocate memory
+< __pmNotifyErr test: expect to see standard message format
+< [DATE] qa_libpcp_compat(PID) Notice: Hullo world! The answer is 42
+< __pmPrintDesc test:
+<     Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+<     Semantics: counter  Units: Mbyte / sec
+< __pmtimeval* tests:
+< Add (expect 1234.567000): 1234.567000
+< Inc (expect 1234.567000): 1234.567000
+< Sub (expect 1234.567000): 1234.567000
+< Dec (expect 1234.567000): 1234.567000
+< Now: OK
+< Stamp: (expect 01:02:03.456) 01:02:03.456
+< HighResStamp: (expect 02:01:00.123456789) 02:01:00.123456789
+< __pmPathSeparator test: OK
+< __pmGetUsername test: OK
+< pmFreeHighResResult test:
+< __pmFreeHighResResult(ADDR)
+< pmSpecLocalPMDA test:
+< Expected error: pmSpecLocal(foo): bad op in spec
+< pmSpecLocal(clear): OK
+< pmSpecLocal(add,...): OK
+< __pmSetProcessIdentity test: (expect failure)
+< [DATE] qa_libpcp_compat(PID) Critical: cannot find the no-such-user user to switch to
+---
+> ./1166: line 66: /tmp/1166-129336: Permission denied
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[85%] 1167
+[85%] 1168 - output mismatch (see 1168.out.bad)
+45d44
+< [ ] - bcc.kernel.lock.mutex.spin.avg["inst"] - nanosec
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[85%] 1169
+[85%] 1170 [failed, exit status 1] - output mismatch (see 1170.out.bad)
+44,66c44
+< === report metric values for pid ===
+< OK
+< === report metric values for comm ===
+< OK
+< === report metric values for laddr ===
+< OK
+< === report metric values for lport ===
+< OK
+< === report metric values for daddr ===
+< OK
+< === report metric values for dport ===
+< OK
+< === report metric values for rx ===
+< OK
+< === report metric values for tx ===
+< OK
+< 
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> BPF compilation error, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[85%] 1171 [failed, exit status 1] - output mismatch (see 1171.out.bad)
+42,56c42
+< 
+< === start test program ===
+< 
+< === stop profiling ===
+< bcc.proc.profile old value="{"status": "started", "data": null}" new value="stop"
+< 
+< === verify captured stack frames ===
+< OK
+< 
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> Could not start profiling, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[86%] 1172 [failed, exit status 1] - output mismatch (see 1172.out.bad)
+44,53c44
+< === generate syscall activity ===
+< === report metric values ===
+< OK
+< 
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> BPF compilation error, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[86%] 1173 [failed, exit status 1] - output mismatch (see 1173.out.bad)
+46,58c46
+< === generate ucall activity ===
+< done
+< === report metric values for ucall count ===
+< OK
+< === report metric values for ucall cml lat ===
+< OK
+< 
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> BPF compilation error, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[86%] 1174
+[86%] 1175 [not run] libjvm.so not found
+[86%] 1176 [not run] only ext4 works reliably with cachestat
+[86%] 1177
+[86%] 1178 [failed, exit status 1] - output mismatch (see 1178.out.bad)
+46,54c46
+< === report metric values ===
+< OK
+< 
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> BPF compilation error, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[86%] 1179 [not run] libjvm.so not found
+[86%] 1180
+[86%] 1181 [failed, exit status 1] - output mismatch (see 1181.out.bad)
+46,54c46
+< === report metric values ===
+< OK
+< 
+< === remove bcc agent ===
+< Culling the Performance Metrics Name Space ...
+< bcc ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check bcc metrics have gone away ... OK
+---
+> BPF compilation error, test failed
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[86%] 1182
+[86%] 1183
+[86%] 1184
+[87%] 1185
+[87%] 1186
+[87%] 1187
+[87%] 1188 [not run] no device-mapper devices
+[87%] 1189
+[87%] 1190 - output mismatch (see 1190.out.bad)
+19c19,22
+< $PCP_PMDAS_DIR/pipe/pipe.conf ... OK
+---
+> $PCP_PMDAS_DIR/pipe/pipe.conf ... BAD (QA text found)
+>   empty-line   pcpqa   echo
+>   echo-all     pcpqa   echo $0
+>   echo-two     pcpqa   echo $1 $2
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[87%] 1191
+[87%] 1192 [not run] No podman binary found
+[87%] 1193
+[87%] 1194
+[87%] 1195 - output mismatch (see 1195.out.bad)
+12a13,14
+> 65d64
+> < 16:40:42.900974	      0         4299          532
+13a16,17
+> 65d64
+> < 16:40:42.900974	      0         4299          532
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[87%] 1196
+[87%] 1197 - output mismatch (see 1197.out.bad)
+6a7,10
+> 64c64
+> < 16:40:48.901500	      0         4299         1988
+> ---
+> > 16:40:48.901500	      0         4511         1988
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[88%] 1198
+[88%] 1199
+[88%] 1202
+[88%] 1203
+[88%] 1207
+[88%] 1211 [not run] pmseries command line utility not installed
+[88%] 1212 [not run] pmseries command line utility not installed
+[88%] 1214 [not run] pmseries command line utility not installed
+[88%] 1217
+[88%] 1218
+[88%] 1219
+[88%] 1220 [not run] no tty assigned
+[88%] 1221
+[89%] 1222
+[89%] 1224
+[89%] 1227
+[89%] 1229
+[89%] 1231
+[89%] 1234
+[89%] 1238
+[89%] 1239
+[89%] 1240
+[89%] 1242
+[89%] 1243 [not run] No support for service discovery
+[89%] 1245
+[89%] 1247
+[89%] 1255
+[90%] 1257
+[90%] 1258
+[90%] 1265
+[90%] 1266
+[90%] 1267
+[90%] 1269
+[90%] 1274
+[90%] 1276 [not run] No docker binary installed
+[90%] 1287
+[90%] 1289
+[90%] 1294
+[90%] 1297 - output mismatch (see 1297.out.bad)
+7d6
+<      pmie: primary engine: PCP_LOG_DIR/pmie/HOSTNAME/pmie.log
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[90%] 1299
+[91%] 1301
+[91%] 1303
+[91%] 1304
+[91%] 1306
+[91%] 1310
+[91%] 1318
+[91%] 1321
+[91%] 1323
+[91%] 1324
+[91%] 1326
+[91%] 1330
+[91%] 1331
+[91%] 1337 [not run] Microsoft SQL Server tools not installed
+[92%] 1338
+[92%] 1340
+[92%] 1342
+[92%] 1343
+[92%] 1344
+[92%] 1347
+[92%] 1349
+[92%] 1350
+[92%] 1351
+[92%] 1354
+[92%] 1357 [not run] podman pmda not installed
+[92%] 1358 [not run] podman pmda not installed
+[92%] 1359
+[93%] 1362 [not run] Cannot run psql as the postgres user, postgresql not installed or running?
+[93%] 1367
+[93%] 1368
+[93%] 1369
+[93%] 1372
+[93%] 1379 [not run] pmseries command line utility not installed
+[93%] 1383
+[93%] 1385
+[93%] 1388 [not run] pmseries command line utility not installed
+[93%] 1390
+[93%] 1393
+[93%] 1395
+[93%] 1396
+[94%] 1397
+[94%] 1398
+[94%] 1399
+[94%] 1401 [not run] pmseries command line utility not installed
+[94%] 1403
+[94%] 1407 [not run] need DISPLAY or PCPQA_CLOSE_X_SERVER
+[94%] 1408 [not run] need DISPLAY or PCPQA_CLOSE_X_SERVER
+[94%] 1415
+[94%] 1416
+[94%] 1422
+[94%] 1423
+[94%] 1433 [not run] pmseries command line utility not installed
+[94%] 1434
+[94%] 1435
+[95%] 1436
+[95%] 1437
+[95%] 1455
+[95%] 1457 [not run] pmseries command line utility not installed
+[95%] 1480 [not run] No sensors found, probably a VM
+[95%] 1489
+[95%] 1490
+[95%] 1495
+[95%] 1511
+[95%] 1543 [not run] pmseries command line utility not installed
+[95%] 1544 [not run] pmseries command line utility not installed
+[95%] 1545
+[95%] 1546
+[96%] 1547
+[96%] 1566
+[96%] 1573 [not run] pmseries command line utility not installed
+[96%] 1588
+[96%] 1598 [not run] statsd PMDA not installed
+[96%] 1599 [not run] statsd PMDA not installed
+[96%] 1600 [not run] pmseries command line utility not installed
+[96%] 1601 [not run] pmseries command line utility not installed
+[96%] 1602 [not run] pmseries command line utility not installed
+[96%] 1622 [not run] upstream policy package not loaded
+[96%] 1623
+[96%] 1644
+[96%] 1660
+[97%] 1661 [not run] pmseries command line utility not installed
+[97%] 1671
+[97%] 1672 - output mismatch (see 1672.out.bad)
+25d24
+< authentication failure
+28,30c27,28
+< 
+< pmcd.feature.authentication
+<     value 1
+---
+> [Mon Jun  1 19:17:45] pminfo(98149) Alert: No worthy mechs found
+> pminfo: Cannot connect to PMCD on host "pcp://localhost?method=digest-md5&username=pcpqa&password=y": Authentication - no mechanism available
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[97%] 1680 [not run] missing required ovs-vsctl command
+[97%] 1690 [not run] pmseries command line utility not installed
+[97%] 1692
+[97%] 1694
+[97%] 1695 [not run] pmseries command line utility not installed
+[97%] 1696 [not run] pmseries command line utility not installed
+[97%] 1700 [not run] current bpftrace version doesn't support JSON output, please upgrade
+[97%] 1701 [not run] current bpftrace version doesn't support JSON output, please upgrade
+[97%] 1702 [not run] current bpftrace version doesn't support JSON output, please upgrade
+[97%] 1703 [not run] current bpftrace version doesn't support JSON output, please upgrade
+[98%] 1704 [not run] current bpftrace version doesn't support JSON output, please upgrade
+[98%] 1705 [not run] current bpftrace version doesn't support JSON output, please upgrade
+[98%] 1706 [not run] current bpftrace version doesn't support JSON output, please upgrade
+[98%] 1707 [not run] current bpftrace version doesn't support JSON output, please upgrade
+[98%] 1708 [not run] statsd PMDA not installed
+[98%] 1709 [not run] statsd PMDA not installed
+[98%] 1710 [not run] statsd PMDA not installed
+[98%] 1711 [not run] statsd PMDA not installed
+[98%] 1712 [not run] statsd PMDA not installed
+[98%] 1713 [not run] statsd PMDA not installed
+[98%] 1714 [not run] statsd PMDA not installed
+[98%] 1715 [not run] statsd PMDA not installed
+[98%] 1716 [not run] statsd PMDA not installed
+[99%] 1717 [not run] statsd PMDA not installed
+[99%] 1718 [not run] statsd PMDA not installed
+[99%] 1719 [not run] statsd PMDA not installed
+[99%] 1720 [not run] statsd PMDA not installed
+[99%] 1721 [not run] current bpftrace version doesn't support JSON output, please upgrade
+[99%] 1722 [not run] current bpftrace version doesn't support JSON output, please upgrade
+[99%] 1723 [not run] current bpftrace version doesn't support JSON output, please upgrade
+[99%] 1724 [not run] current bpftrace version doesn't support JSON output, please upgrade
+[99%] 1768 - output mismatch (see 1768.out.bad)
+2,13d1
+< Discovered host pcp://slick:44321 [243f90596d76cf23e8da47476ec452a2adbe0b32]
+< + cp TMPDIR/243f90596d76cf23e8da47476ec452a2adbe0b32 PCP_SYSCONF_DIR/pmie/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32
+< + cp TMPDIR/243f90596d76cf23e8da47476ec452a2adbe0b32 PCP_SYSCONF_DIR/pmlogger/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32
+< Discovered host pcp://slack:44321 [8d00c4cf51d11bb9dced8a0e7507542653635377]
+< + cp TMPDIR/8d00c4cf51d11bb9dced8a0e7507542653635377 PCP_SYSCONF_DIR/pmie/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377
+< + cp TMPDIR/8d00c4cf51d11bb9dced8a0e7507542653635377 PCP_SYSCONF_DIR/pmlogger/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377
+< Discovered host pcp://localhost:44321?container=b0cd2cc912a3 [7745e45ed37ca712f418ec7b871c04fc898b9276]
+< + cp TMPDIR/7745e45ed37ca712f418ec7b871c04fc898b9276 PCP_SYSCONF_DIR/pmie/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276
+< + cp TMPDIR/7745e45ed37ca712f418ec7b871c04fc898b9276 PCP_SYSCONF_DIR/pmlogger/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276
+< Discovered host pcp://localhost:44321?container=77475e5fa09c [68dcffbdd4111d3ee82bb855286e3e35da828ca2]
+< + cp TMPDIR/68dcffbdd4111d3ee82bb855286e3e35da828ca2 PCP_SYSCONF_DIR/pmie/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2
+< + cp TMPDIR/68dcffbdd4111d3ee82bb855286e3e35da828ca2 PCP_SYSCONF_DIR/pmlogger/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds
+PMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch
+[99%] 1793
+[99%] 1855 [not run] rabbitmq not running on default port:15672
+[99%] 1896
+[99%] 4751
+Not run: 008 024 042 047 054 066 069 070 072 075 077 081 083 086 113 115 116 117 122 130 131 159 187 215 219 257 262 272 276 307 308 322 325 340 348 353 360 361 365 370 371 372 374 375 377 381 420 476 477 478 480 504 512 519 540 543 545 555 583 589 603 622 635 651 654 655 657 662 668 703 724 734 749 759 760 766 770 775 776 778 780 789 794 795 796 819 825 835 840 846 847 864 866 867 873 876 905 912 913 917 940 946 950 954 960 967 985 986 1001 1002 1003 1004 1005 1006 1007 1008 1009 1010 1011 1012 1013 1014 1015 1016 1021 1022 1023 1025 1026 1027 1028 1029 1031 1032 1034 1035 1041 1042 1061 1067 1070 1087 1090 1123 1126 1132 1141 1145 1151 1152 1154 1157 1175 1176 1179 1188 1192 1211 1212 1214 1220 1243 1276 1337 1357 1358 1362 1379 1388 1401 1407 1408 1433 1457 1480 1543 1544 1573 1598 1599 1600 1601 1602 1622 1661 1680 1690 1695 1696 1700 1701 1702 1703 1704 1705 1706 1707 1708 1709 1710 1711 1712 1713 1714 1715 1716 1717 1718 1719 1720 1721 1722 1723 1724 1855
+Failures: 003 033 036 051 063 244 250 297 304 344 354 392 429 469 471 674 681 687 735 805 845 893 943 1115 1116 1117 1118 1124 1127 1150 1153 1155 1156 1158 1165 1166 1168 1170 1171 1172 1173 1178 1181 1190 1195 1197 1297 1672 1768
+Failed 49 of 1104 tests

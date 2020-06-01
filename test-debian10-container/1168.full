@@ -1,0 +1,37 @@
+pmdabcc config:
+# Installed by PCP QA test 1168 on Mon Jun  1 19:08:50 UTC 2020
+[pmda]
+modules = klockstat
+prefix = bcc.
+[klockstat]
+module = klockstat
+cluster = 31
+process = pmcd
+pmrep: No PMCD agent for domain of request <pcp.pmapi.c_uint_Array_1 object at 0x7f140d5d0598>
+Log for pmdabcc on c8b243a204dc started Mon Jun  1 19:09:00 2020
+
+[Mon Jun  1 19:09:00] pmdabcc(99948) Info: Initializing, currently in 'notready' state.
+[Mon Jun  1 19:09:00] pmdabcc(99948) Info: Enabled modules:
+[Mon Jun  1 19:09:00] pmdabcc(99948) Info: ['klockstat']
+[Mon Jun  1 19:09:00] pmdabcc(99948) Info: Configuring modules:
+[Mon Jun  1 19:09:00] pmdabcc(99948) Info: klockstat
+[Mon Jun  1 19:09:00] pmdabcc(99948) Info: Modules configured.
+[Mon Jun  1 19:09:00] pmdabcc(99948) Info: Initializing modules:
+[Mon Jun  1 19:09:00] pmdabcc(99948) Info: klockstat
+[Mon Jun  1 19:09:00] pmdabcc(99948) Info: klockstat: Tracing PID 99739: /usr/lib/pcp/bin/pmcd -T 3.
+[Mon Jun  1 19:09:00] pmdabcc(99948) Info: klockstat: Initialized.
+[Mon Jun  1 19:09:00] pmdabcc(99948) Info: Modules initialized.
+[Mon Jun  1 19:09:00] pmdabcc(99948) Info: Registering metrics:
+[Mon Jun  1 19:09:00] pmdabcc(99948) Info: klockstat
+[Mon Jun  1 19:09:00] pmdabcc(99948) Info: Metrics registered.
+[Mon Jun  1 19:09:00] pmdabcc(99948) Info: Registering helpers:
+[Mon Jun  1 19:09:00] pmdabcc(99948) Info: klockstat
+[Mon Jun  1 19:09:00] pmdabcc(99948) Info: Helpers registered.
+[Mon Jun  1 19:09:00] pmdabcc(99948) Info: Compiling modules:
+[Mon Jun  1 19:09:00] pmdabcc(99948) Info: klockstat
+chdir(/lib/modules/5.3.0-1020-azure/build): No such file or directory
+[Mon Jun  1 19:09:00] pmdabcc(99948) Error: klockstat: Failed to compile BPF text
+[Mon Jun  1 19:09:00] pmdabcc(99948) Error: klockstat: Module NOT active!
+[Mon Jun  1 19:09:00] pmdabcc(99948) Error: Failed to compile module klockstat, aborting.
+
+Log finished Mon Jun  1 19:09:00 2020

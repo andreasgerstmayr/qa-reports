@@ -1,0 +1,53 @@
+{
+  "uid" : "4d3a6aa3ffeee40e",
+  "name" : "QA 735",
+  "fullName" : "QA #735 on ubuntu1804-direct",
+  "time" : {
+    "start" : 1591036167000,
+    "stop" : 1591036167000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 735\n\nExercise the Linux proc.psinfo.cgroup and proc.id.container metrics\n\n\n\nCopyright (c) 2013,2018 Red Hat.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 735</p>\n<p>Exercise the Linux proc.psinfo.cgroup and proc.id.container metrics</p>\n<p>Copyright (c) 2013,2018 Red Hat.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.proc"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/735",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/735.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4d3a6aa3ffeee40e.json",
+  "parameterValues" : [ ]
+}

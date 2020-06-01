@@ -1,0 +1,38 @@
+pmdabcc config:
+# Installed by PCP QA test 1168 on Mon Jun  1 19:01:45 UTC 2020
+[pmda]
+modules = klockstat
+prefix = bcc.
+[klockstat]
+module = klockstat
+cluster = 31
+process = pmcd
+pmrep: No PMCD agent for domain of request <pcp.pmapi.c_uint_Array_1 object at 0x7f7e60fead40>
+Log for pmdabcc on e4c2a05926f7 started Mon Jun  1 19:01:56 2020
+
+[Mon Jun  1 19:01:56] pmdabcc(967486) Info: Initializing, currently in 'notready' state.
+[Mon Jun  1 19:01:56] pmdabcc(967486) Info: Enabled modules:
+[Mon Jun  1 19:01:56] pmdabcc(967486) Info: ['klockstat']
+[Mon Jun  1 19:01:56] pmdabcc(967486) Info: Configuring modules:
+[Mon Jun  1 19:01:56] pmdabcc(967486) Info: klockstat
+[Mon Jun  1 19:01:56] pmdabcc(967486) Info: Modules configured.
+[Mon Jun  1 19:01:56] pmdabcc(967486) Info: Initializing modules:
+[Mon Jun  1 19:01:56] pmdabcc(967486) Info: klockstat
+[Mon Jun  1 19:01:56] pmdabcc(967486) Info: klockstat: Tracing PID 967269: /usr/libexec/pcp/bin/pmcd -T 3.
+[Mon Jun  1 19:01:56] pmdabcc(967486) Info: klockstat: Initialized.
+[Mon Jun  1 19:01:56] pmdabcc(967486) Info: Modules initialized.
+[Mon Jun  1 19:01:56] pmdabcc(967486) Info: Registering metrics:
+[Mon Jun  1 19:01:56] pmdabcc(967486) Info: klockstat
+[Mon Jun  1 19:01:56] pmdabcc(967486) Info: Metrics registered.
+[Mon Jun  1 19:01:56] pmdabcc(967486) Info: Registering helpers:
+[Mon Jun  1 19:01:56] pmdabcc(967486) Info: klockstat
+[Mon Jun  1 19:01:56] pmdabcc(967486) Info: Helpers registered.
+[Mon Jun  1 19:01:56] pmdabcc(967486) Info: Compiling modules:
+[Mon Jun  1 19:01:56] pmdabcc(967486) Info: klockstat
+modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1020-azure
+chdir(/lib/modules/5.3.0-1020-azure/build): No such file or directory
+[Mon Jun  1 19:01:56] pmdabcc(967486) Error: klockstat: Failed to compile BPF module <text>
+[Mon Jun  1 19:01:56] pmdabcc(967486) Error: klockstat: Module NOT active!
+[Mon Jun  1 19:01:56] pmdabcc(967486) Error: Failed to compile module klockstat, aborting.
+
+Log finished Mon Jun  1 19:01:56 2020

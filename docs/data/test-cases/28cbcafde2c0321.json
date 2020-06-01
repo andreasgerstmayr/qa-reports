@@ -1,0 +1,84 @@
+{
+  "uid" : "28cbcafde2c0321",
+  "name" : "QA 1672",
+  "fullName" : "QA #1672 on centos8-container",
+  "time" : {
+    "start" : 1591039060000,
+    "stop" : 1591039069000,
+    "duration" : 9000
+  },
+  "description" : "PCP QA Test No. 1672\n\nExercise different SASL auth methods using a custom sasldb.\n\n\n\nCopyright (c) 2020 Red Hat.\n\n\n\nNOTE\n\n\tThis test is likely to fail unless hostname(1) returns\n\n\tsome sort of FQDN.  For example, when hostname was vm23 it\n\n\tfailed, but when hostname was set (via /etc/hostname in\n\n\tthis case) to vm23.localdomain the test passes.\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos8 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 1672</p>\n<p>Exercise different SASL auth methods using a custom sasldb.</p>\n<p>Copyright (c) 2020 Red Hat.</p>\n<p>NOTE</p>\n<pre><code>This test is likely to fail unless hostname(1) returns\n\nsome sort of FQDN.  For example, when hostname was vm23 it\n\nfailed, but when hostname was set (via /etc/hostname in\n\nthis case) to vm23.localdomain the test passes.\n</code></pre>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform centos8 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 1672.out.bad)\n25d24\n< authentication failure\n28,30c27,28\n< \n< pmcd.feature.authentication\n<     value 1\n---\n> [Mon Jun  1 19:17:45] pminfo(98149) Alert: No worthy mechs found\n> pminfo: Cannot connect to PMCD on host \"pcp://localhost?method=digest-md5&username=pcpqa&password=y\": Authentication - no mechanism available\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds\nPMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds\nPMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 1672\n\nExercise different SASL auth methods using a custom sasldb.\n\n\n\nCopyright (c) 2020 Red Hat.\n\n\n\nNOTE\n\n\tThis test is likely to fail unless hostname(1) returns\n\n\tsome sort of FQDN.  For example, when hostname was vm23 it\n\n\tfailed, but when hostname was set (via /etc/hostname in\n\n\tthis case) to vm23.localdomain the test passes.\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos8 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 1672.out.bad)\n25d24\n< authentication failure\n28,30c27,28\n< \n< pmcd.feature.authentication\n<     value 1\n---\n> [Mon Jun  1 19:17:45] pminfo(98149) Alert: No worthy mechs found\n> pminfo: Cannot connect to PMCD on host \"pcp://localhost?method=digest-md5&username=pcpqa&password=y\": Authentication - no mechanism available\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 24d533d34f13 -f sample.milliseconds\nPMDA probe: pminfo -h 24d533d34f13 -f sampledso.milliseconds\nPMDA probe: pminfo -h 24d533d34f13 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7adaa0ba61906e8c",
+      "name" : "1672.out.bad",
+      "source" : "7adaa0ba61906e8c.txt",
+      "type" : "text/plain",
+      "size" : 944
+    }, {
+      "uid" : "4a102de5cd0bc9c2",
+      "name" : "1672.full",
+      "source" : "4a102de5cd0bc9c2.txt",
+      "type" : "text/plain",
+      "size" : 1755
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos8-container"
+  }, {
+    "name" : "host",
+    "value" : "centos8-container"
+  }, {
+    "name" : "epic",
+    "value" : "secure"
+  }, {
+    "name" : "epic",
+    "value" : "pmcd"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1672",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1672.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "28cbcafde2c0321.json",
+  "parameterValues" : [ ]
+}

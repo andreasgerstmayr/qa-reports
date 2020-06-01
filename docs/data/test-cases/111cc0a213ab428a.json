@@ -1,0 +1,53 @@
+{
+  "uid" : "111cc0a213ab428a",
+  "name" : "QA 1543",
+  "fullName" : "QA #1543 on debian10-container",
+  "time" : {
+    "start" : 1591039774000,
+    "stop" : 1591039777000,
+    "duration" : 3000
+  },
+  "description" : "PCP QA Test No. 1543\n\nExercise the async pmproxy PMWEBAPI implementation.\n\n\n\nCopyright (c) 2019 Red Hat.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 1543</p>\n<p>Exercise the async pmproxy PMWEBAPI implementation.</p>\n<p>Copyright (c) 2019 Red Hat.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian10-container"
+  }, {
+    "name" : "host",
+    "value" : "debian10-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmproxy"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1543",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1543.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "111cc0a213ab428a.json",
+  "parameterValues" : [ ]
+}

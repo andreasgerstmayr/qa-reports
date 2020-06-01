@@ -1,0 +1,56 @@
+{
+  "uid" : "dedcd0a50422afff",
+  "name" : "QA 1724",
+  "fullName" : "QA #1724 on ubuntu1804-direct",
+  "time" : {
+    "start" : 1591039543000,
+    "stop" : 1591039543000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 1724\n\nExercise the bpftrace PMDA - authentication\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 1724</p>\n<p>Exercise the bpftrace PMDA - authentication</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "bpftrace not installed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.bpftrace"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "python"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1724",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/3e8637f59d7d5d5eca729c848a01eaf95302ebe6/qa/1724.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dedcd0a50422afff.json",
+  "parameterValues" : [ ]
+}
