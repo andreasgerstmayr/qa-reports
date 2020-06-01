@@ -1,0 +1,41 @@
+dbpmda> open pipe /var/lib/pcp/pmdas/sample/pmdasample -d 29 -l /tmp/397-95252.log
+Start pmdasample PMDA: /var/lib/pcp/pmdas/sample/pmdasample -d 29 -l /tmp/397-95252.log
+dbpmda> store sample.event.reset "0"
+PMID: 29.0.126
+Getting description...
+Sending Profile...
+Getting Result Structure...
+29.0.126: 0 -> 0
+Sending Result...
+dbpmda> fetch sample.event.records
+PMID(s): 29.0.136
+pmResult dump from 0x55b09f6a79d0 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or ???] value [0 event records]
+    inst [1 or ???] value [2 event records timestamps 16:11:12.784...16:11:12.784]
+dbpmda> fetch sample.event.records
+PMID(s): 29.0.136
+pmResult dump from 0x55b09f6e58e0 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or ???] value [1 event record timestamp 16:11:02.784]
+    inst [1 or ???] value [1 event record timestamp 16:11:12.784]
+dbpmda> fetch sample.event.records
+PMID(s): 29.0.136
+pmResult dump from 0x55b09f6e58e0 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or ???] value [2 event records timestamps 16:11:02.784...16:11:03.784]
+    inst [1 or ???] value [1 event record timestamp 16:11:12.784]
+dbpmda> fetch sample.event.records
+PMID(s): 29.0.136
+pmResult dump from 0x55b09f6efc30 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or ???] value [5 event records (7 missed) timestamps 16:11:02.784...16:11:05.784]
+    inst [1 or ???] value [2 event records timestamps 16:11:12.784...16:11:12.784]
+dbpmda> close
+dbpmda> wait 1
+dbpmda> 
+=== pmda log ===
+Log for pmdasample on fv-az59 started Mon Jun  1 16:11:12 2020
+
+
+Log finished Mon Jun  1 16:11:12 2020

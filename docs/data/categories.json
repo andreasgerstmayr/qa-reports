@@ -1,5 +1,111 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "output mismatch (see 354.out.bad)\n103a104,105\n> Log finished DATE\n> \n122a125,126\n> Log finished DATE\n> \n144a149,150\n> Log finished DATE\n> \n154a161,162\n> Log finished DATE\n> \n173a182,183\n> Log finished DATE\n> \n291a302,303\n> Log finished DATE\n> \n307a320,321\n> Log finished DATE\n> \n326a341,342\n> Log finished DATE\n> \n333a350,351\n> Log finished DATE\n> \n348a367,368\n> \n> Log finished DATE\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 8e6dbc54de96 -f sample.milliseconds\nPMDA probe: pminfo -h 8e6dbc54de96 -f sampledso.milliseconds\nPMDA probe: pminfo -h 8e6dbc54de96 -f simple.numfetch\n",
+      "children" : [ {
+        "name" : "QA 354",
+        "uid" : "a2c41c412cd4b872",
+        "parentUid" : "efefbf3981548928042a5a94aaa801c9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1591027129000,
+          "stop" : 1591027149000,
+          "duration" : 20000
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "efefbf3981548928042a5a94aaa801c9"
+    }, {
+      "name" : "output mismatch (see 354.out.bad)\n103a104,105\n> Log finished DATE\n> \n122a125,126\n> Log finished DATE\n> \n144a149,150\n> Log finished DATE\n> \n154a161,162\n> Log finished DATE\n> \n173a182,183\n> Log finished DATE\n> \n291a302,303\n> Log finished DATE\n> \n307a320,321\n> Log finished DATE\n> \n326a341,342\n> Log finished DATE\n> \n333a350,351\n> Log finished DATE\n> \n348a367,368\n> \n> Log finished DATE\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h a1c3ed352404 -f sample.milliseconds\nPMDA probe: pminfo -h a1c3ed352404 -f sampledso.milliseconds\nPMDA probe: pminfo -h a1c3ed352404 -f simple.numfetch\n",
+      "children" : [ {
+        "name" : "QA 354",
+        "uid" : "105590c478f68a8e",
+        "parentUid" : "94c07256b678cc779f4d075e9f282504",
+        "status" : "failed",
+        "time" : {
+          "start" : 1591027331000,
+          "stop" : 1591027352000,
+          "duration" : 21000
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "94c07256b678cc779f4d075e9f282504"
+    }, {
+      "name" : "output mismatch (see 354.out.bad)\n103a104,105\n> Log finished DATE\n> \n122a125,126\n> Log finished DATE\n> \n144a149,150\n> Log finished DATE\n> \n154a161,162\n> Log finished DATE\n> \n173a182,183\n> Log finished DATE\n> \n291a302,303\n> Log finished DATE\n> \n307a320,321\n> Log finished DATE\n> \n326a341,342\n> Log finished DATE\n> \n333a350,351\n> Log finished DATE\n> \n348a367,368\n> \n> Log finished DATE\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h ec4f7d03e341 -f sample.milliseconds\nPMDA probe: pminfo -h ec4f7d03e341 -f sampledso.milliseconds\nPMDA probe: pminfo -h ec4f7d03e341 -f simple.numfetch\n",
+      "children" : [ {
+        "name" : "QA 354",
+        "uid" : "dc8299040a977a5e",
+        "parentUid" : "da74faf289791ca18e63eb2c24e3da29",
+        "status" : "failed",
+        "time" : {
+          "start" : 1591027411000,
+          "stop" : 1591027432000,
+          "duration" : 21000
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "da74faf289791ca18e63eb2c24e3da29"
+    }, {
+      "name" : "output mismatch (see 354.out.bad)\n103a104,105\n> Log finished DATE\n> \n122a125,126\n> Log finished DATE\n> \n144a149,150\n> Log finished DATE\n> \n154a161,162\n> Log finished DATE\n> \n173a182,183\n> Log finished DATE\n> \n291a302,303\n> Log finished DATE\n> \n307a320,321\n> Log finished DATE\n> \n326a341,342\n> Log finished DATE\n> \n333a350,351\n> Log finished DATE\n> \n348a367,368\n> \n> Log finished DATE\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 1871b8a6d643 -f sample.milliseconds\nPMDA probe: pminfo -h 1871b8a6d643 -f sampledso.milliseconds\nPMDA probe: pminfo -h 1871b8a6d643 -f simple.numfetch\n",
+      "children" : [ {
+        "name" : "QA 354",
+        "uid" : "333bed91b3a157f0",
+        "parentUid" : "453a0bc0fc5e7fcc1d60cd8208d2e90a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1591027471000,
+          "stop" : 1591027491000,
+          "duration" : 20000
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "453a0bc0fc5e7fcc1d60cd8208d2e90a"
+    }, {
+      "name" : "output mismatch (see 354.out.bad)\n103a104,105\n> Log finished DATE\n> \n122a125,126\n> Log finished DATE\n> \n144a149,150\n> Log finished DATE\n> \n154a161,162\n> Log finished DATE\n> \n173a182,183\n> Log finished DATE\n> \n291a302,303\n> Log finished DATE\n> \n307a320,321\n> Log finished DATE\n> \n326a341,342\n> Log finished DATE\n> \n333a350,351\n> Log finished DATE\n> \n348a367,368\n> \n> Log finished DATE\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h e9f5d26cb401 -f sample.milliseconds\nPMDA probe: pminfo -h e9f5d26cb401 -f sampledso.milliseconds\nPMDA probe: pminfo -h e9f5d26cb401 -f simple.numfetch\n",
+      "children" : [ {
+        "name" : "QA 354",
+        "uid" : "8e6df6ade2545ef7",
+        "parentUid" : "778ace1a8361c9d6535028d0b79879f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1591027526000,
+          "stop" : 1591027547000,
+          "duration" : 21000
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "778ace1a8361c9d6535028d0b79879f4"
+    }, {
+      "name" : "output mismatch (see 354.out.bad)\n103a104,105\n> Log finished DATE\n> \n122a125,126\n> Log finished DATE\n> \n144a149,150\n> Log finished DATE\n> \n154a161,162\n> Log finished DATE\n> \n173a182,183\n> Log finished DATE\n> \n291a302,303\n> Log finished DATE\n> \n307a320,321\n> Log finished DATE\n> \n326a341,342\n> Log finished DATE\n> \n333a350,351\n> Log finished DATE\n> \n348a367,368\n> \n> Log finished DATE\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 0dc6f44b5b29 -f sample.milliseconds\nPMDA probe: pminfo -h 0dc6f44b5b29 -f sampledso.milliseconds\nPMDA probe: pminfo -h 0dc6f44b5b29 -f simple.numfetch\n",
+      "children" : [ {
+        "name" : "QA 354",
+        "uid" : "cbe81983111c4eb3",
+        "parentUid" : "afb1b9c1d4b7453f05668e215f8bba6e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1591027615000,
+          "stop" : 1591027636000,
+          "duration" : 21000
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "afb1b9c1d4b7453f05668e215f8bba6e"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
   "name" : "categories"
 }

@@ -1,0 +1,729 @@
+=== folio name relative to cwd ===
+lf1MW1.localhost.0
+lf1MW1a.localhost.0
+MKTEMP=lf1MW1
+host: fv-az59
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-94068/lf1MW1.fv-az59.log
+host: localhost
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-94068/lf1MW1.localhost.log
+host: fv-az59
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-94068/lf1MW1a.fv-az59.log
+host: localhost
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-94068/lf1MW1a.localhost.log
+
+sleeping ...
+
+host: fv-az59
+f_config: NULL f_ipc: 6 pid: 94103 status: -1
+logfile: /tmp/354-94068/lf1MW1.fv-az59.log
+host: localhost
+f_config: NULL f_ipc: 7 pid: 94102 status: -1
+logfile: /tmp/354-94068/lf1MW1.localhost.log
+host: fv-az59
+f_config: NULL f_ipc: 8 pid: 94101 status: -1
+logfile: /tmp/354-94068/lf1MW1a.fv-az59.log
+host: localhost
+f_config: NULL f_ipc: 9 pid: 94100 status: -1
+logfile: /tmp/354-94068/lf1MW1a.localhost.log
+
+send some control requests ...
+host: fv-az59
+ OFF
+host: localhost
+ DETACH
+host: fv-az59
+ STATUS
+host: localhost
+ close(fd_ipc)
+
+now stop 'em all ...
+host: fv-az59
+pmRecordControl(... OFF ...): Invalid argument
+host: localhost
+pmRecordControl(... OFF ...): Invalid argument
+host: fv-az59
+host: localhost
+pmRecordControl(... OFF ...): IPC protocol failure
+
+and again to get any exit status ...
+pmRecordControl( ... OFF ...): Invalid argument
+
+
+discover what's happened ...
+
+host: fv-az59
+f_config: NULL f_ipc: -1 pid: 94103 status: 0
+logfile: /tmp/354-94068/lf1MW1.fv-az59.log
+host: localhost
+f_config: NULL f_ipc: -1 pid: 94102 status: -1
+logfile: /tmp/354-94068/lf1MW1.localhost.log
+host: fv-az59
+f_config: NULL f_ipc: -1 pid: 94101 status: 0
+logfile: /tmp/354-94068/lf1MW1a.fv-az59.log
+host: localhost
+f_config: NULL f_ipc: -1 pid: 94100 status: 0
+logfile: /tmp/354-94068/lf1MW1a.localhost.log
+pmlogger processes:
+UID         PID   PPID  C STIME TTY          TIME CMD
+root          1      0  0 15:34 ?        00:00:15 /lib/systemd/systemd --system --deserialize 33
+root          2      0  0 15:34 ?        00:00:00 [kthreadd]
+root          3      2  0 15:34 ?        00:00:00 [rcu_gp]
+root          4      2  0 15:34 ?        00:00:00 [rcu_par_gp]
+root          6      2  0 15:34 ?        00:00:00 [kworker/0:0H-kb]
+root          9      2  0 15:34 ?        00:00:00 [mm_percpu_wq]
+root         10      2  0 15:34 ?        00:00:02 [ksoftirqd/0]
+root         11      2  0 15:34 ?        00:00:02 [rcu_sched]
+root         12      2  0 15:34 ?        00:00:00 [migration/0]
+root         13      2  0 15:34 ?        00:00:00 [cpuhp/0]
+root         14      2  0 15:34 ?        00:00:00 [cpuhp/1]
+root         15      2  0 15:34 ?        00:00:01 [migration/1]
+root         16      2  0 15:34 ?        00:00:02 [ksoftirqd/1]
+root         18      2  0 15:34 ?        00:00:00 [kworker/1:0H-kb]
+root         19      2  0 15:34 ?        00:00:00 [kdevtmpfs]
+root         20      2  0 15:34 ?        00:00:00 [netns]
+root         21      2  0 15:34 ?        00:00:00 [rcu_tasks_kthre]
+root         22      2  0 15:34 ?        00:00:00 [kauditd]
+root         26      2  0 15:34 ?        00:00:00 [khungtaskd]
+root         27      2  0 15:34 ?        00:00:00 [oom_reaper]
+root         28      2  0 15:34 ?        00:00:00 [writeback]
+root         29      2  0 15:34 ?        00:00:00 [kcompactd0]
+root         30      2  0 15:34 ?        00:00:00 [ksmd]
+root         31      2  0 15:34 ?        00:00:00 [khugepaged]
+root        123      2  0 15:34 ?        00:00:00 [kintegrityd]
+root        124      2  0 15:34 ?        00:00:00 [kblockd]
+root        125      2  0 15:34 ?        00:00:00 [blkcg_punt_bio]
+root        126      2  0 15:34 ?        00:00:00 [tpm_dev_wq]
+root        127      2  0 15:34 ?        00:00:00 [ata_sff]
+root        128      2  0 15:34 ?        00:00:00 [md]
+root        129      2  0 15:34 ?        00:00:00 [edac-poller]
+root        130      2  0 15:34 ?        00:00:00 [hv_vmbus_con]
+root        131      2  0 15:34 ?        00:00:00 [hv_pri_chan]
+root        132      2  0 15:34 ?        00:00:00 [hv_sub_chan]
+root        133      2  0 15:34 ?        00:00:00 [devfreq_wq]
+root        134      2  0 15:34 ?        00:00:00 [watchdogd]
+root        137      2  0 15:34 ?        00:00:00 [kswapd0]
+root        138      2  0 15:34 ?        00:00:00 [kworker/u257:0]
+root        139      2  0 15:34 ?        00:00:00 [ecryptfs-kthrea]
+root        142      2  0 15:34 ?        00:00:00 [kthrotld]
+root        143      2  0 15:34 ?        00:00:00 [nfit]
+root        144      2  0 15:34 ?        00:00:00 [scsi_eh_0]
+root        146      2  0 15:34 ?        00:00:00 [nvme-wq]
+root        147      2  0 15:34 ?        00:00:00 [scsi_eh_1]
+root        148      2  0 15:34 ?        00:00:00 [scsi_tmf_0]
+root        149      2  0 15:34 ?        00:00:00 [nvme-reset-wq]
+root        150      2  0 15:34 ?        00:00:00 [scsi_tmf_1]
+root        152      2  0 15:34 ?        00:00:00 [nvme-delete-wq]
+root        153      2  0 15:34 ?        00:00:00 [scsi_eh_2]
+root        155      2  0 15:34 ?        00:00:00 [scsi_eh_3]
+root        156      2  0 15:34 ?        00:00:00 [scsi_tmf_3]
+root        157      2  0 15:34 ?        00:00:00 [storvsc_error_w]
+root        158      2  0 15:34 ?        00:00:00 [scsi_tmf_2]
+root        159      2  0 15:34 ?        00:00:00 [scsi_eh_4]
+root        160      2  0 15:34 ?        00:00:00 [storvsc_error_w]
+root        161      2  0 15:34 ?        00:00:00 [storvsc_error_w]
+root        162      2  0 15:34 ?        00:00:00 [scsi_tmf_4]
+root        164      2  0 15:34 ?        00:00:00 [storvsc_error_w]
+root        165      2  0 15:34 ?        00:00:00 [scsi_eh_5]
+root        166      2  0 15:34 ?        00:00:00 [scsi_tmf_5]
+root        168      2  0 15:34 ?        00:00:00 [kworker/1:1H-kb]
+root        169      2  0 15:34 ?        00:00:00 [kworker/0:1H-kb]
+root        170      2  0 15:34 ?        00:00:00 [ipv6_addrconf]
+root        181      2  0 15:34 ?        00:00:00 [kstrp]
+root        264      2  0 15:34 ?        00:00:00 [cryptd]
+root        377      2  0 15:34 ?        00:00:00 [raid5wq]
+root        427      2  0 15:34 ?        00:00:01 [jbd2/sda1-8]
+root        428      2  0 15:34 ?        00:00:00 [ext4-rsv-conver]
+root        498      2  0 15:34 ?        00:00:00 [iscsi_eh]
+root        500      2  0 15:34 ?        00:00:00 [ib-comp-wq]
+root        503      2  0 15:34 ?        00:00:00 [ib-comp-unb-wq]
+root        505      2  0 15:34 ?        00:00:00 [ib_mcast]
+root        506      2  0 15:34 ?        00:00:00 [ib_nl_sa_wq]
+root        511      2  0 15:34 ?        00:00:00 [rdma_cm]
+root        528      2  0 15:34 ?        00:00:00 [loop0]
+root        529      2  0 15:34 ?        00:00:00 [loop1]
+root        543      2  0 15:34 ?        00:00:00 [kworker/0:3-eve]
+root        544      2  0 15:34 ?        00:00:00 [hv_balloon]
+root        864      1  0 15:34 ?        00:00:00 /usr/sbin/haveged --Foreground --verbose=1 -w 1024
+root       1127      2  0 15:34 ?        00:00:00 [jbd2/sdb1-8]
+root       1128      2  0 15:34 ?        00:00:00 [ext4-rsv-conver]
+root       1184      1  0 15:34 ?        00:00:00 /usr/sbin/irqbalance --foreground
+root       1186      1  0 15:34 ?        00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+message+   1192      1  0 15:34 ?        00:00:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root       1199      1  0 15:34 ?        00:00:00 php-fpm: master process (/etc/php/7.3/fpm/php-fpm.conf)
+root       1201      1  0 15:34 ?        00:00:03 /opt/runner/provisioner/provisioner --agentdirectory /home/runner/runners --settings /opt/runner/provisioner/.settings
+root       1208      1  0 15:34 ?        00:00:00 php-fpm: master process (/etc/php/7.4/fpm/php-fpm.conf)
+root       1212      1  1 15:34 ?        00:00:25 /usr/bin/dotnet /opt/AGPM/bin/ProcessTelemetry.dll
+root       1219      1  0 15:34 ?        00:00:00 /usr/sbin/cron -f
+root       1224      1  0 15:34 ?        00:00:00 /usr/bin/python3 -u /usr/sbin/waagent -daemon
+root       1225      1  0 15:34 ?        00:00:01 /lib/systemd/systemd-logind
+root       1233      1  0 15:34 ?        00:00:00 php-fpm: master process (/etc/php/7.2/fpm/php-fpm.conf)
+root       1234      1  0 15:34 ?        00:00:01 /usr/lib/snapd/snapd
+daemon     1237      1  0 15:34 ?        00:00:00 /usr/sbin/atd -f
+root       1239      1  0 15:34 ?        00:00:00 /usr/bin/lxcfs /var/lib/lxcfs/
+root       1240      1  0 15:34 ?        00:00:00 /usr/lib/accountsservice/accounts-daemon
+root       1242      1  0 15:34 ?        00:00:00 php-fpm: master process (/etc/php/7.1/fpm/php-fpm.conf)
+root       1249      1  0 15:34 ?        00:00:00 /usr/sbin/sshd -D
+root       1250      1  0 15:34 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root       1254      1  0 15:34 ttyS0    00:00:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+root       1265      1  0 15:34 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root       1299      1  0 15:34 ?        00:00:00 /usr/lib/policykit-1/polkitd --no-debug
+root       1480   1224  0 15:34 ?        00:00:14 python3 -u bin/WALinuxAgent-2.2.48.1-py2.7.egg -run-exthandlers
+www-data   1522   1208  0 15:34 ?        00:00:00 php-fpm: pool www
+www-data   1523   1208  0 15:34 ?        00:00:00 php-fpm: pool www
+www-data   1534   1199  0 15:34 ?        00:00:00 php-fpm: pool www
+www-data   1546   1199  0 15:34 ?        00:00:00 php-fpm: pool www
+www-data   1547   1242  0 15:34 ?        00:00:00 php-fpm: pool www
+www-data   1548   1242  0 15:34 ?        00:00:00 php-fpm: pool www
+www-data   1554   1233  0 15:34 ?        00:00:00 php-fpm: pool www
+www-data   1555   1233  0 15:34 ?        00:00:00 php-fpm: pool www
+root       1789      2  0 15:34 ?        00:00:00 bpfilter_umh
+runner     2430   1201  0 15:35 ?        00:00:02 /home/runner/runners/2.263.0/bin/Runner.Listener run
+runner     2448   2430  0 15:35 ?        00:00:13 /home/runner/runners/2.263.0/bin/Runner.Worker spawnclient 104 107
+root       4061      2  0 15:46 ?        00:00:00 [target_completi]
+root       4062      2  0 15:46 ?        00:00:00 [xcopy_wq]
+redis      5247      1  0 15:47 ?        00:00:01 /usr/bin/redis-server 127.0.0.1:6379
+root       6283      2  0 15:35 ?        00:00:00 [kworker/0:7-cgr]
+systemd+   6285      1  0 15:35 ?        00:00:00 /lib/systemd/systemd-networkd
+systemd+   6310      1  0 15:35 ?        00:00:00 /lib/systemd/systemd-resolved
+systemd+   6326      1  0 15:35 ?        00:00:00 /lib/systemd/systemd-timesyncd
+root       6341      1  0 15:35 ?        00:00:01 /lib/systemd/systemd-journald
+unbound    9173      1  0 15:47 ?        00:00:00 /usr/sbin/unbound -d
+zabbix    10021      1  0 15:48 ?        00:00:00 /usr/sbin/zabbix_agentd --foreground
+zabbix    10035  10021  0 15:48 ?        00:00:00 /usr/sbin/zabbix_agentd: collector [idle 1 sec]
+zabbix    10036  10021  0 15:48 ?        00:00:00 /usr/sbin/zabbix_agentd: listener #1 [waiting for connection]
+zabbix    10037  10021  0 15:48 ?        00:00:00 /usr/sbin/zabbix_agentd: listener #2 [waiting for connection]
+zabbix    10038  10021  0 15:48 ?        00:00:00 /usr/sbin/zabbix_agentd: listener #3 [waiting for connection]
+zabbix    10039  10021  0 15:48 ?        00:00:00 /usr/sbin/zabbix_agentd: active checks #1 [idle 1 sec]
+root      11232      2  0 15:48 ?        00:00:00 [spl_system_task]
+root      11234      2  0 15:48 ?        00:00:00 [spl_delay_taskq]
+root      11235      2  0 15:48 ?        00:00:00 [spl_dynamic_tas]
+root      11236      2  0 15:48 ?        00:00:00 [spl_kmem_cache]
+root      11248      2  0 15:48 ?        00:00:00 [zvol]
+root      11261      2  0 15:48 ?        00:00:00 [arc_prune]
+root      11262      2  0 15:48 ?        00:00:00 [zthr_procedure]
+root      11263      2  0 15:48 ?        00:00:00 [zthr_procedure]
+root      11264      2  0 15:48 ?        00:00:00 [dbu_evict]
+root      11265      2  0 15:48 ?        00:00:00 [dbuf_evict]
+root      11267      2  0 15:48 ?        00:00:00 [z_vdev_file]
+root      11268      2  0 15:48 ?        00:00:00 [l2arc_feed]
+root      11352      1  0 15:48 ?        00:00:00 /usr/sbin/zed -F
+root      34251      2  0 15:56 ?        00:00:00 [kworker/u256:1-]
+root      41266      1  0 15:37 ?        00:00:02 /usr/bin/dockerd -H fd://
+root      41293  41266  0 15:37 ?        00:00:01 containerd --config /var/run/docker/containerd/containerd.toml --log-level info
+root      41523      1  0 15:37 ?        00:00:00 /usr/lib/linux-tools/5.3.0-1020-azure/hv_kvp_daemon -n
+root      41537      1  0 15:37 ?        00:00:00 /usr/lib/linux-tools/5.3.0-1020-azure/hv_vss_daemon -n
+root      41639      1  0 15:37 ?        00:00:00 /lib/systemd/systemd-udevd
+root      46126      1  0 15:38 ?        00:00:00 /sbin/lvmetad -f
+root      68540      2  0 16:02 ?        00:00:00 [kworker/1:1-eve]
+root      68541      2  0 16:02 ?        00:00:00 [kworker/1:4-eve]
+root      78747      2  0 16:08 ?        00:00:00 [kworker/u256:2-]
+root      79146      2  0 16:09 ?        00:00:00 [kworker/1:0-eve]
+root      79190      2  0 16:09 ?        00:00:00 [kworker/1:2-cgr]
+runner    79260   2448  0 16:09 ?        00:00:00 /bin/bash -e /home/runner/work/_temp/ca81ba3b-da3a-487b-8057-8d4a78bb5125.sh
+runner    79262  79260  0 16:09 ?        00:00:00 python3 ./build/ci/run.py --runner direct --platform ubuntu1804 task qa_sanity
+runner    79263  79262  0 16:09 ?        00:00:00 bash -
+root      79264  79263  0 16:09 ?        00:00:00 sudo -i -u pcpqa ./check -TT -g sanity
+runner    79265  79263  0 16:09 ?        00:00:00 tee ./artifacts/test/test.log
+pcpqa     79266  79264  0 16:09 ?        00:00:00 /bin/sh ./check -TT -g sanity
+root      82078      2  0 16:09 ?        00:00:00 [kworker/u256:3-]
+root      82108      2  0 16:09 ?        00:00:00 [kworker/0:0-cgr]
+root      82109      2  0 16:09 ?        00:00:00 [kworker/0:1-eve]
+root      82118      2  0 16:09 ?        00:00:00 [kworker/0:2-eve]
+root      82119      2  0 16:09 ?        00:00:00 [kworker/0:4-eve]
+pcp       84900      1  0 16:09 ?        00:00:00 /usr/lib/pcp/bin/pmcd -T 3
+root      84907  84900  0 16:09 ?        00:00:00 /var/lib/pcp/pmdas/root/pmdaroot
+root      84908  84907  0 16:09 ?        00:00:00 /var/lib/pcp/pmdas/proc/pmdaproc -d 3
+root      84910  84907  0 16:09 ?        00:00:00 /var/lib/pcp/pmdas/xfs/pmdaxfs -d 11
+pcp       84911  84907  0 16:09 ?        00:00:00 /var/lib/pcp/pmdas/sample/pmdasample -d 29
+root      84912  84907  0 16:09 ?        00:00:00 /var/lib/pcp/pmdas/linux/pmdalinux
+root      84913  84907  0 16:09 ?        00:00:00 /var/lib/pcp/pmdas/kvm/pmdakvm -d 95
+pcp       85256      1  0 16:09 ?        00:00:00 /usr/lib/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M
+pcp       86254  84907  0 16:09 ?        00:00:00 /var/lib/pcp/pmdas/simple/pmdasimple -d 253
+root      87715      2  0 15:40 ?        00:00:00 [xfsalloc]
+root      87716      2  0 15:40 ?        00:00:00 [xfs_mru_cache]
+root      87721      2  0 15:40 ?        00:00:00 [jfsIO]
+root      87722      2  0 15:40 ?        00:00:00 [jfsCommit]
+root      87723      2  0 15:40 ?        00:00:00 [jfsCommit]
+root      87724      2  0 15:40 ?        00:00:00 [jfsSync]
+pcpqa     94068  79266  0 16:10 ?        00:00:00 /bin/sh ./354
+pcpqa     94102      1  0 16:10 ?        00:00:00 pmlogger -x 6 -h localhost -l lf1MW1.localhost.log -c lf1MW1.localhost.config lf1MW1.localhost
+pcpqa     94143  94068  0 16:11 ?        00:00:00 ps -efw
+pcpqa     94144  94068  0 16:11 ?        00:00:00 tee -a /var/lib/pcp/testsuite/354.full
+pcpqa     94145  94068  0 16:11 ?        00:00:00 sed -n -e 1p -e /[p]mlogger.*-x/{ s/ -x [0-9][0-9]*/ -x N/ p }
+pcpqa     94146  94068  0 16:11 ?        00:00:00 /bin/sh ./354
+pcpqa     94147  94068  0 16:11 ?        00:00:00 tee /tmp/354-94068.tmp
+pcpqa     94148  94068  0 16:11 ?        00:00:00 sed -f /tmp/354-94068.sed
+pcpqa     94149  94068  0 16:11 ?        00:00:00 sort
+pcpqa     94150  94146  0 16:11 ?        00:00:00 /usr/bin/gawk --posix  NR == 1?{ if ($2 != "PID") { ?    print "PID not in field 2 of ps output!" ?    print ?    exit(1) ?  } ?  if ($8 == "CMD" || $8 == "COMMAND") ?    # Linux-like ?    cmd = 8 ?  else if ($11 == "COMMAND") ?    # old-style BSD ?    cmd = 11 ?  else { ?    print "CMD (or COMMAND) not in field 8 (or 11) of ps output!" ?    print ?    exit(1) ?  } ?  next ?} ?{ print "ps:",$2,$cmd,$(cmd+1),$(cmd+2),$(cmd+3),$(cmd+4) }
+root     104379      1  0 15:41 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data 104381 104379  0 15:41 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data 104382 104379  0 15:41 ?        00:00:00 /usr/sbin/apache2 -k start
+root     106097      1  0 15:41 ?        00:00:00 /sbin/auditd
+avahi    106597      1  0 15:41 ?        00:00:00 avahi-daemon: running [fv-az59.local]
+avahi    106610 106597  0 15:41 ?        00:00:00 avahi-daemon: chroot helper
+root     107888      1  0 15:41 ?        00:00:00 /usr/lib/postfix/sbin/master -w
+postfix  107891 107888  0 15:41 ?        00:00:00 pickup -l -t unix -u -c
+postfix  107892 107888  0 15:41 ?        00:00:00 qmgr -l -t unix -u
+syslog   108498      1  0 15:41 ?        00:00:00 /usr/sbin/rsyslogd -n
+root     125564      2  0 15:44 ?        00:00:00 [kworker/u256:0-]
+root     126886      1  0 15:44 ?        00:00:00 /usr/sbin/virtlogd
+root     126963      1  0 15:44 ?        00:00:00 /usr/sbin/libvirtd
+libvirt+ 127326      1  0 15:44 ?        00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/lib/libvirt/libvirt_leaseshelper
+root     127327 127326  0 15:44 ?        00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/lib/libvirt/libvirt_leaseshelper
+memcache 130348      1  0 15:45 ?        00:00:00 /usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1 -P /var/run/memcached/memcached.pid
+pmlogger pid: 94102
+=== MKTEMP.HOST.log ===
+Log for pmlogger on fv-az59 started Mon Jun  1 16:10:50 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs lf1MW1.fv-az59.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "fv-az59" via "fv-az59"
+Archive basename: lf1MW1.fv-az59
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "foo" and the host "fv-az59" has been in progress for 3 seconds and in that time the pmlogger process has created an archive of 376 bytes.
+
+This archive may be replayed with the following command:
+  $ pmafm foo replay
+
+The application that launched pmlogger has terminated this PCP recording session.
+pmlogger: Recording session terminated, exiting
+
+Log finished Mon Jun  1 16:10:53 2020
+=== MKTEMP.localhost.log ===
+Log for pmlogger on fv-az59 started Mon Jun  1 16:10:50 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs lf1MW1.localhost.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "fv-az59" via "localhost"
+Archive basename: lf1MW1.localhost
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "foo" and the host "fv-az59" has been in progress for 4 seconds and in that time the pmlogger process has created an archive of 376 bytes.
+
+This archive may be replayed with the following command:
+  $ pmafm foo replay
+
+The application that launched pmlogger has asked pmlogger to continue independently and the PCP archive will grow at the rate of 330.5 Kbytes per hour or 7931.2 Kbytes per day.
+
+At any time this pmlogger process may be terminated with the following command:
+  $ pmsignal -s TERM 94102
+pmlogger: Caught signal 15, exiting
+
+Log finished Mon Jun  1 16:11:00 2020
+=== MKTEMPa.HOST.log ===
+Log for pmlogger on fv-az59 started Mon Jun  1 16:10:50 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs lf1MW1a.fv-az59.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "fv-az59" via "fv-az59"
+Archive basename: lf1MW1a.fv-az59
+
+Warning: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "foo" and the host "fv-az59" has been in progress for 5 seconds and in that time the pmlogger process has created an archive of 376 bytes.
+
+This archive may be replayed with the following command:
+  $ pmafm foo replay
+
+At any time this pmlogger process may be terminated with the following command:
+  $ pmsignal -s TERM 94101
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "foo" and the host "fv-az59" has been in progress for 7 seconds and in that time the pmlogger process has created an archive of 376 bytes.
+
+This archive may be replayed with the following command:
+  $ pmafm foo replay
+
+The application that launched pmlogger has terminated this PCP recording session.
+pmlogger: Recording session terminated, exiting
+
+Log finished Mon Jun  1 16:10:57 2020
+=== MKTEMPa.localhost.log ===
+Log for pmlogger on fv-az59 started Mon Jun  1 16:10:50 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs lf1MW1a.localhost.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "fv-az59" via "localhost"
+Archive basename: lf1MW1a.localhost
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "foo" and the host "fv-az59" has been in progress for 6 seconds and in that time the pmlogger process has created an archive of 380 bytes.
+
+This archive may be replayed with the following command:
+  $ pmafm foo replay
+
+The application that launched pmlogger has exited and you must decide if the PCP recording session should be terminated or continued.  If recording is continued the PCP archive will grow at the rate of 222.7 Kbytes per hour or 5343.8 Kbytes per day.
+
+At any time this pmlogger process may be terminated with the following command:
+  $ pmsignal -s TERM 94100
+
+
+Terminate this PCP recording session now?pmlogger: Recording session terminated, exiting
+
+Log finished Mon Jun  1 16:10:56 2020
+=== absolute folio name ===
+Orl7rw.localhost.0
+Orl7rwa.localhost.0
+MKTEMP=Orl7rw
+host: fv-az59
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-94068/Orl7rw.fv-az59.log
+host: localhost
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-94068/Orl7rw.localhost.log
+host: fv-az59
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-94068/Orl7rwa.fv-az59.log
+host: localhost
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-94068/Orl7rwa.localhost.log
+
+sleeping ...
+
+host: fv-az59
+f_config: NULL f_ipc: 7 pid: 94295 status: -1
+logfile: /tmp/354-94068/Orl7rw.fv-az59.log
+host: localhost
+f_config: NULL f_ipc: 8 pid: 94294 status: -1
+logfile: /tmp/354-94068/Orl7rw.localhost.log
+host: fv-az59
+f_config: NULL f_ipc: 9 pid: 94293 status: -1
+logfile: /tmp/354-94068/Orl7rwa.fv-az59.log
+host: localhost
+f_config: NULL f_ipc: 10 pid: 94292 status: -1
+logfile: /tmp/354-94068/Orl7rwa.localhost.log
+
+send some control requests ...
+host: fv-az59
+ OFF
+host: localhost
+ DETACH
+host: fv-az59
+ STATUS
+host: localhost
+ close(fd_ipc)
+
+now stop 'em all ...
+host: fv-az59
+pmRecordControl(... OFF ...): Invalid argument
+host: localhost
+pmRecordControl(... OFF ...): Invalid argument
+host: fv-az59
+host: localhost
+pmRecordControl(... OFF ...): IPC protocol failure
+
+and again to get any exit status ...
+pmRecordControl( ... OFF ...): Invalid argument
+
+
+discover what's happened ...
+
+host: fv-az59
+f_config: NULL f_ipc: -1 pid: 94295 status: 0
+logfile: /tmp/354-94068/Orl7rw.fv-az59.log
+host: localhost
+f_config: NULL f_ipc: -1 pid: 94294 status: -1
+logfile: /tmp/354-94068/Orl7rw.localhost.log
+host: fv-az59
+f_config: NULL f_ipc: -1 pid: 94293 status: 0
+logfile: /tmp/354-94068/Orl7rwa.fv-az59.log
+host: localhost
+f_config: NULL f_ipc: -1 pid: 94292 status: 0
+logfile: /tmp/354-94068/Orl7rwa.localhost.log
+pmlogger processes:
+UID         PID   PPID  C STIME TTY          TIME CMD
+root          1      0  0 15:34 ?        00:00:15 /lib/systemd/systemd --system --deserialize 33
+root          2      0  0 15:34 ?        00:00:00 [kthreadd]
+root          3      2  0 15:34 ?        00:00:00 [rcu_gp]
+root          4      2  0 15:34 ?        00:00:00 [rcu_par_gp]
+root          6      2  0 15:34 ?        00:00:00 [kworker/0:0H-kb]
+root          9      2  0 15:34 ?        00:00:00 [mm_percpu_wq]
+root         10      2  0 15:34 ?        00:00:02 [ksoftirqd/0]
+root         11      2  0 15:34 ?        00:00:02 [rcu_sched]
+root         12      2  0 15:34 ?        00:00:00 [migration/0]
+root         13      2  0 15:34 ?        00:00:00 [cpuhp/0]
+root         14      2  0 15:34 ?        00:00:00 [cpuhp/1]
+root         15      2  0 15:34 ?        00:00:01 [migration/1]
+root         16      2  0 15:34 ?        00:00:02 [ksoftirqd/1]
+root         18      2  0 15:34 ?        00:00:00 [kworker/1:0H-kb]
+root         19      2  0 15:34 ?        00:00:00 [kdevtmpfs]
+root         20      2  0 15:34 ?        00:00:00 [netns]
+root         21      2  0 15:34 ?        00:00:00 [rcu_tasks_kthre]
+root         22      2  0 15:34 ?        00:00:00 [kauditd]
+root         26      2  0 15:34 ?        00:00:00 [khungtaskd]
+root         27      2  0 15:34 ?        00:00:00 [oom_reaper]
+root         28      2  0 15:34 ?        00:00:00 [writeback]
+root         29      2  0 15:34 ?        00:00:00 [kcompactd0]
+root         30      2  0 15:34 ?        00:00:00 [ksmd]
+root         31      2  0 15:34 ?        00:00:00 [khugepaged]
+root        123      2  0 15:34 ?        00:00:00 [kintegrityd]
+root        124      2  0 15:34 ?        00:00:00 [kblockd]
+root        125      2  0 15:34 ?        00:00:00 [blkcg_punt_bio]
+root        126      2  0 15:34 ?        00:00:00 [tpm_dev_wq]
+root        127      2  0 15:34 ?        00:00:00 [ata_sff]
+root        128      2  0 15:34 ?        00:00:00 [md]
+root        129      2  0 15:34 ?        00:00:00 [edac-poller]
+root        130      2  0 15:34 ?        00:00:00 [hv_vmbus_con]
+root        131      2  0 15:34 ?        00:00:00 [hv_pri_chan]
+root        132      2  0 15:34 ?        00:00:00 [hv_sub_chan]
+root        133      2  0 15:34 ?        00:00:00 [devfreq_wq]
+root        134      2  0 15:34 ?        00:00:00 [watchdogd]
+root        137      2  0 15:34 ?        00:00:00 [kswapd0]
+root        138      2  0 15:34 ?        00:00:00 [kworker/u257:0]
+root        139      2  0 15:34 ?        00:00:00 [ecryptfs-kthrea]
+root        142      2  0 15:34 ?        00:00:00 [kthrotld]
+root        143      2  0 15:34 ?        00:00:00 [nfit]
+root        144      2  0 15:34 ?        00:00:00 [scsi_eh_0]
+root        146      2  0 15:34 ?        00:00:00 [nvme-wq]
+root        147      2  0 15:34 ?        00:00:00 [scsi_eh_1]
+root        148      2  0 15:34 ?        00:00:00 [scsi_tmf_0]
+root        149      2  0 15:34 ?        00:00:00 [nvme-reset-wq]
+root        150      2  0 15:34 ?        00:00:00 [scsi_tmf_1]
+root        152      2  0 15:34 ?        00:00:00 [nvme-delete-wq]
+root        153      2  0 15:34 ?        00:00:00 [scsi_eh_2]
+root        155      2  0 15:34 ?        00:00:00 [scsi_eh_3]
+root        156      2  0 15:34 ?        00:00:00 [scsi_tmf_3]
+root        157      2  0 15:34 ?        00:00:00 [storvsc_error_w]
+root        158      2  0 15:34 ?        00:00:00 [scsi_tmf_2]
+root        159      2  0 15:34 ?        00:00:00 [scsi_eh_4]
+root        160      2  0 15:34 ?        00:00:00 [storvsc_error_w]
+root        161      2  0 15:34 ?        00:00:00 [storvsc_error_w]
+root        162      2  0 15:34 ?        00:00:00 [scsi_tmf_4]
+root        164      2  0 15:34 ?        00:00:00 [storvsc_error_w]
+root        165      2  0 15:34 ?        00:00:00 [scsi_eh_5]
+root        166      2  0 15:34 ?        00:00:00 [scsi_tmf_5]
+root        168      2  0 15:34 ?        00:00:00 [kworker/1:1H-kb]
+root        169      2  0 15:34 ?        00:00:00 [kworker/0:1H-kb]
+root        170      2  0 15:34 ?        00:00:00 [ipv6_addrconf]
+root        181      2  0 15:34 ?        00:00:00 [kstrp]
+root        264      2  0 15:34 ?        00:00:00 [cryptd]
+root        377      2  0 15:34 ?        00:00:00 [raid5wq]
+root        427      2  0 15:34 ?        00:00:01 [jbd2/sda1-8]
+root        428      2  0 15:34 ?        00:00:00 [ext4-rsv-conver]
+root        498      2  0 15:34 ?        00:00:00 [iscsi_eh]
+root        500      2  0 15:34 ?        00:00:00 [ib-comp-wq]
+root        503      2  0 15:34 ?        00:00:00 [ib-comp-unb-wq]
+root        505      2  0 15:34 ?        00:00:00 [ib_mcast]
+root        506      2  0 15:34 ?        00:00:00 [ib_nl_sa_wq]
+root        511      2  0 15:34 ?        00:00:00 [rdma_cm]
+root        528      2  0 15:34 ?        00:00:00 [loop0]
+root        529      2  0 15:34 ?        00:00:00 [loop1]
+root        543      2  0 15:34 ?        00:00:00 [kworker/0:3-eve]
+root        544      2  0 15:34 ?        00:00:00 [hv_balloon]
+root        864      1  0 15:34 ?        00:00:00 /usr/sbin/haveged --Foreground --verbose=1 -w 1024
+root       1127      2  0 15:34 ?        00:00:00 [jbd2/sdb1-8]
+root       1128      2  0 15:34 ?        00:00:00 [ext4-rsv-conver]
+root       1184      1  0 15:34 ?        00:00:00 /usr/sbin/irqbalance --foreground
+root       1186      1  0 15:34 ?        00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+message+   1192      1  0 15:34 ?        00:00:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root       1199      1  0 15:34 ?        00:00:00 php-fpm: master process (/etc/php/7.3/fpm/php-fpm.conf)
+root       1201      1  0 15:34 ?        00:00:03 /opt/runner/provisioner/provisioner --agentdirectory /home/runner/runners --settings /opt/runner/provisioner/.settings
+root       1208      1  0 15:34 ?        00:00:00 php-fpm: master process (/etc/php/7.4/fpm/php-fpm.conf)
+root       1212      1  1 15:34 ?        00:00:25 /usr/bin/dotnet /opt/AGPM/bin/ProcessTelemetry.dll
+root       1219      1  0 15:34 ?        00:00:00 /usr/sbin/cron -f
+root       1224      1  0 15:34 ?        00:00:00 /usr/bin/python3 -u /usr/sbin/waagent -daemon
+root       1225      1  0 15:34 ?        00:00:01 /lib/systemd/systemd-logind
+root       1233      1  0 15:34 ?        00:00:00 php-fpm: master process (/etc/php/7.2/fpm/php-fpm.conf)
+root       1234      1  0 15:34 ?        00:00:01 /usr/lib/snapd/snapd
+daemon     1237      1  0 15:34 ?        00:00:00 /usr/sbin/atd -f
+root       1239      1  0 15:34 ?        00:00:00 /usr/bin/lxcfs /var/lib/lxcfs/
+root       1240      1  0 15:34 ?        00:00:00 /usr/lib/accountsservice/accounts-daemon
+root       1242      1  0 15:34 ?        00:00:00 php-fpm: master process (/etc/php/7.1/fpm/php-fpm.conf)
+root       1249      1  0 15:34 ?        00:00:00 /usr/sbin/sshd -D
+root       1250      1  0 15:34 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root       1254      1  0 15:34 ttyS0    00:00:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+root       1265      1  0 15:34 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root       1299      1  0 15:34 ?        00:00:00 /usr/lib/policykit-1/polkitd --no-debug
+root       1480   1224  0 15:34 ?        00:00:14 python3 -u bin/WALinuxAgent-2.2.48.1-py2.7.egg -run-exthandlers
+www-data   1522   1208  0 15:34 ?        00:00:00 php-fpm: pool www
+www-data   1523   1208  0 15:34 ?        00:00:00 php-fpm: pool www
+www-data   1534   1199  0 15:34 ?        00:00:00 php-fpm: pool www
+www-data   1546   1199  0 15:34 ?        00:00:00 php-fpm: pool www
+www-data   1547   1242  0 15:34 ?        00:00:00 php-fpm: pool www
+www-data   1548   1242  0 15:34 ?        00:00:00 php-fpm: pool www
+www-data   1554   1233  0 15:34 ?        00:00:00 php-fpm: pool www
+www-data   1555   1233  0 15:34 ?        00:00:00 php-fpm: pool www
+root       1789      2  0 15:34 ?        00:00:00 bpfilter_umh
+runner     2430   1201  0 15:35 ?        00:00:02 /home/runner/runners/2.263.0/bin/Runner.Listener run
+runner     2448   2430  0 15:35 ?        00:00:13 /home/runner/runners/2.263.0/bin/Runner.Worker spawnclient 104 107
+root       4061      2  0 15:46 ?        00:00:00 [target_completi]
+root       4062      2  0 15:46 ?        00:00:00 [xcopy_wq]
+redis      5247      1  0 15:47 ?        00:00:01 /usr/bin/redis-server 127.0.0.1:6379
+root       6283      2  0 15:35 ?        00:00:00 [kworker/0:7-cgr]
+systemd+   6285      1  0 15:35 ?        00:00:00 /lib/systemd/systemd-networkd
+systemd+   6310      1  0 15:35 ?        00:00:00 /lib/systemd/systemd-resolved
+systemd+   6326      1  0 15:35 ?        00:00:00 /lib/systemd/systemd-timesyncd
+root       6341      1  0 15:35 ?        00:00:01 /lib/systemd/systemd-journald
+unbound    9173      1  0 15:47 ?        00:00:00 /usr/sbin/unbound -d
+zabbix    10021      1  0 15:48 ?        00:00:00 /usr/sbin/zabbix_agentd --foreground
+zabbix    10035  10021  0 15:48 ?        00:00:00 /usr/sbin/zabbix_agentd: collector [idle 1 sec]
+zabbix    10036  10021  0 15:48 ?        00:00:00 /usr/sbin/zabbix_agentd: listener #1 [waiting for connection]
+zabbix    10037  10021  0 15:48 ?        00:00:00 /usr/sbin/zabbix_agentd: listener #2 [waiting for connection]
+zabbix    10038  10021  0 15:48 ?        00:00:00 /usr/sbin/zabbix_agentd: listener #3 [waiting for connection]
+zabbix    10039  10021  0 15:48 ?        00:00:00 /usr/sbin/zabbix_agentd: active checks #1 [idle 1 sec]
+root      11232      2  0 15:48 ?        00:00:00 [spl_system_task]
+root      11234      2  0 15:48 ?        00:00:00 [spl_delay_taskq]
+root      11235      2  0 15:48 ?        00:00:00 [spl_dynamic_tas]
+root      11236      2  0 15:48 ?        00:00:00 [spl_kmem_cache]
+root      11248      2  0 15:48 ?        00:00:00 [zvol]
+root      11261      2  0 15:48 ?        00:00:00 [arc_prune]
+root      11262      2  0 15:48 ?        00:00:00 [zthr_procedure]
+root      11263      2  0 15:48 ?        00:00:00 [zthr_procedure]
+root      11264      2  0 15:48 ?        00:00:00 [dbu_evict]
+root      11265      2  0 15:48 ?        00:00:00 [dbuf_evict]
+root      11267      2  0 15:48 ?        00:00:00 [z_vdev_file]
+root      11268      2  0 15:48 ?        00:00:00 [l2arc_feed]
+root      11352      1  0 15:48 ?        00:00:01 /usr/sbin/zed -F
+root      34251      2  0 15:56 ?        00:00:00 [kworker/u256:1-]
+root      41266      1  0 15:37 ?        00:00:02 /usr/bin/dockerd -H fd://
+root      41293  41266  0 15:37 ?        00:00:01 containerd --config /var/run/docker/containerd/containerd.toml --log-level info
+root      41523      1  0 15:37 ?        00:00:00 /usr/lib/linux-tools/5.3.0-1020-azure/hv_kvp_daemon -n
+root      41537      1  0 15:37 ?        00:00:00 /usr/lib/linux-tools/5.3.0-1020-azure/hv_vss_daemon -n
+root      41639      1  0 15:37 ?        00:00:00 /lib/systemd/systemd-udevd
+root      46126      1  0 15:38 ?        00:00:00 /sbin/lvmetad -f
+root      68540      2  0 16:02 ?        00:00:00 [kworker/1:1-eve]
+root      68541      2  0 16:02 ?        00:00:00 [kworker/1:4-eve]
+root      78747      2  0 16:08 ?        00:00:00 [kworker/u256:2-]
+root      79146      2  0 16:09 ?        00:00:00 [kworker/1:0-eve]
+root      79190      2  0 16:09 ?        00:00:00 [kworker/1:2-cgr]
+runner    79260   2448  0 16:09 ?        00:00:00 /bin/bash -e /home/runner/work/_temp/ca81ba3b-da3a-487b-8057-8d4a78bb5125.sh
+runner    79262  79260  0 16:09 ?        00:00:00 python3 ./build/ci/run.py --runner direct --platform ubuntu1804 task qa_sanity
+runner    79263  79262  0 16:09 ?        00:00:00 bash -
+root      79264  79263  0 16:09 ?        00:00:00 sudo -i -u pcpqa ./check -TT -g sanity
+runner    79265  79263  0 16:09 ?        00:00:00 tee ./artifacts/test/test.log
+pcpqa     79266  79264  0 16:09 ?        00:00:00 /bin/sh ./check -TT -g sanity
+root      82078      2  0 16:09 ?        00:00:00 [kworker/u256:3-]
+root      82108      2  0 16:09 ?        00:00:00 [kworker/0:0-cgr]
+root      82109      2  0 16:09 ?        00:00:00 [kworker/0:1-eve]
+root      82118      2  0 16:09 ?        00:00:00 [kworker/0:2-eve]
+root      82119      2  0 16:09 ?        00:00:00 [kworker/0:4-eve]
+pcp       84900      1  0 16:09 ?        00:00:00 /usr/lib/pcp/bin/pmcd -T 3
+root      84907  84900  0 16:09 ?        00:00:00 /var/lib/pcp/pmdas/root/pmdaroot
+root      84908  84907  0 16:09 ?        00:00:00 /var/lib/pcp/pmdas/proc/pmdaproc -d 3
+root      84910  84907  0 16:09 ?        00:00:00 /var/lib/pcp/pmdas/xfs/pmdaxfs -d 11
+pcp       84911  84907  0 16:09 ?        00:00:00 /var/lib/pcp/pmdas/sample/pmdasample -d 29
+root      84912  84907  0 16:09 ?        00:00:00 /var/lib/pcp/pmdas/linux/pmdalinux
+root      84913  84907  0 16:09 ?        00:00:00 /var/lib/pcp/pmdas/kvm/pmdakvm -d 95
+pcp       85256      1  0 16:09 ?        00:00:00 /usr/lib/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M
+pcp       86254  84907  0 16:09 ?        00:00:00 /var/lib/pcp/pmdas/simple/pmdasimple -d 253
+root      87715      2  0 15:40 ?        00:00:00 [xfsalloc]
+root      87716      2  0 15:40 ?        00:00:00 [xfs_mru_cache]
+root      87721      2  0 15:40 ?        00:00:00 [jfsIO]
+root      87722      2  0 15:40 ?        00:00:00 [jfsCommit]
+root      87723      2  0 15:40 ?        00:00:00 [jfsCommit]
+root      87724      2  0 15:40 ?        00:00:00 [jfsSync]
+pcpqa     94068  79266  0 16:10 ?        00:00:00 /bin/sh ./354
+pcpqa     94294      1  0 16:11 ?        00:00:00 pmlogger -x 7 -h localhost -l Orl7rw.localhost.log -c Orl7rw.localhost.config Orl7rw.localhost
+pcpqa     94331  94068  0 16:11 ?        00:00:00 ps -efw
+pcpqa     94332  94068  0 16:11 ?        00:00:00 tee -a /var/lib/pcp/testsuite/354.full
+pcpqa     94333  94068  0 16:11 ?        00:00:00 sed -n -e 1p -e /[p]mlogger.*-x/{ s/ -x [0-9][0-9]*/ -x N/ p }
+pcpqa     94334  94068  0 16:11 ?        00:00:00 /bin/sh ./354
+pcpqa     94335  94068  0 16:11 ?        00:00:00 tee /tmp/354-94068.tmp
+pcpqa     94336  94068  0 16:11 ?        00:00:00 sed -f /tmp/354-94068.sed
+pcpqa     94337  94068  0 16:11 ?        00:00:00 sort
+pcpqa     94338  94334  0 16:11 ?        00:00:00 /usr/bin/gawk --posix  NR == 1?{ if ($2 != "PID") { ?    print "PID not in field 2 of ps output!" ?    print ?    exit(1) ?  } ?  if ($8 == "CMD" || $8 == "COMMAND") ?    # Linux-like ?    cmd = 8 ?  else if ($11 == "COMMAND") ?    # old-style BSD ?    cmd = 11 ?  else { ?    print "CMD (or COMMAND) not in field 8 (or 11) of ps output!" ?    print ?    exit(1) ?  } ?  next ?} ?{ print "ps:",$2,$cmd,$(cmd+1),$(cmd+2),$(cmd+3),$(cmd+4) }
+root     104379      1  0 15:41 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data 104381 104379  0 15:41 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data 104382 104379  0 15:41 ?        00:00:00 /usr/sbin/apache2 -k start
+root     106097      1  0 15:41 ?        00:00:00 /sbin/auditd
+avahi    106597      1  0 15:41 ?        00:00:00 avahi-daemon: running [fv-az59.local]
+avahi    106610 106597  0 15:41 ?        00:00:00 avahi-daemon: chroot helper
+root     107888      1  0 15:41 ?        00:00:00 /usr/lib/postfix/sbin/master -w
+postfix  107891 107888  0 15:41 ?        00:00:00 pickup -l -t unix -u -c
+postfix  107892 107888  0 15:41 ?        00:00:00 qmgr -l -t unix -u
+syslog   108498      1  0 15:41 ?        00:00:00 /usr/sbin/rsyslogd -n
+root     125564      2  0 15:44 ?        00:00:00 [kworker/u256:0-]
+root     126886      1  0 15:44 ?        00:00:00 /usr/sbin/virtlogd
+root     126963      1  0 15:44 ?        00:00:00 /usr/sbin/libvirtd
+libvirt+ 127326      1  0 15:44 ?        00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/lib/libvirt/libvirt_leaseshelper
+root     127327 127326  0 15:44 ?        00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/lib/libvirt/libvirt_leaseshelper
+memcache 130348      1  0 15:45 ?        00:00:00 /usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1 -P /var/run/memcached/memcached.pid
+pmlogger pid: 94294
+=== MKTEMP.HOST.log ===
+Log for pmlogger on fv-az59 started Mon Jun  1 16:11:00 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs Orl7rw.fv-az59.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "fv-az59" via "fv-az59"
+Archive basename: Orl7rw.fv-az59
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "/tmp/354-94068/foo" and the host "fv-az59" has been in progress for 3 seconds and in that time the pmlogger process has created an archive of 376 bytes.
+
+The application that launched pmlogger has terminated this PCP recording session.
+pmlogger: Recording session terminated, exiting
+
+Log finished Mon Jun  1 16:11:03 2020
+=== MKTEMP.localhost.log ===
+Log for pmlogger on fv-az59 started Mon Jun  1 16:11:00 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs Orl7rw.localhost.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "fv-az59" via "localhost"
+Archive basename: Orl7rw.localhost
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "/tmp/354-94068/foo" and the host "fv-az59" has been in progress for 4 seconds and in that time the pmlogger process has created an archive of 376 bytes.
+
+The application that launched pmlogger has asked pmlogger to continue independently and the PCP archive will grow at the rate of 330.5 Kbytes per hour or 7931.2 Kbytes per day.
+
+At any time this pmlogger process may be terminated with the following command:
+  $ pmsignal -s TERM 94294
+pmlogger: Caught signal 15, exiting
+
+Log finished Mon Jun  1 16:11:10 2020
+=== MKTEMPa.HOST.log ===
+Log for pmlogger on fv-az59 started Mon Jun  1 16:11:00 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs Orl7rwa.fv-az59.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "fv-az59" via "fv-az59"
+Archive basename: Orl7rwa.fv-az59
+
+Warning: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "/tmp/354-94068/foo" and the host "fv-az59" has been in progress for 5 seconds and in that time the pmlogger process has created an archive of 376 bytes.
+
+At any time this pmlogger process may be terminated with the following command:
+  $ pmsignal -s TERM 94293
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "/tmp/354-94068/foo" and the host "fv-az59" has been in progress for 7 seconds and in that time the pmlogger process has created an archive of 376 bytes.
+
+The application that launched pmlogger has terminated this PCP recording session.
+pmlogger: Recording session terminated, exiting
+
+Log finished Mon Jun  1 16:11:07 2020
+=== MKTEMPa.localhost.log ===
+Log for pmlogger on fv-az59 started Mon Jun  1 16:11:00 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs Orl7rwa.localhost.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "fv-az59" via "localhost"
+Archive basename: Orl7rwa.localhost
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "/tmp/354-94068/foo" and the host "fv-az59" has been in progress for 6 seconds and in that time the pmlogger process has created an archive of 380 bytes.
+
+The application that launched pmlogger has exited and you must decide if the PCP recording session should be terminated or continued.  If recording is continued the PCP archive will grow at the rate of 222.7 Kbytes per hour or 5343.8 Kbytes per day.
+
+At any time this pmlogger process may be terminated with the following command:
+  $ pmsignal -s TERM 94292
+
+
+Terminate this PCP recording session now?pmlogger: Recording session terminated, exiting
+
+Log finished Mon Jun  1 16:11:06 2020
