@@ -1,0 +1,56 @@
+{
+  "uid" : "46e63efb7ff6fcae",
+  "name" : "QA 107",
+  "fullName" : "QA #107 on centos7-container",
+  "time" : {
+    "start" : 1591110787000,
+    "stop" : 1591110796000,
+    "duration" : 9000
+  },
+  "description" : "PCP QA Test No. 107\n\nCheck pmlc \"query\" command against the primary pmlogger\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 107</p>\n<p>Check pmlc &quot;query&quot; command against the primary pmlogger</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos7-container"
+  }, {
+    "name" : "host",
+    "value" : "centos7-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmlc"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "sanity"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/bc2ddc036c3abb0deb3189dafef9351c0e18f8ac/qa/107",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/bc2ddc036c3abb0deb3189dafef9351c0e18f8ac/qa/107.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "46e63efb7ff6fcae.json",
+  "parameterValues" : [ ]
+}

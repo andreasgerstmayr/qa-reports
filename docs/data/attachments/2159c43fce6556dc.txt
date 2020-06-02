@@ -1,203 +1,0 @@
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Initializing ... currently in notready state.
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Config change detected, traversed 31 config entries in 0.0005s, rescanning ...
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source awk_scripted cluster 2
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source bad_summary_nometa cluster 3
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source collectd_sample cluster 4
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source curl.script cluster 5
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source curl_filtered cluster 6
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source curl_hostname_label cluster 7
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source curl_scripted cluster 8
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source good_summary_nometa cluster 9
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source jenkins_monitoring_javamelody cluster 10
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source jenkins_prometheus_plugin cluster 11
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source labelfiltering cluster 12
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source multiple.namespace.levels cluster 13
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source multiple.namespace.more cluster 14
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source pmwebd_3_12_2 cluster 15
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source problematic_strings cluster 16
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source prom_exposition_formats_example1 cluster 17
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source python_sample_client_server cluster 18
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source python_scripted cluster 19
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source reordered_labels cluster 20
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source sample_pmda_3_12_2 cluster 21
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source sample_pmda_instname_5_0_0 cluster 22
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source sample_prometheus_metrics cluster 23
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source script_failed cluster 24
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source sh_script_no_suffix cluster 25
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source sh_scripted cluster 26
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source simple_metric cluster 27
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source stderr_check cluster 28
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Info: Found source thermostat cluster 29
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   145  100   145    0     0   141k      0 --:--:-- --:--:-- --:--:--  141k
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   145  100   145    0     0   141k      0 --:--:-- --:--:-- --:--:--  141k
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   145  100   145    0     0   141k      0 --:--:-- --:--:-- --:--:--  141k
-[Mon Jun  1 19:09:43] pmdaopenmetrics(987539) Error: Warning: cannot fetch URL or execute script /var/lib/pcp/pmdas/openmetrics/config.d/script_failed.sh: Command '/var/lib/pcp/pmdas/openmetrics/config.d/script_failed.sh' returned non-zero exit status 1.
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    93  100    93    0     0  93000      0 --:--:-- --:--:-- --:--:-- 93000
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    93  100    93    0     0  93000      0 --:--:-- --:--:-- --:--:-- 93000
-stderr output should end up in the PMDA log file
-[Mon Jun  1 19:09:44] pmdaopenmetrics(987539) Info: Ready to process requests
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Initializing ... currently in notready state.
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Config change detected, traversed 31 config entries in 0.0005s, rescanning ...
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source awk_scripted cluster 2
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source bad_summary_nometa cluster 3
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source collectd_sample cluster 4
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source curl.script cluster 5
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source curl_filtered cluster 6
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source curl_hostname_label cluster 7
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source curl_scripted cluster 8
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source good_summary_nometa cluster 9
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source jenkins_monitoring_javamelody cluster 10
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source jenkins_prometheus_plugin cluster 11
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source labelfiltering cluster 12
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source multiple.namespace.levels cluster 13
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source multiple.namespace.more cluster 14
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source pmwebd_3_12_2 cluster 15
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source problematic_strings cluster 16
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source prom_exposition_formats_example1 cluster 17
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source python_sample_client_server cluster 18
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source python_scripted cluster 19
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source reordered_labels cluster 20
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source sample_pmda_3_12_2 cluster 21
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source sample_pmda_instname_5_0_0 cluster 22
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source sample_prometheus_metrics cluster 23
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source script_failed cluster 24
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source sh_script_no_suffix cluster 25
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source sh_scripted cluster 26
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source simple_metric cluster 27
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source stderr_check cluster 28
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Info: Found source thermostat cluster 29
-stderr output should end up in the PMDA log file
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   145  100   145    0     0   141k      0 --:--:-- --:--:-- --:--:--  141k
-[Mon Jun  1 19:09:45] pmdaopenmetrics(987597) Error: Warning: cannot fetch URL or execute script /var/lib/pcp/pmdas/openmetrics/config.d/script_failed.sh: Command '/var/lib/pcp/pmdas/openmetrics/config.d/script_failed.sh' returned non-zero exit status 1.
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   145  100   145    0     0   141k      0 --:--:-- --:--:-- --:--:--  141k
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   145  100   145    0     0   141k      0 --:--:-- --:--:-- --:--:--  141k
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    93  100    93    0     0  93000      0 --:--:-- --:--:-- --:--:-- 93000
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    93  100    93    0     0  93000      0 --:--:-- --:--:-- --:--:-- 93000
-[Mon Jun  1 19:09:46] pmdaopenmetrics(987597) Info: Ready to process requests
-Updating the Performance Metrics Name Space (PMNS) ...
-Terminate PMDA if already installed ...
-Updating the PMCD control file, and notifying PMCD ...
-Starting pmcd ... 
-Check openmetrics metrics have appeared ... 1040 metrics and 4688 values
-=== openmetrics PMDA log ===
-Log for pmdaopenmetrics on e4c2a05926f7 started Mon Jun  1 19:09:47 2020
-
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Initializing ... currently in notready state.
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Config change detected, traversed 31 config entries in 0.0006s, rescanning ...
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source awk_scripted cluster 2
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source bad_summary_nometa cluster 3
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source collectd_sample cluster 4
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source curl.script cluster 5
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source curl_filtered cluster 6
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source curl_hostname_label cluster 7
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source curl_scripted cluster 8
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source good_summary_nometa cluster 9
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source jenkins_monitoring_javamelody cluster 10
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source jenkins_prometheus_plugin cluster 11
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source labelfiltering cluster 12
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source multiple.namespace.levels cluster 13
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source multiple.namespace.more cluster 14
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source pmwebd_3_12_2 cluster 15
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source problematic_strings cluster 16
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source prom_exposition_formats_example1 cluster 17
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source python_sample_client_server cluster 18
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source python_scripted cluster 19
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source reordered_labels cluster 20
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source sample_pmda_3_12_2 cluster 21
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source sample_pmda_instname_5_0_0 cluster 22
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source sample_prometheus_metrics cluster 23
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source script_failed cluster 24
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source sh_script_no_suffix cluster 25
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source sh_scripted cluster 26
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source simple_metric cluster 27
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source stderr_check cluster 28
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Info: Found source thermostat cluster 29
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   145  100   145    0     0   141k      0 --:--:-- --:--:-- --:--:--  141k
-[Mon Jun  1 19:09:47] pmdaopenmetrics(987871) Error: Warning: cannot fetch URL or execute script /var/lib/pcp/pmdas/openmetrics/config.d/script_failed.sh: Command '/var/lib/pcp/pmdas/openmetrics/config.d/script_failed.sh' returned non-zero exit status 1.
-stderr output should end up in the PMDA log file
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   145  100   145    0     0   141k      0 --:--:-- --:--:-- --:--:--  141k
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   145  100   145    0     0   141k      0 --:--:-- --:--:-- --:--:--  141k
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    93  100    93    0     0  93000      0 --:--:-- --:--:-- --:--:-- 93000
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    93  100    93    0     0  93000      0 --:--:-- --:--:-- --:--:-- 93000
-[Mon Jun  1 19:09:48] pmdaopenmetrics(987871) Info: Ready to process requests
-stderr output should end up in the PMDA log file
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   145  100   145    0     0   141k      0 --:--:-- --:--:-- --:--:--  141k
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   145  100   145    0     0   141k      0 --:--:-- --:--:-- --:--:--  141k
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    93  100    93    0     0  93000      0 --:--:-- --:--:-- --:--:-- 93000
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    93  100    93    0     0  93000      0 --:--:-- --:--:-- --:--:-- 93000
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   145  100   145    0     0   141k      0 --:--:-- --:--:-- --:--:--  141k
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   145  100   145    0     0   141k      0 --:--:-- --:--:-- --:--:--  141k
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   145  100   145    0     0   141k      0 --:--:-- --:--:-- --:--:--  141k
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   145  100   145    0     0   141k      0 --:--:-- --:--:-- --:--:--  141k
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    93  100    93    0     0  93000      0 --:--:-- --:--:-- --:--:-- 93000
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    93  100    93    0     0  93000      0 --:--:-- --:--:-- --:--:-- 93000
-[Mon Jun  1 19:09:57] pmdaopenmetrics(987871) Error: Warning: cannot fetch URL or execute script /var/lib/pcp/pmdas/openmetrics/config.d/script_failed.sh: Command '/var/lib/pcp/pmdas/openmetrics/config.d/script_failed.sh' returned non-zero exit status 1.
-stderr output should end up in the PMDA log file
-stderr output should end up in the PMDA log file
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   145  100   145    0     0   141k      0 --:--:-- --:--:-- --:--:--  141k
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   145  100   145    0     0   141k      0 --:--:-- --:--:-- --:--:--  141k
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    93  100    93    0     0  93000      0 --:--:-- --:--:-- --:--:-- 93000
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   145  100   145    0     0   141k      0 --:--:-- --:--:-- --:--:--  141k
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    93  100    93    0     0  93000      0 --:--:-- --:--:-- --:--:-- 93000
-
-Log finished Mon Jun  1 19:10:00 2020

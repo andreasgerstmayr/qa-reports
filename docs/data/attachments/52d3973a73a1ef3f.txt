@@ -1,9 +1,0 @@
-QA output created by 1297
-
-== confirm no primary pmie running:
-== finished
-
-Job for pmie.service failed. See "systemctl status pmie.service" and "journalctl -xe" for details.
-== confirm primary pmie is running:
-== finished
-

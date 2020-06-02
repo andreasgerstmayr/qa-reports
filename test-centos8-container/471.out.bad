@@ -1,7 +1,0 @@
-QA output created by 471
-1. testing _check_userroot as a normal user (error is expected)
-./471: line 30: /tmp/471-22322.script: Permission denied
-
-
-2. testing _check_userroot as the root user (no output expected)
-sudo: unable to execute /tmp/471-22322.script: Permission denied

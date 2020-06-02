@@ -1,8 +1,0 @@
-Fake pmcd pid=880936
-Before restart ...
-UID          PID    PPID  C STIME TTY          TIME CMD
-pcp       880009       1 21 18:20 ?        00:00:00 /usr/lib/pcp/bin/pmcd -T 3
-_get_pids_by_name pmcd -> 880009
-After restart ...
-UID          PID    PPID  C STIME TTY          TIME CMD
-pcp       881380       1  0 18:20 ?        00:00:00 /usr/lib/pcp/bin/pmcd -T 3
