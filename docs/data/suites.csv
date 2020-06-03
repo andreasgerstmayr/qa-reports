@@ -1,7 +1,33 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Jun 02 15:13:17 UTC 2020","Tue Jun 02 15:13:22 UTC 2020","5000","","centos7-container","","","","QA 137","PCP QA Test No. 137
+"passed","Wed Jun 03 11:55:46 UTC 2020","Wed Jun 03 11:55:47 UTC 2020","1000","","fedora33-container","","","","QA 437","PCP QA Test No. 437
 
-exercise dbpmda
+Exercise compressed archive files - badness in the uncompression
+
+
+
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:47:33 UTC 2020","Wed Jun 03 11:47:34 UTC 2020","1000","","centos8-container","","","","QA 263","PCP QA Test No. 263
+
+
+
+Exercise aggregate functions for derived metrics
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:29 UTC 2020","Wed Jun 03 11:53:29 UTC 2020","0","","fedora33-container","","","","QA 048","PCP QA Test No. 048
+
+exercise log/archive retrievals
 
 
 
@@ -10,9 +36,9 @@ Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:14:25 UTC 2020","Tue Jun 02 15:14:25 UTC 2020","0","","centos7-container","","","","QA 299","PCP QA Test No. 299
+"passed","Wed Jun 03 11:55:36 UTC 2020","Wed Jun 03 11:55:37 UTC 2020","1000","","fedora31-container","","","","QA 091","PCP QA Test No. 091
 
-exercise pmParseMetricSpec
+interpolate mode backwards
 
 
 
@@ -21,7 +47,40 @@ Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:15:22 UTC 2020","Tue Jun 02 15:15:23 UTC 2020","1000","","centos7-container","","","","QA 900","PCP QA Test No. 900
+"passed","Wed Jun 03 11:55:42 UTC 2020","Wed Jun 03 11:55:42 UTC 2020","0","","fedora32-container","","","","QA 1044","PCP QA Test No. 1044 (formerly 525)
+
+exercises pmieconf cmd line
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:45:57 UTC 2020","Wed Jun 03 11:45:58 UTC 2020","1000","","centos8-container","","","","QA 026","PCP QA Test No. 026
+
+Text Services (Help and Oneline) for PMIDs and pmInDoms
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:34 UTC 2020","Wed Jun 03 11:57:54 UTC 2020","20000","","debian11-container","","","","QA 178","PCP QA Test No. 178
+
+pmlogextract exerciser
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:40 UTC 2020","Wed Jun 03 11:55:41 UTC 2020","1000","","fedora32-container","","","","QA 900","PCP QA Test No. 900
 
 Test pcp(1) invokes other utilities with environment set.
 
@@ -32,9 +91,22 @@ Copyright (c) 2014 Red Hat.
 
 
 "
-"passed","Tue Jun 02 15:14:21 UTC 2020","Tue Jun 02 15:14:22 UTC 2020","1000","","centos7-container","","","","QA 232","PCP QA Test No. 232
+"passed","Wed Jun 03 12:05:44 UTC 2020","Wed Jun 03 12:05:46 UTC 2020","2000","","debian10-container","","","","QA 201","PCP QA Test No. 201
 
-exercise instance API functions for PM_CONTEXT_LOCAL
+exercise pmdaCache routines
+
+
+
+Copyright (C) 2015 Red Hat.
+
+Copyright (c) 2005 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:26 UTC 2020","Wed Jun 03 11:57:34 UTC 2020","8000","","debian11-container","","","","QA 155","PCP QA Test No. 155
+
+verify PMDA not ready protocol
 
 
 
@@ -43,9 +115,53 @@ Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:14:55 UTC 2020","Tue Jun 02 15:14:55 UTC 2020","0","","centos7-container","","","","QA 404","PCP QA Test No. 404
+"passed","Wed Jun 03 11:56:17 UTC 2020","Wed Jun 03 11:56:18 UTC 2020","1000","","fedora33-container","","","","QA 1368","PCP QA Test No. 1368
 
-exercise pmUnpackEventRecords() and pmFreeEventResult()
+Exercise fetch protocol support for context label changes.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 12:04:17 UTC 2020","Wed Jun 03 12:04:18 UTC 2020","1000","","debian10-container","","","","QA 004","PCP QA Test No. 004
+
+exercise contexts for the live data from the pmcd
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:28 UTC 2020","Wed Jun 03 11:55:28 UTC 2020","0","","fedora31-container","","","","QA 059","PCP QA Test No. 059
+
+timestmaps in the archive logs
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:04 UTC 2020","Wed Jun 03 11:55:05 UTC 2020","1000","","fedora33-container","","","","QA 234","PCP QA Test No. 234
+
+pmlogsummary exerciser
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:29 UTC 2020","Wed Jun 03 11:57:30 UTC 2020","1000","","fedora31-container","","","","QA 407","PCP QA Test No. 407
+
+Derived metrics and PM_TYPE_EVENT
 
 
 
@@ -54,7 +170,7 @@ Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:15:16 UTC 2020","Tue Jun 02 15:15:22 UTC 2020","6000","","centos7-container","","","","QA 707","PCP QA Test No. 707
+"passed","Wed Jun 03 11:52:23 UTC 2020","Wed Jun 03 11:52:29 UTC 2020","6000","","centos7-container","","","","QA 707","PCP QA Test No. 707
 
 Exercise python PMAPI layer - basic archive tests
 
@@ -65,17 +181,9 @@ Copyright (c) 2012-2014 Red Hat.
 
 
 "
-"passed","Tue Jun 02 15:12:48 UTC 2020","Tue Jun 02 15:12:49 UTC 2020","1000","","centos7-container","","","","QA 031","PCP QA Test No. 031
+"passed","Wed Jun 03 11:45:58 UTC 2020","Wed Jun 03 11:45:59 UTC 2020","1000","","centos8-container","","","","QA 048","PCP QA Test No. 048
 
-general exerciser for local PCP
-
-
-
-NOTE: Output from 031 is also used by:
-
-qa/112
-
-qa/257
+exercise log/archive retrievals
 
 
 
@@ -84,66 +192,33 @@ Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:14:20 UTC 2020","Tue Jun 02 15:14:21 UTC 2020","1000","","centos7-container","","","","QA 213","PCP QA Test No. 213
+"passed","Wed Jun 03 11:57:58 UTC 2020","Wed Jun 03 11:57:59 UTC 2020","1000","","fedora31-container","","","","QA 900","PCP QA Test No. 900
 
-exercise dbpmda with dynamic metrics
-
-
-
-Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:15:24 UTC 2020","Tue Jun 02 15:15:30 UTC 2020","6000","","centos7-container","","","","QA 1098","PCP QA Test No. 1098
-
-Exercise a couple of python PMDA module features.
-
-
-
-Copyright (c) 2017 Red Hat.
-
-
-
-"
-"passed","Tue Jun 02 15:15:04 UTC 2020","Tue Jun 02 15:15:06 UTC 2020","2000","","centos7-container","","","","QA 561","PCP QA Test No. 561
-
-Exercise pmMergeLabels(3) handling of various input data.
-
-
-
-Copyright (c) 2016-2017 Red Hat.
-
-
-
-"
-"passed","Tue Jun 02 15:14:22 UTC 2020","Tue Jun 02 15:14:23 UTC 2020","1000","","centos7-container","","","","QA 249","PCP QA Test No. 249
-
-
-
-Derived metrics - exercise pmFetch processing
-
-
-
-Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:15:00 UTC 2020","Tue Jun 02 15:15:02 UTC 2020","2000","","centos7-container","","","","QA 436","PCP QA Test No. 436
-
-Exercise compressed archive files - bzip2 version
+Test pcp(1) invokes other utilities with environment set.
 
 
 
 Copyright (c) 2014 Red Hat.
 
-Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+"
+"passed","Wed Jun 03 11:55:38 UTC 2020","Wed Jun 03 11:55:39 UTC 2020","1000","","fedora33-container","","","","QA 403","PCP QA Test No. 403
+
+check some ASCII tools handling of failed fetches causing pmFetch to
+
+return a null pmResult.
+
+Bug #541380
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
 
 
 "
-"passed","Tue Jun 02 15:14:24 UTC 2020","Tue Jun 02 15:14:25 UTC 2020","1000","","centos7-container","","","","QA 278","PCP QA Test No. 278
+"passed","Wed Jun 03 11:47:34 UTC 2020","Wed Jun 03 11:47:34 UTC 2020","0","","centos8-container","","","","QA 278","PCP QA Test No. 278
 
 validate newhelp
 
@@ -154,18 +229,31 @@ Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:15:23 UTC 2020","Tue Jun 02 15:15:23 UTC 2020","0","","centos7-container","","","","QA 970","PCP QA Test No. 970
+"passed","Wed Jun 03 11:57:33 UTC 2020","Wed Jun 03 11:57:35 UTC 2020","2000","","fedora31-container","","","","QA 435","PCP QA Test No. 435
 
-Test libpcp multi-archive support using pmclient (fetchgroup version)
+Exercise compressed archive files - gzip version
 
 
 
-Copyright (c) 2016 Red Hat.  All Rights Reserved.
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
 
 
 
 "
-"passed","Tue Jun 02 15:15:02 UTC 2020","Tue Jun 02 15:15:02 UTC 2020","0","","centos7-container","","","","QA 453","PCP QA Test No. 453
+"passed","Wed Jun 03 11:57:41 UTC 2020","Wed Jun 03 11:57:42 UTC 2020","1000","","fedora31-container","","","","QA 562","PCP QA Test No. 562
+
+Exercise metric labels with dbpmda, pminfo, pmcd and local context.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:55:20 UTC 2020","Wed Jun 03 11:55:20 UTC 2020","0","","fedora32-container","","","","QA 453","PCP QA Test No. 453
 
 Check Perl PCP::LogSummary
 
@@ -176,18 +264,33 @@ Copyright (c) 2011 Ken McDonell.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:12:47 UTC 2020","Tue Jun 02 15:12:47 UTC 2020","0","","centos7-container","","","","QA 002","PCP QA Test No. 002
+"passed","Wed Jun 03 11:55:53 UTC 2020","Wed Jun 03 11:55:54 UTC 2020","1000","","fedora33-container","","","","QA 646","PCP QA Test No. 646
 
-simplest possible verification of a pmcd and agent
+Testing of libpcp_mmv functionality (ondisk formats)
 
 
 
 Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
+Copyright (c) 2009-2010 Aconex.  All Rights Reserved.
+
+Copyright (c) 2016,2018 Red Hat.
+
 
 
 "
-"passed","Tue Jun 02 15:13:00 UTC 2020","Tue Jun 02 15:13:04 UTC 2020","4000","","centos7-container","","","","QA 068","PCP QA Test No. 068
+"passed","Wed Jun 03 12:04:45 UTC 2020","Wed Jun 03 12:04:46 UTC 2020","1000","","debian10-container","","","","QA 127","PCP QA Test No. 127
+
+pmlogreduce basic metadata sanity
+
+
+
+Copyright (c) 2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:29 UTC 2020","Wed Jun 03 12:04:34 UTC 2020","5000","","debian10-container","","","","QA 068","PCP QA Test No. 068
 
 pmNewContext() bad error status if pmcd is not running
 
@@ -206,22 +309,9 @@ Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:14:52 UTC 2020","Tue Jun 02 15:14:52 UTC 2020","0","","centos7-container","","","","QA 369","PCP QA Test No. 369
+"passed","Wed Jun 03 11:53:44 UTC 2020","Wed Jun 03 11:53:44 UTC 2020","0","","fedora33-container","","","","QA 074","PCP QA Test No. 074
 
-Check out libpcp_import
-
-
-
-Copyright (c) 2012 Red Hat.
-
-Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:13:06 UTC 2020","Tue Jun 02 15:13:07 UTC 2020","1000","","centos7-container","","","","QA 087","PCP QA Test No. 087
-
-interpolate mode
+permuted pmids for pmFetch, across multiple PMDAs
 
 
 
@@ -230,7 +320,210 @@ Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:14:29 UTC 2020","Tue Jun 02 15:14:30 UTC 2020","1000","","centos7-container","","","","QA 345","PCP QA Test No. 345
+"passed","Wed Jun 03 11:53:00 UTC 2020","Wed Jun 03 11:53:00 UTC 2020","0","","fedora32-container","","","","QA 010","PCP QA Test No. 010
+
+exercise pmExtractValue
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:49:49 UTC 2020","Wed Jun 03 11:49:49 UTC 2020","0","","centos7-container","","","","QA 004","PCP QA Test No. 004
+
+exercise contexts for the live data from the pmcd
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:29 UTC 2020","Wed Jun 03 11:56:30 UTC 2020","1000","","debian11-container","","","","QA 031","PCP QA Test No. 031
+
+general exerciser for local PCP
+
+
+
+NOTE: Output from 031 is also used by:
+
+qa/112
+
+qa/257
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:04 UTC 2020","Wed Jun 03 11:48:04 UTC 2020","0","","centos8-container","","","","QA 404","PCP QA Test No. 404
+
+exercise pmUnpackEventRecords() and pmFreeEventResult()
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:51:26 UTC 2020","Wed Jun 03 11:51:27 UTC 2020","1000","","centos7-container","","","","QA 234","PCP QA Test No. 234
+
+pmlogsummary exerciser
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:54:39 UTC 2020","Wed Jun 03 11:54:40 UTC 2020","1000","","fedora32-container","","","","QA 263","PCP QA Test No. 263
+
+
+
+Exercise aggregate functions for derived metrics
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:58 UTC 2020","Wed Jun 03 11:54:03 UTC 2020","5000","","fedora33-container","","","","QA 137","PCP QA Test No. 137
+
+exercise dbpmda
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:29 UTC 2020","Wed Jun 03 11:52:30 UTC 2020","1000","","centos7-container","","","","QA 900","PCP QA Test No. 900
+
+Test pcp(1) invokes other utilities with environment set.
+
+
+
+Copyright (c) 2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 12:04:17 UTC 2020","Wed Jun 03 12:04:17 UTC 2020","0","","debian10-container","","","","QA 002","PCP QA Test No. 002
+
+simplest possible verification of a pmcd and agent
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:19 UTC 2020","Wed Jun 03 12:04:19 UTC 2020","0","","debian10-container","","","","QA 034","PCP QA Test No. 034
+
+pmlogger with different logging rates
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:51:23 UTC 2020","Wed Jun 03 11:51:24 UTC 2020","1000","","centos7-container","","","","QA 210","PCP QA Test No. 210
+
+Check dynamic metrics work with PMAPI clients - DSO PMDA version
+
+See also 467 for the related tests using pmdumptext
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:39 UTC 2020","Wed Jun 03 11:55:39 UTC 2020","0","","fedora33-container","","","","QA 404","PCP QA Test No. 404
+
+exercise pmUnpackEventRecords() and pmFreeEventResult()
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:30 UTC 2020","Wed Jun 03 11:52:30 UTC 2020","0","","centos7-container","","","","QA 970","PCP QA Test No. 970
+
+Test libpcp multi-archive support using pmclient (fetchgroup version)
+
+
+
+Copyright (c) 2016 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:49:49 UTC 2020","Wed Jun 03 11:49:49 UTC 2020","0","","centos7-container","","","","QA 002","PCP QA Test No. 002
+
+simplest possible verification of a pmcd and agent
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:59:00 UTC 2020","Wed Jun 03 11:59:01 UTC 2020","1000","","debian11-container","","","","QA 1274","PCP QA Test No. 1274
+
+Test support for labels and help text in pmlogextract.
+
+Specifically: test simply copying an archive containing labels and help text.
+
+
+
+Copyright (c) 2018 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:29 UTC 2020","Wed Jun 03 12:06:29 UTC 2020","0","","debian10-container","","","","QA 574","PCP QA Test No. 574
+
+Tests out the api (uses torture_api) in archive mode.
+
+Main motivation is to test the PMNS in archives for distrib-PMNS.
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:16 UTC 2020","Wed Jun 03 11:55:16 UTC 2020","0","","fedora31-container","","","","QA 010","PCP QA Test No. 010
+
+exercise pmExtractValue
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:51:34 UTC 2020","Wed Jun 03 11:51:35 UTC 2020","1000","","centos7-container","","","","QA 345","PCP QA Test No. 345
 
 
 
@@ -245,9 +538,11 @@ Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:14:18 UTC 2020","Tue Jun 02 15:14:19 UTC 2020","1000","","centos7-container","","","","QA 207","PCP QA Test No. 207
+"passed","Wed Jun 03 11:47:32 UTC 2020","Wed Jun 03 11:47:32 UTC 2020","0","","centos8-container","","","","QA 249","PCP QA Test No. 249
 
-Simple PMNS exerciser after dynamic PMNS changes
+
+
+Derived metrics - exercise pmFetch processing
 
 
 
@@ -256,20 +551,9 @@ Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:13:04 UTC 2020","Tue Jun 02 15:13:06 UTC 2020","2000","","centos7-container","","","","QA 080","PCP QA Test No. 080
+"passed","Wed Jun 03 11:46:16 UTC 2020","Wed Jun 03 11:46:25 UTC 2020","9000","","centos8-container","","","","QA 107","PCP QA Test No. 107
 
-exercise new options to pmval: -r -z -Z -S -p
-
-
-
-Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:15:08 UTC 2020","Tue Jun 02 15:15:08 UTC 2020","0","","centos7-container","","","","QA 569","PCP QA Test No. 569
-
-exercise pmprobe, and pv 679693 in particular
+Check pmlc ""query"" command against the primary pmlogger
 
 
 
@@ -278,7 +562,76 @@ Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:14:52 UTC 2020","Tue Jun 02 15:14:53 UTC 2020","1000","","centos7-container","","","","QA 385","PCP QA Test No. 385
+"passed","Wed Jun 03 11:53:28 UTC 2020","Wed Jun 03 11:53:28 UTC 2020","0","","fedora33-container","","","","QA 031","PCP QA Test No. 031
+
+general exerciser for local PCP
+
+
+
+NOTE: Output from 031 is also used by:
+
+qa/112
+
+qa/257
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:05:51 UTC 2020","Wed Jun 03 12:05:51 UTC 2020","0","","debian10-container","","","","QA 263","PCP QA Test No. 263
+
+
+
+Exercise aggregate functions for derived metrics
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:39 UTC 2020","Wed Jun 03 11:57:41 UTC 2020","2000","","fedora31-container","","","","QA 561","PCP QA Test No. 561
+
+Exercise pmMergeLabels(3) handling of various input data.
+
+
+
+Copyright (c) 2016-2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:54:30 UTC 2020","Wed Jun 03 11:54:33 UTC 2020","3000","","fedora32-container","","","","QA 201","PCP QA Test No. 201
+
+exercise pmdaCache routines
+
+
+
+Copyright (C) 2015 Red Hat.
+
+Copyright (c) 2005 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:39 UTC 2020","Wed Jun 03 11:48:40 UTC 2020","1000","","centos8-container","","","","QA 1274","PCP QA Test No. 1274
+
+Test support for labels and help text in pmlogextract.
+
+Specifically: test simply copying an archive containing labels and help text.
+
+
+
+Copyright (c) 2018 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:36 UTC 2020","Wed Jun 03 11:55:37 UTC 2020","1000","","fedora33-container","","","","QA 385","PCP QA Test No. 385
 
 Some basic PM_EVENT_TYPE tests
 
@@ -289,57 +642,9 @@ Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:12:48 UTC 2020","Tue Jun 02 15:12:48 UTC 2020","0","","centos7-container","","","","QA 026","PCP QA Test No. 026
+"passed","Wed Jun 03 11:48:14 UTC 2020","Wed Jun 03 11:48:15 UTC 2020","1000","","centos8-container","","","","QA 562","PCP QA Test No. 562
 
-Text Services (Help and Oneline) for PMIDs and pmInDoms
-
-
-
-Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:15:09 UTC 2020","Tue Jun 02 15:15:09 UTC 2020","0","","centos7-container","","","","QA 689","PCP QA Test No. 689
-
-Test libpcp multi-archive support using pmclient (fetchgroup version)
-
-
-
-Copyright (c) 2017 Red Hat.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:14:23 UTC 2020","Tue Jun 02 15:14:24 UTC 2020","1000","","centos7-container","","","","QA 256","PCP QA Test No. 256
-
-
-
-Derived metrics and PMNS operations
-
-
-
-Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:14:19 UTC 2020","Tue Jun 02 15:14:20 UTC 2020","1000","","centos7-container","","","","QA 210","PCP QA Test No. 210
-
-Check dynamic metrics work with PMAPI clients - DSO PMDA version
-
-See also 467 for the related tests using pmdumptext
-
-
-
-Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:15:07 UTC 2020","Tue Jun 02 15:15:08 UTC 2020","1000","","centos7-container","","","","QA 568","PCP QA Test No. 568
-
-Exercise generic PMAPI labelset lookup.
+Exercise metric labels with dbpmda, pminfo, pmcd and local context.
 
 
 
@@ -348,57 +653,7 @@ Copyright (c) 2017 Red Hat.
 
 
 "
-"passed","Tue Jun 02 15:13:16 UTC 2020","Tue Jun 02 15:13:17 UTC 2020","1000","","centos7-container","","","","QA 127","PCP QA Test No. 127
-
-pmlogreduce basic metadata sanity
-
-
-
-Copyright (c) 2002 Silicon Graphics, Inc.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:13:23 UTC 2020","Tue Jun 02 15:13:48 UTC 2020","25000","","centos7-container","","","","QA 154","PCP QA Test No. 154
-
-what the hell is chkhelp supposed to do?
-
-
-
-Copyright (c) 2015 Red Hat.
-
-Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:12:47 UTC 2020","Tue Jun 02 15:12:47 UTC 2020","0","","centos7-container","","","","QA 001","PCP QA Test No. 001
-
-exercise the PDU encode/decode ... no PMCD involvement
-
-
-
-Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:15:30 UTC 2020","Tue Jun 02 15:15:31 UTC 2020","1000","","centos7-container","","","","QA 1229","PCP QA Test No. 1229
-
-Test support for labels and help text in pmlogextract.
-
-Specifically: test successful consistency checking of help text by extracting
-
-the same archive twice.
-
-
-
-Copyright (c) 2018 Red Hat.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:15:09 UTC 2020","Tue Jun 02 15:15:09 UTC 2020","0","","centos7-container","","","","QA 646","PCP QA Test No. 646
+"passed","Wed Jun 03 12:06:29 UTC 2020","Wed Jun 03 12:06:29 UTC 2020","0","","debian10-container","","","","QA 646","PCP QA Test No. 646
 
 Testing of libpcp_mmv functionality (ondisk formats)
 
@@ -413,7 +668,31 @@ Copyright (c) 2016,2018 Red Hat.
 
 
 "
-"passed","Tue Jun 02 15:12:47 UTC 2020","Tue Jun 02 15:12:47 UTC 2020","0","","centos7-container","","","","QA 004","PCP QA Test No. 004
+"passed","Wed Jun 03 11:56:57 UTC 2020","Wed Jun 03 11:56:57 UTC 2020","0","","fedora31-container","","","","QA 278","PCP QA Test No. 278
+
+validate newhelp
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:17 UTC 2020","Wed Jun 03 11:48:17 UTC 2020","0","","centos8-container","","","","QA 574","PCP QA Test No. 574
+
+Tests out the api (uses torture_api) in archive mode.
+
+Main motivation is to test the PMNS in archives for distrib-PMNS.
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:45:56 UTC 2020","Wed Jun 03 11:45:57 UTC 2020","1000","","centos8-container","","","","QA 004","PCP QA Test No. 004
 
 exercise contexts for the live data from the pmcd
 
@@ -424,9 +703,77 @@ Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:15:02 UTC 2020","Tue Jun 02 15:15:02 UTC 2020","0","","centos7-container","","","","QA 437","PCP QA Test No. 437
+"passed","Wed Jun 03 11:48:11 UTC 2020","Wed Jun 03 11:48:13 UTC 2020","2000","","centos8-container","","","","QA 548","PCP QA Test No. 548
 
-Exercise compressed archive files - badness in the uncompression
+nomatch_inst for pmie
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:20 UTC 2020","Wed Jun 03 11:55:21 UTC 2020","1000","","fedora32-container","","","","QA 548","PCP QA Test No. 548
+
+nomatch_inst for pmie
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:27 UTC 2020","Wed Jun 03 11:55:27 UTC 2020","0","","fedora32-container","","","","QA 689","PCP QA Test No. 689
+
+Test libpcp multi-archive support using pmclient (fetchgroup version)
+
+
+
+Copyright (c) 2017 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:45:56 UTC 2020","Wed Jun 03 11:45:56 UTC 2020","0","","centos8-container","","","","QA 001","PCP QA Test No. 001
+
+exercise the PDU encode/decode ... no PMCD involvement
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:46:31 UTC 2020","Wed Jun 03 11:46:31 UTC 2020","0","","centos8-container","","","","QA 146","PCP QA Test No. 146
+
+exercise pmNameAll
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:50 UTC 2020","Wed Jun 03 11:56:51 UTC 2020","1000","","fedora31-container","","","","QA 208","PCP QA Test No. 208
+
+
+
+Exercise dynamic PMNS features
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:06 UTC 2020","Wed Jun 03 11:52:08 UTC 2020","2000","","centos7-container","","","","QA 436","PCP QA Test No. 436
+
+Exercise compressed archive files - bzip2 version
 
 
 
@@ -437,7 +784,7 @@ Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:14:50 UTC 2020","Tue Jun 02 15:14:52 UTC 2020","2000","","centos7-container","","","","QA 359","PCP QA Test No. 359
+"passed","Wed Jun 03 11:55:34 UTC 2020","Wed Jun 03 11:55:36 UTC 2020","2000","","fedora33-container","","","","QA 359","PCP QA Test No. 359
 
 Simple sanity check that we can get through validation of all
 
@@ -450,20 +797,9 @@ Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:14:22 UTC 2020","Tue Jun 02 15:14:22 UTC 2020","0","","centos7-container","","","","QA 234","PCP QA Test No. 234
+"passed","Wed Jun 03 11:55:16 UTC 2020","Wed Jun 03 11:55:16 UTC 2020","0","","fedora31-container","","","","QA 026","PCP QA Test No. 026
 
-pmlogsummary exerciser
-
-
-
-Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:12:49 UTC 2020","Tue Jun 02 15:12:49 UTC 2020","0","","centos7-container","","","","QA 048","PCP QA Test No. 048
-
-exercise log/archive retrievals
+Text Services (Help and Oneline) for PMIDs and pmInDoms
 
 
 
@@ -472,107 +808,13 @@ Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:13:06 UTC 2020","Tue Jun 02 15:13:06 UTC 2020","0","","centos7-container","","","","QA 085","PCP QA Test No. 085
+"passed","Wed Jun 03 11:58:04 UTC 2020","Wed Jun 03 11:58:05 UTC 2020","1000","","debian11-container","","","","QA 345","PCP QA Test No. 345
 
-pmlogger specs with internal instance identifiers
 
 
+PM_CONTEXT_LOCAL and PMNS operations involving derived and dynamic
 
-Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:13:22 UTC 2020","Tue Jun 02 15:13:23 UTC 2020","1000","","centos7-container","","","","QA 153","PCP QA Test No. 153
-
-Check out pmafm/mkaf changes to no longer use file(1)
-
-
-
-Copyright (c) 2002 Silicon Graphics, Inc.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:13:00 UTC 2020","Tue Jun 02 15:13:00 UTC 2020","0","","centos7-container","","","","QA 059","PCP QA Test No. 059
-
-timestmaps in the archive logs
-
-
-
-Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:12:49 UTC 2020","Tue Jun 02 15:12:49 UTC 2020","0","","centos7-container","","","","QA 034","PCP QA Test No. 034
-
-pmlogger with different logging rates
-
-
-
-Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:14:25 UTC 2020","Tue Jun 02 15:14:29 UTC 2020","4000","","centos7-container","","","","QA 338","PCP QA Test No. 338
-
-pmlogger_daily ... do you work at all?
-
-
-
-NEW VERSION for YYYYDDMM style naming convention (see also 530)
-
-
-
-Copyright (c) 2008 Silicon Graphics, Inc.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:12:49 UTC 2020","Tue Jun 02 15:13:00 UTC 2020","11000","","centos7-container","","","","QA 055","PCP QA Test No. 055
-
-pmie basic expression evaluation and scheduling
-
-for remote version using other hosts, see 360
-
-see also 694 for valgrind version of this test
-
-
-
-Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:14:24 UTC 2020","Tue Jun 02 15:14:24 UTC 2020","0","","centos7-container","","","","QA 263","PCP QA Test No. 263
-
-
-
-Exercise aggregate functions for derived metrics
-
-
-
-Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:12:48 UTC 2020","Tue Jun 02 15:12:48 UTC 2020","0","","centos7-container","","","","QA 010","PCP QA Test No. 010
-
-exercise pmExtractValue
-
-
-
-Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:14:53 UTC 2020","Tue Jun 02 15:14:54 UTC 2020","1000","","centos7-container","","","","QA 397","PCP QA Test No. 397
-
-Use dbpmda to check endian encoding for PM_TYPE_EVENT
+metrics
 
 
 
@@ -581,18 +823,90 @@ Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:15:06 UTC 2020","Tue Jun 02 15:15:07 UTC 2020","1000","","centos7-container","","","","QA 562","PCP QA Test No. 562
+"passed","Wed Jun 03 11:54:40 UTC 2020","Wed Jun 03 11:54:41 UTC 2020","1000","","fedora32-container","","","","QA 299","PCP QA Test No. 299
 
-Exercise metric labels with dbpmda, pminfo, pmcd and local context.
+exercise pmParseMetricSpec
 
 
 
-Copyright (c) 2017 Red Hat.
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
 
 
 "
-"failed","Tue Jun 02 15:14:30 UTC 2020","Tue Jun 02 15:14:50 UTC 2020","20000","","centos7-container","","","","QA 354","PCP QA Test No. 354
+"passed","Wed Jun 03 11:56:28 UTC 2020","Wed Jun 03 11:56:29 UTC 2020","1000","","debian11-container","","","","QA 004","PCP QA Test No. 004
+
+exercise contexts for the live data from the pmcd
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:24 UTC 2020","Wed Jun 03 11:57:26 UTC 2020","2000","","fedora31-container","","","","QA 359","PCP QA Test No. 359
+
+Simple sanity check that we can get through validation of all
+
+of the metrics without any surprises
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:25 UTC 2020","Wed Jun 03 11:58:27 UTC 2020","2000","","debian11-container","","","","QA 359","PCP QA Test No. 359
+
+Simple sanity check that we can get through validation of all
+
+of the metrics without any surprises
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:38 UTC 2020","Wed Jun 03 11:55:38 UTC 2020","0","","fedora33-container","","","","QA 401","PCP QA Test No. 401
+
+quick pminfo -x check (400 does a better job, but you need to have
+
+valgrind available)
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:00 UTC 2020","Wed Jun 03 11:52:01 UTC 2020","1000","","centos7-container","","","","QA 404","PCP QA Test No. 404
+
+exercise pmUnpackEventRecords() and pmFreeEventResult()
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:26 UTC 2020","Wed Jun 03 11:53:26 UTC 2020","0","","fedora33-container","","","","QA 002","PCP QA Test No. 002
+
+simplest possible verification of a pmcd and agent
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"failed","Wed Jun 03 11:51:35 UTC 2020","Wed Jun 03 11:51:55 UTC 2020","20000","","centos7-container","","","","QA 354","PCP QA Test No. 354
 
 more serious exercising of record mode in libpcp_gui
 
@@ -609,99 +923,7 @@ check-group-include: folio
 **To reproduce this test in a container, please run:**
 
     ./build/ci/run.py --runner container --platform centos7 reproduce"
-"passed","Tue Jun 02 15:15:10 UTC 2020","Tue Jun 02 15:15:16 UTC 2020","6000","","centos7-container","","","","QA 702","PCP QA Test No. 702
-
-Exercise python PMAPI layer - basic live host tests
-
-
-
-Copyright (c) 2012-2014 Red Hat.
-
-
-
-"
-"passed","Tue Jun 02 15:12:48 UTC 2020","Tue Jun 02 15:12:48 UTC 2020","0","","centos7-container","","","","QA 027","PCP QA Test No. 027
-
-exercise pmConvScale and pmUnitsStr
-
-
-
-Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:14:19 UTC 2020","Tue Jun 02 15:14:19 UTC 2020","0","","centos7-container","","","","QA 208","PCP QA Test No. 208
-
-
-
-Exercise dynamic PMNS features
-
-
-
-Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:12:48 UTC 2020","Tue Jun 02 15:12:48 UTC 2020","0","","centos7-container","","","","QA 007","PCP QA Test No. 007
-
-exercise optFetch routines
-
-
-
-Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:14:55 UTC 2020","Tue Jun 02 15:14:59 UTC 2020","4000","","centos7-container","","","","QA 416","PCP QA Test No. 416
-
-news pmda ... exercise perl PMDA bits-n-bobs
-
-
-
-Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:13:16 UTC 2020","Tue Jun 02 15:13:16 UTC 2020","0","","centos7-container","","","","QA 112","PCP QA Test No. 112
-
-new PMNS exercises
-
-
-
-Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:14:16 UTC 2020","Tue Jun 02 15:14:18 UTC 2020","2000","","centos7-container","","","","QA 201","PCP QA Test No. 201
-
-exercise pmdaCache routines
-
-
-
-Copyright (C) 2015 Red Hat.
-
-Copyright (c) 2005 Silicon Graphics, Inc.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:12:47 UTC 2020","Tue Jun 02 15:12:48 UTC 2020","1000","","centos7-container","","","","QA 005","PCP QA Test No. 005
-
-exercise contexts for an archive
-
-
-
-Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:15:24 UTC 2020","Tue Jun 02 15:15:24 UTC 2020","0","","centos7-container","","","","QA 1044","PCP QA Test No. 1044 (formerly 525)
+"passed","Wed Jun 03 12:06:43 UTC 2020","Wed Jun 03 12:06:44 UTC 2020","1000","","debian10-container","","","","QA 1044","PCP QA Test No. 1044 (formerly 525)
 
 exercises pmieconf cmd line
 
@@ -712,20 +934,44 @@ Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:15:32 UTC 2020","Tue Jun 02 15:15:33 UTC 2020","1000","","centos7-container","","","","QA 1368","PCP QA Test No. 1368
+"passed","Wed Jun 03 12:05:47 UTC 2020","Wed Jun 03 12:05:48 UTC 2020","1000","","debian10-container","","","","QA 210","PCP QA Test No. 210
 
-Exercise fetch protocol support for context label changes.
+Check dynamic metrics work with PMAPI clients - DSO PMDA version
+
+See also 467 for the related tests using pmdumptext
 
 
 
-Copyright (c) 2017 Red Hat.
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
 
 
 
 "
-"passed","Tue Jun 02 15:14:55 UTC 2020","Tue Jun 02 15:14:55 UTC 2020","0","","centos7-container","","","","QA 407","PCP QA Test No. 407
+"passed","Wed Jun 03 11:50:02 UTC 2020","Wed Jun 03 11:50:02 UTC 2020","0","","centos7-container","","","","QA 059","PCP QA Test No. 059
 
-Derived metrics and PM_TYPE_EVENT
+timestmaps in the archive logs
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:29 UTC 2020","Wed Jun 03 12:06:29 UTC 2020","0","","debian10-container","","","","QA 569","PCP QA Test No. 569
+
+exercise pmprobe, and pv 679693 in particular
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:01 UTC 2020","Wed Jun 03 11:52:04 UTC 2020","3000","","centos7-container","","","","QA 416","PCP QA Test No. 416
+
+news pmda ... exercise perl PMDA bits-n-bobs
 
 
 
@@ -734,31 +980,20 @@ Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:13:04 UTC 2020","Tue Jun 02 15:13:04 UTC 2020","0","","centos7-container","","","","QA 074","PCP QA Test No. 074
+"passed","Wed Jun 03 11:47:30 UTC 2020","Wed Jun 03 11:47:30 UTC 2020","0","","centos8-container","","","","QA 213","PCP QA Test No. 213
 
-permuted pmids for pmFetch, across multiple PMDAs
-
-
-
-Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+exercise dbpmda with dynamic metrics
 
 
 
-"
-"passed","Tue Jun 02 15:13:07 UTC 2020","Tue Jun 02 15:13:16 UTC 2020","9000","","centos7-container","","","","QA 107","PCP QA Test No. 107
-
-Check pmlc ""query"" command against the primary pmlogger
-
-
-
-Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
 
 
 
 "
-"passed","Tue Jun 02 15:15:07 UTC 2020","Tue Jun 02 15:15:07 UTC 2020","0","","centos7-container","","","","QA 567","PCP QA Test No. 567
+"passed","Wed Jun 03 11:52:12 UTC 2020","Wed Jun 03 11:52:13 UTC 2020","1000","","centos7-container","","","","QA 562","PCP QA Test No. 562
 
-Exercise pmMergeLabelSets(3) handling of various input data.
+Exercise metric labels with dbpmda, pminfo, pmcd and local context.
 
 
 
@@ -767,7 +1002,149 @@ Copyright (c) 2017 Red Hat.
 
 
 "
-"passed","Tue Jun 02 15:13:56 UTC 2020","Tue Jun 02 15:14:16 UTC 2020","20000","","centos7-container","","","","QA 178","PCP QA Test No. 178
+"passed","Wed Jun 03 11:55:26 UTC 2020","Wed Jun 03 11:55:27 UTC 2020","1000","","fedora32-container","","","","QA 646","PCP QA Test No. 646
+
+Testing of libpcp_mmv functionality (ondisk formats)
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+Copyright (c) 2009-2010 Aconex.  All Rights Reserved.
+
+Copyright (c) 2016,2018 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:51:28 UTC 2020","Wed Jun 03 11:51:29 UTC 2020","1000","","centos7-container","","","","QA 263","PCP QA Test No. 263
+
+
+
+Exercise aggregate functions for derived metrics
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:17 UTC 2020","Wed Jun 03 12:06:18 UTC 2020","1000","","debian10-container","","","","QA 397","PCP QA Test No. 397
+
+Use dbpmda to check endian encoding for PM_TYPE_EVENT
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:01 UTC 2020","Wed Jun 03 11:53:01 UTC 2020","0","","fedora32-container","","","","QA 034","PCP QA Test No. 034
+
+pmlogger with different logging rates
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:16 UTC 2020","Wed Jun 03 11:48:16 UTC 2020","0","","centos8-container","","","","QA 568","PCP QA Test No. 568
+
+Exercise generic PMAPI labelset lookup.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:51:29 UTC 2020","Wed Jun 03 11:51:29 UTC 2020","0","","centos7-container","","","","QA 278","PCP QA Test No. 278
+
+validate newhelp
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:25 UTC 2020","Wed Jun 03 11:55:25 UTC 2020","0","","fedora32-container","","","","QA 568","PCP QA Test No. 568
+
+Exercise generic PMAPI labelset lookup.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 12:05:51 UTC 2020","Wed Jun 03 12:05:52 UTC 2020","1000","","debian10-container","","","","QA 299","PCP QA Test No. 299
+
+exercise pmParseMetricSpec
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:46 UTC 2020","Wed Jun 03 11:56:47 UTC 2020","1000","","debian11-container","","","","QA 087","PCP QA Test No. 087
+
+interpolate mode
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:55 UTC 2020","Wed Jun 03 11:56:56 UTC 2020","1000","","debian11-container","","","","QA 112","PCP QA Test No. 112
+
+new PMNS exercises
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:49 UTC 2020","Wed Jun 03 11:55:50 UTC 2020","1000","","fedora32-container","","","","QA 1274","PCP QA Test No. 1274
+
+Test support for labels and help text in pmlogextract.
+
+Specifically: test simply copying an archive containing labels and help text.
+
+
+
+Copyright (c) 2018 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:16 UTC 2020","Wed Jun 03 11:56:17 UTC 2020","1000","","fedora33-container","","","","QA 1274","PCP QA Test No. 1274
+
+Test support for labels and help text in pmlogextract.
+
+Specifically: test simply copying an archive containing labels and help text.
+
+
+
+Copyright (c) 2018 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:54:38 UTC 2020","Wed Jun 03 11:54:57 UTC 2020","19000","","fedora33-container","","","","QA 178","PCP QA Test No. 178
 
 pmlogextract exerciser
 
@@ -778,7 +1155,960 @@ Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:14:54 UTC 2020","Tue Jun 02 15:14:55 UTC 2020","1000","","centos7-container","","","","QA 403","PCP QA Test No. 403
+"passed","Wed Jun 03 12:04:46 UTC 2020","Wed Jun 03 12:04:50 UTC 2020","4000","","debian10-container","","","","QA 137","PCP QA Test No. 137
+
+exercise dbpmda
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:46:16 UTC 2020","Wed Jun 03 11:46:16 UTC 2020","0","","centos8-container","","","","QA 087","PCP QA Test No. 087
+
+interpolate mode
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:05:46 UTC 2020","Wed Jun 03 12:05:47 UTC 2020","1000","","debian10-container","","","","QA 207","PCP QA Test No. 207
+
+Simple PMNS exerciser after dynamic PMNS changes
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:09 UTC 2020","Wed Jun 03 11:55:10 UTC 2020","1000","","fedora32-container","","","","QA 369","PCP QA Test No. 369
+
+Check out libpcp_import
+
+
+
+Copyright (c) 2012 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:46:32 UTC 2020","Wed Jun 03 11:46:57 UTC 2020","25000","","centos8-container","","","","QA 154","PCP QA Test No. 154
+
+what the hell is chkhelp supposed to do?
+
+
+
+Copyright (c) 2015 Red Hat.
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:05:50 UTC 2020","Wed Jun 03 12:05:51 UTC 2020","1000","","debian10-container","","","","QA 256","PCP QA Test No. 256
+
+
+
+Derived metrics and PMNS operations
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:07 UTC 2020","Wed Jun 03 11:58:07 UTC 2020","0","","fedora31-container","","","","QA 1229","PCP QA Test No. 1229
+
+Test support for labels and help text in pmlogextract.
+
+Specifically: test successful consistency checking of help text by extracting
+
+the same archive twice.
+
+
+
+Copyright (c) 2018 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:54:04 UTC 2020","Wed Jun 03 11:54:29 UTC 2020","25000","","fedora33-container","","","","QA 154","PCP QA Test No. 154
+
+what the hell is chkhelp supposed to do?
+
+
+
+Copyright (c) 2015 Red Hat.
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:14 UTC 2020","Wed Jun 03 11:52:14 UTC 2020","0","","centos7-container","","","","QA 568","PCP QA Test No. 568
+
+Exercise generic PMAPI labelset lookup.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:58:34 UTC 2020","Wed Jun 03 11:58:35 UTC 2020","1000","","debian11-container","","","","QA 453","PCP QA Test No. 453
+
+Check Perl PCP::LogSummary
+
+
+
+Copyright (c) 2011 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:49:50 UTC 2020","Wed Jun 03 11:49:50 UTC 2020","0","","centos7-container","","","","QA 007","PCP QA Test No. 007
+
+exercise optFetch routines
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:02 UTC 2020","Wed Jun 03 11:55:03 UTC 2020","1000","","fedora33-container","","","","QA 213","PCP QA Test No. 213
+
+exercise dbpmda with dynamic metrics
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:28 UTC 2020","Wed Jun 03 11:56:28 UTC 2020","0","","debian11-container","","","","QA 002","PCP QA Test No. 002
+
+simplest possible verification of a pmcd and agent
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:31 UTC 2020","Wed Jun 03 11:48:32 UTC 2020","1000","","centos8-container","","","","QA 970","PCP QA Test No. 970
+
+Test libpcp multi-archive support using pmclient (fetchgroup version)
+
+
+
+Copyright (c) 2016 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:01 UTC 2020","Wed Jun 03 11:58:01 UTC 2020","0","","debian11-container","","","","QA 263","PCP QA Test No. 263
+
+
+
+Exercise aggregate functions for derived metrics
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:45:57 UTC 2020","Wed Jun 03 11:45:57 UTC 2020","0","","centos8-container","","","","QA 005","PCP QA Test No. 005
+
+exercise contexts for an archive
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:50:10 UTC 2020","Wed Jun 03 11:50:19 UTC 2020","9000","","centos7-container","","","","QA 107","PCP QA Test No. 107
+
+Check pmlc ""query"" command against the primary pmlogger
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:51:27 UTC 2020","Wed Jun 03 11:51:28 UTC 2020","1000","","centos7-container","","","","QA 256","PCP QA Test No. 256
+
+
+
+Derived metrics and PMNS operations
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:37 UTC 2020","Wed Jun 03 11:54:02 UTC 2020","25000","","fedora32-container","","","","QA 154","PCP QA Test No. 154
+
+what the hell is chkhelp supposed to do?
+
+
+
+Copyright (c) 2015 Red Hat.
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:05:24 UTC 2020","Wed Jun 03 12:05:44 UTC 2020","20000","","debian10-container","","","","QA 178","PCP QA Test No. 178
+
+pmlogextract exerciser
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:49 UTC 2020","Wed Jun 03 11:55:49 UTC 2020","0","","fedora32-container","","","","QA 1229","PCP QA Test No. 1229
+
+Test support for labels and help text in pmlogextract.
+
+Specifically: test successful consistency checking of help text by extracting
+
+the same archive twice.
+
+
+
+Copyright (c) 2018 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:54:03 UTC 2020","Wed Jun 03 11:54:04 UTC 2020","1000","","fedora33-container","","","","QA 153","PCP QA Test No. 153
+
+Check out pmafm/mkaf changes to no longer use file(1)
+
+
+
+Copyright (c) 2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:50 UTC 2020","Wed Jun 03 11:55:51 UTC 2020","1000","","fedora33-container","","","","QA 562","PCP QA Test No. 562
+
+Exercise metric labels with dbpmda, pminfo, pmcd and local context.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:58:36 UTC 2020","Wed Jun 03 11:58:37 UTC 2020","1000","","debian11-container","","","","QA 561","PCP QA Test No. 561
+
+Exercise pmMergeLabels(3) handling of various input data.
+
+
+
+Copyright (c) 2016-2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:52:59 UTC 2020","Wed Jun 03 11:52:59 UTC 2020","0","","fedora32-container","","","","QA 004","PCP QA Test No. 004
+
+exercise contexts for the live data from the pmcd
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"failed","Wed Jun 03 12:05:55 UTC 2020","Wed Jun 03 12:06:15 UTC 2020","20000","","debian10-container","","","","QA 354","PCP QA Test No. 354
+
+more serious exercising of record mode in libpcp_gui
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+check-group-include: folio
+
+
+
+**To reproduce this test in a container, please run:**
+
+    ./build/ci/run.py --runner container --platform debian10 reproduce"
+"passed","Wed Jun 03 11:46:15 UTC 2020","Wed Jun 03 11:46:16 UTC 2020","1000","","centos8-container","","","","QA 085","PCP QA Test No. 085
+
+pmlogger specs with internal instance identifiers
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:50:09 UTC 2020","Wed Jun 03 11:50:10 UTC 2020","1000","","centos7-container","","","","QA 087","PCP QA Test No. 087
+
+interpolate mode
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:46:57 UTC 2020","Wed Jun 03 11:47:05 UTC 2020","8000","","centos8-container","","","","QA 155","PCP QA Test No. 155
+
+verify PMDA not ready protocol
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:30 UTC 2020","Wed Jun 03 12:06:36 UTC 2020","6000","","debian10-container","","","","QA 702","PCP QA Test No. 702
+
+Exercise python PMAPI layer - basic live host tests
+
+
+
+Copyright (c) 2012-2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 12:06:19 UTC 2020","Wed Jun 03 12:06:19 UTC 2020","0","","debian10-container","","","","QA 407","PCP QA Test No. 407
+
+Derived metrics and PM_TYPE_EVENT
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:31 UTC 2020","Wed Jun 03 11:48:31 UTC 2020","0","","centos8-container","","","","QA 900","PCP QA Test No. 900
+
+Test pcp(1) invokes other utilities with environment set.
+
+
+
+Copyright (c) 2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:53:31 UTC 2020","Wed Jun 03 11:53:36 UTC 2020","5000","","fedora32-container","","","","QA 137","PCP QA Test No. 137
+
+exercise dbpmda
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:18 UTC 2020","Wed Jun 03 12:04:18 UTC 2020","0","","debian10-container","","","","QA 010","PCP QA Test No. 010
+
+exercise pmExtractValue
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:54:34 UTC 2020","Wed Jun 03 11:54:35 UTC 2020","1000","","fedora32-container","","","","QA 210","PCP QA Test No. 210
+
+Check dynamic metrics work with PMAPI clients - DSO PMDA version
+
+See also 467 for the related tests using pmdumptext
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:23 UTC 2020","Wed Jun 03 12:06:23 UTC 2020","0","","debian10-container","","","","QA 435","PCP QA Test No. 435
+
+Exercise compressed archive files - gzip version
+
+
+
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:52 UTC 2020","Wed Jun 03 11:55:53 UTC 2020","1000","","fedora31-container","","","","QA 146","PCP QA Test No. 146
+
+exercise pmNameAll
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:30 UTC 2020","Wed Jun 03 11:53:30 UTC 2020","0","","fedora32-container","","","","QA 112","PCP QA Test No. 112
+
+new PMNS exercises
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"failed","Wed Jun 03 11:55:13 UTC 2020","Wed Jun 03 11:55:34 UTC 2020","21000","","fedora33-container","","","","QA 354","PCP QA Test No. 354
+
+more serious exercising of record mode in libpcp_gui
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+check-group-include: folio
+
+
+
+**To reproduce this test in a container, please run:**
+
+    ./build/ci/run.py --runner container --platform fedora33 reproduce"
+"passed","Wed Jun 03 11:51:30 UTC 2020","Wed Jun 03 11:51:34 UTC 2020","4000","","centos7-container","","","","QA 338","PCP QA Test No. 338
+
+pmlogger_daily ... do you work at all?
+
+
+
+NEW VERSION for YYYYDDMM style naming convention (see also 530)
+
+
+
+Copyright (c) 2008 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:07 UTC 2020","Wed Jun 03 11:56:08 UTC 2020","1000","","fedora33-container","","","","QA 900","PCP QA Test No. 900
+
+Test pcp(1) invokes other utilities with environment set.
+
+
+
+Copyright (c) 2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:50:07 UTC 2020","Wed Jun 03 11:50:07 UTC 2020","0","","centos7-container","","","","QA 074","PCP QA Test No. 074
+
+permuted pmids for pmFetch, across multiple PMDAs
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:20 UTC 2020","Wed Jun 03 11:53:20 UTC 2020","0","","fedora32-container","","","","QA 087","PCP QA Test No. 087
+
+interpolate mode
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:54 UTC 2020","Wed Jun 03 11:59:00 UTC 2020","6000","","debian11-container","","","","QA 1098","PCP QA Test No. 1098
+
+Exercise a couple of python PMDA module features.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"failed","Wed Jun 03 11:57:03 UTC 2020","Wed Jun 03 11:57:24 UTC 2020","21000","","fedora31-container","","","","QA 354","PCP QA Test No. 354
+
+more serious exercising of record mode in libpcp_gui
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+check-group-include: folio
+
+
+
+**To reproduce this test in a container, please run:**
+
+    ./build/ci/run.py --runner container --platform fedora31 reproduce"
+"passed","Wed Jun 03 11:57:37 UTC 2020","Wed Jun 03 11:57:38 UTC 2020","1000","","fedora31-container","","","","QA 453","PCP QA Test No. 453
+
+Check Perl PCP::LogSummary
+
+
+
+Copyright (c) 2011 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:27 UTC 2020","Wed Jun 03 11:53:27 UTC 2020","0","","fedora33-container","","","","QA 005","PCP QA Test No. 005
+
+exercise contexts for an archive
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:00 UTC 2020","Wed Jun 03 11:52:00 UTC 2020","0","","centos7-container","","","","QA 401","PCP QA Test No. 401
+
+quick pminfo -x check (400 does a better job, but you need to have
+
+valgrind available)
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:43 UTC 2020","Wed Jun 03 11:55:45 UTC 2020","2000","","fedora33-container","","","","QA 435","PCP QA Test No. 435
+
+Exercise compressed archive files - gzip version
+
+
+
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:59 UTC 2020","Wed Jun 03 11:52:59 UTC 2020","0","","fedora32-container","","","","QA 002","PCP QA Test No. 002
+
+simplest possible verification of a pmcd and agent
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:18 UTC 2020","Wed Jun 03 11:48:24 UTC 2020","6000","","centos8-container","","","","QA 702","PCP QA Test No. 702
+
+Exercise python PMAPI layer - basic live host tests
+
+
+
+Copyright (c) 2012-2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 12:06:43 UTC 2020","Wed Jun 03 12:06:43 UTC 2020","0","","debian10-container","","","","QA 978","PCP QA Test No. 978
+
+Exercise pmgetopt(1) functionality.
+
+
+
+Copyright (c) 2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:45:59 UTC 2020","Wed Jun 03 11:46:09 UTC 2020","10000","","centos8-container","","","","QA 055","PCP QA Test No. 055
+
+pmie basic expression evaluation and scheduling
+
+for remote version using other hosts, see 360
+
+see also 694 for valgrind version of this test
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:33 UTC 2020","Wed Jun 03 11:55:34 UTC 2020","1000","","fedora31-container","","","","QA 074","PCP QA Test No. 074
+
+permuted pmids for pmFetch, across multiple PMDAs
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"failed","Wed Jun 03 11:54:46 UTC 2020","Wed Jun 03 11:55:07 UTC 2020","21000","","fedora32-container","","","","QA 354","PCP QA Test No. 354
+
+more serious exercising of record mode in libpcp_gui
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+check-group-include: folio
+
+
+
+**To reproduce this test in a container, please run:**
+
+    ./build/ci/run.py --runner container --platform fedora32 reproduce"
+"passed","Wed Jun 03 11:55:47 UTC 2020","Wed Jun 03 11:55:47 UTC 2020","0","","fedora33-container","","","","QA 453","PCP QA Test No. 453
+
+Check Perl PCP::LogSummary
+
+
+
+Copyright (c) 2011 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:42 UTC 2020","Wed Jun 03 11:57:43 UTC 2020","1000","","fedora31-container","","","","QA 568","PCP QA Test No. 568
+
+Exercise generic PMAPI labelset lookup.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:56:27 UTC 2020","Wed Jun 03 11:56:47 UTC 2020","20000","","fedora31-container","","","","QA 178","PCP QA Test No. 178
+
+pmlogextract exerciser
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:46 UTC 2020","Wed Jun 03 11:58:53 UTC 2020","7000","","debian11-container","","","","QA 707","PCP QA Test No. 707
+
+Exercise python PMAPI layer - basic archive tests
+
+
+
+Copyright (c) 2012-2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:58:02 UTC 2020","Wed Jun 03 11:58:02 UTC 2020","0","","debian11-container","","","","QA 299","PCP QA Test No. 299
+
+exercise pmParseMetricSpec
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:40 UTC 2020","Wed Jun 03 11:56:40 UTC 2020","0","","debian11-container","","","","QA 059","PCP QA Test No. 059
+
+timestmaps in the archive logs
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:54 UTC 2020","Wed Jun 03 11:58:54 UTC 2020","0","","debian11-container","","","","QA 1044","PCP QA Test No. 1044 (formerly 525)
+
+exercises pmieconf cmd line
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:45:56 UTC 2020","Wed Jun 03 11:45:56 UTC 2020","0","","centos8-container","","","","QA 002","PCP QA Test No. 002
+
+simplest possible verification of a pmcd and agent
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:58 UTC 2020","Wed Jun 03 11:57:59 UTC 2020","1000","","debian11-container","","","","QA 232","PCP QA Test No. 232
+
+exercise instance API functions for PM_CONTEXT_LOCAL
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:39 UTC 2020","Wed Jun 03 11:55:43 UTC 2020","4000","","fedora33-container","","","","QA 416","PCP QA Test No. 416
+
+news pmda ... exercise perl PMDA bits-n-bobs
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:02 UTC 2020","Wed Jun 03 11:48:02 UTC 2020","0","","centos8-container","","","","QA 385","PCP QA Test No. 385
+
+Some basic PM_EVENT_TYPE tests
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:49:49 UTC 2020","Wed Jun 03 11:49:50 UTC 2020","1000","","centos7-container","","","","QA 005","PCP QA Test No. 005
+
+exercise contexts for an archive
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"failed","Wed Jun 03 11:47:39 UTC 2020","Wed Jun 03 11:48:00 UTC 2020","21000","","centos8-container","","","","QA 354","PCP QA Test No. 354
+
+more serious exercising of record mode in libpcp_gui
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+check-group-include: folio
+
+
+
+**To reproduce this test in a container, please run:**
+
+    ./build/ci/run.py --runner container --platform centos8 reproduce"
+"passed","Wed Jun 03 11:57:01 UTC 2020","Wed Jun 03 11:57:26 UTC 2020","25000","","debian11-container","","","","QA 154","PCP QA Test No. 154
+
+what the hell is chkhelp supposed to do?
+
+
+
+Copyright (c) 2015 Red Hat.
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:51:27 UTC 2020","Wed Jun 03 11:51:27 UTC 2020","0","","centos7-container","","","","QA 249","PCP QA Test No. 249
+
+
+
+Derived metrics - exercise pmFetch processing
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:53 UTC 2020","Wed Jun 03 11:56:19 UTC 2020","26000","","fedora31-container","","","","QA 154","PCP QA Test No. 154
+
+what the hell is chkhelp supposed to do?
+
+
+
+Copyright (c) 2015 Red Hat.
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:07 UTC 2020","Wed Jun 03 11:58:08 UTC 2020","1000","","fedora31-container","","","","QA 1274","PCP QA Test No. 1274
+
+Test support for labels and help text in pmlogextract.
+
+Specifically: test simply copying an archive containing labels and help text.
+
+
+
+Copyright (c) 2018 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:05:50 UTC 2020","Wed Jun 03 12:05:50 UTC 2020","0","","debian10-container","","","","QA 249","PCP QA Test No. 249
+
+
+
+Derived metrics - exercise pmFetch processing
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:50:26 UTC 2020","Wed Jun 03 11:50:26 UTC 2020","0","","centos7-container","","","","QA 153","PCP QA Test No. 153
+
+Check out pmafm/mkaf changes to no longer use file(1)
+
+
+
+Copyright (c) 2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:18 UTC 2020","Wed Jun 03 12:04:18 UTC 2020","0","","debian10-container","","","","QA 005","PCP QA Test No. 005
+
+exercise contexts for an archive
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:29 UTC 2020","Wed Jun 03 11:53:39 UTC 2020","10000","","fedora33-container","","","","QA 055","PCP QA Test No. 055
+
+pmie basic expression evaluation and scheduling
+
+for remote version using other hosts, see 360
+
+see also 694 for valgrind version of this test
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:17 UTC 2020","Wed Jun 03 12:04:17 UTC 2020","0","","debian10-container","","","","QA 001","PCP QA Test No. 001
+
+exercise the PDU encode/decode ... no PMCD involvement
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:47 UTC 2020","Wed Jun 03 11:53:57 UTC 2020","10000","","fedora33-container","","","","QA 107","PCP QA Test No. 107
+
+Check pmlc ""query"" command against the primary pmlogger
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:05 UTC 2020","Wed Jun 03 11:52:06 UTC 2020","1000","","centos7-container","","","","QA 435","PCP QA Test No. 435
+
+Exercise compressed archive files - gzip version
+
+
+
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:19 UTC 2020","Wed Jun 03 12:06:19 UTC 2020","0","","debian10-container","","","","QA 403","PCP QA Test No. 403
 
 check some ASCII tools handling of failed fetches causing pmFetch to
 
@@ -793,20 +2123,110 @@ Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:14:59 UTC 2020","Tue Jun 02 15:15:00 UTC 2020","1000","","centos7-container","","","","QA 435","PCP QA Test No. 435
+"passed","Wed Jun 03 12:06:26 UTC 2020","Wed Jun 03 12:06:27 UTC 2020","1000","","debian10-container","","","","QA 561","PCP QA Test No. 561
 
-Exercise compressed archive files - gzip version
+Exercise pmMergeLabels(3) handling of various input data.
 
 
 
-Copyright (c) 2014 Red Hat.
+Copyright (c) 2016-2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:52:14 UTC 2020","Wed Jun 03 11:52:15 UTC 2020","1000","","centos7-container","","","","QA 569","PCP QA Test No. 569
+
+exercise pmprobe, and pv 679693 in particular
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:35 UTC 2020","Wed Jun 03 12:04:36 UTC 2020","1000","","debian10-container","","","","QA 085","PCP QA Test No. 085
+
+pmlogger specs with internal instance identifiers
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:19 UTC 2020","Wed Jun 03 12:04:19 UTC 2020","0","","debian10-container","","","","QA 048","PCP QA Test No. 048
+
+exercise log/archive retrievals
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:57 UTC 2020","Wed Jun 03 11:56:58 UTC 2020","1000","","fedora31-container","","","","QA 299","PCP QA Test No. 299
+
+exercise pmParseMetricSpec
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:51:22 UTC 2020","Wed Jun 03 11:51:23 UTC 2020","1000","","centos7-container","","","","QA 207","PCP QA Test No. 207
+
+Simple PMNS exerciser after dynamic PMNS changes
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:46:14 UTC 2020","Wed Jun 03 11:46:15 UTC 2020","1000","","centos8-container","","","","QA 080","PCP QA Test No. 080
+
+exercise new options to pmval: -r -z -Z -S -p
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:54:34 UTC 2020","Wed Jun 03 11:54:34 UTC 2020","0","","fedora32-container","","","","QA 208","PCP QA Test No. 208
+
+
+
+Exercise dynamic PMNS features
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:01 UTC 2020","Wed Jun 03 11:48:02 UTC 2020","1000","","centos8-container","","","","QA 369","PCP QA Test No. 369
+
+Check out libpcp_import
+
+
+
+Copyright (c) 2012 Red Hat.
 
 Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
 
 
 
 "
-"passed","Tue Jun 02 15:13:07 UTC 2020","Tue Jun 02 15:13:07 UTC 2020","0","","centos7-container","","","","QA 091","PCP QA Test No. 091
+"passed","Wed Jun 03 11:53:20 UTC 2020","Wed Jun 03 11:53:20 UTC 2020","0","","fedora32-container","","","","QA 091","PCP QA Test No. 091
 
 interpolate mode backwards
 
@@ -817,7 +2237,138 @@ Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:15:08 UTC 2020","Tue Jun 02 15:15:09 UTC 2020","1000","","centos7-container","","","","QA 574","PCP QA Test No. 574
+"passed","Wed Jun 03 11:46:31 UTC 2020","Wed Jun 03 11:46:32 UTC 2020","1000","","centos8-container","","","","QA 153","PCP QA Test No. 153
+
+Check out pmafm/mkaf changes to no longer use file(1)
+
+
+
+Copyright (c) 2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:51:23 UTC 2020","Wed Jun 03 11:51:23 UTC 2020","0","","centos7-container","","","","QA 208","PCP QA Test No. 208
+
+
+
+Exercise dynamic PMNS features
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:56 UTC 2020","Wed Jun 03 11:57:57 UTC 2020","1000","","debian11-container","","","","QA 207","PCP QA Test No. 207
+
+Simple PMNS exerciser after dynamic PMNS changes
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:17 UTC 2020","Wed Jun 03 12:06:17 UTC 2020","0","","debian10-container","","","","QA 369","PCP QA Test No. 369
+
+Check out libpcp_import
+
+
+
+Copyright (c) 2012 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:51:24 UTC 2020","Wed Jun 03 11:51:25 UTC 2020","1000","","centos7-container","","","","QA 213","PCP QA Test No. 213
+
+exercise dbpmda with dynamic metrics
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:25 UTC 2020","Wed Jun 03 12:06:26 UTC 2020","1000","","debian10-container","","","","QA 548","PCP QA Test No. 548
+
+nomatch_inst for pmie
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:29 UTC 2020","Wed Jun 03 11:56:29 UTC 2020","0","","debian11-container","","","","QA 007","PCP QA Test No. 007
+
+exercise optFetch routines
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:47 UTC 2020","Wed Jun 03 11:53:47 UTC 2020","0","","fedora33-container","","","","QA 087","PCP QA Test No. 087
+
+interpolate mode
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:05 UTC 2020","Wed Jun 03 11:55:07 UTC 2020","2000","","fedora33-container","","","","QA 256","PCP QA Test No. 256
+
+
+
+Derived metrics and PMNS operations
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:50 UTC 2020","Wed Jun 03 12:04:51 UTC 2020","1000","","debian10-container","","","","QA 146","PCP QA Test No. 146
+
+exercise pmNameAll
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:16 UTC 2020","Wed Jun 03 11:56:16 UTC 2020","0","","fedora33-container","","","","QA 1229","PCP QA Test No. 1229
+
+Test support for labels and help text in pmlogextract.
+
+Specifically: test successful consistency checking of help text by extracting
+
+the same archive twice.
+
+
+
+Copyright (c) 2018 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:15 UTC 2020","Wed Jun 03 11:52:15 UTC 2020","0","","centos7-container","","","","QA 574","PCP QA Test No. 574
 
 Tests out the api (uses torture_api) in archive mode.
 
@@ -830,29 +2381,7 @@ Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:13:48 UTC 2020","Tue Jun 02 15:13:56 UTC 2020","8000","","centos7-container","","","","QA 155","PCP QA Test No. 155
-
-verify PMDA not ready protocol
-
-
-
-Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
-
-
-
-"
-"passed","Tue Jun 02 15:15:23 UTC 2020","Tue Jun 02 15:15:24 UTC 2020","1000","","centos7-container","","","","QA 978","PCP QA Test No. 978
-
-Exercise pmgetopt(1) functionality.
-
-
-
-Copyright (c) 2014 Red Hat.
-
-
-
-"
-"passed","Tue Jun 02 15:13:22 UTC 2020","Tue Jun 02 15:13:22 UTC 2020","0","","centos7-container","","","","QA 146","PCP QA Test No. 146
+"passed","Wed Jun 03 11:54:03 UTC 2020","Wed Jun 03 11:54:03 UTC 2020","0","","fedora33-container","","","","QA 146","PCP QA Test No. 146
 
 exercise pmNameAll
 
@@ -863,7 +2392,508 @@ Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:15:02 UTC 2020","Tue Jun 02 15:15:04 UTC 2020","2000","","centos7-container","","","","QA 548","PCP QA Test No. 548
+"passed","Wed Jun 03 11:56:44 UTC 2020","Wed Jun 03 11:56:44 UTC 2020","0","","debian11-container","","","","QA 074","PCP QA Test No. 074
+
+permuted pmids for pmFetch, across multiple PMDAs
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:17 UTC 2020","Wed Jun 03 11:48:17 UTC 2020","0","","centos8-container","","","","QA 646","PCP QA Test No. 646
+
+Testing of libpcp_mmv functionality (ondisk formats)
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+Copyright (c) 2009-2010 Aconex.  All Rights Reserved.
+
+Copyright (c) 2016,2018 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:56:52 UTC 2020","Wed Jun 03 11:56:53 UTC 2020","1000","","fedora31-container","","","","QA 232","PCP QA Test No. 232
+
+exercise instance API functions for PM_CONTEXT_LOCAL
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:45:58 UTC 2020","Wed Jun 03 11:45:58 UTC 2020","0","","centos8-container","","","","QA 034","PCP QA Test No. 034
+
+pmlogger with different logging rates
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:08 UTC 2020","Wed Jun 03 11:56:08 UTC 2020","0","","fedora33-container","","","","QA 970","PCP QA Test No. 970
+
+Test libpcp multi-archive support using pmclient (fetchgroup version)
+
+
+
+Copyright (c) 2016 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:29 UTC 2020","Wed Jun 03 12:04:29 UTC 2020","0","","debian10-container","","","","QA 059","PCP QA Test No. 059
+
+timestmaps in the archive logs
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:51 UTC 2020","Wed Jun 03 11:56:52 UTC 2020","1000","","fedora31-container","","","","QA 210","PCP QA Test No. 210
+
+Check dynamic metrics work with PMAPI clients - DSO PMDA version
+
+See also 467 for the related tests using pmdumptext
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:29 UTC 2020","Wed Jun 03 12:06:30 UTC 2020","1000","","debian10-container","","","","QA 689","PCP QA Test No. 689
+
+Test libpcp multi-archive support using pmclient (fetchgroup version)
+
+
+
+Copyright (c) 2017 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:27 UTC 2020","Wed Jun 03 11:53:27 UTC 2020","0","","fedora33-container","","","","QA 007","PCP QA Test No. 007
+
+exercise optFetch routines
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:32 UTC 2020","Wed Jun 03 11:48:32 UTC 2020","0","","centos8-container","","","","QA 1044","PCP QA Test No. 1044 (formerly 525)
+
+exercises pmieconf cmd line
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:51:58 UTC 2020","Wed Jun 03 11:52:00 UTC 2020","2000","","centos7-container","","","","QA 397","PCP QA Test No. 397
+
+Use dbpmda to check endian encoding for PM_TYPE_EVENT
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:59:00 UTC 2020","Wed Jun 03 11:59:00 UTC 2020","0","","debian11-container","","","","QA 1229","PCP QA Test No. 1229
+
+Test support for labels and help text in pmlogextract.
+
+Specifically: test successful consistency checking of help text by extracting
+
+the same archive twice.
+
+
+
+Copyright (c) 2018 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:15 UTC 2020","Wed Jun 03 11:55:15 UTC 2020","0","","fedora31-container","","","","QA 005","PCP QA Test No. 005
+
+exercise contexts for an archive
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:47 UTC 2020","Wed Jun 03 11:56:55 UTC 2020","8000","","debian11-container","","","","QA 107","PCP QA Test No. 107
+
+Check pmlc ""query"" command against the primary pmlogger
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:51:58 UTC 2020","Wed Jun 03 11:51:58 UTC 2020","0","","centos7-container","","","","QA 385","PCP QA Test No. 385
+
+Some basic PM_EVENT_TYPE tests
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:19 UTC 2020","Wed Jun 03 12:06:19 UTC 2020","0","","debian10-container","","","","QA 404","PCP QA Test No. 404
+
+exercise pmUnpackEventRecords() and pmFreeEventResult()
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:54:37 UTC 2020","Wed Jun 03 11:54:38 UTC 2020","1000","","fedora32-container","","","","QA 234","PCP QA Test No. 234
+
+pmlogsummary exerciser
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:51:00 UTC 2020","Wed Jun 03 11:51:19 UTC 2020","19000","","centos7-container","","","","QA 178","PCP QA Test No. 178
+
+pmlogextract exerciser
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:28 UTC 2020","Wed Jun 03 12:06:28 UTC 2020","0","","debian10-container","","","","QA 567","PCP QA Test No. 567
+
+Exercise pmMergeLabelSets(3) handling of various input data.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:53:12 UTC 2020","Wed Jun 03 11:53:13 UTC 2020","1000","","fedora32-container","","","","QA 059","PCP QA Test No. 059
+
+timestmaps in the archive logs
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:28 UTC 2020","Wed Jun 03 11:53:28 UTC 2020","0","","fedora33-container","","","","QA 027","PCP QA Test No. 027
+
+exercise pmConvScale and pmUnitsStr
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:29 UTC 2020","Wed Jun 03 11:58:32 UTC 2020","3000","","debian11-container","","","","QA 416","PCP QA Test No. 416
+
+news pmda ... exercise perl PMDA bits-n-bobs
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:47:29 UTC 2020","Wed Jun 03 11:47:30 UTC 2020","1000","","centos8-container","","","","QA 210","PCP QA Test No. 210
+
+Check dynamic metrics work with PMAPI clients - DSO PMDA version
+
+See also 467 for the related tests using pmdumptext
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:08 UTC 2020","Wed Jun 03 11:58:10 UTC 2020","2000","","fedora31-container","","","","QA 1368","PCP QA Test No. 1368
+
+Exercise fetch protocol support for context label changes.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:56:29 UTC 2020","Wed Jun 03 11:56:29 UTC 2020","0","","debian11-container","","","","QA 027","PCP QA Test No. 027
+
+exercise pmConvScale and pmUnitsStr
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:49:52 UTC 2020","Wed Jun 03 11:50:02 UTC 2020","10000","","centos7-container","","","","QA 055","PCP QA Test No. 055
+
+pmie basic expression evaluation and scheduling
+
+for remote version using other hosts, see 360
+
+see also 694 for valgrind version of this test
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:04 UTC 2020","Wed Jun 03 11:48:05 UTC 2020","1000","","centos8-container","","","","QA 407","PCP QA Test No. 407
+
+Derived metrics and PM_TYPE_EVENT
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:16 UTC 2020","Wed Jun 03 11:52:16 UTC 2020","0","","centos7-container","","","","QA 689","PCP QA Test No. 689
+
+Test libpcp multi-archive support using pmclient (fetchgroup version)
+
+
+
+Copyright (c) 2017 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:29 UTC 2020","Wed Jun 03 11:56:29 UTC 2020","0","","debian11-container","","","","QA 026","PCP QA Test No. 026
+
+Text Services (Help and Oneline) for PMIDs and pmInDoms
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:31 UTC 2020","Wed Jun 03 11:52:31 UTC 2020","0","","centos7-container","","","","QA 1044","PCP QA Test No. 1044 (formerly 525)
+
+exercises pmieconf cmd line
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:34 UTC 2020","Wed Jun 03 11:55:40 UTC 2020","6000","","fedora32-container","","","","QA 707","PCP QA Test No. 707
+
+Exercise python PMAPI layer - basic archive tests
+
+
+
+Copyright (c) 2012-2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:54:38 UTC 2020","Wed Jun 03 11:54:39 UTC 2020","1000","","fedora32-container","","","","QA 256","PCP QA Test No. 256
+
+
+
+Derived metrics and PMNS operations
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:28 UTC 2020","Wed Jun 03 11:53:28 UTC 2020","0","","fedora33-container","","","","QA 026","PCP QA Test No. 026
+
+Text Services (Help and Oneline) for PMIDs and pmInDoms
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:13 UTC 2020","Wed Jun 03 11:55:16 UTC 2020","3000","","fedora32-container","","","","QA 416","PCP QA Test No. 416
+
+news pmda ... exercise perl PMDA bits-n-bobs
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:11 UTC 2020","Wed Jun 03 11:48:11 UTC 2020","0","","centos8-container","","","","QA 437","PCP QA Test No. 437
+
+Exercise compressed archive files - badness in the uncompression
+
+
+
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:30 UTC 2020","Wed Jun 03 11:56:40 UTC 2020","10000","","debian11-container","","","","QA 055","PCP QA Test No. 055
+
+pmie basic expression evaluation and scheduling
+
+for remote version using other hosts, see 360
+
+see also 694 for valgrind version of this test
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:05:51 UTC 2020","Wed Jun 03 12:05:51 UTC 2020","0","","debian10-container","","","","QA 278","PCP QA Test No. 278
+
+validate newhelp
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:19 UTC 2020","Wed Jun 03 11:53:20 UTC 2020","1000","","fedora32-container","","","","QA 085","PCP QA Test No. 085
+
+pmlogger specs with internal instance identifiers
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:16 UTC 2020","Wed Jun 03 11:52:23 UTC 2020","7000","","centos7-container","","","","QA 702","PCP QA Test No. 702
+
+Exercise python PMAPI layer - basic live host tests
+
+
+
+Copyright (c) 2012-2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:56:09 UTC 2020","Wed Jun 03 11:56:09 UTC 2020","0","","fedora33-container","","","","QA 1044","PCP QA Test No. 1044 (formerly 525)
+
+exercises pmieconf cmd line
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:59 UTC 2020","Wed Jun 03 11:53:00 UTC 2020","1000","","fedora32-container","","","","QA 005","PCP QA Test No. 005
+
+exercise contexts for an archive
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:45:57 UTC 2020","Wed Jun 03 11:45:57 UTC 2020","0","","centos8-container","","","","QA 007","PCP QA Test No. 007
+
+exercise optFetch routines
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:50 UTC 2020","Wed Jun 03 12:06:50 UTC 2020","0","","debian10-container","","","","QA 1229","PCP QA Test No. 1229
+
+Test support for labels and help text in pmlogextract.
+
+Specifically: test successful consistency checking of help text by extracting
+
+the same archive twice.
+
+
+
+Copyright (c) 2018 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:35 UTC 2020","Wed Jun 03 11:58:36 UTC 2020","1000","","debian11-container","","","","QA 548","PCP QA Test No. 548
 
 nomatch_inst for pmie
 
@@ -874,7 +2904,98 @@ Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:14:54 UTC 2020","Tue Jun 02 15:14:54 UTC 2020","0","","centos7-container","","","","QA 401","PCP QA Test No. 401
+"passed","Wed Jun 03 11:54:40 UTC 2020","Wed Jun 03 11:54:40 UTC 2020","0","","fedora32-container","","","","QA 278","PCP QA Test No. 278
+
+validate newhelp
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:26 UTC 2020","Wed Jun 03 11:53:26 UTC 2020","0","","fedora33-container","","","","QA 001","PCP QA Test No. 001
+
+exercise the PDU encode/decode ... no PMCD involvement
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:01 UTC 2020","Wed Jun 03 11:53:01 UTC 2020","0","","fedora32-container","","","","QA 031","PCP QA Test No. 031
+
+general exerciser for local PCP
+
+
+
+NOTE: Output from 031 is also used by:
+
+qa/112
+
+qa/257
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:39 UTC 2020","Wed Jun 03 11:58:40 UTC 2020","1000","","debian11-container","","","","QA 646","PCP QA Test No. 646
+
+Testing of libpcp_mmv functionality (ondisk formats)
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+Copyright (c) 2009-2010 Aconex.  All Rights Reserved.
+
+Copyright (c) 2016,2018 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 12:06:15 UTC 2020","Wed Jun 03 12:06:17 UTC 2020","2000","","debian10-container","","","","QA 359","PCP QA Test No. 359
+
+Simple sanity check that we can get through validation of all
+
+of the metrics without any surprises
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:46 UTC 2020","Wed Jun 03 11:56:46 UTC 2020","0","","debian11-container","","","","QA 085","PCP QA Test No. 085
+
+pmlogger specs with internal instance identifiers
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:18 UTC 2020","Wed Jun 03 11:53:19 UTC 2020","1000","","fedora32-container","","","","QA 080","PCP QA Test No. 080
+
+exercise new options to pmval: -r -z -Z -S -p
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:28 UTC 2020","Wed Jun 03 11:58:28 UTC 2020","0","","debian11-container","","","","QA 401","PCP QA Test No. 401
 
 quick pminfo -x check (400 does a better job, but you need to have
 
@@ -887,7 +3008,985 @@ Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
 
 
 "
-"passed","Tue Jun 02 15:15:31 UTC 2020","Tue Jun 02 15:15:32 UTC 2020","1000","","centos7-container","","","","QA 1274","PCP QA Test No. 1274
+"passed","Wed Jun 03 11:58:33 UTC 2020","Wed Jun 03 11:58:34 UTC 2020","1000","","debian11-container","","","","QA 436","PCP QA Test No. 436
+
+Exercise compressed archive files - bzip2 version
+
+
+
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:05:54 UTC 2020","Wed Jun 03 12:05:55 UTC 2020","1000","","debian10-container","","","","QA 345","PCP QA Test No. 345
+
+
+
+PM_CONTEXT_LOCAL and PMNS operations involving derived and dynamic
+
+metrics
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:46 UTC 2020","Wed Jun 03 11:55:47 UTC 2020","1000","","fedora31-container","","","","QA 112","PCP QA Test No. 112
+
+new PMNS exercises
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:47 UTC 2020","Wed Jun 03 11:55:47 UTC 2020","0","","fedora31-container","","","","QA 127","PCP QA Test No. 127
+
+pmlogreduce basic metadata sanity
+
+
+
+Copyright (c) 2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:50:26 UTC 2020","Wed Jun 03 11:50:51 UTC 2020","25000","","centos7-container","","","","QA 154","PCP QA Test No. 154
+
+what the hell is chkhelp supposed to do?
+
+
+
+Copyright (c) 2015 Red Hat.
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:13 UTC 2020","Wed Jun 03 11:52:14 UTC 2020","1000","","centos7-container","","","","QA 567","PCP QA Test No. 567
+
+Exercise pmMergeLabelSets(3) handling of various input data.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:50:51 UTC 2020","Wed Jun 03 11:51:00 UTC 2020","9000","","centos7-container","","","","QA 155","PCP QA Test No. 155
+
+verify PMDA not ready protocol
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:19 UTC 2020","Wed Jun 03 12:06:23 UTC 2020","4000","","debian10-container","","","","QA 416","PCP QA Test No. 416
+
+news pmda ... exercise perl PMDA bits-n-bobs
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:46:09 UTC 2020","Wed Jun 03 11:46:09 UTC 2020","0","","centos8-container","","","","QA 059","PCP QA Test No. 059
+
+timestmaps in the archive logs
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:02 UTC 2020","Wed Jun 03 11:57:03 UTC 2020","1000","","fedora31-container","","","","QA 345","PCP QA Test No. 345
+
+
+
+PM_CONTEXT_LOCAL and PMNS operations involving derived and dynamic
+
+metrics
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:59 UTC 2020","Wed Jun 03 11:58:00 UTC 2020","1000","","debian11-container","","","","QA 234","PCP QA Test No. 234
+
+pmlogsummary exerciser
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:01 UTC 2020","Wed Jun 03 11:58:01 UTC 2020","0","","debian11-container","","","","QA 278","PCP QA Test No. 278
+
+validate newhelp
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:23 UTC 2020","Wed Jun 03 12:06:24 UTC 2020","1000","","debian10-container","","","","QA 436","PCP QA Test No. 436
+
+Exercise compressed archive files - bzip2 version
+
+
+
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:05:49 UTC 2020","Wed Jun 03 12:05:50 UTC 2020","1000","","debian10-container","","","","QA 234","PCP QA Test No. 234
+
+pmlogsummary exerciser
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:51 UTC 2020","Wed Jun 03 12:06:51 UTC 2020","0","","debian10-container","","","","QA 1368","PCP QA Test No. 1368
+
+Exercise fetch protocol support for context label changes.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:53:46 UTC 2020","Wed Jun 03 11:53:47 UTC 2020","1000","","fedora33-container","","","","QA 085","PCP QA Test No. 085
+
+pmlogger specs with internal instance identifiers
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:57 UTC 2020","Wed Jun 03 11:53:57 UTC 2020","0","","fedora33-container","","","","QA 112","PCP QA Test No. 112
+
+new PMNS exercises
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:17 UTC 2020","Wed Jun 03 11:55:17 UTC 2020","0","","fedora31-container","","","","QA 031","PCP QA Test No. 031
+
+general exerciser for local PCP
+
+
+
+NOTE: Output from 031 is also used by:
+
+qa/112
+
+qa/257
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:29 UTC 2020","Wed Jun 03 11:56:29 UTC 2020","0","","debian11-container","","","","QA 005","PCP QA Test No. 005
+
+exercise contexts for an archive
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:49:51 UTC 2020","Wed Jun 03 11:49:51 UTC 2020","0","","centos7-container","","","","QA 027","PCP QA Test No. 027
+
+exercise pmConvScale and pmUnitsStr
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:53 UTC 2020","Wed Jun 03 11:55:53 UTC 2020","0","","fedora31-container","","","","QA 153","PCP QA Test No. 153
+
+Check out pmafm/mkaf changes to no longer use file(1)
+
+
+
+Copyright (c) 2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:49:51 UTC 2020","Wed Jun 03 11:49:51 UTC 2020","0","","centos7-container","","","","QA 031","PCP QA Test No. 031
+
+general exerciser for local PCP
+
+
+
+NOTE: Output from 031 is also used by:
+
+qa/112
+
+qa/257
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:15 UTC 2020","Wed Jun 03 11:52:16 UTC 2020","1000","","centos7-container","","","","QA 646","PCP QA Test No. 646
+
+Testing of libpcp_mmv functionality (ondisk formats)
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+Copyright (c) 2009-2010 Aconex.  All Rights Reserved.
+
+Copyright (c) 2016,2018 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:57:57 UTC 2020","Wed Jun 03 11:57:58 UTC 2020","1000","","debian11-container","","","","QA 210","PCP QA Test No. 210
+
+Check dynamic metrics work with PMAPI clients - DSO PMDA version
+
+See also 467 for the related tests using pmdumptext
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:00 UTC 2020","Wed Jun 03 11:58:07 UTC 2020","7000","","fedora31-container","","","","QA 1098","PCP QA Test No. 1098
+
+Exercise a couple of python PMDA module features.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:47:32 UTC 2020","Wed Jun 03 11:47:33 UTC 2020","1000","","centos8-container","","","","QA 256","PCP QA Test No. 256
+
+
+
+Derived metrics and PMNS operations
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:30 UTC 2020","Wed Jun 03 11:56:30 UTC 2020","0","","debian11-container","","","","QA 034","PCP QA Test No. 034
+
+pmlogger with different logging rates
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:34 UTC 2020","Wed Jun 03 12:04:35 UTC 2020","1000","","debian10-container","","","","QA 080","PCP QA Test No. 080
+
+exercise new options to pmval: -r -z -Z -S -p
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:01 UTC 2020","Wed Jun 03 11:57:01 UTC 2020","0","","debian11-container","","","","QA 146","PCP QA Test No. 146
+
+exercise pmNameAll
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:01 UTC 2020","Wed Jun 03 11:55:01 UTC 2020","0","","fedora33-container","","","","QA 208","PCP QA Test No. 208
+
+
+
+Exercise dynamic PMNS features
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:17 UTC 2020","Wed Jun 03 11:48:18 UTC 2020","1000","","centos8-container","","","","QA 689","PCP QA Test No. 689
+
+Test libpcp multi-archive support using pmclient (fetchgroup version)
+
+
+
+Copyright (c) 2017 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:43 UTC 2020","Wed Jun 03 11:57:44 UTC 2020","1000","","fedora31-container","","","","QA 569","PCP QA Test No. 569
+
+exercise pmprobe, and pv 679693 in particular
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:29 UTC 2020","Wed Jun 03 11:58:29 UTC 2020","0","","debian11-container","","","","QA 403","PCP QA Test No. 403
+
+check some ASCII tools handling of failed fetches causing pmFetch to
+
+return a null pmResult.
+
+Bug #541380
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:29 UTC 2020","Wed Jun 03 11:58:29 UTC 2020","0","","debian11-container","","","","QA 404","PCP QA Test No. 404
+
+exercise pmUnpackEventRecords() and pmFreeEventResult()
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:27 UTC 2020","Wed Jun 03 11:57:27 UTC 2020","0","","fedora31-container","","","","QA 385","PCP QA Test No. 385
+
+Some basic PM_EVENT_TYPE tests
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:32 UTC 2020","Wed Jun 03 11:48:32 UTC 2020","0","","centos8-container","","","","QA 978","PCP QA Test No. 978
+
+Exercise pmgetopt(1) functionality.
+
+
+
+Copyright (c) 2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:55:42 UTC 2020","Wed Jun 03 11:55:49 UTC 2020","7000","","fedora32-container","","","","QA 1098","PCP QA Test No. 1098
+
+Exercise a couple of python PMDA module features.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:50:07 UTC 2020","Wed Jun 03 11:50:09 UTC 2020","2000","","centos7-container","","","","QA 080","PCP QA Test No. 080
+
+exercise new options to pmval: -r -z -Z -S -p
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:29 UTC 2020","Wed Jun 03 11:56:29 UTC 2020","0","","debian11-container","","","","QA 010","PCP QA Test No. 010
+
+exercise pmExtractValue
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:18 UTC 2020","Wed Jun 03 12:04:19 UTC 2020","1000","","debian10-container","","","","QA 031","PCP QA Test No. 031
+
+general exerciser for local PCP
+
+
+
+NOTE: Output from 031 is also used by:
+
+qa/112
+
+qa/257
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:18 UTC 2020","Wed Jun 03 12:04:18 UTC 2020","0","","debian10-container","","","","QA 027","PCP QA Test No. 027
+
+exercise pmConvScale and pmUnitsStr
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:56 UTC 2020","Wed Jun 03 11:56:57 UTC 2020","1000","","fedora31-container","","","","QA 263","PCP QA Test No. 263
+
+
+
+Exercise aggregate functions for derived metrics
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:18 UTC 2020","Wed Jun 03 12:04:18 UTC 2020","0","","debian10-container","","","","QA 026","PCP QA Test No. 026
+
+Text Services (Help and Oneline) for PMIDs and pmInDoms
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:28 UTC 2020","Wed Jun 03 11:55:33 UTC 2020","5000","","fedora31-container","","","","QA 068","PCP QA Test No. 068
+
+pmNewContext() bad error status if pmcd is not running
+
+
+
+Note: this is the simplest test to get the pmcd start/stop filtering
+
+	to be correct ... use this to tune _filter_pcp_start() and
+
+	_filter_pcp_stop() in common.filter
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:46:16 UTC 2020","Wed Jun 03 11:46:16 UTC 2020","0","","centos8-container","","","","QA 091","PCP QA Test No. 091
+
+interpolate mode backwards
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:05:48 UTC 2020","Wed Jun 03 12:05:49 UTC 2020","1000","","debian10-container","","","","QA 232","PCP QA Test No. 232
+
+exercise instance API functions for PM_CONTEXT_LOCAL
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:51 UTC 2020","Wed Jun 03 11:55:52 UTC 2020","1000","","fedora33-container","","","","QA 567","PCP QA Test No. 567
+
+Exercise pmMergeLabelSets(3) handling of various input data.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:56:53 UTC 2020","Wed Jun 03 11:56:54 UTC 2020","1000","","fedora31-container","","","","QA 234","PCP QA Test No. 234
+
+pmlogsummary exerciser
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:24 UTC 2020","Wed Jun 03 12:06:24 UTC 2020","0","","debian10-container","","","","QA 437","PCP QA Test No. 437
+
+Exercise compressed archive files - badness in the uncompression
+
+
+
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:38 UTC 2020","Wed Jun 03 11:52:38 UTC 2020","0","","centos7-container","","","","QA 1229","PCP QA Test No. 1229
+
+Test support for labels and help text in pmlogextract.
+
+Specifically: test successful consistency checking of help text by extracting
+
+the same archive twice.
+
+
+
+Copyright (c) 2018 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:54 UTC 2020","Wed Jun 03 11:56:55 UTC 2020","1000","","fedora31-container","","","","QA 249","PCP QA Test No. 249
+
+
+
+Derived metrics - exercise pmFetch processing
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:05 UTC 2020","Wed Jun 03 11:55:05 UTC 2020","0","","fedora33-container","","","","QA 249","PCP QA Test No. 249
+
+
+
+Derived metrics - exercise pmFetch processing
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:53 UTC 2020","Wed Jun 03 11:58:54 UTC 2020","1000","","debian11-container","","","","QA 978","PCP QA Test No. 978
+
+Exercise pmgetopt(1) functionality.
+
+
+
+Copyright (c) 2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:55:54 UTC 2020","Wed Jun 03 11:55:54 UTC 2020","0","","fedora33-container","","","","QA 689","PCP QA Test No. 689
+
+Test libpcp multi-archive support using pmclient (fetchgroup version)
+
+
+
+Copyright (c) 2017 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:27 UTC 2020","Wed Jun 03 11:57:28 UTC 2020","1000","","fedora31-container","","","","QA 397","PCP QA Test No. 397
+
+Use dbpmda to check endian encoding for PM_TYPE_EVENT
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:53 UTC 2020","Wed Jun 03 11:58:53 UTC 2020","0","","debian11-container","","","","QA 970","PCP QA Test No. 970
+
+Test libpcp multi-archive support using pmclient (fetchgroup version)
+
+
+
+Copyright (c) 2016 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:49:51 UTC 2020","Wed Jun 03 11:49:52 UTC 2020","1000","","centos7-container","","","","QA 048","PCP QA Test No. 048
+
+exercise log/archive retrievals
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:42 UTC 2020","Wed Jun 03 11:57:42 UTC 2020","0","","fedora31-container","","","","QA 567","PCP QA Test No. 567
+
+Exercise pmMergeLabelSets(3) handling of various input data.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:48:09 UTC 2020","Wed Jun 03 11:48:11 UTC 2020","2000","","centos8-container","","","","QA 436","PCP QA Test No. 436
+
+Exercise compressed archive files - bzip2 version
+
+
+
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:51:19 UTC 2020","Wed Jun 03 11:51:22 UTC 2020","3000","","centos7-container","","","","QA 201","PCP QA Test No. 201
+
+exercise pmdaCache routines
+
+
+
+Copyright (C) 2015 Red Hat.
+
+Copyright (c) 2005 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:47:28 UTC 2020","Wed Jun 03 11:47:29 UTC 2020","1000","","centos8-container","","","","QA 208","PCP QA Test No. 208
+
+
+
+Exercise dynamic PMNS features
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:57 UTC 2020","Wed Jun 03 11:53:58 UTC 2020","1000","","fedora33-container","","","","QA 127","PCP QA Test No. 127
+
+pmlogreduce basic metadata sanity
+
+
+
+Copyright (c) 2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:39 UTC 2020","Wed Jun 03 11:55:39 UTC 2020","0","","fedora33-container","","","","QA 407","PCP QA Test No. 407
+
+Derived metrics and PM_TYPE_EVENT
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:08 UTC 2020","Wed Jun 03 11:55:12 UTC 2020","4000","","fedora33-container","","","","QA 338","PCP QA Test No. 338
+
+pmlogger_daily ... do you work at all?
+
+
+
+NEW VERSION for YYYYDDMM style naming convention (see also 530)
+
+
+
+Copyright (c) 2008 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:05:52 UTC 2020","Wed Jun 03 12:05:54 UTC 2020","2000","","debian10-container","","","","QA 338","PCP QA Test No. 338
+
+pmlogger_daily ... do you work at all?
+
+
+
+NEW VERSION for YYYYDDMM style naming convention (see also 530)
+
+
+
+Copyright (c) 2008 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:45 UTC 2020","Wed Jun 03 11:57:45 UTC 2020","0","","fedora31-container","","","","QA 689","PCP QA Test No. 689
+
+Test libpcp multi-archive support using pmclient (fetchgroup version)
+
+
+
+Copyright (c) 2017 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:49:49 UTC 2020","Wed Jun 03 11:49:49 UTC 2020","0","","centos7-container","","","","QA 001","PCP QA Test No. 001
+
+exercise the PDU encode/decode ... no PMCD involvement
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:24 UTC 2020","Wed Jun 03 12:06:25 UTC 2020","1000","","debian10-container","","","","QA 453","PCP QA Test No. 453
+
+Check Perl PCP::LogSummary
+
+
+
+Copyright (c) 2011 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:16 UTC 2020","Wed Jun 03 11:48:17 UTC 2020","1000","","centos8-container","","","","QA 569","PCP QA Test No. 569
+
+exercise pmprobe, and pv 679693 in particular
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:45 UTC 2020","Wed Jun 03 12:04:45 UTC 2020","0","","debian10-container","","","","QA 112","PCP QA Test No. 112
+
+new PMNS exercises
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:09 UTC 2020","Wed Jun 03 11:56:16 UTC 2020","7000","","fedora33-container","","","","QA 1098","PCP QA Test No. 1098
+
+Exercise a couple of python PMDA module features.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:51:56 UTC 2020","Wed Jun 03 11:51:57 UTC 2020","1000","","centos7-container","","","","QA 359","PCP QA Test No. 359
+
+Simple sanity check that we can get through validation of all
+
+of the metrics without any surprises
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:34 UTC 2020","Wed Jun 03 11:55:35 UTC 2020","1000","","fedora31-container","","","","QA 080","PCP QA Test No. 080
+
+exercise new options to pmval: -r -z -Z -S -p
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:03 UTC 2020","Wed Jun 03 11:48:04 UTC 2020","1000","","centos8-container","","","","QA 401","PCP QA Test No. 401
+
+quick pminfo -x check (400 does a better job, but you need to have
+
+valgrind available)
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:54:57 UTC 2020","Wed Jun 03 11:55:00 UTC 2020","3000","","fedora33-container","","","","QA 201","PCP QA Test No. 201
+
+exercise pmdaCache routines
+
+
+
+Copyright (C) 2015 Red Hat.
+
+Copyright (c) 2005 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:36 UTC 2020","Wed Jun 03 11:55:36 UTC 2020","0","","fedora31-container","","","","QA 087","PCP QA Test No. 087
+
+interpolate mode
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:49:50 UTC 2020","Wed Jun 03 11:49:51 UTC 2020","1000","","centos7-container","","","","QA 026","PCP QA Test No. 026
+
+Text Services (Help and Oneline) for PMIDs and pmInDoms
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"failed","Wed Jun 03 11:58:05 UTC 2020","Wed Jun 03 11:58:25 UTC 2020","20000","","debian11-container","","","","QA 354","PCP QA Test No. 354
+
+more serious exercising of record mode in libpcp_gui
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+check-group-include: folio
+
+
+
+**To reproduce this test in a container, please run:**
+
+    ./build/ci/run.py --runner container --platform debian11 reproduce"
+"passed","Wed Jun 03 11:45:58 UTC 2020","Wed Jun 03 11:45:58 UTC 2020","0","","centos8-container","","","","QA 027","PCP QA Test No. 027
+
+exercise pmConvScale and pmUnitsStr
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:37 UTC 2020","Wed Jun 03 11:55:38 UTC 2020","1000","","fedora33-container","","","","QA 397","PCP QA Test No. 397
+
+Use dbpmda to check endian encoding for PM_TYPE_EVENT
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:50 UTC 2020","Wed Jun 03 12:06:51 UTC 2020","1000","","debian10-container","","","","QA 1274","PCP QA Test No. 1274
 
 Test support for labels and help text in pmlogextract.
 
@@ -896,6 +3995,2313 @@ Specifically: test simply copying an archive containing labels and help text.
 
 
 Copyright (c) 2018 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:37 UTC 2020","Wed Jun 03 11:57:37 UTC 2020","0","","fedora31-container","","","","QA 437","PCP QA Test No. 437
+
+Exercise compressed archive files - badness in the uncompression
+
+
+
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:36 UTC 2020","Wed Jun 03 12:04:36 UTC 2020","0","","debian10-container","","","","QA 087","PCP QA Test No. 087
+
+interpolate mode
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:27 UTC 2020","Wed Jun 03 11:58:27 UTC 2020","0","","debian11-container","","","","QA 385","PCP QA Test No. 385
+
+Some basic PM_EVENT_TYPE tests
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:47:31 UTC 2020","Wed Jun 03 11:47:32 UTC 2020","1000","","centos8-container","","","","QA 234","PCP QA Test No. 234
+
+pmlogsummary exerciser
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:29 UTC 2020","Wed Jun 03 11:57:29 UTC 2020","0","","fedora31-container","","","","QA 403","PCP QA Test No. 403
+
+check some ASCII tools handling of failed fetches causing pmFetch to
+
+return a null pmResult.
+
+Bug #541380
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:53 UTC 2020","Wed Jun 03 11:58:53 UTC 2020","0","","debian11-container","","","","QA 900","PCP QA Test No. 900
+
+Test pcp(1) invokes other utilities with environment set.
+
+
+
+Copyright (c) 2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:55:35 UTC 2020","Wed Jun 03 11:55:36 UTC 2020","1000","","fedora31-container","","","","QA 085","PCP QA Test No. 085
+
+pmlogger specs with internal instance identifiers
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:01 UTC 2020","Wed Jun 03 11:57:01 UTC 2020","0","","debian11-container","","","","QA 153","PCP QA Test No. 153
+
+Check out pmafm/mkaf changes to no longer use file(1)
+
+
+
+Copyright (c) 2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:47 UTC 2020","Wed Jun 03 11:55:52 UTC 2020","5000","","fedora31-container","","","","QA 137","PCP QA Test No. 137
+
+exercise dbpmda
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:00 UTC 2020","Wed Jun 03 11:58:00 UTC 2020","0","","fedora31-container","","","","QA 1044","PCP QA Test No. 1044 (formerly 525)
+
+exercises pmieconf cmd line
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:18 UTC 2020","Wed Jun 03 12:04:18 UTC 2020","0","","debian10-container","","","","QA 007","PCP QA Test No. 007
+
+exercise optFetch routines
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:14 UTC 2020","Wed Jun 03 11:55:15 UTC 2020","1000","","fedora31-container","","","","QA 001","PCP QA Test No. 001
+
+exercise the PDU encode/decode ... no PMCD involvement
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:02 UTC 2020","Wed Jun 03 11:48:03 UTC 2020","1000","","centos8-container","","","","QA 397","PCP QA Test No. 397
+
+Use dbpmda to check endian encoding for PM_TYPE_EVENT
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:54:33 UTC 2020","Wed Jun 03 11:54:34 UTC 2020","1000","","fedora32-container","","","","QA 207","PCP QA Test No. 207
+
+Simple PMNS exerciser after dynamic PMNS changes
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:10 UTC 2020","Wed Jun 03 11:55:11 UTC 2020","1000","","fedora32-container","","","","QA 397","PCP QA Test No. 397
+
+Use dbpmda to check endian encoding for PM_TYPE_EVENT
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:52 UTC 2020","Wed Jun 03 11:57:58 UTC 2020","6000","","fedora31-container","","","","QA 707","PCP QA Test No. 707
+
+Exercise python PMAPI layer - basic archive tests
+
+
+
+Copyright (c) 2012-2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:48:40 UTC 2020","Wed Jun 03 11:48:41 UTC 2020","1000","","centos8-container","","","","QA 1368","PCP QA Test No. 1368
+
+Exercise fetch protocol support for context label changes.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:56:19 UTC 2020","Wed Jun 03 11:56:27 UTC 2020","8000","","fedora31-container","","","","QA 155","PCP QA Test No. 155
+
+verify PMDA not ready protocol
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:08 UTC 2020","Wed Jun 03 11:55:08 UTC 2020","0","","fedora33-container","","","","QA 299","PCP QA Test No. 299
+
+exercise pmParseMetricSpec
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:27 UTC 2020","Wed Jun 03 11:58:28 UTC 2020","1000","","debian11-container","","","","QA 397","PCP QA Test No. 397
+
+Use dbpmda to check endian encoding for PM_TYPE_EVENT
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:47:34 UTC 2020","Wed Jun 03 11:47:35 UTC 2020","1000","","centos8-container","","","","QA 299","PCP QA Test No. 299
+
+exercise pmParseMetricSpec
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:39 UTC 2020","Wed Jun 03 11:58:39 UTC 2020","0","","debian11-container","","","","QA 569","PCP QA Test No. 569
+
+exercise pmprobe, and pv 679693 in particular
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:00 UTC 2020","Wed Jun 03 11:53:01 UTC 2020","1000","","fedora32-container","","","","QA 026","PCP QA Test No. 026
+
+Text Services (Help and Oneline) for PMIDs and pmInDoms
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:28 UTC 2020","Wed Jun 03 12:06:29 UTC 2020","1000","","debian10-container","","","","QA 568","PCP QA Test No. 568
+
+Exercise generic PMAPI labelset lookup.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:53:01 UTC 2020","Wed Jun 03 11:53:01 UTC 2020","0","","fedora32-container","","","","QA 027","PCP QA Test No. 027
+
+exercise pmConvScale and pmUnitsStr
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:49:51 UTC 2020","Wed Jun 03 11:49:51 UTC 2020","0","","centos7-container","","","","QA 034","PCP QA Test No. 034
+
+pmlogger with different logging rates
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:56 UTC 2020","Wed Jun 03 11:56:56 UTC 2020","0","","debian11-container","","","","QA 127","PCP QA Test No. 127
+
+pmlogreduce basic metadata sanity
+
+
+
+Copyright (c) 2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:40 UTC 2020","Wed Jun 03 11:56:44 UTC 2020","4000","","debian11-container","","","","QA 068","PCP QA Test No. 068
+
+pmNewContext() bad error status if pmcd is not running
+
+
+
+Note: this is the simplest test to get the pmcd start/stop filtering
+
+	to be correct ... use this to tune _filter_pcp_start() and
+
+	_filter_pcp_stop() in common.filter
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:47:05 UTC 2020","Wed Jun 03 11:47:25 UTC 2020","20000","","centos8-container","","","","QA 178","PCP QA Test No. 178
+
+pmlogextract exerciser
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:17 UTC 2020","Wed Jun 03 11:55:17 UTC 2020","0","","fedora31-container","","","","QA 034","PCP QA Test No. 034
+
+pmlogger with different logging rates
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:40 UTC 2020","Wed Jun 03 11:58:46 UTC 2020","6000","","debian11-container","","","","QA 702","PCP QA Test No. 702
+
+Exercise python PMAPI layer - basic live host tests
+
+
+
+Copyright (c) 2012-2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:53:26 UTC 2020","Wed Jun 03 11:53:27 UTC 2020","1000","","fedora33-container","","","","QA 004","PCP QA Test No. 004
+
+exercise contexts for the live data from the pmcd
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:39 UTC 2020","Wed Jun 03 11:53:40 UTC 2020","1000","","fedora33-container","","","","QA 059","PCP QA Test No. 059
+
+timestmaps in the archive logs
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:24 UTC 2020","Wed Jun 03 11:55:25 UTC 2020","1000","","fedora32-container","","","","QA 567","PCP QA Test No. 567
+
+Exercise pmMergeLabelSets(3) handling of various input data.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:57:44 UTC 2020","Wed Jun 03 11:57:45 UTC 2020","1000","","fedora31-container","","","","QA 646","PCP QA Test No. 646
+
+Testing of libpcp_mmv functionality (ondisk formats)
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+Copyright (c) 2009-2010 Aconex.  All Rights Reserved.
+
+Copyright (c) 2016,2018 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:47:38 UTC 2020","Wed Jun 03 11:47:39 UTC 2020","1000","","centos8-container","","","","QA 345","PCP QA Test No. 345
+
+
+
+PM_CONTEXT_LOCAL and PMNS operations involving derived and dynamic
+
+metrics
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:00 UTC 2020","Wed Jun 03 11:53:00 UTC 2020","0","","fedora32-container","","","","QA 007","PCP QA Test No. 007
+
+exercise optFetch routines
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:34 UTC 2020","Wed Jun 03 12:04:34 UTC 2020","0","","debian10-container","","","","QA 074","PCP QA Test No. 074
+
+permuted pmids for pmFetch, across multiple PMDAs
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:12 UTC 2020","Wed Jun 03 11:55:13 UTC 2020","1000","","fedora33-container","","","","QA 345","PCP QA Test No. 345
+
+
+
+PM_CONTEXT_LOCAL and PMNS operations involving derived and dynamic
+
+metrics
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:16 UTC 2020","Wed Jun 03 11:55:17 UTC 2020","1000","","fedora31-container","","","","QA 027","PCP QA Test No. 027
+
+exercise pmConvScale and pmUnitsStr
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:46:25 UTC 2020","Wed Jun 03 11:46:26 UTC 2020","1000","","centos8-container","","","","QA 112","PCP QA Test No. 112
+
+new PMNS exercises
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:27 UTC 2020","Wed Jun 03 12:06:28 UTC 2020","1000","","debian10-container","","","","QA 562","PCP QA Test No. 562
+
+Exercise metric labels with dbpmda, pminfo, pmcd and local context.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:48:39 UTC 2020","Wed Jun 03 11:48:39 UTC 2020","0","","centos8-container","","","","QA 1229","PCP QA Test No. 1229
+
+Test support for labels and help text in pmlogextract.
+
+Specifically: test successful consistency checking of help text by extracting
+
+the same archive twice.
+
+
+
+Copyright (c) 2018 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:07 UTC 2020","Wed Jun 03 11:55:09 UTC 2020","2000","","fedora32-container","","","","QA 359","PCP QA Test No. 359
+
+Simple sanity check that we can get through validation of all
+
+of the metrics without any surprises
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:47:28 UTC 2020","Wed Jun 03 11:47:28 UTC 2020","0","","centos8-container","","","","QA 207","PCP QA Test No. 207
+
+Simple PMNS exerciser after dynamic PMNS changes
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:00 UTC 2020","Wed Jun 03 11:58:00 UTC 2020","0","","debian11-container","","","","QA 249","PCP QA Test No. 249
+
+
+
+Derived metrics - exercise pmFetch processing
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:19 UTC 2020","Wed Jun 03 12:06:19 UTC 2020","0","","debian10-container","","","","QA 401","PCP QA Test No. 401
+
+quick pminfo -x check (400 does a better job, but you need to have
+
+valgrind available)
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:08 UTC 2020","Wed Jun 03 11:52:08 UTC 2020","0","","centos7-container","","","","QA 437","PCP QA Test No. 437
+
+Exercise compressed archive files - badness in the uncompression
+
+
+
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:24 UTC 2020","Wed Jun 03 11:48:31 UTC 2020","7000","","centos8-container","","","","QA 707","PCP QA Test No. 707
+
+Exercise python PMAPI layer - basic archive tests
+
+
+
+Copyright (c) 2012-2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:57:59 UTC 2020","Wed Jun 03 11:57:59 UTC 2020","0","","fedora31-container","","","","QA 970","PCP QA Test No. 970
+
+Test libpcp multi-archive support using pmclient (fetchgroup version)
+
+
+
+Copyright (c) 2016 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:50:10 UTC 2020","Wed Jun 03 11:50:10 UTC 2020","0","","centos7-container","","","","QA 091","PCP QA Test No. 091
+
+interpolate mode backwards
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:39 UTC 2020","Wed Jun 03 11:58:39 UTC 2020","0","","debian11-container","","","","QA 574","PCP QA Test No. 574
+
+Tests out the api (uses torture_api) in archive mode.
+
+Main motivation is to test the PMNS in archives for distrib-PMNS.
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:26 UTC 2020","Wed Jun 03 11:57:27 UTC 2020","1000","","fedora31-container","","","","QA 369","PCP QA Test No. 369
+
+Check out libpcp_import
+
+
+
+Copyright (c) 2012 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:16 UTC 2020","Wed Jun 03 11:55:18 UTC 2020","2000","","fedora32-container","","","","QA 435","PCP QA Test No. 435
+
+Exercise compressed archive files - gzip version
+
+
+
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:40 UTC 2020","Wed Jun 03 11:58:40 UTC 2020","0","","debian11-container","","","","QA 689","PCP QA Test No. 689
+
+Test libpcp multi-archive support using pmclient (fetchgroup version)
+
+
+
+Copyright (c) 2017 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:45:57 UTC 2020","Wed Jun 03 11:45:57 UTC 2020","0","","centos8-container","","","","QA 010","PCP QA Test No. 010
+
+exercise pmExtractValue
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:27 UTC 2020","Wed Jun 03 11:53:28 UTC 2020","1000","","fedora33-container","","","","QA 010","PCP QA Test No. 010
+
+exercise pmExtractValue
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:09 UTC 2020","Wed Jun 03 11:52:10 UTC 2020","1000","","centos7-container","","","","QA 548","PCP QA Test No. 548
+
+nomatch_inst for pmie
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:50 UTC 2020","Wed Jun 03 11:55:51 UTC 2020","1000","","fedora32-container","","","","QA 1368","PCP QA Test No. 1368
+
+Exercise fetch protocol support for context label changes.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:52:00 UTC 2020","Wed Jun 03 11:52:00 UTC 2020","0","","centos7-container","","","","QA 403","PCP QA Test No. 403
+
+check some ASCII tools handling of failed fetches causing pmFetch to
+
+return a null pmResult.
+
+Bug #541380
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:12 UTC 2020","Wed Jun 03 11:55:12 UTC 2020","0","","fedora32-container","","","","QA 403","PCP QA Test No. 403
+
+check some ASCII tools handling of failed fetches causing pmFetch to
+
+return a null pmResult.
+
+Bug #541380
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:11 UTC 2020","Wed Jun 03 11:55:12 UTC 2020","1000","","fedora32-container","","","","QA 401","PCP QA Test No. 401
+
+quick pminfo -x check (400 does a better job, but you need to have
+
+valgrind available)
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:42 UTC 2020","Wed Jun 03 11:55:42 UTC 2020","0","","fedora32-container","","","","QA 978","PCP QA Test No. 978
+
+Exercise pmgetopt(1) functionality.
+
+
+
+Copyright (c) 2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:57:35 UTC 2020","Wed Jun 03 11:57:37 UTC 2020","2000","","fedora31-container","","","","QA 436","PCP QA Test No. 436
+
+Exercise compressed archive files - bzip2 version
+
+
+
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:55 UTC 2020","Wed Jun 03 11:56:56 UTC 2020","1000","","fedora31-container","","","","QA 256","PCP QA Test No. 256
+
+
+
+Derived metrics and PMNS operations
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:52 UTC 2020","Wed Jun 03 11:56:52 UTC 2020","0","","fedora31-container","","","","QA 213","PCP QA Test No. 213
+
+exercise dbpmda with dynamic metrics
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:51:29 UTC 2020","Wed Jun 03 11:51:30 UTC 2020","1000","","centos7-container","","","","QA 299","PCP QA Test No. 299
+
+exercise pmParseMetricSpec
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:50:20 UTC 2020","Wed Jun 03 11:50:20 UTC 2020","0","","centos7-container","","","","QA 127","PCP QA Test No. 127
+
+pmlogreduce basic metadata sanity
+
+
+
+Copyright (c) 2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:47:25 UTC 2020","Wed Jun 03 11:47:28 UTC 2020","3000","","centos8-container","","","","QA 201","PCP QA Test No. 201
+
+exercise pmdaCache routines
+
+
+
+Copyright (C) 2015 Red Hat.
+
+Copyright (c) 2005 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:19 UTC 2020","Wed Jun 03 11:55:20 UTC 2020","1000","","fedora32-container","","","","QA 437","PCP QA Test No. 437
+
+Exercise compressed archive files - badness in the uncompression
+
+
+
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:58 UTC 2020","Wed Jun 03 11:57:58 UTC 2020","0","","debian11-container","","","","QA 213","PCP QA Test No. 213
+
+exercise dbpmda with dynamic metrics
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:36 UTC 2020","Wed Jun 03 11:53:36 UTC 2020","0","","fedora32-container","","","","QA 146","PCP QA Test No. 146
+
+exercise pmNameAll
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:58 UTC 2020","Wed Jun 03 11:57:02 UTC 2020","4000","","fedora31-container","","","","QA 338","PCP QA Test No. 338
+
+pmlogger_daily ... do you work at all?
+
+
+
+NEW VERSION for YYYYDDMM style naming convention (see also 530)
+
+
+
+Copyright (c) 2008 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:36 UTC 2020","Wed Jun 03 12:06:42 UTC 2020","6000","","debian10-container","","","","QA 707","PCP QA Test No. 707
+
+Exercise python PMAPI layer - basic archive tests
+
+
+
+Copyright (c) 2012-2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:53:13 UTC 2020","Wed Jun 03 11:53:17 UTC 2020","4000","","fedora32-container","","","","QA 068","PCP QA Test No. 068
+
+pmNewContext() bad error status if pmcd is not running
+
+
+
+Note: this is the simplest test to get the pmcd start/stop filtering
+
+	to be correct ... use this to tune _filter_pcp_start() and
+
+	_filter_pcp_stop() in common.filter
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:15 UTC 2020","Wed Jun 03 11:55:15 UTC 2020","0","","fedora31-container","","","","QA 004","PCP QA Test No. 004
+
+exercise contexts for the live data from the pmcd
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:54 UTC 2020","Wed Jun 03 11:56:01 UTC 2020","7000","","fedora33-container","","","","QA 702","PCP QA Test No. 702
+
+Exercise python PMAPI layer - basic live host tests
+
+
+
+Copyright (c) 2012-2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:58:32 UTC 2020","Wed Jun 03 11:58:33 UTC 2020","1000","","debian11-container","","","","QA 435","PCP QA Test No. 435
+
+Exercise compressed archive files - gzip version
+
+
+
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:28 UTC 2020","Wed Jun 03 11:57:29 UTC 2020","1000","","fedora31-container","","","","QA 401","PCP QA Test No. 401
+
+quick pminfo -x check (400 does a better job, but you need to have
+
+valgrind available)
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:17 UTC 2020","Wed Jun 03 12:06:17 UTC 2020","0","","debian10-container","","","","QA 385","PCP QA Test No. 385
+
+Some basic PM_EVENT_TYPE tests
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:37 UTC 2020","Wed Jun 03 11:58:38 UTC 2020","1000","","debian11-container","","","","QA 562","PCP QA Test No. 562
+
+Exercise metric labels with dbpmda, pminfo, pmcd and local context.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:55:23 UTC 2020","Wed Jun 03 11:55:24 UTC 2020","1000","","fedora32-container","","","","QA 562","PCP QA Test No. 562
+
+Exercise metric labels with dbpmda, pminfo, pmcd and local context.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:55:07 UTC 2020","Wed Jun 03 11:55:07 UTC 2020","0","","fedora33-container","","","","QA 278","PCP QA Test No. 278
+
+validate newhelp
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:54:36 UTC 2020","Wed Jun 03 11:54:37 UTC 2020","1000","","fedora32-container","","","","QA 232","PCP QA Test No. 232
+
+exercise instance API functions for PM_CONTEXT_LOCAL
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:02 UTC 2020","Wed Jun 03 11:53:12 UTC 2020","10000","","fedora32-container","","","","QA 055","PCP QA Test No. 055
+
+pmie basic expression evaluation and scheduling
+
+for remote version using other hosts, see 360
+
+see also 694 for valgrind version of this test
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:08 UTC 2020","Wed Jun 03 11:52:09 UTC 2020","1000","","centos7-container","","","","QA 453","PCP QA Test No. 453
+
+Check Perl PCP::LogSummary
+
+
+
+Copyright (c) 2011 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:39 UTC 2020","Wed Jun 03 11:52:40 UTC 2020","1000","","centos7-container","","","","QA 1368","PCP QA Test No. 1368
+
+Exercise fetch protocol support for context label changes.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:53:20 UTC 2020","Wed Jun 03 11:53:30 UTC 2020","10000","","fedora32-container","","","","QA 107","PCP QA Test No. 107
+
+Check pmlc ""query"" command against the primary pmlogger
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:44 UTC 2020","Wed Jun 03 11:56:46 UTC 2020","2000","","debian11-container","","","","QA 080","PCP QA Test No. 080
+
+exercise new options to pmval: -r -z -Z -S -p
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:18 UTC 2020","Wed Jun 03 11:55:19 UTC 2020","1000","","fedora32-container","","","","QA 436","PCP QA Test No. 436
+
+Exercise compressed archive files - bzip2 version
+
+
+
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:37 UTC 2020","Wed Jun 03 11:55:46 UTC 2020","9000","","fedora31-container","","","","QA 107","PCP QA Test No. 107
+
+Check pmlc ""query"" command against the primary pmlogger
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:36 UTC 2020","Wed Jun 03 11:53:37 UTC 2020","1000","","fedora32-container","","","","QA 153","PCP QA Test No. 153
+
+Check out pmafm/mkaf changes to no longer use file(1)
+
+
+
+Copyright (c) 2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:19 UTC 2020","Wed Jun 03 12:04:29 UTC 2020","10000","","debian10-container","","","","QA 055","PCP QA Test No. 055
+
+pmie basic expression evaluation and scheduling
+
+for remote version using other hosts, see 360
+
+see also 694 for valgrind version of this test
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:46:26 UTC 2020","Wed Jun 03 11:46:31 UTC 2020","5000","","centos8-container","","","","QA 137","PCP QA Test No. 137
+
+exercise dbpmda
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:27 UTC 2020","Wed Jun 03 11:58:27 UTC 2020","0","","debian11-container","","","","QA 369","PCP QA Test No. 369
+
+Check out libpcp_import
+
+
+
+Copyright (c) 2012 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:21 UTC 2020","Wed Jun 03 11:55:23 UTC 2020","2000","","fedora32-container","","","","QA 561","PCP QA Test No. 561
+
+Exercise pmMergeLabels(3) handling of various input data.
+
+
+
+Copyright (c) 2016-2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:54:41 UTC 2020","Wed Jun 03 11:54:45 UTC 2020","4000","","fedora32-container","","","","QA 338","PCP QA Test No. 338
+
+pmlogger_daily ... do you work at all?
+
+
+
+NEW VERSION for YYYYDDMM style naming convention (see also 530)
+
+
+
+Copyright (c) 2008 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:48 UTC 2020","Wed Jun 03 11:55:50 UTC 2020","2000","","fedora33-container","","","","QA 561","PCP QA Test No. 561
+
+Exercise pmMergeLabels(3) handling of various input data.
+
+
+
+Copyright (c) 2016-2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:53:17 UTC 2020","Wed Jun 03 11:53:18 UTC 2020","1000","","fedora32-container","","","","QA 074","PCP QA Test No. 074
+
+permuted pmids for pmFetch, across multiple PMDAs
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:30 UTC 2020","Wed Jun 03 11:57:33 UTC 2020","3000","","fedora31-container","","","","QA 416","PCP QA Test No. 416
+
+news pmda ... exercise perl PMDA bits-n-bobs
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:47 UTC 2020","Wed Jun 03 11:55:48 UTC 2020","1000","","fedora33-container","","","","QA 548","PCP QA Test No. 548
+
+nomatch_inst for pmie
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:18 UTC 2020","Wed Jun 03 11:55:28 UTC 2020","10000","","fedora31-container","","","","QA 055","PCP QA Test No. 055
+
+pmie basic expression evaluation and scheduling
+
+for remote version using other hosts, see 360
+
+see also 694 for valgrind version of this test
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:01 UTC 2020","Wed Jun 03 11:52:01 UTC 2020","0","","centos7-container","","","","QA 407","PCP QA Test No. 407
+
+Derived metrics and PM_TYPE_EVENT
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:05:47 UTC 2020","Wed Jun 03 12:05:47 UTC 2020","0","","debian10-container","","","","QA 208","PCP QA Test No. 208
+
+
+
+Exercise dynamic PMNS features
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:54:38 UTC 2020","Wed Jun 03 11:54:38 UTC 2020","0","","fedora32-container","","","","QA 249","PCP QA Test No. 249
+
+
+
+Derived metrics - exercise pmFetch processing
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:50:20 UTC 2020","Wed Jun 03 11:50:25 UTC 2020","5000","","centos7-container","","","","QA 137","PCP QA Test No. 137
+
+exercise dbpmda
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:47 UTC 2020","Wed Jun 03 11:53:47 UTC 2020","0","","fedora33-container","","","","QA 091","PCP QA Test No. 091
+
+interpolate mode backwards
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:01 UTC 2020","Wed Jun 03 11:56:07 UTC 2020","6000","","fedora33-container","","","","QA 707","PCP QA Test No. 707
+
+Exercise python PMAPI layer - basic archive tests
+
+
+
+Copyright (c) 2012-2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:57:38 UTC 2020","Wed Jun 03 11:57:39 UTC 2020","1000","","fedora31-container","","","","QA 548","PCP QA Test No. 548
+
+nomatch_inst for pmie
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:00 UTC 2020","Wed Jun 03 11:58:00 UTC 2020","0","","fedora31-container","","","","QA 978","PCP QA Test No. 978
+
+Exercise pmgetopt(1) functionality.
+
+
+
+Copyright (c) 2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:55:25 UTC 2020","Wed Jun 03 11:55:26 UTC 2020","1000","","fedora32-container","","","","QA 569","PCP QA Test No. 569
+
+exercise pmprobe, and pv 679693 in particular
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:27 UTC 2020","Wed Jun 03 11:55:34 UTC 2020","7000","","fedora32-container","","","","QA 702","PCP QA Test No. 702
+
+Exercise python PMAPI layer - basic live host tests
+
+
+
+Copyright (c) 2012-2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:48:08 UTC 2020","Wed Jun 03 11:48:09 UTC 2020","1000","","centos8-container","","","","QA 435","PCP QA Test No. 435
+
+Exercise compressed archive files - gzip version
+
+
+
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:43 UTC 2020","Wed Jun 03 12:06:43 UTC 2020","0","","debian10-container","","","","QA 900","PCP QA Test No. 900
+
+Test pcp(1) invokes other utilities with environment set.
+
+
+
+Copyright (c) 2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:54:35 UTC 2020","Wed Jun 03 11:54:36 UTC 2020","1000","","fedora32-container","","","","QA 213","PCP QA Test No. 213
+
+exercise dbpmda with dynamic metrics
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:52 UTC 2020","Wed Jun 03 11:55:52 UTC 2020","0","","fedora33-container","","","","QA 568","PCP QA Test No. 568
+
+Exercise generic PMAPI labelset lookup.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:55:52 UTC 2020","Wed Jun 03 11:55:53 UTC 2020","1000","","fedora33-container","","","","QA 569","PCP QA Test No. 569
+
+exercise pmprobe, and pv 679693 in particular
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:47 UTC 2020","Wed Jun 03 11:56:50 UTC 2020","3000","","fedora31-container","","","","QA 201","PCP QA Test No. 201
+
+exercise pmdaCache routines
+
+
+
+Copyright (C) 2015 Red Hat.
+
+Copyright (c) 2005 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:12 UTC 2020","Wed Jun 03 11:55:13 UTC 2020","1000","","fedora32-container","","","","QA 407","PCP QA Test No. 407
+
+Derived metrics and PM_TYPE_EVENT
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:46:09 UTC 2020","Wed Jun 03 11:46:13 UTC 2020","4000","","centos8-container","","","","QA 068","PCP QA Test No. 068
+
+pmNewContext() bad error status if pmcd is not running
+
+
+
+Note: this is the simplest test to get the pmcd start/stop filtering
+
+	to be correct ... use this to tune _filter_pcp_start() and
+
+	_filter_pcp_stop() in common.filter
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:30 UTC 2020","Wed Jun 03 11:56:30 UTC 2020","0","","debian11-container","","","","QA 048","PCP QA Test No. 048
+
+exercise log/archive retrievals
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:11 UTC 2020","Wed Jun 03 11:48:11 UTC 2020","0","","centos8-container","","","","QA 453","PCP QA Test No. 453
+
+Check Perl PCP::LogSummary
+
+
+
+Copyright (c) 2011 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:47 UTC 2020","Wed Jun 03 11:56:47 UTC 2020","0","","debian11-container","","","","QA 091","PCP QA Test No. 091
+
+interpolate mode backwards
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:32 UTC 2020","Wed Jun 03 11:48:39 UTC 2020","7000","","centos8-container","","","","QA 1098","PCP QA Test No. 1098
+
+Exercise a couple of python PMDA module features.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:58:38 UTC 2020","Wed Jun 03 11:58:38 UTC 2020","0","","debian11-container","","","","QA 567","PCP QA Test No. 567
+
+Exercise pmMergeLabelSets(3) handling of various input data.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 12:04:36 UTC 2020","Wed Jun 03 12:04:36 UTC 2020","0","","debian10-container","","","","QA 091","PCP QA Test No. 091
+
+interpolate mode backwards
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:15 UTC 2020","Wed Jun 03 11:55:15 UTC 2020","0","","fedora31-container","","","","QA 002","PCP QA Test No. 002
+
+simplest possible verification of a pmcd and agent
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:02 UTC 2020","Wed Jun 03 11:58:04 UTC 2020","2000","","debian11-container","","","","QA 338","PCP QA Test No. 338
+
+pmlogger_daily ... do you work at all?
+
+
+
+NEW VERSION for YYYYDDMM style naming convention (see also 530)
+
+
+
+Copyright (c) 2008 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:05 UTC 2020","Wed Jun 03 11:48:08 UTC 2020","3000","","centos8-container","","","","QA 416","PCP QA Test No. 416
+
+news pmda ... exercise perl PMDA bits-n-bobs
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:56 UTC 2020","Wed Jun 03 11:57:01 UTC 2020","5000","","debian11-container","","","","QA 137","PCP QA Test No. 137
+
+exercise dbpmda
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:54:29 UTC 2020","Wed Jun 03 11:54:37 UTC 2020","8000","","fedora33-container","","","","QA 155","PCP QA Test No. 155
+
+verify PMDA not ready protocol
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:30 UTC 2020","Wed Jun 03 11:52:31 UTC 2020","1000","","centos7-container","","","","QA 978","PCP QA Test No. 978
+
+Exercise pmgetopt(1) functionality.
+
+
+
+Copyright (c) 2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:57:57 UTC 2020","Wed Jun 03 11:57:57 UTC 2020","0","","debian11-container","","","","QA 208","PCP QA Test No. 208
+
+
+
+Exercise dynamic PMNS features
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:05:48 UTC 2020","Wed Jun 03 12:05:48 UTC 2020","0","","debian10-container","","","","QA 213","PCP QA Test No. 213
+
+exercise dbpmda with dynamic metrics
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:16 UTC 2020","Wed Jun 03 11:55:16 UTC 2020","0","","fedora31-container","","","","QA 007","PCP QA Test No. 007
+
+exercise optFetch routines
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:13 UTC 2020","Wed Jun 03 11:48:14 UTC 2020","1000","","centos8-container","","","","QA 561","PCP QA Test No. 561
+
+Exercise pmMergeLabels(3) handling of various input data.
+
+
+
+Copyright (c) 2016-2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:53:44 UTC 2020","Wed Jun 03 11:53:46 UTC 2020","2000","","fedora33-container","","","","QA 080","PCP QA Test No. 080
+
+exercise new options to pmval: -r -z -Z -S -p
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:50:09 UTC 2020","Wed Jun 03 11:50:09 UTC 2020","0","","centos7-container","","","","QA 085","PCP QA Test No. 085
+
+pmlogger specs with internal instance identifiers
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:17 UTC 2020","Wed Jun 03 11:55:18 UTC 2020","1000","","fedora31-container","","","","QA 048","PCP QA Test No. 048
+
+exercise log/archive retrievals
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:04 UTC 2020","Wed Jun 03 11:48:04 UTC 2020","0","","centos8-container","","","","QA 403","PCP QA Test No. 403
+
+check some ASCII tools handling of failed fetches causing pmFetch to
+
+return a null pmResult.
+
+Bug #541380
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:10 UTC 2020","Wed Jun 03 11:52:12 UTC 2020","2000","","centos7-container","","","","QA 561","PCP QA Test No. 561
+
+Exercise pmMergeLabels(3) handling of various input data.
+
+
+
+Copyright (c) 2016-2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:51:25 UTC 2020","Wed Jun 03 11:51:26 UTC 2020","1000","","centos7-container","","","","QA 232","PCP QA Test No. 232
+
+exercise instance API functions for PM_CONTEXT_LOCAL
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:38 UTC 2020","Wed Jun 03 11:52:39 UTC 2020","1000","","centos7-container","","","","QA 1274","PCP QA Test No. 1274
+
+Test support for labels and help text in pmlogextract.
+
+Specifically: test simply copying an archive containing labels and help text.
+
+
+
+Copyright (c) 2018 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:47:30 UTC 2020","Wed Jun 03 11:47:31 UTC 2020","1000","","centos8-container","","","","QA 232","PCP QA Test No. 232
+
+exercise instance API functions for PM_CONTEXT_LOCAL
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:41 UTC 2020","Wed Jun 03 11:55:42 UTC 2020","1000","","fedora32-container","","","","QA 970","PCP QA Test No. 970
+
+Test libpcp multi-archive support using pmclient (fetchgroup version)
+
+
+
+Copyright (c) 2016 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:50 UTC 2020","Wed Jun 03 11:56:50 UTC 2020","0","","fedora31-container","","","","QA 207","PCP QA Test No. 207
+
+Simple PMNS exerciser after dynamic PMNS changes
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:34 UTC 2020","Wed Jun 03 11:58:34 UTC 2020","0","","debian11-container","","","","QA 437","PCP QA Test No. 437
+
+Exercise compressed archive files - badness in the uncompression
+
+
+
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:44 UTC 2020","Wed Jun 03 12:06:50 UTC 2020","6000","","debian10-container","","","","QA 1098","PCP QA Test No. 1098
+
+Exercise a couple of python PMDA module features.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:57:44 UTC 2020","Wed Jun 03 11:57:44 UTC 2020","0","","fedora31-container","","","","QA 574","PCP QA Test No. 574
+
+Tests out the api (uses torture_api) in archive mode.
+
+Main motivation is to test the PMNS in archives for distrib-PMNS.
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:01 UTC 2020","Wed Jun 03 11:53:02 UTC 2020","1000","","fedora32-container","","","","QA 048","PCP QA Test No. 048
+
+exercise log/archive retrievals
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:26 UTC 2020","Wed Jun 03 11:55:26 UTC 2020","0","","fedora32-container","","","","QA 574","PCP QA Test No. 574
+
+Tests out the api (uses torture_api) in archive mode.
+
+Main motivation is to test the PMNS in archives for distrib-PMNS.
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:40 UTC 2020","Wed Jun 03 11:53:44 UTC 2020","4000","","fedora33-container","","","","QA 068","PCP QA Test No. 068
+
+pmNewContext() bad error status if pmcd is not running
+
+
+
+Note: this is the simplest test to get the pmcd start/stop filtering
+
+	to be correct ... use this to tune _filter_pcp_start() and
+
+	_filter_pcp_stop() in common.filter
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:05:16 UTC 2020","Wed Jun 03 12:05:24 UTC 2020","8000","","debian10-container","","","","QA 155","PCP QA Test No. 155
+
+verify PMDA not ready protocol
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:36 UTC 2020","Wed Jun 03 11:55:36 UTC 2020","0","","fedora33-container","","","","QA 369","PCP QA Test No. 369
+
+Check out libpcp_import
+
+
+
+Copyright (c) 2012 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:45 UTC 2020","Wed Jun 03 11:55:46 UTC 2020","1000","","fedora33-container","","","","QA 436","PCP QA Test No. 436
+
+Exercise compressed archive files - bzip2 version
+
+
+
+Copyright (c) 2014 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:29 UTC 2020","Wed Jun 03 11:58:29 UTC 2020","0","","debian11-container","","","","QA 407","PCP QA Test No. 407
+
+Derived metrics and PM_TYPE_EVENT
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:03 UTC 2020","Wed Jun 03 11:55:04 UTC 2020","1000","","fedora33-container","","","","QA 232","PCP QA Test No. 232
+
+exercise instance API functions for PM_CONTEXT_LOCAL
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:10 UTC 2020","Wed Jun 03 11:55:10 UTC 2020","0","","fedora32-container","","","","QA 385","PCP QA Test No. 385
+
+Some basic PM_EVENT_TYPE tests
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:46:26 UTC 2020","Wed Jun 03 11:46:26 UTC 2020","0","","centos8-container","","","","QA 127","PCP QA Test No. 127
+
+pmlogreduce basic metadata sanity
+
+
+
+Copyright (c) 2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:12 UTC 2020","Wed Jun 03 11:55:12 UTC 2020","0","","fedora32-container","","","","QA 404","PCP QA Test No. 404
+
+exercise pmUnpackEventRecords() and pmFreeEventResult()
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:45:58 UTC 2020","Wed Jun 03 11:45:58 UTC 2020","0","","centos8-container","","","","QA 031","PCP QA Test No. 031
+
+general exerciser for local PCP
+
+
+
+NOTE: Output from 031 is also used by:
+
+qa/112
+
+qa/257
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:28 UTC 2020","Wed Jun 03 11:53:29 UTC 2020","1000","","fedora33-container","","","","QA 034","PCP QA Test No. 034
+
+pmlogger with different logging rates
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:46:13 UTC 2020","Wed Jun 03 11:46:14 UTC 2020","1000","","centos8-container","","","","QA 074","PCP QA Test No. 074
+
+permuted pmids for pmFetch, across multiple PMDAs
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:53:31 UTC 2020","Wed Jun 03 11:53:31 UTC 2020","0","","fedora32-container","","","","QA 127","PCP QA Test No. 127
+
+pmlogreduce basic metadata sanity
+
+
+
+Copyright (c) 2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:45 UTC 2020","Wed Jun 03 11:57:52 UTC 2020","7000","","fedora31-container","","","","QA 702","PCP QA Test No. 702
+
+Exercise python PMAPI layer - basic live host tests
+
+
+
+Copyright (c) 2012-2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:58:38 UTC 2020","Wed Jun 03 11:58:39 UTC 2020","1000","","debian11-container","","","","QA 568","PCP QA Test No. 568
+
+Exercise generic PMAPI labelset lookup.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 12:04:36 UTC 2020","Wed Jun 03 12:04:45 UTC 2020","9000","","debian10-container","","","","QA 107","PCP QA Test No. 107
+
+Check pmlc ""query"" command against the primary pmlogger
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:50:02 UTC 2020","Wed Jun 03 11:50:07 UTC 2020","5000","","centos7-container","","","","QA 068","PCP QA Test No. 068
+
+pmNewContext() bad error status if pmcd is not running
+
+
+
+Note: this is the simplest test to get the pmcd start/stop filtering
+
+	to be correct ... use this to tune _filter_pcp_start() and
+
+	_filter_pcp_stop() in common.filter
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:54:45 UTC 2020","Wed Jun 03 11:54:46 UTC 2020","1000","","fedora32-container","","","","QA 345","PCP QA Test No. 345
+
+
+
+PM_CONTEXT_LOCAL and PMNS operations involving derived and dynamic
+
+metrics
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:50:25 UTC 2020","Wed Jun 03 11:50:26 UTC 2020","1000","","centos7-container","","","","QA 146","PCP QA Test No. 146
+
+exercise pmNameAll
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:51 UTC 2020","Wed Jun 03 12:05:16 UTC 2020","25000","","debian10-container","","","","QA 154","PCP QA Test No. 154
+
+what the hell is chkhelp supposed to do?
+
+
+
+Copyright (c) 2015 Red Hat.
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:06:43 UTC 2020","Wed Jun 03 12:06:43 UTC 2020","0","","debian10-container","","","","QA 970","PCP QA Test No. 970
+
+Test libpcp multi-archive support using pmclient (fetchgroup version)
+
+
+
+Copyright (c) 2016 Red Hat.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:15 UTC 2020","Wed Jun 03 11:48:16 UTC 2020","1000","","centos8-container","","","","QA 567","PCP QA Test No. 567
+
+Exercise pmMergeLabelSets(3) handling of various input data.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:55:53 UTC 2020","Wed Jun 03 11:55:53 UTC 2020","0","","fedora33-container","","","","QA 574","PCP QA Test No. 574
+
+Tests out the api (uses torture_api) in archive mode.
+
+Main motivation is to test the PMNS in archives for distrib-PMNS.
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:48:00 UTC 2020","Wed Jun 03 11:48:01 UTC 2020","1000","","centos8-container","","","","QA 359","PCP QA Test No. 359
+
+Simple sanity check that we can get through validation of all
+
+of the metrics without any surprises
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:57:29 UTC 2020","Wed Jun 03 11:57:29 UTC 2020","0","","fedora31-container","","","","QA 404","PCP QA Test No. 404
+
+exercise pmUnpackEventRecords() and pmFreeEventResult()
+
+
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:07 UTC 2020","Wed Jun 03 11:55:07 UTC 2020","0","","fedora33-container","","","","QA 263","PCP QA Test No. 263
+
+
+
+Exercise aggregate functions for derived metrics
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:08 UTC 2020","Wed Jun 03 11:56:09 UTC 2020","1000","","fedora33-container","","","","QA 978","PCP QA Test No. 978
+
+Exercise pmgetopt(1) functionality.
+
+
+
+Copyright (c) 2014 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:55:01 UTC 2020","Wed Jun 03 11:55:02 UTC 2020","1000","","fedora33-container","","","","QA 210","PCP QA Test No. 210
+
+Check dynamic metrics work with PMAPI clients - DSO PMDA version
+
+See also 467 for the related tests using pmdumptext
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:54:11 UTC 2020","Wed Jun 03 11:54:30 UTC 2020","19000","","fedora32-container","","","","QA 178","PCP QA Test No. 178
+
+pmlogextract exerciser
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:50:19 UTC 2020","Wed Jun 03 11:50:20 UTC 2020","1000","","centos7-container","","","","QA 112","PCP QA Test No. 112
+
+new PMNS exercises
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 12:04:51 UTC 2020","Wed Jun 03 12:04:51 UTC 2020","0","","debian10-container","","","","QA 153","PCP QA Test No. 153
+
+Check out pmafm/mkaf changes to no longer use file(1)
+
+
+
+Copyright (c) 2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:56:28 UTC 2020","Wed Jun 03 11:56:28 UTC 2020","0","","debian11-container","","","","QA 001","PCP QA Test No. 001
+
+exercise the PDU encode/decode ... no PMCD involvement
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:58 UTC 2020","Wed Jun 03 11:52:59 UTC 2020","1000","","fedora32-container","","","","QA 001","PCP QA Test No. 001
+
+exercise the PDU encode/decode ... no PMCD involvement
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:58:00 UTC 2020","Wed Jun 03 11:58:01 UTC 2020","1000","","debian11-container","","","","QA 256","PCP QA Test No. 256
+
+
+
+Derived metrics and PMNS operations
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:55:00 UTC 2020","Wed Jun 03 11:55:01 UTC 2020","1000","","fedora33-container","","","","QA 207","PCP QA Test No. 207
+
+Simple PMNS exerciser after dynamic PMNS changes
+
+
+
+Copyright (c) 2009 Ken McDonell.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:52:31 UTC 2020","Wed Jun 03 11:52:38 UTC 2020","7000","","centos7-container","","","","QA 1098","PCP QA Test No. 1098
+
+Exercise a couple of python PMDA module features.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:57:54 UTC 2020","Wed Jun 03 11:57:56 UTC 2020","2000","","debian11-container","","","","QA 201","PCP QA Test No. 201
+
+exercise pmdaCache routines
+
+
+
+Copyright (C) 2015 Red Hat.
+
+Copyright (c) 2005 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:59:01 UTC 2020","Wed Jun 03 11:59:02 UTC 2020","1000","","debian11-container","","","","QA 1368","PCP QA Test No. 1368
+
+Exercise fetch protocol support for context label changes.
+
+
+
+Copyright (c) 2017 Red Hat.
+
+
+
+"
+"passed","Wed Jun 03 11:49:50 UTC 2020","Wed Jun 03 11:49:50 UTC 2020","0","","centos7-container","","","","QA 010","PCP QA Test No. 010
+
+exercise pmExtractValue
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:54:02 UTC 2020","Wed Jun 03 11:54:11 UTC 2020","9000","","fedora32-container","","","","QA 155","PCP QA Test No. 155
+
+verify PMDA not ready protocol
+
+
+
+Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:47:35 UTC 2020","Wed Jun 03 11:47:38 UTC 2020","3000","","centos8-container","","","","QA 338","PCP QA Test No. 338
+
+pmlogger_daily ... do you work at all?
+
+
+
+NEW VERSION for YYYYDDMM style naming convention (see also 530)
+
+
+
+Copyright (c) 2008 Silicon Graphics, Inc.  All Rights Reserved.
+
+
+
+"
+"passed","Wed Jun 03 11:51:57 UTC 2020","Wed Jun 03 11:51:58 UTC 2020","1000","","centos7-container","","","","QA 369","PCP QA Test No. 369
+
+Check out libpcp_import
+
+
+
+Copyright (c) 2012 Red Hat.
+
+Copyright (c) 2010 Ken McDonell.  All Rights Reserved.
 
 
 

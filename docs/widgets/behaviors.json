@@ -4,45 +4,45 @@
     "uid" : "5a28ff24753a3a2fae74f89ef3f1cd8e",
     "name" : "local",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 7,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 72,
+      "passed" : 504,
       "unknown" : 0,
-      "total" : 73
+      "total" : 511
     }
   }, {
     "uid" : "3c2fd161d37da8eab58e0d7dcc419317",
     "name" : "sanity",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 7,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 72,
+      "passed" : 504,
       "unknown" : 0,
-      "total" : 73
+      "total" : 511
     }
   }, {
     "uid" : "406aa5a43aec57d653931a45997f9f42",
     "name" : "folio",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 7,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 14,
       "unknown" : 0,
-      "total" : 3
+      "total" : 21
     }
   }, {
     "uid" : "52497e13949698221a3ea335add2284b",
     "name" : "pmlc",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 7,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 7,
       "unknown" : 0,
-      "total" : 2
+      "total" : 14
     }
   }, {
     "uid" : "38c62ee5555e24c5ef9c0f8f81c54954",
@@ -51,9 +51,9 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 20,
+      "passed" : 140,
       "unknown" : 0,
-      "total" : 20
+      "total" : 140
     }
   }, {
     "uid" : "e6e002a8210bff4f1628acabbbef5e27",
@@ -62,9 +62,9 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 17,
+      "passed" : 119,
       "unknown" : 0,
-      "total" : 17
+      "total" : 119
     }
   }, {
     "uid" : "2374fd5fa88405976f599a9f8b93b314",
@@ -73,9 +73,9 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 12,
+      "passed" : 84,
       "unknown" : 0,
-      "total" : 12
+      "total" : 84
     }
   }, {
     "uid" : "1e21c98df92b2dfeb3b0dc0b8f990f9f",
@@ -84,9 +84,9 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 11,
+      "passed" : 77,
       "unknown" : 0,
-      "total" : 11
+      "total" : 77
     }
   }, {
     "uid" : "234fba4e9e83ccf1955cb5f9de00f3a3",
@@ -95,9 +95,9 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 10,
+      "passed" : 70,
       "unknown" : 0,
-      "total" : 10
+      "total" : 70
     }
   }, {
     "uid" : "594502bde0e141f8a6ea8eb6a2b5e58c",
@@ -106,9 +106,9 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 49,
       "unknown" : 0,
-      "total" : 7
+      "total" : 49
     }
   } ]
 }

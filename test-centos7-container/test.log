@@ -1,6 +1,6 @@
-PMDA probe: pminfo -h d2d17bfd6259 -f sample.milliseconds
-PMDA probe: pminfo -h d2d17bfd6259 -f sampledso.milliseconds
-PMDA probe: pminfo -h d2d17bfd6259 -f simple.numfetch
+PMDA probe: pminfo -h 42db763f8d3e -f sample.milliseconds
+PMDA probe: pminfo -h 42db763f8d3e -f sampledso.milliseconds
+PMDA probe: pminfo -h 42db763f8d3e -f simple.numfetch
 [0%] 001
 [1%] 002 0s ...
 [2%] 004
@@ -75,9 +75,9 @@ PMDA probe: pminfo -h d2d17bfd6259 -f simple.numfetch
 > 
 > Log finished DATE
 Check local PMCD is still alive ...
-PMDA probe: pminfo -h d2d17bfd6259 -f sample.milliseconds
-PMDA probe: pminfo -h d2d17bfd6259 -f sampledso.milliseconds
-PMDA probe: pminfo -h d2d17bfd6259 -f simple.numfetch
+PMDA probe: pminfo -h 42db763f8d3e -f sample.milliseconds
+PMDA probe: pminfo -h 42db763f8d3e -f sampledso.milliseconds
+PMDA probe: pminfo -h 42db763f8d3e -f simple.numfetch
 [57%] 359
 [58%] 369
 [60%] 385

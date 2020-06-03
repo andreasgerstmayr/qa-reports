@@ -1,0 +1,435 @@
+=== folio name relative to cwd ===
+dD30cV.localhost.0
+dD30cVa.localhost.0
+MKTEMP=dD30cV
+host: ae4d06ec7160
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-259173/dD30cV.ae4d06ec7160.log
+host: localhost
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-259173/dD30cV.localhost.log
+host: ae4d06ec7160
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-259173/dD30cVa.ae4d06ec7160.log
+host: localhost
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-259173/dD30cVa.localhost.log
+
+sleeping ...
+
+host: ae4d06ec7160
+f_config: NULL f_ipc: 6 pid: 259208 status: -1
+logfile: /tmp/354-259173/dD30cV.ae4d06ec7160.log
+host: localhost
+f_config: NULL f_ipc: 7 pid: 259207 status: -1
+logfile: /tmp/354-259173/dD30cV.localhost.log
+host: ae4d06ec7160
+f_config: NULL f_ipc: 8 pid: 259206 status: -1
+logfile: /tmp/354-259173/dD30cVa.ae4d06ec7160.log
+host: localhost
+f_config: NULL f_ipc: 9 pid: 259205 status: -1
+logfile: /tmp/354-259173/dD30cVa.localhost.log
+
+send some control requests ...
+host: ae4d06ec7160
+ OFF
+host: localhost
+ DETACH
+host: ae4d06ec7160
+ STATUS
+host: localhost
+ close(fd_ipc)
+
+now stop 'em all ...
+host: ae4d06ec7160
+pmRecordControl(... OFF ...): Invalid argument
+host: localhost
+pmRecordControl(... OFF ...): Invalid argument
+host: ae4d06ec7160
+host: localhost
+pmRecordControl(... OFF ...): IPC protocol failure
+
+and again to get any exit status ...
+pmRecordControl( ... OFF ...): Invalid argument
+
+
+discover what's happened ...
+
+host: ae4d06ec7160
+f_config: NULL f_ipc: -1 pid: 259208 status: 0
+logfile: /tmp/354-259173/dD30cV.ae4d06ec7160.log
+host: localhost
+f_config: NULL f_ipc: -1 pid: 259207 status: -1
+logfile: /tmp/354-259173/dD30cV.localhost.log
+host: ae4d06ec7160
+f_config: NULL f_ipc: -1 pid: 259206 status: 0
+logfile: /tmp/354-259173/dD30cVa.ae4d06ec7160.log
+host: localhost
+f_config: NULL f_ipc: -1 pid: 259205 status: 0
+logfile: /tmp/354-259173/dD30cVa.localhost.log
+pmlogger processes:
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 11:27 ?        00:00:10 /bin/systemd
+root          23       1  0 11:27 ?        00:00:00 /lib/systemd/systemd-journald
+message+     125       1  0 11:27 ?        00:00:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         127       1  0 11:27 ?        00:00:00 /lib/systemd/systemd-logind
+root         129       1  0 11:27 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root        6639       1  0 11:27 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data    6641    6639  0 11:27 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data    6642    6639  0 11:27 ?        00:00:00 /usr/sbin/apache2 -k start
+avahi       7988       1  0 11:27 ?        00:00:00 avahi-daemon: running [ae4d06ec7160.local]
+avahi       7989    7988  0 11:27 ?        00:00:00 avahi-daemon: chroot helper
+root        8735       1  0 11:28 ?        00:00:00 /usr/sbin/cron -f
+Debian-+    9094       1  0 11:28 ?        00:00:00 /usr/sbin/exim4 -bd -q30m
+root       25250       1  0 11:29 ?        00:00:02 /usr/sbin/dockerd -H fd://
+root       25256   25250  0 11:29 ?        00:00:10 docker-containerd --config /var/run/docker/containerd/containerd.toml --log-level info
+root       41261       1  0 11:32 ?        00:00:00 /lib/systemd/systemd-machined
+root       41262       1  0 11:32 ?        00:00:00 /usr/sbin/libvirtd
+memcache   42983       1  0 11:32 ?        00:00:00 /usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1 -P /var/run/memcached/memcached.pid
+redis      46328       1  0 11:34 ?        00:00:02 /usr/bin/redis-server 127.0.0.1:6379
+root       46860       1  0 11:34 ?        00:00:00 /usr/sbin/smartd -n
+unbound    47684       1  0 11:34 ?        00:00:00 /usr/sbin/unbound -d
+zabbix     48485       1  0 11:34 ?        00:00:00 /usr/sbin/zabbix_agentd --foreground
+zabbix     48488   48485  0 11:34 ?        00:00:00 /usr/sbin/zabbix_agentd: collector [idle 1 sec]
+zabbix     48489   48485  0 11:34 ?        00:00:00 /usr/sbin/zabbix_agentd: listener #1 [waiting for connection]
+zabbix     48490   48485  0 11:34 ?        00:00:00 /usr/sbin/zabbix_agentd: listener #2 [waiting for connection]
+zabbix     48491   48485  0 11:34 ?        00:00:00 /usr/sbin/zabbix_agentd: listener #3 [waiting for connection]
+zabbix     48492   48485  0 11:34 ?        00:00:00 /usr/sbin/zabbix_agentd: active checks #1 [idle 1 sec]
+pcpbuild  244814       0  0 11:56 ?        00:00:00 bash -
+root      244820  244814  0 11:56 ?        00:00:00 sudo -i -u pcpqa ./check -TT -g sanity
+pcpbuild  244821  244814  0 11:56 ?        00:00:00 tee ./artifacts/test/test.log
+pcpqa     244822  244820  0 11:56 ?        00:00:00 /bin/sh ./check -TT -g sanity
+pcp       250232       1  0 11:56 ?        00:00:00 /usr/lib/pcp/bin/pmcd -T 3
+root      250235  250232  0 11:56 ?        00:00:00 /var/lib/pcp/pmdas/root/pmdaroot
+root      250236  250235  0 11:56 ?        00:00:00 /var/lib/pcp/pmdas/proc/pmdaproc -d 3
+root      250237  250235  0 11:56 ?        00:00:00 /var/lib/pcp/pmdas/xfs/pmdaxfs -d 11
+pcp       250238  250235  0 11:56 ?        00:00:00 /var/lib/pcp/pmdas/sample/pmdasample -d 29
+root      250239  250235  0 11:56 ?        00:00:00 /var/lib/pcp/pmdas/linux/pmdalinux
+root      250240  250235  0 11:56 ?        00:00:00 /var/lib/pcp/pmdas/kvm/pmdakvm -d 95
+pcp       250559       1  0 11:56 ?        00:00:00 /usr/lib/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M
+pcp       251510  250235  0 11:56 ?        00:00:00 /var/lib/pcp/pmdas/simple/pmdasimple -d 253
+pcpqa     259173  244822  0 11:58 ?        00:00:00 /bin/sh ./354
+pcpqa     259207       1  0 11:58 ?        00:00:00 pmlogger -x 6 -h localhost -l dD30cV.localhost.log -c dD30cV.localhost.config dD30cV.localhost
+pcpqa     259232  259173  0 11:58 ?        00:00:00 ps -efw
+pcpqa     259233  259173  0 11:58 ?        00:00:00 tee -a /var/lib/pcp/testsuite/354.full
+pcpqa     259234  259173  0 11:58 ?        00:00:00 sed -n -e 1p -e /[p]mlogger.*-x/{ s/ -x [0-9][0-9]*/ -x N/ p }
+pcpqa     259235  259173  0 11:58 ?        00:00:00 /bin/sh ./354
+pcpqa     259236  259173  0 11:58 ?        00:00:00 /bin/sh ./354
+pcpqa     259237  259173  0 11:58 ?        00:00:00 sed -f /tmp/354-259173.sed
+pcpqa     259238  259173  0 11:58 ?        00:00:00 sort
+pcpqa     259239  259235  0 11:58 ?        00:00:00 /bin/sh ./354
+pmlogger pid: 259207
+=== MKTEMP.HOST.log ===
+Log for pmlogger on ae4d06ec7160 started Wed Jun  3 11:58:05 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs dD30cV.ae4d06ec7160.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "ae4d06ec7160" via "ae4d06ec7160"
+Archive basename: dD30cV.ae4d06ec7160
+
+Log finished Wed Jun  3 11:58:08 2020
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "foo" and the host "ae4d06ec7160" has been in progress for 3 seconds and in that time the pmlogger process has created an archive of 364 bytes.
+
+This archive may be replayed with the following command:
+  $ pmafm foo replay
+
+The application that launched pmlogger has terminated this PCP recording session.
+pmlogger: Recording session terminated, exiting
+
+Log finished Wed Jun  3 11:58:08 2020
+=== MKTEMP.localhost.log ===
+Log for pmlogger on ae4d06ec7160 started Wed Jun  3 11:58:05 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs dD30cV.localhost.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "ae4d06ec7160" via "localhost"
+Archive basename: dD30cV.localhost
+
+Log finished Wed Jun  3 11:58:09 2020
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "foo" and the host "ae4d06ec7160" has been in progress for 4 seconds and in that time the pmlogger process has created an archive of 364 bytes.
+
+This archive may be replayed with the following command:
+  $ pmafm foo replay
+
+The application that launched pmlogger has asked pmlogger to continue independently and the PCP archive will grow at the rate of 319.9 Kbytes per hour or 7678.1 Kbytes per day.
+
+At any time this pmlogger process may be terminated with the following command:
+  $ pmsignal -s TERM 259207
+pmlogger: Caught signal 15, exiting
+
+Log finished Wed Jun  3 11:58:15 2020
+=== MKTEMPa.HOST.log ===
+Log for pmlogger on ae4d06ec7160 started Wed Jun  3 11:58:05 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs dD30cVa.ae4d06ec7160.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "ae4d06ec7160" via "ae4d06ec7160"
+Archive basename: dD30cVa.ae4d06ec7160
+
+Log finished Wed Jun  3 11:58:10 2020
+
+Warning: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "foo" and the host "ae4d06ec7160" has been in progress for 5 seconds and in that time the pmlogger process has created an archive of 368 bytes.
+
+This archive may be replayed with the following command:
+  $ pmafm foo replay
+
+At any time this pmlogger process may be terminated with the following command:
+  $ pmsignal -s TERM 259206
+
+Log finished Wed Jun  3 11:58:12 2020
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "foo" and the host "ae4d06ec7160" has been in progress for 7 seconds and in that time the pmlogger process has created an archive of 368 bytes.
+
+This archive may be replayed with the following command:
+  $ pmafm foo replay
+
+The application that launched pmlogger has terminated this PCP recording session.
+pmlogger: Recording session terminated, exiting
+
+Log finished Wed Jun  3 11:58:12 2020
+=== MKTEMPa.localhost.log ===
+Log for pmlogger on ae4d06ec7160 started Wed Jun  3 11:58:05 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs dD30cVa.localhost.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "ae4d06ec7160" via "localhost"
+Archive basename: dD30cVa.localhost
+
+Log finished Wed Jun  3 11:58:11 2020
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "foo" and the host "ae4d06ec7160" has been in progress for 6 seconds and in that time the pmlogger process has created an archive of 364 bytes.
+
+This archive may be replayed with the following command:
+  $ pmafm foo replay
+
+The application that launched pmlogger has exited and you must decide if the PCP recording session should be terminated or continued.  If recording is continued the PCP archive will grow at the rate of 213.3 Kbytes per hour or 5118.8 Kbytes per day.
+
+At any time this pmlogger process may be terminated with the following command:
+  $ pmsignal -s TERM 259205
+
+
+Terminate this PCP recording session now?pmlogger: Recording session terminated, exiting
+
+Log finished Wed Jun  3 11:58:11 2020
+=== absolute folio name ===
+TrgI7O.localhost.0
+TrgI7Oa.localhost.0
+MKTEMP=TrgI7O
+host: ae4d06ec7160
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-259173/TrgI7O.ae4d06ec7160.log
+host: localhost
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-259173/TrgI7O.localhost.log
+host: ae4d06ec7160
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-259173/TrgI7Oa.ae4d06ec7160.log
+host: localhost
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-259173/TrgI7Oa.localhost.log
+
+sleeping ...
+
+host: ae4d06ec7160
+f_config: NULL f_ipc: 7 pid: 259380 status: -1
+logfile: /tmp/354-259173/TrgI7O.ae4d06ec7160.log
+host: localhost
+f_config: NULL f_ipc: 8 pid: 259379 status: -1
+logfile: /tmp/354-259173/TrgI7O.localhost.log
+host: ae4d06ec7160
+f_config: NULL f_ipc: 9 pid: 259378 status: -1
+logfile: /tmp/354-259173/TrgI7Oa.ae4d06ec7160.log
+host: localhost
+f_config: NULL f_ipc: 10 pid: 259377 status: -1
+logfile: /tmp/354-259173/TrgI7Oa.localhost.log
+
+send some control requests ...
+host: ae4d06ec7160
+ OFF
+host: localhost
+ DETACH
+host: ae4d06ec7160
+ STATUS
+host: localhost
+ close(fd_ipc)
+
+now stop 'em all ...
+host: ae4d06ec7160
+pmRecordControl(... OFF ...): Invalid argument
+host: localhost
+pmRecordControl(... OFF ...): Invalid argument
+host: ae4d06ec7160
+host: localhost
+pmRecordControl(... OFF ...): IPC protocol failure
+
+and again to get any exit status ...
+pmRecordControl( ... OFF ...): Invalid argument
+
+
+discover what's happened ...
+
+host: ae4d06ec7160
+f_config: NULL f_ipc: -1 pid: 259380 status: 0
+logfile: /tmp/354-259173/TrgI7O.ae4d06ec7160.log
+host: localhost
+f_config: NULL f_ipc: -1 pid: 259379 status: -1
+logfile: /tmp/354-259173/TrgI7O.localhost.log
+host: ae4d06ec7160
+f_config: NULL f_ipc: -1 pid: 259378 status: 0
+logfile: /tmp/354-259173/TrgI7Oa.ae4d06ec7160.log
+host: localhost
+f_config: NULL f_ipc: -1 pid: 259377 status: 0
+logfile: /tmp/354-259173/TrgI7Oa.localhost.log
+pmlogger processes:
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 11:27 ?        00:00:10 /bin/systemd
+root          23       1  0 11:27 ?        00:00:00 /lib/systemd/systemd-journald
+message+     125       1  0 11:27 ?        00:00:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         127       1  0 11:27 ?        00:00:00 /lib/systemd/systemd-logind
+root         129       1  0 11:27 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root        6639       1  0 11:27 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data    6641    6639  0 11:27 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data    6642    6639  0 11:27 ?        00:00:00 /usr/sbin/apache2 -k start
+avahi       7988       1  0 11:27 ?        00:00:00 avahi-daemon: running [ae4d06ec7160.local]
+avahi       7989    7988  0 11:27 ?        00:00:00 avahi-daemon: chroot helper
+root        8735       1  0 11:28 ?        00:00:00 /usr/sbin/cron -f
+Debian-+    9094       1  0 11:28 ?        00:00:00 /usr/sbin/exim4 -bd -q30m
+root       25250       1  0 11:29 ?        00:00:02 /usr/sbin/dockerd -H fd://
+root       25256   25250  0 11:29 ?        00:00:10 docker-containerd --config /var/run/docker/containerd/containerd.toml --log-level info
+root       41261       1  0 11:32 ?        00:00:00 /lib/systemd/systemd-machined
+root       41262       1  0 11:32 ?        00:00:00 /usr/sbin/libvirtd
+memcache   42983       1  0 11:32 ?        00:00:00 /usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1 -P /var/run/memcached/memcached.pid
+redis      46328       1  0 11:34 ?        00:00:02 /usr/bin/redis-server 127.0.0.1:6379
+root       46860       1  0 11:34 ?        00:00:00 /usr/sbin/smartd -n
+unbound    47684       1  0 11:34 ?        00:00:00 /usr/sbin/unbound -d
+zabbix     48485       1  0 11:34 ?        00:00:00 /usr/sbin/zabbix_agentd --foreground
+zabbix     48488   48485  0 11:34 ?        00:00:00 /usr/sbin/zabbix_agentd: collector [idle 1 sec]
+zabbix     48489   48485  0 11:34 ?        00:00:00 /usr/sbin/zabbix_agentd: listener #1 [waiting for connection]
+zabbix     48490   48485  0 11:34 ?        00:00:00 /usr/sbin/zabbix_agentd: listener #2 [waiting for connection]
+zabbix     48491   48485  0 11:34 ?        00:00:00 /usr/sbin/zabbix_agentd: listener #3 [waiting for connection]
+zabbix     48492   48485  0 11:34 ?        00:00:00 /usr/sbin/zabbix_agentd: active checks #1 [idle 1 sec]
+pcpbuild  244814       0  0 11:56 ?        00:00:00 bash -
+root      244820  244814  0 11:56 ?        00:00:00 sudo -i -u pcpqa ./check -TT -g sanity
+pcpbuild  244821  244814  0 11:56 ?        00:00:00 tee ./artifacts/test/test.log
+pcpqa     244822  244820  0 11:56 ?        00:00:00 /bin/sh ./check -TT -g sanity
+pcp       250232       1  0 11:56 ?        00:00:00 /usr/lib/pcp/bin/pmcd -T 3
+root      250235  250232  0 11:56 ?        00:00:00 /var/lib/pcp/pmdas/root/pmdaroot
+root      250236  250235  0 11:56 ?        00:00:00 /var/lib/pcp/pmdas/proc/pmdaproc -d 3
+root      250237  250235  0 11:56 ?        00:00:00 /var/lib/pcp/pmdas/xfs/pmdaxfs -d 11
+pcp       250238  250235  0 11:56 ?        00:00:00 /var/lib/pcp/pmdas/sample/pmdasample -d 29
+root      250239  250235  0 11:56 ?        00:00:00 /var/lib/pcp/pmdas/linux/pmdalinux
+root      250240  250235  0 11:56 ?        00:00:00 /var/lib/pcp/pmdas/kvm/pmdakvm -d 95
+pcp       250559       1  0 11:56 ?        00:00:00 /usr/lib/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M
+pcp       251510  250235  0 11:56 ?        00:00:00 /var/lib/pcp/pmdas/simple/pmdasimple -d 253
+pcpqa     259173  244822  0 11:58 ?        00:00:00 /bin/sh ./354
+pcpqa     259379       1  0 11:58 ?        00:00:00 pmlogger -x 7 -h localhost -l TrgI7O.localhost.log -c TrgI7O.localhost.config TrgI7O.localhost
+pcpqa     259406  259173  0 11:58 ?        00:00:00 ps -efw
+pcpqa     259407  259173  0 11:58 ?        00:00:00 tee -a /var/lib/pcp/testsuite/354.full
+pcpqa     259408  259173  0 11:58 ?        00:00:00 sed -n -e 1p -e /[p]mlogger.*-x/{ s/ -x [0-9][0-9]*/ -x N/ p }
+pcpqa     259409  259173  0 11:58 ?        00:00:00 /bin/sh ./354
+pcpqa     259410  259173  0 11:58 ?        00:00:00 tee /tmp/354-259173.tmp
+pcpqa     259411  259173  0 11:58 ?        00:00:00 sed -f /tmp/354-259173.sed
+pcpqa     259412  259173  0 11:58 ?        00:00:00 sort
+pcpqa     259413  259409  0 11:58 ?        00:00:00 /bin/sh ./354
+pmlogger pid: 259379
+=== MKTEMP.HOST.log ===
+Log for pmlogger on ae4d06ec7160 started Wed Jun  3 11:58:15 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs TrgI7O.ae4d06ec7160.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "ae4d06ec7160" via "ae4d06ec7160"
+Archive basename: TrgI7O.ae4d06ec7160
+
+Log finished Wed Jun  3 11:58:18 2020
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "/tmp/354-259173/foo" and the host "ae4d06ec7160" has been in progress for 3 seconds and in that time the pmlogger process has created an archive of 364 bytes.
+
+The application that launched pmlogger has terminated this PCP recording session.
+pmlogger: Recording session terminated, exiting
+
+Log finished Wed Jun  3 11:58:18 2020
+=== MKTEMP.localhost.log ===
+Log for pmlogger on ae4d06ec7160 started Wed Jun  3 11:58:15 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs TrgI7O.localhost.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "ae4d06ec7160" via "localhost"
+Archive basename: TrgI7O.localhost
+
+Log finished Wed Jun  3 11:58:19 2020
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "/tmp/354-259173/foo" and the host "ae4d06ec7160" has been in progress for 4 seconds and in that time the pmlogger process has created an archive of 364 bytes.
+
+The application that launched pmlogger has asked pmlogger to continue independently and the PCP archive will grow at the rate of 319.9 Kbytes per hour or 7678.1 Kbytes per day.
+
+At any time this pmlogger process may be terminated with the following command:
+  $ pmsignal -s TERM 259379
+pmlogger: Caught signal 15, exiting
+
+Log finished Wed Jun  3 11:58:25 2020
+=== MKTEMPa.HOST.log ===
+Log for pmlogger on ae4d06ec7160 started Wed Jun  3 11:58:15 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs TrgI7Oa.ae4d06ec7160.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "ae4d06ec7160" via "ae4d06ec7160"
+Archive basename: TrgI7Oa.ae4d06ec7160
+
+Log finished Wed Jun  3 11:58:20 2020
+
+Warning: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "/tmp/354-259173/foo" and the host "ae4d06ec7160" has been in progress for 5 seconds and in that time the pmlogger process has created an archive of 368 bytes.
+
+At any time this pmlogger process may be terminated with the following command:
+  $ pmsignal -s TERM 259378
+
+Log finished Wed Jun  3 11:58:22 2020
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "/tmp/354-259173/foo" and the host "ae4d06ec7160" has been in progress for 7 seconds and in that time the pmlogger process has created an archive of 368 bytes.
+
+The application that launched pmlogger has terminated this PCP recording session.
+pmlogger: Recording session terminated, exiting
+
+Log finished Wed Jun  3 11:58:22 2020
+=== MKTEMPa.localhost.log ===
+Log for pmlogger on ae4d06ec7160 started Wed Jun  3 11:58:15 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs TrgI7Oa.localhost.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "ae4d06ec7160" via "localhost"
+Archive basename: TrgI7Oa.localhost
+
+Log finished Wed Jun  3 11:58:21 2020
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "/tmp/354-259173/foo" and the host "ae4d06ec7160" has been in progress for 6 seconds and in that time the pmlogger process has created an archive of 364 bytes.
+
+The application that launched pmlogger has exited and you must decide if the PCP recording session should be terminated or continued.  If recording is continued the PCP archive will grow at the rate of 213.3 Kbytes per hour or 5118.8 Kbytes per day.
+
+At any time this pmlogger process may be terminated with the following command:
+  $ pmsignal -s TERM 259377
+
+
+Terminate this PCP recording session now?pmlogger: Recording session terminated, exiting
+
+Log finished Wed Jun  3 11:58:21 2020

@@ -1,0 +1,56 @@
+{
+  "uid" : "59228301f6cf8592",
+  "name" : "QA 112",
+  "fullName" : "QA #112 on fedora32-container",
+  "time" : {
+    "start" : 1591185210000,
+    "stop" : 1591185210000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 112\n\nnew PMNS exercises\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 112</p>\n<p>new PMNS exercises</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora32-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora32-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmns"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "sanity"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/2ea4ab4a52f966d5b8d5b4f530ae2a9f8a789320/qa/112",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/2ea4ab4a52f966d5b8d5b4f530ae2a9f8a789320/qa/112.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "59228301f6cf8592.json",
+  "parameterValues" : [ ]
+}
