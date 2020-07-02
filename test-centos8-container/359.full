@@ -1,0 +1,11 @@
+Performance Co-Pilot configuration on be2bd1543280:
+
+ platform: Linux be2bd1543280 5.3.0-1031-azure #32~18.04.1-Ubuntu SMP Mon Jun 22 15:27:23 UTC 2020 x86_64
+ hardware: 2 cpus, 2 disks, 1 node, 6927MB RAM
+ timezone: UTC
+ services: pmcd
+     pmcd: Version 5.2.0-1, 15 agents, 1 client
+     pmda: root pmcd proc pmproxy xfs sample sampledso linux nfsclient
+           mmv kvm jbd2 dm openmetrics simple
+ pmlogger: primary logger: /var/log/pcp/pmlogger/be2bd1543280/20200702.15.11-00
+     pmie: primary engine: /var/log/pcp/pmie/be2bd1543280/pmie.log

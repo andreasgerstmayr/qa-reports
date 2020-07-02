@@ -1,0 +1,21 @@
+log for archive 'a' ...
+Log for pmlogger on 6be63548ac51 started Thu Jul  2 15:21:23 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs /tmp/178-252687.a.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "6be63548ac51" via "local:"
+Archive basename: /tmp/178-252687.a
+pmlogger: Sample limit reached, exiting
+
+Log finished Thu Jul  2 15:21:37 2020
+
+log for archive 'b' ...
+Log for pmlogger on 6be63548ac51 started Thu Jul  2 15:21:23 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs /tmp/178-252687.b.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "6be63548ac51" via "local:"
+Archive basename: /tmp/178-252687.b
+pmlogger: Sample limit reached, exiting
+
+Log finished Thu Jul  2 15:21:29 2020

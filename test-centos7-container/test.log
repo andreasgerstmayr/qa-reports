@@ -1,6 +1,7 @@
-PMDA probe: pminfo -h 42db763f8d3e -f sample.milliseconds
-PMDA probe: pminfo -h 42db763f8d3e -f sampledso.milliseconds
-PMDA probe: pminfo -h 42db763f8d3e -f simple.numfetch
+Group "not_in_container" is empty or not defined; ignored
+PMDA probe: pminfo -h 9a3aa9c56903 -f sample.milliseconds
+PMDA probe: pminfo -h 9a3aa9c56903 -f sampledso.milliseconds
+PMDA probe: pminfo -h 9a3aa9c56903 -f simple.numfetch
 [0%] 001
 [1%] 002 0s ...
 [2%] 004
@@ -43,41 +44,7 @@ PMDA probe: pminfo -h 42db763f8d3e -f simple.numfetch
 [52%] 299
 [53%] 338
 [54%] 345
-[56%] 354 - output mismatch (see 354.out.bad)
-103a104,105
-> Log finished DATE
-> 
-122a125,126
-> Log finished DATE
-> 
-144a149,150
-> Log finished DATE
-> 
-154a161,162
-> Log finished DATE
-> 
-173a182,183
-> Log finished DATE
-> 
-291a302,303
-> Log finished DATE
-> 
-307a320,321
-> Log finished DATE
-> 
-326a341,342
-> Log finished DATE
-> 
-333a350,351
-> Log finished DATE
-> 
-348a367,368
-> 
-> Log finished DATE
-Check local PMCD is still alive ...
-PMDA probe: pminfo -h 42db763f8d3e -f sample.milliseconds
-PMDA probe: pminfo -h 42db763f8d3e -f sampledso.milliseconds
-PMDA probe: pminfo -h 42db763f8d3e -f simple.numfetch
+[56%] 354
 [57%] 359
 [58%] 369
 [60%] 385
@@ -110,5 +77,4 @@ PMDA probe: pminfo -h 42db763f8d3e -f simple.numfetch
 [96%] 1229
 [97%] 1274
 [98%] 1368
-Failures: 354
-Failed 1 of 75 tests
+Passed all 75 tests
