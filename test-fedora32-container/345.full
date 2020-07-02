@@ -1,0 +1,1013 @@
+
+===   sampledso.secret.foo.bar.grunt.five sampledso.secret.derived.eek.eight sampledso.secret.foo.bar.grunt ===
+sampledso.secret.foo.bar.grunt.five
+sampledso.secret.derived.eek.eight
+sampledso.secret.foo.bar.grunt.five
+sampledso.secret.foo.bar.grunt.snort.six
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+=== -h localhost  sampledso.secret.foo.bar.grunt.five sampledso.secret.derived.eek.eight sampledso.secret.foo.bar.grunt
+sampledso.secret.foo.bar.grunt.five
+sampledso.secret.derived.eek.eight
+sampledso.secret.foo.bar.grunt.five
+sampledso.secret.foo.bar.grunt.snort.six
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+--- -h localhost  diffs against baseline ---
+=== -L  sampledso.secret.foo.bar.grunt.five sampledso.secret.derived.eek.eight sampledso.secret.foo.bar.grunt
+sampledso.secret.foo.bar.grunt.five
+sampledso.secret.derived.eek.eight
+sampledso.secret.foo.bar.grunt.five
+sampledso.secret.foo.bar.grunt.snort.six
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+--- -L  diffs against baseline ---
+
+===  -m sampledso.secret.foo.bar.grunt.five sampledso.secret.derived.eek.eight sampledso.secret.foo.bar.grunt ===
+sampledso.secret.foo.bar.grunt.five PMID: 30.0.1005
+sampledso.secret.derived.eek.eight PMID: 511.0.3
+sampledso.secret.foo.bar.grunt.five PMID: 30.0.1005
+sampledso.secret.foo.bar.grunt.snort.six PMID: 30.0.1006
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven PMID: 30.0.1007
+=== -h localhost -m sampledso.secret.foo.bar.grunt.five sampledso.secret.derived.eek.eight sampledso.secret.foo.bar.grunt
+sampledso.secret.foo.bar.grunt.five PMID: 30.0.1005
+sampledso.secret.derived.eek.eight PMID: 511.0.3
+sampledso.secret.foo.bar.grunt.five PMID: 30.0.1005
+sampledso.secret.foo.bar.grunt.snort.six PMID: 30.0.1006
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven PMID: 30.0.1007
+--- -h localhost -m diffs against baseline ---
+=== -L -m sampledso.secret.foo.bar.grunt.five sampledso.secret.derived.eek.eight sampledso.secret.foo.bar.grunt
+sampledso.secret.foo.bar.grunt.five PMID: 30.0.1005
+sampledso.secret.derived.eek.eight PMID: 511.0.3
+sampledso.secret.foo.bar.grunt.five PMID: 30.0.1005
+sampledso.secret.foo.bar.grunt.snort.six PMID: 30.0.1006
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven PMID: 30.0.1007
+--- -L -m diffs against baseline ---
+
+===  -f sampledso.secret.foo.bar.grunt.five sampledso.secret.derived.eek.eight sampledso.secret.foo.bar.grunt ===
+
+sampledso.secret.foo.bar.grunt.five
+    value 5
+
+sampledso.secret.derived.eek.eight
+    value 8
+
+sampledso.secret.foo.bar.grunt.five
+    value 5
+
+sampledso.secret.foo.bar.grunt.snort.six
+    value 6
+
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+    value 7
+=== -h localhost -f sampledso.secret.foo.bar.grunt.five sampledso.secret.derived.eek.eight sampledso.secret.foo.bar.grunt
+
+sampledso.secret.foo.bar.grunt.five
+    value 5
+
+sampledso.secret.derived.eek.eight
+    value 8
+
+sampledso.secret.foo.bar.grunt.five
+    value 5
+
+sampledso.secret.foo.bar.grunt.snort.six
+    value 6
+
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+    value 7
+--- -h localhost -f diffs against baseline ---
+=== -L -f sampledso.secret.foo.bar.grunt.five sampledso.secret.derived.eek.eight sampledso.secret.foo.bar.grunt
+
+sampledso.secret.foo.bar.grunt.five
+    value 5
+
+sampledso.secret.derived.eek.eight
+    value 8
+
+sampledso.secret.foo.bar.grunt.five
+    value 5
+
+sampledso.secret.foo.bar.grunt.snort.six
+    value 6
+
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+    value 7
+--- -L -f diffs against baseline ---
+
+===   sampledso.secret.foo ===
+sampledso.secret.foo.bar.max.redirect
+sampledso.secret.foo.one
+sampledso.secret.foo.two
+sampledso.secret.foo.bar.three
+sampledso.secret.foo.bar.four
+sampledso.secret.foo.bar.grunt.five
+sampledso.secret.foo.bar.grunt.snort.six
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+=== -h localhost  sampledso.secret.foo
+sampledso.secret.foo.bar.max.redirect
+sampledso.secret.foo.one
+sampledso.secret.foo.two
+sampledso.secret.foo.bar.three
+sampledso.secret.foo.bar.four
+sampledso.secret.foo.bar.grunt.five
+sampledso.secret.foo.bar.grunt.snort.six
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+--- -h localhost  diffs against baseline ---
+=== -L  sampledso.secret.foo
+sampledso.secret.foo.bar.max.redirect
+sampledso.secret.foo.bar.three
+sampledso.secret.foo.bar.four
+sampledso.secret.foo.bar.grunt.five
+sampledso.secret.foo.bar.grunt.snort.six
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+sampledso.secret.foo.one
+sampledso.secret.foo.two
+--- -L  diffs against baseline ---
+
+===  -m sampledso.secret.foo ===
+sampledso.secret.foo.bar.max.redirect PMID: 2.4.1
+sampledso.secret.foo.one PMID: 30.0.1001
+sampledso.secret.foo.two PMID: 30.0.1002
+sampledso.secret.foo.bar.three PMID: 30.0.1003
+sampledso.secret.foo.bar.four PMID: 30.0.1004
+sampledso.secret.foo.bar.grunt.five PMID: 30.0.1005
+sampledso.secret.foo.bar.grunt.snort.six PMID: 30.0.1006
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven PMID: 30.0.1007
+=== -h localhost -m sampledso.secret.foo
+sampledso.secret.foo.bar.max.redirect PMID: 2.4.1
+sampledso.secret.foo.one PMID: 30.0.1001
+sampledso.secret.foo.two PMID: 30.0.1002
+sampledso.secret.foo.bar.three PMID: 30.0.1003
+sampledso.secret.foo.bar.four PMID: 30.0.1004
+sampledso.secret.foo.bar.grunt.five PMID: 30.0.1005
+sampledso.secret.foo.bar.grunt.snort.six PMID: 30.0.1006
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven PMID: 30.0.1007
+--- -h localhost -m diffs against baseline ---
+=== -L -m sampledso.secret.foo
+sampledso.secret.foo.bar.max.redirect PMID: 2.4.1
+sampledso.secret.foo.bar.three PMID: 30.0.1003
+sampledso.secret.foo.bar.four PMID: 30.0.1004
+sampledso.secret.foo.bar.grunt.five PMID: 30.0.1005
+sampledso.secret.foo.bar.grunt.snort.six PMID: 30.0.1006
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven PMID: 30.0.1007
+sampledso.secret.foo.one PMID: 30.0.1001
+sampledso.secret.foo.two PMID: 30.0.1002
+--- -L -m diffs against baseline ---
+
+===  -f sampledso.secret.foo ===
+
+sampledso.secret.foo.bar.max.redirect
+    inst [1 or "root"] value 0
+    inst [2 or "pmcd"] value 0
+    inst [3 or "proc"] value 0
+    inst [4 or "pmproxy"] value 0
+    inst [11 or "xfs"] value 0
+    inst [29 or "sample"] value 0
+    inst [30 or "sampledso"] value 0
+    inst [60 or "linux"] value 0
+    inst [62 or "nfsclient"] value 0
+    inst [70 or "mmv"] value 0
+    inst [95 or "kvm"] value 0
+    inst [122 or "jbd2"] value 0
+    inst [129 or "dm"] value 0
+    inst [144 or "openmetrics"] value 0
+    inst [253 or "simple"] value 0
+
+sampledso.secret.foo.one
+    value 1
+
+sampledso.secret.foo.two
+    value 2
+
+sampledso.secret.foo.bar.three
+    value 3
+
+sampledso.secret.foo.bar.four
+    value 4
+
+sampledso.secret.foo.bar.grunt.five
+    value 5
+
+sampledso.secret.foo.bar.grunt.snort.six
+    value 6
+
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+    value 7
+=== -h localhost -f sampledso.secret.foo
+
+sampledso.secret.foo.bar.max.redirect
+    inst [1 or "root"] value 0
+    inst [2 or "pmcd"] value 0
+    inst [3 or "proc"] value 0
+    inst [4 or "pmproxy"] value 0
+    inst [11 or "xfs"] value 0
+    inst [29 or "sample"] value 0
+    inst [30 or "sampledso"] value 0
+    inst [60 or "linux"] value 0
+    inst [62 or "nfsclient"] value 0
+    inst [70 or "mmv"] value 0
+    inst [95 or "kvm"] value 0
+    inst [122 or "jbd2"] value 0
+    inst [129 or "dm"] value 0
+    inst [144 or "openmetrics"] value 0
+    inst [253 or "simple"] value 0
+
+sampledso.secret.foo.one
+    value 1
+
+sampledso.secret.foo.two
+    value 2
+
+sampledso.secret.foo.bar.three
+    value 3
+
+sampledso.secret.foo.bar.four
+    value 4
+
+sampledso.secret.foo.bar.grunt.five
+    value 5
+
+sampledso.secret.foo.bar.grunt.snort.six
+    value 6
+
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+    value 7
+--- -h localhost -f diffs against baseline ---
+=== -L -f sampledso.secret.foo
+sampledso.secret.foo.bar.max.redirect: pmLookupDesc: No PMCD agent for domain of request
+
+sampledso.secret.foo.bar.three
+    value 3
+
+sampledso.secret.foo.bar.four
+    value 4
+
+sampledso.secret.foo.bar.grunt.five
+    value 5
+
+sampledso.secret.foo.bar.grunt.snort.six
+    value 6
+
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+    value 7
+
+sampledso.secret.foo.one
+    value 1
+
+sampledso.secret.foo.two
+    value 2
+--- -L -f diffs against baseline ---
+- baseline output
++ -L -f output
+@@ -9,7 +9,7 @@
+ sampledso.secret.foo.bar.grunt.five
+ sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+ sampledso.secret.foo.bar.grunt.snort.six
+-sampledso.secret.foo.bar.max.redirect
++sampledso.secret.foo.bar.max.redirect: pmLookupDesc: No PMCD agent for domain of request
+ sampledso.secret.foo.bar.three
+ sampledso.secret.foo.one
+ sampledso.secret.foo.two
+
+===   sampledso.secret ===
+sampledso.secret.foo.bar.max.redirect
+sampledso.secret.bar
+sampledso.secret.foo.one
+sampledso.secret.foo.two
+sampledso.secret.foo.bar.three
+sampledso.secret.foo.bar.four
+sampledso.secret.foo.bar.grunt.five
+sampledso.secret.foo.bar.grunt.snort.six
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+sampledso.secret.derived.eek.eight
+=== -h localhost  sampledso.secret
+sampledso.secret.foo.bar.max.redirect
+sampledso.secret.bar
+sampledso.secret.foo.one
+sampledso.secret.foo.two
+sampledso.secret.foo.bar.three
+sampledso.secret.foo.bar.four
+sampledso.secret.foo.bar.grunt.five
+sampledso.secret.foo.bar.grunt.snort.six
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+sampledso.secret.derived.eek.eight
+--- -h localhost  diffs against baseline ---
+=== -L  sampledso.secret
+sampledso.secret.foo.bar.max.redirect
+sampledso.secret.foo.bar.three
+sampledso.secret.foo.bar.four
+sampledso.secret.foo.bar.grunt.five
+sampledso.secret.foo.bar.grunt.snort.six
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+sampledso.secret.foo.one
+sampledso.secret.foo.two
+sampledso.secret.bar
+sampledso.secret.derived.eek.eight
+--- -L  diffs against baseline ---
+
+===  -m sampledso.secret ===
+sampledso.secret.foo.bar.max.redirect PMID: 2.4.1
+sampledso.secret.bar PMID: 30.0.1000
+sampledso.secret.foo.one PMID: 30.0.1001
+sampledso.secret.foo.two PMID: 30.0.1002
+sampledso.secret.foo.bar.three PMID: 30.0.1003
+sampledso.secret.foo.bar.four PMID: 30.0.1004
+sampledso.secret.foo.bar.grunt.five PMID: 30.0.1005
+sampledso.secret.foo.bar.grunt.snort.six PMID: 30.0.1006
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven PMID: 30.0.1007
+sampledso.secret.derived.eek.eight PMID: 511.0.3
+=== -h localhost -m sampledso.secret
+sampledso.secret.foo.bar.max.redirect PMID: 2.4.1
+sampledso.secret.bar PMID: 30.0.1000
+sampledso.secret.foo.one PMID: 30.0.1001
+sampledso.secret.foo.two PMID: 30.0.1002
+sampledso.secret.foo.bar.three PMID: 30.0.1003
+sampledso.secret.foo.bar.four PMID: 30.0.1004
+sampledso.secret.foo.bar.grunt.five PMID: 30.0.1005
+sampledso.secret.foo.bar.grunt.snort.six PMID: 30.0.1006
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven PMID: 30.0.1007
+sampledso.secret.derived.eek.eight PMID: 511.0.3
+--- -h localhost -m diffs against baseline ---
+=== -L -m sampledso.secret
+sampledso.secret.foo.bar.max.redirect PMID: 2.4.1
+sampledso.secret.foo.bar.three PMID: 30.0.1003
+sampledso.secret.foo.bar.four PMID: 30.0.1004
+sampledso.secret.foo.bar.grunt.five PMID: 30.0.1005
+sampledso.secret.foo.bar.grunt.snort.six PMID: 30.0.1006
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven PMID: 30.0.1007
+sampledso.secret.foo.one PMID: 30.0.1001
+sampledso.secret.foo.two PMID: 30.0.1002
+sampledso.secret.bar PMID: 30.0.1000
+sampledso.secret.derived.eek.eight PMID: 511.0.3
+--- -L -m diffs against baseline ---
+
+===  -f sampledso.secret ===
+
+sampledso.secret.foo.bar.max.redirect
+    inst [1 or "root"] value 0
+    inst [2 or "pmcd"] value 0
+    inst [3 or "proc"] value 0
+    inst [4 or "pmproxy"] value 0
+    inst [11 or "xfs"] value 0
+    inst [29 or "sample"] value 0
+    inst [30 or "sampledso"] value 0
+    inst [60 or "linux"] value 0
+    inst [62 or "nfsclient"] value 0
+    inst [70 or "mmv"] value 0
+    inst [95 or "kvm"] value 0
+    inst [122 or "jbd2"] value 0
+    inst [129 or "dm"] value 0
+    inst [144 or "openmetrics"] value 0
+    inst [253 or "simple"] value 0
+
+sampledso.secret.bar
+    value "foo"
+
+sampledso.secret.foo.one
+    value 1
+
+sampledso.secret.foo.two
+    value 2
+
+sampledso.secret.foo.bar.three
+    value 3
+
+sampledso.secret.foo.bar.four
+    value 4
+
+sampledso.secret.foo.bar.grunt.five
+    value 5
+
+sampledso.secret.foo.bar.grunt.snort.six
+    value 6
+
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+    value 7
+
+sampledso.secret.derived.eek.eight
+    value 8
+=== -h localhost -f sampledso.secret
+
+sampledso.secret.foo.bar.max.redirect
+    inst [1 or "root"] value 0
+    inst [2 or "pmcd"] value 0
+    inst [3 or "proc"] value 0
+    inst [4 or "pmproxy"] value 0
+    inst [11 or "xfs"] value 0
+    inst [29 or "sample"] value 0
+    inst [30 or "sampledso"] value 0
+    inst [60 or "linux"] value 0
+    inst [62 or "nfsclient"] value 0
+    inst [70 or "mmv"] value 0
+    inst [95 or "kvm"] value 0
+    inst [122 or "jbd2"] value 0
+    inst [129 or "dm"] value 0
+    inst [144 or "openmetrics"] value 0
+    inst [253 or "simple"] value 0
+
+sampledso.secret.bar
+    value "foo"
+
+sampledso.secret.foo.one
+    value 1
+
+sampledso.secret.foo.two
+    value 2
+
+sampledso.secret.foo.bar.three
+    value 3
+
+sampledso.secret.foo.bar.four
+    value 4
+
+sampledso.secret.foo.bar.grunt.five
+    value 5
+
+sampledso.secret.foo.bar.grunt.snort.six
+    value 6
+
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+    value 7
+
+sampledso.secret.derived.eek.eight
+    value 8
+--- -h localhost -f diffs against baseline ---
+=== -L -f sampledso.secret
+sampledso.secret.foo.bar.max.redirect: pmLookupDesc: No PMCD agent for domain of request
+
+sampledso.secret.foo.bar.three
+    value 3
+
+sampledso.secret.foo.bar.four
+    value 4
+
+sampledso.secret.foo.bar.grunt.five
+    value 5
+
+sampledso.secret.foo.bar.grunt.snort.six
+    value 6
+
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+    value 7
+
+sampledso.secret.foo.one
+    value 1
+
+sampledso.secret.foo.two
+    value 2
+
+sampledso.secret.bar
+    value "foo"
+
+sampledso.secret.derived.eek.eight
+    value 8
+--- -L -f diffs against baseline ---
+- baseline output
++ -L -f output
+@@ -13,7 +13,7 @@
+ sampledso.secret.foo.bar.grunt.five
+ sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+ sampledso.secret.foo.bar.grunt.snort.six
+-sampledso.secret.foo.bar.max.redirect
++sampledso.secret.foo.bar.max.redirect: pmLookupDesc: No PMCD agent for domain of request
+ sampledso.secret.foo.bar.three
+ sampledso.secret.foo.one
+ sampledso.secret.foo.two
+
+===   sampledso ===
+sampledso.control
+sampledso.daemon_pid
+sampledso.seconds
+sampledso.milliseconds
+sampledso.load
+sampledso.colour
+sampledso.darkness
+sampledso.bin
+sampledso.bucket
+sampledso.part_bin
+sampledso.bogus_bin
+sampledso.drift
+sampledso.step
+sampledso.step_counter
+sampledso.mirage
+sampledso.mirage_longlong
+sampledso.write_me
+sampledso.lights
+sampledso.magnitude
+sampledso.sysinfo
+sampledso.pdu
+sampledso.recv_pdu
+sampledso.xmit_pdu
+sampledso.noinst
+sampledso.needprofile
+sampledso.not_ready
+sampledso.rapid
+sampledso.error_code
+sampledso.error_check
+sampledso.bigid
+sampledso.byte_ctr
+sampledso.byte_rate
+sampledso.kbyte_ctr
+sampledso.kbyte_rate
+sampledso.byte_rate_perhour
+sampledso.datasize
+sampledso.secret.foo.bar.max.redirect
+sampledso.secret.bar
+sampledso.secret.foo.one
+sampledso.secret.foo.two
+sampledso.secret.foo.bar.three
+sampledso.secret.foo.bar.four
+sampledso.secret.foo.bar.grunt.five
+sampledso.secret.foo.bar.grunt.snort.six
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+sampledso.ghosts.visible
+sampledso.long.one
+sampledso.long.ten
+sampledso.long.hundred
+sampledso.long.million
+sampledso.long.write_me
+sampledso.long.bin
+sampledso.long.bin_ctr
+sampledso.ulong.one
+sampledso.ulong.ten
+sampledso.ulong.hundred
+sampledso.ulong.million
+sampledso.ulong.write_me
+sampledso.ulong.bin
+sampledso.ulong.bin_ctr
+sampledso.ulong.count.base
+sampledso.ulong.count.deca
+sampledso.ulong.count.hecto
+sampledso.ulong.count.kilo
+sampledso.ulong.count.mega
+sampledso.longlong.one
+sampledso.longlong.ten
+sampledso.longlong.hundred
+sampledso.longlong.million
+sampledso.longlong.write_me
+sampledso.longlong.bin
+sampledso.longlong.bin_ctr
+sampledso.ulonglong.one
+sampledso.ulonglong.ten
+sampledso.ulonglong.hundred
+sampledso.ulonglong.million
+sampledso.ulonglong.write_me
+sampledso.ulonglong.bin
+sampledso.ulonglong.bin_ctr
+sampledso.float.one
+sampledso.float.ten
+sampledso.float.hundred
+sampledso.float.million
+sampledso.float.write_me
+sampledso.float.bin
+sampledso.float.bin_ctr
+sampledso.double.one
+sampledso.double.ten
+sampledso.double.hundred
+sampledso.double.million
+sampledso.double.write_me
+sampledso.double.bin
+sampledso.double.bin_ctr
+sampledso.string.null
+sampledso.string.hullo
+sampledso.string.write_me
+sampledso.string.bin
+sampledso.aggregate.null
+sampledso.aggregate.hullo
+sampledso.aggregate.write_me
+sampledso.hordes.one
+sampledso.hordes.two
+sampledso.bad.unknown
+sampledso.bad.nosupport
+sampledso.bad.novalues
+sampledso.bad.fetch.again
+sampledso.wrap.long
+sampledso.wrap.ulong
+sampledso.wrap.longlong
+sampledso.wrap.ulonglong
+sampledso.dodgey.control
+sampledso.dodgey.value
+sampledso.dynamic.counter
+sampledso.dynamic.discrete
+sampledso.dynamic.instant
+sampledso.dynamic.meta.metric
+sampledso.dynamic.meta.pmdesc.type
+sampledso.dynamic.meta.pmdesc.indom
+sampledso.dynamic.meta.pmdesc.sem
+sampledso.dynamic.meta.pmdesc.units
+sampledso.scale_step.bytes_up
+sampledso.scale_step.bytes_down
+sampledso.scale_step.count_up
+sampledso.scale_step.count_down
+sampledso.scale_step.time_up_secs
+sampledso.scale_step.time_up_nanosecs
+sampledso.scale_step.none_up
+sampledso.const_rate.value
+sampledso.const_rate.gradient
+sampledso.many.count
+sampledso.many.int
+sampledso.scramble.version
+sampledso.scramble.bin
+sampledso.percontext.pdu
+sampledso.percontext.recv_pdu
+sampledso.percontext.xmit_pdu
+sampledso.percontext.control.ctx
+sampledso.percontext.control.active
+sampledso.percontext.control.start
+sampledso.percontext.control.end
+sampledso.event.records
+sampledso.event.highres_records
+sampledso.event.no_indom_records
+sampledso.event.reset
+sampledso.event.reset_highres
+sampledso.event.type
+sampledso.event.param_32
+sampledso.event.param_u32
+sampledso.event.param_64
+sampledso.event.param_u64
+sampledso.event.param_float
+sampledso.event.param_double
+sampledso.event.param_string
+sampledso.event.param_aggregate
+sampledso.dupnames.daemon_pid
+sampledso.dupnames.pid_daemon
+sampledso.dupnames.two.seconds
+sampledso.dupnames.two.bin
+sampledso.dupnames.two.write_me
+sampledso.dupnames.two.lights
+sampledso.dupnames.two.float.ten
+sampledso.dupnames.two.double.ten
+sampledso.dupnames.three.bin
+sampledso.dupnames.three.write_me
+sampledso.negative.ctr.m_32
+sampledso.negative.ctr.m_64
+sampledso.negative.ctr.m_float
+sampledso.negative.ctr.m_double
+sampledso.negative.instant.m_32
+sampledso.negative.instant.m_64
+sampledso.negative.instant.m_float
+sampledso.negative.instant.m_double
+sampledso.negative.discrete.m_32
+sampledso.negative.discrete.m_64
+sampledso.negative.discrete.m_float
+sampledso.negative.discrete.m_double
+sampledso.controller.mirage
+sampledso.secret.derived.eek.eight
+=== -h localhost  sampledso
+sampledso.control
+sampledso.daemon_pid
+sampledso.seconds
+sampledso.milliseconds
+sampledso.load
+sampledso.colour
+sampledso.darkness
+sampledso.bin
+sampledso.bucket
+sampledso.part_bin
+sampledso.bogus_bin
+sampledso.drift
+sampledso.step
+sampledso.step_counter
+sampledso.mirage
+sampledso.mirage_longlong
+sampledso.write_me
+sampledso.lights
+sampledso.magnitude
+sampledso.sysinfo
+sampledso.pdu
+sampledso.recv_pdu
+sampledso.xmit_pdu
+sampledso.noinst
+sampledso.needprofile
+sampledso.not_ready
+sampledso.rapid
+sampledso.error_code
+sampledso.error_check
+sampledso.bigid
+sampledso.byte_ctr
+sampledso.byte_rate
+sampledso.kbyte_ctr
+sampledso.kbyte_rate
+sampledso.byte_rate_perhour
+sampledso.datasize
+sampledso.secret.foo.bar.max.redirect
+sampledso.secret.bar
+sampledso.secret.foo.one
+sampledso.secret.foo.two
+sampledso.secret.foo.bar.three
+sampledso.secret.foo.bar.four
+sampledso.secret.foo.bar.grunt.five
+sampledso.secret.foo.bar.grunt.snort.six
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+sampledso.ghosts.visible
+sampledso.long.one
+sampledso.long.ten
+sampledso.long.hundred
+sampledso.long.million
+sampledso.long.write_me
+sampledso.long.bin
+sampledso.long.bin_ctr
+sampledso.ulong.one
+sampledso.ulong.ten
+sampledso.ulong.hundred
+sampledso.ulong.million
+sampledso.ulong.write_me
+sampledso.ulong.bin
+sampledso.ulong.bin_ctr
+sampledso.ulong.count.base
+sampledso.ulong.count.deca
+sampledso.ulong.count.hecto
+sampledso.ulong.count.kilo
+sampledso.ulong.count.mega
+sampledso.longlong.one
+sampledso.longlong.ten
+sampledso.longlong.hundred
+sampledso.longlong.million
+sampledso.longlong.write_me
+sampledso.longlong.bin
+sampledso.longlong.bin_ctr
+sampledso.ulonglong.one
+sampledso.ulonglong.ten
+sampledso.ulonglong.hundred
+sampledso.ulonglong.million
+sampledso.ulonglong.write_me
+sampledso.ulonglong.bin
+sampledso.ulonglong.bin_ctr
+sampledso.float.one
+sampledso.float.ten
+sampledso.float.hundred
+sampledso.float.million
+sampledso.float.write_me
+sampledso.float.bin
+sampledso.float.bin_ctr
+sampledso.double.one
+sampledso.double.ten
+sampledso.double.hundred
+sampledso.double.million
+sampledso.double.write_me
+sampledso.double.bin
+sampledso.double.bin_ctr
+sampledso.string.null
+sampledso.string.hullo
+sampledso.string.write_me
+sampledso.string.bin
+sampledso.aggregate.null
+sampledso.aggregate.hullo
+sampledso.aggregate.write_me
+sampledso.hordes.one
+sampledso.hordes.two
+sampledso.bad.unknown
+sampledso.bad.nosupport
+sampledso.bad.novalues
+sampledso.bad.fetch.again
+sampledso.wrap.long
+sampledso.wrap.ulong
+sampledso.wrap.longlong
+sampledso.wrap.ulonglong
+sampledso.dodgey.control
+sampledso.dodgey.value
+sampledso.dynamic.counter
+sampledso.dynamic.discrete
+sampledso.dynamic.instant
+sampledso.dynamic.meta.metric
+sampledso.dynamic.meta.pmdesc.type
+sampledso.dynamic.meta.pmdesc.indom
+sampledso.dynamic.meta.pmdesc.sem
+sampledso.dynamic.meta.pmdesc.units
+sampledso.scale_step.bytes_up
+sampledso.scale_step.bytes_down
+sampledso.scale_step.count_up
+sampledso.scale_step.count_down
+sampledso.scale_step.time_up_secs
+sampledso.scale_step.time_up_nanosecs
+sampledso.scale_step.none_up
+sampledso.const_rate.value
+sampledso.const_rate.gradient
+sampledso.many.count
+sampledso.many.int
+sampledso.scramble.version
+sampledso.scramble.bin
+sampledso.percontext.pdu
+sampledso.percontext.recv_pdu
+sampledso.percontext.xmit_pdu
+sampledso.percontext.control.ctx
+sampledso.percontext.control.active
+sampledso.percontext.control.start
+sampledso.percontext.control.end
+sampledso.event.records
+sampledso.event.highres_records
+sampledso.event.no_indom_records
+sampledso.event.reset
+sampledso.event.reset_highres
+sampledso.event.type
+sampledso.event.param_32
+sampledso.event.param_u32
+sampledso.event.param_64
+sampledso.event.param_u64
+sampledso.event.param_float
+sampledso.event.param_double
+sampledso.event.param_string
+sampledso.event.param_aggregate
+sampledso.dupnames.daemon_pid
+sampledso.dupnames.pid_daemon
+sampledso.dupnames.two.seconds
+sampledso.dupnames.two.bin
+sampledso.dupnames.two.write_me
+sampledso.dupnames.two.lights
+sampledso.dupnames.two.float.ten
+sampledso.dupnames.two.double.ten
+sampledso.dupnames.three.bin
+sampledso.dupnames.three.write_me
+sampledso.negative.ctr.m_32
+sampledso.negative.ctr.m_64
+sampledso.negative.ctr.m_float
+sampledso.negative.ctr.m_double
+sampledso.negative.instant.m_32
+sampledso.negative.instant.m_64
+sampledso.negative.instant.m_float
+sampledso.negative.instant.m_double
+sampledso.negative.discrete.m_32
+sampledso.negative.discrete.m_64
+sampledso.negative.discrete.m_float
+sampledso.negative.discrete.m_double
+sampledso.controller.mirage
+sampledso.secret.derived.eek.eight
+--- -h localhost  diffs against baseline ---
+=== -L  sampledso
+sampledso.control
+sampledso.daemon_pid
+sampledso.seconds
+sampledso.milliseconds
+sampledso.load
+sampledso.colour
+sampledso.darkness
+sampledso.bin
+sampledso.bucket
+sampledso.part_bin
+sampledso.bogus_bin
+sampledso.drift
+sampledso.step
+sampledso.step_counter
+sampledso.mirage
+sampledso.mirage_longlong
+sampledso.write_me
+sampledso.lights
+sampledso.magnitude
+sampledso.sysinfo
+sampledso.pdu
+sampledso.recv_pdu
+sampledso.xmit_pdu
+sampledso.noinst
+sampledso.needprofile
+sampledso.not_ready
+sampledso.rapid
+sampledso.error_code
+sampledso.error_check
+sampledso.bigid
+sampledso.byte_ctr
+sampledso.byte_rate
+sampledso.kbyte_ctr
+sampledso.kbyte_rate
+sampledso.byte_rate_perhour
+sampledso.datasize
+sampledso.secret.foo.bar.max.redirect
+sampledso.secret.foo.bar.three
+sampledso.secret.foo.bar.four
+sampledso.secret.foo.bar.grunt.five
+sampledso.secret.foo.bar.grunt.snort.six
+sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
+sampledso.secret.foo.one
+sampledso.secret.foo.two
+sampledso.secret.bar
+sampledso.secret.derived.eek.eight
+sampledso.ghosts.visible
+sampledso.long.one
+sampledso.long.ten
+sampledso.long.hundred
+sampledso.long.million
+sampledso.long.write_me
+sampledso.long.bin
+sampledso.long.bin_ctr
+sampledso.ulong.one
+sampledso.ulong.ten
+sampledso.ulong.hundred
+sampledso.ulong.million
+sampledso.ulong.write_me
+sampledso.ulong.bin
+sampledso.ulong.bin_ctr
+sampledso.ulong.count.base
+sampledso.ulong.count.deca
+sampledso.ulong.count.hecto
+sampledso.ulong.count.kilo
+sampledso.ulong.count.mega
+sampledso.longlong.one
+sampledso.longlong.ten
+sampledso.longlong.hundred
+sampledso.longlong.million
+sampledso.longlong.write_me
+sampledso.longlong.bin
+sampledso.longlong.bin_ctr
+sampledso.ulonglong.one
+sampledso.ulonglong.ten
+sampledso.ulonglong.hundred
+sampledso.ulonglong.million
+sampledso.ulonglong.write_me
+sampledso.ulonglong.bin
+sampledso.ulonglong.bin_ctr
+sampledso.float.one
+sampledso.float.ten
+sampledso.float.hundred
+sampledso.float.million
+sampledso.float.write_me
+sampledso.float.bin
+sampledso.float.bin_ctr
+sampledso.double.one
+sampledso.double.ten
+sampledso.double.hundred
+sampledso.double.million
+sampledso.double.write_me
+sampledso.double.bin
+sampledso.double.bin_ctr
+sampledso.string.null
+sampledso.string.hullo
+sampledso.string.write_me
+sampledso.string.bin
+sampledso.aggregate.null
+sampledso.aggregate.hullo
+sampledso.aggregate.write_me
+sampledso.hordes.one
+sampledso.hordes.two
+sampledso.bad.unknown
+sampledso.bad.nosupport
+sampledso.bad.novalues
+sampledso.bad.fetch.again
+sampledso.wrap.long
+sampledso.wrap.ulong
+sampledso.wrap.longlong
+sampledso.wrap.ulonglong
+sampledso.dodgey.control
+sampledso.dodgey.value
+sampledso.dynamic.counter
+sampledso.dynamic.discrete
+sampledso.dynamic.instant
+sampledso.dynamic.meta.metric
+sampledso.dynamic.meta.pmdesc.type
+sampledso.dynamic.meta.pmdesc.indom
+sampledso.dynamic.meta.pmdesc.sem
+sampledso.dynamic.meta.pmdesc.units
+sampledso.scale_step.bytes_up
+sampledso.scale_step.bytes_down
+sampledso.scale_step.count_up
+sampledso.scale_step.count_down
+sampledso.scale_step.time_up_secs
+sampledso.scale_step.time_up_nanosecs
+sampledso.scale_step.none_up
+sampledso.const_rate.value
+sampledso.const_rate.gradient
+sampledso.many.count
+sampledso.many.int
+sampledso.scramble.version
+sampledso.scramble.bin
+sampledso.percontext.pdu
+sampledso.percontext.recv_pdu
+sampledso.percontext.xmit_pdu
+sampledso.percontext.control.ctx
+sampledso.percontext.control.active
+sampledso.percontext.control.start
+sampledso.percontext.control.end
+sampledso.event.records
+sampledso.event.highres_records
+sampledso.event.no_indom_records
+sampledso.event.reset
+sampledso.event.reset_highres
+sampledso.event.type
+sampledso.event.param_32
+sampledso.event.param_u32
+sampledso.event.param_64
+sampledso.event.param_u64
+sampledso.event.param_float
+sampledso.event.param_double
+sampledso.event.param_string
+sampledso.event.param_aggregate
+sampledso.dupnames.daemon_pid
+sampledso.dupnames.pid_daemon
+sampledso.dupnames.two.seconds
+sampledso.dupnames.two.bin
+sampledso.dupnames.two.write_me
+sampledso.dupnames.two.lights
+sampledso.dupnames.two.float.ten
+sampledso.dupnames.two.double.ten
+sampledso.dupnames.three.bin
+sampledso.dupnames.three.write_me
+sampledso.negative.ctr.m_32
+sampledso.negative.ctr.m_64
+sampledso.negative.ctr.m_float
+sampledso.negative.ctr.m_double
+sampledso.negative.instant.m_32
+sampledso.negative.instant.m_64
+sampledso.negative.instant.m_float
+sampledso.negative.instant.m_double
+sampledso.negative.discrete.m_32
+sampledso.negative.discrete.m_64
+sampledso.negative.discrete.m_float
+sampledso.negative.discrete.m_double
+sampledso.controller.mirage
+--- -L  diffs against baseline ---

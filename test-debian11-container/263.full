@@ -1,0 +1,1598 @@
+
+aggr.max32
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+
+aggr.min32
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+
+aggr.maxu32_minu32
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+
+aggr.max64_min64
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+
+aggr.maxu64_minu64
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+
+aggr.maxuf_minuf
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+
+aggr.maxud_minud
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+
+aggr.count32
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+
+aggr.avg32
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+
+aggr.max32_x
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+
+aggr.min32_x
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+
+aggr.sum32
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+
+aggr.avgu32
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: Kbyte
+
+aggr.countu32
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+
+aggr.maxu32
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: Kbyte
+
+aggr.minu32
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: Kbyte
+
+aggr.sumu32
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: counter  Units: Kbyte
+
+aggr.avgf
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+
+aggr.countf
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+
+aggr.maxf
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+
+aggr.minf
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+
+aggr.sumf
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+
+aggr.avg64
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: Kbyte
+
+aggr.count64
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+
+aggr.max64
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: Kbyte
+
+aggr.min64
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: Kbyte
+
+aggr.sum64
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: counter  Units: Kbyte
+
+aggr.avgu64
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: Kbyte
+
+aggr.countu64
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+
+aggr.maxu64
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: Kbyte
+
+aggr.minu64
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: Kbyte
+
+aggr.sumu64
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: counter  Units: Kbyte
+
+aggr.avgd
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+
+aggr.countd
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+
+aggr.maxd
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+
+aggr.mind
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+
+aggr.sumd
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+
+aggr.count_err
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+
+aggr.sum_err
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+
+aggr.countblob
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+
+aggr.count_noinst
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+pmRegisterDerived: name="event.flags" expr="anon(PM_TYPE_U32)"
+derive_lex() -> type=L_ANON "anon"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "PM_TYPE_U32"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[0] event.flags = anon(PM_TYPE_U32)
+Derived metric expr dump from 0x55708e950eb0...
+expr node 0x55708e950eb0 type=ANON left=0x55708e950f00 right=(nil) save_last=0
+expr node 0x55708e950f00 type=INTEGER left=(nil) right=(nil) save_last=0 [PM_TYPE_U32] master=1
+pmRegisterDerived: name="event.missed" expr="anon(PM_TYPE_U32)"
+derive_lex() -> type=L_ANON "anon"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "PM_TYPE_U32"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[1] event.missed = anon(PM_TYPE_U32)
+Derived metric expr dump from 0x55708e950f70...
+expr node 0x55708e950f70 type=ANON left=0x55708e950fc0 right=(nil) save_last=0
+expr node 0x55708e950fc0 type=INTEGER left=(nil) right=(nil) save_last=0 [PM_TYPE_U32] master=1
+Derived metric initialization from $PCP_DERIVED_CONFIG
+pmLoadDerivedConfig("/tmp/263-256021.config")
+pmRegisterDerived: name="aggr.max32" expr="max(sample.bin)"
+derive_lex() -> type=L_MAX "max"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.bin"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[2] aggr.max32 = max(sample.bin)
+Derived metric expr dump from 0x55708e951150...
+expr node 0x55708e951150 type=MAX left=0x55708e951200 right=(nil) save_last=0
+expr node 0x55708e951200 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=1
+pmRegisterDerived: name="aggr.min32" expr="min(sample.long.hundred)"
+derive_lex() -> type=L_MIN "min"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.long.hundred"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[3] aggr.min32 = min(sample.long.hundred)
+Derived metric expr dump from 0x55708e951010...
+expr node 0x55708e951010 type=MIN left=0x55708e951300 right=(nil) save_last=0
+expr node 0x55708e951300 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.hundred] master=1
+pmRegisterDerived: name="aggr.maxu32_minu32" expr="max(sample.const_rate.value) - min(sample.const_rate.value)"
+derive_lex() -> type=L_MAX "max"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.const_rate.value"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_MINUS "-"
+derive_lex() -> type=L_MIN "min"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.const_rate.value"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[4] aggr.maxu32_minu32 = max(sample.const_rate.value) - min(sample.const_rate.value)
+Derived metric expr dump from 0x55708e951580...
+expr node 0x55708e951580 type=MINUS left=0x55708e951420 right=0x55708e9514e0 save_last=0
+expr node 0x55708e951420 type=MAX left=0x55708e951470 right=(nil) save_last=0
+expr node 0x55708e951470 type=NAME left=(nil) right=(nil) save_last=0 [sample.const_rate.value] master=1
+expr node 0x55708e9514e0 type=MIN left=0x55708e951530 right=(nil) save_last=0
+expr node 0x55708e951530 type=NAME left=(nil) right=(nil) save_last=0 [sample.const_rate.value] master=1
+pmRegisterDerived: name="aggr.max64_min64" expr="max(sample.longlong.hundred) - min(sample.longlong.hundred)"
+derive_lex() -> type=L_MAX "max"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.longlong.hundred"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_MINUS "-"
+derive_lex() -> type=L_MIN "min"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.longlong.hundred"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[5] aggr.max64_min64 = max(sample.longlong.hundred) - min(sample.longlong.hundred)
+Derived metric expr dump from 0x55708e953820...
+expr node 0x55708e953820 type=MINUS left=0x55708e9515d0 right=0x55708e953780 save_last=0
+expr node 0x55708e9515d0 type=MAX left=0x55708e953710 right=(nil) save_last=0
+expr node 0x55708e953710 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.hundred] master=1
+expr node 0x55708e953780 type=MIN left=0x55708e9537d0 right=(nil) save_last=0
+expr node 0x55708e9537d0 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.hundred] master=1
+pmRegisterDerived: name="aggr.maxu64_minu64" expr="max(sample.pdu) - min(sample.pdu)"
+derive_lex() -> type=L_MAX "max"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.pdu"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_MINUS "-"
+derive_lex() -> type=L_MIN "min"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.pdu"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[6] aggr.maxu64_minu64 = max(sample.pdu) - min(sample.pdu)
+Derived metric expr dump from 0x55708e953ae0...
+expr node 0x55708e953ae0 type=MINUS left=0x55708e953980 right=0x55708e953a40 save_last=0
+expr node 0x55708e953980 type=MAX left=0x55708e9539d0 right=(nil) save_last=0
+expr node 0x55708e9539d0 type=NAME left=(nil) right=(nil) save_last=0 [sample.pdu] master=1
+expr node 0x55708e953a40 type=MIN left=0x55708e953a90 right=(nil) save_last=0
+expr node 0x55708e953a90 type=NAME left=(nil) right=(nil) save_last=0 [sample.pdu] master=1
+pmRegisterDerived: name="aggr.maxuf_minuf" expr="max(sample.float.million) - min(sample.float.million)"
+derive_lex() -> type=L_MAX "max"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.float.million"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_MINUS "-"
+derive_lex() -> type=L_MIN "min"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.float.million"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[7] aggr.maxuf_minuf = max(sample.float.million) - min(sample.float.million)
+Derived metric expr dump from 0x55708e953dc0...
+expr node 0x55708e953dc0 type=MINUS left=0x55708e953c60 right=0x55708e953d20 save_last=0
+expr node 0x55708e953c60 type=MAX left=0x55708e953cb0 right=(nil) save_last=0
+expr node 0x55708e953cb0 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.million] master=1
+expr node 0x55708e953d20 type=MIN left=0x55708e953d70 right=(nil) save_last=0
+expr node 0x55708e953d70 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.million] master=1
+pmRegisterDerived: name="aggr.maxud_minud" expr="max(sample.double.million) - min(sample.double.million)"
+derive_lex() -> type=L_MAX "max"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.double.million"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_MINUS "-"
+derive_lex() -> type=L_MIN "min"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.double.million"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[8] aggr.maxud_minud = max(sample.double.million) - min(sample.double.million)
+Derived metric expr dump from 0x55708e9540c0...
+expr node 0x55708e9540c0 type=MINUS left=0x55708e953f60 right=0x55708e954020 save_last=0
+expr node 0x55708e953f60 type=MAX left=0x55708e953fb0 right=(nil) save_last=0
+expr node 0x55708e953fb0 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.million] master=1
+expr node 0x55708e954020 type=MIN left=0x55708e954070 right=(nil) save_last=0
+expr node 0x55708e954070 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.million] master=1
+pmRegisterDerived: name="aggr.count32" expr="count(sample.bin)"
+derive_lex() -> type=L_COUNT "count"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.bin"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[9] aggr.count32 = count(sample.bin)
+Derived metric expr dump from 0x55708e954280...
+expr node 0x55708e954280 type=COUNT left=0x55708e9542d0 right=(nil) save_last=0
+expr node 0x55708e9542d0 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=1
+pmRegisterDerived: name="aggr.avg32" expr="avg(sample.bin)"
+derive_lex() -> type=L_AVG "avg"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.bin"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[10] aggr.avg32 = avg(sample.bin)
+Derived metric expr dump from 0x55708e9544b0...
+expr node 0x55708e9544b0 type=AVG left=0x55708e954500 right=(nil) save_last=0
+expr node 0x55708e954500 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=1
+pmRegisterDerived: name="aggr.max32_x" expr="max(sample.bin)"
+derive_lex() -> type=L_MAX "max"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.bin"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[11] aggr.max32_x = max(sample.bin)
+Derived metric expr dump from 0x55708e954700...
+expr node 0x55708e954700 type=MAX left=0x55708e954750 right=(nil) save_last=0
+expr node 0x55708e954750 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=1
+pmRegisterDerived: name="aggr.min32_x" expr="min(sample.bin)"
+derive_lex() -> type=L_MIN "min"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.bin"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[12] aggr.min32_x = min(sample.bin)
+Derived metric expr dump from 0x55708e954970...
+expr node 0x55708e954970 type=MIN left=0x55708e9549c0 right=(nil) save_last=0
+expr node 0x55708e9549c0 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=1
+pmRegisterDerived: name="aggr.sum32" expr="sum(sample.bin)"
+derive_lex() -> type=L_SUM "sum"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.bin"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[13] aggr.sum32 = sum(sample.bin)
+Derived metric expr dump from 0x55708e954c00...
+expr node 0x55708e954c00 type=SUM left=0x55708e954c50 right=(nil) save_last=0
+expr node 0x55708e954c50 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=1
+pmRegisterDerived: name="aggr.avgu32" expr="avg(sample.ulong.bin_ctr)"
+derive_lex() -> type=L_AVG "avg"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.ulong.bin_ctr"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[14] aggr.avgu32 = avg(sample.ulong.bin_ctr)
+Derived metric expr dump from 0x55708e954eb0...
+expr node 0x55708e954eb0 type=AVG left=0x55708e954f00 right=(nil) save_last=0
+expr node 0x55708e954f00 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulong.bin_ctr] master=1
+pmRegisterDerived: name="aggr.countu32" expr="count(sample.ulong.bin_ctr)"
+derive_lex() -> type=L_COUNT "count"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.ulong.bin_ctr"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[15] aggr.countu32 = count(sample.ulong.bin_ctr)
+Derived metric expr dump from 0x55708e955180...
+expr node 0x55708e955180 type=COUNT left=0x55708e9551d0 right=(nil) save_last=0
+expr node 0x55708e9551d0 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulong.bin_ctr] master=1
+pmRegisterDerived: name="aggr.maxu32" expr="max(sample.ulong.bin_ctr)"
+derive_lex() -> type=L_MAX "max"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.ulong.bin_ctr"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[16] aggr.maxu32 = max(sample.ulong.bin_ctr)
+Derived metric expr dump from 0x55708e955470...
+expr node 0x55708e955470 type=MAX left=0x55708e9554c0 right=(nil) save_last=0
+expr node 0x55708e9554c0 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulong.bin_ctr] master=1
+pmRegisterDerived: name="aggr.minu32" expr="min(sample.ulong.bin_ctr)"
+derive_lex() -> type=L_MIN "min"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.ulong.bin_ctr"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[17] aggr.minu32 = min(sample.ulong.bin_ctr)
+Derived metric expr dump from 0x55708e955780...
+expr node 0x55708e955780 type=MIN left=0x55708e9557d0 right=(nil) save_last=0
+expr node 0x55708e9557d0 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulong.bin_ctr] master=1
+pmRegisterDerived: name="aggr.sumu32" expr="sum(sample.ulong.bin_ctr)"
+derive_lex() -> type=L_SUM "sum"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.ulong.bin_ctr"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[18] aggr.sumu32 = sum(sample.ulong.bin_ctr)
+Derived metric expr dump from 0x55708e955ab0...
+expr node 0x55708e955ab0 type=SUM left=0x55708e955b00 right=(nil) save_last=0
+expr node 0x55708e955b00 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulong.bin_ctr] master=1
+pmRegisterDerived: name="aggr.avgf" expr="avg(sample.float.bin)"
+derive_lex() -> type=L_AVG "avg"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.float.bin"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[19] aggr.avgf = avg(sample.float.bin)
+Derived metric expr dump from 0x55708e955e00...
+expr node 0x55708e955e00 type=AVG left=0x55708e955e50 right=(nil) save_last=0
+expr node 0x55708e955e50 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.bin] master=1
+pmRegisterDerived: name="aggr.countf" expr="count(sample.float.bin)"
+derive_lex() -> type=L_COUNT "count"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.float.bin"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[20] aggr.countf = count(sample.float.bin)
+Derived metric expr dump from 0x55708e956170...
+expr node 0x55708e956170 type=COUNT left=0x55708e9561c0 right=(nil) save_last=0
+expr node 0x55708e9561c0 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.bin] master=1
+pmRegisterDerived: name="aggr.maxf" expr="max(sample.float.bin)"
+derive_lex() -> type=L_MAX "max"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.float.bin"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[21] aggr.maxf = max(sample.float.bin)
+Derived metric expr dump from 0x55708e956500...
+expr node 0x55708e956500 type=MAX left=0x55708e956550 right=(nil) save_last=0
+expr node 0x55708e956550 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.bin] master=1
+pmRegisterDerived: name="aggr.minf" expr="min(sample.float.bin)"
+derive_lex() -> type=L_MIN "min"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.float.bin"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[22] aggr.minf = min(sample.float.bin)
+Derived metric expr dump from 0x55708e9568b0...
+expr node 0x55708e9568b0 type=MIN left=0x55708e956900 right=(nil) save_last=0
+expr node 0x55708e956900 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.bin] master=1
+pmRegisterDerived: name="aggr.sumf" expr="sum(sample.float.bin)"
+derive_lex() -> type=L_SUM "sum"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.float.bin"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[23] aggr.sumf = sum(sample.float.bin)
+Derived metric expr dump from 0x55708e956c80...
+expr node 0x55708e956c80 type=SUM left=0x55708e956cd0 right=(nil) save_last=0
+expr node 0x55708e956cd0 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.bin] master=1
+pmRegisterDerived: name="aggr.avg64" expr="avg(sample.longlong.bin_ctr)"
+derive_lex() -> type=L_AVG "avg"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.longlong.bin_ctr"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[24] aggr.avg64 = avg(sample.longlong.bin_ctr)
+Derived metric expr dump from 0x55708e957070...
+expr node 0x55708e957070 type=AVG left=0x55708e9570c0 right=(nil) save_last=0
+expr node 0x55708e9570c0 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.bin_ctr] master=1
+pmRegisterDerived: name="aggr.count64" expr="count(sample.longlong.bin_ctr)"
+derive_lex() -> type=L_COUNT "count"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.longlong.bin_ctr"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[25] aggr.count64 = count(sample.longlong.bin_ctr)
+Derived metric expr dump from 0x55708e957480...
+expr node 0x55708e957480 type=COUNT left=0x55708e9574d0 right=(nil) save_last=0
+expr node 0x55708e9574d0 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.bin_ctr] master=1
+pmRegisterDerived: name="aggr.max64" expr="max(sample.longlong.bin_ctr)"
+derive_lex() -> type=L_MAX "max"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.longlong.bin_ctr"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[26] aggr.max64 = max(sample.longlong.bin_ctr)
+Derived metric expr dump from 0x55708e9578b0...
+expr node 0x55708e9578b0 type=MAX left=0x55708e957900 right=(nil) save_last=0
+expr node 0x55708e957900 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.bin_ctr] master=1
+pmRegisterDerived: name="aggr.min64" expr="min(sample.longlong.bin_ctr)"
+derive_lex() -> type=L_MIN "min"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.longlong.bin_ctr"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[27] aggr.min64 = min(sample.longlong.bin_ctr)
+Derived metric expr dump from 0x55708e957d00...
+expr node 0x55708e957d00 type=MIN left=0x55708e957d50 right=(nil) save_last=0
+expr node 0x55708e957d50 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.bin_ctr] master=1
+pmRegisterDerived: name="aggr.sum64" expr="sum(sample.longlong.bin_ctr)"
+derive_lex() -> type=L_SUM "sum"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.longlong.bin_ctr"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[28] aggr.sum64 = sum(sample.longlong.bin_ctr)
+Derived metric expr dump from 0x55708e958170...
+expr node 0x55708e958170 type=SUM left=0x55708e9581c0 right=(nil) save_last=0
+expr node 0x55708e9581c0 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.bin_ctr] master=1
+pmRegisterDerived: name="aggr.avgu64" expr="avg(sample.ulonglong.bin_ctr)"
+derive_lex() -> type=L_AVG "avg"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.ulonglong.bin_ctr"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[29] aggr.avgu64 = avg(sample.ulonglong.bin_ctr)
+Derived metric expr dump from 0x55708e9585e0...
+expr node 0x55708e9585e0 type=AVG left=0x55708e958630 right=(nil) save_last=0
+expr node 0x55708e958630 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.bin_ctr] master=1
+pmRegisterDerived: name="aggr.countu64" expr="count(sample.ulonglong.bin_ctr)"
+derive_lex() -> type=L_COUNT "count"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.ulonglong.bin_ctr"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[30] aggr.countu64 = count(sample.ulonglong.bin_ctr)
+Derived metric expr dump from 0x55708e958aa0...
+expr node 0x55708e958aa0 type=COUNT left=0x55708e958af0 right=(nil) save_last=0
+expr node 0x55708e958af0 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.bin_ctr] master=1
+pmRegisterDerived: name="aggr.maxu64" expr="max(sample.ulonglong.bin_ctr)"
+derive_lex() -> type=L_MAX "max"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.ulonglong.bin_ctr"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[31] aggr.maxu64 = max(sample.ulonglong.bin_ctr)
+Derived metric expr dump from 0x55708e958f80...
+expr node 0x55708e958f80 type=MAX left=0x55708e958fd0 right=(nil) save_last=0
+expr node 0x55708e958fd0 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.bin_ctr] master=1
+pmRegisterDerived: name="aggr.minu64" expr="min(sample.ulonglong.bin_ctr)"
+derive_lex() -> type=L_MIN "min"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.ulonglong.bin_ctr"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[32] aggr.minu64 = min(sample.ulonglong.bin_ctr)
+Derived metric expr dump from 0x55708e959480...
+expr node 0x55708e959480 type=MIN left=0x55708e9594d0 right=(nil) save_last=0
+expr node 0x55708e9594d0 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.bin_ctr] master=1
+pmRegisterDerived: name="aggr.sumu64" expr="sum(sample.ulonglong.bin_ctr)"
+derive_lex() -> type=L_SUM "sum"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.ulonglong.bin_ctr"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[33] aggr.sumu64 = sum(sample.ulonglong.bin_ctr)
+Derived metric expr dump from 0x55708e9599a0...
+expr node 0x55708e9599a0 type=SUM left=0x55708e9599f0 right=(nil) save_last=0
+expr node 0x55708e9599f0 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.bin_ctr] master=1
+pmRegisterDerived: name="aggr.avgd" expr="avg(sample.double.bin)"
+derive_lex() -> type=L_AVG "avg"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.double.bin"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[34] aggr.avgd = avg(sample.double.bin)
+Derived metric expr dump from 0x55708e959560...
+expr node 0x55708e959560 type=AVG left=0x55708e9595b0 right=(nil) save_last=0
+expr node 0x55708e9595b0 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.bin] master=1
+pmRegisterDerived: name="aggr.countd" expr="count(sample.double.bin)"
+derive_lex() -> type=L_COUNT "count"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.double.bin"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[35] aggr.countd = count(sample.double.bin)
+Derived metric expr dump from 0x55708e959640...
+expr node 0x55708e959640 type=COUNT left=0x55708e959690 right=(nil) save_last=0
+expr node 0x55708e959690 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.bin] master=1
+pmRegisterDerived: name="aggr.maxd" expr="max(sample.double.bin)"
+derive_lex() -> type=L_MAX "max"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.double.bin"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[36] aggr.maxd = max(sample.double.bin)
+Derived metric expr dump from 0x55708e959720...
+expr node 0x55708e959720 type=MAX left=0x55708e959770 right=(nil) save_last=0
+expr node 0x55708e959770 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.bin] master=1
+pmRegisterDerived: name="aggr.mind" expr="min(sample.double.bin)"
+derive_lex() -> type=L_MIN "min"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.double.bin"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[37] aggr.mind = min(sample.double.bin)
+Derived metric expr dump from 0x55708e959800...
+expr node 0x55708e959800 type=MIN left=0x55708e959850 right=(nil) save_last=0
+expr node 0x55708e959850 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.bin] master=1
+pmRegisterDerived: name="aggr.sumd" expr="sum(sample.double.bin)"
+derive_lex() -> type=L_SUM "sum"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.double.bin"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[38] aggr.sumd = sum(sample.double.bin)
+Derived metric expr dump from 0x55708e9598e0...
+expr node 0x55708e9598e0 type=SUM left=0x55708e959f10 right=(nil) save_last=0
+expr node 0x55708e959f10 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.bin] master=1
+pmRegisterDerived: name="aggr.count_err" expr="count(sample.needprofile)"
+derive_lex() -> type=L_COUNT "count"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.needprofile"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[39] aggr.count_err = count(sample.needprofile)
+Derived metric expr dump from 0x55708e959a60...
+expr node 0x55708e959a60 type=COUNT left=0x55708e959ab0 right=(nil) save_last=0
+expr node 0x55708e959ab0 type=NAME left=(nil) right=(nil) save_last=0 [sample.needprofile] master=1
+pmRegisterDerived: name="aggr.sum_err" expr="sum(sample.needprofile)"
+derive_lex() -> type=L_SUM "sum"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.needprofile"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[40] aggr.sum_err = sum(sample.needprofile)
+Derived metric expr dump from 0x55708e959b40...
+expr node 0x55708e959b40 type=SUM left=0x55708e959b90 right=(nil) save_last=0
+expr node 0x55708e959b90 type=NAME left=(nil) right=(nil) save_last=0 [sample.needprofile] master=1
+pmRegisterDerived: name="aggr.countblob" expr="count(sample.sysinfo)"
+derive_lex() -> type=L_COUNT "count"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.sysinfo"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[41] aggr.countblob = count(sample.sysinfo)
+Derived metric expr dump from 0x55708e959c20...
+expr node 0x55708e959c20 type=COUNT left=0x55708e959c70 right=(nil) save_last=0
+expr node 0x55708e959c70 type=NAME left=(nil) right=(nil) save_last=0 [sample.sysinfo] master=1
+pmRegisterDerived: name="aggr.count_noinst" expr="count(sample.noinst)"
+derive_lex() -> type=L_COUNT "count"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.noinst"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[42] aggr.count_noinst = count(sample.noinst)
+Derived metric expr dump from 0x55708e959d00...
+expr node 0x55708e959d00 type=COUNT left=0x55708e959d50 right=(nil) save_last=0
+expr node 0x55708e959d50 type=NAME left=(nil) right=(nil) save_last=0 [sample.noinst] master=1
+__dmopencontext(->ctx 0) called
+__dmgetpmid: metric "aggr.max32" -> PMID 511.0.3
+__dmbind: bind metric[2] aggr.max32
+Derived metric expr dump from 0x55708e959ea0...
+expr node 0x55708e959ea0 type=MAX left=0x55708e952bc0 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.3 from pmDesc) numval: 0
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e952bc0 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=0
+    PMID: 29.0.6 (29.0.6 from pmDesc) numval: 0
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.max32"
+__dmgetpmid: metric "aggr.min32" -> PMID 511.0.4
+__dmbind: bind metric[3] aggr.min32
+Derived metric expr dump from 0x55708e952cd0...
+expr node 0x55708e952cd0 type=MIN left=0x55708e952d20 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.4 from pmDesc) numval: 0
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e952d20 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.hundred] master=0
+    PMID: 29.0.12 (29.0.12 from pmDesc) numval: 0
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.min32"
+__dmgetpmid: metric "aggr.maxu32_minu32" -> PMID 511.0.5
+__dmbind: bind metric[4] aggr.maxu32_minu32
+Derived metric expr dump from 0x55708e952dd0...
+expr node 0x55708e952dd0 type=MINUS left=0x55708e952e80 right=0x55708e952f80 save_last=0
+    PMID: PM_ID_NULL (511.0.5 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+expr node 0x55708e952e80 type=MAX left=0x55708e952ed0 right=(nil) save_last=0
+    PMID: PM_ID_NULL (29.0.72 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+expr node 0x55708e952ed0 type=NAME left=(nil) right=(nil) save_last=0 [sample.const_rate.value] master=0
+    PMID: 29.0.72 (29.0.72 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: counter  Units: count
+expr node 0x55708e952f80 type=MIN left=0x55708e953030 right=(nil) save_last=0
+    PMID: PM_ID_NULL (29.0.72 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+expr node 0x55708e953030 type=NAME left=(nil) right=(nil) save_last=0 [sample.const_rate.value] master=0
+    PMID: 29.0.72 (29.0.72 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: counter  Units: count
+__dmtraverse: name="aggr" added "aggr.maxu32_minu32"
+__dmgetpmid: metric "aggr.max64_min64" -> PMID 511.0.6
+__dmbind: bind metric[5] aggr.max64_min64
+Derived metric expr dump from 0x55708e9530e0...
+expr node 0x55708e9530e0 type=MINUS left=0x55708e9531f0 right=0x55708e9532f0 save_last=0
+    PMID: PM_ID_NULL (511.0.6 from pmDesc) numval: 0
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e9531f0 type=MAX left=0x55708e953240 right=(nil) save_last=0
+    PMID: PM_ID_NULL (29.0.22 from pmDesc) numval: 0
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e953240 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.hundred] master=0
+    PMID: 29.0.22 (29.0.22 from pmDesc) numval: 0
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e9532f0 type=MIN left=0x55708e9533a0 right=(nil) save_last=0
+    PMID: PM_ID_NULL (29.0.22 from pmDesc) numval: 0
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e9533a0 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.hundred] master=0
+    PMID: 29.0.22 (29.0.22 from pmDesc) numval: 0
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.max64_min64"
+__dmgetpmid: metric "aggr.maxu64_minu64" -> PMID 511.0.7
+__dmbind: bind metric[6] aggr.maxu64_minu64
+Derived metric expr dump from 0x55708e953450...
+expr node 0x55708e953450 type=MINUS left=0x55708e953590 right=0x55708e95a590 save_last=0
+    PMID: PM_ID_NULL (511.0.7 from pmDesc) numval: 0
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+expr node 0x55708e953590 type=MAX left=0x55708e9535e0 right=(nil) save_last=0
+    PMID: PM_ID_NULL (29.0.40 from pmDesc) numval: 0
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+expr node 0x55708e9535e0 type=NAME left=(nil) right=(nil) save_last=0 [sample.pdu] master=0
+    PMID: 29.0.40 (29.0.40 from pmDesc) numval: 0
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: counter  Units: count
+expr node 0x55708e95a590 type=MIN left=0x55708e95a5e0 right=(nil) save_last=0
+    PMID: PM_ID_NULL (29.0.40 from pmDesc) numval: 0
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+expr node 0x55708e95a5e0 type=NAME left=(nil) right=(nil) save_last=0 [sample.pdu] master=0
+    PMID: 29.0.40 (29.0.40 from pmDesc) numval: 0
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: counter  Units: count
+__dmtraverse: name="aggr" added "aggr.maxu64_minu64"
+__dmgetpmid: metric "aggr.maxuf_minuf" -> PMID 511.0.8
+__dmbind: bind metric[7] aggr.maxuf_minuf
+Derived metric expr dump from 0x55708e95a750...
+expr node 0x55708e95a750 type=MINUS left=0x55708e95a7a0 right=0x55708e95a8a0 save_last=0
+    PMID: PM_ID_NULL (511.0.8 from pmDesc) numval: 0
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95a7a0 type=MAX left=0x55708e95a7f0 right=(nil) save_last=0
+    PMID: PM_ID_NULL (29.0.18 from pmDesc) numval: 0
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95a7f0 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.million] master=0
+    PMID: 29.0.18 (29.0.18 from pmDesc) numval: 0
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95a8a0 type=MIN left=0x55708e95a950 right=(nil) save_last=0
+    PMID: PM_ID_NULL (29.0.18 from pmDesc) numval: 0
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95a950 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.million] master=0
+    PMID: 29.0.18 (29.0.18 from pmDesc) numval: 0
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.maxuf_minuf"
+__dmgetpmid: metric "aggr.maxud_minud" -> PMID 511.0.9
+__dmbind: bind metric[8] aggr.maxud_minud
+Derived metric expr dump from 0x55708e95aa00...
+expr node 0x55708e95aa00 type=MINUS left=0x55708e95ab50 right=0x55708e95ac50 save_last=0
+    PMID: PM_ID_NULL (511.0.9 from pmDesc) numval: 0
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95ab50 type=MAX left=0x55708e95aba0 right=(nil) save_last=0
+    PMID: PM_ID_NULL (29.0.28 from pmDesc) numval: 0
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95aba0 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.million] master=0
+    PMID: 29.0.28 (29.0.28 from pmDesc) numval: 0
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95ac50 type=MIN left=0x55708e95ad00 right=(nil) save_last=0
+    PMID: PM_ID_NULL (29.0.28 from pmDesc) numval: 0
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95ad00 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.million] master=0
+    PMID: 29.0.28 (29.0.28 from pmDesc) numval: 0
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.maxud_minud"
+__dmgetpmid: metric "aggr.count32" -> PMID 511.0.10
+__dmbind: bind metric[9] aggr.count32
+Derived metric expr dump from 0x55708e95adb0...
+expr node 0x55708e95adb0 type=COUNT left=0x55708e95aec0 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.10 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+expr node 0x55708e95aec0 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=0
+    PMID: 29.0.6 (29.0.6 from pmDesc) numval: 0
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.count32"
+__dmgetpmid: metric "aggr.avg32" -> PMID 511.0.11
+__dmbind: bind metric[10] aggr.avg32
+Derived metric expr dump from 0x55708e95b020...
+expr node 0x55708e95b020 type=AVG left=0x55708e95b070 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.11 from pmDesc) numval: 0
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95b070 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=0
+    PMID: 29.0.6 (29.0.6 from pmDesc) numval: 0
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.avg32"
+__dmgetpmid: metric "aggr.max32_x" -> PMID 511.0.12
+__dmbind: bind metric[11] aggr.max32_x
+Derived metric expr dump from 0x55708e95b180...
+expr node 0x55708e95b180 type=MAX left=0x55708e95b1d0 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.12 from pmDesc) numval: 0
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95b1d0 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=0
+    PMID: 29.0.6 (29.0.6 from pmDesc) numval: 0
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.max32_x"
+__dmgetpmid: metric "aggr.min32_x" -> PMID 511.0.13
+__dmbind: bind metric[12] aggr.min32_x
+Derived metric expr dump from 0x55708e95afd0...
+expr node 0x55708e95afd0 type=MIN left=0x55708e95b340 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.13 from pmDesc) numval: 0
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95b340 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=0
+    PMID: 29.0.6 (29.0.6 from pmDesc) numval: 0
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.min32_x"
+__dmgetpmid: metric "aggr.sum32" -> PMID 511.0.14
+__dmbind: bind metric[13] aggr.sum32
+Derived metric expr dump from 0x55708e95b450...
+expr node 0x55708e95b450 type=SUM left=0x55708e95b4a0 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.14 from pmDesc) numval: 0
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95b4a0 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=0
+    PMID: 29.0.6 (29.0.6 from pmDesc) numval: 0
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.sum32"
+__dmgetpmid: metric "aggr.avgu32" -> PMID 511.0.15
+__dmbind: bind metric[14] aggr.avgu32
+Derived metric expr dump from 0x55708e95b620...
+expr node 0x55708e95b620 type=AVG left=0x55708e95b670 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.15 from pmDesc) numval: 0
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: Kbyte
+expr node 0x55708e95b670 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulong.bin_ctr] master=0
+    PMID: 29.0.106 (29.0.106 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: counter  Units: Kbyte
+__dmtraverse: name="aggr" added "aggr.avgu32"
+__dmgetpmid: metric "aggr.countu32" -> PMID 511.0.16
+__dmbind: bind metric[15] aggr.countu32
+Derived metric expr dump from 0x55708e95b6c0...
+expr node 0x55708e95b6c0 type=COUNT left=0x55708e95b770 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.16 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+expr node 0x55708e95b770 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulong.bin_ctr] master=0
+    PMID: 29.0.106 (29.0.106 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: counter  Units: Kbyte
+__dmtraverse: name="aggr" added "aggr.countu32"
+__dmgetpmid: metric "aggr.maxu32" -> PMID 511.0.17
+__dmbind: bind metric[16] aggr.maxu32
+Derived metric expr dump from 0x55708e95b820...
+expr node 0x55708e95b820 type=MAX left=0x55708e95b950 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.17 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: Kbyte
+expr node 0x55708e95b950 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulong.bin_ctr] master=0
+    PMID: 29.0.106 (29.0.106 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: counter  Units: Kbyte
+__dmtraverse: name="aggr" added "aggr.maxu32"
+__dmgetpmid: metric "aggr.minu32" -> PMID 511.0.18
+__dmbind: bind metric[17] aggr.minu32
+Derived metric expr dump from 0x55708e95ba00...
+expr node 0x55708e95ba00 type=MIN left=0x55708e95bab0 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.18 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: Kbyte
+expr node 0x55708e95bab0 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulong.bin_ctr] master=0
+    PMID: 29.0.106 (29.0.106 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: counter  Units: Kbyte
+__dmtraverse: name="aggr" added "aggr.minu32"
+__dmgetpmid: metric "aggr.sumu32" -> PMID 511.0.19
+__dmbind: bind metric[18] aggr.sumu32
+Derived metric expr dump from 0x55708e95bb60...
+expr node 0x55708e95bb60 type=SUM left=0x55708e95bca0 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.19 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: counter  Units: Kbyte
+expr node 0x55708e95bca0 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulong.bin_ctr] master=0
+    PMID: 29.0.106 (29.0.106 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: counter  Units: Kbyte
+__dmtraverse: name="aggr" added "aggr.sumu32"
+__dmgetpmid: metric "aggr.avgf" -> PMID 511.0.20
+__dmbind: bind metric[19] aggr.avgf
+Derived metric expr dump from 0x55708e95bd50...
+expr node 0x55708e95bd50 type=AVG left=0x55708e95be00 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.20 from pmDesc) numval: 0
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95be00 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.bin] master=0
+    PMID: 29.0.107 (29.0.107 from pmDesc) numval: 0
+    Data Type: float  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.avgf"
+__dmgetpmid: metric "aggr.countf" -> PMID 511.0.21
+__dmbind: bind metric[20] aggr.countf
+Derived metric expr dump from 0x55708e95beb0...
+expr node 0x55708e95beb0 type=COUNT left=0x55708e95c000 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.21 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+expr node 0x55708e95c000 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.bin] master=0
+    PMID: 29.0.107 (29.0.107 from pmDesc) numval: 0
+    Data Type: float  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.countf"
+__dmgetpmid: metric "aggr.maxf" -> PMID 511.0.22
+__dmbind: bind metric[21] aggr.maxf
+Derived metric expr dump from 0x55708e95c0b0...
+expr node 0x55708e95c0b0 type=MAX left=0x55708e95c160 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.22 from pmDesc) numval: 0
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95c160 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.bin] master=0
+    PMID: 29.0.107 (29.0.107 from pmDesc) numval: 0
+    Data Type: float  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.maxf"
+__dmgetpmid: metric "aggr.minf" -> PMID 511.0.23
+__dmbind: bind metric[22] aggr.minf
+Derived metric expr dump from 0x55708e95c210...
+expr node 0x55708e95c210 type=MIN left=0x55708e95c370 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.23 from pmDesc) numval: 0
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95c370 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.bin] master=0
+    PMID: 29.0.107 (29.0.107 from pmDesc) numval: 0
+    Data Type: float  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.minf"
+__dmgetpmid: metric "aggr.sumf" -> PMID 511.0.24
+__dmbind: bind metric[23] aggr.sumf
+Derived metric expr dump from 0x55708e95c420...
+expr node 0x55708e95c420 type=SUM left=0x55708e95c4d0 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.24 from pmDesc) numval: 0
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95c4d0 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.bin] master=0
+    PMID: 29.0.107 (29.0.107 from pmDesc) numval: 0
+    Data Type: float  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.sumf"
+__dmgetpmid: metric "aggr.avg64" -> PMID 511.0.25
+__dmbind: bind metric[24] aggr.avg64
+Derived metric expr dump from 0x55708e95c580...
+expr node 0x55708e95c580 type=AVG left=0x55708e95c6f0 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.25 from pmDesc) numval: 0
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: Kbyte
+expr node 0x55708e95c6f0 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.bin_ctr] master=0
+    PMID: 29.0.110 (29.0.110 from pmDesc) numval: 0
+    Data Type: 64-bit int  InDom: 29.2 0x7400002
+    Semantics: counter  Units: Kbyte
+__dmtraverse: name="aggr" added "aggr.avg64"
+__dmgetpmid: metric "aggr.count64" -> PMID 511.0.26
+__dmbind: bind metric[25] aggr.count64
+Derived metric expr dump from 0x55708e95c7a0...
+expr node 0x55708e95c7a0 type=COUNT left=0x55708e95c850 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.26 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+expr node 0x55708e95c850 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.bin_ctr] master=0
+    PMID: 29.0.110 (29.0.110 from pmDesc) numval: 0
+    Data Type: 64-bit int  InDom: 29.2 0x7400002
+    Semantics: counter  Units: Kbyte
+__dmtraverse: name="aggr" added "aggr.count64"
+__dmgetpmid: metric "aggr.max64" -> PMID 511.0.27
+__dmbind: bind metric[26] aggr.max64
+Derived metric expr dump from 0x55708e95c900...
+expr node 0x55708e95c900 type=MAX left=0x55708e95ca80 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.27 from pmDesc) numval: 0
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: Kbyte
+expr node 0x55708e95ca80 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.bin_ctr] master=0
+    PMID: 29.0.110 (29.0.110 from pmDesc) numval: 0
+    Data Type: 64-bit int  InDom: 29.2 0x7400002
+    Semantics: counter  Units: Kbyte
+__dmtraverse: name="aggr" added "aggr.max64"
+__dmgetpmid: metric "aggr.min64" -> PMID 511.0.28
+__dmbind: bind metric[27] aggr.min64
+Derived metric expr dump from 0x55708e95cb30...
+expr node 0x55708e95cb30 type=MIN left=0x55708e95cbe0 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.28 from pmDesc) numval: 0
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: Kbyte
+expr node 0x55708e95cbe0 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.bin_ctr] master=0
+    PMID: 29.0.110 (29.0.110 from pmDesc) numval: 0
+    Data Type: 64-bit int  InDom: 29.2 0x7400002
+    Semantics: counter  Units: Kbyte
+__dmtraverse: name="aggr" added "aggr.min64"
+__dmgetpmid: metric "aggr.sum64" -> PMID 511.0.29
+__dmbind: bind metric[28] aggr.sum64
+Derived metric expr dump from 0x55708e95cc90...
+expr node 0x55708e95cc90 type=SUM left=0x55708e95ce20 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.29 from pmDesc) numval: 0
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: counter  Units: Kbyte
+expr node 0x55708e95ce20 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.bin_ctr] master=0
+    PMID: 29.0.110 (29.0.110 from pmDesc) numval: 0
+    Data Type: 64-bit int  InDom: 29.2 0x7400002
+    Semantics: counter  Units: Kbyte
+__dmtraverse: name="aggr" added "aggr.sum64"
+__dmgetpmid: metric "aggr.avgu64" -> PMID 511.0.30
+__dmbind: bind metric[29] aggr.avgu64
+Derived metric expr dump from 0x55708e95ced0...
+expr node 0x55708e95ced0 type=AVG left=0x55708e95cf80 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.30 from pmDesc) numval: 0
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: Kbyte
+expr node 0x55708e95cf80 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.bin_ctr] master=0
+    PMID: 29.0.112 (29.0.112 from pmDesc) numval: 0
+    Data Type: 64-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: counter  Units: Kbyte
+__dmtraverse: name="aggr" added "aggr.avgu64"
+__dmgetpmid: metric "aggr.countu64" -> PMID 511.0.31
+__dmbind: bind metric[30] aggr.countu64
+Derived metric expr dump from 0x55708e95d030...
+expr node 0x55708e95d030 type=COUNT left=0x55708e95d1d0 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.31 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+expr node 0x55708e95d1d0 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.bin_ctr] master=0
+    PMID: 29.0.112 (29.0.112 from pmDesc) numval: 0
+    Data Type: 64-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: counter  Units: Kbyte
+__dmtraverse: name="aggr" added "aggr.countu64"
+__dmgetpmid: metric "aggr.maxu64" -> PMID 511.0.32
+__dmbind: bind metric[31] aggr.maxu64
+Derived metric expr dump from 0x55708e95d280...
+expr node 0x55708e95d280 type=MAX left=0x55708e95d330 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.32 from pmDesc) numval: 0
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: Kbyte
+expr node 0x55708e95d330 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.bin_ctr] master=0
+    PMID: 29.0.112 (29.0.112 from pmDesc) numval: 0
+    Data Type: 64-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: counter  Units: Kbyte
+__dmtraverse: name="aggr" added "aggr.maxu64"
+__dmgetpmid: metric "aggr.minu64" -> PMID 511.0.33
+__dmbind: bind metric[32] aggr.minu64
+Derived metric expr dump from 0x55708e95d3e0...
+expr node 0x55708e95d3e0 type=MIN left=0x55708e95d590 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.33 from pmDesc) numval: 0
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: Kbyte
+expr node 0x55708e95d590 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.bin_ctr] master=0
+    PMID: 29.0.112 (29.0.112 from pmDesc) numval: 0
+    Data Type: 64-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: counter  Units: Kbyte
+__dmtraverse: name="aggr" added "aggr.minu64"
+__dmgetpmid: metric "aggr.sumu64" -> PMID 511.0.34
+__dmbind: bind metric[33] aggr.sumu64
+Derived metric expr dump from 0x55708e95d640...
+expr node 0x55708e95d640 type=SUM left=0x55708e95d6f0 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.34 from pmDesc) numval: 0
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: counter  Units: Kbyte
+expr node 0x55708e95d6f0 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.bin_ctr] master=0
+    PMID: 29.0.112 (29.0.112 from pmDesc) numval: 0
+    Data Type: 64-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: counter  Units: Kbyte
+__dmtraverse: name="aggr" added "aggr.sumu64"
+__dmgetpmid: metric "aggr.avgd" -> PMID 511.0.35
+__dmbind: bind metric[34] aggr.avgd
+Derived metric expr dump from 0x55708e95d7a0...
+expr node 0x55708e95d7a0 type=AVG left=0x55708e95d960 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.35 from pmDesc) numval: 0
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95d960 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.bin] master=0
+    PMID: 29.0.113 (29.0.113 from pmDesc) numval: 0
+    Data Type: double  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.avgd"
+__dmgetpmid: metric "aggr.countd" -> PMID 511.0.36
+__dmbind: bind metric[35] aggr.countd
+Derived metric expr dump from 0x55708e95da10...
+expr node 0x55708e95da10 type=COUNT left=0x55708e95dac0 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.36 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+expr node 0x55708e95dac0 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.bin] master=0
+    PMID: 29.0.113 (29.0.113 from pmDesc) numval: 0
+    Data Type: double  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.countd"
+__dmgetpmid: metric "aggr.maxd" -> PMID 511.0.37
+__dmbind: bind metric[36] aggr.maxd
+Derived metric expr dump from 0x55708e95db70...
+expr node 0x55708e95db70 type=MAX left=0x55708e95dd40 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.37 from pmDesc) numval: 0
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95dd40 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.bin] master=0
+    PMID: 29.0.113 (29.0.113 from pmDesc) numval: 0
+    Data Type: double  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.maxd"
+__dmgetpmid: metric "aggr.mind" -> PMID 511.0.38
+__dmbind: bind metric[37] aggr.mind
+Derived metric expr dump from 0x55708e95ddf0...
+expr node 0x55708e95ddf0 type=MIN left=0x55708e95dea0 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.38 from pmDesc) numval: 0
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95dea0 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.bin] master=0
+    PMID: 29.0.113 (29.0.113 from pmDesc) numval: 0
+    Data Type: double  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.mind"
+__dmgetpmid: metric "aggr.sumd" -> PMID 511.0.39
+__dmbind: bind metric[38] aggr.sumd
+Derived metric expr dump from 0x55708e95df50...
+expr node 0x55708e95df50 type=SUM left=0x55708e95e130 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.39 from pmDesc) numval: 0
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x55708e95e130 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.bin] master=0
+    PMID: 29.0.113 (29.0.113 from pmDesc) numval: 0
+    Data Type: double  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.sumd"
+__dmgetpmid: metric "aggr.count_err" -> PMID 511.0.40
+__dmbind: bind metric[39] aggr.count_err
+Derived metric expr dump from 0x55708e95e1e0...
+expr node 0x55708e95e1e0 type=COUNT left=0x55708e95e290 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.40 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+expr node 0x55708e95e290 type=NAME left=(nil) right=(nil) save_last=0 [sample.needprofile] master=0
+    PMID: 29.0.49 (29.0.49 from pmDesc) numval: 0
+    Data Type: float  InDom: 29.4 0x7400004
+    Semantics: discrete  Units: none
+__dmtraverse: name="aggr" added "aggr.count_err"
+__dmgetpmid: metric "aggr.sum_err" -> PMID 511.0.41
+__dmbind: bind metric[40] aggr.sum_err
+Derived metric expr dump from 0x55708e95e340...
+expr node 0x55708e95e340 type=SUM left=0x55708e95e530 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.41 from pmDesc) numval: 0
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+expr node 0x55708e95e530 type=NAME left=(nil) right=(nil) save_last=0 [sample.needprofile] master=0
+    PMID: 29.0.49 (29.0.49 from pmDesc) numval: 0
+    Data Type: float  InDom: 29.4 0x7400004
+    Semantics: discrete  Units: none
+__dmtraverse: name="aggr" added "aggr.sum_err"
+__dmgetpmid: metric "aggr.countblob" -> PMID 511.0.42
+__dmbind: bind metric[41] aggr.countblob
+Derived metric expr dump from 0x55708e95e5e0...
+expr node 0x55708e95e5e0 type=COUNT left=0x55708e95e690 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.42 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+expr node 0x55708e95e690 type=NAME left=(nil) right=(nil) save_last=0 [sample.sysinfo] master=0
+    PMID: 29.0.39 (29.0.39 from pmDesc) numval: 0
+    Data Type: aggregate  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.countblob"
+__dmgetpmid: metric "aggr.count_noinst" -> PMID 511.0.43
+__dmbind: bind metric[42] aggr.count_noinst
+Derived metric expr dump from 0x55708e95e740...
+expr node 0x55708e95e740 type=COUNT left=0x55708e95e940 right=(nil) save_last=0
+    PMID: PM_ID_NULL (511.0.43 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: count
+expr node 0x55708e95e940 type=NAME left=(nil) right=(nil) save_last=0 [sample.noinst] master=0
+    PMID: 29.0.9 (29.0.9 from pmDesc) numval: 0
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+__dmtraverse: name="aggr" added "aggr.count_noinst"
+__dmgetpmid: metric "aggr.max32" -> PMID 511.0.3
+__dmgetpmid: metric "aggr.min32" -> PMID 511.0.4
+__dmgetpmid: metric "aggr.maxu32_minu32" -> PMID 511.0.5
+__dmgetpmid: metric "aggr.max64_min64" -> PMID 511.0.6
+__dmgetpmid: metric "aggr.maxu64_minu64" -> PMID 511.0.7
+__dmgetpmid: metric "aggr.maxuf_minuf" -> PMID 511.0.8
+__dmgetpmid: metric "aggr.maxud_minud" -> PMID 511.0.9
+__dmgetpmid: metric "aggr.count32" -> PMID 511.0.10
+__dmgetpmid: metric "aggr.avg32" -> PMID 511.0.11
+__dmgetpmid: metric "aggr.max32_x" -> PMID 511.0.12
+__dmgetpmid: metric "aggr.min32_x" -> PMID 511.0.13
+__dmgetpmid: metric "aggr.sum32" -> PMID 511.0.14
+__dmgetpmid: metric "aggr.avgu32" -> PMID 511.0.15
+__dmgetpmid: metric "aggr.countu32" -> PMID 511.0.16
+__dmgetpmid: metric "aggr.maxu32" -> PMID 511.0.17
+__dmgetpmid: metric "aggr.minu32" -> PMID 511.0.18
+__dmgetpmid: metric "aggr.sumu32" -> PMID 511.0.19
+__dmgetpmid: metric "aggr.avgf" -> PMID 511.0.20
+__dmgetpmid: metric "aggr.countf" -> PMID 511.0.21
+__dmgetpmid: metric "aggr.maxf" -> PMID 511.0.22
+__dmgetpmid: metric "aggr.minf" -> PMID 511.0.23
+__dmgetpmid: metric "aggr.sumf" -> PMID 511.0.24
+__dmgetpmid: metric "aggr.avg64" -> PMID 511.0.25
+__dmgetpmid: metric "aggr.count64" -> PMID 511.0.26
+__dmgetpmid: metric "aggr.max64" -> PMID 511.0.27
+__dmgetpmid: metric "aggr.min64" -> PMID 511.0.28
+__dmgetpmid: metric "aggr.sum64" -> PMID 511.0.29
+__dmgetpmid: metric "aggr.avgu64" -> PMID 511.0.30
+__dmgetpmid: metric "aggr.countu64" -> PMID 511.0.31
+__dmgetpmid: metric "aggr.maxu64" -> PMID 511.0.32
+__dmgetpmid: metric "aggr.minu64" -> PMID 511.0.33
+__dmgetpmid: metric "aggr.sumu64" -> PMID 511.0.34
+__dmgetpmid: metric "aggr.avgd" -> PMID 511.0.35
+__dmgetpmid: metric "aggr.countd" -> PMID 511.0.36
+__dmgetpmid: metric "aggr.maxd" -> PMID 511.0.37
+__dmgetpmid: metric "aggr.mind" -> PMID 511.0.38
+__dmgetpmid: metric "aggr.sumd" -> PMID 511.0.39
+__dmgetpmid: metric "aggr.count_err" -> PMID 511.0.40
+__dmgetpmid: metric "aggr.sum_err" -> PMID 511.0.41
+__dmgetpmid: metric "aggr.countblob" -> PMID 511.0.42
+__dmgetpmid: metric "aggr.count_noinst" -> PMID 511.0.43
+=== sed ===
+s/0x55708e950eb0/<addr-0>/
+s/0x55708e950f00/<addr-1>/
+s/0x55708e950f70/<addr-2>/
+s/0x55708e950fc0/<addr-3>/
+s/0x55708e951150/<addr-4>/
+s/0x55708e951200/<addr-5>/
+s/0x55708e951010/<addr-6>/
+s/0x55708e951300/<addr-7>/
+s/0x55708e951580/<addr-8>/
+s/0x55708e951420/<addr-9>/
+s/0x55708e951470/<addr-10>/
+s/0x55708e9514e0/<addr-11>/
+s/0x55708e951530/<addr-12>/
+s/0x55708e953820/<addr-13>/
+s/0x55708e9515d0/<addr-14>/
+s/0x55708e953710/<addr-15>/
+s/0x55708e953780/<addr-16>/
+s/0x55708e9537d0/<addr-17>/
+s/0x55708e953ae0/<addr-18>/
+s/0x55708e953980/<addr-19>/
+s/0x55708e9539d0/<addr-20>/
+s/0x55708e953a40/<addr-21>/
+s/0x55708e953a90/<addr-22>/
+s/0x55708e953dc0/<addr-23>/
+s/0x55708e953c60/<addr-24>/
+s/0x55708e953cb0/<addr-25>/
+s/0x55708e953d20/<addr-26>/
+s/0x55708e953d70/<addr-27>/
+s/0x55708e9540c0/<addr-28>/
+s/0x55708e953f60/<addr-29>/
+s/0x55708e953fb0/<addr-30>/
+s/0x55708e954020/<addr-31>/
+s/0x55708e954070/<addr-32>/
+s/0x55708e954280/<addr-33>/
+s/0x55708e9542d0/<addr-34>/
+s/0x55708e9544b0/<addr-35>/
+s/0x55708e954500/<addr-36>/
+s/0x55708e954700/<addr-37>/
+s/0x55708e954750/<addr-38>/
+s/0x55708e954970/<addr-39>/
+s/0x55708e9549c0/<addr-40>/
+s/0x55708e954c00/<addr-41>/
+s/0x55708e954c50/<addr-42>/
+s/0x55708e954eb0/<addr-43>/
+s/0x55708e954f00/<addr-44>/
+s/0x55708e955180/<addr-45>/
+s/0x55708e9551d0/<addr-46>/
+s/0x55708e955470/<addr-47>/
+s/0x55708e9554c0/<addr-48>/
+s/0x55708e955780/<addr-49>/
+s/0x55708e9557d0/<addr-50>/
+s/0x55708e955ab0/<addr-51>/
+s/0x55708e955b00/<addr-52>/
+s/0x55708e955e00/<addr-53>/
+s/0x55708e955e50/<addr-54>/
+s/0x55708e956170/<addr-55>/
+s/0x55708e9561c0/<addr-56>/
+s/0x55708e956500/<addr-57>/
+s/0x55708e956550/<addr-58>/
+s/0x55708e9568b0/<addr-59>/
+s/0x55708e956900/<addr-60>/
+s/0x55708e956c80/<addr-61>/
+s/0x55708e956cd0/<addr-62>/
+s/0x55708e957070/<addr-63>/
+s/0x55708e9570c0/<addr-64>/
+s/0x55708e957480/<addr-65>/
+s/0x55708e9574d0/<addr-66>/
+s/0x55708e9578b0/<addr-67>/
+s/0x55708e957900/<addr-68>/
+s/0x55708e957d00/<addr-69>/
+s/0x55708e957d50/<addr-70>/
+s/0x55708e958170/<addr-71>/
+s/0x55708e9581c0/<addr-72>/
+s/0x55708e9585e0/<addr-73>/
+s/0x55708e958630/<addr-74>/
+s/0x55708e958aa0/<addr-75>/
+s/0x55708e958af0/<addr-76>/
+s/0x55708e958f80/<addr-77>/
+s/0x55708e958fd0/<addr-78>/
+s/0x55708e959480/<addr-79>/
+s/0x55708e9594d0/<addr-80>/
+s/0x55708e9599a0/<addr-81>/
+s/0x55708e9599f0/<addr-82>/
+s/0x55708e959560/<addr-83>/
+s/0x55708e9595b0/<addr-84>/
+s/0x55708e959640/<addr-85>/
+s/0x55708e959690/<addr-86>/
+s/0x55708e959720/<addr-87>/
+s/0x55708e959770/<addr-88>/
+s/0x55708e959800/<addr-89>/
+s/0x55708e959850/<addr-90>/
+s/0x55708e9598e0/<addr-91>/
+s/0x55708e959f10/<addr-92>/
+s/0x55708e959a60/<addr-93>/
+s/0x55708e959ab0/<addr-94>/
+s/0x55708e959b40/<addr-95>/
+s/0x55708e959b90/<addr-96>/
+s/0x55708e959c20/<addr-97>/
+s/0x55708e959c70/<addr-98>/
+s/0x55708e959d00/<addr-99>/
+s/0x55708e959d50/<addr-100>/
+s/0x55708e959ea0/<addr-101>/
+s/0x55708e952bc0/<addr-102>/
+s/0x55708e952cd0/<addr-103>/
+s/0x55708e952d20/<addr-104>/
+s/0x55708e952dd0/<addr-105>/
+s/0x55708e952e80/<addr-106>/
+s/0x55708e952ed0/<addr-107>/
+s/0x55708e952f80/<addr-108>/
+s/0x55708e953030/<addr-109>/
+s/0x55708e9530e0/<addr-110>/
+s/0x55708e9531f0/<addr-111>/
+s/0x55708e953240/<addr-112>/
+s/0x55708e9532f0/<addr-113>/
+s/0x55708e9533a0/<addr-114>/
+s/0x55708e953450/<addr-115>/
+s/0x55708e953590/<addr-116>/
+s/0x55708e9535e0/<addr-117>/
+s/0x55708e95a590/<addr-118>/
+s/0x55708e95a5e0/<addr-119>/
+s/0x55708e95a750/<addr-120>/
+s/0x55708e95a7a0/<addr-121>/
+s/0x55708e95a7f0/<addr-122>/
+s/0x55708e95a8a0/<addr-123>/
+s/0x55708e95a950/<addr-124>/
+s/0x55708e95aa00/<addr-125>/
+s/0x55708e95ab50/<addr-126>/
+s/0x55708e95aba0/<addr-127>/
+s/0x55708e95ac50/<addr-128>/
+s/0x55708e95ad00/<addr-129>/
+s/0x55708e95adb0/<addr-130>/
+s/0x55708e95aec0/<addr-131>/
+s/0x55708e95b020/<addr-132>/
+s/0x55708e95b070/<addr-133>/
+s/0x55708e95b180/<addr-134>/
+s/0x55708e95b1d0/<addr-135>/
+s/0x55708e95afd0/<addr-136>/
+s/0x55708e95b340/<addr-137>/
+s/0x55708e95b450/<addr-138>/
+s/0x55708e95b4a0/<addr-139>/
+s/0x55708e95b620/<addr-140>/
+s/0x55708e95b670/<addr-141>/
+s/0x55708e95b6c0/<addr-142>/
+s/0x55708e95b770/<addr-143>/
+s/0x55708e95b820/<addr-144>/
+s/0x55708e95b950/<addr-145>/
+s/0x55708e95ba00/<addr-146>/
+s/0x55708e95bab0/<addr-147>/
+s/0x55708e95bb60/<addr-148>/
+s/0x55708e95bca0/<addr-149>/
+s/0x55708e95bd50/<addr-150>/
+s/0x55708e95be00/<addr-151>/
+s/0x55708e95beb0/<addr-152>/
+s/0x55708e95c000/<addr-153>/
+s/0x55708e95c0b0/<addr-154>/
+s/0x55708e95c160/<addr-155>/
+s/0x55708e95c210/<addr-156>/
+s/0x55708e95c370/<addr-157>/
+s/0x55708e95c420/<addr-158>/
+s/0x55708e95c4d0/<addr-159>/
+s/0x55708e95c580/<addr-160>/
+s/0x55708e95c6f0/<addr-161>/
+s/0x55708e95c7a0/<addr-162>/
+s/0x55708e95c850/<addr-163>/
+s/0x55708e95c900/<addr-164>/
+s/0x55708e95ca80/<addr-165>/
+s/0x55708e95cb30/<addr-166>/
+s/0x55708e95cbe0/<addr-167>/
+s/0x55708e95cc90/<addr-168>/
+s/0x55708e95ce20/<addr-169>/
+s/0x55708e95ced0/<addr-170>/
+s/0x55708e95cf80/<addr-171>/
+s/0x55708e95d030/<addr-172>/
+s/0x55708e95d1d0/<addr-173>/
+s/0x55708e95d280/<addr-174>/
+s/0x55708e95d330/<addr-175>/
+s/0x55708e95d3e0/<addr-176>/
+s/0x55708e95d590/<addr-177>/
+s/0x55708e95d640/<addr-178>/
+s/0x55708e95d6f0/<addr-179>/
+s/0x55708e95d7a0/<addr-180>/
+s/0x55708e95d960/<addr-181>/
+s/0x55708e95da10/<addr-182>/
+s/0x55708e95dac0/<addr-183>/
+s/0x55708e95db70/<addr-184>/
+s/0x55708e95dd40/<addr-185>/
+s/0x55708e95ddf0/<addr-186>/
+s/0x55708e95dea0/<addr-187>/
+s/0x55708e95df50/<addr-188>/
+s/0x55708e95e130/<addr-189>/
+s/0x55708e95e1e0/<addr-190>/
+s/0x55708e95e290/<addr-191>/
+s/0x55708e95e340/<addr-192>/
+s/0x55708e95e530/<addr-193>/
+s/0x55708e95e5e0/<addr-194>/
+s/0x55708e95e690/<addr-195>/
+s/0x55708e95e740/<addr-196>/
+s/0x55708e95e940/<addr-197>/
+
+aggr.max32
+    value 900
+
+aggr.min32
+    value 100
+
+aggr.maxu32_minu32
+    value 0
+
+aggr.max64_min64
+    value 0
+
+aggr.maxu64_minu64
+    value 0
+
+aggr.maxuf_minuf
+    value 0
+
+aggr.maxud_minud
+    value 0
+
+aggr.count32
+    value 9
+
+aggr.avg32
+    value 499.99997
+
+aggr.max32_x
+    value 900
+
+aggr.min32_x
+    value 100
+
+aggr.sum32
+    value 4500
+
+aggr.avgu32
+    value 499.99997
+
+aggr.countu32
+    value 9
+
+aggr.maxu32
+    value 900
+
+aggr.minu32
+    value 100
+
+aggr.sumu32
+    value 4500
+
+aggr.avgf
+    value 499.99997
+
+aggr.countf
+    value 9
+
+aggr.maxf
+    value 900
+
+aggr.minf
+    value 100
+
+aggr.sumf
+    value 4500
+
+aggr.avg64
+    value 499.99997
+
+aggr.count64
+    value 9
+
+aggr.max64
+    value 900
+
+aggr.min64
+    value 100
+
+aggr.sum64
+    value 4500
+
+aggr.avgu64
+    value 499.99997
+
+aggr.countu64
+    value 9
+
+aggr.maxu64
+    value 900
+
+aggr.minu64
+    value 100
+
+aggr.sumu64
+    value 4500
+
+aggr.avgd
+    value 499.99997
+
+aggr.countd
+    value 9
+
+aggr.maxd
+    value 900
+
+aggr.mind
+    value 100
+
+aggr.sumd
+    value 4500
+
+aggr.count_err
+    value 0
+
+aggr.sum_err
+Error: Explicit instance identifier(s) required
+
+aggr.countblob
+    value 1
+
+aggr.count_noinst
+    value 0
+=== sed2 ===
+=== sed ===
+pmRegisterDerived: name="event.flags" expr="anon(PM_TYPE_U32)"
+derive_lex() -> type=L_ANON "anon"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "PM_TYPE_U32"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[0] event.flags = anon(PM_TYPE_U32)
+Derived metric expr dump from 0x5600e0f0eeb0...
+expr node 0x5600e0f0eeb0 type=ANON left=0x5600e0f0ef00 right=(nil) save_last=0
+expr node 0x5600e0f0ef00 type=INTEGER left=(nil) right=(nil) save_last=0 [PM_TYPE_U32] master=1
+pmRegisterDerived: name="event.missed" expr="anon(PM_TYPE_U32)"
+derive_lex() -> type=L_ANON "anon"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "PM_TYPE_U32"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[1] event.missed = anon(PM_TYPE_U32)
+Derived metric expr dump from 0x5600e0f0ef70...
+expr node 0x5600e0f0ef70 type=ANON left=0x5600e0f0efc0 right=(nil) save_last=0
+expr node 0x5600e0f0efc0 type=INTEGER left=(nil) right=(nil) save_last=0 [PM_TYPE_U32] master=1
+Derived metric initialization from $PCP_DERIVED_CONFIG
+pmLoadDerivedConfig("/tmp/263-256021.config")
+pmRegisterDerived: name="aggr.non_arith" expr="max(sample.lights)"
+derive_lex() -> type=L_MAX "max"
+derive_lex() -> type=L_LPAREN "("
+derive_lex() -> type=L_NAME "sample.lights"
+derive_lex() -> type=L_RPAREN ")"
+derive_lex() -> type=L_EOS ""
+pmRegisterDerived: register metric[2] aggr.non_arith = max(sample.lights)
+Derived metric expr dump from 0x5600e0f0f150...
+expr node 0x5600e0f0f150 type=MAX left=0x5600e0f0f200 right=(nil) save_last=0
+expr node 0x5600e0f0f200 type=NAME left=(nil) right=(nil) save_last=0 [sample.lights] master=1
+__dmopencontext(->ctx 0) called
+__dmgetpmid: metric "aggr.non_arith" -> PMID 511.0.3
+Semantic error: derived metric aggr.non_arith: MAX(sample.lights): Non-arithmetic operand for function
+__dmtraverse: name="aggr", omitting invalid child "aggr.non_arith"
+Error: aggr: Unknown metric name
+=== sed ===
+s/0x5600e0f0eeb0/<addr-0>/
+s/0x5600e0f0ef00/<addr-1>/
+s/0x5600e0f0ef70/<addr-2>/
+s/0x5600e0f0efc0/<addr-3>/
+s/0x5600e0f0f150/<addr-4>/
+s/0x5600e0f0f200/<addr-5>/

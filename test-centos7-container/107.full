@@ -171,147 +171,147 @@ disk.all.flush_rawactive
 
 disk.partitions.read
     adv  on  nl      10 sec  [0 or "sda1"]
-    adv  on  nl      10 sec  [1 or "sda14"]
-    adv  on  nl      10 sec  [2 or "sda15"]
-    adv  on  nl      10 sec  [3 or "sdb1"]
+    adv  on  nl      10 sec  [1 or "sdb1"]
+    adv  on  nl      10 sec  [2 or "sdb14"]
+    adv  on  nl      10 sec  [3 or "sdb15"]
 
 disk.partitions.write
     adv  on  nl      10 sec  [0 or "sda1"]
-    adv  on  nl      10 sec  [1 or "sda14"]
-    adv  on  nl      10 sec  [2 or "sda15"]
-    adv  on  nl      10 sec  [3 or "sdb1"]
+    adv  on  nl      10 sec  [1 or "sdb1"]
+    adv  on  nl      10 sec  [2 or "sdb14"]
+    adv  on  nl      10 sec  [3 or "sdb15"]
 
 disk.partitions.total
     adv  on  nl      10 sec  [0 or "sda1"]
-    adv  on  nl      10 sec  [1 or "sda14"]
-    adv  on  nl      10 sec  [2 or "sda15"]
-    adv  on  nl      10 sec  [3 or "sdb1"]
+    adv  on  nl      10 sec  [1 or "sdb1"]
+    adv  on  nl      10 sec  [2 or "sdb14"]
+    adv  on  nl      10 sec  [3 or "sdb15"]
 
 disk.partitions.blkread
     adv  on  nl      10 sec  [0 or "sda1"]
-    adv  on  nl      10 sec  [1 or "sda14"]
-    adv  on  nl      10 sec  [2 or "sda15"]
-    adv  on  nl      10 sec  [3 or "sdb1"]
+    adv  on  nl      10 sec  [1 or "sdb1"]
+    adv  on  nl      10 sec  [2 or "sdb14"]
+    adv  on  nl      10 sec  [3 or "sdb15"]
 
 disk.partitions.blkwrite
     adv  on  nl      10 sec  [0 or "sda1"]
-    adv  on  nl      10 sec  [1 or "sda14"]
-    adv  on  nl      10 sec  [2 or "sda15"]
-    adv  on  nl      10 sec  [3 or "sdb1"]
+    adv  on  nl      10 sec  [1 or "sdb1"]
+    adv  on  nl      10 sec  [2 or "sdb14"]
+    adv  on  nl      10 sec  [3 or "sdb15"]
 
 disk.partitions.blktotal
     adv  on  nl      10 sec  [0 or "sda1"]
-    adv  on  nl      10 sec  [1 or "sda14"]
-    adv  on  nl      10 sec  [2 or "sda15"]
-    adv  on  nl      10 sec  [3 or "sdb1"]
+    adv  on  nl      10 sec  [1 or "sdb1"]
+    adv  on  nl      10 sec  [2 or "sdb14"]
+    adv  on  nl      10 sec  [3 or "sdb15"]
 
 disk.partitions.read_bytes
     adv  on  nl      10 sec  [0 or "sda1"]
-    adv  on  nl      10 sec  [1 or "sda14"]
-    adv  on  nl      10 sec  [2 or "sda15"]
-    adv  on  nl      10 sec  [3 or "sdb1"]
+    adv  on  nl      10 sec  [1 or "sdb1"]
+    adv  on  nl      10 sec  [2 or "sdb14"]
+    adv  on  nl      10 sec  [3 or "sdb15"]
 
 disk.partitions.write_bytes
     adv  on  nl      10 sec  [0 or "sda1"]
-    adv  on  nl      10 sec  [1 or "sda14"]
-    adv  on  nl      10 sec  [2 or "sda15"]
-    adv  on  nl      10 sec  [3 or "sdb1"]
+    adv  on  nl      10 sec  [1 or "sdb1"]
+    adv  on  nl      10 sec  [2 or "sdb14"]
+    adv  on  nl      10 sec  [3 or "sdb15"]
 
 disk.partitions.total_bytes
     adv  on  nl      10 sec  [0 or "sda1"]
-    adv  on  nl      10 sec  [1 or "sda14"]
-    adv  on  nl      10 sec  [2 or "sda15"]
-    adv  on  nl      10 sec  [3 or "sdb1"]
+    adv  on  nl      10 sec  [1 or "sdb1"]
+    adv  on  nl      10 sec  [2 or "sdb14"]
+    adv  on  nl      10 sec  [3 or "sdb15"]
 
 disk.partitions.read_merge
     adv  on  nl      10 sec  [0 or "sda1"]
-    adv  on  nl      10 sec  [1 or "sda14"]
-    adv  on  nl      10 sec  [2 or "sda15"]
-    adv  on  nl      10 sec  [3 or "sdb1"]
+    adv  on  nl      10 sec  [1 or "sdb1"]
+    adv  on  nl      10 sec  [2 or "sdb14"]
+    adv  on  nl      10 sec  [3 or "sdb15"]
 
 disk.partitions.write_merge
     adv  on  nl      10 sec  [0 or "sda1"]
-    adv  on  nl      10 sec  [1 or "sda14"]
-    adv  on  nl      10 sec  [2 or "sda15"]
-    adv  on  nl      10 sec  [3 or "sdb1"]
+    adv  on  nl      10 sec  [1 or "sdb1"]
+    adv  on  nl      10 sec  [2 or "sdb14"]
+    adv  on  nl      10 sec  [3 or "sdb15"]
 
 disk.partitions.avactive
     adv  on  nl      10 sec  [0 or "sda1"]
-    adv  on  nl      10 sec  [1 or "sda14"]
-    adv  on  nl      10 sec  [2 or "sda15"]
-    adv  on  nl      10 sec  [3 or "sdb1"]
+    adv  on  nl      10 sec  [1 or "sdb1"]
+    adv  on  nl      10 sec  [2 or "sdb14"]
+    adv  on  nl      10 sec  [3 or "sdb15"]
 
 disk.partitions.aveq
     adv  on  nl      10 sec  [0 or "sda1"]
-    adv  on  nl      10 sec  [1 or "sda14"]
-    adv  on  nl      10 sec  [2 or "sda15"]
-    adv  on  nl      10 sec  [3 or "sdb1"]
+    adv  on  nl      10 sec  [1 or "sdb1"]
+    adv  on  nl      10 sec  [2 or "sdb14"]
+    adv  on  nl      10 sec  [3 or "sdb15"]
 
 disk.partitions.read_rawactive
     adv  on  nl      10 sec  [0 or "sda1"]
-    adv  on  nl      10 sec  [1 or "sda14"]
-    adv  on  nl      10 sec  [2 or "sda15"]
-    adv  on  nl      10 sec  [3 or "sdb1"]
+    adv  on  nl      10 sec  [1 or "sdb1"]
+    adv  on  nl      10 sec  [2 or "sdb14"]
+    adv  on  nl      10 sec  [3 or "sdb15"]
 
 disk.partitions.write_rawactive
     adv  on  nl      10 sec  [0 or "sda1"]
-    adv  on  nl      10 sec  [1 or "sda14"]
-    adv  on  nl      10 sec  [2 or "sda15"]
-    adv  on  nl      10 sec  [3 or "sdb1"]
+    adv  on  nl      10 sec  [1 or "sdb1"]
+    adv  on  nl      10 sec  [2 or "sdb14"]
+    adv  on  nl      10 sec  [3 or "sdb15"]
 
 disk.partitions.total_rawactive
     adv  on  nl      10 sec  [0 or "sda1"]
-    adv  on  nl      10 sec  [1 or "sda14"]
-    adv  on  nl      10 sec  [2 or "sda15"]
-    adv  on  nl      10 sec  [3 or "sdb1"]
+    adv  on  nl      10 sec  [1 or "sdb1"]
+    adv  on  nl      10 sec  [2 or "sdb14"]
+    adv  on  nl      10 sec  [3 or "sdb15"]
 
 disk.partitions.capacity
     adv  off nl              [0 or "sda1"]
-    adv  off nl              [1 or "sda14"]
-    adv  off nl              [2 or "sda15"]
-    adv  off nl              [3 or "sdb1"]
+    adv  off nl              [1 or "sdb1"]
+    adv  off nl              [2 or "sdb14"]
+    adv  off nl              [3 or "sdb15"]
 
 disk.partitions.discard
     adv  off nl              [0 or "sda1"]
-    adv  off nl              [1 or "sda14"]
-    adv  off nl              [2 or "sda15"]
-    adv  off nl              [3 or "sdb1"]
+    adv  off nl              [1 or "sdb1"]
+    adv  off nl              [2 or "sdb14"]
+    adv  off nl              [3 or "sdb15"]
 
 disk.partitions.blkdiscard
     adv  off nl              [0 or "sda1"]
-    adv  off nl              [1 or "sda14"]
-    adv  off nl              [2 or "sda15"]
-    adv  off nl              [3 or "sdb1"]
+    adv  off nl              [1 or "sdb1"]
+    adv  off nl              [2 or "sdb14"]
+    adv  off nl              [3 or "sdb15"]
 
 disk.partitions.discard_bytes
     adv  off nl              [0 or "sda1"]
-    adv  off nl              [1 or "sda14"]
-    adv  off nl              [2 or "sda15"]
-    adv  off nl              [3 or "sdb1"]
+    adv  off nl              [1 or "sdb1"]
+    adv  off nl              [2 or "sdb14"]
+    adv  off nl              [3 or "sdb15"]
 
 disk.partitions.discard_merge
     adv  off nl              [0 or "sda1"]
-    adv  off nl              [1 or "sda14"]
-    adv  off nl              [2 or "sda15"]
-    adv  off nl              [3 or "sdb1"]
+    adv  off nl              [1 or "sdb1"]
+    adv  off nl              [2 or "sdb14"]
+    adv  off nl              [3 or "sdb15"]
 
 disk.partitions.discard_rawactive
     adv  off nl              [0 or "sda1"]
-    adv  off nl              [1 or "sda14"]
-    adv  off nl              [2 or "sda15"]
-    adv  off nl              [3 or "sdb1"]
+    adv  off nl              [1 or "sdb1"]
+    adv  off nl              [2 or "sdb14"]
+    adv  off nl              [3 or "sdb15"]
 
 disk.partitions.flush
     adv  off nl              [0 or "sda1"]
-    adv  off nl              [1 or "sda14"]
-    adv  off nl              [2 or "sda15"]
-    adv  off nl              [3 or "sdb1"]
+    adv  off nl              [1 or "sdb1"]
+    adv  off nl              [2 or "sdb14"]
+    adv  off nl              [3 or "sdb15"]
 
 disk.partitions.flush_rawactive
     adv  off nl              [0 or "sda1"]
-    adv  off nl              [1 or "sda14"]
-    adv  off nl              [2 or "sda15"]
-    adv  off nl              [3 or "sdb1"]
+    adv  off nl              [1 or "sdb1"]
+    adv  off nl              [2 or "sdb14"]
+    adv  off nl              [3 or "sdb15"]
 
 disk.dm.read
     (no instances)
@@ -461,40 +461,40 @@ disk.md.flush_rawactive
     (no instances)
 
 network.interface.collisions
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.mtu
-    adv  on  nl         once [0 or "lo"]
-    adv  on  nl         once [1 or "eth0"]
+    adv  on  nl         once [0 or "eth0"]
+    adv  on  nl         once [1 or "lo"]
 
 network.interface.speed
-    adv  on  nl         once [0 or "lo"]
-    adv  on  nl         once [1 or "eth0"]
+    adv  on  nl         once [0 or "eth0"]
+    adv  on  nl         once [1 or "lo"]
 
 network.interface.baudrate
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.duplex
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.up
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.running
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.wireless
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.type
-    adv  off nl              [0 or "lo"]
-    adv  off nl              [1 or "eth0"]
+    adv  off nl              [0 or "eth0"]
+    adv  off nl              [1 or "lo"]
 
 network.interface.inet_addr
     adv  on  nl         once [0 or "lo"]
@@ -513,84 +513,84 @@ network.interface.hw_addr
     adv  on  nl      10 sec  [1 or "eth0"]
 
 network.interface.in.bytes
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.in.packets
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.in.errors
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.in.drops
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.in.fifo
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.in.frame
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.in.compressed
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.in.mcasts
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.out.bytes
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.out.packets
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.out.errors
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.out.drops
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.out.fifo
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.out.carrier
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.out.compressed
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.total.bytes
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.total.packets
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.total.errors
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.total.drops
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.interface.total.mcasts
-    adv  on  nl      10 sec  [0 or "lo"]
-    adv  on  nl      10 sec  [1 or "eth0"]
+    adv  on  nl      10 sec  [0 or "eth0"]
+    adv  on  nl      10 sec  [1 or "lo"]
 
 network.sockstat.total
     adv  on  nl      10 sec 
@@ -2858,59 +2858,59 @@ pmcd.agent.name
     adv  off nl              [253 or "simple"]
 
 pmcd.pmlogger.host
-    adv  on  nl         once [64740 or "64740"]
+    adv  on  nl         once [65469 or "65469"]
     adv  on  nl         once [0 or "primary"]
 
 pmcd.pmlogger.port
-    adv  on  nl         once [64740 or "64740"]
+    adv  on  nl         once [65469 or "65469"]
     adv  on  nl         once [0 or "primary"]
 
 pmcd.pmlogger.archive
-    adv  on  nl         once [64740 or "64740"]
+    adv  on  nl         once [65469 or "65469"]
     adv  on  nl         once [0 or "primary"]
 
 pmcd.pmlogger.pmcd_host
-    adv  on  nl         once [64740 or "64740"]
+    adv  on  nl         once [65469 or "65469"]
     adv  on  nl         once [0 or "primary"]
 
 pmcd.pmie.configfile
-    adv  on  nl         once [50944 or "50944"]
+    adv  on  nl         once [51871 or "51871"]
     adv  on  nl         once [0 or "primary"]
 
 pmcd.pmie.logfile
-    adv  on  nl         once [50944 or "50944"]
+    adv  on  nl         once [51871 or "51871"]
     adv  on  nl         once [0 or "primary"]
 
 pmcd.pmie.pmcd_host
-    adv  on  nl         once [50944 or "50944"]
+    adv  on  nl         once [51871 or "51871"]
     adv  on  nl         once [0 or "primary"]
 
 pmcd.pmie.numrules
-    adv  on  nl         once [50944 or "50944"]
+    adv  on  nl         once [51871 or "51871"]
     adv  on  nl         once [0 or "primary"]
 
 pmcd.pmie.actions
-    adv  on  nl         once [50944 or "50944"]
+    adv  on  nl         once [51871 or "51871"]
     adv  on  nl         once [0 or "primary"]
 
 pmcd.pmie.eval.true
-    adv  on  nl         once [50944 or "50944"]
+    adv  on  nl         once [51871 or "51871"]
     adv  on  nl         once [0 or "primary"]
 
 pmcd.pmie.eval.false
-    adv  on  nl         once [50944 or "50944"]
+    adv  on  nl         once [51871 or "51871"]
     adv  on  nl         once [0 or "primary"]
 
 pmcd.pmie.eval.unknown
-    adv  on  nl         once [50944 or "50944"]
+    adv  on  nl         once [51871 or "51871"]
     adv  on  nl         once [0 or "primary"]
 
 pmcd.pmie.eval.expected
-    adv  on  nl         once [50944 or "50944"]
+    adv  on  nl         once [51871 or "51871"]
     adv  on  nl         once [0 or "primary"]
 
 pmcd.pmie.eval.actual
-    adv  on  nl         once [50944 or "50944"]
+    adv  on  nl         once [51871 or "51871"]
     adv  on  nl         once [0 or "primary"]
 
 pmcd.buf.alloc

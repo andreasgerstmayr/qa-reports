@@ -93,7 +93,7 @@ act3         = true -> shell "echo >>/tmp/pmie.err act3..." & shell "echo >>/tmp
 act4         = true -> shell "echo >>/tmp/pmie.err act 4 fired" | shell "echo >>/tmp/pmie.err OHH NOOOO";
 
 === err ===
-[Thu Jul  2 15:20:28] pmie(246616) Info: evaluator exiting
+[Thu Jul  2 14:54:41] pmie(246599) Info: evaluator exiting
 
 === out ===
 expr_1: 43

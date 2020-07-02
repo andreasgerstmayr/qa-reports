@@ -1,4 +1,4 @@
-Name space load: 2.54 msec
+Name space load: 3.80 msec
 
 pmid: 60.0.29 name: disk.all.total
 
@@ -111,16 +111,16 @@ children of "" ...
     zram                <s = 1>
 
 Real-time result ...
-pmResult dump from 0x1b22320 timestamp: 1593702765.790210 15:12:45.790 numpmid: 12
+pmResult dump from 0xd3e320 timestamp: 1593701195.648198 14:46:35.648 numpmid: 12
   60.0.29 (disk.all.total): numval: 1 valfmt: 1 vlist[]:
-   value 140624
+   value 139301
   PM_ID_NULL (<noname>): No PMCD agent for domain of request
   60.0.13 (kernel.all.pswitch): numval: 1 valfmt: 1 vlist[]:
-   value 3885196
+   value 3985850
   60.0.20 (kernel.all.cpu.user): numval: 1 valfmt: 1 vlist[]:
-   value 948080
+   value 890670
   60.0.35 (kernel.all.cpu.wait.total): numval: 1 valfmt: 1 vlist[]:
-   value 64990
+   value 62170
   60.0.32 (hinv.ncpu): numval: 1 valfmt: 0 vlist[]:
    value 2
   PM_ID_NULL (<noname>): No PMCD agent for domain of request
@@ -129,9 +129,9 @@ pmResult dump from 0x1b22320 timestamp: 1593702765.790210 15:12:45.790 numpmid: 
   29.0.2 (sample.dupnames.two.seconds, sample.seconds): numval: 1 valfmt: 0 vlist[]:
    value 318
   29.0.5 (sample.colour): numval: 3 valfmt: 0 vlist[]:
-    inst [0 or "red"] value 158
-    inst [1 or "green"] value 259
-    inst [2 or "blue"] value 360
+    inst [0 or "red"] value 160
+    inst [1 or "green"] value 261
+    inst [2 or "blue"] value 362
   PM_ID_NULL (<noname>): No PMCD agent for domain of request
   PM_ID_NULL (<noname>): No PMCD agent for domain of request
 

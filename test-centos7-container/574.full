@@ -17,18 +17,18 @@ sample.longlong
 bozo.the.clown
 }
 ---
-Log for pmlogger on 9a3aa9c56903 started Thu Jul  2 15:15:25 2020
+Log for pmlogger on 3b2b3d6c62f9 started Thu Jul  2 14:49:19 2020
 
-preprocessor cmd: /usr/libexec/pcp/bin/pmcpp -rs /tmp/574-79634.conf -I /var/lib/pcp/config/pmlogger
-Warning [/tmp/574-79634.conf, line 18]
+preprocessor cmd: /usr/libexec/pcp/bin/pmcpp -rs /tmp/574-80341.conf -I /var/lib/pcp/config/pmlogger
+Warning [/tmp/574-80341.conf, line 18]
 Problem with lookup for metric "bozo.the.clown" ... logging not activated
 Reason: Unknown metric name
 Config parsed
-Starting logger for host "9a3aa9c56903" via "local:"
-Archive basename: /tmp/574-79634.logv2
+Starting logger for host "3b2b3d6c62f9" via "local:"
+Archive basename: /tmp/574-80341.logv2
 pmlogger: Sample limit reached, exiting
 
-Log finished Thu Jul  2 15:15:26 2020
+Log finished Thu Jul  2 14:49:19 2020
 ---
 sample.seconds
 sample.dupnames.two.seconds

@@ -1,0 +1,13 @@
+Performance Co-Pilot configuration on fv-az116:
+
+ platform: Linux fv-az116 5.3.0-1031-azure #32~18.04.1-Ubuntu SMP Mon Jun 22 15:27:23 UTC 2020 x86_64
+ hardware: 2 cpus, 2 disks, 1 node, 6927MB RAM
+ timezone: UTC
+ services: pmcd
+     pmcd: Version 5.2.0-1, 12 agents, 1 client
+     pmda: root pmcd proc pmproxy xfs sample sampledso linux mmv kvm
+           jbd2 simple
+ pmlogger: primary logger: /var/log/pcp/pmlogger/fv-az116/20200702.15.02-00
+Ubuntu and libvirt version 
+Ubuntu and libvirt version 
+Ubuntu and libvirt version 

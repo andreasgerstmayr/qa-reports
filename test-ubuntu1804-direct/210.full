@@ -1,0 +1,54 @@
++ pmlogger -s 3 -c /tmp/210-80103.config -l /tmp/210-80103.log /tmp/210-80103
+Log for pmlogger on fv-az116 started Thu Jul  2 15:03:55 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs /tmp/210-80103.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "fv-az116" via "local:"
+Archive basename: /tmp/210-80103
+pmlogger: Sample limit reached, exiting
+
+Log finished Thu Jul  2 15:03:55 2020
+
+15:03:55.214915 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [80162 or "80162"] value "fv-az116.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [80162 or "80162"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [80162 or "80162"] value "/tmp/210-80103"
+    2.0.23 (pmcd.pid): value 75781
+    2.0.24 (pmcd.seqnum): value 15
+
+15:03:55.234795 8 metrics
+    30.0.1007 (sampledso.secret.foo.bar.grunt.snort.huff.puff.seven): value 7
+    30.0.1006 (sampledso.secret.foo.bar.grunt.snort.six): value 6
+    30.0.1005 (sampledso.secret.foo.bar.grunt.five): value 5
+    30.0.1004 (sampledso.secret.foo.bar.four): value 4
+    30.0.1003 (sampledso.secret.foo.bar.three): value 3
+    30.0.1002 (sampledso.secret.foo.two): value 2
+    30.0.1001 (sampledso.secret.foo.one): value 1
+    30.0.1000 (sampledso.secret.bar): value "foo"
+
+15:03:55.334861 8 metrics
+    30.0.1007 (sampledso.secret.foo.bar.grunt.snort.huff.puff.seven): value 7
+    30.0.1006 (sampledso.secret.foo.bar.grunt.snort.six): value 6
+    30.0.1005 (sampledso.secret.foo.bar.grunt.five): value 5
+    30.0.1004 (sampledso.secret.foo.bar.four): value 4
+    30.0.1003 (sampledso.secret.foo.bar.three): value 3
+    30.0.1002 (sampledso.secret.foo.two): value 2
+    30.0.1001 (sampledso.secret.foo.one): value 1
+    30.0.1000 (sampledso.secret.bar): value "foo"
+
+15:03:55.434916 8 metrics
+    30.0.1007 (sampledso.secret.foo.bar.grunt.snort.huff.puff.seven): value 7
+    30.0.1006 (sampledso.secret.foo.bar.grunt.snort.six): value 6
+    30.0.1005 (sampledso.secret.foo.bar.grunt.five): value 5
+    30.0.1004 (sampledso.secret.foo.bar.four): value 4
+    30.0.1003 (sampledso.secret.foo.bar.three): value 3
+    30.0.1002 (sampledso.secret.foo.two): value 2
+    30.0.1001 (sampledso.secret.foo.one): value 1
+    30.0.1000 (sampledso.secret.bar): value "foo"
+
+15:03:55.435807 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [80162 or "80162"] value "fv-az116.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [80162 or "80162"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [80162 or "80162"] value "/tmp/210-80103"
+    2.0.23 (pmcd.pid): value 75781
+    2.0.24 (pmcd.seqnum): value 15

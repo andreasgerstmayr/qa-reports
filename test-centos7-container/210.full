@@ -1,22 +1,22 @@
-+ pmlogger -s 3 -c /tmp/210-68683.config -l /tmp/210-68683.log /tmp/210-68683
-Log for pmlogger on 9a3aa9c56903 started Thu Jul  2 15:14:18 2020
++ pmlogger -s 3 -c /tmp/210-69390.config -l /tmp/210-69390.log /tmp/210-69390
+Log for pmlogger on 3b2b3d6c62f9 started Thu Jul  2 14:48:08 2020
 
-preprocessor cmd: /usr/libexec/pcp/bin/pmcpp -rs /tmp/210-68683.config -I /var/lib/pcp/config/pmlogger
+preprocessor cmd: /usr/libexec/pcp/bin/pmcpp -rs /tmp/210-69390.config -I /var/lib/pcp/config/pmlogger
 Config parsed
-Starting logger for host "9a3aa9c56903" via "local:"
-Archive basename: /tmp/210-68683
+Starting logger for host "3b2b3d6c62f9" via "local:"
+Archive basename: /tmp/210-69390
 pmlogger: Sample limit reached, exiting
 
-Log finished Thu Jul  2 15:14:19 2020
+Log finished Thu Jul  2 14:48:08 2020
 
-15:14:18.786855 5 metrics
-    2.3.3 (pmcd.pmlogger.host): inst [68743 or "68743"] value "9a3aa9c56903"
-    2.3.0 (pmcd.pmlogger.port): inst [68743 or "68743"] value 4331
-    2.3.2 (pmcd.pmlogger.archive): inst [68743 or "68743"] value "/tmp/210-68683"
-    2.0.23 (pmcd.pid): value 64425
+14:48:08.366325 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [69450 or "69450"] value "3b2b3d6c62f9"
+    2.3.0 (pmcd.pmlogger.port): inst [69450 or "69450"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [69450 or "69450"] value "/tmp/210-69390"
+    2.0.23 (pmcd.pid): value 65154
     2.0.24 (pmcd.seqnum): value 17
 
-15:14:18.806402 8 metrics
+14:48:08.386310 8 metrics
     30.0.1007 (sampledso.secret.foo.bar.grunt.snort.huff.puff.seven): value 7
     30.0.1006 (sampledso.secret.foo.bar.grunt.snort.six): value 6
     30.0.1005 (sampledso.secret.foo.bar.grunt.five): value 5
@@ -26,7 +26,7 @@ Log finished Thu Jul  2 15:14:19 2020
     30.0.1001 (sampledso.secret.foo.one): value 1
     30.0.1000 (sampledso.secret.bar): value "foo"
 
-15:14:18.906380 8 metrics
+14:48:08.486380 8 metrics
     30.0.1007 (sampledso.secret.foo.bar.grunt.snort.huff.puff.seven): value 7
     30.0.1006 (sampledso.secret.foo.bar.grunt.snort.six): value 6
     30.0.1005 (sampledso.secret.foo.bar.grunt.five): value 5
@@ -36,7 +36,7 @@ Log finished Thu Jul  2 15:14:19 2020
     30.0.1001 (sampledso.secret.foo.one): value 1
     30.0.1000 (sampledso.secret.bar): value "foo"
 
-15:14:19.006373 8 metrics
+14:48:08.586389 8 metrics
     30.0.1007 (sampledso.secret.foo.bar.grunt.snort.huff.puff.seven): value 7
     30.0.1006 (sampledso.secret.foo.bar.grunt.snort.six): value 6
     30.0.1005 (sampledso.secret.foo.bar.grunt.five): value 5
@@ -46,9 +46,9 @@ Log finished Thu Jul  2 15:14:19 2020
     30.0.1001 (sampledso.secret.foo.one): value 1
     30.0.1000 (sampledso.secret.bar): value "foo"
 
-15:14:19.006673 5 metrics
-    2.3.3 (pmcd.pmlogger.host): inst [68743 or "68743"] value "9a3aa9c56903"
-    2.3.0 (pmcd.pmlogger.port): inst [68743 or "68743"] value 4331
-    2.3.2 (pmcd.pmlogger.archive): inst [68743 or "68743"] value "/tmp/210-68683"
-    2.0.23 (pmcd.pid): value 64425
+14:48:08.586822 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [69450 or "69450"] value "3b2b3d6c62f9"
+    2.3.0 (pmcd.pmlogger.port): inst [69450 or "69450"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [69450 or "69450"] value "/tmp/210-69390"
+    2.0.23 (pmcd.pid): value 65154
     2.0.24 (pmcd.seqnum): value 17

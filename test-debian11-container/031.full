@@ -1,4 +1,4 @@
-Name space load: 5.99 msec
+Name space load: 2.37 msec
 
 pmid: 60.0.29 name: disk.all.total
 
@@ -106,16 +106,16 @@ children of "" ...
     zram                <s = 1>
 
 Real-time result ...
-pmResult dump from 0x5555bdfeda60 timestamp: 1593703218.301880 15:20:18.301 numpmid: 12
+pmResult dump from 0x557e4a0fda60 timestamp: 1593701670.397114 14:54:30.397 numpmid: 12
   60.0.29 (disk.all.total): numval: 1 valfmt: 1 vlist[]:
-   value 164066
+   value 164093
   PM_ID_NULL (<noname>): No PMCD agent for domain of request
   60.0.13 (kernel.all.pswitch): numval: 1 valfmt: 1 vlist[]:
-   value 10922511
+   value 10693306
   60.0.20 (kernel.all.cpu.user): numval: 1 valfmt: 1 vlist[]:
-   value 1179930
+   value 1106300
   60.0.35 (kernel.all.cpu.wait.total): numval: 1 valfmt: 1 vlist[]:
-   value 72260
+   value 79770
   60.0.32 (hinv.ncpu): numval: 1 valfmt: 0 vlist[]:
    value 2
   PM_ID_NULL (<noname>): No PMCD agent for domain of request

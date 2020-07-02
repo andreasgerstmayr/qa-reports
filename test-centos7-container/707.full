@@ -1,18 +1,18 @@
 .
 ----------------------------------------------------------------------
-Ran 1 test in 6.012s
+Ran 1 test in 6.011s
 
 OK
 Running as archive archives/pyapi.0
 pmGetContextHostName: smash
 pmParseMetricSpec: localhost
-pmLookupName: <pcp.pmapi.c_uint_Array_3 object at 0x7f603d6b5730>
+pmLookupName: <pcp.pmapi.c_uint_Array_3 object at 0x7f5ad5ab1730>
 pmIDStr: 60.0.32
-pmFetch: <pcp.pmapi.LP_pmResult object at 0x7f603d6b5ae8>
+pmFetch: <pcp.pmapi.LP_pmResult object at 0x7f5ad5ab1ae8>
 pmExtractValue: 8
 pmGetPMNSLocation: 3
 pmTraversePMNS: 93
-pmLookupName: PM_ERR_NAME Unknown metric name <pcp.pmapi.c_uint_Array_1 object at 0x7f603d6b5a60>
+pmLookupName: PM_ERR_NAME Unknown metric name <pcp.pmapi.c_uint_Array_1 object at 0x7f5ad5ab1a60>
 pmLookupName relaxed mode ('no.such.metric.name', 'sample.bin')
 pmLookupName
 0xf000800
@@ -22,19 +22,19 @@ pmLookupName
 pmNameAll: kernel.all.load
 pmNameID: kernel.all.load
 pmLookupDesc
-pmDesc@0x7f604563bf90 id=0xf000800 type=4
+pmDesc@0x7f5adda37f90 id=0xf000800 type=4
 pmNameAll: sample.bin
 pmNameID: sample.bin
 pmLookupDesc
-pmDesc@0x7f604563bf78 id=0x7400006 type=0
+pmDesc@0x7f5adda37f78 id=0x7400006 type=0
 pmNameAll: kernel.percpu.cpu.sys
 pmNameID: kernel.percpu.cpu.sys
 pmLookupDesc
-pmDesc@0x7f603d6c6030 id=0xf000002 type=3
+pmDesc@0x7f5ad5ac2030 id=0xf000002 type=3
 pmNameAll: mem.util.free
 pmNameID: mem.util.free
 pmLookupDesc
-pmDesc@0x7f603d6c6048 id=0xf000402 type=3
+pmDesc@0x7f5ad5ac2048 id=0xf000402 type=3
 pmGetInDomArchive: ['bin-100', 'bin-200', 'bin-300', 'bin-400', 'bin-500', 'bin-600', 'bin-700', 'bin-800', 'bin-900']
 pmInDomStr: 60.2
 pmDelProfile: ok
@@ -49,7 +49,7 @@ pmParseUnitsStr[bytes]: Mbyte / sec 0.8
 pmParseUnitsStr[unicode]: Mbyte / sec 0.8
 pmParseUnitsStr:  PM_ERR_CONV Impossible value or scale conversion unrecognized or duplicate base unit
 pmParseUnitsStr:  PM_ERR_CONV Impossible value or scale conversion 5
-pmFetch: <pcp.pmapi.LP_pmResult object at 0x7f603d6b5840>
+pmFetch: <pcp.pmapi.LP_pmResult object at 0x7f5ad5ab1840>
 pmSortInstances: ok
 pmStore:  PM_ERR_NOTHOST Operation requires context with host source of metrics
 pmExtractValue 0 100.0

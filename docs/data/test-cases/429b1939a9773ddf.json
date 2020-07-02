@@ -1,0 +1,95 @@
+{
+  "uid" : "429b1939a9773ddf",
+  "name" : "QA 561",
+  "fullName" : "QA #561 on ubuntu1604-direct",
+  "historyId" : "561@ubuntu1604-direct",
+  "time" : {
+    "start" : 1593702050000,
+    "stop" : 1593702051000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 561\n\nExercise pmMergeLabels(3) handling of various input data.\n\n\n\nCopyright (c) 2016-2017 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner direct --platform ubuntu1604 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 561</p>\n<p>Exercise pmMergeLabels(3) handling of various input data.</p>\n<p>Copyright (c) 2016-2017 Red Hat.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner direct --platform ubuntu1604 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 561.out.bad)\n7a8,15\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n10,11c18,19\n< Result: {\"name\":\"v2\"}\n< Verified: OK\n---\n> Result: \n> Verified: FAIL\n18a27,34\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n21,22c37,38\n< Result: {\"high\":\"priority\",\"n0\":\"s\",\"n1\":34,\"n2\":true,\"n3\":null}\n< Verified: OK\n---\n> Result: \n> Verified: FAIL\n29a46,53\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n32,33c56,57\n< Result: {\"map.priority\":\"one\"}\n< Verified: OK\n---\n> Result: \n> Verified: FAIL\n40a65,72\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n43,44c75,76\n< Result: {\"map.priority\":\"one\",\"map.ratio\":2.5}\n< Verified: OK\n---\n> Result: \n> Verified: FAIL\n51a84,91\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n54,55c94,95\n< Result: {\"map\":null,\"map.priority\":\"one\",\"map.ratio\":2.5,\"map2.foo\":\"bar\"}\n< Verified: OK\n---\n> Result: \n> Verified: FAIL\n62a103,110\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n65,66c113,114\n< Result: {\"a\":[\"priority\"]}\n< Verified: OK\n---\n> Result: \n> Verified: FAIL\n73a122,129\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n76,77c132,133\n< Result: {\"a\":[\"priority\",\"one\",\"ratio\",2.5]}\n< Verified: OK\n---\n> Result: \n> Verified: FAIL\n84a141,148\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n87,88c151,152\n< Result: {\"a\":[\"priority\",\"one\",\"ratio\",2.5],\"a2\":[\"foo\",\"bar\"]}\n< Verified: OK\n---\n> Result: \n> Verified: FAIL\n95a160,167\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n98,99c170,171\n< Result: {\"datacenter\":\"torquay\",\"environment\":\"production\",\"more.all\":false,\"more.none\":true,\"none\":null,\"services\":[\"indexer\",\"database\"],\"some\":[1,2,3]}\n< Verified: OK\n---\n> Result: \n> Verified: FAIL\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h fv-az28 -f sample.milliseconds\nPMDA probe: pminfo -h fv-az28 -f sampledso.milliseconds\nPMDA probe: pminfo -h fv-az28 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 561\n\nExercise pmMergeLabels(3) handling of various input data.\n\n\n\nCopyright (c) 2016-2017 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner direct --platform ubuntu1604 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 561.out.bad)\n7a8,15\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n10,11c18,19\n< Result: {\"name\":\"v2\"}\n< Verified: OK\n---\n> Result: \n> Verified: FAIL\n18a27,34\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n21,22c37,38\n< Result: {\"high\":\"priority\",\"n0\":\"s\",\"n1\":34,\"n2\":true,\"n3\":null}\n< Verified: OK\n---\n> Result: \n> Verified: FAIL\n29a46,53\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n32,33c56,57\n< Result: {\"map.priority\":\"one\"}\n< Verified: OK\n---\n> Result: \n> Verified: FAIL\n40a65,72\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n43,44c75,76\n< Result: {\"map.priority\":\"one\",\"map.ratio\":2.5}\n< Verified: OK\n---\n> Result: \n> Verified: FAIL\n51a84,91\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n54,55c94,95\n< Result: {\"map\":null,\"map.priority\":\"one\",\"map.ratio\":2.5,\"map2.foo\":\"bar\"}\n< Verified: OK\n---\n> Result: \n> Verified: FAIL\n62a103,110\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n65,66c113,114\n< Result: {\"a\":[\"priority\"]}\n< Verified: OK\n---\n> Result: \n> Verified: FAIL\n73a122,129\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n76,77c132,133\n< Result: {\"a\":[\"priority\",\"one\",\"ratio\",2.5]}\n< Verified: OK\n---\n> Result: \n> Verified: FAIL\n84a141,148\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n87,88c151,152\n< Result: {\"a\":[\"priority\",\"one\",\"ratio\",2.5],\"a2\":[\"foo\",\"bar\"]}\n< Verified: OK\n---\n> Result: \n> Verified: FAIL\n95a160,167\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n> Traceback (most recent call last):\n>   File \"/var/lib/pcp/testsuite/src/mergelabels.python\", line 17, in <module>\n>     import cpmapi\n> ImportError: No module named cpmapi\n98,99c170,171\n< Result: {\"datacenter\":\"torquay\",\"environment\":\"production\",\"more.all\":false,\"more.none\":true,\"none\":null,\"services\":[\"indexer\",\"database\"],\"some\":[1,2,3]}\n< Verified: OK\n---\n> Result: \n> Verified: FAIL\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h fv-az28 -f sample.milliseconds\nPMDA probe: pminfo -h fv-az28 -f sampledso.milliseconds\nPMDA probe: pminfo -h fv-az28 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7e488c1728ed2893",
+      "name" : "561.out.bad",
+      "source" : "7e488c1728ed2893.txt",
+      "type" : "text/plain",
+      "size" : 6153
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1604-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1604-direct"
+  }, {
+    "name" : "epic",
+    "value" : "libpcp"
+  }, {
+    "name" : "epic",
+    "value" : "python"
+  }, {
+    "name" : "epic",
+    "value" : "labels"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "sanity"
+  }, {
+    "name" : "epic",
+    "value" : "BAD"
+  }, {
+    "name" : "epic",
+    "value" : "@vm13"
+  }, {
+    "name" : "epic",
+    "value" : "@vm33"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/7902b6e1c991998ca419e33a933a11ca323dad97/qa/561",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/7902b6e1c991998ca419e33a933a11ca323dad97/qa/561.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "429b1939a9773ddf.json",
+  "parameterValues" : [ ]
+}

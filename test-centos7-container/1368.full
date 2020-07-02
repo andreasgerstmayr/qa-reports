@@ -1,8 +1,8 @@
 === Dump labels
 
 Metric Labels in the Log ...
-15:15:50.474630
-    Context labels (138 bytes): {"QA":1368,"domainname":"localdomain","groupid":385,"hostname":"9a3aa9c56903","machineid":"4c7b4d799bd741d69c676c60b34e9fbd","userid":385}
+14:49:44.339238
+    Context labels (138 bytes): {"QA":1368,"domainname":"localdomain","groupid":385,"hostname":"3b2b3d6c62f9","machineid":"e29d4d766cf0467a87e62e211e6efab1","userid":385}
         [0] name(2,2) : value(6,4) [context,compound]
         [1] name(12,10) : value(24,13) [context]
         [2] name(39,7) : value(48,3) [context,optional]

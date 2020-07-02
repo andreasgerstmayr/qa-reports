@@ -6,7 +6,7 @@ PMID: 253.0.0
     Semantics: instant  Units: none
 dbpmda> fetch simple.numfetch
 PMID(s): 253.0.0
-pmResult dump from 0x236c200 timestamp: 0.000000 00:00:00.000 numpmid: 1
+pmResult dump from 0x1284200 timestamp: 0.000000 00:00:00.000 numpmid: 1
   253.0.0 (simple.numfetch): numval: 1 valfmt: 0 vlist[]:
    value 1
 dbpmda> desc simple.color
@@ -15,7 +15,7 @@ PMID: 253.0.1
     Semantics: instant  Units: none
 dbpmda> fetch simple.color
 PMID(s): 253.0.1
-pmResult dump from 0x236c200 timestamp: 0.000000 00:00:00.000 numpmid: 1
+pmResult dump from 0x1284200 timestamp: 0.000000 00:00:00.000 numpmid: 1
   253.0.1 (simple.color): numval: 3 valfmt: 0 vlist[]:
     inst [0 or ???] value 1
     inst [1 or ???] value 101
@@ -29,14 +29,14 @@ dbpmda>
 .dbpmdarc> open dso /var/lib/pcp/pmdas/simple/pmda_simple.so simple_init 253
 .dbpmdarc> fetch simple.numfetch
 PMID(s): 253.0.0
-pmResult dump from 0x11f7340 timestamp: 0.000000 00:00:00.000 numpmid: 1
+pmResult dump from 0x1c0a340 timestamp: 0.000000 00:00:00.000 numpmid: 1
   253.0.0 (simple.numfetch): numval: 1 valfmt: 0 vlist[]:
    value 1 1.4012985e-45 0x1
 .dbpmdarc> dbpmda> quit
 dbpmda> open dso /var/lib/pcp/pmdas/simple/pmda_simple.so simple_init 253
 dbpmda> fetch simple.color
 PMID(s): 253.0.1
-pmResult dump from 0x6d6100 timestamp: 0.000000 00:00:00.000 numpmid: 1
+pmResult dump from 0x1eaf100 timestamp: 0.000000 00:00:00.000 numpmid: 1
   253.0.1 (simple.color): numval: 3 valfmt: 0 vlist[]:
     inst [0 or ???] value 1 1.4012985e-45 0x1
     inst [1 or ???] value 101 1.4153114e-43 0x65

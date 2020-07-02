@@ -1,7 +1,7 @@
 Group "not_in_container" is empty or not defined; ignored
-PMDA probe: pminfo -h 9a3aa9c56903 -f sample.milliseconds
-PMDA probe: pminfo -h 9a3aa9c56903 -f sampledso.milliseconds
-PMDA probe: pminfo -h 9a3aa9c56903 -f simple.numfetch
+PMDA probe: pminfo -h 3b2b3d6c62f9 -f sample.milliseconds
+PMDA probe: pminfo -h 3b2b3d6c62f9 -f sampledso.milliseconds
+PMDA probe: pminfo -h 3b2b3d6c62f9 -f simple.numfetch
 [0%] 001
 [1%] 002 0s ...
 [2%] 004

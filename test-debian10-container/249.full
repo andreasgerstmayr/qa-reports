@@ -1,0 +1,3179 @@
+No errors here ...
+
+=== myname.const ===
+__dmgetpmid: metric "myname.const" -> PMID 511.0.3
+__dmbind: bind metric[2] myname.const
+__dmtraverse: name="myname.const" added "myname.const"
+__dmgetpmid: metric "myname.const" -> PMID 511.0.3
+__dmpostfetch: [0] root node 511.0.3: numval=1 vset[0]: inst=-1 u=123456
+expr node 0x562a4a5685a0 type=INTEGER left=(nil) right=(nil) save_last=0 [123456] master=0
+    PMID: PM_ID_NULL (511.0.3 from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+[0] inst=-1, val=123456
+pmFetch returns ...
+pmResult dump from 0x562a4a568670 timestamp: 1593701955.246463 14:59:15.246 numpmid: 1
+  511.0.3 (myname.const): numval: 1 valfmt: 0 vlist[]:
+   value 123456
+
+myname.const
+    value 123456
+=== sed ===
+s/0x562a4a5685a0/<addr-0>/
+
+=== myname.a ===
+__dmgetpmid: metric "myname.a" -> PMID 511.0.4
+__dmbind: bind metric[3] myname.a
+__dmtraverse: name="myname.a" added "myname.a"
+__dmgetpmid: metric "myname.a" -> PMID 511.0.4
+derived metrics prefetch added 1 metrics: 29.0.13
+__dmpostfetch: [0] root node 511.0.4: numval=1 vset[0]: inst=-1 l=1000000
+expr node 0x5573eb8b35a0 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.million] master=0
+    PMID: 29.0.13 (511.0.4 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000000
+pmFetch returns ...
+pmResult dump from 0x5573eb8b2ef0 timestamp: 1593701955.256221 14:59:15.256 numpmid: 1
+  511.0.4 (myname.a): numval: 1 valfmt: 0 vlist[]:
+   value 1000000
+
+myname.a
+    value 1000000
+=== sed ===
+s/0x5573eb8b35a0/<addr-0>/
+
+=== myname ===
+__dmgetpmid: metric "myname.const" -> PMID 511.0.3
+__dmbind: bind metric[2] myname.const
+__dmtraverse: name="myname" added "myname.const"
+__dmgetpmid: metric "myname.a" -> PMID 511.0.4
+__dmbind: bind metric[3] myname.a
+__dmtraverse: name="myname" added "myname.a"
+__dmgetpmid: metric "myname.b" -> PMID 511.0.5
+__dmbind: bind metric[4] myname.b
+__dmtraverse: name="myname" added "myname.b"
+__dmgetpmid: metric "myname.c" -> PMID 511.0.6
+__dmbind: bind metric[5] myname.c
+__dmtraverse: name="myname" added "myname.c"
+__dmgetpmid: metric "myname.d" -> PMID 511.0.7
+__dmbind: bind metric[6] myname.d
+__dmtraverse: name="myname" added "myname.d"
+__dmgetpmid: metric "myname.e" -> PMID 511.0.8
+__dmbind: bind metric[7] myname.e
+__dmtraverse: name="myname" added "myname.e"
+__dmgetpmid: metric "myname.f" -> PMID 511.0.9
+__dmbind: bind metric[8] myname.f
+__dmtraverse: name="myname" added "myname.f"
+__dmgetpmid: metric "myname.g" -> PMID 511.0.10
+__dmbind: bind metric[9] myname.g
+__dmtraverse: name="myname" added "myname.g"
+__dmgetpmid: metric "myname.h" -> PMID 511.0.11
+__dmbind: bind metric[10] myname.h
+__dmtraverse: name="myname" added "myname.h"
+__dmgetpmid: metric "myname.i" -> PMID 511.0.12
+__dmbind: bind metric[11] myname.i
+__dmtraverse: name="myname" added "myname.i"
+__dmgetpmid: metric "myname.j" -> PMID 511.0.13
+__dmbind: bind metric[12] myname.j
+__dmtraverse: name="myname" added "myname.j"
+__dmgetpmid: metric "myname.k" -> PMID 511.0.14
+__dmbind: bind metric[13] myname.k
+__dmtraverse: name="myname" added "myname.k"
+__dmgetpmid: metric "myname.l" -> PMID 511.0.15
+__dmbind: bind metric[14] myname.l
+__dmtraverse: name="myname" added "myname.l"
+__dmgetpmid: metric "myname.m" -> PMID 511.0.16
+__dmbind: bind metric[15] myname.m
+__dmtraverse: name="myname" added "myname.m"
+__dmgetpmid: metric "myname.n" -> PMID 511.0.17
+__dmbind: bind metric[16] myname.n
+__dmtraverse: name="myname" added "myname.n"
+__dmgetpmid: metric "myname.o" -> PMID 511.0.18
+__dmbind: bind metric[17] myname.o
+__dmtraverse: name="myname" added "myname.o"
+__dmgetpmid: metric "myname.p" -> PMID 511.0.19
+__dmbind: bind metric[18] myname.p
+__dmtraverse: name="myname" added "myname.p"
+__dmgetpmid: metric "myname.const" -> PMID 511.0.3
+__dmgetpmid: metric "myname.a" -> PMID 511.0.4
+__dmgetpmid: metric "myname.b" -> PMID 511.0.5
+__dmgetpmid: metric "myname.c" -> PMID 511.0.6
+__dmgetpmid: metric "myname.d" -> PMID 511.0.7
+__dmgetpmid: metric "myname.e" -> PMID 511.0.8
+__dmgetpmid: metric "myname.f" -> PMID 511.0.9
+__dmgetpmid: metric "myname.g" -> PMID 511.0.10
+__dmgetpmid: metric "myname.h" -> PMID 511.0.11
+__dmgetpmid: metric "myname.i" -> PMID 511.0.12
+__dmgetpmid: metric "myname.j" -> PMID 511.0.13
+__dmgetpmid: metric "myname.k" -> PMID 511.0.14
+__dmgetpmid: metric "myname.l" -> PMID 511.0.15
+__dmgetpmid: metric "myname.m" -> PMID 511.0.16
+__dmgetpmid: metric "myname.n" -> PMID 511.0.17
+__dmgetpmid: metric "myname.o" -> PMID 511.0.18
+__dmgetpmid: metric "myname.p" -> PMID 511.0.19
+derived metrics prefetch added 20 metrics: 29.0.13 29.0.23 29.0.18 29.0.28 29.0.30 29.0.31 29.0.32 29.0.12 29.0.11 29.0.10 29.0.22 29.0.21 29.0.20 29.0.17 29.0.16 29.0.15 29.0.27 29.0.6 29.0.48 29.0.26
+__dmpostfetch: [0] root node 511.0.3: numval=1 vset[0]: inst=-1 u=123456
+expr node 0x5634abcdb5a0 type=INTEGER left=(nil) right=(nil) save_last=0 [123456] master=0
+    PMID: PM_ID_NULL (511.0.3 from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+[0] inst=-1, val=123456
+__dmpostfetch: [1] root node 511.0.4: numval=1 vset[0]: inst=-1 l=1000000
+expr node 0x5634abcdb670 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.million] master=0
+    PMID: 29.0.13 (511.0.4 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000000
+__dmpostfetch: [2] root node 511.0.5: numval=1 vset[0]: inst=-1 ll=1000000
+expr node 0x5634abcdaef0 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.million] master=0
+    PMID: 29.0.23 (511.0.5 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000000
+__dmpostfetch: [3] root node 511.0.6: numval=1 vset[0]: inst=-1 f=1000000.000000
+expr node 0x5634abcdafa0 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.million] master=0
+    PMID: 29.0.18 (511.0.6 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1e+06
+__dmpostfetch: [4] root node 511.0.7: numval=1 vset[0]: inst=-1 d=1000000.000000
+expr node 0x5634abcdb050 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.million] master=0
+    PMID: 29.0.28 (511.0.7 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1e+06
+__dmpostfetch: [5] root node 511.0.8: numval=1 vset[0]: inst=-1 cp= (len=1)
+expr node 0x5634abcdb100 type=NAME left=(nil) right=(nil) save_last=0 [sample.string.null] master=0
+    PMID: 29.0.30 (511.0.8 from pmDesc) numval: 1
+    Data Type: string  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=
+__dmpostfetch: [6] root node 511.0.9: numval=1 vset[0]: inst=-1 cp=hullo world! (len=13)
+expr node 0x5634abcdb1b0 type=NAME left=(nil) right=(nil) save_last=0 [sample.string.hullo] master=0
+    PMID: 29.0.31 (511.0.9 from pmDesc) numval: 1
+    Data Type: string  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=hullo world!
+__dmpostfetch: [7] root node 511.0.10: numval=1 vset[0]: inst=-1 cp=13 (len=3)
+expr node 0x5634abcdb2a0 type=NAME left=(nil) right=(nil) save_last=0 [sample.string.write_me] master=0
+    PMID: 29.0.32 (511.0.10 from pmDesc) numval: 1
+    Data Type: string  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=13
+__dmpostfetch: [8] root node 511.0.11: numval=1 vset[0]: inst=-1 l=1000111
+expr node 0x5634abcdfaf0 type=PLUS left=0x5634abcdfb90 right=0x5634abcdfea0 save_last=0
+    PMID: PM_ID_NULL (511.0.11 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000111
+expr node 0x5634abcdfb90 type=PLUS left=0x5634abcdfbe0 right=0x5634abcdfd90 save_last=0
+    PMID: PM_ID_NULL (29.0.13 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000110
+expr node 0x5634abcdfbe0 type=PLUS left=0x5634abcdfc30 right=0x5634abcdfce0 save_last=0
+    PMID: PM_ID_NULL (29.0.13 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000100
+expr node 0x5634abcdfc30 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.million] master=0
+    PMID: 29.0.13 (29.0.13 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000000
+expr node 0x5634abcdfce0 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.hundred] master=0
+    PMID: 29.0.12 (29.0.12 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5634abcdfd90 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.ten] master=0
+    PMID: 29.0.11 (29.0.11 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=10
+expr node 0x5634abcdfea0 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.one] master=0
+    PMID: 29.0.10 (29.0.10 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+__dmpostfetch: [9] root node 511.0.12: numval=1 vset[0]: inst=-1 ll=999889
+expr node 0x5634abcdffb0 type=MINUS left=0x5634abce0060 right=0x5634abce0370 save_last=0
+    PMID: PM_ID_NULL (511.0.12 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=999889
+expr node 0x5634abce0060 type=MINUS left=0x5634abce00b0 right=0x5634abce0260 save_last=0
+    PMID: PM_ID_NULL (29.0.23 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=999890
+expr node 0x5634abce00b0 type=MINUS left=0x5634abce0100 right=0x5634abce01b0 save_last=0
+    PMID: PM_ID_NULL (29.0.23 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=999900
+expr node 0x5634abce0100 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.million] master=0
+    PMID: 29.0.23 (29.0.23 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000000
+expr node 0x5634abce01b0 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.hundred] master=0
+    PMID: 29.0.22 (29.0.22 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5634abce0260 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.ten] master=0
+    PMID: 29.0.21 (29.0.21 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=10
+expr node 0x5634abce0370 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.one] master=0
+    PMID: 29.0.20 (29.0.20 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+__dmpostfetch: [10] root node 511.0.13: numval=1 vset[0]: inst=-1 d=999000.000000
+expr node 0x5634abcdfb40 type=MINUS left=0x5634abce0480 right=0x5634abce05f0 save_last=0
+    PMID: PM_ID_NULL (511.0.13 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=999000
+expr node 0x5634abce0480 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.million] master=0
+    PMID: 29.0.18 (29.0.18 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1e+06
+expr node 0x5634abce05f0 type=SLASH left=0x5634abce0640 right=0x5634abce07f0 save_last=0
+    PMID: PM_ID_NULL (29.0.17 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000
+expr node 0x5634abce0640 type=STAR left=0x5634abce0690 right=0x5634abce0740 save_last=0
+    PMID: PM_ID_NULL (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000
+expr node 0x5634abce0690 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.hundred] master=0
+    PMID: 29.0.17 (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5634abce0740 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.ten] master=0
+    PMID: 29.0.16 (29.0.16 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=10
+expr node 0x5634abce07f0 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.one] master=0
+    PMID: 29.0.15 (29.0.15 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+__dmpostfetch: [11] root node 511.0.14: numval=1 vset[0]: inst=-1 d=1.000000
+expr node 0x5634abce0900 type=PLUS left=0x5634abce0a10 right=0x5634abce0e20 save_last=0
+    PMID: PM_ID_NULL (511.0.14 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+expr node 0x5634abce0a10 type=MINUS left=0x5634abce0a60 right=0x5634abce0b10 save_last=0
+    PMID: PM_ID_NULL (29.0.13 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=0
+expr node 0x5634abce0a60 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.million] master=0
+    PMID: 29.0.13 (29.0.13 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000000
+expr node 0x5634abce0b10 type=STAR left=0x5634abce0b60 right=0x5634abce0d10 save_last=0
+    PMID: PM_ID_NULL (29.0.17 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1e+06
+expr node 0x5634abce0b60 type=STAR left=0x5634abce0bb0 right=0x5634abce0c60 save_last=0
+    PMID: PM_ID_NULL (29.0.17 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=10000
+expr node 0x5634abce0bb0 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.hundred] master=0
+    PMID: 29.0.17 (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5634abce0c60 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.hundred] master=0
+    PMID: 29.0.27 (29.0.27 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5634abce0d10 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.hundred] master=0
+    PMID: 29.0.22 (29.0.22 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5634abce0e20 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.one] master=0
+    PMID: 29.0.10 (29.0.10 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+__dmpostfetch: [12] root node 511.0.15: numval=9 vset[0]: inst=100 d=2.000000 vset[1]: inst=200 d=4.000000 vset[2]: inst=300 d=6.000000 vset[3]: inst=400 d=8.000000 vset[4]: inst=500 d=10.000000 vset[5]: inst=600 d=12.000000 vset[6]: inst=700 d=14.000000 vset[7]: inst=800 d=16.000000 vset[8]: inst=900 d=18.000000
+expr node 0x5634abce0f90 type=SLASH left=0x5634abce10b0 right=0x5634abce1100 save_last=0
+    PMID: PM_ID_NULL (511.0.15 from pmDesc) numval: 9
+    Data Type: double  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=2
+[1] inst=200, val=4
+[2] inst=300, val=6
+[3] inst=400, val=8
+[4] inst=500, val=10
+[5] inst=600, val=12
+[6] inst=700, val=14
+[7] inst=800, val=16
+[8] inst=900, val=18
+expr node 0x5634abce10b0 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=0
+    PMID: 29.0.6 (29.0.6 from pmDesc) numval: 9
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=100
+[1] inst=200, val=200
+[2] inst=300, val=300
+[3] inst=400, val=400
+[4] inst=500, val=500
+[5] inst=600, val=600
+[6] inst=700, val=700
+[7] inst=800, val=800
+[8] inst=900, val=900
+expr node 0x5634abce1100 type=INTEGER left=(nil) right=(nil) save_last=0 [50] master=0
+    PMID: PM_ID_NULL (PM_ID_NULL from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+[0] inst=-1, val=50
+__dmpostfetch: [13] root node 511.0.16: numval=9 vset[0]: inst=100 u=300 vset[1]: inst=200 u=600 vset[2]: inst=300 u=900 vset[3]: inst=400 u=1200 vset[4]: inst=500 u=1500 vset[5]: inst=600 u=1800 vset[6]: inst=700 u=2100 vset[7]: inst=800 u=2400 vset[8]: inst=900 u=2700
+expr node 0x5634abce1210 type=STAR left=0x5634abce1260 right=0x5634abce1310 save_last=0
+    PMID: PM_ID_NULL (511.0.16 from pmDesc) numval: 9
+    Data Type: 32-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=300
+[1] inst=200, val=600
+[2] inst=300, val=900
+[3] inst=400, val=1200
+[4] inst=500, val=1500
+[5] inst=600, val=1800
+[6] inst=700, val=2100
+[7] inst=800, val=2400
+[8] inst=900, val=2700
+expr node 0x5634abce1260 type=INTEGER left=(nil) right=(nil) save_last=0 [3] master=0
+    PMID: PM_ID_NULL (PM_ID_NULL from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+[0] inst=-1, val=3
+expr node 0x5634abce1310 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=0
+    PMID: 29.0.6 (29.0.6 from pmDesc) numval: 9
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=100
+[1] inst=200, val=200
+[2] inst=300, val=300
+[3] inst=400, val=400
+[4] inst=500, val=500
+[5] inst=600, val=600
+[6] inst=700, val=700
+[7] inst=800, val=800
+[8] inst=900, val=900
+__dmpostfetch: [14] root node 511.0.17: numval=9 vset[0]: inst=100 u=0 vset[1]: inst=200 u=100 vset[2]: inst=300 u=200 vset[3]: inst=400 u=300 vset[4]: inst=500 u=400 vset[5]: inst=600 u=500 vset[6]: inst=700 u=600 vset[7]: inst=800 u=700 vset[8]: inst=900 u=800
+expr node 0x5634abce14a0 type=MINUS left=0x5634abce14f0 right=0x5634abce1b20 save_last=0
+    PMID: PM_ID_NULL (511.0.17 from pmDesc) numval: 9
+    Data Type: 32-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=0
+[1] inst=200, val=100
+[2] inst=300, val=200
+[3] inst=400, val=300
+[4] inst=500, val=400
+[5] inst=600, val=500
+[6] inst=700, val=600
+[7] inst=800, val=700
+[8] inst=900, val=800
+expr node 0x5634abce14f0 type=MINUS left=0x5634abce1540 right=0x5634abce18b0 save_last=0
+    PMID: PM_ID_NULL (29.0.6 from pmDesc) numval: 9
+    Data Type: 32-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=100
+[1] inst=200, val=300
+[2] inst=300, val=500
+[3] inst=400, val=700
+[4] inst=500, val=900
+[5] inst=600, val=1100
+[6] inst=700, val=1300
+[7] inst=800, val=1500
+[8] inst=900, val=1700
+expr node 0x5634abce1540 type=PLUS left=0x5634abce1590 right=0x5634abce1640 save_last=0
+    PMID: PM_ID_NULL (29.0.6 from pmDesc) numval: 9
+    Data Type: 32-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=300
+[1] inst=200, val=600
+[2] inst=300, val=900
+[3] inst=400, val=1200
+[4] inst=500, val=1500
+[5] inst=600, val=1800
+[6] inst=700, val=2100
+[7] inst=800, val=2400
+[8] inst=900, val=2700
+expr node 0x5634abce1590 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=0
+    PMID: 29.0.6 (29.0.6 from pmDesc) numval: 9
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=100
+[1] inst=200, val=200
+[2] inst=300, val=300
+[3] inst=400, val=400
+[4] inst=500, val=500
+[5] inst=600, val=600
+[6] inst=700, val=700
+[7] inst=800, val=800
+[8] inst=900, val=900
+expr node 0x5634abce1640 type=STAR left=0x5634abce1690 right=0x5634abce1740 save_last=0
+    PMID: PM_ID_NULL (29.0.48 from pmDesc) numval: 9
+    Data Type: 32-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=200
+[1] inst=200, val=400
+[2] inst=300, val=600
+[3] inst=400, val=800
+[4] inst=500, val=1000
+[5] inst=600, val=1200
+[6] inst=700, val=1400
+[7] inst=800, val=1600
+[8] inst=900, val=1800
+expr node 0x5634abce1690 type=NAME left=(nil) right=(nil) save_last=0 [sample.bucket] master=0
+    PMID: 29.0.48 (29.0.48 from pmDesc) numval: 9
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=100
+[1] inst=200, val=200
+[2] inst=300, val=300
+[3] inst=400, val=400
+[4] inst=500, val=500
+[5] inst=600, val=600
+[6] inst=700, val=700
+[7] inst=800, val=800
+[8] inst=900, val=900
+expr node 0x5634abce1740 type=INTEGER left=(nil) right=(nil) save_last=0 [2] master=0
+    PMID: PM_ID_NULL (PM_ID_NULL from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+[0] inst=-1, val=2
+expr node 0x5634abce18b0 type=PLUS left=0x5634abce1900 right=0x5634abce19b0 save_last=0
+    PMID: PM_ID_NULL (29.0.6 from pmDesc) numval: 9
+    Data Type: 32-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=200
+[1] inst=200, val=300
+[2] inst=300, val=400
+[3] inst=400, val=500
+[4] inst=500, val=600
+[5] inst=600, val=700
+[6] inst=700, val=800
+[7] inst=800, val=900
+[8] inst=900, val=1000
+expr node 0x5634abce1900 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=0
+    PMID: 29.0.6 (29.0.6 from pmDesc) numval: 9
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=100
+[1] inst=200, val=200
+[2] inst=300, val=300
+[3] inst=400, val=400
+[4] inst=500, val=500
+[5] inst=600, val=600
+[6] inst=700, val=700
+[7] inst=800, val=800
+[8] inst=900, val=900
+expr node 0x5634abce19b0 type=INTEGER left=(nil) right=(nil) save_last=0 [100] master=0
+    PMID: PM_ID_NULL (PM_ID_NULL from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+[0] inst=-1, val=100
+expr node 0x5634abce1b20 type=NAME left=(nil) right=(nil) save_last=0 [sample.bucket] master=0
+    PMID: 29.0.48 (29.0.48 from pmDesc) numval: 9
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=100
+[1] inst=200, val=200
+[2] inst=300, val=300
+[3] inst=400, val=400
+[4] inst=500, val=500
+[5] inst=600, val=600
+[6] inst=700, val=700
+[7] inst=800, val=800
+[8] inst=900, val=900
+__dmpostfetch: [15] root node 511.0.18: numval=9 vset[0]: inst=100 d=1000.000000 vset[1]: inst=200 d=2000.000000 vset[2]: inst=300 d=3000.000000 vset[3]: inst=400 d=4000.000000 vset[4]: inst=500 d=5000.000000 vset[5]: inst=600 d=6000.000000 vset[6]: inst=700 d=7000.000000 vset[7]: inst=800 d=8000.000000 vset[8]: inst=900 d=9000.000000
+expr node 0x5634abce1bd0 type=STAR left=0x5634abce1c80 right=0x5634abce1d30 save_last=0
+    PMID: PM_ID_NULL (511.0.18 from pmDesc) numval: 9
+    Data Type: double  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=1000
+[1] inst=200, val=2000
+[2] inst=300, val=3000
+[3] inst=400, val=4000
+[4] inst=500, val=5000
+[5] inst=600, val=6000
+[6] inst=700, val=7000
+[7] inst=800, val=8000
+[8] inst=900, val=9000
+expr node 0x5634abce1c80 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=0
+    PMID: 29.0.6 (29.0.6 from pmDesc) numval: 9
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=100
+[1] inst=200, val=200
+[2] inst=300, val=300
+[3] inst=400, val=400
+[4] inst=500, val=500
+[5] inst=600, val=600
+[6] inst=700, val=700
+[7] inst=800, val=800
+[8] inst=900, val=900
+expr node 0x5634abce1d30 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.ten] master=0
+    PMID: 29.0.26 (29.0.26 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=10
+__dmpostfetch: [16] root node 511.0.19: numval=9 vset[0]: inst=100 d=1000.000000 vset[1]: inst=200 d=2000.000000 vset[2]: inst=300 d=3000.000000 vset[3]: inst=400 d=4000.000000 vset[4]: inst=500 d=5000.000000 vset[5]: inst=600 d=6000.000000 vset[6]: inst=700 d=7000.000000 vset[7]: inst=800 d=8000.000000 vset[8]: inst=900 d=9000.000000
+expr node 0x5634abce1de0 type=STAR left=0x5634abce1f20 right=0x5634abce1fd0 save_last=0
+    PMID: PM_ID_NULL (511.0.19 from pmDesc) numval: 9
+    Data Type: double  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=1000
+[1] inst=200, val=2000
+[2] inst=300, val=3000
+[3] inst=400, val=4000
+[4] inst=500, val=5000
+[5] inst=600, val=6000
+[6] inst=700, val=7000
+[7] inst=800, val=8000
+[8] inst=900, val=9000
+expr node 0x5634abce1f20 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.ten] master=0
+    PMID: 29.0.26 (29.0.26 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=10
+expr node 0x5634abce1fd0 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=0
+    PMID: 29.0.6 (29.0.6 from pmDesc) numval: 9
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=100
+[1] inst=200, val=200
+[2] inst=300, val=300
+[3] inst=400, val=400
+[4] inst=500, val=500
+[5] inst=600, val=600
+[6] inst=700, val=700
+[7] inst=800, val=800
+[8] inst=900, val=900
+pmFetch returns ...
+pmResult dump from 0x5634abcdba90 timestamp: 1593701955.269604 14:59:15.269 numpmid: 17
+  511.0.3 (myname.const): numval: 1 valfmt: 0 vlist[]:
+   value 123456
+  511.0.4 (myname.a): numval: 1 valfmt: 0 vlist[]:
+   value 1000000
+  511.0.5 (myname.b): numval: 1 valfmt: 1 vlist[]:
+   value 1000000
+  511.0.6 (myname.c): numval: 1 valfmt: 1 vlist[]:
+   value 1000000
+  511.0.7 (myname.d): numval: 1 valfmt: 1 vlist[]:
+   value 1000000
+  511.0.8 (myname.e): numval: 1 valfmt: 1 vlist[]:
+   value ""
+  511.0.9 (myname.f): numval: 1 valfmt: 1 vlist[]:
+   value "hullo world!"
+  511.0.10 (myname.g): numval: 1 valfmt: 1 vlist[]:
+   value "13"
+  511.0.11 (myname.h): numval: 1 valfmt: 0 vlist[]:
+   value 1000111
+  511.0.12 (myname.i): numval: 1 valfmt: 1 vlist[]:
+   value 999889
+  511.0.13 (myname.j): numval: 1 valfmt: 1 vlist[]:
+   value 999000
+  511.0.14 (myname.k): numval: 1 valfmt: 1 vlist[]:
+   value 1
+  511.0.15 (myname.l): numval: 9 valfmt: 1 vlist[]:
+    inst [100 or "bin-100"] value 2
+    inst [200 or "bin-200"] value 4
+    inst [300 or "bin-300"] value 6
+    inst [400 or "bin-400"] value 8
+    inst [500 or "bin-500"] value 10
+    inst [600 or "bin-600"] value 12
+    inst [700 or "bin-700"] value 14
+    inst [800 or "bin-800"] value 16
+    inst [900 or "bin-900"] value 18
+  511.0.16 (myname.m): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or "bin-100"] value 300
+    inst [200 or "bin-200"] value 600
+    inst [300 or "bin-300"] value 900
+    inst [400 or "bin-400"] value 1200
+    inst [500 or "bin-500"] value 1500
+    inst [600 or "bin-600"] value 1800
+    inst [700 or "bin-700"] value 2100
+    inst [800 or "bin-800"] value 2400
+    inst [900 or "bin-900"] value 2700
+  511.0.17 (myname.n): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or "bin-100"] value 0
+    inst [200 or "bin-200"] value 100
+    inst [300 or "bin-300"] value 200
+    inst [400 or "bin-400"] value 300
+    inst [500 or "bin-500"] value 400
+    inst [600 or "bin-600"] value 500
+    inst [700 or "bin-700"] value 600
+    inst [800 or "bin-800"] value 700
+    inst [900 or "bin-900"] value 800
+  511.0.18 (myname.o): numval: 9 valfmt: 1 vlist[]:
+    inst [100 or "bin-100"] value 1000
+    inst [200 or "bin-200"] value 2000
+    inst [300 or "bin-300"] value 3000
+    inst [400 or "bin-400"] value 4000
+    inst [500 or "bin-500"] value 5000
+    inst [600 or "bin-600"] value 6000
+    inst [700 or "bin-700"] value 7000
+    inst [800 or "bin-800"] value 8000
+    inst [900 or "bin-900"] value 9000
+  511.0.19 (myname.p): numval: 9 valfmt: 1 vlist[]:
+    inst [100 or "bin-100"] value 1000
+    inst [200 or "bin-200"] value 2000
+    inst [300 or "bin-300"] value 3000
+    inst [400 or "bin-400"] value 4000
+    inst [500 or "bin-500"] value 5000
+    inst [600 or "bin-600"] value 6000
+    inst [700 or "bin-700"] value 7000
+    inst [800 or "bin-800"] value 8000
+    inst [900 or "bin-900"] value 9000
+
+myname.const
+    value 123456
+
+myname.a
+    value 1000000
+
+myname.b
+    value 1000000
+
+myname.c
+    value 1000000
+
+myname.d
+    value 1000000
+
+myname.e
+    value ""
+
+myname.f
+    value "hullo world!"
+
+myname.g
+    value "13"
+
+myname.h
+    value 1000111
+
+myname.i
+    value 999889
+
+myname.j
+    value 999000
+
+myname.k
+    value 1
+
+myname.l
+    inst [100 or "bin-100"] value 2
+    inst [200 or "bin-200"] value 4
+    inst [300 or "bin-300"] value 6
+    inst [400 or "bin-400"] value 8
+    inst [500 or "bin-500"] value 10
+    inst [600 or "bin-600"] value 12
+    inst [700 or "bin-700"] value 14
+    inst [800 or "bin-800"] value 16
+    inst [900 or "bin-900"] value 18
+
+myname.m
+    inst [100 or "bin-100"] value 300
+    inst [200 or "bin-200"] value 600
+    inst [300 or "bin-300"] value 900
+    inst [400 or "bin-400"] value 1200
+    inst [500 or "bin-500"] value 1500
+    inst [600 or "bin-600"] value 1800
+    inst [700 or "bin-700"] value 2100
+    inst [800 or "bin-800"] value 2400
+    inst [900 or "bin-900"] value 2700
+
+myname.n
+    inst [100 or "bin-100"] value 0
+    inst [200 or "bin-200"] value 100
+    inst [300 or "bin-300"] value 200
+    inst [400 or "bin-400"] value 300
+    inst [500 or "bin-500"] value 400
+    inst [600 or "bin-600"] value 500
+    inst [700 or "bin-700"] value 600
+    inst [800 or "bin-800"] value 700
+    inst [900 or "bin-900"] value 800
+
+myname.o
+    inst [100 or "bin-100"] value 1000
+    inst [200 or "bin-200"] value 2000
+    inst [300 or "bin-300"] value 3000
+    inst [400 or "bin-400"] value 4000
+    inst [500 or "bin-500"] value 5000
+    inst [600 or "bin-600"] value 6000
+    inst [700 or "bin-700"] value 7000
+    inst [800 or "bin-800"] value 8000
+    inst [900 or "bin-900"] value 9000
+
+myname.p
+    inst [100 or "bin-100"] value 1000
+    inst [200 or "bin-200"] value 2000
+    inst [300 or "bin-300"] value 3000
+    inst [400 or "bin-400"] value 4000
+    inst [500 or "bin-500"] value 5000
+    inst [600 or "bin-600"] value 6000
+    inst [700 or "bin-700"] value 7000
+    inst [800 or "bin-800"] value 8000
+    inst [900 or "bin-900"] value 9000
+=== sed ===
+s/0x5634abcdb5a0/<addr-0>/
+s/0x5634abcdb670/<addr-1>/
+s/0x5634abcdaef0/<addr-2>/
+s/0x5634abcdafa0/<addr-3>/
+s/0x5634abcdb050/<addr-4>/
+s/0x5634abcdb100/<addr-5>/
+s/0x5634abcdb1b0/<addr-6>/
+s/0x5634abcdb2a0/<addr-7>/
+s/0x5634abcdfaf0/<addr-8>/
+s/0x5634abcdfb90/<addr-9>/
+s/0x5634abcdfbe0/<addr-10>/
+s/0x5634abcdfc30/<addr-11>/
+s/0x5634abcdfce0/<addr-12>/
+s/0x5634abcdfd90/<addr-13>/
+s/0x5634abcdfea0/<addr-14>/
+s/0x5634abcdffb0/<addr-15>/
+s/0x5634abce0060/<addr-16>/
+s/0x5634abce00b0/<addr-17>/
+s/0x5634abce0100/<addr-18>/
+s/0x5634abce01b0/<addr-19>/
+s/0x5634abce0260/<addr-20>/
+s/0x5634abce0370/<addr-21>/
+s/0x5634abcdfb40/<addr-22>/
+s/0x5634abce0480/<addr-23>/
+s/0x5634abce05f0/<addr-24>/
+s/0x5634abce0640/<addr-25>/
+s/0x5634abce0690/<addr-26>/
+s/0x5634abce0740/<addr-27>/
+s/0x5634abce07f0/<addr-28>/
+s/0x5634abce0900/<addr-29>/
+s/0x5634abce0a10/<addr-30>/
+s/0x5634abce0a60/<addr-31>/
+s/0x5634abce0b10/<addr-32>/
+s/0x5634abce0b60/<addr-33>/
+s/0x5634abce0bb0/<addr-34>/
+s/0x5634abce0c60/<addr-35>/
+s/0x5634abce0d10/<addr-36>/
+s/0x5634abce0e20/<addr-37>/
+s/0x5634abce0f90/<addr-38>/
+s/0x5634abce10b0/<addr-39>/
+s/0x5634abce1100/<addr-40>/
+s/0x5634abce1210/<addr-41>/
+s/0x5634abce1260/<addr-42>/
+s/0x5634abce1310/<addr-43>/
+s/0x5634abce14a0/<addr-44>/
+s/0x5634abce14f0/<addr-45>/
+s/0x5634abce1540/<addr-46>/
+s/0x5634abce1590/<addr-47>/
+s/0x5634abce1640/<addr-48>/
+s/0x5634abce1690/<addr-49>/
+s/0x5634abce1740/<addr-50>/
+s/0x5634abce18b0/<addr-51>/
+s/0x5634abce1900/<addr-52>/
+s/0x5634abce19b0/<addr-53>/
+s/0x5634abce1b20/<addr-54>/
+s/0x5634abce1bd0/<addr-55>/
+s/0x5634abce1c80/<addr-56>/
+s/0x5634abce1d30/<addr-57>/
+s/0x5634abce1de0/<addr-58>/
+s/0x5634abce1f20/<addr-59>/
+s/0x5634abce1fd0/<addr-60>/
+
+=== myname.a sample.long ===
+__dmgetpmid: metric "myname.a" -> PMID 511.0.4
+__dmbind: bind metric[3] myname.a
+__dmtraverse: name="myname.a" added "myname.a"
+__dmgetpmid: metric "myname.a" -> PMID 511.0.4
+__dmpostfetch: [0] root node 511.0.4: numval=1 vset[0]: inst=-1 l=1000000
+expr node 0x55a1232885a0 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.million] master=0
+    PMID: 29.0.13 (511.0.4 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000000
+pmFetch returns ...
+pmResult dump from 0x55a1232882b0 timestamp: 1593701955.293373 14:59:15.293 numpmid: 8
+  511.0.4 (myname.a): numval: 1 valfmt: 0 vlist[]:
+   value 1000000
+  29.0.10 (sample.long.one): numval: 1 valfmt: 0 vlist[]:
+   value 1
+  29.0.11 (sample.long.ten): numval: 1 valfmt: 0 vlist[]:
+   value 10
+  29.0.12 (sample.long.hundred): numval: 1 valfmt: 0 vlist[]:
+   value 100
+  29.0.13 (sample.long.million): numval: 1 valfmt: 0 vlist[]:
+   value 1000000
+  29.0.14 (sample.long.write_me): numval: 1 valfmt: 0 vlist[]:
+   value 13
+  29.0.103 (sample.long.bin): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or "bin-100"] value 100
+    inst [200 or "bin-200"] value 200
+    inst [300 or "bin-300"] value 300
+    inst [400 or "bin-400"] value 400
+    inst [500 or "bin-500"] value 500
+    inst [600 or "bin-600"] value 600
+    inst [700 or "bin-700"] value 700
+    inst [800 or "bin-800"] value 800
+    inst [900 or "bin-900"] value 900
+  29.0.104 (sample.long.bin_ctr): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or "bin-100"] value 100
+    inst [200 or "bin-200"] value 200
+    inst [300 or "bin-300"] value 300
+    inst [400 or "bin-400"] value 400
+    inst [500 or "bin-500"] value 500
+    inst [600 or "bin-600"] value 600
+    inst [700 or "bin-700"] value 700
+    inst [800 or "bin-800"] value 800
+    inst [900 or "bin-900"] value 900
+
+myname.a
+    value 1000000
+
+sample.long.one
+    value 1
+
+sample.long.ten
+    value 10
+
+sample.long.hundred
+    value 100
+
+sample.long.million
+    value 1000000
+
+sample.long.write_me
+    value 13
+
+sample.long.bin
+    inst [100 or "bin-100"] value 100
+    inst [200 or "bin-200"] value 200
+    inst [300 or "bin-300"] value 300
+    inst [400 or "bin-400"] value 400
+    inst [500 or "bin-500"] value 500
+    inst [600 or "bin-600"] value 600
+    inst [700 or "bin-700"] value 700
+    inst [800 or "bin-800"] value 800
+    inst [900 or "bin-900"] value 900
+
+sample.long.bin_ctr
+    inst [100 or "bin-100"] value 100
+    inst [200 or "bin-200"] value 200
+    inst [300 or "bin-300"] value 300
+    inst [400 or "bin-400"] value 400
+    inst [500 or "bin-500"] value 500
+    inst [600 or "bin-600"] value 600
+    inst [700 or "bin-700"] value 700
+    inst [800 or "bin-800"] value 800
+    inst [900 or "bin-900"] value 900
+=== sed ===
+s/0x55a1232885a0/<addr-0>/
+
+=== sample.long myname.a ===
+__dmgetpmid: metric "myname.a" -> PMID 511.0.4
+__dmbind: bind metric[3] myname.a
+__dmtraverse: name="myname.a" added "myname.a"
+__dmgetpmid: metric "myname.a" -> PMID 511.0.4
+__dmpostfetch: [7] root node 511.0.4: numval=1 vset[0]: inst=-1 l=1000000
+expr node 0x55de29a03680 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.million] master=0
+    PMID: 29.0.13 (511.0.4 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000000
+pmFetch returns ...
+pmResult dump from 0x55de29a032a0 timestamp: 1593701955.306594 14:59:15.306 numpmid: 8
+  29.0.10 (sample.long.one): numval: 1 valfmt: 0 vlist[]:
+   value 1
+  29.0.11 (sample.long.ten): numval: 1 valfmt: 0 vlist[]:
+   value 10
+  29.0.12 (sample.long.hundred): numval: 1 valfmt: 0 vlist[]:
+   value 100
+  29.0.13 (sample.long.million): numval: 1 valfmt: 0 vlist[]:
+   value 1000000
+  29.0.14 (sample.long.write_me): numval: 1 valfmt: 0 vlist[]:
+   value 13
+  29.0.103 (sample.long.bin): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or "bin-100"] value 100
+    inst [200 or "bin-200"] value 200
+    inst [300 or "bin-300"] value 300
+    inst [400 or "bin-400"] value 400
+    inst [500 or "bin-500"] value 500
+    inst [600 or "bin-600"] value 600
+    inst [700 or "bin-700"] value 700
+    inst [800 or "bin-800"] value 800
+    inst [900 or "bin-900"] value 900
+  29.0.104 (sample.long.bin_ctr): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or "bin-100"] value 100
+    inst [200 or "bin-200"] value 200
+    inst [300 or "bin-300"] value 300
+    inst [400 or "bin-400"] value 400
+    inst [500 or "bin-500"] value 500
+    inst [600 or "bin-600"] value 600
+    inst [700 or "bin-700"] value 700
+    inst [800 or "bin-800"] value 800
+    inst [900 or "bin-900"] value 900
+  511.0.4 (myname.a): numval: 1 valfmt: 0 vlist[]:
+   value 1000000
+
+sample.long.one
+    value 1
+
+sample.long.ten
+    value 10
+
+sample.long.hundred
+    value 100
+
+sample.long.million
+    value 1000000
+
+sample.long.write_me
+    value 13
+
+sample.long.bin
+    inst [100 or "bin-100"] value 100
+    inst [200 or "bin-200"] value 200
+    inst [300 or "bin-300"] value 300
+    inst [400 or "bin-400"] value 400
+    inst [500 or "bin-500"] value 500
+    inst [600 or "bin-600"] value 600
+    inst [700 or "bin-700"] value 700
+    inst [800 or "bin-800"] value 800
+    inst [900 or "bin-900"] value 900
+
+sample.long.bin_ctr
+    inst [100 or "bin-100"] value 100
+    inst [200 or "bin-200"] value 200
+    inst [300 or "bin-300"] value 300
+    inst [400 or "bin-400"] value 400
+    inst [500 or "bin-500"] value 500
+    inst [600 or "bin-600"] value 600
+    inst [700 or "bin-700"] value 700
+    inst [800 or "bin-800"] value 800
+    inst [900 or "bin-900"] value 900
+
+myname.a
+    value 1000000
+=== sed ===
+s/0x55de29a03680/<addr-0>/
+
+=== sample.longlong myname.a myname.b sample.long ===
+__dmgetpmid: metric "myname.a" -> PMID 511.0.4
+__dmbind: bind metric[3] myname.a
+__dmtraverse: name="myname.a" added "myname.a"
+__dmgetpmid: metric "myname.b" -> PMID 511.0.5
+__dmbind: bind metric[4] myname.b
+__dmtraverse: name="myname.b" added "myname.b"
+__dmgetpmid: metric "myname.a" -> PMID 511.0.4
+__dmgetpmid: metric "myname.b" -> PMID 511.0.5
+__dmpostfetch: [7] root node 511.0.4: numval=1 vset[0]: inst=-1 l=1000000
+expr node 0x564b27762a80 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.million] master=0
+    PMID: 29.0.13 (511.0.4 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000000
+__dmpostfetch: [8] root node 511.0.5: numval=1 vset[0]: inst=-1 ll=1000000
+expr node 0x564b27762b30 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.million] master=0
+    PMID: 29.0.23 (511.0.5 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000000
+pmFetch returns ...
+pmResult dump from 0x564b27762df0 timestamp: 1593701955.320058 14:59:15.320 numpmid: 16
+  29.0.20 (sample.longlong.one): numval: 1 valfmt: 1 vlist[]:
+   value 1
+  29.0.21 (sample.longlong.ten): numval: 1 valfmt: 1 vlist[]:
+   value 10
+  29.0.22 (sample.longlong.hundred): numval: 1 valfmt: 1 vlist[]:
+   value 100
+  29.0.23 (sample.longlong.million): numval: 1 valfmt: 1 vlist[]:
+   value 1000000
+  29.0.24 (sample.longlong.write_me): numval: 1 valfmt: 1 vlist[]:
+   value 13
+  29.0.109 (sample.longlong.bin): numval: 9 valfmt: 1 vlist[]:
+    inst [100 or "bin-100"] value 100
+    inst [200 or "bin-200"] value 200
+    inst [300 or "bin-300"] value 300
+    inst [400 or "bin-400"] value 400
+    inst [500 or "bin-500"] value 500
+    inst [600 or "bin-600"] value 600
+    inst [700 or "bin-700"] value 700
+    inst [800 or "bin-800"] value 800
+    inst [900 or "bin-900"] value 900
+  29.0.110 (sample.longlong.bin_ctr): numval: 9 valfmt: 1 vlist[]:
+    inst [100 or "bin-100"] value 100
+    inst [200 or "bin-200"] value 200
+    inst [300 or "bin-300"] value 300
+    inst [400 or "bin-400"] value 400
+    inst [500 or "bin-500"] value 500
+    inst [600 or "bin-600"] value 600
+    inst [700 or "bin-700"] value 700
+    inst [800 or "bin-800"] value 800
+    inst [900 or "bin-900"] value 900
+  511.0.4 (myname.a): numval: 1 valfmt: 0 vlist[]:
+   value 1000000
+  511.0.5 (myname.b): numval: 1 valfmt: 1 vlist[]:
+   value 1000000
+  29.0.10 (sample.long.one): numval: 1 valfmt: 0 vlist[]:
+   value 1
+  29.0.11 (sample.long.ten): numval: 1 valfmt: 0 vlist[]:
+   value 10
+  29.0.12 (sample.long.hundred): numval: 1 valfmt: 0 vlist[]:
+   value 100
+  29.0.13 (sample.long.million): numval: 1 valfmt: 0 vlist[]:
+   value 1000000
+  29.0.14 (sample.long.write_me): numval: 1 valfmt: 0 vlist[]:
+   value 13
+  29.0.103 (sample.long.bin): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or "bin-100"] value 100
+    inst [200 or "bin-200"] value 200
+    inst [300 or "bin-300"] value 300
+    inst [400 or "bin-400"] value 400
+    inst [500 or "bin-500"] value 500
+    inst [600 or "bin-600"] value 600
+    inst [700 or "bin-700"] value 700
+    inst [800 or "bin-800"] value 800
+    inst [900 or "bin-900"] value 900
+  29.0.104 (sample.long.bin_ctr): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or "bin-100"] value 100
+    inst [200 or "bin-200"] value 200
+    inst [300 or "bin-300"] value 300
+    inst [400 or "bin-400"] value 400
+    inst [500 or "bin-500"] value 500
+    inst [600 or "bin-600"] value 600
+    inst [700 or "bin-700"] value 700
+    inst [800 or "bin-800"] value 800
+    inst [900 or "bin-900"] value 900
+
+sample.longlong.one
+    value 1
+
+sample.longlong.ten
+    value 10
+
+sample.longlong.hundred
+    value 100
+
+sample.longlong.million
+    value 1000000
+
+sample.longlong.write_me
+    value 13
+
+sample.longlong.bin
+    inst [100 or "bin-100"] value 100
+    inst [200 or "bin-200"] value 200
+    inst [300 or "bin-300"] value 300
+    inst [400 or "bin-400"] value 400
+    inst [500 or "bin-500"] value 500
+    inst [600 or "bin-600"] value 600
+    inst [700 or "bin-700"] value 700
+    inst [800 or "bin-800"] value 800
+    inst [900 or "bin-900"] value 900
+
+sample.longlong.bin_ctr
+    inst [100 or "bin-100"] value 100
+    inst [200 or "bin-200"] value 200
+    inst [300 or "bin-300"] value 300
+    inst [400 or "bin-400"] value 400
+    inst [500 or "bin-500"] value 500
+    inst [600 or "bin-600"] value 600
+    inst [700 or "bin-700"] value 700
+    inst [800 or "bin-800"] value 800
+    inst [900 or "bin-900"] value 900
+
+myname.a
+    value 1000000
+
+myname.b
+    value 1000000
+
+sample.long.one
+    value 1
+
+sample.long.ten
+    value 10
+
+sample.long.hundred
+    value 100
+
+sample.long.million
+    value 1000000
+
+sample.long.write_me
+    value 13
+
+sample.long.bin
+    inst [100 or "bin-100"] value 100
+    inst [200 or "bin-200"] value 200
+    inst [300 or "bin-300"] value 300
+    inst [400 or "bin-400"] value 400
+    inst [500 or "bin-500"] value 500
+    inst [600 or "bin-600"] value 600
+    inst [700 or "bin-700"] value 700
+    inst [800 or "bin-800"] value 800
+    inst [900 or "bin-900"] value 900
+
+sample.long.bin_ctr
+    inst [100 or "bin-100"] value 100
+    inst [200 or "bin-200"] value 200
+    inst [300 or "bin-300"] value 300
+    inst [400 or "bin-400"] value 400
+    inst [500 or "bin-500"] value 500
+    inst [600 or "bin-600"] value 600
+    inst [700 or "bin-700"] value 700
+    inst [800 or "bin-800"] value 800
+    inst [900 or "bin-900"] value 900
+=== sed ===
+s/0x564b27762a80/<addr-0>/
+s/0x564b27762b30/<addr-1>/
+
+=== sample.string myname.f sample.bin myname ===
+__dmgetpmid: metric "myname.f" -> PMID 511.0.9
+__dmbind: bind metric[8] myname.f
+__dmtraverse: name="myname.f" added "myname.f"
+__dmgetpmid: metric "myname.const" -> PMID 511.0.3
+__dmbind: bind metric[2] myname.const
+__dmtraverse: name="myname" added "myname.const"
+__dmgetpmid: metric "myname.a" -> PMID 511.0.4
+__dmbind: bind metric[3] myname.a
+__dmtraverse: name="myname" added "myname.a"
+__dmgetpmid: metric "myname.b" -> PMID 511.0.5
+__dmbind: bind metric[4] myname.b
+__dmtraverse: name="myname" added "myname.b"
+__dmgetpmid: metric "myname.c" -> PMID 511.0.6
+__dmbind: bind metric[5] myname.c
+__dmtraverse: name="myname" added "myname.c"
+__dmgetpmid: metric "myname.d" -> PMID 511.0.7
+__dmbind: bind metric[6] myname.d
+__dmtraverse: name="myname" added "myname.d"
+__dmgetpmid: metric "myname.e" -> PMID 511.0.8
+__dmbind: bind metric[7] myname.e
+__dmtraverse: name="myname" added "myname.e"
+__dmtraverse: name="myname" added "myname.f"
+__dmgetpmid: metric "myname.g" -> PMID 511.0.10
+__dmbind: bind metric[9] myname.g
+__dmtraverse: name="myname" added "myname.g"
+__dmgetpmid: metric "myname.h" -> PMID 511.0.11
+__dmbind: bind metric[10] myname.h
+__dmtraverse: name="myname" added "myname.h"
+__dmgetpmid: metric "myname.i" -> PMID 511.0.12
+__dmbind: bind metric[11] myname.i
+__dmtraverse: name="myname" added "myname.i"
+__dmgetpmid: metric "myname.j" -> PMID 511.0.13
+__dmbind: bind metric[12] myname.j
+__dmtraverse: name="myname" added "myname.j"
+__dmgetpmid: metric "myname.k" -> PMID 511.0.14
+__dmbind: bind metric[13] myname.k
+__dmtraverse: name="myname" added "myname.k"
+__dmgetpmid: metric "myname.l" -> PMID 511.0.15
+__dmbind: bind metric[14] myname.l
+__dmtraverse: name="myname" added "myname.l"
+__dmgetpmid: metric "myname.m" -> PMID 511.0.16
+__dmbind: bind metric[15] myname.m
+__dmtraverse: name="myname" added "myname.m"
+__dmgetpmid: metric "myname.n" -> PMID 511.0.17
+__dmbind: bind metric[16] myname.n
+__dmtraverse: name="myname" added "myname.n"
+__dmgetpmid: metric "myname.o" -> PMID 511.0.18
+__dmbind: bind metric[17] myname.o
+__dmtraverse: name="myname" added "myname.o"
+__dmgetpmid: metric "myname.p" -> PMID 511.0.19
+__dmbind: bind metric[18] myname.p
+__dmtraverse: name="myname" added "myname.p"
+__dmgetpmid: metric "myname.f" -> PMID 511.0.9
+__dmgetpmid: metric "myname.const" -> PMID 511.0.3
+__dmgetpmid: metric "myname.a" -> PMID 511.0.4
+__dmgetpmid: metric "myname.b" -> PMID 511.0.5
+__dmgetpmid: metric "myname.c" -> PMID 511.0.6
+__dmgetpmid: metric "myname.d" -> PMID 511.0.7
+__dmgetpmid: metric "myname.e" -> PMID 511.0.8
+__dmgetpmid: metric "myname.f" -> PMID 511.0.9
+__dmgetpmid: metric "myname.g" -> PMID 511.0.10
+__dmgetpmid: metric "myname.h" -> PMID 511.0.11
+__dmgetpmid: metric "myname.i" -> PMID 511.0.12
+__dmgetpmid: metric "myname.j" -> PMID 511.0.13
+__dmgetpmid: metric "myname.k" -> PMID 511.0.14
+__dmgetpmid: metric "myname.l" -> PMID 511.0.15
+__dmgetpmid: metric "myname.m" -> PMID 511.0.16
+__dmgetpmid: metric "myname.n" -> PMID 511.0.17
+__dmgetpmid: metric "myname.o" -> PMID 511.0.18
+__dmgetpmid: metric "myname.p" -> PMID 511.0.19
+derived metrics prefetch added 16 metrics: 29.0.13 29.0.23 29.0.18 29.0.28 29.0.12 29.0.11 29.0.10 29.0.22 29.0.21 29.0.20 29.0.17 29.0.16 29.0.15 29.0.27 29.0.48 29.0.26
+__dmpostfetch: [4] root node 511.0.9: numval=1 vset[0]: inst=-1 cp=hullo world! (len=13)
+expr node 0x55bc59709620 type=NAME left=(nil) right=(nil) save_last=0 [sample.string.hullo] master=0
+    PMID: 29.0.31 (511.0.9 from pmDesc) numval: 1
+    Data Type: string  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=hullo world!
+__dmpostfetch: [6] root node 511.0.3: numval=1 vset[0]: inst=-1 u=123456
+expr node 0x55bc597096d0 type=INTEGER left=(nil) right=(nil) save_last=0 [123456] master=0
+    PMID: PM_ID_NULL (511.0.3 from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+[0] inst=-1, val=123456
+__dmpostfetch: [7] root node 511.0.4: numval=1 vset[0]: inst=-1 l=1000000
+expr node 0x55bc59708fb0 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.million] master=0
+    PMID: 29.0.13 (511.0.4 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000000
+__dmpostfetch: [8] root node 511.0.5: numval=1 vset[0]: inst=-1 ll=1000000
+expr node 0x55bc59709060 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.million] master=0
+    PMID: 29.0.23 (511.0.5 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000000
+__dmpostfetch: [9] root node 511.0.6: numval=1 vset[0]: inst=-1 f=1000000.000000
+expr node 0x55bc59709110 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.million] master=0
+    PMID: 29.0.18 (511.0.6 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1e+06
+__dmpostfetch: [10] root node 511.0.7: numval=1 vset[0]: inst=-1 d=1000000.000000
+expr node 0x55bc597091c0 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.million] master=0
+    PMID: 29.0.28 (511.0.7 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1e+06
+__dmpostfetch: [11] root node 511.0.8: numval=1 vset[0]: inst=-1 cp= (len=1)
+expr node 0x55bc597092a0 type=NAME left=(nil) right=(nil) save_last=0 [sample.string.null] master=0
+    PMID: 29.0.30 (511.0.8 from pmDesc) numval: 1
+    Data Type: string  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=
+__dmpostfetch: [12] root node 511.0.9: numval=1 vset[0]: inst=-1 cp=hullo world! (len=13)
+expr node 0x55bc59709620 type=NAME left=(nil) right=(nil) save_last=0 [sample.string.hullo] master=0
+    PMID: 29.0.31 (511.0.9 from pmDesc) numval: 1
+    Data Type: string  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=hullo world!
+__dmpostfetch: [13] root node 511.0.10: numval=1 vset[0]: inst=-1 cp=13 (len=3)
+expr node 0x55bc5970daf0 type=NAME left=(nil) right=(nil) save_last=0 [sample.string.write_me] master=0
+    PMID: 29.0.32 (511.0.10 from pmDesc) numval: 1
+    Data Type: string  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=13
+__dmpostfetch: [14] root node 511.0.11: numval=1 vset[0]: inst=-1 l=1000111
+expr node 0x55bc5970dbe0 type=PLUS left=0x55bc5970dc80 right=0x55bc5970df90 save_last=0
+    PMID: PM_ID_NULL (511.0.11 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000111
+expr node 0x55bc5970dc80 type=PLUS left=0x55bc5970dcd0 right=0x55bc5970de80 save_last=0
+    PMID: PM_ID_NULL (29.0.13 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000110
+expr node 0x55bc5970dcd0 type=PLUS left=0x55bc5970dd20 right=0x55bc5970ddd0 save_last=0
+    PMID: PM_ID_NULL (29.0.13 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000100
+expr node 0x55bc5970dd20 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.million] master=0
+    PMID: 29.0.13 (29.0.13 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000000
+expr node 0x55bc5970ddd0 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.hundred] master=0
+    PMID: 29.0.12 (29.0.12 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x55bc5970de80 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.ten] master=0
+    PMID: 29.0.11 (29.0.11 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=10
+expr node 0x55bc5970df90 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.one] master=0
+    PMID: 29.0.10 (29.0.10 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+__dmpostfetch: [15] root node 511.0.12: numval=1 vset[0]: inst=-1 ll=999889
+expr node 0x55bc5970e0a0 type=MINUS left=0x55bc5970e150 right=0x55bc5970e460 save_last=0
+    PMID: PM_ID_NULL (511.0.12 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=999889
+expr node 0x55bc5970e150 type=MINUS left=0x55bc5970e1a0 right=0x55bc5970e350 save_last=0
+    PMID: PM_ID_NULL (29.0.23 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=999890
+expr node 0x55bc5970e1a0 type=MINUS left=0x55bc5970e1f0 right=0x55bc5970e2a0 save_last=0
+    PMID: PM_ID_NULL (29.0.23 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=999900
+expr node 0x55bc5970e1f0 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.million] master=0
+    PMID: 29.0.23 (29.0.23 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000000
+expr node 0x55bc5970e2a0 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.hundred] master=0
+    PMID: 29.0.22 (29.0.22 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x55bc5970e350 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.ten] master=0
+    PMID: 29.0.21 (29.0.21 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=10
+expr node 0x55bc5970e460 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.one] master=0
+    PMID: 29.0.20 (29.0.20 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+__dmpostfetch: [16] root node 511.0.13: numval=1 vset[0]: inst=-1 d=999000.000000
+expr node 0x55bc5970dc30 type=MINUS left=0x55bc5970e570 right=0x55bc5970e6e0 save_last=0
+    PMID: PM_ID_NULL (511.0.13 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=999000
+expr node 0x55bc5970e570 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.million] master=0
+    PMID: 29.0.18 (29.0.18 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1e+06
+expr node 0x55bc5970e6e0 type=SLASH left=0x55bc5970e730 right=0x55bc5970e8e0 save_last=0
+    PMID: PM_ID_NULL (29.0.17 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000
+expr node 0x55bc5970e730 type=STAR left=0x55bc5970e780 right=0x55bc5970e830 save_last=0
+    PMID: PM_ID_NULL (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000
+expr node 0x55bc5970e780 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.hundred] master=0
+    PMID: 29.0.17 (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x55bc5970e830 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.ten] master=0
+    PMID: 29.0.16 (29.0.16 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=10
+expr node 0x55bc5970e8e0 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.one] master=0
+    PMID: 29.0.15 (29.0.15 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+__dmpostfetch: [17] root node 511.0.14: numval=1 vset[0]: inst=-1 d=1.000000
+expr node 0x55bc5970e9f0 type=PLUS left=0x55bc5970eb00 right=0x55bc5970ef10 save_last=0
+    PMID: PM_ID_NULL (511.0.14 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+expr node 0x55bc5970eb00 type=MINUS left=0x55bc5970eb50 right=0x55bc5970ec00 save_last=0
+    PMID: PM_ID_NULL (29.0.13 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=0
+expr node 0x55bc5970eb50 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.million] master=0
+    PMID: 29.0.13 (29.0.13 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000000
+expr node 0x55bc5970ec00 type=STAR left=0x55bc5970ec50 right=0x55bc5970ee00 save_last=0
+    PMID: PM_ID_NULL (29.0.17 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1e+06
+expr node 0x55bc5970ec50 type=STAR left=0x55bc5970eca0 right=0x55bc5970ed50 save_last=0
+    PMID: PM_ID_NULL (29.0.17 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=10000
+expr node 0x55bc5970eca0 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.hundred] master=0
+    PMID: 29.0.17 (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x55bc5970ed50 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.hundred] master=0
+    PMID: 29.0.27 (29.0.27 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x55bc5970ee00 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.hundred] master=0
+    PMID: 29.0.22 (29.0.22 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x55bc5970ef10 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.one] master=0
+    PMID: 29.0.10 (29.0.10 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+__dmpostfetch: [18] root node 511.0.15: numval=9 vset[0]: inst=100 d=2.000000 vset[1]: inst=200 d=4.000000 vset[2]: inst=300 d=6.000000 vset[3]: inst=400 d=8.000000 vset[4]: inst=500 d=10.000000 vset[5]: inst=600 d=12.000000 vset[6]: inst=700 d=14.000000 vset[7]: inst=800 d=16.000000 vset[8]: inst=900 d=18.000000
+expr node 0x55bc5970f080 type=SLASH left=0x55bc5970f1a0 right=0x55bc5970f1f0 save_last=0
+    PMID: PM_ID_NULL (511.0.15 from pmDesc) numval: 9
+    Data Type: double  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=2
+[1] inst=200, val=4
+[2] inst=300, val=6
+[3] inst=400, val=8
+[4] inst=500, val=10
+[5] inst=600, val=12
+[6] inst=700, val=14
+[7] inst=800, val=16
+[8] inst=900, val=18
+expr node 0x55bc5970f1a0 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=0
+    PMID: 29.0.6 (29.0.6 from pmDesc) numval: 9
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=100
+[1] inst=200, val=200
+[2] inst=300, val=300
+[3] inst=400, val=400
+[4] inst=500, val=500
+[5] inst=600, val=600
+[6] inst=700, val=700
+[7] inst=800, val=800
+[8] inst=900, val=900
+expr node 0x55bc5970f1f0 type=INTEGER left=(nil) right=(nil) save_last=0 [50] master=0
+    PMID: PM_ID_NULL (PM_ID_NULL from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+[0] inst=-1, val=50
+__dmpostfetch: [19] root node 511.0.16: numval=9 vset[0]: inst=100 u=300 vset[1]: inst=200 u=600 vset[2]: inst=300 u=900 vset[3]: inst=400 u=1200 vset[4]: inst=500 u=1500 vset[5]: inst=600 u=1800 vset[6]: inst=700 u=2100 vset[7]: inst=800 u=2400 vset[8]: inst=900 u=2700
+expr node 0x55bc5970f300 type=STAR left=0x55bc5970f350 right=0x55bc5970f400 save_last=0
+    PMID: PM_ID_NULL (511.0.16 from pmDesc) numval: 9
+    Data Type: 32-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=300
+[1] inst=200, val=600
+[2] inst=300, val=900
+[3] inst=400, val=1200
+[4] inst=500, val=1500
+[5] inst=600, val=1800
+[6] inst=700, val=2100
+[7] inst=800, val=2400
+[8] inst=900, val=2700
+expr node 0x55bc5970f350 type=INTEGER left=(nil) right=(nil) save_last=0 [3] master=0
+    PMID: PM_ID_NULL (PM_ID_NULL from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+[0] inst=-1, val=3
+expr node 0x55bc5970f400 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=0
+    PMID: 29.0.6 (29.0.6 from pmDesc) numval: 9
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=100
+[1] inst=200, val=200
+[2] inst=300, val=300
+[3] inst=400, val=400
+[4] inst=500, val=500
+[5] inst=600, val=600
+[6] inst=700, val=700
+[7] inst=800, val=800
+[8] inst=900, val=900
+__dmpostfetch: [20] root node 511.0.17: numval=9 vset[0]: inst=100 u=0 vset[1]: inst=200 u=100 vset[2]: inst=300 u=200 vset[3]: inst=400 u=300 vset[4]: inst=500 u=400 vset[5]: inst=600 u=500 vset[6]: inst=700 u=600 vset[7]: inst=800 u=700 vset[8]: inst=900 u=800
+expr node 0x55bc5970f590 type=MINUS left=0x55bc5970f5e0 right=0x55bc5970fc10 save_last=0
+    PMID: PM_ID_NULL (511.0.17 from pmDesc) numval: 9
+    Data Type: 32-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=0
+[1] inst=200, val=100
+[2] inst=300, val=200
+[3] inst=400, val=300
+[4] inst=500, val=400
+[5] inst=600, val=500
+[6] inst=700, val=600
+[7] inst=800, val=700
+[8] inst=900, val=800
+expr node 0x55bc5970f5e0 type=MINUS left=0x55bc5970f630 right=0x55bc5970f9a0 save_last=0
+    PMID: PM_ID_NULL (29.0.6 from pmDesc) numval: 9
+    Data Type: 32-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=100
+[1] inst=200, val=300
+[2] inst=300, val=500
+[3] inst=400, val=700
+[4] inst=500, val=900
+[5] inst=600, val=1100
+[6] inst=700, val=1300
+[7] inst=800, val=1500
+[8] inst=900, val=1700
+expr node 0x55bc5970f630 type=PLUS left=0x55bc5970f680 right=0x55bc5970f730 save_last=0
+    PMID: PM_ID_NULL (29.0.6 from pmDesc) numval: 9
+    Data Type: 32-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=300
+[1] inst=200, val=600
+[2] inst=300, val=900
+[3] inst=400, val=1200
+[4] inst=500, val=1500
+[5] inst=600, val=1800
+[6] inst=700, val=2100
+[7] inst=800, val=2400
+[8] inst=900, val=2700
+expr node 0x55bc5970f680 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=0
+    PMID: 29.0.6 (29.0.6 from pmDesc) numval: 9
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=100
+[1] inst=200, val=200
+[2] inst=300, val=300
+[3] inst=400, val=400
+[4] inst=500, val=500
+[5] inst=600, val=600
+[6] inst=700, val=700
+[7] inst=800, val=800
+[8] inst=900, val=900
+expr node 0x55bc5970f730 type=STAR left=0x55bc5970f780 right=0x55bc5970f830 save_last=0
+    PMID: PM_ID_NULL (29.0.48 from pmDesc) numval: 9
+    Data Type: 32-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=200
+[1] inst=200, val=400
+[2] inst=300, val=600
+[3] inst=400, val=800
+[4] inst=500, val=1000
+[5] inst=600, val=1200
+[6] inst=700, val=1400
+[7] inst=800, val=1600
+[8] inst=900, val=1800
+expr node 0x55bc5970f780 type=NAME left=(nil) right=(nil) save_last=0 [sample.bucket] master=0
+    PMID: 29.0.48 (29.0.48 from pmDesc) numval: 9
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=100
+[1] inst=200, val=200
+[2] inst=300, val=300
+[3] inst=400, val=400
+[4] inst=500, val=500
+[5] inst=600, val=600
+[6] inst=700, val=700
+[7] inst=800, val=800
+[8] inst=900, val=900
+expr node 0x55bc5970f830 type=INTEGER left=(nil) right=(nil) save_last=0 [2] master=0
+    PMID: PM_ID_NULL (PM_ID_NULL from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+[0] inst=-1, val=2
+expr node 0x55bc5970f9a0 type=PLUS left=0x55bc5970f9f0 right=0x55bc5970faa0 save_last=0
+    PMID: PM_ID_NULL (29.0.6 from pmDesc) numval: 9
+    Data Type: 32-bit unsigned int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=200
+[1] inst=200, val=300
+[2] inst=300, val=400
+[3] inst=400, val=500
+[4] inst=500, val=600
+[5] inst=600, val=700
+[6] inst=700, val=800
+[7] inst=800, val=900
+[8] inst=900, val=1000
+expr node 0x55bc5970f9f0 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=0
+    PMID: 29.0.6 (29.0.6 from pmDesc) numval: 9
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=100
+[1] inst=200, val=200
+[2] inst=300, val=300
+[3] inst=400, val=400
+[4] inst=500, val=500
+[5] inst=600, val=600
+[6] inst=700, val=700
+[7] inst=800, val=800
+[8] inst=900, val=900
+expr node 0x55bc5970faa0 type=INTEGER left=(nil) right=(nil) save_last=0 [100] master=0
+    PMID: PM_ID_NULL (PM_ID_NULL from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+[0] inst=-1, val=100
+expr node 0x55bc5970fc10 type=NAME left=(nil) right=(nil) save_last=0 [sample.bucket] master=0
+    PMID: 29.0.48 (29.0.48 from pmDesc) numval: 9
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=100
+[1] inst=200, val=200
+[2] inst=300, val=300
+[3] inst=400, val=400
+[4] inst=500, val=500
+[5] inst=600, val=600
+[6] inst=700, val=700
+[7] inst=800, val=800
+[8] inst=900, val=900
+__dmpostfetch: [21] root node 511.0.18: numval=9 vset[0]: inst=100 d=1000.000000 vset[1]: inst=200 d=2000.000000 vset[2]: inst=300 d=3000.000000 vset[3]: inst=400 d=4000.000000 vset[4]: inst=500 d=5000.000000 vset[5]: inst=600 d=6000.000000 vset[6]: inst=700 d=7000.000000 vset[7]: inst=800 d=8000.000000 vset[8]: inst=900 d=9000.000000
+expr node 0x55bc5970fcc0 type=STAR left=0x55bc5970fd70 right=0x55bc5970fe20 save_last=0
+    PMID: PM_ID_NULL (511.0.18 from pmDesc) numval: 9
+    Data Type: double  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=1000
+[1] inst=200, val=2000
+[2] inst=300, val=3000
+[3] inst=400, val=4000
+[4] inst=500, val=5000
+[5] inst=600, val=6000
+[6] inst=700, val=7000
+[7] inst=800, val=8000
+[8] inst=900, val=9000
+expr node 0x55bc5970fd70 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=0
+    PMID: 29.0.6 (29.0.6 from pmDesc) numval: 9
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=100
+[1] inst=200, val=200
+[2] inst=300, val=300
+[3] inst=400, val=400
+[4] inst=500, val=500
+[5] inst=600, val=600
+[6] inst=700, val=700
+[7] inst=800, val=800
+[8] inst=900, val=900
+expr node 0x55bc5970fe20 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.ten] master=0
+    PMID: 29.0.26 (29.0.26 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=10
+__dmpostfetch: [22] root node 511.0.19: numval=9 vset[0]: inst=100 d=1000.000000 vset[1]: inst=200 d=2000.000000 vset[2]: inst=300 d=3000.000000 vset[3]: inst=400 d=4000.000000 vset[4]: inst=500 d=5000.000000 vset[5]: inst=600 d=6000.000000 vset[6]: inst=700 d=7000.000000 vset[7]: inst=800 d=8000.000000 vset[8]: inst=900 d=9000.000000
+expr node 0x55bc5970fed0 type=STAR left=0x55bc59710010 right=0x55bc597100c0 save_last=0
+    PMID: PM_ID_NULL (511.0.19 from pmDesc) numval: 9
+    Data Type: double  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=1000
+[1] inst=200, val=2000
+[2] inst=300, val=3000
+[3] inst=400, val=4000
+[4] inst=500, val=5000
+[5] inst=600, val=6000
+[6] inst=700, val=7000
+[7] inst=800, val=8000
+[8] inst=900, val=9000
+expr node 0x55bc59710010 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.ten] master=0
+    PMID: 29.0.26 (29.0.26 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=10
+expr node 0x55bc597100c0 type=NAME left=(nil) right=(nil) save_last=0 [sample.bin] master=0
+    PMID: 29.0.6 (29.0.6 from pmDesc) numval: 9
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+[0] inst=100, val=100
+[1] inst=200, val=200
+[2] inst=300, val=300
+[3] inst=400, val=400
+[4] inst=500, val=500
+[5] inst=600, val=600
+[6] inst=700, val=700
+[7] inst=800, val=800
+[8] inst=900, val=900
+pmFetch returns ...
+pmResult dump from 0x55bc59710670 timestamp: 1593701955.340019 14:59:15.340 numpmid: 23
+  29.0.30 (sample.string.null): numval: 1 valfmt: 1 vlist[]:
+   value ""
+  29.0.31 (sample.string.hullo): numval: 1 valfmt: 1 vlist[]:
+   value "hullo world!"
+  29.0.32 (sample.string.write_me): numval: 1 valfmt: 1 vlist[]:
+   value "13"
+  29.0.153 (sample.string.bin): numval: 9 valfmt: 1 vlist[]:
+    inst [100 or "bin-100"] value "100"
+    inst [200 or "bin-200"] value "200"
+    inst [300 or "bin-300"] value "300"
+    inst [400 or "bin-400"] value "400"
+    inst [500 or "bin-500"] value "500"
+    inst [600 or "bin-600"] value "600"
+    inst [700 or "bin-700"] value "700"
+    inst [800 or "bin-800"] value "800"
+    inst [900 or "bin-900"] value "900"
+  511.0.9 (myname.f): numval: 1 valfmt: 1 vlist[]:
+   value "hullo world!"
+  29.0.6 (sample.dupnames.three.bin, sample.dupnames.two.bin, sample.bin): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or "bin-100"] value 100
+    inst [200 or "bin-200"] value 200
+    inst [300 or "bin-300"] value 300
+    inst [400 or "bin-400"] value 400
+    inst [500 or "bin-500"] value 500
+    inst [600 or "bin-600"] value 600
+    inst [700 or "bin-700"] value 700
+    inst [800 or "bin-800"] value 800
+    inst [900 or "bin-900"] value 900
+  511.0.3 (myname.const): numval: 1 valfmt: 0 vlist[]:
+   value 123456
+  511.0.4 (myname.a): numval: 1 valfmt: 0 vlist[]:
+   value 1000000
+  511.0.5 (myname.b): numval: 1 valfmt: 1 vlist[]:
+   value 1000000
+  511.0.6 (myname.c): numval: 1 valfmt: 1 vlist[]:
+   value 1000000
+  511.0.7 (myname.d): numval: 1 valfmt: 1 vlist[]:
+   value 1000000
+  511.0.8 (myname.e): numval: 1 valfmt: 1 vlist[]:
+   value ""
+  511.0.9 (myname.f): numval: 1 valfmt: 1 vlist[]:
+   value "hullo world!"
+  511.0.10 (myname.g): numval: 1 valfmt: 1 vlist[]:
+   value "13"
+  511.0.11 (myname.h): numval: 1 valfmt: 0 vlist[]:
+   value 1000111
+  511.0.12 (myname.i): numval: 1 valfmt: 1 vlist[]:
+   value 999889
+  511.0.13 (myname.j): numval: 1 valfmt: 1 vlist[]:
+   value 999000
+  511.0.14 (myname.k): numval: 1 valfmt: 1 vlist[]:
+   value 1
+  511.0.15 (myname.l): numval: 9 valfmt: 1 vlist[]:
+    inst [100 or "bin-100"] value 2
+    inst [200 or "bin-200"] value 4
+    inst [300 or "bin-300"] value 6
+    inst [400 or "bin-400"] value 8
+    inst [500 or "bin-500"] value 10
+    inst [600 or "bin-600"] value 12
+    inst [700 or "bin-700"] value 14
+    inst [800 or "bin-800"] value 16
+    inst [900 or "bin-900"] value 18
+  511.0.16 (myname.m): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or "bin-100"] value 300
+    inst [200 or "bin-200"] value 600
+    inst [300 or "bin-300"] value 900
+    inst [400 or "bin-400"] value 1200
+    inst [500 or "bin-500"] value 1500
+    inst [600 or "bin-600"] value 1800
+    inst [700 or "bin-700"] value 2100
+    inst [800 or "bin-800"] value 2400
+    inst [900 or "bin-900"] value 2700
+  511.0.17 (myname.n): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or "bin-100"] value 0
+    inst [200 or "bin-200"] value 100
+    inst [300 or "bin-300"] value 200
+    inst [400 or "bin-400"] value 300
+    inst [500 or "bin-500"] value 400
+    inst [600 or "bin-600"] value 500
+    inst [700 or "bin-700"] value 600
+    inst [800 or "bin-800"] value 700
+    inst [900 or "bin-900"] value 800
+  511.0.18 (myname.o): numval: 9 valfmt: 1 vlist[]:
+    inst [100 or "bin-100"] value 1000
+    inst [200 or "bin-200"] value 2000
+    inst [300 or "bin-300"] value 3000
+    inst [400 or "bin-400"] value 4000
+    inst [500 or "bin-500"] value 5000
+    inst [600 or "bin-600"] value 6000
+    inst [700 or "bin-700"] value 7000
+    inst [800 or "bin-800"] value 8000
+    inst [900 or "bin-900"] value 9000
+  511.0.19 (myname.p): numval: 9 valfmt: 1 vlist[]:
+    inst [100 or "bin-100"] value 1000
+    inst [200 or "bin-200"] value 2000
+    inst [300 or "bin-300"] value 3000
+    inst [400 or "bin-400"] value 4000
+    inst [500 or "bin-500"] value 5000
+    inst [600 or "bin-600"] value 6000
+    inst [700 or "bin-700"] value 7000
+    inst [800 or "bin-800"] value 8000
+    inst [900 or "bin-900"] value 9000
+
+sample.string.null
+    value ""
+
+sample.string.hullo
+    value "hullo world!"
+
+sample.string.write_me
+    value "13"
+
+sample.string.bin
+    inst [100 or "bin-100"] value "100"
+    inst [200 or "bin-200"] value "200"
+    inst [300 or "bin-300"] value "300"
+    inst [400 or "bin-400"] value "400"
+    inst [500 or "bin-500"] value "500"
+    inst [600 or "bin-600"] value "600"
+    inst [700 or "bin-700"] value "700"
+    inst [800 or "bin-800"] value "800"
+    inst [900 or "bin-900"] value "900"
+
+myname.f
+    value "hullo world!"
+
+sample.bin
+    inst [100 or "bin-100"] value 100
+    inst [200 or "bin-200"] value 200
+    inst [300 or "bin-300"] value 300
+    inst [400 or "bin-400"] value 400
+    inst [500 or "bin-500"] value 500
+    inst [600 or "bin-600"] value 600
+    inst [700 or "bin-700"] value 700
+    inst [800 or "bin-800"] value 800
+    inst [900 or "bin-900"] value 900
+
+myname.const
+    value 123456
+
+myname.a
+    value 1000000
+
+myname.b
+    value 1000000
+
+myname.c
+    value 1000000
+
+myname.d
+    value 1000000
+
+myname.e
+    value ""
+
+myname.f
+    value "hullo world!"
+
+myname.g
+    value "13"
+
+myname.h
+    value 1000111
+
+myname.i
+    value 999889
+
+myname.j
+    value 999000
+
+myname.k
+    value 1
+
+myname.l
+    inst [100 or "bin-100"] value 2
+    inst [200 or "bin-200"] value 4
+    inst [300 or "bin-300"] value 6
+    inst [400 or "bin-400"] value 8
+    inst [500 or "bin-500"] value 10
+    inst [600 or "bin-600"] value 12
+    inst [700 or "bin-700"] value 14
+    inst [800 or "bin-800"] value 16
+    inst [900 or "bin-900"] value 18
+
+myname.m
+    inst [100 or "bin-100"] value 300
+    inst [200 or "bin-200"] value 600
+    inst [300 or "bin-300"] value 900
+    inst [400 or "bin-400"] value 1200
+    inst [500 or "bin-500"] value 1500
+    inst [600 or "bin-600"] value 1800
+    inst [700 or "bin-700"] value 2100
+    inst [800 or "bin-800"] value 2400
+    inst [900 or "bin-900"] value 2700
+
+myname.n
+    inst [100 or "bin-100"] value 0
+    inst [200 or "bin-200"] value 100
+    inst [300 or "bin-300"] value 200
+    inst [400 or "bin-400"] value 300
+    inst [500 or "bin-500"] value 400
+    inst [600 or "bin-600"] value 500
+    inst [700 or "bin-700"] value 600
+    inst [800 or "bin-800"] value 700
+    inst [900 or "bin-900"] value 800
+
+myname.o
+    inst [100 or "bin-100"] value 1000
+    inst [200 or "bin-200"] value 2000
+    inst [300 or "bin-300"] value 3000
+    inst [400 or "bin-400"] value 4000
+    inst [500 or "bin-500"] value 5000
+    inst [600 or "bin-600"] value 6000
+    inst [700 or "bin-700"] value 7000
+    inst [800 or "bin-800"] value 8000
+    inst [900 or "bin-900"] value 9000
+
+myname.p
+    inst [100 or "bin-100"] value 1000
+    inst [200 or "bin-200"] value 2000
+    inst [300 or "bin-300"] value 3000
+    inst [400 or "bin-400"] value 4000
+    inst [500 or "bin-500"] value 5000
+    inst [600 or "bin-600"] value 6000
+    inst [700 or "bin-700"] value 7000
+    inst [800 or "bin-800"] value 8000
+    inst [900 or "bin-900"] value 9000
+=== sed ===
+s/0x55bc59709620/<addr-0>/
+s/0x55bc597096d0/<addr-1>/
+s/0x55bc59708fb0/<addr-2>/
+s/0x55bc59709060/<addr-3>/
+s/0x55bc59709110/<addr-4>/
+s/0x55bc597091c0/<addr-5>/
+s/0x55bc597092a0/<addr-6>/
+s/0x55bc59709620/<addr-7>/
+s/0x55bc5970daf0/<addr-8>/
+s/0x55bc5970dbe0/<addr-9>/
+s/0x55bc5970dc80/<addr-10>/
+s/0x55bc5970dcd0/<addr-11>/
+s/0x55bc5970dd20/<addr-12>/
+s/0x55bc5970ddd0/<addr-13>/
+s/0x55bc5970de80/<addr-14>/
+s/0x55bc5970df90/<addr-15>/
+s/0x55bc5970e0a0/<addr-16>/
+s/0x55bc5970e150/<addr-17>/
+s/0x55bc5970e1a0/<addr-18>/
+s/0x55bc5970e1f0/<addr-19>/
+s/0x55bc5970e2a0/<addr-20>/
+s/0x55bc5970e350/<addr-21>/
+s/0x55bc5970e460/<addr-22>/
+s/0x55bc5970dc30/<addr-23>/
+s/0x55bc5970e570/<addr-24>/
+s/0x55bc5970e6e0/<addr-25>/
+s/0x55bc5970e730/<addr-26>/
+s/0x55bc5970e780/<addr-27>/
+s/0x55bc5970e830/<addr-28>/
+s/0x55bc5970e8e0/<addr-29>/
+s/0x55bc5970e9f0/<addr-30>/
+s/0x55bc5970eb00/<addr-31>/
+s/0x55bc5970eb50/<addr-32>/
+s/0x55bc5970ec00/<addr-33>/
+s/0x55bc5970ec50/<addr-34>/
+s/0x55bc5970eca0/<addr-35>/
+s/0x55bc5970ed50/<addr-36>/
+s/0x55bc5970ee00/<addr-37>/
+s/0x55bc5970ef10/<addr-38>/
+s/0x55bc5970f080/<addr-39>/
+s/0x55bc5970f1a0/<addr-40>/
+s/0x55bc5970f1f0/<addr-41>/
+s/0x55bc5970f300/<addr-42>/
+s/0x55bc5970f350/<addr-43>/
+s/0x55bc5970f400/<addr-44>/
+s/0x55bc5970f590/<addr-45>/
+s/0x55bc5970f5e0/<addr-46>/
+s/0x55bc5970f630/<addr-47>/
+s/0x55bc5970f680/<addr-48>/
+s/0x55bc5970f730/<addr-49>/
+s/0x55bc5970f780/<addr-50>/
+s/0x55bc5970f830/<addr-51>/
+s/0x55bc5970f9a0/<addr-52>/
+s/0x55bc5970f9f0/<addr-53>/
+s/0x55bc5970faa0/<addr-54>/
+s/0x55bc5970fc10/<addr-55>/
+s/0x55bc5970fcc0/<addr-56>/
+s/0x55bc5970fd70/<addr-57>/
+s/0x55bc5970fe20/<addr-58>/
+s/0x55bc5970fed0/<addr-59>/
+s/0x55bc59710010/<addr-60>/
+s/0x55bc597100c0/<addr-61>/
+
+All the arithmetic operators and operand types ...
+__dmgetpmid: metric "arith.l" -> PMID 511.0.3
+__dmbind: bind metric[2] arith.l
+__dmtraverse: name="arith" added "arith.l"
+__dmgetpmid: metric "arith.ul" -> PMID 511.0.4
+__dmbind: bind metric[3] arith.ul
+__dmtraverse: name="arith" added "arith.ul"
+__dmgetpmid: metric "arith.ll" -> PMID 511.0.5
+__dmbind: bind metric[4] arith.ll
+__dmtraverse: name="arith" added "arith.ll"
+__dmgetpmid: metric "arith.ull" -> PMID 511.0.6
+__dmbind: bind metric[5] arith.ull
+__dmtraverse: name="arith" added "arith.ull"
+__dmgetpmid: metric "arith.f" -> PMID 511.0.7
+__dmbind: bind metric[6] arith.f
+__dmtraverse: name="arith" added "arith.f"
+__dmgetpmid: metric "arith.d" -> PMID 511.0.8
+__dmbind: bind metric[7] arith.d
+__dmtraverse: name="arith" added "arith.d"
+__dmgetpmid: metric "arith.promote.l_l_r_ll" -> PMID 511.0.9
+__dmbind: bind metric[8] arith.promote.l_l_r_ll
+__dmtraverse: name="arith" added "arith.promote.l_l_r_ll"
+__dmgetpmid: metric "arith.promote.l_ll_r_l" -> PMID 511.0.10
+__dmbind: bind metric[9] arith.promote.l_ll_r_l
+__dmtraverse: name="arith" added "arith.promote.l_ll_r_l"
+__dmgetpmid: metric "arith.promote.l_ll_r_ul" -> PMID 511.0.11
+__dmbind: bind metric[10] arith.promote.l_ll_r_ul
+__dmtraverse: name="arith" added "arith.promote.l_ll_r_ul"
+__dmgetpmid: metric "arith.promote.l_ull_r_l" -> PMID 511.0.12
+__dmbind: bind metric[11] arith.promote.l_ull_r_l
+__dmtraverse: name="arith" added "arith.promote.l_ull_r_l"
+__dmgetpmid: metric "arith.promote.l_l_r_ull" -> PMID 511.0.13
+__dmbind: bind metric[12] arith.promote.l_l_r_ull
+__dmtraverse: name="arith" added "arith.promote.l_l_r_ull"
+__dmgetpmid: metric "arith.promote.l_ul_r_ull" -> PMID 511.0.14
+__dmbind: bind metric[13] arith.promote.l_ul_r_ull
+__dmtraverse: name="arith" added "arith.promote.l_ul_r_ull"
+__dmgetpmid: metric "arith.promote.l_ull_r_ul" -> PMID 511.0.15
+__dmbind: bind metric[14] arith.promote.l_ull_r_ul
+__dmtraverse: name="arith" added "arith.promote.l_ull_r_ul"
+__dmgetpmid: metric "arith.promote.l_l_r_f" -> PMID 511.0.16
+__dmbind: bind metric[15] arith.promote.l_l_r_f
+__dmtraverse: name="arith" added "arith.promote.l_l_r_f"
+__dmgetpmid: metric "arith.promote.l_ul_r_f" -> PMID 511.0.17
+__dmbind: bind metric[16] arith.promote.l_ul_r_f
+__dmtraverse: name="arith" added "arith.promote.l_ul_r_f"
+__dmgetpmid: metric "arith.promote.l_ll_r_f" -> PMID 511.0.18
+__dmbind: bind metric[17] arith.promote.l_ll_r_f
+__dmtraverse: name="arith" added "arith.promote.l_ll_r_f"
+__dmgetpmid: metric "arith.promote.l_ull_r_f" -> PMID 511.0.19
+__dmbind: bind metric[18] arith.promote.l_ull_r_f
+__dmtraverse: name="arith" added "arith.promote.l_ull_r_f"
+__dmgetpmid: metric "arith.promote.l_f_r_l" -> PMID 511.0.20
+__dmbind: bind metric[19] arith.promote.l_f_r_l
+__dmtraverse: name="arith" added "arith.promote.l_f_r_l"
+__dmgetpmid: metric "arith.promote.l_f_r_ul" -> PMID 511.0.21
+__dmbind: bind metric[20] arith.promote.l_f_r_ul
+__dmtraverse: name="arith" added "arith.promote.l_f_r_ul"
+__dmgetpmid: metric "arith.promote.l_f_r_ll" -> PMID 511.0.22
+__dmbind: bind metric[21] arith.promote.l_f_r_ll
+__dmtraverse: name="arith" added "arith.promote.l_f_r_ll"
+__dmgetpmid: metric "arith.promote.l_f_r_ull" -> PMID 511.0.23
+__dmbind: bind metric[22] arith.promote.l_f_r_ull
+__dmtraverse: name="arith" added "arith.promote.l_f_r_ull"
+__dmgetpmid: metric "arith.eval.mul.l_l_r_l" -> PMID 511.0.24
+__dmbind: bind metric[23] arith.eval.mul.l_l_r_l
+__dmtraverse: name="arith" added "arith.eval.mul.l_l_r_l"
+__dmgetpmid: metric "arith.eval.mul.l_ull_r_ull" -> PMID 511.0.25
+__dmbind: bind metric[24] arith.eval.mul.l_ull_r_ull
+__dmtraverse: name="arith" added "arith.eval.mul.l_ull_r_ull"
+__dmgetpmid: metric "arith.eval.div.l_f_r_f" -> PMID 511.0.26
+__dmbind: bind metric[25] arith.eval.div.l_f_r_f
+__dmtraverse: name="arith" added "arith.eval.div.l_f_r_f"
+__dmgetpmid: metric "arith.eval.div.l_zero_f_r_f" -> PMID 511.0.27
+__dmbind: bind metric[26] arith.eval.div.l_zero_f_r_f
+__dmtraverse: name="arith" added "arith.eval.div.l_zero_f_r_f"
+__dmgetpmid: metric "arith.eval.div.l_zero_d_r_d" -> PMID 511.0.28
+__dmbind: bind metric[27] arith.eval.div.l_zero_d_r_d
+__dmtraverse: name="arith" added "arith.eval.div.l_zero_d_r_d"
+__dmgetpmid: metric "arith.eval.op.l_err" -> PMID 511.0.29
+__dmbind: bind metric[28] arith.eval.op.l_err
+__dmtraverse: name="arith" added "arith.eval.op.l_err"
+__dmgetpmid: metric "arith.eval.op.r_err" -> PMID 511.0.30
+__dmbind: bind metric[29] arith.eval.op.r_err
+__dmtraverse: name="arith" added "arith.eval.op.r_err"
+__dmgetpmid: metric "arith.l" -> PMID 511.0.3
+__dmgetpmid: metric "arith.ul" -> PMID 511.0.4
+__dmgetpmid: metric "arith.ll" -> PMID 511.0.5
+__dmgetpmid: metric "arith.ull" -> PMID 511.0.6
+__dmgetpmid: metric "arith.f" -> PMID 511.0.7
+__dmgetpmid: metric "arith.d" -> PMID 511.0.8
+__dmgetpmid: metric "arith.promote.l_l_r_ll" -> PMID 511.0.9
+__dmgetpmid: metric "arith.promote.l_ll_r_l" -> PMID 511.0.10
+__dmgetpmid: metric "arith.promote.l_ll_r_ul" -> PMID 511.0.11
+__dmgetpmid: metric "arith.promote.l_ull_r_l" -> PMID 511.0.12
+__dmgetpmid: metric "arith.promote.l_l_r_ull" -> PMID 511.0.13
+__dmgetpmid: metric "arith.promote.l_ul_r_ull" -> PMID 511.0.14
+__dmgetpmid: metric "arith.promote.l_ull_r_ul" -> PMID 511.0.15
+__dmgetpmid: metric "arith.promote.l_l_r_f" -> PMID 511.0.16
+__dmgetpmid: metric "arith.promote.l_ul_r_f" -> PMID 511.0.17
+__dmgetpmid: metric "arith.promote.l_ll_r_f" -> PMID 511.0.18
+__dmgetpmid: metric "arith.promote.l_ull_r_f" -> PMID 511.0.19
+__dmgetpmid: metric "arith.promote.l_f_r_l" -> PMID 511.0.20
+__dmgetpmid: metric "arith.promote.l_f_r_ul" -> PMID 511.0.21
+__dmgetpmid: metric "arith.promote.l_f_r_ll" -> PMID 511.0.22
+__dmgetpmid: metric "arith.promote.l_f_r_ull" -> PMID 511.0.23
+__dmgetpmid: metric "arith.eval.mul.l_l_r_l" -> PMID 511.0.24
+__dmgetpmid: metric "arith.eval.mul.l_ull_r_ull" -> PMID 511.0.25
+__dmgetpmid: metric "arith.eval.div.l_f_r_f" -> PMID 511.0.26
+__dmgetpmid: metric "arith.eval.div.l_zero_f_r_f" -> PMID 511.0.27
+__dmgetpmid: metric "arith.eval.div.l_zero_d_r_d" -> PMID 511.0.28
+__dmgetpmid: metric "arith.eval.op.l_err" -> PMID 511.0.29
+__dmgetpmid: metric "arith.eval.op.r_err" -> PMID 511.0.30
+derived metrics prefetch added 16 metrics: 29.0.4 29.0.1 29.0.22 29.0.100 29.0.17 29.0.27 29.0.10 29.0.93 29.0.20 29.0.98 29.0.11 29.0.12 29.0.99 29.0.16 29.0.26 29.0.49
+__dmpostfetch: [0] root node 511.0.3: numval=1 vset[0]: inst=-1 d=0.000000
+expr node 0x5581acfb9700 type=MINUS left=0x5581acfb8ef0 right=0x5581acfc1e90 save_last=0
+    PMID: PM_ID_NULL (511.0.3 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=0
+expr node 0x5581acfb8ef0 type=PLUS left=0x5581acfb8f40 right=0x5581acfb9150 save_last=0
+    PMID: PM_ID_NULL (29.0.4 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=42
+expr node 0x5581acfb8f40 type=MINUS left=0x5581acfb8f90 right=0x5581acfb9040 save_last=0
+    PMID: PM_ID_NULL (29.0.4 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=0
+expr node 0x5581acfb8f90 type=NAME left=(nil) right=(nil) save_last=0 [sample.load] master=0
+    PMID: 29.0.4 (29.0.4 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=42
+expr node 0x5581acfb9040 type=NAME left=(nil) right=(nil) save_last=0 [sample.load] master=0
+    PMID: 29.0.4 (29.0.4 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=42
+expr node 0x5581acfb9150 type=STAR left=0x5581acfb91a0 right=0x5581acfc1d20 save_last=0
+    PMID: PM_ID_NULL (29.0.4 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=42
+expr node 0x5581acfb91a0 type=SLASH left=0x5581acfb91f0 right=0x5581acfb92a0 save_last=0
+    PMID: PM_ID_NULL (29.0.4 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+expr node 0x5581acfb91f0 type=NAME left=(nil) right=(nil) save_last=0 [sample.load] master=0
+    PMID: 29.0.4 (29.0.4 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=42
+expr node 0x5581acfb92a0 type=NAME left=(nil) right=(nil) save_last=0 [sample.load] master=0
+    PMID: 29.0.4 (29.0.4 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=42
+expr node 0x5581acfc1d20 type=NAME left=(nil) right=(nil) save_last=0 [sample.load] master=0
+    PMID: 29.0.4 (29.0.4 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=42
+expr node 0x5581acfc1e90 type=NAME left=(nil) right=(nil) save_last=0 [sample.load] master=0
+    PMID: 29.0.4 (29.0.4 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=42
+__dmpostfetch: [1] root node 511.0.4: numval=1 vset[0]: inst=-1 d=0.000000
+expr node 0x5581acfc1fa0 type=MINUS left=0x5581acfc1ff0 right=0x5581acfc2560 save_last=0
+    PMID: PM_ID_NULL (511.0.4 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=0
+expr node 0x5581acfc1ff0 type=PLUS left=0x5581acfc2040 right=0x5581acfc21f0 save_last=0
+    PMID: PM_ID_NULL (29.0.1 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=21588
+expr node 0x5581acfc2040 type=MINUS left=0x5581acfc2090 right=0x5581acfc2140 save_last=0
+    PMID: PM_ID_NULL (29.0.1 from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=0
+expr node 0x5581acfc2090 type=NAME left=(nil) right=(nil) save_last=0 [sample.daemon_pid] master=0
+    PMID: 29.0.1 (29.0.1 from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=21588
+expr node 0x5581acfc2140 type=NAME left=(nil) right=(nil) save_last=0 [sample.daemon_pid] master=0
+    PMID: 29.0.1 (29.0.1 from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=21588
+expr node 0x5581acfc21f0 type=STAR left=0x5581acfc22a0 right=0x5581acfc2450 save_last=0
+    PMID: PM_ID_NULL (29.0.1 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=21588
+expr node 0x5581acfc22a0 type=SLASH left=0x5581acfc22f0 right=0x5581acfc23a0 save_last=0
+    PMID: PM_ID_NULL (29.0.1 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+expr node 0x5581acfc22f0 type=NAME left=(nil) right=(nil) save_last=0 [sample.daemon_pid] master=0
+    PMID: 29.0.1 (29.0.1 from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=21588
+expr node 0x5581acfc23a0 type=NAME left=(nil) right=(nil) save_last=0 [sample.daemon_pid] master=0
+    PMID: 29.0.1 (29.0.1 from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=21588
+expr node 0x5581acfc2450 type=NAME left=(nil) right=(nil) save_last=0 [sample.daemon_pid] master=0
+    PMID: 29.0.1 (29.0.1 from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=21588
+expr node 0x5581acfc2560 type=NAME left=(nil) right=(nil) save_last=0 [sample.daemon_pid] master=0
+    PMID: 29.0.1 (29.0.1 from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=21588
+__dmpostfetch: [2] root node 511.0.5: numval=1 vset[0]: inst=-1 d=0.000000
+expr node 0x5581acfc26d0 type=MINUS left=0x5581acfc2780 right=0x5581acfc2cf0 save_last=0
+    PMID: PM_ID_NULL (511.0.5 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=0
+expr node 0x5581acfc2780 type=PLUS left=0x5581acfc27d0 right=0x5581acfc2980 save_last=0
+    PMID: PM_ID_NULL (29.0.22 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc27d0 type=MINUS left=0x5581acfc2820 right=0x5581acfc28d0 save_last=0
+    PMID: PM_ID_NULL (29.0.22 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=0
+expr node 0x5581acfc2820 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.hundred] master=0
+    PMID: 29.0.22 (29.0.22 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc28d0 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.hundred] master=0
+    PMID: 29.0.22 (29.0.22 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc2980 type=STAR left=0x5581acfc2a30 right=0x5581acfc2be0 save_last=0
+    PMID: PM_ID_NULL (29.0.22 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc2a30 type=SLASH left=0x5581acfc2a80 right=0x5581acfc2b30 save_last=0
+    PMID: PM_ID_NULL (29.0.22 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+expr node 0x5581acfc2a80 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.hundred] master=0
+    PMID: 29.0.22 (29.0.22 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc2b30 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.hundred] master=0
+    PMID: 29.0.22 (29.0.22 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc2be0 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.hundred] master=0
+    PMID: 29.0.22 (29.0.22 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc2cf0 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.hundred] master=0
+    PMID: 29.0.22 (29.0.22 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+__dmpostfetch: [3] root node 511.0.6: numval=1 vset[0]: inst=-1 d=0.000000
+expr node 0x5581acfc2e60 type=MINUS left=0x5581acfc2f10 right=0x5581acfc3480 save_last=0
+    PMID: PM_ID_NULL (511.0.6 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=0
+expr node 0x5581acfc2f10 type=PLUS left=0x5581acfc2f60 right=0x5581acfc3110 save_last=0
+    PMID: PM_ID_NULL (29.0.100 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc2f60 type=MINUS left=0x5581acfc2fb0 right=0x5581acfc3060 save_last=0
+    PMID: PM_ID_NULL (29.0.100 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=0
+expr node 0x5581acfc2fb0 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.hundred] master=0
+    PMID: 29.0.100 (29.0.100 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc3060 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.hundred] master=0
+    PMID: 29.0.100 (29.0.100 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc3110 type=STAR left=0x5581acfc31c0 right=0x5581acfc3370 save_last=0
+    PMID: PM_ID_NULL (29.0.100 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc31c0 type=SLASH left=0x5581acfc3210 right=0x5581acfc32c0 save_last=0
+    PMID: PM_ID_NULL (29.0.100 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+expr node 0x5581acfc3210 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.hundred] master=0
+    PMID: 29.0.100 (29.0.100 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc32c0 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.hundred] master=0
+    PMID: 29.0.100 (29.0.100 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc3370 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.hundred] master=0
+    PMID: 29.0.100 (29.0.100 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc3480 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.hundred] master=0
+    PMID: 29.0.100 (29.0.100 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+__dmpostfetch: [4] root node 511.0.7: numval=1 vset[0]: inst=-1 d=0.000000
+expr node 0x5581acfc35f0 type=MINUS left=0x5581acfc36d0 right=0x5581acfc3c40 save_last=0
+    PMID: PM_ID_NULL (511.0.7 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=0
+expr node 0x5581acfc36d0 type=PLUS left=0x5581acfc3720 right=0x5581acfc38d0 save_last=0
+    PMID: PM_ID_NULL (29.0.17 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc3720 type=MINUS left=0x5581acfc3770 right=0x5581acfc3820 save_last=0
+    PMID: PM_ID_NULL (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=0
+expr node 0x5581acfc3770 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.hundred] master=0
+    PMID: 29.0.17 (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc3820 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.hundred] master=0
+    PMID: 29.0.17 (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc38d0 type=STAR left=0x5581acfc3980 right=0x5581acfc3b30 save_last=0
+    PMID: PM_ID_NULL (29.0.17 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc3980 type=SLASH left=0x5581acfc39d0 right=0x5581acfc3a80 save_last=0
+    PMID: PM_ID_NULL (29.0.17 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+expr node 0x5581acfc39d0 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.hundred] master=0
+    PMID: 29.0.17 (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc3a80 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.hundred] master=0
+    PMID: 29.0.17 (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc3b30 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.hundred] master=0
+    PMID: 29.0.17 (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc3c40 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.hundred] master=0
+    PMID: 29.0.17 (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+__dmpostfetch: [5] root node 511.0.8: numval=1 vset[0]: inst=-1 d=0.000000
+expr node 0x5581acfc3db0 type=MINUS left=0x5581acfc3e60 right=0x5581acfc43d0 save_last=0
+    PMID: PM_ID_NULL (511.0.8 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=0
+expr node 0x5581acfc3e60 type=PLUS left=0x5581acfc3eb0 right=0x5581acfc4060 save_last=0
+    PMID: PM_ID_NULL (29.0.27 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc3eb0 type=MINUS left=0x5581acfc3f00 right=0x5581acfc3fb0 save_last=0
+    PMID: PM_ID_NULL (29.0.27 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=0
+expr node 0x5581acfc3f00 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.hundred] master=0
+    PMID: 29.0.27 (29.0.27 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc3fb0 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.hundred] master=0
+    PMID: 29.0.27 (29.0.27 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc4060 type=STAR left=0x5581acfc4110 right=0x5581acfc42c0 save_last=0
+    PMID: PM_ID_NULL (29.0.27 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc4110 type=SLASH left=0x5581acfc4160 right=0x5581acfc4210 save_last=0
+    PMID: PM_ID_NULL (29.0.27 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+expr node 0x5581acfc4160 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.hundred] master=0
+    PMID: 29.0.27 (29.0.27 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc4210 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.hundred] master=0
+    PMID: 29.0.27 (29.0.27 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc42c0 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.hundred] master=0
+    PMID: 29.0.27 (29.0.27 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc43d0 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.hundred] master=0
+    PMID: 29.0.27 (29.0.27 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+__dmpostfetch: [6] root node 511.0.9: numval=1 vset[0]: inst=-1 ll=101
+expr node 0x5581acfc4540 type=PLUS left=0x5581acfc4630 right=0x5581acfc46e0 save_last=0
+    PMID: PM_ID_NULL (511.0.9 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=101
+expr node 0x5581acfc4630 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.one] master=0
+    PMID: 29.0.10 (29.0.10 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+expr node 0x5581acfc46e0 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.hundred] master=0
+    PMID: 29.0.22 (29.0.22 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+__dmpostfetch: [7] root node 511.0.10: numval=1 vset[0]: inst=-1 ll=101
+expr node 0x5581acfc4790 type=PLUS left=0x5581acfc4840 right=0x5581acfc48f0 save_last=0
+    PMID: PM_ID_NULL (511.0.10 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=101
+expr node 0x5581acfc4840 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.hundred] master=0
+    PMID: 29.0.22 (29.0.22 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc48f0 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.one] master=0
+    PMID: 29.0.10 (29.0.10 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+__dmpostfetch: [8] root node 511.0.11: numval=1 vset[0]: inst=-1 ll=101
+expr node 0x5581acfc49a0 type=PLUS left=0x5581acfc4aa0 right=0x5581acfc4b50 save_last=0
+    PMID: PM_ID_NULL (511.0.11 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=101
+expr node 0x5581acfc4aa0 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.hundred] master=0
+    PMID: 29.0.22 (29.0.22 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc4b50 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulong.one] master=0
+    PMID: 29.0.93 (29.0.93 from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+__dmpostfetch: [9] root node 511.0.12: numval=1 vset[0]: inst=-1 ul=101
+expr node 0x5581acfc4c00 type=PLUS left=0x5581acfc4cb0 right=0x5581acfc4d60 save_last=0
+    PMID: PM_ID_NULL (511.0.12 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=101
+expr node 0x5581acfc4cb0 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.hundred] master=0
+    PMID: 29.0.100 (29.0.100 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc4d60 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.one] master=0
+    PMID: 29.0.10 (29.0.10 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+__dmpostfetch: [10] root node 511.0.13: numval=1 vset[0]: inst=-1 ul=101
+expr node 0x5581acfc4a50 type=PLUS left=0x5581acfc4e10 right=0x5581acfc4f80 save_last=0
+    PMID: PM_ID_NULL (511.0.13 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=101
+expr node 0x5581acfc4e10 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.one] master=0
+    PMID: 29.0.10 (29.0.10 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+expr node 0x5581acfc4f80 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.hundred] master=0
+    PMID: 29.0.100 (29.0.100 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+__dmpostfetch: [11] root node 511.0.14: numval=1 vset[0]: inst=-1 ul=101
+expr node 0x5581acfc5030 type=PLUS left=0x5581acfc50e0 right=0x5581acfc5190 save_last=0
+    PMID: PM_ID_NULL (511.0.14 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=101
+expr node 0x5581acfc50e0 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulong.one] master=0
+    PMID: 29.0.93 (29.0.93 from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+expr node 0x5581acfc5190 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.hundred] master=0
+    PMID: 29.0.100 (29.0.100 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+__dmpostfetch: [12] root node 511.0.15: numval=1 vset[0]: inst=-1 ul=101
+expr node 0x5581acfc5240 type=PLUS left=0x5581acfc5360 right=0x5581acfc53b0 save_last=0
+    PMID: PM_ID_NULL (511.0.15 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=101
+expr node 0x5581acfc5360 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.hundred] master=0
+    PMID: 29.0.100 (29.0.100 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc53b0 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulong.one] master=0
+    PMID: 29.0.93 (29.0.93 from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+__dmpostfetch: [13] root node 511.0.16: numval=1 vset[0]: inst=-1 f=101.000000
+expr node 0x5581acfc5460 type=PLUS left=0x5581acfc5510 right=0x5581acfc55c0 save_last=0
+    PMID: PM_ID_NULL (511.0.16 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=101
+expr node 0x5581acfc5510 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.one] master=0
+    PMID: 29.0.10 (29.0.10 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+expr node 0x5581acfc55c0 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.hundred] master=0
+    PMID: 29.0.17 (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+__dmpostfetch: [14] root node 511.0.17: numval=1 vset[0]: inst=-1 f=101.000000
+expr node 0x5581acfc5670 type=PLUS left=0x5581acfc57a0 right=0x5581acfc5850 save_last=0
+    PMID: PM_ID_NULL (511.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=101
+expr node 0x5581acfc57a0 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulong.one] master=0
+    PMID: 29.0.93 (29.0.93 from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+expr node 0x5581acfc5850 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.hundred] master=0
+    PMID: 29.0.17 (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+__dmpostfetch: [15] root node 511.0.18: numval=1 vset[0]: inst=-1 f=101.000000
+expr node 0x5581acfc5900 type=PLUS left=0x5581acfc59b0 right=0x5581acfc5a60 save_last=0
+    PMID: PM_ID_NULL (511.0.18 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=101
+expr node 0x5581acfc59b0 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.one] master=0
+    PMID: 29.0.20 (29.0.20 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+expr node 0x5581acfc5a60 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.hundred] master=0
+    PMID: 29.0.17 (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+__dmpostfetch: [16] root node 511.0.19: numval=1 vset[0]: inst=-1 f=101.000000
+expr node 0x5581acfc5b10 type=PLUS left=0x5581acfc5c50 right=0x5581acfc5d00 save_last=0
+    PMID: PM_ID_NULL (511.0.19 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=101
+expr node 0x5581acfc5c50 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.one] master=0
+    PMID: 29.0.98 (29.0.98 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+expr node 0x5581acfc5d00 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.hundred] master=0
+    PMID: 29.0.17 (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+__dmpostfetch: [17] root node 511.0.20: numval=1 vset[0]: inst=-1 f=101.000000
+expr node 0x5581acfc5db0 type=PLUS left=0x5581acfc5e60 right=0x5581acfc5f10 save_last=0
+    PMID: PM_ID_NULL (511.0.20 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=101
+expr node 0x5581acfc5e60 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.hundred] master=0
+    PMID: 29.0.17 (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc5f10 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.one] master=0
+    PMID: 29.0.10 (29.0.10 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+__dmpostfetch: [18] root node 511.0.21: numval=1 vset[0]: inst=-1 f=101.000000
+expr node 0x5581acfc5fc0 type=PLUS left=0x5581acfc6110 right=0x5581acfc61c0 save_last=0
+    PMID: PM_ID_NULL (511.0.21 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=101
+expr node 0x5581acfc6110 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.hundred] master=0
+    PMID: 29.0.17 (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc61c0 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulong.one] master=0
+    PMID: 29.0.93 (29.0.93 from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+__dmpostfetch: [19] root node 511.0.22: numval=1 vset[0]: inst=-1 f=101.000000
+expr node 0x5581acfc6270 type=PLUS left=0x5581acfc6320 right=0x5581acfc63d0 save_last=0
+    PMID: PM_ID_NULL (511.0.22 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=101
+expr node 0x5581acfc6320 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.hundred] master=0
+    PMID: 29.0.17 (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc63d0 type=NAME left=(nil) right=(nil) save_last=0 [sample.longlong.one] master=0
+    PMID: 29.0.20 (29.0.20 from pmDesc) numval: 1
+    Data Type: 64-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+__dmpostfetch: [20] root node 511.0.23: numval=1 vset[0]: inst=-1 f=101.000000
+expr node 0x5581acfc6480 type=PLUS left=0x5581acfc65e0 right=0x5581acfc6690 save_last=0
+    PMID: PM_ID_NULL (511.0.23 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=101
+expr node 0x5581acfc65e0 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.hundred] master=0
+    PMID: 29.0.17 (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc6690 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.one] master=0
+    PMID: 29.0.98 (29.0.98 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+__dmpostfetch: [21] root node 511.0.24: numval=1 vset[0]: inst=-1 l=1000
+expr node 0x5581acfc6740 type=STAR left=0x5581acfc67f0 right=0x5581acfc68a0 save_last=0
+    PMID: PM_ID_NULL (511.0.24 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000
+expr node 0x5581acfc67f0 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.ten] master=0
+    PMID: 29.0.11 (29.0.11 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=10
+expr node 0x5581acfc68a0 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.hundred] master=0
+    PMID: 29.0.12 (29.0.12 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+__dmpostfetch: [22] root node 511.0.25: numval=1 vset[0]: inst=-1 ul=1000
+expr node 0x5581acfc6950 type=STAR left=0x5581acfc6ac0 right=0x5581acfc6b70 save_last=0
+    PMID: PM_ID_NULL (511.0.25 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1000
+expr node 0x5581acfc6ac0 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.ten] master=0
+    PMID: 29.0.99 (29.0.99 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=10
+expr node 0x5581acfc6b70 type=NAME left=(nil) right=(nil) save_last=0 [sample.ulonglong.hundred] master=0
+    PMID: 29.0.100 (29.0.100 from pmDesc) numval: 1
+    Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+__dmpostfetch: [23] root node 511.0.26: numval=1 vset[0]: inst=-1 d=10.000000
+expr node 0x5581acfc6c20 type=SLASH left=0x5581acfc6cd0 right=0x5581acfc6d80 save_last=0
+    PMID: PM_ID_NULL (511.0.26 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=10
+expr node 0x5581acfc6cd0 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.hundred] master=0
+    PMID: 29.0.17 (29.0.17 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5581acfc6d80 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.ten] master=0
+    PMID: 29.0.16 (29.0.16 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=10
+__dmpostfetch: [24] root node 511.0.27: numval=1 vset[0]: inst=-1 d=0.000000
+expr node 0x5581acfc6e30 type=SLASH left=0x5581acfc6fb0 right=0x5581acfc7060 save_last=0
+    PMID: PM_ID_NULL (511.0.27 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=0
+expr node 0x5581acfc6fb0 type=INTEGER left=(nil) right=(nil) save_last=0 [0] master=0
+    PMID: PM_ID_NULL (PM_ID_NULL from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+[0] inst=-1, val=0
+expr node 0x5581acfc7060 type=NAME left=(nil) right=(nil) save_last=0 [sample.float.ten] master=0
+    PMID: 29.0.16 (29.0.16 from pmDesc) numval: 1
+    Data Type: float  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=10
+__dmpostfetch: [25] root node 511.0.28: numval=1 vset[0]: inst=-1 d=0.000000
+expr node 0x5581acfc7110 type=SLASH left=0x5581acfc71c0 right=0x5581acfc7270 save_last=0
+    PMID: PM_ID_NULL (511.0.28 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=0
+expr node 0x5581acfc71c0 type=INTEGER left=(nil) right=(nil) save_last=0 [0] master=0
+    PMID: PM_ID_NULL (PM_ID_NULL from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+[0] inst=-1, val=0
+expr node 0x5581acfc7270 type=NAME left=(nil) right=(nil) save_last=0 [sample.double.ten] master=0
+    PMID: 29.0.26 (29.0.26 from pmDesc) numval: 1
+    Data Type: double  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=10
+__dmpostfetch: [26] root node 511.0.29: numval=-12365
+expr node 0x5581acfc7320 type=PLUS left=0x5581acfc74b0 right=0x5581acfc7560 save_last=0
+    PMID: PM_ID_NULL (511.0.29 from pmDesc) numval: 0
+    Data Type: float  InDom: 29.4 0x7400004
+    Semantics: discrete  Units: none
+expr node 0x5581acfc74b0 type=NAME left=(nil) right=(nil) save_last=0 [sample.needprofile] master=0
+    PMID: 29.0.49 (29.0.49 from pmDesc) numval: -12365
+    Data Type: float  InDom: 29.4 0x7400004
+    Semantics: discrete  Units: none
+expr node 0x5581acfc7560 type=INTEGER left=(nil) right=(nil) save_last=0 [1] master=0
+    PMID: PM_ID_NULL (PM_ID_NULL from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+__dmpostfetch: [27] root node 511.0.30: numval=-12365
+expr node 0x5581acfc7670 type=PLUS left=0x5581acfc76c0 right=0x5581acfc7770 save_last=0
+    PMID: PM_ID_NULL (511.0.30 from pmDesc) numval: 0
+    Data Type: float  InDom: 29.4 0x7400004
+    Semantics: discrete  Units: none
+expr node 0x5581acfc76c0 type=INTEGER left=(nil) right=(nil) save_last=0 [1] master=0
+    PMID: PM_ID_NULL (PM_ID_NULL from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+[0] inst=-1, val=1
+expr node 0x5581acfc7770 type=NAME left=(nil) right=(nil) save_last=0 [sample.needprofile] master=0
+    PMID: 29.0.49 (29.0.49 from pmDesc) numval: -12365
+    Data Type: float  InDom: 29.4 0x7400004
+    Semantics: discrete  Units: none
+
+arith.l
+    value 0
+
+arith.ul
+    value 0
+
+arith.ll
+    value 0
+
+arith.ull
+    value 0
+
+arith.f
+    value 0
+
+arith.d
+    value 0
+
+arith.promote.l_l_r_ll
+    value 101
+
+arith.promote.l_ll_r_l
+    value 101
+
+arith.promote.l_ll_r_ul
+    value 101
+
+arith.promote.l_ull_r_l
+    value 101
+
+arith.promote.l_l_r_ull
+    value 101
+
+arith.promote.l_ul_r_ull
+    value 101
+
+arith.promote.l_ull_r_ul
+    value 101
+
+arith.promote.l_l_r_f
+    value 101
+
+arith.promote.l_ul_r_f
+    value 101
+
+arith.promote.l_ll_r_f
+    value 101
+
+arith.promote.l_ull_r_f
+    value 101
+
+arith.promote.l_f_r_l
+    value 101
+
+arith.promote.l_f_r_ul
+    value 101
+
+arith.promote.l_f_r_ll
+    value 101
+
+arith.promote.l_f_r_ull
+    value 101
+
+arith.eval.mul.l_l_r_l
+    value 1000
+
+arith.eval.mul.l_ull_r_ull
+    value 1000
+
+arith.eval.div.l_f_r_f
+    value 10
+
+arith.eval.div.l_zero_f_r_f
+    value 0
+
+arith.eval.div.l_zero_d_r_d
+    value 0
+
+arith.eval.op.l_err
+Error: Explicit instance identifier(s) required
+
+arith.eval.op.r_err
+Error: Explicit instance identifier(s) required
+=== sed2 ===
+s/ val=42$/ val=<value-0>/
+s/ val=21588$/ val=<value-1>/
+s/ val=100$/ val=<value-2>/
+s/ val=1$/ val=<value-3>/
+s/ val=10$/ val=<value-4>/
+=== sed ===
+s/0x5581acfb9700/<addr-0>/
+s/0x5581acfb8ef0/<addr-1>/
+s/0x5581acfb8f40/<addr-2>/
+s/0x5581acfb8f90/<addr-3>/
+s/0x5581acfb9040/<addr-4>/
+s/0x5581acfb9150/<addr-5>/
+s/0x5581acfb91a0/<addr-6>/
+s/0x5581acfb91f0/<addr-7>/
+s/0x5581acfb92a0/<addr-8>/
+s/0x5581acfc1d20/<addr-9>/
+s/0x5581acfc1e90/<addr-10>/
+s/0x5581acfc1fa0/<addr-11>/
+s/0x5581acfc1ff0/<addr-12>/
+s/0x5581acfc2040/<addr-13>/
+s/0x5581acfc2090/<addr-14>/
+s/0x5581acfc2140/<addr-15>/
+s/0x5581acfc21f0/<addr-16>/
+s/0x5581acfc22a0/<addr-17>/
+s/0x5581acfc22f0/<addr-18>/
+s/0x5581acfc23a0/<addr-19>/
+s/0x5581acfc2450/<addr-20>/
+s/0x5581acfc2560/<addr-21>/
+s/0x5581acfc26d0/<addr-22>/
+s/0x5581acfc2780/<addr-23>/
+s/0x5581acfc27d0/<addr-24>/
+s/0x5581acfc2820/<addr-25>/
+s/0x5581acfc28d0/<addr-26>/
+s/0x5581acfc2980/<addr-27>/
+s/0x5581acfc2a30/<addr-28>/
+s/0x5581acfc2a80/<addr-29>/
+s/0x5581acfc2b30/<addr-30>/
+s/0x5581acfc2be0/<addr-31>/
+s/0x5581acfc2cf0/<addr-32>/
+s/0x5581acfc2e60/<addr-33>/
+s/0x5581acfc2f10/<addr-34>/
+s/0x5581acfc2f60/<addr-35>/
+s/0x5581acfc2fb0/<addr-36>/
+s/0x5581acfc3060/<addr-37>/
+s/0x5581acfc3110/<addr-38>/
+s/0x5581acfc31c0/<addr-39>/
+s/0x5581acfc3210/<addr-40>/
+s/0x5581acfc32c0/<addr-41>/
+s/0x5581acfc3370/<addr-42>/
+s/0x5581acfc3480/<addr-43>/
+s/0x5581acfc35f0/<addr-44>/
+s/0x5581acfc36d0/<addr-45>/
+s/0x5581acfc3720/<addr-46>/
+s/0x5581acfc3770/<addr-47>/
+s/0x5581acfc3820/<addr-48>/
+s/0x5581acfc38d0/<addr-49>/
+s/0x5581acfc3980/<addr-50>/
+s/0x5581acfc39d0/<addr-51>/
+s/0x5581acfc3a80/<addr-52>/
+s/0x5581acfc3b30/<addr-53>/
+s/0x5581acfc3c40/<addr-54>/
+s/0x5581acfc3db0/<addr-55>/
+s/0x5581acfc3e60/<addr-56>/
+s/0x5581acfc3eb0/<addr-57>/
+s/0x5581acfc3f00/<addr-58>/
+s/0x5581acfc3fb0/<addr-59>/
+s/0x5581acfc4060/<addr-60>/
+s/0x5581acfc4110/<addr-61>/
+s/0x5581acfc4160/<addr-62>/
+s/0x5581acfc4210/<addr-63>/
+s/0x5581acfc42c0/<addr-64>/
+s/0x5581acfc43d0/<addr-65>/
+s/0x5581acfc4540/<addr-66>/
+s/0x5581acfc4630/<addr-67>/
+s/0x5581acfc46e0/<addr-68>/
+s/0x5581acfc4790/<addr-69>/
+s/0x5581acfc4840/<addr-70>/
+s/0x5581acfc48f0/<addr-71>/
+s/0x5581acfc49a0/<addr-72>/
+s/0x5581acfc4aa0/<addr-73>/
+s/0x5581acfc4b50/<addr-74>/
+s/0x5581acfc4c00/<addr-75>/
+s/0x5581acfc4cb0/<addr-76>/
+s/0x5581acfc4d60/<addr-77>/
+s/0x5581acfc4a50/<addr-78>/
+s/0x5581acfc4e10/<addr-79>/
+s/0x5581acfc4f80/<addr-80>/
+s/0x5581acfc5030/<addr-81>/
+s/0x5581acfc50e0/<addr-82>/
+s/0x5581acfc5190/<addr-83>/
+s/0x5581acfc5240/<addr-84>/
+s/0x5581acfc5360/<addr-85>/
+s/0x5581acfc53b0/<addr-86>/
+s/0x5581acfc5460/<addr-87>/
+s/0x5581acfc5510/<addr-88>/
+s/0x5581acfc55c0/<addr-89>/
+s/0x5581acfc5670/<addr-90>/
+s/0x5581acfc57a0/<addr-91>/
+s/0x5581acfc5850/<addr-92>/
+s/0x5581acfc5900/<addr-93>/
+s/0x5581acfc59b0/<addr-94>/
+s/0x5581acfc5a60/<addr-95>/
+s/0x5581acfc5b10/<addr-96>/
+s/0x5581acfc5c50/<addr-97>/
+s/0x5581acfc5d00/<addr-98>/
+s/0x5581acfc5db0/<addr-99>/
+s/0x5581acfc5e60/<addr-100>/
+s/0x5581acfc5f10/<addr-101>/
+s/0x5581acfc5fc0/<addr-102>/
+s/0x5581acfc6110/<addr-103>/
+s/0x5581acfc61c0/<addr-104>/
+s/0x5581acfc6270/<addr-105>/
+s/0x5581acfc6320/<addr-106>/
+s/0x5581acfc63d0/<addr-107>/
+s/0x5581acfc6480/<addr-108>/
+s/0x5581acfc65e0/<addr-109>/
+s/0x5581acfc6690/<addr-110>/
+s/0x5581acfc6740/<addr-111>/
+s/0x5581acfc67f0/<addr-112>/
+s/0x5581acfc68a0/<addr-113>/
+s/0x5581acfc6950/<addr-114>/
+s/0x5581acfc6ac0/<addr-115>/
+s/0x5581acfc6b70/<addr-116>/
+s/0x5581acfc6c20/<addr-117>/
+s/0x5581acfc6cd0/<addr-118>/
+s/0x5581acfc6d80/<addr-119>/
+s/0x5581acfc6e30/<addr-120>/
+s/0x5581acfc6fb0/<addr-121>/
+s/0x5581acfc7060/<addr-122>/
+s/0x5581acfc7110/<addr-123>/
+s/0x5581acfc71c0/<addr-124>/
+s/0x5581acfc7270/<addr-125>/
+s/0x5581acfc7320/<addr-126>/
+s/0x5581acfc74b0/<addr-127>/
+s/0x5581acfc7560/<addr-128>/
+s/0x5581acfc7670/<addr-129>/
+s/0x5581acfc76c0/<addr-130>/
+s/0x5581acfc7770/<addr-131>/
+
+Errors and empty results here ...
+
+=== myname ===
+__dmgetpmid: metric "myname.a" -> PMID 511.0.3
+__dmbind: bind metric[2] myname.a
+__dmtraverse: name="myname" added "myname.a"
+__dmgetpmid: metric "myname.b" -> PMID 511.0.4
+__dmbind: bind metric[3] myname.b
+__dmtraverse: name="myname" added "myname.b"
+__dmgetpmid: metric "myname.c" -> PMID 511.0.5
+__dmbind: bind metric[4] myname.c
+__dmtraverse: name="myname" added "myname.c"
+__dmgetpmid: metric "myname.d" -> PMID 511.0.6
+__dmbind: bind metric[5] myname.d
+__dmtraverse: name="myname" added "myname.d"
+__dmgetpmid: metric "myname.e" -> PMID 511.0.7
+__dmbind: bind metric[6] myname.e
+__dmtraverse: name="myname" added "myname.e"
+__dmgetpmid: metric "myname.f" -> PMID 511.0.8
+__dmbind: bind metric[7] myname.f
+__dmtraverse: name="myname" added "myname.f"
+__dmgetpmid: metric "myname.a" -> PMID 511.0.3
+__dmgetpmid: metric "myname.b" -> PMID 511.0.4
+__dmgetpmid: metric "myname.c" -> PMID 511.0.5
+__dmgetpmid: metric "myname.d" -> PMID 511.0.6
+__dmgetpmid: metric "myname.e" -> PMID 511.0.7
+__dmgetpmid: metric "myname.f" -> PMID 511.0.8
+derived metrics prefetch added 5 metrics: 29.0.49 29.0.12 29.0.56 29.0.9 29.0.10
+__dmpostfetch: [0] root node 511.0.3: numval=-12365
+expr node 0x5577690a8730 type=NAME left=(nil) right=(nil) save_last=0 [sample.needprofile] master=0
+    PMID: 29.0.49 (511.0.3 from pmDesc) numval: -12365
+    Data Type: float  InDom: 29.4 0x7400004
+    Semantics: discrete  Units: none
+__dmpostfetch: [1] root node 511.0.4: numval=-12365
+expr node 0x5577690a87e0 type=PLUS left=0x5577690aa5f0 right=0x5577690aa6a0 save_last=0
+    PMID: PM_ID_NULL (511.0.4 from pmDesc) numval: 0
+    Data Type: float  InDom: 29.4 0x7400004
+    Semantics: instant  Units: none
+expr node 0x5577690aa5f0 type=INTEGER left=(nil) right=(nil) save_last=0 [100] master=0
+    PMID: PM_ID_NULL (PM_ID_NULL from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+[0] inst=-1, val=100
+expr node 0x5577690aa6a0 type=STAR left=0x5577690aa6f0 right=0x5577690aa7a0 save_last=0
+    PMID: PM_ID_NULL (29.0.12 from pmDesc) numval: 0
+    Data Type: float  InDom: 29.4 0x7400004
+    Semantics: instant  Units: none
+expr node 0x5577690aa6f0 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.hundred] master=0
+    PMID: 29.0.12 (29.0.12 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5577690aa7a0 type=MINUS left=0x5577690aa7f0 right=0x5577690aa8a0 save_last=0
+    PMID: PM_ID_NULL (29.0.49 from pmDesc) numval: 0
+    Data Type: float  InDom: 29.4 0x7400004
+    Semantics: discrete  Units: none
+expr node 0x5577690aa7f0 type=INTEGER left=(nil) right=(nil) save_last=0 [2] master=0
+    PMID: PM_ID_NULL (PM_ID_NULL from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+[0] inst=-1, val=2
+expr node 0x5577690aa8a0 type=NAME left=(nil) right=(nil) save_last=0 [sample.needprofile] master=0
+    PMID: 29.0.49 (29.0.49 from pmDesc) numval: -12365
+    Data Type: float  InDom: 29.4 0x7400004
+    Semantics: discrete  Units: none
+__dmpostfetch: [2] root node 511.0.5: numval=-12365
+expr node 0x5577690aa950 type=MINUS left=0x5577690a81c0 right=0x5577690a8270 save_last=0
+    PMID: PM_ID_NULL (511.0.5 from pmDesc) numval: 0
+    Data Type: float  InDom: 29.4 0x7400004
+    Semantics: instant  Units: none
+expr node 0x5577690a81c0 type=NAME left=(nil) right=(nil) save_last=0 [sample.needprofile] master=0
+    PMID: 29.0.49 (29.0.49 from pmDesc) numval: -12365
+    Data Type: float  InDom: 29.4 0x7400004
+    Semantics: discrete  Units: none
+expr node 0x5577690a8270 type=NAME left=(nil) right=(nil) save_last=0 [sample.not_ready] master=0
+    PMID: 29.0.56 (29.0.56 from pmDesc) numval: 0
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+__dmpostfetch: [3] root node 511.0.6: numval=-12365
+expr node 0x5577690a8320 type=MINUS left=0x5577690a83d0 right=0x5577690a8480 save_last=0
+    PMID: PM_ID_NULL (511.0.6 from pmDesc) numval: 0
+    Data Type: float  InDom: 29.4 0x7400004
+    Semantics: instant  Units: none
+expr node 0x5577690a83d0 type=NAME left=(nil) right=(nil) save_last=0 [sample.not_ready] master=0
+    PMID: 29.0.56 (29.0.56 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=0
+expr node 0x5577690a8480 type=NAME left=(nil) right=(nil) save_last=0 [sample.needprofile] master=0
+    PMID: 29.0.49 (29.0.49 from pmDesc) numval: -12365
+    Data Type: float  InDom: 29.4 0x7400004
+    Semantics: discrete  Units: none
+__dmpostfetch: [4] root node 511.0.7: numval=0
+expr node 0x5577690a84d0 type=NAME left=(nil) right=(nil) save_last=0 [sample.noinst] master=0
+    PMID: 29.0.9 (511.0.7 from pmDesc) numval: 0
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+__dmpostfetch: [5] root node 511.0.8: numval=0
+expr node 0x5577690aab80 type=STAR left=0x5577690aabd0 right=0x5577690aad80 save_last=0
+    PMID: PM_ID_NULL (511.0.8 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x5577690aabd0 type=PLUS left=0x5577690aac20 right=0x5577690aacd0 save_last=0
+    PMID: PM_ID_NULL (29.0.12 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=101
+expr node 0x5577690aac20 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.hundred] master=0
+    PMID: 29.0.12 (29.0.12 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=100
+expr node 0x5577690aacd0 type=NAME left=(nil) right=(nil) save_last=0 [sample.long.one] master=0
+    PMID: 29.0.10 (29.0.10 from pmDesc) numval: 1
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+[0] inst=-1, val=1
+expr node 0x5577690aad80 type=MINUS left=0x5577690aae30 right=0x5577690aaee0 save_last=0
+    PMID: PM_ID_NULL (29.0.9 from pmDesc) numval: 0
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x5577690aae30 type=NAME left=(nil) right=(nil) save_last=0 [sample.noinst] master=0
+    PMID: 29.0.9 (29.0.9 from pmDesc) numval: 0
+    Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: instant  Units: none
+expr node 0x5577690aaee0 type=INTEGER left=(nil) right=(nil) save_last=0 [1] master=0
+    PMID: PM_ID_NULL (PM_ID_NULL from pmDesc) numval: 1
+    Data Type: 32-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+[0] inst=-1, val=1
+pmFetch returns ...
+pmResult dump from 0x5577690ab730 timestamp: 1593701955.416155 14:59:15.416 numpmid: 6
+  511.0.3 (myname.a): Explicit instance identifier(s) required
+  511.0.4 (myname.b): Explicit instance identifier(s) required
+  511.0.5 (myname.c): Explicit instance identifier(s) required
+  511.0.6 (myname.d): Explicit instance identifier(s) required
+  511.0.7 (myname.e): No values returned!
+  511.0.8 (myname.f): No values returned!
+
+myname.a
+Error: Explicit instance identifier(s) required
+
+myname.b
+Error: Explicit instance identifier(s) required
+
+myname.c
+Error: Explicit instance identifier(s) required
+
+myname.d
+Error: Explicit instance identifier(s) required
+
+myname.e
+No value(s) available!
+
+myname.f
+No value(s) available!
+=== sed ===
+s/0x5577690a8730/<addr-0>/
+s/0x5577690a87e0/<addr-1>/
+s/0x5577690aa5f0/<addr-2>/
+s/0x5577690aa6a0/<addr-3>/
+s/0x5577690aa6f0/<addr-4>/
+s/0x5577690aa7a0/<addr-5>/
+s/0x5577690aa7f0/<addr-6>/
+s/0x5577690aa8a0/<addr-7>/
+s/0x5577690aa950/<addr-8>/
+s/0x5577690a81c0/<addr-9>/
+s/0x5577690a8270/<addr-10>/
+s/0x5577690a8320/<addr-11>/
+s/0x5577690a83d0/<addr-12>/
+s/0x5577690a8480/<addr-13>/
+s/0x5577690a84d0/<addr-14>/
+s/0x5577690aab80/<addr-15>/
+s/0x5577690aabd0/<addr-16>/
+s/0x5577690aac20/<addr-17>/
+s/0x5577690aacd0/<addr-18>/
+s/0x5577690aad80/<addr-19>/
+s/0x5577690aae30/<addr-20>/
+s/0x5577690aaee0/<addr-21>/

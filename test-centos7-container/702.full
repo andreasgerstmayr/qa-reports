@@ -1,20 +1,20 @@
 .
 ----------------------------------------------------------------------
-Ran 1 test in 6.017s
+Ran 1 test in 6.016s
 
 OK
 Running as local:
-pmGetContextHostName: 9a3aa9c56903
+pmGetContextHostName: 3b2b3d6c62f9
 pmParseMetricSpec: localhost
-pmLookupName: <pcp.pmapi.c_uint_Array_3 object at 0x7fd159540730>
+pmLookupName: <pcp.pmapi.c_uint_Array_3 object at 0x7f20e4eb6730>
 pmIDStr: 60.0.32
-pmFetch: <pcp.pmapi.LP_pmResult object at 0x7fd159540ae8>
+pmFetch: <pcp.pmapi.LP_pmResult object at 0x7f20e4eb6ae8>
 pmExtractValue: 2
 pmGetChildren: ['all', 'percpu', 'pernode', 'uname']
 pmGetChildrenStatus: (['all', 'percpu', 'pernode', 'uname'], [1, 1, 1, 1])
 pmGetPMNSLocation: 2
 pmTraversePMNS: 118
-pmLookupName: PM_ERR_NAME Unknown metric name <pcp.pmapi.c_uint_Array_1 object at 0x7fd159540a60>
+pmLookupName: PM_ERR_NAME Unknown metric name <pcp.pmapi.c_uint_Array_1 object at 0x7f20e4eb6a60>
 pmLookupName relaxed mode ('no.such.metric.name', 'sample.bin')
 pmLookupName
 0xf000800
@@ -24,21 +24,21 @@ pmLookupName
 pmNameAll: kernel.all.load
 pmNameID: kernel.all.load
 pmLookupDesc
-pmDesc@0x7fd1614c6f90 id=0xf000800 type=4
+pmDesc@0x7f20ece3cf90 id=0xf000800 type=4
 pmNameAll: sample.dupnames.three.bin
 pmNameAll: sample.dupnames.two.bin
 pmNameAll: sample.bin
 pmNameID: sample.dupnames.three.bin
 pmLookupDesc
-pmDesc@0x7fd1614c6f78 id=0x7400006 type=0
+pmDesc@0x7f20ece3cf78 id=0x7400006 type=0
 pmNameAll: kernel.percpu.cpu.sys
 pmNameID: kernel.percpu.cpu.sys
 pmLookupDesc
-pmDesc@0x7fd159552030 id=0xf000002 type=3
+pmDesc@0x7f20e4ec8030 id=0xf000002 type=3
 pmNameAll: mem.util.free
 pmNameID: mem.util.free
 pmLookupDesc
-pmDesc@0x7fd159552048 id=0xf000402 type=3
+pmDesc@0x7f20e4ec8048 id=0xf000402 type=3
 pmGetInDom: ['bin-100', 'bin-200', 'bin-300', 'bin-400', 'bin-500', 'bin-600', 'bin-700', 'bin-800', 'bin-900']
 pmInDomStr: 60.2
 pmDelProfile: ok
@@ -52,7 +52,7 @@ pmParseUnitsStr[bytes]: Mbyte / sec 0.8
 pmParseUnitsStr[unicode]: Mbyte / sec 0.8
 pmParseUnitsStr:  PM_ERR_CONV Impossible value or scale conversion unrecognized or duplicate base unit
 pmParseUnitsStr:  PM_ERR_CONV Impossible value or scale conversion 5
-pmFetch: <pcp.pmapi.LP_pmResult object at 0x7fd159540840>
+pmFetch: <pcp.pmapi.LP_pmResult object at 0x7f20e4eb6840>
 pmSortInstances: ok
 pmStore:  PM_ERR_PERMISSION No permission to perform requested operation
 pmExtractValue 0 100.0
@@ -64,9 +64,9 @@ pmExtractValue 5 600.0
 pmExtractValue 6 700.0
 pmExtractValue 7 800.0
 pmExtractValue 8 900.0
-pmConvScale, integer arg 1486536.0 1451.6953125
-pmConvScale, pmUnits arg 1486536.0 1451.6953125
-pmAtomStr 1.451695e+03
+pmConvScale, integer arg 1499456.0 1464.3125
+pmConvScale, pmUnits arg 1499456.0 1464.3125
+pmAtomStr 1.464312e+03
 pmSemStr counter
 pmtimevalSleep
 pmDupContext 1

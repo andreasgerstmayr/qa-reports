@@ -1,0 +1,73 @@
+{
+  "uid" : "f33994ce4ccbb6f9",
+  "name" : "QA 385",
+  "fullName" : "QA #385 on fedora33-container",
+  "historyId" : "385@fedora33-container",
+  "time" : {
+    "start" : 1593701468000,
+    "stop" : 1593701468000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 385\n\nSome basic PM_EVENT_TYPE tests\n\n\n\nCopyright (c) 2010 Ken McDonell.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 385</p>\n<p>Some basic PM_EVENT_TYPE tests</p>\n<p>Copyright (c) 2010 Ken McDonell.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora33-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora33-container"
+  }, {
+    "name" : "epic",
+    "value" : "libpcp"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.sample"
+  }, {
+    "name" : "epic",
+    "value" : "pminfo"
+  }, {
+    "name" : "epic",
+    "value" : "pmprobe"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "event"
+  }, {
+    "name" : "epic",
+    "value" : "sanity"
+  }, {
+    "name" : "epic",
+    "value" : "pmstore"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/7902b6e1c991998ca419e33a933a11ca323dad97/qa/385",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/7902b6e1c991998ca419e33a933a11ca323dad97/qa/385.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f33994ce4ccbb6f9.json",
+  "parameterValues" : [ ]
+}
