@@ -1,0 +1,1329 @@
+=== log sample.bin[bin-100] ===
+=== log sample.bin[bin-200] ===
+Log for pmlogger on fv-az59 started Fri Aug  7 13:43:12 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs /dev/null -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "fv-az59" via "local:"
+Archive basename: /tmp/177-68591
+
+Fri Aug  7 13:43:12 2020
+pmlc request from localhost: mandatory on 0.2 sec
+  metric: sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin
+    instance: bin-100
+
+Fri Aug  7 13:43:16 2020
+pmlc request from localhost: mandatory on 0.2 sec
+  metric: sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin
+    instance: bin-200
+pmlogger: Sample limit reached, exiting
+
+Log finished Fri Aug  7 13:43:18 2020
+=== pmdumplog ===
+Log Label (Log Format Version 2)
+Performance metrics from host fv-az59
+    commencing Fri Aug  7 13:43:12.203906 2020
+    ending     Fri Aug  7 13:43:18.513112 2020
+Archive timezone: UTC
+PID for pmlogger: 68621
+
+13:43:12.203906 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [68621 or "68621"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [68621 or "68621"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [68621 or "68621"] value "/tmp/177-68591"
+    2.0.23 (pmcd.pid): value 67153
+    2.0.24 (pmcd.seqnum): value 13
+
+13:43:12.708763 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:12.908682 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:13.108756 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:13.308834 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:13.508794 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:13.708724 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:13.908736 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:14.108757 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:14.308882 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:14.508782 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:14.708773 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:14.908729 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:15.108742 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:15.308682 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:15.508819 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:15.708803 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:15.908942 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:16.108733 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:16.308751 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:16.508775 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:16.708687 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [100 or "bin-100"] value 100
+
+13:43:16.908872 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+
+13:43:17.108734 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+
+13:43:17.308738 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+
+13:43:17.508793 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+
+13:43:17.708702 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+
+13:43:17.908856 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+
+13:43:18.108742 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+
+13:43:18.308865 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+
+13:43:18.508682 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+
+13:43:18.513112 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [68621 or "68621"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [68621 or "68621"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [68621 or "68621"] value "/tmp/177-68591"
+    2.0.23 (pmcd.pid): value 67153
+    2.0.24 (pmcd.seqnum): value 13
+offset=@13:43:12.254
+=== pmval -t 0.1 ===
+
+metric:    sample.bin
+archive:   /tmp/177-68591
+host:      fv-az59
+start:     Fri Aug  7 13:43:12 2020
+end:       Fri Aug  7 13:43:18 2020
+semantics: instantaneous value
+units:     none
+samples:   63
+interval:  0.10 sec
+13:43:12.253  No values available
+13:43:12.353  No values available
+13:43:12.453  No values available
+13:43:12.553  No values available
+13:43:12.653  No values available
+
+                bin-100     bin-200 
+13:43:12.753        100           ? 
+13:43:12.853        100           ? 
+13:43:12.953        100           ? 
+13:43:13.053        100           ? 
+13:43:13.153        100           ? 
+13:43:13.253        100           ? 
+13:43:13.353        100           ? 
+13:43:13.453        100           ? 
+13:43:13.553        100           ? 
+13:43:13.653        100           ? 
+13:43:13.753        100           ? 
+13:43:13.853        100           ? 
+13:43:13.953        100           ? 
+13:43:14.053        100           ? 
+13:43:14.153        100           ? 
+13:43:14.253        100           ? 
+13:43:14.353        100           ? 
+13:43:14.453        100           ? 
+13:43:14.553        100           ? 
+13:43:14.653        100           ? 
+13:43:14.753        100           ? 
+13:43:14.853        100           ? 
+13:43:14.953        100           ? 
+13:43:15.053        100           ? 
+13:43:15.153        100           ? 
+13:43:15.253        100           ? 
+13:43:15.353        100           ? 
+13:43:15.453        100           ? 
+13:43:15.553        100           ? 
+13:43:15.653        100           ? 
+13:43:15.753        100           ? 
+13:43:15.853        100           ? 
+13:43:15.953        100           ? 
+13:43:16.053        100           ? 
+13:43:16.153        100           ? 
+13:43:16.253        100           ? 
+13:43:16.353        100           ? 
+13:43:16.453        100           ? 
+13:43:16.553        100           ? 
+13:43:16.653        100           ? 
+13:43:16.753        100           ? 
+13:43:16.853        100           ? 
+13:43:16.953        100         200 
+13:43:17.053        100         200 
+13:43:17.153        100         200 
+13:43:17.253        100         200 
+13:43:17.353        100         200 
+13:43:17.453        100         200 
+13:43:17.553        100         200 
+13:43:17.653        100         200 
+13:43:17.753        100         200 
+13:43:17.853        100         200 
+13:43:17.953        100         200 
+13:43:18.053        100         200 
+13:43:18.153        100         200 
+13:43:18.253        100         200 
+13:43:18.353        100         200 
+13:43:18.453        100         200 
+__pmLogOpen: inspect file "/tmp/177-68591.index"
+__pmFopen("/tmp/177-68591.index", "r"): no decompress
+__pmLogOpen: inspect file "/tmp/177-68591.meta"
+__pmFopen("/tmp/177-68591.meta", "r"): no decompress
+__pmLogOpen: inspect file "/tmp/177-68591.0"
+__pmFopen("/tmp/177-68591.0", "r"): no decompress
+__pmLogChkLabel: fd=3 vol=0 [magic=50052602 version=2 vol=0 pid=68621 host=fv-az59]
+__pmLogChangeVol: change to volume 0
+__pmLogChkLabel: fd=4 vol=-2 [magic=50052602 version=2 vol=-2 pid=68621 host=fv-az59]
+__pmLogChkLabel: fd=5 vol=-1 [magic=50052602 version=2 vol=-1 pid=68621 host=fv-az59]
+__pmLogLoadMeta: record len=58, type=1 @ offset=132
+__pmLogLoadMeta: PMID: 2.3.3 name: pmcd.pmlogger.host
+__pmLogLoadMeta: record len=42, type=2 @ offset=190
+addindom( ..., 2.1, 13:43:12.203906, numinst=1)
+__pmLogLoadMeta: record len=58, type=1 @ offset=232
+__pmLogLoadMeta: PMID: 2.3.0 name: pmcd.pmlogger.port
+__pmLogLoadMeta: record len=61, type=1 @ offset=290
+__pmLogLoadMeta: PMID: 2.3.2 name: pmcd.pmlogger.archive
+__pmLogLoadMeta: record len=48, type=1 @ offset=351
+__pmLogLoadMeta: PMID: 2.0.23 name: pmcd.pid
+__pmLogLoadMeta: record len=51, type=1 @ offset=399
+__pmLogLoadMeta: PMID: 2.0.24 name: pmcd.seqnum
+__pmLogLoadMeta: record len=106, type=1 @ offset=450
+__pmLogLoadMeta: PMID: 29.0.6 name: sample.dupnames.three.bin
+__pmLogLoadMeta: PMID: 29.0.6 name: sample.dupnames.two.bin
+__pmLogLoadMeta: PMID: 29.0.6 name: sample.bin
+__pmLogLoadMeta: record len=207, type=3 @ offset=556
+addlabel( ..., 1, 4294967295, 13:43:12.708763, nsets=1)
+__pmLogLoadMeta: record len=95, type=3 @ offset=763
+addlabel( ..., 2, 29, 13:43:12.708763, nsets=1)
+__pmLogLoadMeta: record len=70, type=3 @ offset=858
+addlabel( ..., 8, 121634816, 13:43:12.708763, nsets=1)
+__pmLogLoadMeta: record len=311, type=3 @ offset=928
+addlabel( ..., 32, 121634818, 13:43:12.708763, nsets=9)
+__pmLogLoadMeta: record len=47, type=4 @ offset=1239
+addtext( ..., 121634822, 5)
+__pmLogLoadMeta: record len=58, type=4 @ offset=1286
+addtext( ..., 121634818, 9)
+__pmLogLoadMeta: record len=636, type=4 @ offset=1344
+addtext( ..., 121634822, 6)
+__pmLogLoadMeta: record len=114, type=4 @ offset=1980
+addtext( ..., 121634818, 10)
+__pmLogLoadMeta: record len=172, type=2 @ offset=2094
+addindom( ..., 29.2, 13:43:12.708763, numinst=9)
+__pmLogRead: fd=3 (peek) mode=back vol=0 posn=1780 @13:43:18.513 (t=6.309206) len=header+180+trailer
+__pmLogSetTime(0) 13:43:12.253999 delta=100 after ti[0]@13:43:12.203906 back up ...
+__pmLogRead: fd=3 mode=back vol=0 posn=132 BEFORE start
+... vol=0 posn=132 serial=1
+__pmLogFetchInterp @ 13:43:12.253999 t_req=0.050093 curvol=0 posn=132 (vol=0) serial=1
+__pmLogRead: fd=3 mode=forw vol=0 posn=132 @13:43:12.203 (t=0.000000) len=header+180+trailer
+do_roll: forw to t=0.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=320 @13:43:12.708 (t=0.504857) len=header+32+trailer
+search back: pmid 29.0.6[inst=200]: t_first=-1.000000 t_prior=-1.000000 state=<undefined> t_next=-1.000000 state=<undefined> t_last=-1.000000
+search back: pmid 29.0.6[inst=100]: t_first=-1.000000 t_prior=-1.000000 state=<undefined> t_next=-1.000000 state=<undefined> t_last=-1.000000
+__pmLogRead: fd=3 mode=back vol=0 posn=132 BEFORE start
+Start of Log, 2 metric-inst not found
+no values before t_first: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=-1.000000 state=<undefined> t_last=-1.000000
+no values before t_first: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=-1.000000 state=<undefined> t_last=-1.000000
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=-1.000000 state=<undefined> t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=-1.000000 state=<undefined> t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=0.504857 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=360 @13:43:12.908 (t=0.704776) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=400 @13:43:13.108 (t=0.904850) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=440 @13:43:13.308 (t=1.104928) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=480 @13:43:13.508 (t=1.304888) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=520 @13:43:13.708 (t=1.504818) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=560 @13:43:13.908 (t=1.704830) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=600 @13:43:14.108 (t=1.904851) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=640 @13:43:14.308 (t=2.104976) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=680 @13:43:14.508 (t=2.304876) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=720 @13:43:14.708 (t=2.504867) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=760 @13:43:14.908 (t=2.704823) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=800 @13:43:15.108 (t=2.904836) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=840 @13:43:15.308 (t=3.104776) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=880 @13:43:15.508 (t=3.304913) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=920 @13:43:15.708 (t=3.504897) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=960 @13:43:15.908 (t=3.705036) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=1000 @13:43:16.108 (t=3.904827) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=1040 @13:43:16.308 (t=4.104845) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=1080 @13:43:16.508 (t=4.304869) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=1120 @13:43:16.708 (t=4.504781) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=1160 @13:43:16.908 (t=4.704966) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=4.704966 state=<scanned> v=200 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 23 backwards 1
+__pmLogFetchInterp @ 13:43:12.353999 t_req=0.150093 curvol=0 posn=320 (vol=0) serial=1
+__pmLogRead: fd=3 mode=forw vol=0 posn=320 @13:43:12.708 (t=0.504857) len=header+32+trailer
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:12.453999 t_req=0.250093 curvol=0 posn=320 (vol=0) serial=1
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:12.553999 t_req=0.350093 curvol=0 posn=320 (vol=0) serial=1
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:12.653999 t_req=0.450093 curvol=0 posn=320 (vol=0) serial=1
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:12.753999 t_req=0.550093 curvol=0 posn=320 (vol=0) serial=1
+do_roll: forw to t=0.504857
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.504857 v=100 t_next=0.504857 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=360 @13:43:12.908 (t=0.704776) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.504857 v=100 t_next=0.504857 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.504857 v=100 t_next=0.704776 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=0.504857 v=100 next: t=0.704776 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:12.853999 t_req=0.650093 curvol=0 posn=360 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=0.504857 v=100 next: t=0.704776 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:12.953999 t_req=0.750093 curvol=0 posn=360 (vol=0) serial=1
+do_roll: forw to t=0.704776
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.704776 v=100 t_next=0.704776 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=400 @13:43:13.108 (t=0.904850) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.704776 v=100 t_next=0.704776 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.704776 v=100 t_next=0.904850 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=0.704776 v=100 next: t=0.904850 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:13.053999 t_req=0.850093 curvol=0 posn=400 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=0.704776 v=100 next: t=0.904850 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:13.153999 t_req=0.950093 curvol=0 posn=400 (vol=0) serial=1
+do_roll: forw to t=0.904850
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.904850 v=100 t_next=0.904850 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=440 @13:43:13.308 (t=1.104928) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.904850 v=100 t_next=0.904850 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.904850 v=100 t_next=1.104928 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=0.904850 v=100 next: t=1.104928 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:13.253999 t_req=1.050093 curvol=0 posn=440 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=0.904850 v=100 next: t=1.104928 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:13.353999 t_req=1.150093 curvol=0 posn=440 (vol=0) serial=1
+do_roll: forw to t=1.104928
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.104928 v=100 t_next=1.104928 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=480 @13:43:13.508 (t=1.304888) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.104928 v=100 t_next=1.104928 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.104928 v=100 t_next=1.304888 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=1.104928 v=100 next: t=1.304888 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:13.453999 t_req=1.250093 curvol=0 posn=480 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=1.104928 v=100 next: t=1.304888 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:13.553999 t_req=1.350093 curvol=0 posn=480 (vol=0) serial=1
+do_roll: forw to t=1.304888
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.304888 v=100 t_next=1.304888 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=520 @13:43:13.708 (t=1.504818) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.304888 v=100 t_next=1.304888 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.304888 v=100 t_next=1.504818 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=1.304888 v=100 next: t=1.504818 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:13.653999 t_req=1.450093 curvol=0 posn=520 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=1.304888 v=100 next: t=1.504818 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:13.753999 t_req=1.550093 curvol=0 posn=520 (vol=0) serial=1
+do_roll: forw to t=1.504818
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.504818 v=100 t_next=1.504818 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=560 @13:43:13.908 (t=1.704830) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.504818 v=100 t_next=1.504818 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.504818 v=100 t_next=1.704830 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=1.504818 v=100 next: t=1.704830 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:13.853999 t_req=1.650093 curvol=0 posn=560 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=1.504818 v=100 next: t=1.704830 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:13.953999 t_req=1.750093 curvol=0 posn=560 (vol=0) serial=1
+do_roll: forw to t=1.704830
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.704830 v=100 t_next=1.704830 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=600 @13:43:14.108 (t=1.904851) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.704830 v=100 t_next=1.704830 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.704830 v=100 t_next=1.904851 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=1.704830 v=100 next: t=1.904851 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:14.053999 t_req=1.850093 curvol=0 posn=600 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=1.704830 v=100 next: t=1.904851 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:14.153999 t_req=1.950093 curvol=0 posn=600 (vol=0) serial=1
+do_roll: forw to t=1.904851
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.904851 v=100 t_next=1.904851 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=640 @13:43:14.308 (t=2.104976) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.904851 v=100 t_next=1.904851 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.904851 v=100 t_next=2.104976 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=1.904851 v=100 next: t=2.104976 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:14.253999 t_req=2.050093 curvol=0 posn=640 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=1.904851 v=100 next: t=2.104976 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:14.353999 t_req=2.150093 curvol=0 posn=640 (vol=0) serial=1
+do_roll: forw to t=2.104976
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.104976 v=100 t_next=2.104976 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=680 @13:43:14.508 (t=2.304876) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.104976 v=100 t_next=2.104976 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.104976 v=100 t_next=2.304876 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=2.104976 v=100 next: t=2.304876 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:14.453999 t_req=2.250093 curvol=0 posn=680 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=2.104976 v=100 next: t=2.304876 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:14.553999 t_req=2.350093 curvol=0 posn=680 (vol=0) serial=1
+do_roll: forw to t=2.304876
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.304876 v=100 t_next=2.304876 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=720 @13:43:14.708 (t=2.504867) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.304876 v=100 t_next=2.304876 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.304876 v=100 t_next=2.504867 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=2.304876 v=100 next: t=2.504867 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:14.653999 t_req=2.450093 curvol=0 posn=720 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=2.304876 v=100 next: t=2.504867 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:14.753999 t_req=2.550093 curvol=0 posn=720 (vol=0) serial=1
+do_roll: forw to t=2.504867
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.504867 v=100 t_next=2.504867 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=760 @13:43:14.908 (t=2.704823) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.504867 v=100 t_next=2.504867 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.504867 v=100 t_next=2.704823 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=2.504867 v=100 next: t=2.704823 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:14.853999 t_req=2.650093 curvol=0 posn=760 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=2.504867 v=100 next: t=2.704823 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:14.953999 t_req=2.750093 curvol=0 posn=760 (vol=0) serial=1
+do_roll: forw to t=2.704823
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.704823 v=100 t_next=2.704823 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=800 @13:43:15.108 (t=2.904836) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.704823 v=100 t_next=2.704823 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.704823 v=100 t_next=2.904836 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=2.704823 v=100 next: t=2.904836 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:15.053999 t_req=2.850093 curvol=0 posn=800 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=2.704823 v=100 next: t=2.904836 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:15.153999 t_req=2.950093 curvol=0 posn=800 (vol=0) serial=1
+do_roll: forw to t=2.904836
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.904836 v=100 t_next=2.904836 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=840 @13:43:15.308 (t=3.104776) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.904836 v=100 t_next=2.904836 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.904836 v=100 t_next=3.104776 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=2.904836 v=100 next: t=3.104776 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:15.253999 t_req=3.050093 curvol=0 posn=840 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=2.904836 v=100 next: t=3.104776 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:15.353999 t_req=3.150093 curvol=0 posn=840 (vol=0) serial=1
+do_roll: forw to t=3.104776
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.104776 v=100 t_next=3.104776 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=880 @13:43:15.508 (t=3.304913) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.104776 v=100 t_next=3.104776 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.104776 v=100 t_next=3.304913 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=3.104776 v=100 next: t=3.304913 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:15.453999 t_req=3.250093 curvol=0 posn=880 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=3.104776 v=100 next: t=3.304913 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:15.553999 t_req=3.350093 curvol=0 posn=880 (vol=0) serial=1
+do_roll: forw to t=3.304913
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.304913 v=100 t_next=3.304913 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=920 @13:43:15.708 (t=3.504897) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.304913 v=100 t_next=3.304913 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.304913 v=100 t_next=3.504897 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=3.304913 v=100 next: t=3.504897 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:15.653999 t_req=3.450093 curvol=0 posn=920 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=3.304913 v=100 next: t=3.504897 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:15.753999 t_req=3.550093 curvol=0 posn=920 (vol=0) serial=1
+do_roll: forw to t=3.504897
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.504897 v=100 t_next=3.504897 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=960 @13:43:15.908 (t=3.705036) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.504897 v=100 t_next=3.504897 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.504897 v=100 t_next=3.705036 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=3.504897 v=100 next: t=3.705036 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:15.853999 t_req=3.650093 curvol=0 posn=960 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=3.504897 v=100 next: t=3.705036 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:15.953999 t_req=3.750093 curvol=0 posn=960 (vol=0) serial=1
+do_roll: forw to t=3.705036
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.705036 v=100 t_next=3.705036 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1000 @13:43:16.108 (t=3.904827) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.705036 v=100 t_next=3.705036 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.705036 v=100 t_next=3.904827 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=3.705036 v=100 next: t=3.904827 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:16.053999 t_req=3.850093 curvol=0 posn=1000 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=3.705036 v=100 next: t=3.904827 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:16.153999 t_req=3.950093 curvol=0 posn=1000 (vol=0) serial=1
+do_roll: forw to t=3.904827
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.904827 v=100 t_next=3.904827 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1040 @13:43:16.308 (t=4.104845) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.904827 v=100 t_next=3.904827 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.904827 v=100 t_next=4.104845 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=3.904827 v=100 next: t=4.104845 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:16.253999 t_req=4.050093 curvol=0 posn=1040 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=3.904827 v=100 next: t=4.104845 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:16.353999 t_req=4.150093 curvol=0 posn=1040 (vol=0) serial=1
+do_roll: forw to t=4.104845
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.104845 v=100 t_next=4.104845 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1080 @13:43:16.508 (t=4.304869) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.104845 v=100 t_next=4.104845 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.104845 v=100 t_next=4.304869 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=4.104845 v=100 next: t=4.304869 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:16.453999 t_req=4.250093 curvol=0 posn=1080 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=4.104845 v=100 next: t=4.304869 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:16.553999 t_req=4.350093 curvol=0 posn=1080 (vol=0) serial=1
+do_roll: forw to t=4.304869
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.304869 v=100 t_next=4.304869 state=<scanned> v=100 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.304869 v=100 t_next=4.304869 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.304869 v=100 t_next=4.504781 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=4.304869 v=100 next: t=4.504781 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:16.653999 t_req=4.450093 curvol=0 posn=1120 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=4.304869 v=100 next: t=4.504781 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:16.753999 t_req=4.550093 curvol=0 posn=1120 (vol=0) serial=1
+do_roll: forw to t=4.504781
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.504781 v=100 t_next=4.504781 state=<scanned> v=100 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.504781 v=100 t_next=4.504781 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.504781 v=100 t_next=4.704966 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=4.704966 v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=4.504781 v=100 next: t=4.704966 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:16.853999 t_req=4.650093 curvol=0 posn=1160 (vol=0) serial=1
+pmid 29.0.6 inst 100 prior: t=4.504781 v=100 next: t=4.704966 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:16.953999 t_req=4.750093 curvol=0 posn=1160 (vol=0) serial=1
+do_roll: forw to t=4.704966
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.704966 v=100 t_next=4.704966 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=4.704966 v=200 t_next=4.704966 v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1208 @13:43:17.108 (t=4.904828) len=header+40+trailer
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=4.704966 v=200 t_next=4.704966 v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.704966 v=100 t_next=4.704966 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.704966 v=100 t_next=4.904828 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=4.704966 v=200 t_next=4.904828 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=4.704966 v=100 next: t=4.904828 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=4.704966 v=200 next: t=4.904828 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:17.053999 t_req=4.850093 curvol=0 posn=1208 (vol=0) serial=1
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:17.153999 t_req=4.950093 curvol=0 posn=1208 (vol=0) serial=1
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=4.704966 v=200 t_next=4.904828 state=<scanned> v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.704966 v=100 t_next=4.904828 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.904828 v=100 t_next=4.904828 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=4.904828 v=200 t_next=4.904828 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1256 @13:43:17.308 (t=5.104832) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.904828 v=100 t_next=5.104832 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=4.904828 v=200 t_next=5.104832 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=4.904828 v=100 next: t=5.104832 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=4.904828 v=200 next: t=5.104832 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:17.253999 t_req=5.050093 curvol=0 posn=1256 (vol=0) serial=1
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:17.353999 t_req=5.150093 curvol=0 posn=1256 (vol=0) serial=1
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=4.904828 v=200 t_next=5.104832 state=<scanned> v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.904828 v=100 t_next=5.104832 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.104832 v=100 t_next=5.104832 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.104832 v=200 t_next=5.104832 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1304 @13:43:17.508 (t=5.304887) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.104832 v=100 t_next=5.304887 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.104832 v=200 t_next=5.304887 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=5.104832 v=100 next: t=5.304887 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=5.104832 v=200 next: t=5.304887 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:17.453999 t_req=5.250093 curvol=0 posn=1304 (vol=0) serial=1
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:17.553999 t_req=5.350093 curvol=0 posn=1304 (vol=0) serial=1
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.104832 v=200 t_next=5.304887 state=<scanned> v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.104832 v=100 t_next=5.304887 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.304887 v=100 t_next=5.304887 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.304887 v=200 t_next=5.304887 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1352 @13:43:17.708 (t=5.504796) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.304887 v=100 t_next=5.504796 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.304887 v=200 t_next=5.504796 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=5.304887 v=100 next: t=5.504796 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=5.304887 v=200 next: t=5.504796 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:17.653999 t_req=5.450093 curvol=0 posn=1352 (vol=0) serial=1
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:17.753999 t_req=5.550093 curvol=0 posn=1352 (vol=0) serial=1
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.304887 v=200 t_next=5.504796 state=<scanned> v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.304887 v=100 t_next=5.504796 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.504796 v=100 t_next=5.504796 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.504796 v=200 t_next=5.504796 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1400 @13:43:17.908 (t=5.704950) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.504796 v=100 t_next=5.704950 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.504796 v=200 t_next=5.704950 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=5.504796 v=100 next: t=5.704950 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=5.504796 v=200 next: t=5.704950 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:17.853999 t_req=5.650093 curvol=0 posn=1400 (vol=0) serial=1
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:17.953999 t_req=5.750093 curvol=0 posn=1400 (vol=0) serial=1
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.504796 v=200 t_next=5.704950 state=<scanned> v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.504796 v=100 t_next=5.704950 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.704950 v=100 t_next=5.704950 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.704950 v=200 t_next=5.704950 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1448 @13:43:18.108 (t=5.904836) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.704950 v=100 t_next=5.904836 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.704950 v=200 t_next=5.904836 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=5.704950 v=100 next: t=5.904836 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=5.704950 v=200 next: t=5.904836 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:18.053999 t_req=5.850093 curvol=0 posn=1448 (vol=0) serial=1
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:18.153999 t_req=5.950093 curvol=0 posn=1448 (vol=0) serial=1
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.704950 v=200 t_next=5.904836 state=<scanned> v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.704950 v=100 t_next=5.904836 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.904836 v=100 t_next=5.904836 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.904836 v=200 t_next=5.904836 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1496 @13:43:18.308 (t=6.104959) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.904836 v=100 t_next=6.104959 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.904836 v=200 t_next=6.104959 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=5.904836 v=100 next: t=6.104959 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=5.904836 v=200 next: t=6.104959 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:18.253999 t_req=6.050093 curvol=0 posn=1496 (vol=0) serial=1
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:18.353999 t_req=6.150093 curvol=0 posn=1496 (vol=0) serial=1
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.904836 v=200 t_next=6.104959 state=<scanned> v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.904836 v=100 t_next=6.104959 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=6.104959 v=100 t_next=6.104959 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=6.104959 v=200 t_next=6.104959 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1544 @13:43:18.508 (t=6.304776) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=6.104959 v=100 t_next=6.304776 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=6.104959 v=200 t_next=6.304776 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=6.104959 v=100 next: t=6.304776 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=6.104959 v=200 next: t=6.304776 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:18.453999 t_req=6.250093 curvol=0 posn=1544 (vol=0) serial=1
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+=== pmval -t 0.2 ===
+
+metric:    sample.bin
+archive:   /tmp/177-68591
+host:      fv-az59
+start:     Fri Aug  7 13:43:12 2020
+end:       Fri Aug  7 13:43:18 2020
+semantics: instantaneous value
+units:     none
+samples:   32
+interval:  0.20 sec
+13:43:12.253  No values available
+13:43:12.453  No values available
+13:43:12.653  No values available
+
+                bin-100     bin-200 
+13:43:12.853        100           ? 
+13:43:13.053        100           ? 
+13:43:13.253        100           ? 
+13:43:13.453        100           ? 
+13:43:13.653        100           ? 
+13:43:13.853        100           ? 
+13:43:14.053        100           ? 
+13:43:14.253        100           ? 
+13:43:14.453        100           ? 
+13:43:14.653        100           ? 
+13:43:14.853        100           ? 
+13:43:15.053        100           ? 
+13:43:15.253        100           ? 
+13:43:15.453        100           ? 
+13:43:15.653        100           ? 
+13:43:15.853        100           ? 
+13:43:16.053        100           ? 
+13:43:16.253        100           ? 
+13:43:16.453        100           ? 
+13:43:16.653        100           ? 
+13:43:16.853        100           ? 
+13:43:17.053        100         200 
+13:43:17.253        100         200 
+13:43:17.453        100         200 
+13:43:17.653        100         200 
+13:43:17.853        100         200 
+13:43:18.053        100         200 
+13:43:18.253        100         200 
+13:43:18.453        100         200 
+__pmLogOpen: inspect file "/tmp/177-68591.index"
+__pmFopen("/tmp/177-68591.index", "r"): no decompress
+__pmLogOpen: inspect file "/tmp/177-68591.meta"
+__pmFopen("/tmp/177-68591.meta", "r"): no decompress
+__pmLogOpen: inspect file "/tmp/177-68591.0"
+__pmFopen("/tmp/177-68591.0", "r"): no decompress
+__pmLogChkLabel: fd=3 vol=0 [magic=50052602 version=2 vol=0 pid=68621 host=fv-az59]
+__pmLogChangeVol: change to volume 0
+__pmLogChkLabel: fd=4 vol=-2 [magic=50052602 version=2 vol=-2 pid=68621 host=fv-az59]
+__pmLogChkLabel: fd=5 vol=-1 [magic=50052602 version=2 vol=-1 pid=68621 host=fv-az59]
+__pmLogLoadMeta: record len=58, type=1 @ offset=132
+__pmLogLoadMeta: PMID: 2.3.3 name: pmcd.pmlogger.host
+__pmLogLoadMeta: record len=42, type=2 @ offset=190
+addindom( ..., 2.1, 13:43:12.203906, numinst=1)
+__pmLogLoadMeta: record len=58, type=1 @ offset=232
+__pmLogLoadMeta: PMID: 2.3.0 name: pmcd.pmlogger.port
+__pmLogLoadMeta: record len=61, type=1 @ offset=290
+__pmLogLoadMeta: PMID: 2.3.2 name: pmcd.pmlogger.archive
+__pmLogLoadMeta: record len=48, type=1 @ offset=351
+__pmLogLoadMeta: PMID: 2.0.23 name: pmcd.pid
+__pmLogLoadMeta: record len=51, type=1 @ offset=399
+__pmLogLoadMeta: PMID: 2.0.24 name: pmcd.seqnum
+__pmLogLoadMeta: record len=106, type=1 @ offset=450
+__pmLogLoadMeta: PMID: 29.0.6 name: sample.dupnames.three.bin
+__pmLogLoadMeta: PMID: 29.0.6 name: sample.dupnames.two.bin
+__pmLogLoadMeta: PMID: 29.0.6 name: sample.bin
+__pmLogLoadMeta: record len=207, type=3 @ offset=556
+addlabel( ..., 1, 4294967295, 13:43:12.708763, nsets=1)
+__pmLogLoadMeta: record len=95, type=3 @ offset=763
+addlabel( ..., 2, 29, 13:43:12.708763, nsets=1)
+__pmLogLoadMeta: record len=70, type=3 @ offset=858
+addlabel( ..., 8, 121634816, 13:43:12.708763, nsets=1)
+__pmLogLoadMeta: record len=311, type=3 @ offset=928
+addlabel( ..., 32, 121634818, 13:43:12.708763, nsets=9)
+__pmLogLoadMeta: record len=47, type=4 @ offset=1239
+addtext( ..., 121634822, 5)
+__pmLogLoadMeta: record len=58, type=4 @ offset=1286
+addtext( ..., 121634818, 9)
+__pmLogLoadMeta: record len=636, type=4 @ offset=1344
+addtext( ..., 121634822, 6)
+__pmLogLoadMeta: record len=114, type=4 @ offset=1980
+addtext( ..., 121634818, 10)
+__pmLogLoadMeta: record len=172, type=2 @ offset=2094
+addindom( ..., 29.2, 13:43:12.708763, numinst=9)
+__pmLogRead: fd=3 (peek) mode=back vol=0 posn=1780 @13:43:18.513 (t=6.309206) len=header+180+trailer
+__pmLogSetTime(0) 13:43:12.253999 delta=200 after ti[0]@13:43:12.203906 back up ...
+__pmLogRead: fd=3 mode=back vol=0 posn=132 BEFORE start
+... vol=0 posn=132 serial=1
+__pmLogFetchInterp @ 13:43:12.253999 t_req=0.050093 curvol=0 posn=132 (vol=0) serial=1
+__pmLogRead: fd=3 mode=forw vol=0 posn=132 @13:43:12.203 (t=0.000000) len=header+180+trailer
+do_roll: forw to t=0.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=320 @13:43:12.708 (t=0.504857) len=header+32+trailer
+search back: pmid 29.0.6[inst=200]: t_first=-1.000000 t_prior=-1.000000 state=<undefined> t_next=-1.000000 state=<undefined> t_last=-1.000000
+search back: pmid 29.0.6[inst=100]: t_first=-1.000000 t_prior=-1.000000 state=<undefined> t_next=-1.000000 state=<undefined> t_last=-1.000000
+__pmLogRead: fd=3 mode=back vol=0 posn=132 BEFORE start
+Start of Log, 2 metric-inst not found
+no values before t_first: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=-1.000000 state=<undefined> t_last=-1.000000
+no values before t_first: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=-1.000000 state=<undefined> t_last=-1.000000
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=-1.000000 state=<undefined> t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=-1.000000 state=<undefined> t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=0.504857 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=360 @13:43:12.908 (t=0.704776) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=400 @13:43:13.108 (t=0.904850) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=440 @13:43:13.308 (t=1.104928) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=480 @13:43:13.508 (t=1.304888) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=520 @13:43:13.708 (t=1.504818) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=560 @13:43:13.908 (t=1.704830) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=600 @13:43:14.108 (t=1.904851) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=640 @13:43:14.308 (t=2.104976) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=680 @13:43:14.508 (t=2.304876) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=720 @13:43:14.708 (t=2.504867) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=760 @13:43:14.908 (t=2.704823) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=800 @13:43:15.108 (t=2.904836) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=840 @13:43:15.308 (t=3.104776) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=880 @13:43:15.508 (t=3.304913) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=920 @13:43:15.708 (t=3.504897) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=960 @13:43:15.908 (t=3.705036) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=1000 @13:43:16.108 (t=3.904827) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=1040 @13:43:16.308 (t=4.104845) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=1080 @13:43:16.508 (t=4.304869) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=1120 @13:43:16.708 (t=4.504781) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=1160 @13:43:16.908 (t=4.704966) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=4.704966 state=<scanned> v=200 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 23 backwards 1
+__pmLogFetchInterp @ 13:43:12.453999 t_req=0.250093 curvol=0 posn=320 (vol=0) serial=1
+__pmLogRead: fd=3 mode=forw vol=0 posn=320 @13:43:12.708 (t=0.504857) len=header+32+trailer
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:12.653999 t_req=0.450093 curvol=0 posn=320 (vol=0) serial=1
+__pmLogFetchInterp: log reads: forward 0 backwards 0
+__pmLogFetchInterp @ 13:43:12.853999 t_req=0.650093 curvol=0 posn=320 (vol=0) serial=1
+do_roll: forw to t=0.504857
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.504857 v=100 t_next=0.504857 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=360 @13:43:12.908 (t=0.704776) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.504857 v=100 t_next=0.504857 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.504857 v=100 t_next=0.704776 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=0.504857 v=100 next: t=0.704776 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:13.053999 t_req=0.850093 curvol=0 posn=360 (vol=0) serial=1
+do_roll: forw to t=0.704776
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.704776 v=100 t_next=0.704776 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=400 @13:43:13.108 (t=0.904850) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.704776 v=100 t_next=0.704776 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.704776 v=100 t_next=0.904850 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=0.704776 v=100 next: t=0.904850 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:13.253999 t_req=1.050093 curvol=0 posn=400 (vol=0) serial=1
+do_roll: forw to t=0.904850
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.904850 v=100 t_next=0.904850 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=440 @13:43:13.308 (t=1.104928) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.904850 v=100 t_next=0.904850 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.904850 v=100 t_next=1.104928 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=0.904850 v=100 next: t=1.104928 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:13.453999 t_req=1.250093 curvol=0 posn=440 (vol=0) serial=1
+do_roll: forw to t=1.104928
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.104928 v=100 t_next=1.104928 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=480 @13:43:13.508 (t=1.304888) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.104928 v=100 t_next=1.104928 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.104928 v=100 t_next=1.304888 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=1.104928 v=100 next: t=1.304888 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:13.653999 t_req=1.450093 curvol=0 posn=480 (vol=0) serial=1
+do_roll: forw to t=1.304888
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.304888 v=100 t_next=1.304888 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=520 @13:43:13.708 (t=1.504818) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.304888 v=100 t_next=1.304888 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.304888 v=100 t_next=1.504818 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=1.304888 v=100 next: t=1.504818 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:13.853999 t_req=1.650093 curvol=0 posn=520 (vol=0) serial=1
+do_roll: forw to t=1.504818
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.504818 v=100 t_next=1.504818 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=560 @13:43:13.908 (t=1.704830) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.504818 v=100 t_next=1.504818 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.504818 v=100 t_next=1.704830 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=1.504818 v=100 next: t=1.704830 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:14.053999 t_req=1.850093 curvol=0 posn=560 (vol=0) serial=1
+do_roll: forw to t=1.704830
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.704830 v=100 t_next=1.704830 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=600 @13:43:14.108 (t=1.904851) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.704830 v=100 t_next=1.704830 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.704830 v=100 t_next=1.904851 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=1.704830 v=100 next: t=1.904851 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:14.253999 t_req=2.050093 curvol=0 posn=600 (vol=0) serial=1
+do_roll: forw to t=1.904851
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.904851 v=100 t_next=1.904851 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=640 @13:43:14.308 (t=2.104976) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.904851 v=100 t_next=1.904851 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.904851 v=100 t_next=2.104976 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=1.904851 v=100 next: t=2.104976 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:14.453999 t_req=2.250093 curvol=0 posn=640 (vol=0) serial=1
+do_roll: forw to t=2.104976
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.104976 v=100 t_next=2.104976 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=680 @13:43:14.508 (t=2.304876) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.104976 v=100 t_next=2.104976 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.104976 v=100 t_next=2.304876 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=2.104976 v=100 next: t=2.304876 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:14.653999 t_req=2.450093 curvol=0 posn=680 (vol=0) serial=1
+do_roll: forw to t=2.304876
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.304876 v=100 t_next=2.304876 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=720 @13:43:14.708 (t=2.504867) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.304876 v=100 t_next=2.304876 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.304876 v=100 t_next=2.504867 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=2.304876 v=100 next: t=2.504867 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:14.853999 t_req=2.650093 curvol=0 posn=720 (vol=0) serial=1
+do_roll: forw to t=2.504867
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.504867 v=100 t_next=2.504867 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=760 @13:43:14.908 (t=2.704823) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.504867 v=100 t_next=2.504867 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.504867 v=100 t_next=2.704823 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=2.504867 v=100 next: t=2.704823 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:15.053999 t_req=2.850093 curvol=0 posn=760 (vol=0) serial=1
+do_roll: forw to t=2.704823
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.704823 v=100 t_next=2.704823 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=800 @13:43:15.108 (t=2.904836) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.704823 v=100 t_next=2.704823 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.704823 v=100 t_next=2.904836 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=2.704823 v=100 next: t=2.904836 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:15.253999 t_req=3.050093 curvol=0 posn=800 (vol=0) serial=1
+do_roll: forw to t=2.904836
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.904836 v=100 t_next=2.904836 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=840 @13:43:15.308 (t=3.104776) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.904836 v=100 t_next=2.904836 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.904836 v=100 t_next=3.104776 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=2.904836 v=100 next: t=3.104776 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:15.453999 t_req=3.250093 curvol=0 posn=840 (vol=0) serial=1
+do_roll: forw to t=3.104776
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.104776 v=100 t_next=3.104776 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=880 @13:43:15.508 (t=3.304913) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.104776 v=100 t_next=3.104776 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.104776 v=100 t_next=3.304913 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=3.104776 v=100 next: t=3.304913 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:15.653999 t_req=3.450093 curvol=0 posn=880 (vol=0) serial=1
+do_roll: forw to t=3.304913
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.304913 v=100 t_next=3.304913 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=920 @13:43:15.708 (t=3.504897) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.304913 v=100 t_next=3.304913 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.304913 v=100 t_next=3.504897 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=3.304913 v=100 next: t=3.504897 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:15.853999 t_req=3.650093 curvol=0 posn=920 (vol=0) serial=1
+do_roll: forw to t=3.504897
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.504897 v=100 t_next=3.504897 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=960 @13:43:15.908 (t=3.705036) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.504897 v=100 t_next=3.504897 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.504897 v=100 t_next=3.705036 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=3.504897 v=100 next: t=3.705036 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:16.053999 t_req=3.850093 curvol=0 posn=960 (vol=0) serial=1
+do_roll: forw to t=3.705036
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.705036 v=100 t_next=3.705036 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1000 @13:43:16.108 (t=3.904827) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.705036 v=100 t_next=3.705036 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.705036 v=100 t_next=3.904827 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=3.705036 v=100 next: t=3.904827 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:16.253999 t_req=4.050093 curvol=0 posn=1000 (vol=0) serial=1
+do_roll: forw to t=3.904827
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.904827 v=100 t_next=3.904827 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1040 @13:43:16.308 (t=4.104845) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.904827 v=100 t_next=3.904827 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.904827 v=100 t_next=4.104845 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=3.904827 v=100 next: t=4.104845 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:16.453999 t_req=4.250093 curvol=0 posn=1040 (vol=0) serial=1
+do_roll: forw to t=4.104845
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.104845 v=100 t_next=4.104845 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1080 @13:43:16.508 (t=4.304869) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.104845 v=100 t_next=4.104845 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.104845 v=100 t_next=4.304869 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=4.104845 v=100 next: t=4.304869 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:16.653999 t_req=4.450093 curvol=0 posn=1080 (vol=0) serial=1
+do_roll: forw to t=4.304869
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.304869 v=100 t_next=4.304869 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1120 @13:43:16.708 (t=4.504781) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.304869 v=100 t_next=4.304869 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.304869 v=100 t_next=4.504781 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=4.304869 v=100 next: t=4.504781 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:16.853999 t_req=4.650093 curvol=0 posn=1120 (vol=0) serial=1
+do_roll: forw to t=4.504781
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.504781 v=100 t_next=4.504781 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1160 @13:43:16.908 (t=4.704966) len=header+40+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.504781 v=100 t_next=4.504781 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.504781 v=100 t_next=4.704966 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=4.704966 v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=4.504781 v=100 next: t=4.704966 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:17.053999 t_req=4.850093 curvol=0 posn=1160 (vol=0) serial=1
+do_roll: forw to t=4.704966
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.704966 v=100 t_next=4.704966 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=4.704966 v=200 t_next=4.704966 v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1208 @13:43:17.108 (t=4.904828) len=header+40+trailer
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=4.704966 v=200 t_next=4.704966 v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.704966 v=100 t_next=4.704966 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.704966 v=100 t_next=4.904828 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=4.704966 v=200 t_next=4.904828 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=4.704966 v=100 next: t=4.904828 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=4.704966 v=200 next: t=4.904828 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:17.253999 t_req=5.050093 curvol=0 posn=1208 (vol=0) serial=1
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=4.704966 v=200 t_next=4.904828 state=<scanned> v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.704966 v=100 t_next=4.904828 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.904828 v=100 t_next=4.904828 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=4.904828 v=200 t_next=4.904828 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1256 @13:43:17.308 (t=5.104832) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.904828 v=100 t_next=5.104832 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=4.904828 v=200 t_next=5.104832 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=4.904828 v=100 next: t=5.104832 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=4.904828 v=200 next: t=5.104832 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:17.453999 t_req=5.250093 curvol=0 posn=1256 (vol=0) serial=1
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=4.904828 v=200 t_next=5.104832 state=<scanned> v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.904828 v=100 t_next=5.104832 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.104832 v=100 t_next=5.104832 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.104832 v=200 t_next=5.104832 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1304 @13:43:17.508 (t=5.304887) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.104832 v=100 t_next=5.304887 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.104832 v=200 t_next=5.304887 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=5.104832 v=100 next: t=5.304887 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=5.104832 v=200 next: t=5.304887 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:17.653999 t_req=5.450093 curvol=0 posn=1304 (vol=0) serial=1
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.104832 v=200 t_next=5.304887 state=<scanned> v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.104832 v=100 t_next=5.304887 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.304887 v=100 t_next=5.304887 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.304887 v=200 t_next=5.304887 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1352 @13:43:17.708 (t=5.504796) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.304887 v=100 t_next=5.504796 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.304887 v=200 t_next=5.504796 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=5.304887 v=100 next: t=5.504796 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=5.304887 v=200 next: t=5.504796 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:17.853999 t_req=5.650093 curvol=0 posn=1352 (vol=0) serial=1
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.304887 v=200 t_next=5.504796 state=<scanned> v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.304887 v=100 t_next=5.504796 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.504796 v=100 t_next=5.504796 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.504796 v=200 t_next=5.504796 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1400 @13:43:17.908 (t=5.704950) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.504796 v=100 t_next=5.704950 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.504796 v=200 t_next=5.704950 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=5.504796 v=100 next: t=5.704950 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=5.504796 v=200 next: t=5.704950 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:18.053999 t_req=5.850093 curvol=0 posn=1400 (vol=0) serial=1
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.504796 v=200 t_next=5.704950 state=<scanned> v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.504796 v=100 t_next=5.704950 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.704950 v=100 t_next=5.704950 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.704950 v=200 t_next=5.704950 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1448 @13:43:18.108 (t=5.904836) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.704950 v=100 t_next=5.904836 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.704950 v=200 t_next=5.904836 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=5.704950 v=100 next: t=5.904836 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=5.704950 v=200 next: t=5.904836 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:18.253999 t_req=6.050093 curvol=0 posn=1448 (vol=0) serial=1
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.704950 v=200 t_next=5.904836 state=<scanned> v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.704950 v=100 t_next=5.904836 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.904836 v=100 t_next=5.904836 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.904836 v=200 t_next=5.904836 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1496 @13:43:18.308 (t=6.104959) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.904836 v=100 t_next=6.104959 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.904836 v=200 t_next=6.104959 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=5.904836 v=100 next: t=6.104959 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=5.904836 v=200 next: t=6.104959 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:18.453999 t_req=6.250093 curvol=0 posn=1496 (vol=0) serial=1
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.904836 v=200 t_next=6.104959 state=<scanned> v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.904836 v=100 t_next=6.104959 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=6.104959 v=100 t_next=6.104959 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=6.104959 v=200 t_next=6.104959 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1544 @13:43:18.508 (t=6.304776) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=6.104959 v=100 t_next=6.304776 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=6.104959 v=200 t_next=6.304776 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=6.104959 v=100 next: t=6.304776 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=6.104959 v=200 next: t=6.304776 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+=== pmval -t 0.4 ===
+
+metric:    sample.bin
+archive:   /tmp/177-68591
+host:      fv-az59
+start:     Fri Aug  7 13:43:12 2020
+end:       Fri Aug  7 13:43:18 2020
+semantics: instantaneous value
+units:     none
+samples:   16
+interval:  0.40 sec
+13:43:12.253  No values available
+13:43:12.653  No values available
+
+                bin-100     bin-200 
+13:43:13.053        100           ? 
+13:43:13.453        100           ? 
+13:43:13.853        100           ? 
+13:43:14.253        100           ? 
+13:43:14.653        100           ? 
+13:43:15.053        100           ? 
+13:43:15.453        100           ? 
+13:43:15.853        100           ? 
+13:43:16.253        100           ? 
+13:43:16.653        100           ? 
+13:43:17.053        100         200 
+13:43:17.453        100         200 
+13:43:17.853        100         200 
+13:43:18.253        100         200 
+__pmLogOpen: inspect file "/tmp/177-68591.index"
+__pmFopen("/tmp/177-68591.index", "r"): no decompress
+__pmLogOpen: inspect file "/tmp/177-68591.meta"
+__pmFopen("/tmp/177-68591.meta", "r"): no decompress
+__pmLogOpen: inspect file "/tmp/177-68591.0"
+__pmFopen("/tmp/177-68591.0", "r"): no decompress
+__pmLogChkLabel: fd=3 vol=0 [magic=50052602 version=2 vol=0 pid=68621 host=fv-az59]
+__pmLogChangeVol: change to volume 0
+__pmLogChkLabel: fd=4 vol=-2 [magic=50052602 version=2 vol=-2 pid=68621 host=fv-az59]
+__pmLogChkLabel: fd=5 vol=-1 [magic=50052602 version=2 vol=-1 pid=68621 host=fv-az59]
+__pmLogLoadMeta: record len=58, type=1 @ offset=132
+__pmLogLoadMeta: PMID: 2.3.3 name: pmcd.pmlogger.host
+__pmLogLoadMeta: record len=42, type=2 @ offset=190
+addindom( ..., 2.1, 13:43:12.203906, numinst=1)
+__pmLogLoadMeta: record len=58, type=1 @ offset=232
+__pmLogLoadMeta: PMID: 2.3.0 name: pmcd.pmlogger.port
+__pmLogLoadMeta: record len=61, type=1 @ offset=290
+__pmLogLoadMeta: PMID: 2.3.2 name: pmcd.pmlogger.archive
+__pmLogLoadMeta: record len=48, type=1 @ offset=351
+__pmLogLoadMeta: PMID: 2.0.23 name: pmcd.pid
+__pmLogLoadMeta: record len=51, type=1 @ offset=399
+__pmLogLoadMeta: PMID: 2.0.24 name: pmcd.seqnum
+__pmLogLoadMeta: record len=106, type=1 @ offset=450
+__pmLogLoadMeta: PMID: 29.0.6 name: sample.dupnames.three.bin
+__pmLogLoadMeta: PMID: 29.0.6 name: sample.dupnames.two.bin
+__pmLogLoadMeta: PMID: 29.0.6 name: sample.bin
+__pmLogLoadMeta: record len=207, type=3 @ offset=556
+addlabel( ..., 1, 4294967295, 13:43:12.708763, nsets=1)
+__pmLogLoadMeta: record len=95, type=3 @ offset=763
+addlabel( ..., 2, 29, 13:43:12.708763, nsets=1)
+__pmLogLoadMeta: record len=70, type=3 @ offset=858
+addlabel( ..., 8, 121634816, 13:43:12.708763, nsets=1)
+__pmLogLoadMeta: record len=311, type=3 @ offset=928
+addlabel( ..., 32, 121634818, 13:43:12.708763, nsets=9)
+__pmLogLoadMeta: record len=47, type=4 @ offset=1239
+addtext( ..., 121634822, 5)
+__pmLogLoadMeta: record len=58, type=4 @ offset=1286
+addtext( ..., 121634818, 9)
+__pmLogLoadMeta: record len=636, type=4 @ offset=1344
+addtext( ..., 121634822, 6)
+__pmLogLoadMeta: record len=114, type=4 @ offset=1980
+addtext( ..., 121634818, 10)
+__pmLogLoadMeta: record len=172, type=2 @ offset=2094
+addindom( ..., 29.2, 13:43:12.708763, numinst=9)
+__pmLogRead: fd=3 (peek) mode=back vol=0 posn=1780 @13:43:18.513 (t=6.309206) len=header+180+trailer
+__pmLogSetTime(0) 13:43:12.253999 delta=400 after ti[0]@13:43:12.203906 back up ...
+__pmLogRead: fd=3 mode=back vol=0 posn=132 BEFORE start
+... vol=0 posn=132 serial=1
+__pmLogFetchInterp @ 13:43:12.253999 t_req=0.050093 curvol=0 posn=132 (vol=0) serial=1
+__pmLogRead: fd=3 mode=forw vol=0 posn=132 @13:43:12.203 (t=0.000000) len=header+180+trailer
+do_roll: forw to t=0.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=320 @13:43:12.708 (t=0.504857) len=header+32+trailer
+search back: pmid 29.0.6[inst=200]: t_first=-1.000000 t_prior=-1.000000 state=<undefined> t_next=-1.000000 state=<undefined> t_last=-1.000000
+search back: pmid 29.0.6[inst=100]: t_first=-1.000000 t_prior=-1.000000 state=<undefined> t_next=-1.000000 state=<undefined> t_last=-1.000000
+__pmLogRead: fd=3 mode=back vol=0 posn=132 BEFORE start
+Start of Log, 2 metric-inst not found
+no values before t_first: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=-1.000000 state=<undefined> t_last=-1.000000
+no values before t_first: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=-1.000000 state=<undefined> t_last=-1.000000
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=-1.000000 state=<undefined> t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=-1.000000 state=<undefined> t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=0.504857 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=360 @13:43:12.908 (t=0.704776) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=400 @13:43:13.108 (t=0.904850) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=440 @13:43:13.308 (t=1.104928) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=480 @13:43:13.508 (t=1.304888) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=520 @13:43:13.708 (t=1.504818) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=560 @13:43:13.908 (t=1.704830) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=600 @13:43:14.108 (t=1.904851) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=640 @13:43:14.308 (t=2.104976) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=680 @13:43:14.508 (t=2.304876) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=720 @13:43:14.708 (t=2.504867) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=760 @13:43:14.908 (t=2.704823) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=800 @13:43:15.108 (t=2.904836) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=840 @13:43:15.308 (t=3.104776) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=880 @13:43:15.508 (t=3.304913) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=920 @13:43:15.708 (t=3.504897) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=960 @13:43:15.908 (t=3.705036) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=1000 @13:43:16.108 (t=3.904827) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=1040 @13:43:16.308 (t=4.104845) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=1080 @13:43:16.508 (t=4.304869) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=1120 @13:43:16.708 (t=4.504781) len=header+32+trailer
+__pmLogRead: fd=3 mode=forw vol=0 posn=1160 @13:43:16.908 (t=4.704966) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=-1.000000 state=<undefined>&<scanned> t_next=4.704966 state=<scanned> v=200 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 23 backwards 1
+__pmLogFetchInterp @ 13:43:12.653999 t_req=0.450093 curvol=0 posn=320 (vol=0) serial=1
+__pmLogRead: fd=3 mode=forw vol=0 posn=320 @13:43:12.708 (t=0.504857) len=header+32+trailer
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:13.053999 t_req=0.850093 curvol=0 posn=320 (vol=0) serial=1
+do_roll: forw to t=0.504857
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.504857 v=100 t_next=0.504857 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=360 @13:43:12.908 (t=0.704776) len=header+32+trailer
+do_roll: forw to t=0.704776
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.704776 v=100 t_next=0.504857 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=400 @13:43:13.108 (t=0.904850) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.704776 v=100 t_next=0.504857 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.704776 v=100 t_next=0.904850 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=0.704776 v=100 next: t=0.904850 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 2 backwards 0
+__pmLogFetchInterp @ 13:43:13.453999 t_req=1.250093 curvol=0 posn=400 (vol=0) serial=1
+do_roll: forw to t=0.904850
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=0.904850 v=100 t_next=0.904850 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=440 @13:43:13.308 (t=1.104928) len=header+32+trailer
+do_roll: forw to t=1.104928
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.104928 v=100 t_next=0.904850 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=480 @13:43:13.508 (t=1.304888) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.104928 v=100 t_next=0.904850 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.104928 v=100 t_next=1.304888 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=1.104928 v=100 next: t=1.304888 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 2 backwards 0
+__pmLogFetchInterp @ 13:43:13.853999 t_req=1.650093 curvol=0 posn=480 (vol=0) serial=1
+do_roll: forw to t=1.304888
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.304888 v=100 t_next=1.304888 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=520 @13:43:13.708 (t=1.504818) len=header+32+trailer
+do_roll: forw to t=1.504818
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.504818 v=100 t_next=1.304888 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=560 @13:43:13.908 (t=1.704830) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.504818 v=100 t_next=1.304888 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.504818 v=100 t_next=1.704830 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=1.504818 v=100 next: t=1.704830 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 2 backwards 0
+__pmLogFetchInterp @ 13:43:14.253999 t_req=2.050093 curvol=0 posn=560 (vol=0) serial=1
+do_roll: forw to t=1.704830
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.704830 v=100 t_next=1.704830 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=600 @13:43:14.108 (t=1.904851) len=header+32+trailer
+do_roll: forw to t=1.904851
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.904851 v=100 t_next=1.704830 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=640 @13:43:14.308 (t=2.104976) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.904851 v=100 t_next=1.704830 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=1.904851 v=100 t_next=2.104976 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=1.904851 v=100 next: t=2.104976 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 2 backwards 0
+__pmLogFetchInterp @ 13:43:14.653999 t_req=2.450093 curvol=0 posn=640 (vol=0) serial=1
+do_roll: forw to t=2.104976
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.104976 v=100 t_next=2.104976 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=680 @13:43:14.508 (t=2.304876) len=header+32+trailer
+do_roll: forw to t=2.304876
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.304876 v=100 t_next=2.104976 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=720 @13:43:14.708 (t=2.504867) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.304876 v=100 t_next=2.104976 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.304876 v=100 t_next=2.504867 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=2.304876 v=100 next: t=2.504867 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 2 backwards 0
+__pmLogFetchInterp @ 13:43:15.053999 t_req=2.850093 curvol=0 posn=720 (vol=0) serial=1
+do_roll: forw to t=2.504867
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.504867 v=100 t_next=2.504867 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=760 @13:43:14.908 (t=2.704823) len=header+32+trailer
+do_roll: forw to t=2.704823
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.704823 v=100 t_next=2.504867 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=800 @13:43:15.108 (t=2.904836) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.704823 v=100 t_next=2.504867 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.704823 v=100 t_next=2.904836 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=2.704823 v=100 next: t=2.904836 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 2 backwards 0
+__pmLogFetchInterp @ 13:43:15.453999 t_req=3.250093 curvol=0 posn=800 (vol=0) serial=1
+do_roll: forw to t=2.904836
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=2.904836 v=100 t_next=2.904836 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=840 @13:43:15.308 (t=3.104776) len=header+32+trailer
+do_roll: forw to t=3.104776
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.104776 v=100 t_next=2.904836 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=880 @13:43:15.508 (t=3.304913) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.104776 v=100 t_next=2.904836 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.104776 v=100 t_next=3.304913 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=3.104776 v=100 next: t=3.304913 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 2 backwards 0
+__pmLogFetchInterp @ 13:43:15.853999 t_req=3.650093 curvol=0 posn=880 (vol=0) serial=1
+do_roll: forw to t=3.304913
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.304913 v=100 t_next=3.304913 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=920 @13:43:15.708 (t=3.504897) len=header+32+trailer
+do_roll: forw to t=3.504897
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.504897 v=100 t_next=3.304913 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=960 @13:43:15.908 (t=3.705036) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.504897 v=100 t_next=3.304913 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.504897 v=100 t_next=3.705036 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=3.504897 v=100 next: t=3.705036 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 2 backwards 0
+__pmLogFetchInterp @ 13:43:16.253999 t_req=4.050093 curvol=0 posn=960 (vol=0) serial=1
+do_roll: forw to t=3.705036
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.705036 v=100 t_next=3.705036 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1000 @13:43:16.108 (t=3.904827) len=header+32+trailer
+do_roll: forw to t=3.904827
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.904827 v=100 t_next=3.705036 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1040 @13:43:16.308 (t=4.104845) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.904827 v=100 t_next=3.705036 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=3.904827 v=100 t_next=4.104845 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=3.904827 v=100 next: t=4.104845 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 2 backwards 0
+__pmLogFetchInterp @ 13:43:16.653999 t_req=4.450093 curvol=0 posn=1040 (vol=0) serial=1
+do_roll: forw to t=4.104845
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.104845 v=100 t_next=4.104845 state=<scanned> v=100 t_last=-1.000000
+do_roll: forw to t=4.304869
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.304869 v=100 t_next=4.104845 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1120 @13:43:16.708 (t=4.504781) len=header+32+trailer
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.304869 v=100 t_next=4.104845 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.304869 v=100 t_next=4.504781 state=<scanned> v=100 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=4.304869 v=100 next: t=4.504781 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 1 backwards 0
+__pmLogFetchInterp @ 13:43:17.053999 t_req=4.850093 curvol=0 posn=1120 (vol=0) serial=1
+do_roll: forw to t=4.504781
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.504781 v=100 t_next=4.504781 state=<scanned> v=100 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1160 @13:43:16.908 (t=4.704966) len=header+40+trailer
+do_roll: forw to t=4.704966
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.704966 v=100 t_next=4.504781 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=4.704966 v=200 t_next=4.704966 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1208 @13:43:17.108 (t=4.904828) len=header+40+trailer
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=4.704966 v=200 t_next=4.704966 state=<scanned> v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.704966 v=100 t_next=4.504781 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.704966 v=100 t_next=4.904828 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=4.704966 v=200 t_next=4.904828 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=4.704966 v=100 next: t=4.904828 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=4.704966 v=200 next: t=4.904828 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 2 backwards 0
+__pmLogFetchInterp @ 13:43:17.453999 t_req=5.250093 curvol=0 posn=1208 (vol=0) serial=1
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=4.704966 v=200 t_next=4.904828 state=<scanned> v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.704966 v=100 t_next=4.904828 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=4.904828 v=100 t_next=4.904828 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=4.904828 v=200 t_next=4.904828 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1256 @13:43:17.308 (t=5.104832) len=header+40+trailer
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.104832 v=100 t_next=4.904828 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.104832 v=200 t_next=4.904828 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1304 @13:43:17.508 (t=5.304887) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.104832 v=100 t_next=5.304887 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.104832 v=200 t_next=5.304887 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=5.104832 v=100 next: t=5.304887 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=5.104832 v=200 next: t=5.304887 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 2 backwards 0
+__pmLogFetchInterp @ 13:43:17.853999 t_req=5.650093 curvol=0 posn=1304 (vol=0) serial=1
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.104832 v=200 t_next=5.304887 state=<scanned> v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.104832 v=100 t_next=5.304887 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.304887 v=100 t_next=5.304887 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.304887 v=200 t_next=5.304887 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1352 @13:43:17.708 (t=5.504796) len=header+40+trailer
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.504796 v=100 t_next=5.304887 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.504796 v=200 t_next=5.304887 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1400 @13:43:17.908 (t=5.704950) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.504796 v=100 t_next=5.704950 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.504796 v=200 t_next=5.704950 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=5.504796 v=100 next: t=5.704950 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=5.504796 v=200 next: t=5.704950 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 2 backwards 0
+__pmLogFetchInterp @ 13:43:18.253999 t_req=6.050093 curvol=0 posn=1400 (vol=0) serial=1
+search forw: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.504796 v=200 t_next=5.704950 state=<scanned> v=200 t_last=-1.000000
+search forw: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.504796 v=100 t_next=5.704950 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.704950 v=100 t_next=5.704950 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.704950 v=200 t_next=5.704950 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1448 @13:43:18.108 (t=5.904836) len=header+40+trailer
+update_bounds: update: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.904836 v=100 t_next=5.704950 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.904836 v=200 t_next=5.704950 state=<scanned> v=200 t_last=-1.000000
+__pmLogRead: fd=3 mode=forw vol=0 posn=1496 @13:43:18.308 (t=6.104959) len=header+40+trailer
+update_bounds: update+search: pmid 29.0.6[inst=100]: t_first=0.050093 t_prior=5.904836 v=100 t_next=6.104959 state=<scanned> v=100 t_last=-1.000000
+update_bounds: update+search: pmid 29.0.6[inst=200]: t_first=0.050093 t_prior=5.904836 v=200 t_next=6.104959 state=<scanned> v=200 t_last=-1.000000
+pmid 29.0.6 inst 100 prior: t=5.904836 v=100 next: t=6.104959 state=<scanned> v=100 t_first=0.050093 t_last=-1.000000
+pmid 29.0.6 inst 200 prior: t=5.904836 v=200 next: t=6.104959 state=<scanned> v=200 t_first=0.050093 t_last=-1.000000
+__pmLogFetchInterp: log reads: forward 2 backwards 0

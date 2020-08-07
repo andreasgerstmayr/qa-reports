@@ -1,0 +1,86 @@
+{
+  "uid" : "53569050bd842382",
+  "name" : "QA 033",
+  "fullName" : "QA #033 on debian11-container",
+  "historyId" : "033@debian11-container",
+  "time" : {
+    "start" : 1596807255000,
+    "stop" : 1596807255000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 033\n\ncheck filesys metrics for root fs\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian11 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 033</p>\n<p>check filesys metrics for root fs</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform debian11 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 033.out.bad)\n3c3\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\n5c5\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\n7c7\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\n9c9\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\n11c11\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\n13c13\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\n15c15\n<     inst [DISK] value STRING\n---\n>     inst [0 or \"overlay\"] value STRING\n17c17\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\n19c19\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\n21c21\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\n23c23\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 514f2321e6bd -f sample.milliseconds\nPMDA probe: pminfo -h 514f2321e6bd -f sampledso.milliseconds\nPMDA probe: pminfo -h 514f2321e6bd -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 033\n\ncheck filesys metrics for root fs\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian11 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 033.out.bad)\n3c3\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\n5c5\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\n7c7\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\n9c9\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\n11c11\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\n13c13\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\n15c15\n<     inst [DISK] value STRING\n---\n>     inst [0 or \"overlay\"] value STRING\n17c17\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\n19c19\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\n21c21\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\n23c23\n<     inst [DISK] value NUMBER\n---\n>     inst [0 or \"overlay\"] value NUMBER\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 514f2321e6bd -f sample.milliseconds\nPMDA probe: pminfo -h 514f2321e6bd -f sampledso.milliseconds\nPMDA probe: pminfo -h 514f2321e6bd -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "bb1cf4009aace15d",
+      "name" : "033.out.bad",
+      "source" : "bb1cf4009aace15d.txt",
+      "type" : "text/plain",
+      "size" : 629
+    }, {
+      "uid" : "f524bf87df228a42",
+      "name" : "033.full",
+      "source" : "f524bf87df228a42.txt",
+      "type" : "text/plain",
+      "size" : 29
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian11-container"
+  }, {
+    "name" : "host",
+    "value" : "debian11-container"
+  }, {
+    "name" : "epic",
+    "value" : "kernel"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "ostest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/5c4cb0868de9cc3352747b7436d1b394eacb9f55/qa/033",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/5c4cb0868de9cc3352747b7436d1b394eacb9f55/qa/033.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "53569050bd842382.json",
+  "parameterValues" : [ ]
+}

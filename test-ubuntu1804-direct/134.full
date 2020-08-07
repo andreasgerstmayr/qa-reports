@@ -1,0 +1,298 @@
+init /tmp/134-20367.last: l0=0 l1=0
+=== logger started, nothing logged ===
+-rw-r--r-- 1 pcp pcp 320 Aug  7 13:38 /tmp/134-20367.0
+end _do_ls /tmp/134-20367.last: l0=320 l1=0
+Log Label (Log Format Version 2)
+Performance metrics from host fv-az59
+    commencing Fri Aug  7 13:38:43.125352 2020
+    ending     Fri Aug  7 13:38:43.125352 2020
+
+Temporal Index
+		Log Vol    end(meta)     end(log)
+13:38:43.125352	      0          132          132
+
+13:38:43.125352 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [20398 or "20398"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [20398 or "20398"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [20398 or "20398"] value "/tmp/134-20367"
+    2.0.23 (pmcd.pid): value 17206
+    2.0.24 (pmcd.seqnum): value 13
+=== first volume, one result ===
+-rw-r--r-- 1 pcp pcp 360 Aug  7 13:38 /tmp/134-20367.0
+end _do_ls /tmp/134-20367.last: l0=360 l1=0
+Log Label (Log Format Version 2)
+Performance metrics from host fv-az59
+    commencing Fri Aug  7 13:38:43.125352 2020
+    ending     Fri Aug  7 13:38:44.166059 2020
+
+Temporal Index
+		Log Vol    end(meta)     end(log)
+13:38:43.125352	      0          132          132
+13:38:44.166059	      0          450          320
+
+13:38:43.125352 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [20398 or "20398"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [20398 or "20398"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [20398 or "20398"] value "/tmp/134-20367"
+    2.0.23 (pmcd.pid): value 17206
+    2.0.24 (pmcd.seqnum): value 13
+
+13:38:44.166059 1 metric
+    2.0.8 (pmcd.control.register): inst [0 or "0"] value 0
+=== second empty volume ===
+-rw-r--r-- 1 pcp pcp 360 Aug  7 13:38 /tmp/134-20367.0
+-rw-r--r-- 1 pcp pcp 132 Aug  7 13:38 /tmp/134-20367.1
+end _do_ls /tmp/134-20367.last: l0=360 l1=132
+Log Label (Log Format Version 2)
+Performance metrics from host fv-az59
+    commencing Fri Aug  7 13:38:43.125352 2020
+    ending     Fri Aug  7 13:38:44.166059 2020
+
+Temporal Index
+		Log Vol    end(meta)     end(log)
+13:38:43.125352	      0          132          132
+13:38:44.166059	      0          450          320
+
+13:38:43.125352 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [20398 or "20398"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [20398 or "20398"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [20398 or "20398"] value "/tmp/134-20367"
+    2.0.23 (pmcd.pid): value 17206
+    2.0.24 (pmcd.seqnum): value 13
+
+13:38:44.166059 1 metric
+    2.0.8 (pmcd.control.register): inst [0 or "0"] value 0
+=== second volume, one result ===
+-rw-r--r-- 1 pcp pcp 360 Aug  7 13:38 /tmp/134-20367.0
+-rw-r--r-- 1 pcp pcp 172 Aug  7 13:38 /tmp/134-20367.1
+end _do_ls /tmp/134-20367.last: l0=360 l1=172
+Log Label (Log Format Version 2)
+Performance metrics from host fv-az59
+    commencing Fri Aug  7 13:38:43.125352 2020
+    ending     Fri Aug  7 13:38:46.422608 2020
+
+Temporal Index
+		Log Vol    end(meta)     end(log)
+13:38:43.125352	      0          132          132
+13:38:44.166059	      0          450          320
+13:38:46.422608	      1         2184          132
+
+13:38:43.125352 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [20398 or "20398"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [20398 or "20398"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [20398 or "20398"] value "/tmp/134-20367"
+    2.0.23 (pmcd.pid): value 17206
+    2.0.24 (pmcd.seqnum): value 13
+
+13:38:44.166059 1 metric
+    2.0.8 (pmcd.control.register): inst [0 or "0"] value 0
+
+13:38:46.422608 1 metric
+    2.0.8 (pmcd.control.register): inst [0 or "0"] value 0
+=== second volume, second + third result ===
+-rw-r--r-- 1 pcp pcp 360 Aug  7 13:38 /tmp/134-20367.0
+-rw-r--r-- 1 pcp pcp 356 Aug  7 13:38 /tmp/134-20367.1
+end _do_ls /tmp/134-20367.last: l0=360 l1=356
+Log Label (Log Format Version 2)
+Performance metrics from host fv-az59
+    commencing Fri Aug  7 13:38:43.125352 2020
+    ending     Fri Aug  7 13:38:48.663748 2020
+
+Temporal Index
+		Log Vol    end(meta)     end(log)
+13:38:43.125352	      0          132          132
+13:38:44.166059	      0          450          320
+13:38:46.422608	      1         2184          132
+13:38:47.556877	      1         2184          172
+
+13:38:43.125352 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [20398 or "20398"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [20398 or "20398"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [20398 or "20398"] value "/tmp/134-20367"
+    2.0.23 (pmcd.pid): value 17206
+    2.0.24 (pmcd.seqnum): value 13
+
+13:38:44.166059 1 metric
+    2.0.8 (pmcd.control.register): inst [0 or "0"] value 0
+
+13:38:46.422608 1 metric
+    2.0.8 (pmcd.control.register): inst [0 or "0"] value 0
+
+13:38:47.556877 3 metrics
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+        inst [300 or "bin-300"] value 300
+        inst [400 or "bin-400"] value 400
+        inst [500 or "bin-500"] value 500
+        inst [600 or "bin-600"] value 600
+        inst [700 or "bin-700"] value 700
+        inst [800 or "bin-800"] value 800
+        inst [900 or "bin-900"] value 900
+    2.0.4 (pmcd.control.timeout): value 5
+    2.0.0 (pmcd.control.debug): value 0
+
+13:38:48.663748 1 metric
+    2.0.8 (pmcd.control.register): inst [0 or "0"] value 0
+=== logger done ===
+-rw-r--r-- 1 pcp pcp 360 Aug  7 13:38 /tmp/134-20367.0
+-rw-r--r-- 1 pcp pcp 544 Aug  7 13:38 /tmp/134-20367.1
+end _do_ls /tmp/134-20367.last: l0=360 l1=544
+Log Label (Log Format Version 2)
+Performance metrics from host fv-az59
+    commencing Fri Aug  7 13:38:43.125352 2020
+    ending     Fri Aug  7 13:38:49.874691 2020
+
+Temporal Index
+		Log Vol    end(meta)     end(log)
+13:38:43.125352	      0          132          132
+13:38:44.166059	      0          450          320
+13:38:46.422608	      1         2184          132
+13:38:47.556877	      1         2184          172
+13:38:49.874691	      1         5160          356
+
+13:38:43.125352 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [20398 or "20398"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [20398 or "20398"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [20398 or "20398"] value "/tmp/134-20367"
+    2.0.23 (pmcd.pid): value 17206
+    2.0.24 (pmcd.seqnum): value 13
+
+13:38:44.166059 1 metric
+    2.0.8 (pmcd.control.register): inst [0 or "0"] value 0
+
+13:38:46.422608 1 metric
+    2.0.8 (pmcd.control.register): inst [0 or "0"] value 0
+
+13:38:47.556877 3 metrics
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+        inst [300 or "bin-300"] value 300
+        inst [400 or "bin-400"] value 400
+        inst [500 or "bin-500"] value 500
+        inst [600 or "bin-600"] value 600
+        inst [700 or "bin-700"] value 700
+        inst [800 or "bin-800"] value 800
+        inst [900 or "bin-900"] value 900
+    2.0.4 (pmcd.control.timeout): value 5
+    2.0.0 (pmcd.control.debug): value 0
+
+13:38:48.663748 1 metric
+    2.0.8 (pmcd.control.register): inst [0 or "0"] value 0
+
+13:38:49.874691 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [20398 or "20398"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [20398 or "20398"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [20398 or "20398"] value "/tmp/134-20367"
+    2.0.23 (pmcd.pid): value 17206
+    2.0.24 (pmcd.seqnum): value 13
+
+-- pmlogger.log --
+Log for pmlogger on fv-az59 started Fri Aug  7 13:38:43 2020
+
+auxconnect.c:__pmGetAddrInfo(fv-az59) -> 10.1.0.4, 10.1.0.4, 10.1.0.4
+auxconnect.c:__pmHostEntFree(hostent=0x55f7b0adfdc0) name=(nil) ((null)) addresses=0x55f7b0ae4770
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs /dev/null -I /var/lib/pcp/config/pmlogger
+Config parsed
+optFetch Cost Parameters: pmid=4 indom=1 fetch=15 scope=1
+
+After loading config ...
+Starting logger for host "fv-az59" via "local:"
+__pmFopen("/tmp/134-20367.index", "w"): no decompress
+__pmFopen("/tmp/134-20367.meta", "w"): no decompress
+__pmFopen("/tmp/134-20367.0", "w"): no decompress
+Archive basename: /tmp/134-20367
+auxconnect.c:__pmGetAddrInfo(fv-az59) -> 10.1.0.4, 10.1.0.4, 10.1.0.4
+auxconnect.c:__pmHostEntGetName: __pmGetNameInfo(10.1.0.4) returns fv-az59.internal.cloudapp.net
+auxconnect.c:__pmHostEntGetName -> fv-az59.internal.cloudapp.net
+auxconnect.c:__pmHostEntFree(hostent=0x55f7b0ae9c90) name=0x55f7b0ae9cb0 (fv-az59.internal.cloudapp.net) addresses=0x55f7b0ae4770
+logputresult: pdubuf=0x55f7b0ae2880 input len=192 output len=188 posn=132
+__pmLogPutIndex: timestamp=1596807523.06125352 vol=0 meta posn=132 log posn=132
+do_control: control=11 state=2 delta=0 request ...
+LogControl dump from 0x55f7b0ae27b0 numpmid: 1
+  2.0.8 : numval: 1 valfmt: 0 inst [0]
+
+Fri Aug  7 13:38:44 2020
+pmlc request from localhost: mandatory on once
+  metric: pmcd.control.register
+    instance: 0
+pmResult dump from 0x55f7b0ae27b0 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  2.0.8 (pmcd.control.register): numval: 1 valfmt: 0 vlist[]:
+    inst [0 or "0"] value 3
+logputresult: pdubuf=0x55f7b0ae47d0 input len=44 output len=40 posn=320
+__pmLogPutIndex: timestamp=1596807524.06166059 vol=0 meta posn=450 log posn=320
+__pmFopen("/tmp/134-20367.1", "w"): no decompress
+New log volume 1, via pmlc request at Fri Aug  7 13:38:45 2020
+do_control: control=11 state=2 delta=0 request ...
+LogControl dump from 0x55f7b0ae27e0 numpmid: 1
+  2.0.8 : numval: 1 valfmt: 0 inst [0]
+
+Fri Aug  7 13:38:46 2020
+pmlc request from localhost: mandatory on once
+  metric: pmcd.control.register
+    instance: 0
+pmResult dump from 0x55f7b0ae27e0 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  2.0.8 (pmcd.control.register): numval: 1 valfmt: 0 vlist[]:
+    inst [0 or "0"] value 15
+logputresult: pdubuf=0x55f7b0ae47d0 input len=44 output len=40 posn=132
+__pmLogPutIndex: timestamp=1596807526.06422608 vol=1 meta posn=2184 log posn=132
+do_control: control=11 state=2 delta=0 request ...
+LogControl dump from 0x55f7b0aea900 numpmid: 3
+  2.0.0 : numval: 1 valfmt: 0 singular
+  2.0.4 : numval: 1 valfmt: 0 singular
+  29.0.6 : No values!
+
+Fri Aug  7 13:38:47 2020
+pmlc request from localhost: mandatory on once
+  metric: pmcd.control.debug
+  metric: pmcd.control.timeout
+  metric: sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin
+    instance: bin-100
+    instance: bin-200
+    instance: bin-300
+    instance: bin-400
+    instance: bin-500
+    instance: bin-600
+    instance: bin-700
+    instance: bin-800
+    instance: bin-900
+pmResult dump from 0x55f7b0aecf40 timestamp: 0.000000 00:00:00.000 numpmid: 3
+  2.0.0 (pmcd.control.debug): numval: 1 valfmt: 0 vlist[]:
+   value 3
+  2.0.4 (pmcd.control.timeout): numval: 1 valfmt: 0 vlist[]:
+   value 3
+  29.0.6 (sample.dupnames.three.bin, sample.dupnames.two.bin, sample.bin): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or "bin-100"] value 3
+    inst [200 or "bin-200"] value 3
+    inst [300 or "bin-300"] value 3
+    inst [400 or "bin-400"] value 3
+    inst [500 or "bin-500"] value 3
+    inst [600 or "bin-600"] value 3
+    inst [700 or "bin-700"] value 3
+    inst [800 or "bin-800"] value 3
+    inst [900 or "bin-900"] value 3
+logputresult: pdubuf=0x55f7b0aed610 input len=148 output len=144 posn=172
+__pmLogPutIndex: timestamp=1596807527.06556877 vol=1 meta posn=2184 log posn=172
+do_control: control=11 state=2 delta=0 request ...
+LogControl dump from 0x55f7b0aea940 numpmid: 1
+  2.0.8 : numval: 1 valfmt: 0 inst [0]
+
+Fri Aug  7 13:38:48 2020
+pmlc request from localhost: mandatory on once
+  metric: pmcd.control.register
+    instance: 0
+pmResult dump from 0x55f7b0aea940 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  2.0.8 (pmcd.control.register): numval: 1 valfmt: 0 vlist[]:
+    inst [0 or "0"] value 15
+logputresult: pdubuf=0x55f7b0ae47d0 input len=44 output len=40 posn=316
+run_done(0, Caught signal 15) last_log_offset=316 last_stamp=13:38:48.663
+auxconnect.c:__pmGetAddrInfo(fv-az59) -> 10.1.0.4, 10.1.0.4, 10.1.0.4
+auxconnect.c:__pmHostEntGetName: __pmGetNameInfo(10.1.0.4) returns fv-az59.internal.cloudapp.net
+auxconnect.c:__pmHostEntGetName -> fv-az59.internal.cloudapp.net
+auxconnect.c:__pmHostEntFree(hostent=0x55f7b0aef380) name=0x55f7b0aec010 (fv-az59.internal.cloudapp.net) addresses=0x55f7b0aed490
+logputresult: pdubuf=0x55f7b0ae2880 input len=192 output len=188 posn=356
+pmlogger: Caught signal 15, exiting
+__pmLogPutIndex: timestamp=1596807529.06874691 vol=1 meta posn=5160 log posn=356
+
+Log finished Fri Aug  7 13:38:49 2020

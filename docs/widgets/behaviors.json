@@ -1,114 +1,114 @@
 {
-  "total" : 52,
+  "total" : 79,
   "items" : [ {
     "uid" : "5a28ff24753a3a2fae74f89ef3f1cd8e",
     "name" : "local",
     "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 4,
-      "passed" : 670,
+      "failed" : 22,
+      "broken" : 12,
+      "skipped" : 55,
+      "passed" : 1080,
       "unknown" : 0,
-      "total" : 675
-    }
-  }, {
-    "uid" : "3c2fd161d37da8eab58e0d7dcc419317",
-    "name" : "sanity",
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 4,
-      "passed" : 670,
-      "unknown" : 0,
-      "total" : 675
-    }
-  }, {
-    "uid" : "38c62ee5555e24c5ef9c0f8f81c54954",
-    "name" : "libpcp",
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 3,
-      "passed" : 176,
-      "unknown" : 0,
-      "total" : 180
-    }
-  }, {
-    "uid" : "7019db622d97ac1011841f8e63dd8354",
-    "name" : "labels",
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 1,
-      "passed" : 61,
-      "unknown" : 0,
-      "total" : 63
-    }
-  }, {
-    "uid" : "817d2dda6a5d27390d5d4ca371ecfe05",
-    "name" : "python",
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 4,
-      "passed" : 58,
-      "unknown" : 0,
-      "total" : 63
-    }
-  }, {
-    "uid" : "d905177c31489beab70fe6d03d320f88",
-    "name" : "BAD",
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 8,
-      "unknown" : 0,
-      "total" : 9
-    }
-  }, {
-    "uid" : "e4beb6b58bf9d3b9780ee9bfc1eabee7",
-    "name" : "@vm13",
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 8,
-      "unknown" : 0,
-      "total" : 9
-    }
-  }, {
-    "uid" : "7d0d057d0334f67be586550f83bfc55a",
-    "name" : "@vm33",
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 8,
-      "unknown" : 0,
-      "total" : 9
+      "total" : 1169
     }
   }, {
     "uid" : "e6e002a8210bff4f1628acabbbef5e27",
     "name" : "ostest",
     "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 153,
+      "failed" : 11,
+      "broken" : 5,
+      "skipped" : 77,
+      "passed" : 502,
       "unknown" : 0,
-      "total" : 153
+      "total" : 595
     }
   }, {
-    "uid" : "2374fd5fa88405976f599a9f8b93b314",
-    "name" : "pmdumplog",
+    "uid" : "d3d9ff8cbe08306f1e266702a88dfa54",
+    "name" : "pmcd",
     "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 108,
+      "failed" : 7,
+      "broken" : 2,
+      "skipped" : 33,
+      "passed" : 90,
       "unknown" : 0,
-      "total" : 108
+      "total" : 132
+    }
+  }, {
+    "uid" : "e8ebae4dce1cfd14a5aeebc116659810",
+    "name" : "kernel",
+    "statistic" : {
+      "failed" : 6,
+      "broken" : 4,
+      "skipped" : 55,
+      "passed" : 194,
+      "unknown" : 0,
+      "total" : 259
+    }
+  }, {
+    "uid" : "38c62ee5555e24c5ef9c0f8f81c54954",
+    "name" : "libpcp",
+    "statistic" : {
+      "failed" : 5,
+      "broken" : 1,
+      "skipped" : 20,
+      "passed" : 105,
+      "unknown" : 0,
+      "total" : 131
+    }
+  }, {
+    "uid" : "52497e13949698221a3ea335add2284b",
+    "name" : "pmlc",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 2,
+      "skipped" : 14,
+      "passed" : 121,
+      "unknown" : 0,
+      "total" : 139
+    }
+  }, {
+    "uid" : "406aa5a43aec57d653931a45997f9f42",
+    "name" : "folio",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 1,
+      "skipped" : 14,
+      "passed" : 36,
+      "unknown" : 0,
+      "total" : 53
+    }
+  }, {
+    "uid" : "9d4cfa60006d1a0e2c91ec1019757767",
+    "name" : "pmprobe",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 1,
+      "skipped" : 1,
+      "passed" : 35,
+      "unknown" : 0,
+      "total" : 39
+    }
+  }, {
+    "uid" : "4e840d7015e62d45a138bbe788f1af21",
+    "name" : "context",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 7,
+      "passed" : 53,
+      "unknown" : 0,
+      "total" : 62
+    }
+  }, {
+    "uid" : "a36d054f09f26a272e1d1b83e20c5dfc",
+    "name" : "pmstore",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 19,
+      "passed" : 52,
+      "unknown" : 0,
+      "total" : 73
     }
   } ]
 }

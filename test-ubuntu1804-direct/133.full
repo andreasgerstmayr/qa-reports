@@ -1,0 +1,28 @@
+=== Start @ Fri Aug  7 13:38:33 UTC 2020 ===
+-rw-r--r-- 1 root root 2406 Aug  7 13:38 /var/log/pcp/pmcd/pmcd.log
+Performance Co-Pilot configuration on fv-az59:
+
+ platform: Linux fv-az59 5.3.0-1034-azure #35~18.04.1-Ubuntu SMP Mon Jul 13 12:54:45 UTC 2020 x86_64
+ hardware: 2 cpus, 2 disks, 1 node, 6927MB RAM
+ timezone: UTC
+ services: pmcd
+     pmcd: Version 5.2.1-1, 12 agents, 1 client
+     pmda: root pmcd proc pmproxy xfs sample sampledso linux mmv kvm
+           jbd2 simple
+ pmlogger: primary logger: /var/log/pcp/pmlogger/fv-az59/20200807.13.38
+     pmie: primary engine: /var/log/pcp/pmie/fv-az59/pmie.log
+
+=== End @ Fri Aug  7 13:38:42 UTC 2020 ===
+-rw-r--r-- 1 root root 2406 Aug  7 13:38 /var/log/pcp/pmcd/pmcd.log
+pmcd.log diffs ...
+Performance Co-Pilot configuration on fv-az59:
+
+ platform: Linux fv-az59 5.3.0-1034-azure #35~18.04.1-Ubuntu SMP Mon Jul 13 12:54:45 UTC 2020 x86_64
+ hardware: 2 cpus, 2 disks, 1 node, 6927MB RAM
+ timezone: UTC
+ services: pmcd
+     pmcd: Version 5.2.1-1, 12 agents, 1 client
+     pmda: root pmcd proc pmproxy xfs sample sampledso linux mmv kvm
+           jbd2 simple
+ pmlogger: primary logger: /var/log/pcp/pmlogger/fv-az59/20200807.13.38
+     pmie: primary engine: /var/log/pcp/pmie/fv-az59/pmie.log

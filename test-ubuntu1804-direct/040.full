@@ -1,0 +1,9 @@
+Log for pmlogger on fv-az59 started Fri Aug  7 13:27:24 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs /tmp/040-102737.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "fv-az59" via "local:"
+Archive basename: /tmp/040-102737
+pmlogger: Sample limit reached, exiting
+
+Log finished Fri Aug  7 13:27:44 2020

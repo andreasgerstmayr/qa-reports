@@ -1,0 +1,95 @@
+=== tmparch/foo ===
+start: 13:28:42.749
+end: 13:28:49.801
+step: 100 msec
+  0% 13:28:42.749  71 forw +    1 back = 72, 10 log reads
+ 10% 13:28:43.754  61 forw +   11 back = 72, 8 log reads
+ 20% 13:28:43.760  61 forw +   11 back = 72, 9 log reads
+ 30% 13:28:44.765  51 forw +   21 back = 72, 10 log reads
+ 40% 13:28:45.770  41 forw +   31 back = 72, 15 log reads
+ 50% 13:28:46.775  31 forw +   41 back = 72, 8 log reads
+ 60% 13:28:46.780  31 forw +   41 back = 72, 6 log reads
+ 70% 13:28:47.786  21 forw +   51 back = 72, 6 log reads
+ 80% 13:28:48.791  11 forw +   61 back = 72, 5 log reads
+ 90% 13:28:48.796  11 forw +   61 back = 72, 7 log reads
+100% 13:28:49.801   1 forw +   71 back = 72, 8 log reads
+
+=== archives/ok-bigbin ===
+start: 11:52:32.647
+end: 11:52:52.644
+step: 100 msec
+  0% 11:52:32.647 200 forw +    1 back = 201, 999 log reads
+ 10% 11:52:34.647 180 forw +   21 back = 201, 1190 log reads
+ 20% 11:52:36.646 160 forw +   41 back = 201, 998 log reads
+ 30% 11:52:38.646 140 forw +   61 back = 201, 1184 log reads
+ 40% 11:52:40.646 120 forw +   80 back = 200, 1006 log reads
+ 50% 11:52:42.645 100 forw +  100 back = 200, 1176 log reads
+ 60% 11:52:44.645  80 forw +  120 back = 200, 1014 log reads
+ 70% 11:52:46.645  61 forw +  140 back = 201, 1172 log reads
+ 80% 11:52:48.644  41 forw +  160 back = 201, 1026 log reads
+ 90% 11:52:50.644  21 forw +  180 back = 201, 1164 log reads
+100% 11:52:52.644   1 forw +  200 back = 201, 997 log reads
+
+=== tmparch/mv-foo ===
+start: 13:28:49.819
+end: 13:28:56.877
+step: 100 msec
+  0% 13:28:49.819  71 forw +    1 back = 72, 13 log reads
+ 10% 13:28:50.825  61 forw +   11 back = 72, 13 log reads
+ 20% 13:28:50.830  61 forw +   11 back = 72, 13 log reads
+ 30% 13:28:51.836  51 forw +   21 back = 72, 14 log reads
+ 40% 13:28:52.842  41 forw +   31 back = 72, 14 log reads
+ 50% 13:28:53.848  31 forw +   41 back = 72, 15 log reads
+ 60% 13:28:53.854  31 forw +   41 back = 72, 15 log reads
+ 70% 13:28:54.860  21 forw +   51 back = 72, 13 log reads
+ 80% 13:28:55.865  11 forw +   61 back = 72, 13 log reads
+ 90% 13:28:55.871  11 forw +   61 back = 72, 13 log reads
+100% 13:28:56.877   1 forw +   71 back = 72, 11 log reads
+
+=== archives/ok-mv-bigbin ===
+start: 11:53:18.474
+end: 11:53:38.499
+step: 100 msec
+  0% 11:53:18.474 201 forw +    1 back = 202, 1002 log reads
+ 10% 11:53:20.476 181 forw +   21 back = 202, 1005 log reads
+ 20% 11:53:22.479 161 forw +   41 back = 202, 1008 log reads
+ 30% 11:53:24.481 141 forw +   61 back = 202, 1009 log reads
+ 40% 11:53:26.484 121 forw +   81 back = 202, 1009 log reads
+ 50% 11:53:28.486 101 forw +  101 back = 202, 1009 log reads
+ 60% 11:53:30.489  81 forw +  121 back = 202, 1011 log reads
+ 70% 11:53:32.492  61 forw +  141 back = 202, 1015 log reads
+ 80% 11:53:34.494  41 forw +  161 back = 202, 1017 log reads
+ 90% 11:53:36.497  21 forw +  181 back = 202, 1019 log reads
+100% 11:53:38.499   1 forw +  201 back = 202, 1002 log reads
+
+=== tmparch/noti-foo ===
+start: 13:28:42.749
+end: 13:28:49.801
+step: 100 msec
+  0% 13:28:42.749  71 forw +    1 back = 72, 17 log reads
+ 10% 13:28:43.754  61 forw +   11 back = 72, 13 log reads
+ 20% 13:28:43.760  61 forw +   11 back = 72, 12 log reads
+ 30% 13:28:44.765  51 forw +   21 back = 72, 14 log reads
+ 40% 13:28:45.770  41 forw +   31 back = 72, 14 log reads
+ 50% 13:28:46.775  31 forw +   41 back = 72, 13 log reads
+ 60% 13:28:46.780  31 forw +   41 back = 72, 13 log reads
+ 70% 13:28:47.786  21 forw +   51 back = 72, 15 log reads
+ 80% 13:28:48.791  11 forw +   61 back = 72, 14 log reads
+ 90% 13:28:48.796  11 forw +   61 back = 72, 14 log reads
+100% 13:28:49.801   1 forw +   71 back = 72, 14 log reads
+
+=== archives/ok-noti-bigbin ===
+start: 11:52:32.647
+end: 11:52:52.644
+step: 100 msec
+  0% 11:52:32.647 200 forw +    1 back = 201, 1998 log reads
+ 10% 11:52:34.647 180 forw +   21 back = 201, 1989 log reads
+ 20% 11:52:36.646 160 forw +   41 back = 201, 1993 log reads
+ 30% 11:52:38.646 140 forw +   61 back = 201, 1993 log reads
+ 40% 11:52:40.646 120 forw +   80 back = 200, 1993 log reads
+ 50% 11:52:42.645 100 forw +  100 back = 200, 1993 log reads
+ 60% 11:52:44.645  80 forw +  120 back = 200, 1993 log reads
+ 70% 11:52:46.645  61 forw +  140 back = 201, 1994 log reads
+ 80% 11:52:48.644  41 forw +  160 back = 201, 1994 log reads
+ 90% 11:52:50.644  21 forw +  180 back = 201, 1994 log reads
+100% 11:52:52.644   1 forw +  200 back = 201, 1995 log reads

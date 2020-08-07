@@ -1,0 +1,244 @@
+Log for pmlogger on fv-az59 started Fri Aug  7 13:46:15 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs  -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "fv-az59" via "local:"
+Archive basename: /tmp/202-83909.A
+pmlogger: Sample limit reached, exiting
+
+Log finished Fri Aug  7 13:46:15 2020
+-rw-r--r-- 1 pcpqa pcpqa  724 Aug  7 13:46 /tmp/202-83909.A.0
+-rw-r--r-- 1 pcpqa pcpqa  172 Aug  7 13:46 /tmp/202-83909.A.index
+-rw-r--r-- 1 pcpqa pcpqa 1097 Aug  7 13:46 /tmp/202-83909.A.meta
+Log Label (Log Format Version 2)
+Performance metrics from host fv-az59
+    commencing Fri Aug  7 13:46:15.142684 2020
+    ending     Fri Aug  7 13:46:15.283567 2020
+
+13:46:15.142684 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [83924 or "83924"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [83924 or "83924"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [83924 or "83924"] value "/tmp/202-83909.A"
+    2.0.23 (pmcd.pid): value 82850
+    2.0.24 (pmcd.seqnum): value 13
+
+13:46:15.162610 1 metric
+    29.0.3 (sample.milliseconds): value 5457.01
+
+13:46:15.202669 1 metric
+    29.0.3 (sample.milliseconds): value 5497.07
+
+13:46:15.242670 1 metric
+    29.0.3 (sample.milliseconds): value 5537.069
+
+13:46:15.282689 1 metric
+    29.0.3 (sample.milliseconds): value 5577.09
+
+13:46:15.283567 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [83924 or "83924"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [83924 or "83924"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [83924 or "83924"] value "/tmp/202-83909.A"
+    2.0.23 (pmcd.pid): value 82850
+    2.0.24 (pmcd.seqnum): value 13
+Log for pmlogger on fv-az59 started Fri Aug  7 13:46:15 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs  -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "fv-az59" via "local:"
+Archive basename: /tmp/202-83909.B
+pmlogger: Sample limit reached, exiting
+
+Log finished Fri Aug  7 13:46:15 2020
+-rw-r--r-- 1 pcpqa pcpqa  828 Aug  7 13:46 /tmp/202-83909.B.0
+-rw-r--r-- 1 pcpqa pcpqa  172 Aug  7 13:46 /tmp/202-83909.B.index
+-rw-r--r-- 1 pcpqa pcpqa 1097 Aug  7 13:46 /tmp/202-83909.B.meta
+Log Label (Log Format Version 2)
+Performance metrics from host fv-az59
+    commencing Fri Aug  7 13:46:15.142684 2020
+    ending     Fri Aug  7 13:46:15.283567 2020
+
+13:46:15.300591 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [83936 or "83936"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [83936 or "83936"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [83936 or "83936"] value "/tmp/202-83909.B"
+    2.0.23 (pmcd.pid): value 82850
+    2.0.24 (pmcd.seqnum): value 13
+
+13:46:15.320462 1 metric
+    29.0.3 (sample.milliseconds): value 5614.862999999999
+
+13:46:15.370509 1 metric
+    29.0.3 (sample.milliseconds): value 5664.907999999999
+
+13:46:15.420544 1 metric
+    29.0.3 (sample.milliseconds): value 5714.944
+
+13:46:15.470547 1 metric
+    29.0.3 (sample.milliseconds): value 5764.947
+
+13:46:15.520526 1 metric
+    29.0.3 (sample.milliseconds): value 5814.908
+
+13:46:15.570591 1 metric
+    29.0.3 (sample.milliseconds): value 5864.993
+
+13:46:15.571314 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [83936 or "83936"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [83936 or "83936"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [83936 or "83936"] value "/tmp/202-83909.B"
+    2.0.23 (pmcd.pid): value 82850
+    2.0.24 (pmcd.seqnum): value 13
+
+13:46:15.142684 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [83924 or "83924"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [83924 or "83924"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [83924 or "83924"] value "/tmp/202-83909.A"
+    2.0.23 (pmcd.pid): value 82850
+    2.0.24 (pmcd.seqnum): value 13
+
+13:46:15.162610 1 metric
+    29.0.3 (sample.milliseconds): value 5457.01
+
+13:46:15.202669 1 metric
+    29.0.3 (sample.milliseconds): value 5497.07
+
+13:46:15.242670 1 metric
+    29.0.3 (sample.milliseconds): value 5537.069
+
+13:46:15.282689 1 metric
+    29.0.3 (sample.milliseconds): value 5577.09
+
+13:46:15.283567 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [83924 or "83924"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [83924 or "83924"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [83924 or "83924"] value "/tmp/202-83909.A"
+    2.0.23 (pmcd.pid): value 82850
+    2.0.24 (pmcd.seqnum): value 13
+
+13:46:15.284567  <mark>
+
+13:46:15.300591 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [83936 or "83936"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [83936 or "83936"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [83936 or "83936"] value "/tmp/202-83909.B"
+    2.0.23 (pmcd.pid): value 82850
+    2.0.24 (pmcd.seqnum): value 13
+
+13:46:15.320462 1 metric
+    29.0.3 (sample.milliseconds): value 5614.862999999999
+
+13:46:15.370509 1 metric
+    29.0.3 (sample.milliseconds): value 5664.907999999999
+
+13:46:15.420544 1 metric
+    29.0.3 (sample.milliseconds): value 5714.944
+
+13:46:15.470547 1 metric
+    29.0.3 (sample.milliseconds): value 5764.947
+
+13:46:15.520526 1 metric
+    29.0.3 (sample.milliseconds): value 5814.908
+
+13:46:15.570591 1 metric
+    29.0.3 (sample.milliseconds): value 5864.993
+
+13:46:15.571314 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [83936 or "83936"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [83936 or "83936"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [83936 or "83936"] value "/tmp/202-83909.B"
+    2.0.23 (pmcd.pid): value 82850
+    2.0.24 (pmcd.seqnum): value 13
+
+metric:    sample.milliseconds
+archive:   /tmp/202-83909.C
+host:      fv-az59
+start:     Fri Aug  7 13:46:15 2020
+end:       Fri Aug  7 13:46:15 2020
+semantics: cumulative counter (converting to rate)
+units:     millisec (converting to time utilization)
+samples:   all
+13:46:15.202               1.000 
+13:46:15.242               1.000 
+13:46:15.282               1.000 
+13:46:15.284  Archive logging suspended
+13:46:15.370               1.000 
+13:46:15.420               1.000 
+13:46:15.470               1.000 
+13:46:15.520               0.9996
+13:46:15.570               1.000 
+
+13:46:15.142684 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [83924 or "83924"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [83924 or "83924"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [83924 or "83924"] value "/tmp/202-83909.A"
+    2.0.23 (pmcd.pid): value 82850
+    2.0.24 (pmcd.seqnum): value 13
+
+13:46:15.162610 1 metric
+    29.0.3 (sample.milliseconds): value 5457.01
+
+13:46:15.202669 1 metric
+    29.0.3 (sample.milliseconds): value 5497.07
+
+13:46:15.242670 1 metric
+    29.0.3 (sample.milliseconds): value 5537.069
+
+13:46:15.282689 1 metric
+    29.0.3 (sample.milliseconds): value 5577.09
+
+13:46:15.283567 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [83924 or "83924"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [83924 or "83924"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [83924 or "83924"] value "/tmp/202-83909.A"
+    2.0.23 (pmcd.pid): value 82850
+    2.0.24 (pmcd.seqnum): value 13
+
+13:46:15.300591 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [83936 or "83936"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [83936 or "83936"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [83936 or "83936"] value "/tmp/202-83909.B"
+    2.0.23 (pmcd.pid): value 82850
+    2.0.24 (pmcd.seqnum): value 13
+
+13:46:15.320462 1 metric
+    29.0.3 (sample.milliseconds): value 5614.862999999999
+
+13:46:15.370509 1 metric
+    29.0.3 (sample.milliseconds): value 5664.907999999999
+
+13:46:15.420544 1 metric
+    29.0.3 (sample.milliseconds): value 5714.944
+
+13:46:15.470547 1 metric
+    29.0.3 (sample.milliseconds): value 5764.947
+
+13:46:15.520526 1 metric
+    29.0.3 (sample.milliseconds): value 5814.908
+
+13:46:15.570591 1 metric
+    29.0.3 (sample.milliseconds): value 5864.993
+
+13:46:15.571314 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [83936 or "83936"] value "fv-az59.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [83936 or "83936"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [83936 or "83936"] value "/tmp/202-83909.B"
+    2.0.23 (pmcd.pid): value 82850
+    2.0.24 (pmcd.seqnum): value 13
+
+metric:    sample.milliseconds
+archive:   /tmp/202-83909.C
+host:      fv-az59
+start:     Fri Aug  7 13:46:15 2020
+end:       Fri Aug  7 13:46:15 2020
+semantics: cumulative counter (converting to rate)
+units:     millisec (converting to time utilization)
+samples:   all
+13:46:15.202               1.000 
+13:46:15.242               1.000 
+13:46:15.282               1.000 
+13:46:15.320               1.000 
+13:46:15.370               1.000 
+13:46:15.420               1.000 
+13:46:15.470               1.000 
+13:46:15.520               0.9996
+13:46:15.570               1.000 

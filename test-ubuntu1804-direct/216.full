@@ -1,0 +1,558 @@
+=== First netstat ===
+Ip:
+    Forwarding: 1
+    85939 total packets received
+    0 forwarded
+    0 incoming packets discarded
+    85930 incoming packets delivered
+    79736 requests sent out
+    20 outgoing packets dropped
+Icmp:
+    42 ICMP messages received
+    0 input ICMP message failed
+    ICMP input histogram:
+        destination unreachable: 42
+    43 ICMP messages sent
+    0 ICMP messages failed
+    ICMP output histogram:
+        destination unreachable: 43
+IcmpMsg:
+        InType3: 42
+        OutType3: 43
+Tcp:
+    4464 active connection openings
+    1820 passive connection openings
+    79 failed connection attempts
+    3223 connection resets received
+    7 connections established
+    177839 segments received
+    197076 segments sent out
+    4 segments retransmitted
+    0 bad segments received
+    1977 resets sent
+Udp:
+    16506 packets received
+    43 packets to unknown port received
+    0 packet receive errors
+    16550 packets sent
+    0 receive buffer errors
+    0 send buffer errors
+UdpLite:
+TcpExt:
+    128 TCP sockets finished time wait in fast timer
+    48 delayed acks sent
+    2 delayed acks further delayed because of locked socket
+    Quick ack mode was activated 6 times
+    132833 packet headers predicted
+    10049 acknowledgments not containing data payload received
+    95199 predicted acknowledgments
+    TCPLossProbes: 4
+    TCPLossProbeRecovery: 3
+    TCPBacklogCoalesce: 224
+    TCPDSACKOldSent: 6
+    TCPDSACKRecv: 1
+    1805 connections reset due to unexpected data
+    18 connections reset due to early user close
+    IPReversePathFilter: 6
+    TCPRcvCoalesce: 10652
+    TCPOFOQueue: 36
+    TCPSpuriousRtxHostQueues: 1
+    TCPAutoCorking: 685
+    TCPFromZeroWindowAdv: 4
+    TCPToZeroWindowAdv: 4
+    TCPWantZeroWindowAdv: 98
+    TCPOrigDataSent: 131352
+    TCPHystartTrainDetect: 13
+    TCPHystartTrainCwnd: 293
+    TCPDelivered: 135241
+IpExt:
+    InNoRoutes: 1
+    InMcastPkts: 32
+    OutMcastPkts: 43
+    InOctets: 249419448
+    OutOctets: 47924049
+    InMcastOctets: 5462
+    OutMcastOctets: 5918
+    InNoECTPkts: 219043
+--- Culled netstat ---
+Ip:
+     Forwarding: 1
+    85939 total packets received
+    0 forwarded
+    0 incoming packets discarded
+    85930 incoming packets delivered
+    79736 requests sent out
+    20 outgoing packets dropped
+Icmp:
+    42 ICMP messages received
+    0 input ICMP message failed
+ICMP input         destination unreachable: 42
+    43 ICMP messages sent
+    0 ICMP messages failed
+ICMP output         destination unreachable: 43
+IcmpMsg: ... skipped
+Tcp:
+    4464 active connection openings
+    1820 passive connection openings
+    79 failed connection attempts
+    3223 connection resets received
+    7 connections established
+    177839 segments received
+    197076 segments sent out
+    4 segments retransmitted
+    0 bad segments received
+    1977 resets sent
+Udp:
+    16506 packets received
+    43 packets to unknown port received
+    0 packet receive errors
+    16550 packets sent
+    0 receive buffer errors
+    0 send buffer errors
+UdpLite: ... skipped
+TcpExt: ... skipped
+IpExt: ... skipped
+pat=\([0-9][0-9]*\) total packets received
+pat=\([0-9][0-9]*\) with invalid headers
+pat=\([0-9][0-9]*\) with invalid addresses
+pat=\([0-9][0-9]*\) forwarded
+pat=\([0-9][0-9]*\) with unknown protocol
+pat=\([0-9][0-9]*\) incoming packets discarded
+pat=\([0-9][0-9]*\) incoming packets delivered
+pat=\([0-9][0-9]*\) requests sent out
+pat=\([0-9][0-9]*\) outgoing packets dropped
+pat=\([0-9][0-9]*\) dropped because of missing route
+pat=\([0-9][0-9]*\) fragments dropped after timeout
+pat=\([0-9][0-9]*\) reassemblies required
+pat=\([0-9][0-9]*\) packets reassembled ok
+pat=\([0-9][0-9]*\) packet reassembles failed
+pat=\([0-9][0-9]*\) fragments received ok
+pat=\([0-9][0-9]*\) fragments failed
+pat=\([0-9][0-9]*\) fragments created
+pat=\([0-9][0-9]*\) ICMP messages received
+pat=\([0-9][0-9]*\) input ICMP message failed
+pat=ICMP input  *destination unreachable: \([0-9][0-9]*\)
+pat=ICMP input  *timeout in transit: \([0-9][0-9]*\)
+pat=ICMP input  *wrong parameters: \([0-9][0-9]*\)
+pat=ICMP input  *source quenches: \([0-9][0-9]*\)
+pat=ICMP input  *redirects: \([0-9][0-9]*\)
+pat=ICMP input  *echo requests: \([0-9][0-9]*\)
+pat=ICMP input  *echo replies: \([0-9][0-9]*\)
+pat=ICMP input  *timestamp request: \([0-9][0-9]*\)
+pat=ICMP input  *timestamp reply: \([0-9][0-9]*\)
+pat=ICMP input  *address mask request: \([0-9][0-9]*\)
+pat=ICMP input  *address mask replies: \([0-9][0-9]*\)
+pat=\([0-9][0-9]*\) ICMP messages sent
+pat=\([0-9][0-9]*\) ICMP messages failed
+pat=ICMP output *destination unreachable: \([0-9][0-9]*\)
+pat=ICMP output  *time exceeded: \([0-9][0-9]*\)
+pat=ICMP output  *wrong parameters: \([0-9][0-9]*\)
+pat=ICMP output  *source quench: \([0-9][0-9]*\)
+pat=ICMP output  *redirect: \([0-9][0-9]*\)
+pat=ICMP output  *echo requests*: \([0-9][0-9]*\)
+pat=ICMP output *echo replies: \([0-9][0-9]*\)
+pat=ICMP output  *timestamp requests: \([0-9][0-9]*\)
+pat=ICMP output  *timestamp replies: \([0-9][0-9]*\)
+pat=ICMP output  *address mask requests: \([0-9][0-9]*\)
+pat=ICMP output  *address mask replies: \([0-9][0-9]*\)
+pat=\([0-9][0-9]*\) failed connection attempts
+pat=\([0-9][0-9]*\) connection resets received
+pat=\([0-9][0-9]*\) segments received
+pat=\([0-9][0-9]*\) segments sen[dt] out
+pat=\([0-9][0-9]*\) segments retransmitt*ed
+pat=\([0-9][0-9]*\) bad segments received
+pat=\([0-9][0-9]*\) resets sent
+pat=\([0-9][0-9]*\) packets received
+pat=\([0-9][0-9]*\) packets to unknown port received
+pat=\([0-9][0-9]*\) packet receive errors
+pat=\([0-9][0-9]*\) packets sent
+=== Filtered first netstat ===
+85939
+0
+0
+0
+0
+0
+85930
+79736
+20
+0
+0
+0
+0
+0
+0
+0
+0
+42
+0
+42
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+43
+0
+43
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+79
+3223
+177839
+197076
+4
+0
+1977
+16506
+43
+0
+16550
+=== pmprobe ===
+network.ip.inreceives 1 85939
+network.ip.inhdrerrors 1 0
+network.ip.inaddrerrors 1 0
+network.ip.forwdatagrams 1 0
+network.ip.inunknownprotos 1 0
+network.ip.indiscards 1 0
+network.ip.indelivers 1 85930
+network.ip.outrequests 1 79736
+network.ip.outdiscards 1 20
+network.ip.outnoroutes 1 0
+network.ip.reasmtimeout 1 0
+network.ip.reasmreqds 1 0
+network.ip.reasmoks 1 0
+network.ip.reasmfails 1 0
+network.ip.fragoks 1 0
+network.ip.fragfails 1 0
+network.ip.fragcreates 1 0
+network.icmp.inmsgs 1 42
+network.icmp.inerrors 1 0
+network.icmp.indestunreachs 1 42
+network.icmp.intimeexcds 1 0
+network.icmp.inparmprobs 1 0
+network.icmp.insrcquenchs 1 0
+network.icmp.inredirects 1 0
+network.icmp.inechos 1 0
+network.icmp.inechoreps 1 0
+network.icmp.intimestamps 1 0
+network.icmp.intimestampreps 1 0
+network.icmp.inaddrmasks 1 0
+network.icmp.inaddrmaskreps 1 0
+network.icmp.outmsgs 1 43
+network.icmp.outerrors 1 0
+network.icmp.outdestunreachs 1 43
+network.icmp.outtimeexcds 1 0
+network.icmp.outparmprobs 1 0
+network.icmp.outsrcquenchs 1 0
+network.icmp.outredirects 1 0
+network.icmp.outechos 1 0
+network.icmp.outechoreps 1 0
+network.icmp.outtimestamps 1 0
+network.icmp.outtimestampreps 1 0
+network.icmp.outaddrmasks 1 0
+network.icmp.outaddrmaskreps 1 0
+network.tcp.attemptfails 1 79
+network.tcp.estabresets 1 3223
+network.tcp.insegs 1 177841
+network.tcp.outsegs 1 197079
+network.tcp.retranssegs 1 4
+network.tcp.inerrs 1 0
+network.tcp.outrsts 1 1977
+network.udp.indatagrams 1 16506
+network.udp.noports 1 43
+network.udp.inerrors 1 0
+network.udp.outdatagrams 1 16550
+=== Second netstat ===
+Ip:
+    Forwarding: 1
+    85941 total packets received
+    0 forwarded
+    0 incoming packets discarded
+    85932 incoming packets delivered
+    79738 requests sent out
+    20 outgoing packets dropped
+Icmp:
+    42 ICMP messages received
+    0 input ICMP message failed
+    ICMP input histogram:
+        destination unreachable: 42
+    43 ICMP messages sent
+    0 ICMP messages failed
+    ICMP output histogram:
+        destination unreachable: 43
+IcmpMsg:
+        InType3: 42
+        OutType3: 43
+Tcp:
+    4464 active connection openings
+    1820 passive connection openings
+    79 failed connection attempts
+    3223 connection resets received
+    7 connections established
+    177841 segments received
+    197079 segments sent out
+    4 segments retransmitted
+    0 bad segments received
+    1977 resets sent
+Udp:
+    16506 packets received
+    43 packets to unknown port received
+    0 packet receive errors
+    16550 packets sent
+    0 receive buffer errors
+    0 send buffer errors
+UdpLite:
+TcpExt:
+    128 TCP sockets finished time wait in fast timer
+    48 delayed acks sent
+    2 delayed acks further delayed because of locked socket
+    Quick ack mode was activated 6 times
+    132834 packet headers predicted
+    10050 acknowledgments not containing data payload received
+    95199 predicted acknowledgments
+    TCPLossProbes: 4
+    TCPLossProbeRecovery: 3
+    TCPBacklogCoalesce: 224
+    TCPDSACKOldSent: 6
+    TCPDSACKRecv: 1
+    1805 connections reset due to unexpected data
+    18 connections reset due to early user close
+    IPReversePathFilter: 6
+    TCPRcvCoalesce: 10652
+    TCPOFOQueue: 36
+    TCPSpuriousRtxHostQueues: 1
+    TCPAutoCorking: 685
+    TCPFromZeroWindowAdv: 4
+    TCPToZeroWindowAdv: 4
+    TCPWantZeroWindowAdv: 98
+    TCPOrigDataSent: 131354
+    TCPHystartTrainDetect: 13
+    TCPHystartTrainCwnd: 293
+    TCPDelivered: 135243
+IpExt:
+    InNoRoutes: 1
+    InMcastPkts: 32
+    OutMcastPkts: 43
+    InOctets: 249420138
+    OutOctets: 47926898
+    InMcastOctets: 5462
+    OutMcastOctets: 5918
+    InNoECTPkts: 219045
+--- Culled netstat ---
+Ip:
+     Forwarding: 1
+    85941 total packets received
+    0 forwarded
+    0 incoming packets discarded
+    85932 incoming packets delivered
+    79738 requests sent out
+    20 outgoing packets dropped
+Icmp:
+    42 ICMP messages received
+    0 input ICMP message failed
+ICMP input         destination unreachable: 42
+    43 ICMP messages sent
+    0 ICMP messages failed
+ICMP output         destination unreachable: 43
+IcmpMsg: ... skipped
+Tcp:
+    4464 active connection openings
+    1820 passive connection openings
+    79 failed connection attempts
+    3223 connection resets received
+    7 connections established
+    177841 segments received
+    197079 segments sent out
+    4 segments retransmitted
+    0 bad segments received
+    1977 resets sent
+Udp:
+    16506 packets received
+    43 packets to unknown port received
+    0 packet receive errors
+    16550 packets sent
+    0 receive buffer errors
+    0 send buffer errors
+UdpLite: ... skipped
+TcpExt: ... skipped
+IpExt: ... skipped
+pat=\([0-9][0-9]*\) total packets received
+pat=\([0-9][0-9]*\) with invalid headers
+pat=\([0-9][0-9]*\) with invalid addresses
+pat=\([0-9][0-9]*\) forwarded
+pat=\([0-9][0-9]*\) with unknown protocol
+pat=\([0-9][0-9]*\) incoming packets discarded
+pat=\([0-9][0-9]*\) incoming packets delivered
+pat=\([0-9][0-9]*\) requests sent out
+pat=\([0-9][0-9]*\) outgoing packets dropped
+pat=\([0-9][0-9]*\) dropped because of missing route
+pat=\([0-9][0-9]*\) fragments dropped after timeout
+pat=\([0-9][0-9]*\) reassemblies required
+pat=\([0-9][0-9]*\) packets reassembled ok
+pat=\([0-9][0-9]*\) packet reassembles failed
+pat=\([0-9][0-9]*\) fragments received ok
+pat=\([0-9][0-9]*\) fragments failed
+pat=\([0-9][0-9]*\) fragments created
+pat=\([0-9][0-9]*\) ICMP messages received
+pat=\([0-9][0-9]*\) input ICMP message failed
+pat=ICMP input  *destination unreachable: \([0-9][0-9]*\)
+pat=ICMP input  *timeout in transit: \([0-9][0-9]*\)
+pat=ICMP input  *wrong parameters: \([0-9][0-9]*\)
+pat=ICMP input  *source quenches: \([0-9][0-9]*\)
+pat=ICMP input  *redirects: \([0-9][0-9]*\)
+pat=ICMP input  *echo requests: \([0-9][0-9]*\)
+pat=ICMP input  *echo replies: \([0-9][0-9]*\)
+pat=ICMP input  *timestamp request: \([0-9][0-9]*\)
+pat=ICMP input  *timestamp reply: \([0-9][0-9]*\)
+pat=ICMP input  *address mask request: \([0-9][0-9]*\)
+pat=ICMP input  *address mask replies: \([0-9][0-9]*\)
+pat=\([0-9][0-9]*\) ICMP messages sent
+pat=\([0-9][0-9]*\) ICMP messages failed
+pat=ICMP output *destination unreachable: \([0-9][0-9]*\)
+pat=ICMP output  *time exceeded: \([0-9][0-9]*\)
+pat=ICMP output  *wrong parameters: \([0-9][0-9]*\)
+pat=ICMP output  *source quench: \([0-9][0-9]*\)
+pat=ICMP output  *redirect: \([0-9][0-9]*\)
+pat=ICMP output  *echo requests*: \([0-9][0-9]*\)
+pat=ICMP output *echo replies: \([0-9][0-9]*\)
+pat=ICMP output  *timestamp requests: \([0-9][0-9]*\)
+pat=ICMP output  *timestamp replies: \([0-9][0-9]*\)
+pat=ICMP output  *address mask requests: \([0-9][0-9]*\)
+pat=ICMP output  *address mask replies: \([0-9][0-9]*\)
+pat=\([0-9][0-9]*\) failed connection attempts
+pat=\([0-9][0-9]*\) connection resets received
+pat=\([0-9][0-9]*\) segments received
+pat=\([0-9][0-9]*\) segments sen[dt] out
+pat=\([0-9][0-9]*\) segments retransmitt*ed
+pat=\([0-9][0-9]*\) bad segments received
+pat=\([0-9][0-9]*\) resets sent
+pat=\([0-9][0-9]*\) packets received
+pat=\([0-9][0-9]*\) packets to unknown port received
+pat=\([0-9][0-9]*\) packet receive errors
+pat=\([0-9][0-9]*\) packets sent
+=== Filtered second netstat ===
+85941
+0
+0
+0
+0
+0
+85932
+79738
+20
+0
+0
+0
+0
+0
+0
+0
+0
+42
+0
+42
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+43
+0
+43
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+79
+3223
+177841
+197079
+4
+0
+1977
+16506
+43
+0
+16550
+#!/bin/sh
+sts=0
+if /var/lib/pcp/testsuite/src/compare 85939 85939 85941; then :; else sts=1; echo "network.ip.inreceives = 85939 out of range 85939..85941"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.ip.inhdrerrors = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.ip.inaddrerrors = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.ip.forwdatagrams = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.ip.inunknownprotos = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.ip.indiscards = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 85930 85930 85932; then :; else sts=1; echo "network.ip.indelivers = 85930 out of range 85930..85932"; fi
+if /var/lib/pcp/testsuite/src/compare 79736 79736 79738; then :; else sts=1; echo "network.ip.outrequests = 79736 out of range 79736..79738"; fi
+if /var/lib/pcp/testsuite/src/compare 20 20 20; then :; else sts=1; echo "network.ip.outdiscards = 20 out of range 20..20"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.ip.outnoroutes = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.ip.reasmtimeout = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.ip.reasmreqds = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.ip.reasmoks = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.ip.reasmfails = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.ip.fragoks = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.ip.fragfails = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.ip.fragcreates = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 42 42 42; then :; else sts=1; echo "network.icmp.inmsgs = 42 out of range 42..42"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.inerrors = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 42 42 42; then :; else sts=1; echo "network.icmp.indestunreachs = 42 out of range 42..42"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.intimeexcds = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.inparmprobs = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.insrcquenchs = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.inredirects = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.inechos = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.inechoreps = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.intimestamps = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.intimestampreps = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.inaddrmasks = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.inaddrmaskreps = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 43 43 43; then :; else sts=1; echo "network.icmp.outmsgs = 43 out of range 43..43"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.outerrors = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 43 43 43; then :; else sts=1; echo "network.icmp.outdestunreachs = 43 out of range 43..43"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.outtimeexcds = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.outparmprobs = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.outsrcquenchs = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.outredirects = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.outechos = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.outechoreps = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.outtimestamps = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.outtimestampreps = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.outaddrmasks = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.icmp.outaddrmaskreps = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 79 79 79; then :; else sts=1; echo "network.tcp.attemptfails = 79 out of range 79..79"; fi
+if /var/lib/pcp/testsuite/src/compare 3223 3223 3223; then :; else sts=1; echo "network.tcp.estabresets = 3223 out of range 3223..3223"; fi
+if /var/lib/pcp/testsuite/src/compare 177839 177841 177841; then :; else sts=1; echo "network.tcp.insegs = 177841 out of range 177839..177841"; fi
+if /var/lib/pcp/testsuite/src/compare 197076 197079 197079; then :; else sts=1; echo "network.tcp.outsegs = 197079 out of range 197076..197079"; fi
+if /var/lib/pcp/testsuite/src/compare 4 4 4; then :; else sts=1; echo "network.tcp.retranssegs = 4 out of range 4..4"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.tcp.inerrs = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 1977 1977 1977; then :; else sts=1; echo "network.tcp.outrsts = 1977 out of range 1977..1977"; fi
+if /var/lib/pcp/testsuite/src/compare 16506 16506 16506; then :; else sts=1; echo "network.udp.indatagrams = 16506 out of range 16506..16506"; fi
+if /var/lib/pcp/testsuite/src/compare 43 43 43; then :; else sts=1; echo "network.udp.noports = 43 out of range 43..43"; fi
+if /var/lib/pcp/testsuite/src/compare 0 0 0; then :; else sts=1; echo "network.udp.inerrors = 0 out of range 0..0"; fi
+if /var/lib/pcp/testsuite/src/compare 16550 16550 16550; then :; else sts=1; echo "network.udp.outdatagrams = 16550 out of range 16550..16550"; fi
+exit 

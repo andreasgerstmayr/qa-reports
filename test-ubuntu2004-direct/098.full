@@ -1,0 +1,451 @@
+=== Start @ Fri Aug  7 13:40:21 UTC 2020 ===
+-rw-r--r-- 1 root root 2415 Aug  7 13:40 /var/log/pcp/pmcd/pmcd.log
+Performance Co-Pilot configuration on fv-az157:
+
+ platform: Linux fv-az157 5.4.0-1022-azure #22-Ubuntu SMP Fri Jul 10 06:14:37 UTC 2020 x86_64
+ hardware: 2 cpus, 2 disks, 1 node, 6927MB RAM
+ timezone: UTC
+ services: pmcd
+     pmcd: Version 5.2.1-1, 12 agents, 1 client
+     pmda: root pmcd proc pmproxy xfs sample sampledso linux mmv kvm
+           jbd2 simple
+ pmlogger: primary logger: /var/log/pcp/pmlogger/fv-az157/20200807.13.40-01
+logger_pid=380510
+pcp       379870       1 13 13:40 ?        00:00:00 /usr/lib/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M
+pcp       380510       1  0 13:40 ?        00:00:00 pmlogger -t 0.5sec -L -s 30 -c /dev/null -l /tmp/098-380409.log /tmp/098-380409
+Connected to pmlogger on port 4331 at local:
+
+=== pmlogger log ===
+Log for pmlogger on fv-az157 started Fri Aug  7 13:40:21 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs /dev/null -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "fv-az157" via "local:"
+Archive basename: /tmp/098-380409
+
+Fri Aug  7 13:40:24 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:24 2020
+pmlc request from localhost: mandatory on once
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:25 2020
+pmlc request from localhost: mandatory on once
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:26 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:26 2020
+pmlc request from localhost: mandatory on once
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:27 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:28 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:28 2020
+pmlc request from localhost: mandatory on once
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:29 2020
+pmlc request from localhost: mandatory off
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:30 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:30 2020
+pmlc request from localhost: mandatory on once
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:31 2020
+pmlc request from localhost: advisory on once
+  metric: sample.dupnames.two.seconds or sample.seconds [request failed]
+
+Fri Aug  7 13:40:32 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:32 2020
+pmlc request from localhost: mandatory on once
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:33 2020
+pmlc request from localhost: advisory off
+  metric: sample.dupnames.two.seconds or sample.seconds [request failed]
+
+Fri Aug  7 13:40:34 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:34 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:35 2020
+pmlc request from localhost: mandatory on once
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:36 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:36 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:37 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:38 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:38 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:39 2020
+pmlc request from localhost: mandatory off
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:40 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:40 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:41 2020
+pmlc request from localhost: advisory on once
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:42 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:42 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:43 2020
+pmlc request from localhost: advisory off
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:44 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:44 2020
+pmlc request from localhost: mandatory off
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:45 2020
+pmlc request from localhost: mandatory on once
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:46 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:46 2020
+pmlc request from localhost: mandatory off
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:47 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:48 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:48 2020
+pmlc request from localhost: mandatory off
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:49 2020
+pmlc request from localhost: mandatory off
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:50 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:50 2020
+pmlc request from localhost: mandatory off
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:51 2020
+pmlc request from localhost: advisory on once
+  metric: sample.dupnames.two.seconds or sample.seconds [request failed]
+
+Fri Aug  7 13:40:52 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:52 2020
+pmlc request from localhost: mandatory off
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:53 2020
+pmlc request from localhost: advisory off
+  metric: sample.dupnames.two.seconds or sample.seconds [request failed]
+
+Fri Aug  7 13:40:54 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:54 2020
+pmlc request from localhost: advisory on once
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:55 2020
+pmlc request from localhost: mandatory on once
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:56 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:56 2020
+pmlc request from localhost: advisory on once
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:57 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:58 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:40:58 2020
+pmlc request from localhost: advisory on once
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:00 2020
+pmlc request from localhost: mandatory off
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:01 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:01 2020
+pmlc request from localhost: advisory on once
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:02 2020
+pmlc request from localhost: advisory on once
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:03 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:03 2020
+pmlc request from localhost: advisory on once
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:04 2020
+pmlc request from localhost: advisory off
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:05 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:05 2020
+pmlc request from localhost: advisory off
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:06 2020
+pmlc request from localhost: mandatory on once
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:07 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:07 2020
+pmlc request from localhost: advisory off
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:08 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:09 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:09 2020
+pmlc request from localhost: advisory off
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:10 2020
+pmlc request from localhost: mandatory off
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:11 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:11 2020
+pmlc request from localhost: advisory off
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:12 2020
+pmlc request from localhost: advisory on once
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:13 2020
+pmlc request from localhost: mandatory maybe
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:13 2020
+pmlc request from localhost: advisory off
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:14 2020
+pmlc request from localhost: advisory off
+  metric: sample.dupnames.two.seconds or sample.seconds
+
+Fri Aug  7 13:41:15 2020
+pmlc request from localhost: mandatory on 0.0 sec
+  metric: sample.long.one
+pmlogger: Sample limit reached, exiting
+
+Log finished Fri Aug  7 13:41:15 2020
+
+=== pmdumplog ===
+
+13:40:21.731148 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [380510 or "380510"] value "fv-az157.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [380510 or "380510"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [380510 or "380510"] value "/tmp/098-380409"
+    2.0.23 (pmcd.pid): value 379476
+    2.0.24 (pmcd.seqnum): value 13
+
+13:40:24.767611 1 metric
+    29.0.2 (sample.dupnames.two.seconds or sample.seconds): value 7
+
+13:40:25.774231 1 metric
+    29.0.2 (sample.dupnames.two.seconds or sample.seconds): value 8
+
+13:40:26.781333 1 metric
+    29.0.2 (sample.dupnames.two.seconds or sample.seconds): value 9
+
+13:40:28.795741 1 metric
+    29.0.2 (sample.dupnames.two.seconds or sample.seconds): value 11
+
+13:40:30.811082 1 metric
+    29.0.2 (sample.dupnames.two.seconds or sample.seconds): value 13
+
+13:40:32.825141 1 metric
+    29.0.2 (sample.dupnames.two.seconds or sample.seconds): value 15
+
+13:40:35.844095 1 metric
+    29.0.2 (sample.dupnames.two.seconds or sample.seconds): value 18
+
+13:40:41.885835 1 metric
+    29.0.2 (sample.dupnames.two.seconds or sample.seconds): value 24
+
+13:40:45.912091 1 metric
+    29.0.2 (sample.dupnames.two.seconds or sample.seconds): value 28
+
+13:40:54.975281 1 metric
+    29.0.2 (sample.dupnames.two.seconds or sample.seconds): value 37
+
+13:40:55.981211 1 metric
+    29.0.2 (sample.dupnames.two.seconds or sample.seconds): value 38
+
+13:40:56.989232 1 metric
+    29.0.2 (sample.dupnames.two.seconds or sample.seconds): value 39
+
+13:40:59.001777 1 metric
+    29.0.2 (sample.dupnames.two.seconds or sample.seconds): value 41
+
+13:41:01.014276 1 metric
+    29.0.2 (sample.dupnames.two.seconds or sample.seconds): value 44
+
+13:41:02.020262 1 metric
+    29.0.2 (sample.dupnames.two.seconds or sample.seconds): value 45
+
+13:41:03.027228 1 metric
+    29.0.2 (sample.dupnames.two.seconds or sample.seconds): value 46
+
+13:41:06.046224 1 metric
+    29.0.2 (sample.dupnames.two.seconds or sample.seconds): value 49
+
+13:41:12.087178 1 metric
+    29.0.2 (sample.dupnames.two.seconds or sample.seconds): value 55
+
+13:41:15.106713 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:41:15.131677 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:41:15.156661 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:41:15.181659 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:41:15.206683 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:41:15.231630 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:41:15.256662 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:41:15.281685 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:41:15.306688 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:41:15.331623 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:41:15.356676 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:41:15.381731 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:41:15.417717 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [380510 or "380510"] value "fv-az157.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [380510 or "380510"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [380510 or "380510"] value "/tmp/098-380409"
+    2.0.23 (pmcd.pid): value 379476
+    2.0.24 (pmcd.seqnum): value 13
+
+=== End @ Fri Aug  7 13:41:15 UTC 2020 ===
+-rw-r--r-- 1 root root 2415 Aug  7 13:40 /var/log/pcp/pmcd/pmcd.log
+pmcd.log diffs ...
+Performance Co-Pilot configuration on fv-az157:
+
+ platform: Linux fv-az157 5.4.0-1022-azure #22-Ubuntu SMP Fri Jul 10 06:14:37 UTC 2020 x86_64
+ hardware: 2 cpus, 2 disks, 1 node, 6927MB RAM
+ timezone: UTC
+ services: pmcd
+     pmcd: Version 5.2.1-1, 12 agents, 1 client
+     pmda: root pmcd proc pmproxy xfs sample sampledso linux mmv kvm
+           jbd2 simple
+ pmlogger: primary logger: /var/log/pcp/pmlogger/fv-az157/20200807.13.40-01

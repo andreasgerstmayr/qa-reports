@@ -1,0 +1,136 @@
+
+13:36:19.562136 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [351465 or "351465"] value "fv-az157.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [351465 or "351465"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [351465 or "351465"] value "/tmp/038-351448"
+    2.0.23 (pmcd.pid): value 349835
+    2.0.24 (pmcd.seqnum): value 13
+
+13:36:19.582161 35 metrics
+    60.2.0 (kernel.all.load):
+        inst [1 or "1 minute"] value 0.60000002
+        inst [5 or "5 minute"] value 0.5
+        inst [15 or "15 minute"] value 0.77999997
+    60.1.9 (hinv.physmem): value 6927
+    60.0.42 (disk.all.write_bytes): value 5360541
+    60.0.41 (disk.all.read_bytes): value 1297658
+    60.0.37 (disk.all.blktotal): value 13316399
+    60.0.35 (kernel.all.cpu.wait.total): value 78630
+    60.0.34 (kernel.all.cpu.intr): value 14200
+    60.0.33 (hinv.ndisk): value 2
+    60.0.32 (hinv.ncpu): value 2
+    60.0.29 (disk.all.total): value 157411
+    60.0.27 (disk.all.blkwrite): value 10721082
+    60.0.26 (disk.all.blkread): value 2595317
+    60.0.25 (disk.all.write): value 96671
+    60.0.24 (disk.all.read): value 60740
+    60.0.23 (kernel.all.cpu.idle): value 2806030
+    60.0.22 (kernel.all.cpu.sys): value 562330
+    60.0.20 (kernel.all.cpu.user): value 1438960
+    60.0.14 (kernel.all.sysfork): value 351593
+    60.0.13 (kernel.all.pswitch): value 11478707
+    29.0.48 (sample.bucket):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+        inst [300 or "bin-300"] value 300
+        inst [400 or "bin-400"] value 400
+        inst [500 or "bin-500"] value 500
+        inst [600 or "bin-600"] value 600
+        inst [700 or "bin-700"] value 700
+        inst [800 or "bin-800"] value 800
+        inst [900 or "bin-900"] value 900
+    29.0.47 (sample.magnitude): value 64
+    29.0.46 (sample.dupnames.two.lights or sample.lights): value "red"
+    29.0.42 (sample.xmit_pdu): value 91
+    29.0.41 (sample.recv_pdu): value 107
+    29.0.40 (sample.pdu): value 198
+    29.0.39 (sample.sysinfo): value [c809000000000000009a000000000000e07f000000000000c0c700000000000000c0f3b00100000000b0194d0000000000f0460000000000002082180000000000f0ffff0000000000f0ffff000000008101000000000000000000000000000000000000000000000100000000000000]
+    29.0.36 (sample.dupnames.two.write_me or sample.dupnames.three.write_me or sample.write_me): value 2
+    29.0.9 (sample.noinst): No values returned!
+    29.0.8 (sample.step): value 20
+    29.0.7 (sample.drift): value 184
+    29.0.6 (sample.dupnames.two.bin or sample.dupnames.three.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+        inst [300 or "bin-300"] value 300
+        inst [400 or "bin-400"] value 400
+        inst [500 or "bin-500"] value 500
+        inst [600 or "bin-600"] value 600
+        inst [700 or "bin-700"] value 700
+        inst [800 or "bin-800"] value 800
+        inst [900 or "bin-900"] value 900
+    29.0.5 (sample.colour):
+        inst [0 or "red"] value 114
+        inst [1 or "green"] value 215
+        inst [2 or "blue"] value 316
+    29.0.4 (sample.load): value 42
+    29.0.3 (sample.milliseconds): value 18285.566
+    29.0.0 (sample.control): value 0
+
+13:36:20.582146 35 metrics
+    60.2.0 (kernel.all.load):
+        inst [1 or "1 minute"] value 0.60000002
+        inst [5 or "5 minute"] value 0.5
+        inst [15 or "15 minute"] value 0.77999997
+    60.1.9 (hinv.physmem): value 6927
+    60.0.42 (disk.all.write_bytes): value 5360541
+    60.0.41 (disk.all.read_bytes): value 1297658
+    60.0.37 (disk.all.blktotal): value 13316399
+    60.0.35 (kernel.all.cpu.wait.total): value 78630
+    60.0.34 (kernel.all.cpu.intr): value 14200
+    60.0.33 (hinv.ndisk): value 2
+    60.0.32 (hinv.ncpu): value 2
+    60.0.29 (disk.all.total): value 157411
+    60.0.27 (disk.all.blkwrite): value 10721082
+    60.0.26 (disk.all.blkread): value 2595317
+    60.0.25 (disk.all.write): value 96671
+    60.0.24 (disk.all.read): value 60740
+    60.0.23 (kernel.all.cpu.idle): value 2807980
+    60.0.22 (kernel.all.cpu.sys): value 562350
+    60.0.20 (kernel.all.cpu.user): value 1438980
+    60.0.14 (kernel.all.sysfork): value 351593
+    60.0.13 (kernel.all.pswitch): value 11480910
+    29.0.48 (sample.bucket):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+        inst [300 or "bin-300"] value 300
+        inst [400 or "bin-400"] value 400
+        inst [500 or "bin-500"] value 500
+        inst [600 or "bin-600"] value 600
+        inst [700 or "bin-700"] value 700
+        inst [800 or "bin-800"] value 800
+        inst [900 or "bin-900"] value 900
+    29.0.47 (sample.magnitude): value 64
+    29.0.46 (sample.dupnames.two.lights or sample.lights): value "red"
+    29.0.42 (sample.xmit_pdu): value 189
+    29.0.41 (sample.recv_pdu): value 206
+    29.0.40 (sample.pdu): value 395
+    29.0.39 (sample.sysinfo): value [c909000000000000009a000000000000e07f000000000000c0c700000000000000c0f3b00100000000c0204d0000000000f0460000000000002082180000000000f0ffff0000000000f0ffff000000008001000000000000000000000000000000000000000000000100000000000000]
+    29.0.36 (sample.dupnames.two.write_me or sample.dupnames.three.write_me or sample.write_me): value 2
+    29.0.9 (sample.noinst): No values returned!
+    29.0.8 (sample.step): value 20
+    29.0.7 (sample.drift): value 145
+    29.0.6 (sample.dupnames.two.bin or sample.dupnames.three.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+        inst [300 or "bin-300"] value 300
+        inst [400 or "bin-400"] value 400
+        inst [500 or "bin-500"] value 500
+        inst [600 or "bin-600"] value 600
+        inst [700 or "bin-700"] value 700
+        inst [800 or "bin-800"] value 800
+        inst [900 or "bin-900"] value 900
+    29.0.5 (sample.colour):
+        inst [0 or "red"] value 117
+        inst [1 or "green"] value 218
+        inst [2 or "blue"] value 319
+    29.0.4 (sample.load): value 42
+    29.0.3 (sample.milliseconds): value 19285.658
+    29.0.0 (sample.control): value 0
+
+13:36:20.594969 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [351465 or "351465"] value "fv-az157.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [351465 or "351465"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [351465 or "351465"] value "/tmp/038-351448"
+    2.0.23 (pmcd.pid): value 349835
+    2.0.24 (pmcd.seqnum): value 13

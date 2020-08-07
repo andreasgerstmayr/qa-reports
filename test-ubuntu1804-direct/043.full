@@ -1,0 +1,3 @@
+_open_primary_logger checking config file: /var/lib/pcp/config/pmlogger/config.default
+_service: using /etc/init.d/pcp restart
+_service: using systemctl restart .service then pmlogger.service

@@ -1,0 +1,55 @@
+{
+  "uid" : "c6d1e8deb07c8d7f",
+  "name" : "QA 217",
+  "fullName" : "QA #217 on centos6-container",
+  "historyId" : "217@centos6-container",
+  "time" : {
+    "start" : 1596807506000,
+    "stop" : 1596807507000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 217\n\ncheck mkaf and pmafm, after file(1) not used\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 217</p>\n<p>check mkaf and pmafm, after file(1) not used</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos6-container"
+  }, {
+    "name" : "host",
+    "value" : "centos6-container"
+  }, {
+    "name" : "epic",
+    "value" : "folio"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/5c4cb0868de9cc3352747b7436d1b394eacb9f55/qa/217",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/5c4cb0868de9cc3352747b7436d1b394eacb9f55/qa/217.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c6d1e8deb07c8d7f.json",
+  "parameterValues" : [ ]
+}

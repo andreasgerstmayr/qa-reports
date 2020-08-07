@@ -1,0 +1,151 @@
+tmp=/tmp/217-86849
+pwd: /tmp/217-86849
+src dir ...
+951127.23.01_v2.0
+951127.23.01_v2.index
+951127.23.01_v2.meta
+960624.08.17_v2.0
+960624.08.17_v2.index
+960624.08.17_v2.meta
+ace_v2.0
+ace_v2.index
+ace_v2.meta
+bar.0
+bar.index
+bar.meta
+bigace_v2.0
+bigace_v2.index
+bigace_v2.meta
+bigbin.0
+bigbin.index
+bigbin.meta
+bug_v2.0
+bug_v2.index
+bug_v2.meta
+dodgey-all.0
+dodgey-all.index
+dodgey-all.meta
+dodgey-mixed.0
+dodgey-mixed.index
+dodgey-mixed.meta
+dodgey-some.0
+dodgey-some.index
+dodgey-some.meta
+foo.0
+foo.index
+foo.meta
+interp.0
+interp.index
+interp.meta
+mirage.0
+mirage.index
+mirage.meta
+mv-bar.0
+mv-bar.1
+mv-bar.2
+mv-bar.3
+mv-bar.index
+mv-bar.meta
+mv-bigbin.0
+mv-bigbin.1
+mv-bigbin.2
+mv-bigbin.3
+mv-bigbin.4
+mv-bigbin.5
+mv-bigbin.6
+mv-bigbin.7
+mv-bigbin.8
+mv-bigbin.9
+mv-bigbin.index
+mv-bigbin.meta
+mv-foo.0
+mv-foo.1
+mv-foo.2
+mv-foo.index
+mv-foo.meta
+mv-interp.0
+mv-interp.1
+mv-interp.2
+mv-interp.index
+mv-interp.meta
+truncbin.0
+truncbin.index
+truncbin.meta
+PCPFolio
+Version: 1
+# use pmafm(1) to process this PCP archive folio
+#
+Created: on fv-az59 at Fri Aug  7 13:46:21 UTC 2020
+Creator: pmchart
+# 		Host			Basename
+#
+Archive:        gonzo                   951127.23.01_v2
+Archive:        brutus.corp             960624.08.17_v2
+Archive:        moomba                  ace_v2
+Archive:        fv-az59                 bar
+Archive:        moomba                  bigace_v2
+Archive:        fv-az59                 bigbin
+Archive:        sandpit                 bug_v2
+Archive:        fv-az59                 dodgey-all
+Archive:        fv-az59                 dodgey-mixed
+Archive:        fv-az59                 dodgey-some
+Archive:        fv-az59                 foo
+Archive:        fv-az59                 interp
+Archive:        gonzo                   mirage
+Archive:        fv-az59                 mv-bar
+Archive:        fv-az59                 mv-bigbin
+Archive:        fv-az59                 mv-foo
+Archive:        fv-az59                 mv-interp
+Archive:        fv-az59                 truncbin
+PCPFolio
+Version: 1
+# use pmafm(1) to process this PCP archive folio
+#
+Created: on fv-az59 at Fri Aug  7 13:46:22 UTC 2020
+Creator: pmchart
+# 		Host			Basename
+#
+Archive:        gonzo                   /tmp/217-86849/src/951127.23.01_v2
+Archive:        brutus.corp             /tmp/217-86849/src/960624.08.17_v2
+Archive:        moomba                  /tmp/217-86849/src/ace_v2
+Archive:        fv-az59                 /tmp/217-86849/src/bar
+Archive:        moomba                  /tmp/217-86849/src/bigace_v2
+Archive:        fv-az59                 /tmp/217-86849/src/bigbin
+Archive:        sandpit                 /tmp/217-86849/src/bug_v2
+Archive:        fv-az59                 /tmp/217-86849/src/dodgey-all
+Archive:        fv-az59                 /tmp/217-86849/src/dodgey-mixed
+Archive:        fv-az59                 /tmp/217-86849/src/dodgey-some
+Archive:        fv-az59                 /tmp/217-86849/src/foo
+Archive:        fv-az59                 /tmp/217-86849/src/interp
+Archive:        gonzo                   /tmp/217-86849/src/mirage
+Archive:        fv-az59                 /tmp/217-86849/src/mv-bar
+Archive:        fv-az59                 /tmp/217-86849/src/mv-bigbin
+Archive:        fv-az59                 /tmp/217-86849/src/mv-foo
+Archive:        fv-az59                 /tmp/217-86849/src/mv-interp
+Archive:        fv-az59                 /tmp/217-86849/src/truncbin
+PCPFolio
+Version: 1
+# use pmafm(1) to process this PCP archive folio
+#
+Created: on fv-az59 at Fri Aug  7 13:46:22 UTC 2020
+Creator: pmchart
+# 		Host			Basename
+#
+Archive:        gonzo                   src/951127.23.01_v2
+Archive:        brutus.corp             src/960624.08.17_v2
+Archive:        moomba                  src/ace_v2
+Archive:        fv-az59                 src/bar
+Archive:        moomba                  src/bigace_v2
+Archive:        fv-az59                 src/bigbin
+Archive:        sandpit                 src/bug_v2
+Archive:        fv-az59                 src/dodgey-all
+Archive:        fv-az59                 src/dodgey-mixed
+Archive:        fv-az59                 src/dodgey-some
+Archive:        fv-az59                 src/foo
+Archive:        fv-az59                 src/interp
+Archive:        gonzo                   src/mirage
+Archive:        fv-az59                 src/mv-bar
+Archive:        fv-az59                 src/mv-bigbin
+Archive:        fv-az59                 src/mv-foo
+Archive:        fv-az59                 src/mv-interp
+Archive:        fv-az59                 src/truncbin

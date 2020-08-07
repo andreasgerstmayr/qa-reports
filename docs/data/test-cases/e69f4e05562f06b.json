@@ -1,0 +1,86 @@
+{
+  "uid" : "e69f4e05562f06b",
+  "name" : "QA 169",
+  "fullName" : "QA #169 on centos6-container",
+  "historyId" : "169@centos6-container",
+  "time" : {
+    "start" : 1596807259000,
+    "stop" : 1596807285000,
+    "duration" : 26000
+  },
+  "description" : "PCP QA Test No. 169\n\n\n\nTest pmcd timeouts with the pmcd PMDA's pmcd.control.timeout\n\n\n\nTest setting the app's timeouts < pmcd's timeout and vice versa\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 169</p>\n<p>Test pmcd timeouts with the pmcd PMDA's pmcd.control.timeout</p>\n<p>Test setting the app's timeouts &lt; pmcd's timeout and vice versa</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform centos6 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 169.out.bad)\n4a5\n> [Fri Aug  7 13:34:20] pmcd(126432) Error: Failed to create avahi client: Daemon not running\n34a36\n> [Fri Aug  7 13:34:42] pmcd(126934) Error: Failed to create avahi client: Daemon not running\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds\nPMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds\nPMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 169\n\n\n\nTest pmcd timeouts with the pmcd PMDA's pmcd.control.timeout\n\n\n\nTest setting the app's timeouts < pmcd's timeout and vice versa\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 169.out.bad)\n4a5\n> [Fri Aug  7 13:34:20] pmcd(126432) Error: Failed to create avahi client: Daemon not running\n34a36\n> [Fri Aug  7 13:34:42] pmcd(126934) Error: Failed to create avahi client: Daemon not running\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds\nPMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds\nPMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "dcc76f3969354295",
+      "name" : "169.out.bad",
+      "source" : "dcc76f3969354295.txt",
+      "type" : "text/plain",
+      "size" : 1005
+    }, {
+      "uid" : "4199f5548b9c213b",
+      "name" : "169.full",
+      "source" : "4199f5548b9c213b.txt",
+      "type" : "text/plain",
+      "size" : 9967
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos6-container"
+  }, {
+    "name" : "host",
+    "value" : "centos6-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmcd"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "pmstore"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/5c4cb0868de9cc3352747b7436d1b394eacb9f55/qa/169",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/5c4cb0868de9cc3352747b7436d1b394eacb9f55/qa/169.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e69f4e05562f06b.json",
+  "parameterValues" : [ ]
+}

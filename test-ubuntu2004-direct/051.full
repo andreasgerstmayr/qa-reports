@@ -1,0 +1,1280 @@
+die.001================
+# Test whitespace in "[access]" token - for PCP QA test 051/die.001
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+
+die!
+die.001 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:45 2020
+
+pmcd config[line 7]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:45] pmcd(362385) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:45 2020
+die.001 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 7]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.001 filtered endlog ----------------
+die.002================
+# Test whitespace in "[access]" token - for PCP QA test 051/die.002
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[ access]
+
+die!
+die.002 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:45 2020
+
+pmcd config[line 7]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:45] pmcd(362411) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:45 2020
+die.002 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 7]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.002 filtered endlog ----------------
+die.003================
+# Test whitespace in "[access]" token - for PCP QA test 051/die.003
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[ access ]
+
+die!
+die.003 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:45 2020
+
+pmcd config[line 7]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:45] pmcd(362437) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:45 2020
+die.003 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 7]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.003 filtered endlog ----------------
+die.004================
+# Test whitespace in "[access]" token - for PCP QA test 051/die.004
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[ 
+# what the &^*%# is this doing here!?
+access
+ ]
+
+die!
+die.004 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:45 2020
+
+pmcd config[line 10]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:45] pmcd(362463) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:45 2020
+die.004 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 10]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.004 filtered endlog ----------------
+die.005================
+# Test missing host list - for PCP QA test 051/die.005
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow : all;
+
+die!
+die.005 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:45 2020
+
+pmcd config[line 6]: Error: no hosts in allow/disallow statement
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:45] pmcd(362489) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:45 2020
+die.005 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 6]: Error: no hosts in allow/disallow statement
+1 pmcd config[line 8]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.005 filtered endlog ----------------
+die.006================
+# Test missing comma in host list - for PCP QA test 051/die.006
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com www.aconex.com: all;
+
+die!
+die.006 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:45 2020
+
+pmcd config[line 6]: Error: ',' or ':' expected after "www.sgi.com"
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:45] pmcd(362515) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:45 2020
+die.006 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 6]: Error: ',' or ':' expected after "remote-host-1"
+1 pmcd config[line 8]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.006 filtered endlog ----------------
+die.007================
+# Test extra comma in host list - for PCP QA test 051/die.007
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com,: all;
+
+die!
+die.007 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:45 2020
+
+pmcd config[line 6]: Error: host expected after ','
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:45] pmcd(362541) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:45 2020
+die.007 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 6]: Error: host expected after ','
+1 pmcd config[line 8]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.007 filtered endlog ----------------
+die.008================
+# Test missing colon after host list - for PCP QA test 051/die.008
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com all;
+
+die!
+die.008 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:45 2020
+
+pmcd config[line 6]: Error: ',' or ':' expected after "www.sgi.com"
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:45] pmcd(362567) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:45 2020
+die.008 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 6]: Error: ',' or ':' expected after "remote-host-1"
+1 pmcd config[line 8]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.008 filtered endlog ----------------
+die.009================
+# Test extra comma and missing colon after host list - for PCP QA test 051/die.009
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com, all;
+
+die!
+die.009 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:45 2020
+
+pmcd config[line 6]: Error: ',' or ':' expected after "all"
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:45] pmcd(362593) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:45 2020
+die.009 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 6]: Error: ',' or ':' expected after "all"
+1 pmcd config[line 8]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.009 filtered endlog ----------------
+die.010================
+# Test missing semicolon - for PCP QA test 051/die.010
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com: all
+
+die!
+die.010 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:45 2020
+
+pmcd config[line 8]: Error: ',' or ';' expected in permission list
+[Fri Aug  7 13:37:45] pmcd(362619) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:45 2020
+die.010 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 8]: Error: ',' or ';' expected in permission list
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.010 filtered endlog ----------------
+die.011================
+# Test statement with lotsa whitespace and comments interspersed. - for PCP QA test 051/die.011
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+# I think
+   allow#that I
+#will never
+	   www.sgi.com
+
+
+
+#see
+  	:   #a thing as beautiful
+all
+# as
+# the bottom of my in-tray
+
+;
+
+    	die here!
+die.011 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:45 2020
+
+pmcd config[line 21]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:45] pmcd(362645) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:45 2020
+die.011 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 21]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.011 filtered endlog ----------------
+die.012================
+# Test all operation types. - for PCP QA test 051/die.012
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+
+allow www.sgi.com : fetch;
+allow www.sgi.com : store;
+allow www.sgi.com : all;
+allow www.sgi.com : maximum 666 connections;
+
+die!
+die.012 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:45 2020
+
+pmcd config[line 12]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:45] pmcd(362671) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:45 2020
+die.012 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 12]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.012 filtered endlog ----------------
+die.013================
+# Test all operations in a single permission list. - for PCP QA test 051/die.013
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com: fetch, store, maximum 666 connections;
+
+die!
+die.013 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:45 2020
+
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:45] pmcd(362697) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:45 2020
+die.013 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 8]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.013 filtered endlog ----------------
+die.014================
+# Test clash of "all" with a specific operation. - for PCP QA test 051/die.014
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com: all, fetch;
+
+die!
+die.014 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:45 2020
+
+pmcd config[line 6]: Error: can't have "all" mixed with specific permissions
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:45] pmcd(362723) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:45 2020
+die.014 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 6]: Error: can't have "all" mixed with specific permissions
+1 pmcd config[line 8]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.014 filtered endlog ----------------
+die.015================
+# Test that "all" works with a connection limit. - for PCP QA test 051/die.015
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com: all, maximum 666 connections;
+
+die!
+die.015 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:46 2020
+
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:46] pmcd(362749) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:46 2020
+die.015 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 8]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.015 filtered endlog ----------------
+die.016================
+# Test that specific operations work with a connection limit. - for PCP QA test 051/die.016
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com: fetch, store, maximum 666 connections;
+
+die!
+die.016 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:46 2020
+
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:46] pmcd(362775) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:46 2020
+die.016 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 8]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.016 filtered endlog ----------------
+die.017================
+# Test that a connection limit fails in a disallow. - for PCP QA test 051/die.017
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+disallow www.sgi.com: store, maximum 666 connections;
+
+die!
+die.017 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:46 2020
+
+pmcd config[line 6]: Error: can't specify connection limit in a disallow statement
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:46] pmcd(362801) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:46 2020
+die.017 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 6]: Error: can't specify connection limit in a disallow statement
+1 pmcd config[line 8]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.017 filtered endlog ----------------
+die.018================
+# Test that a connection limit fails in a disallow with except. - for PCP QA test 051/die.018
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+disallow www.sgi.com: all except fetch, maximum 666 connections;
+
+die!
+die.018 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:46 2020
+
+pmcd config[line 6]: Error: can't specify connection limit in a disallow statement
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:46] pmcd(362827) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:46 2020
+die.018 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 6]: Error: can't specify connection limit in a disallow statement
+1 pmcd config[line 8]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.018 filtered endlog ----------------
+die.019================
+# Test that a connection limit is OK in an allow with an except. - for PCP QA test 051/die.019
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com: all except store, maximum 666 connections;
+
+die!
+die.019 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:46 2020
+
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:46] pmcd(362853) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:46 2020
+die.019 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 8]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.019 filtered endlog ----------------
+die.020================
+# Test that a bogus hostname is detected - for PCP QA test 051/die.020
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow error...mebourne : fetch;
+
+die!
+die.020 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:46 2020
+
+[Fri Aug  7 13:37:46] pmcd(362879) Error: __pmGetAddrInfo(error...mebourne), Unknown server error
+Warning: the following access control specification will be ignored
+pmcd config[line 6]: Warning: access control error for host 'error...mebourne': No route to host
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:46] pmcd(362879) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:46 2020
+die.020 filtered logfile----------------
+0 Log for pmcd on HOST started DATE
+0 
+0 [DATE] pmcd(PID) Error: gethostbyname(error...mebourne), Unknown server error
+0 Warning: the following access control specification will be ignored
+0 pmcd config[line 6]: Warning: access control error for host 'HOST': No route to host
+0 pmcd config[line 8]: Error: allow or disallow statement expected
+0 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+0 
+0 Log finished DATE
+die.020 filtered endlog ----------------
+die.021================
+# Test a no such host condition - for PCP QA test 051/die.021
+#
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow nosuchhost.melbourne.sgi.com : fetch;
+
+die!
+die.021 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:46 2020
+
+[Fri Aug  7 13:37:46] pmcd(362905) Error: __pmGetAddrInfo(nosuchhost.melbourne.sgi.com), Unknown server error
+Warning: the following access control specification will be ignored
+pmcd config[line 6]: Warning: access control error for host 'nosuchhost.melbourne.sgi.com': No route to host
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:46] pmcd(362905) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:46 2020
+die.021 filtered logfile----------------
+0 Log for pmcd on HOST started DATE
+0 
+0 [DATE] pmcd(PID) Error: gethostbyname(nosuchhost.melbourne.sgi.com), Unknown server error
+0 Warning: the following access control specification will be ignored
+0 pmcd config[line 6]: Warning: access control error for host 'HOST': No route to host
+0 pmcd config[line 8]: Error: allow or disallow statement expected
+0 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+0 
+0 Log finished DATE
+die.021 filtered endlog ----------------
+die.022================
+# Test that a bogus IP address - for PCP QA test 051/die.022
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow 192.2.3.999 : fetch;
+
+die!
+die.022 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:46 2020
+
+[Fri Aug  7 13:37:46] pmcd(362931) Error: __pmGetAddrInfo(192.2.3.999), Unknown server error
+Warning: the following access control specification will be ignored
+pmcd config[line 6]: Warning: access control error for host '192.2.3.999': No route to host
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:46] pmcd(362931) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:46 2020
+die.022 filtered logfile----------------
+0 Log for pmcd on HOST started DATE
+0 
+0 [DATE] pmcd(PID) Error: gethostbyname(IPADDR), Unknown server error
+0 Warning: the following access control specification will be ignored
+0 pmcd config[line 6]: Warning: access control error for host 'HOST': No route to host
+0 pmcd config[line 8]: Error: allow or disallow statement expected
+0 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+0 
+0 Log finished DATE
+die.022 filtered endlog ----------------
+die.023================
+# Test bad wildcard detection in IP address - for PCP QA test 051/die.023
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow 192.*.2 : fetch;
+
+die!
+die.023 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:46 2020
+
+[Fri Aug  7 13:37:46] pmcd(362957) Error: Wildcard in host pattern "192.*.2" is not at the end
+pmcd config[line 6]: Warning: access control error for host '192.*.2': Invalid argument
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:46] pmcd(362957) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:46 2020
+die.023 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 [DATE] pmcd(PID) Error: Wildcard in host pattern "192.*.2" is not at the end
+1 pmcd config[line 6]: Warning: access control error for host 'HOST': Invalid argument
+1 pmcd config[line 8]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.023 filtered endlog ----------------
+die.024================
+# Test embedded wildcard detection in host name - for PCP QA test 051/die.024
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow *.melbourne : fetch;
+
+die!
+die.024 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:46 2020
+
+[Fri Aug  7 13:37:46] pmcd(362983) Error: Wildcard in host pattern "*.melbourne" is not at the end
+pmcd config[line 6]: Warning: access control error for host '*.melbourne': Invalid argument
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:46] pmcd(362983) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:46 2020
+die.024 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 [DATE] pmcd(PID) Error: Wildcard in host pattern "*.melbourne" is not at the end
+1 pmcd config[line 6]: Warning: access control error for host 'HOST': Invalid argument
+1 pmcd config[line 8]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.024 filtered endlog ----------------
+die.025================
+# Test wildcard detection in textual host name - for PCP QA test 051/die.025
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow melbourne.* : fetch;
+
+die!
+die.025 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:46 2020
+
+[Fri Aug  7 13:37:46] pmcd(363009) Error: Bad IP address wildcard, melbourne.*
+pmcd config[line 6]: Warning: access control error for host 'melbourne.*': Invalid argument
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:46] pmcd(363009) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:46 2020
+die.025 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 [DATE] pmcd(PID) Error: Bad IP address wildcard, melbourne.*
+1 pmcd config[line 6]: Warning: access control error for host 'HOST': Invalid argument
+1 pmcd config[line 8]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.025 filtered endlog ----------------
+die.026================
+# Test range check for IP address components - for PCP QA test 051/die.026
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow 192.-1.* : fetch;
+allow 192.256.* : fetch;
+
+die!
+die.026 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:46 2020
+
+[Fri Aug  7 13:37:46] pmcd(363035) Error: Bad IP address wildcard, 192.-1.*
+pmcd config[line 6]: Warning: access control error for host '192.-1.*': Invalid argument
+[Fri Aug  7 13:37:46] pmcd(363035) Error: Bad IP address wildcard, 192.256.*
+pmcd config[line 7]: Warning: access control error for host '192.256.*': Invalid argument
+pmcd config[line 9]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:46] pmcd(363035) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:46 2020
+die.026 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 [DATE] pmcd(PID) Error: Bad IP address wildcard, 192.-1.*
+1 pmcd config[line 6]: Warning: access control error for host 'HOST': Invalid argument
+1 [DATE] pmcd(PID) Error: Bad IP address wildcard, 192.256.*
+1 pmcd config[line 7]: Warning: access control error for host 'HOST': Invalid argument
+1 pmcd config[line 9]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.026 filtered endlog ----------------
+die.027================
+# Test "reinforcing" of permissions - for PCP QA test 051/die.027
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com : fetch;
+allow www.sgi.com : fetch;
+
+die!
+die.027 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:46 2020
+
+pmcd config[line 9]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:46] pmcd(363061) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:46 2020
+die.027 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 9]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.027 filtered endlog ----------------
+die.028================
+# Test contradictory permissions - for PCP QA test 051/die.028
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com : fetch;
+disallow www.sgi.com : fetch;
+
+die!
+die.028 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:46 2020
+
+[Fri Aug  7 13:37:46] pmcd(363087) Error: Permission clash for www.sgi.com with earlier statement for www.sgi.com
+pmcd config[line 7]: Warning: access control error for host 'www.sgi.com': Invalid argument
+pmcd config[line 9]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:46] pmcd(363087) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:46 2020
+die.028 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 [DATE] pmcd(PID) Error: Permission clash for ...
+1 pmcd config[line 7]: Warning: access control error for host 'HOST': Invalid argument
+1 pmcd config[line 9]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.028 filtered endlog ----------------
+die.029================
+# Test contradictory permissions with host aliasing (IP and name) - for PCP QA test 051/die.029
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow fv-az157 : all;
+disallow 10.1.0.4 : fetch;
+
+die!
+die.029 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:46 2020
+
+[Fri Aug  7 13:37:46] pmcd(363111) Error: Permission clash for 10.1.0.4 with earlier statement for fv-az157
+pmcd config[line 7]: Warning: access control error for host '10.1.0.4': Invalid argument
+pmcd config[line 9]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:46] pmcd(363111) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:46 2020
+die.029 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 [DATE] pmcd(PID) Error: Permission clash for ...
+1 pmcd config[line 7]: Warning: access control error for host 'HOST': Invalid argument
+1 pmcd config[line 9]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.029 filtered endlog ----------------
+die.030================
+# Test contradictory permissions with host aliasing (different names) - for PCP QA test 051/die.030
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com : all;
+disallow www.sgi.com : fetch;
+
+die!
+die.030 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:46 2020
+
+[Fri Aug  7 13:37:46] pmcd(363137) Error: Permission clash for www.sgi.com with earlier statement for www.sgi.com
+pmcd config[line 7]: Warning: access control error for host 'www.sgi.com': Invalid argument
+pmcd config[line 9]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:46] pmcd(363137) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:46 2020
+die.030 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 [DATE] pmcd(PID) Error: Permission clash for ...
+1 pmcd config[line 7]: Warning: access control error for host 'HOST': Invalid argument
+1 pmcd config[line 9]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.030 filtered endlog ----------------
+die.031================
+# Test mutually exclusive host lists - for PCP QA test 051/die.031
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com, www.aconex.com : all;
+disallow www.redhat.com, www.suse.com : store;
+
+die!
+die.031 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:46 2020
+
+pmcd config[line 9]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:47] pmcd(363164) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:47 2020
+die.031 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 9]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.031 filtered endlog ----------------
+die.032================
+# Test overlapping host lists - for PCP QA test 051/die.032
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com, www.aconex.com : all;
+allow www.redhat.com, www.aconex.com : fetch, store;
+
+die!
+die.032 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:47 2020
+
+pmcd config[line 9]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:47] pmcd(363190) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:47 2020
+die.032 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 9]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.032 filtered endlog ----------------
+die.033================
+# Test overlapping host lists with conflict - for PCP QA test 051/die.033
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com, www.suse.com, www.aconex.com : all;
+disallow www.redhat.com, www.aconex.com, sourceforge.net : store;
+
+die!
+die.033 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:47 2020
+
+[Fri Aug  7 13:37:47] pmcd(363216) Error: Permission clash for www.aconex.com with earlier statement for www.aconex.com
+pmcd config[line 7]: Warning: access control error for host 'www.aconex.com': Invalid argument
+pmcd config[line 9]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:47] pmcd(363216) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:47 2020
+die.033 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 [DATE] pmcd(PID) Error: Permission clash for ...
+1 pmcd config[line 7]: Warning: access control error for host 'HOST': Invalid argument
+1 pmcd config[line 9]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.033 filtered endlog ----------------
+die.034================
+# Test overlapping host lists with conflicting connection counts - for PCP QA test 051/die.034
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com, www.suse.com, www.aconex.com : all, maximum 30 connections;
+allow www.redhat.com, www.aconex.com, sourceforge.net : fetch, store, maximum 10 connections;
+
+die!
+die.034 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:47 2020
+
+[Fri Aug  7 13:37:47] pmcd(363243) Error: Permission clash for www.aconex.com with earlier statement for www.aconex.com
+pmcd config[line 7]: Warning: access control error for host 'www.aconex.com': Invalid argument
+pmcd config[line 9]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:47] pmcd(363243) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:47 2020
+die.034 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 [DATE] pmcd(PID) Error: Permission clash for ...
+1 pmcd config[line 7]: Warning: access control error for host 'HOST': Invalid argument
+1 pmcd config[line 9]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.034 filtered endlog ----------------
+die.035================
+# Test various levels of wildcarding - for PCP QA test 051/die.035
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow 192.68.139.105:	all;
+allow 192.68.139.*:	all, maximum 666 connections;
+allow 192.68.*:		all except store, maximum 555 connections;
+allow 192.*:		fetch, store, maximum 444 connections;
+allow *:		fetch, maximum 333 connections;
+
+die!
+die.035 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:47 2020
+
+pmcd config[line 12]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:47] pmcd(363270) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:47 2020
+die.035 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 12]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.035 filtered endlog ----------------
+die.036================
+# Test various levels of wildcarding with several similar setups - for PCP QA test 051/die.036
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow 192.68.139.105:	all;
+allow 192.68.139.*:	all, maximum 666 connections;
+allow 192.68.*:		all except store, maximum 555 connections;
+allow 192.*:		fetch, store, maximum 444 connections;
+allow *:		fetch, maximum 333 connections;
+
+allow 193.68.139.105:	all;
+allow 193.68.139.*:	all, maximum 666 connections;
+allow 193.68.*:		all except store, maximum 555 connections;
+allow 193.*:		fetch, store, maximum 444 connections;
+
+allow 194.68.139.105:	all;
+allow 194.68.139.*:	all, maximum 666 connections;
+allow 194.68.*:		all except store, maximum 555 connections;
+allow 194.*:		fetch, store, maximum 444 connections;
+
+die!
+die.036 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:47 2020
+
+pmcd config[line 22]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:47] pmcd(363296) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:47 2020
+die.036 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 22]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.036 filtered endlog ----------------
+die.037================
+# Test reinforcing of disallows - for PCP QA test 051/die.037
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+disallow www.sgi.com: fetch;
+disallow www.sgi.com: store;
+disallow www.sgi.com: all;
+
+die!
+die.037 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:47 2020
+
+pmcd config[line 10]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:47] pmcd(363322) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:47 2020
+die.037 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 10]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.037 filtered endlog ----------------
+die.038================
+# Test detection of multiple conflicting explicit connections limits - for PCP QA test 051/die.038
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com: maximum 5 connections, fetch, maximum 666 connections;
+
+die!
+die.038 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:47 2020
+
+pmcd config[line 6]: Error: connection limit already specified
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:47] pmcd(363348) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:47 2020
+die.038 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 6]: Error: connection limit already specified
+1 pmcd config[line 8]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.038 filtered endlog ----------------
+die.039================
+# Test detection of connections limits immediately after "all except" - for PCP QA test 051/die.039
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com: all except maximum 5 connections;
+
+die!
+die.039 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:47 2020
+
+pmcd config[line 6]: Error: connection limit may not immediately follow "all except"
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:47] pmcd(363374) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:47 2020
+die.039 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 6]: Error: connection limit may not immediately follow "all except"
+1 pmcd config[line 8]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.039 filtered endlog ----------------
+die.040================
+# Test unlimited connections access spec. - for PCP QA test 051/die.040
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com: unlimited connections;
+
+die!
+die.040 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:47 2020
+
+pmcd config[line 6]: Error: "connections" expected
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:47] pmcd(363400) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:47 2020
+die.040 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 6]: Error: "connections" expected
+1 pmcd config[line 8]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.040 filtered endlog ----------------
+die.041================
+# Test clash of unlimited connections with explicit maximum - for PCP QA test 051/die.041
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com: unlimited connections;
+allow www.sgi.com: fetch, maximum 666 connections;
+
+die!
+die.041 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:47 2020
+
+pmcd config[line 6]: Error: "connections" expected
+pmcd config[line 9]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:47] pmcd(363426) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:47 2020
+die.041 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 6]: Error: "connections" expected
+1 pmcd config[line 9]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.041 filtered endlog ----------------
+die.042================
+# Test reinforcing of unlimited connections - for PCP QA test 051/die.042
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com: store, unlimited connections;
+allow www.sgi.com: fetch, unlimited connections;
+
+die!
+die.042 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:47 2020
+
+pmcd config[line 6]: Error: "connections" expected
+pmcd config[line 7]: Error: "connections" expected
+pmcd config[line 9]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:47] pmcd(363452) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:47 2020
+die.042 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 6]: Error: "connections" expected
+1 pmcd config[line 7]: Error: "connections" expected
+1 pmcd config[line 9]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.042 filtered endlog ----------------
+die.043================
+# Test conflicts with localhost aliasing - for PCP QA test 051/die.043
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow localhost: all;
+disallow fv-az157: fetch;
+disallow 10.1.0.4 : store;
+
+die!
+die.043 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:47 2020
+
+[Fri Aug  7 13:37:47] pmcd(363475) Error: Permission clash for fv-az157 with earlier statement for localhost
+pmcd config[line 7]: Warning: access control error for host 'fv-az157': Invalid argument
+[Fri Aug  7 13:37:47] pmcd(363475) Error: Permission clash for 10.1.0.4 with earlier statement for localhost
+pmcd config[line 8]: Warning: access control error for host '10.1.0.4': Invalid argument
+pmcd config[line 10]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:47] pmcd(363475) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:47 2020
+die.043 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 [DATE] pmcd(PID) Error: Permission clash for ...
+1 pmcd config[line 7]: Warning: access control error for host 'HOST': Invalid argument
+1 [DATE] pmcd(PID) Error: Permission clash for ...
+1 pmcd config[line 8]: Warning: access control error for host 'HOST': Invalid argument
+1 pmcd config[line 10]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.043 filtered endlog ----------------
+die.044================
+# Check that log advisory and log mandatory no longer work
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com : log advisory;
+allow www.sgi.com : log mandatory;
+
+die!
+die.044 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:48 2020
+
+pmcd config[line 6]: Error: bad access specifier
+pmcd config[line 7]: Error: bad access specifier
+pmcd config[line 9]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:48] pmcd(363501) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:48 2020
+die.044 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 6]: Error: bad access specifier
+1 pmcd config[line 7]: Error: bad access specifier
+1 pmcd config[line 9]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.044 filtered endlog ----------------
+die.045================
+# Test invalid and valid operations in a single permission list. - for PCP QA test 051/die.045
+
+sample		254	socket	inet 2077	/var/lib/pcp/pmdas/sample/pmdasample -i 2077
+
+[access]
+allow www.sgi.com: fetch, store, log advisory, log mandatory, maximum 666 connections;
+
+die!
+die.045 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:48 2020
+
+pmcd config[line 6]: Error: bad access specifier
+pmcd config[line 8]: Error: allow or disallow statement expected
+[Fri Aug  7 13:37:48] pmcd(363527) Error: pmcd not started due to errors!
+
+Log finished Fri Aug  7 13:37:48 2020
+die.045 filtered logfile----------------
+1 Log for pmcd on HOST started DATE
+1 
+1 pmcd config[line 6]: Error: bad access specifier
+1 pmcd config[line 8]: Error: allow or disallow statement expected
+1 [DATE] pmcd(PID) Error: pmcd not started due to errors!
+1 
+1 Log finished DATE
+die.045 filtered endlog ----------------
+kill.001================
+# Test various special case tokens and the parser - for PCP QA test 051/kill.001
+
+tricky		128	pipe	binary		\
+			cat "whacko name" \
+			more  	 		 params x-D x-R x-d 43\
+21 back\\slash "broken\
+string" \
+abc:def 1;2;3 zzz "#abc\"def" "x \"y\" z" \#abc #and a comment\
+to_end
+kill.001 logfile----------------
+Log for pmcd on fv-az157 started Fri Aug  7 13:37:48 2020
+
+cat: 'whacko name': No such file or directory
+cat: more: No such file or directory
+cat: params: No such file or directory
+cat: x-D: No such file or directory
+cat: x-R: No such file or directory
+cat: x-d: No such file or directory
+cat: 43: No such file or directory
+cat: 21: No such file or directory
+cat: 'back\\slash': No such file or directory
+cat: 'broken string': No such file or directory
+cat: 'abc:def': No such file or directory
+cat: '1;2;3': No such file or directory
+cat: zzz: No such file or directory
+cat: '#abc"def': No such file or directory
+cat: 'x "y" z': No such file or directory
+cat: '#abc': No such file or directory
+pmcd: unexpected end-of-file at initial exchange with tricky PMDA
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+
+Host access list empty: host-based access control turned off
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+
+pmcd: PID = 363553, PDU version = 2
+pmcd request port(s):
+  sts fd   port  family address
+  === ==== ===== ====== =======
+  ok     5       unix   /tmp/051-361791.pmcd.socket
+  ok     3 44321 inet   INADDR_ANY
+  ok     4 44321 ipv6   INADDR_ANY
+[Fri Aug  7 13:37:51] pmcd(363553) Info: pmcd caught SIGTERM from pid=363552 uid=995
+[Fri Aug  7 13:37:51] pmcd(363553) Info: pmcd Shutdown
+
+Log finished Fri Aug  7 13:37:51 2020

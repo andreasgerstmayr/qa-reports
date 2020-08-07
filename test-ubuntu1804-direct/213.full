@@ -47,8 +47,8 @@ Metric: sampledso.secret.foo.bar
        leaf sampledso.secret.foo.bar.grunt.snort.six
        leaf sampledso.secret.foo.bar.grunt.snort.huff.puff.seven
 dbpmda> 
-dbpmda> open pipe /var/lib/pcp/pmdas/sample/pmdasample -U pcpqa 29 -l /tmp/213-80304.log
-Start pmdasample PMDA: /var/lib/pcp/pmdas/sample/pmdasample -U pcpqa 29 -l /tmp/213-80304.log
+dbpmda> open pipe /var/lib/pcp/pmdas/sample/pmdasample -U pcpqa 29 -l /tmp/213-85860.log
+Start pmdasample PMDA: /var/lib/pcp/pmdas/sample/pmdasample -U pcpqa 29 -l /tmp/213-85860.log
 dbpmda> name 29.0.1001
 PMID: 29.0.1001
    sample.secret.foo.one
@@ -97,10 +97,10 @@ Metric: sample.secret.foo.bar
    sample.secret.foo.bar.grunt.snort.six
    sample.secret.foo.bar.grunt.snort.huff.puff.seven
 dbpmda> 
-Log for pmdasample on fv-az116 started Thu Jul  2 15:03:55 2020
+Log for pmdasample on fv-az59 started Fri Aug  7 13:46:20 2020
 
 
-Log finished Thu Jul  2 15:03:55 2020
+Log finished Fri Aug  7 13:46:20 2020
 dbpmda> desc mmv.test.strings
 Warning: No PMDA currently opened
 dbpmda> fetch mmv.test.strings mmv.test.counter
@@ -109,15 +109,15 @@ dbpmda> text mmv.test.strings
 Warning: No PMDA currently opened
 dbpmda> store mmv.control.reload "1"
 Warning: No PMDA currently opened
-dbpmda> open pipe /var/lib/pcp/pmdas/mmv/pmdammv -U pcpqa -l /tmp/213-80304.log
-Start pmdammv PMDA: /var/lib/pcp/pmdas/mmv/pmdammv -U pcpqa -l /tmp/213-80304.log
+dbpmda> open pipe /var/lib/pcp/pmdas/mmv/pmdammv -U pcpqa -l /tmp/213-85860.log
+Start pmdammv PMDA: /var/lib/pcp/pmdas/mmv/pmdammv -U pcpqa -l /tmp/213-85860.log
 dbpmda> desc mmv.test.strings
 PMID: 70.1.6
     Data Type: string  InDom: 70.2049 0x11800801
     Semantics: instant  Units: none
 dbpmda> fetch mmv.test.strings mmv.test.counter
 PMID(s): 70.1.6 70.1.1
-pmResult dump from 0x55df9018e420 timestamp: 0.000000 00:00:00.000 numpmid: 2
+pmResult dump from 0x564d904c84a0 timestamp: 0.000000 00:00:00.000 numpmid: 2
   70.1.6 (<noname>): numval: 2 valfmt: 1 vlist[]:
     inst [0 or ???] value "00oo00"
     inst [1 or ???] value ""
@@ -145,7 +145,7 @@ PMID: 70.1.6
     Semantics: instant  Units: none
 dbpmda> fetch mmv.test.strings mmv.test.counter
 PMID(s): 70.1.6 70.1.1
-pmResult dump from 0x55df9019a6c0 timestamp: 0.000000 00:00:00.000 numpmid: 2
+pmResult dump from 0x564d904d4710 timestamp: 0.000000 00:00:00.000 numpmid: 2
   70.1.6 (<noname>): numval: 2 valfmt: 1 vlist[]:
     inst [0 or ???] value "00oo00"
     inst [1 or ???] value ""
@@ -161,7 +161,7 @@ Getting description...
 Getting Result Structure...
 70.0.0: 0 -> 1
 dbpmda> 
-Log for pmdammv on fv-az116 started Thu Jul  2 15:03:55 2020
+Log for pmdammv on fv-az59 started Fri Aug  7 13:46:20 2020
 
 
-Log finished Thu Jul  2 15:03:55 2020
+Log finished Fri Aug  7 13:46:20 2020

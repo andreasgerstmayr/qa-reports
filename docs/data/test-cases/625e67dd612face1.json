@@ -1,0 +1,65 @@
+{
+  "uid" : "625e67dd612face1",
+  "name" : "QA 231",
+  "fullName" : "QA #231 on ubuntu1804-direct",
+  "historyId" : "231@ubuntu1804-direct",
+  "time" : {
+    "start" : 1596808075000,
+    "stop" : 1596808075000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 231\n\nnumber w/out leading digit in pmie ... bug #421411\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner direct --platform ubuntu1804 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 231</p>\n<p>number w/out leading digit in pmie ... bug #421411</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner direct --platform ubuntu1804 reproduce\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "test cancelled",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "epic",
+    "value" : "pmie"
+  }, {
+    "name" : "epic",
+    "value" : "#421411"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "kernel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/5c4cb0868de9cc3352747b7436d1b394eacb9f55/qa/231",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/5c4cb0868de9cc3352747b7436d1b394eacb9f55/qa/231.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "625e67dd612face1.json",
+  "parameterValues" : [ ]
+}

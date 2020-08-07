@@ -1,0 +1,98 @@
+
+=== /tmp/160-31885.1.err ===
+Error expected ...
+__pmSetClientId(...): Attempt to use an illegal context
+
+=== /tmp/160-31885.1.out ===
+
+pmcd.client.whoami
+    inst [2 or "2"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/lib/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M"
+    inst [126 or "126"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/bin/pmie -b -F -P -l /var/log/pcp/pmie/fv-az59/pmie.log -c config.default"
+    inst [128 or "128"] value ""
+    inst [316 or "316"] value "fv-az59.internal.cloudapp.net (10.1.0.4) QA-clientid a"
+    inst [318 or "318"] value ""
+
+pmcd.client.whoami
+    inst [2 or "2"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/lib/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M"
+    inst [126 or "126"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/bin/pmie -b -F -P -l /var/log/pcp/pmie/fv-az59/pmie.log -c config.default"
+    inst [128 or "128"] value ""
+    inst [316 or "316"] value "fv-az59.internal.cloudapp.net (10.1.0.4) QA-clientid bb"
+    inst [319 or "319"] value ""
+
+pmcd.client.whoami
+    inst [2 or "2"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/lib/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M"
+    inst [126 or "126"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/bin/pmie -b -F -P -l /var/log/pcp/pmie/fv-az59/pmie.log -c config.default"
+    inst [128 or "128"] value ""
+    inst [316 or "316"] value "fv-az59.internal.cloudapp.net (10.1.0.4) QA-clientid ccc"
+    inst [320 or "320"] value ""
+
+pmcd.client.whoami
+    inst [2 or "2"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/lib/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M"
+    inst [126 or "126"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/bin/pmie -b -F -P -l /var/log/pcp/pmie/fv-az59/pmie.log -c config.default"
+    inst [128 or "128"] value ""
+    inst [316 or "316"] value "fv-az59.internal.cloudapp.net (10.1.0.4) QA-clientid dddd"
+    inst [321 or "321"] value ""
+
+pmcd.client.whoami
+    inst [2 or "2"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/lib/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M"
+    inst [126 or "126"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/bin/pmie -b -F -P -l /var/log/pcp/pmie/fv-az59/pmie.log -c config.default"
+    inst [128 or "128"] value ""
+    inst [316 or "316"] value "fv-az59.internal.cloudapp.net (10.1.0.4) QA-clientid eeeee"
+    inst [322 or "322"] value ""
+
+pmcd.client.whoami
+    inst [2 or "2"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/lib/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M"
+    inst [126 or "126"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/bin/pmie -b -F -P -l /var/log/pcp/pmie/fv-az59/pmie.log -c config.default"
+    inst [128 or "128"] value ""
+    inst [316 or "316"] value "fv-az59.internal.cloudapp.net (10.1.0.4) QA-clientid ffffff"
+    inst [323 or "323"] value ""
+
+pmcd.client.whoami
+    inst [2 or "2"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/lib/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M"
+    inst [126 or "126"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/bin/pmie -b -F -P -l /var/log/pcp/pmie/fv-az59/pmie.log -c config.default"
+    inst [128 or "128"] value ""
+    inst [316 or "316"] value "fv-az59.internal.cloudapp.net (10.1.0.4) QA-clientid ggggggg"
+    inst [324 or "324"] value ""
+
+pmcd.client.whoami
+    inst [2 or "2"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/lib/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M"
+    inst [126 or "126"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/bin/pmie -b -F -P -l /var/log/pcp/pmie/fv-az59/pmie.log -c config.default"
+    inst [128 or "128"] value ""
+    inst [316 or "316"] value "fv-az59.internal.cloudapp.net (10.1.0.4) QA-clientid hhhhhhhh"
+    inst [325 or "325"] value ""
+
+pmcd.client.whoami
+    inst [2 or "2"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/lib/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M"
+    inst [126 or "126"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/bin/pmie -b -F -P -l /var/log/pcp/pmie/fv-az59/pmie.log -c config.default"
+    inst [128 or "128"] value ""
+    inst [316 or "316"] value "fv-az59.internal.cloudapp.net (10.1.0.4) QA-clientid iiiiiiiii"
+    inst [326 or "326"] value ""
+
+=== /tmp/160-31885.2.err ===
+Error expected ...
+__pmSetClientId(...): Attempt to use an illegal context
+
+=== /tmp/160-31885.2.out ===
+
+pmcd.client.whoami
+    inst [2 or "2"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/lib/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M"
+    inst [126 or "126"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/bin/pmie -b -F -P -l /var/log/pcp/pmie/fv-az59/pmie.log -c config.default"
+    inst [128 or "128"] value ""
+    inst [316 or "316"] value "fv-az59.internal.cloudapp.net (10.1.0.4) QA-clientid iiiiiiiii"
+    inst [327 or "327"] value "fv-az59.internal.cloudapp.net (10.1.0.4) QA-clientid foo-bar-mumble"
+    inst [329 or "329"] value ""
+
+=== /tmp/160-31885.3.err ===
+Error expected ...
+__pmSetClientId(...): Attempt to use an illegal context
+
+=== /tmp/160-31885.3.out ===
+
+pmcd.client.whoami
+    inst [2 or "2"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/lib/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M"
+    inst [126 or "126"] value "fv-az59.internal.cloudapp.net (10.1.0.4) /usr/bin/pmie -b -F -P -l /var/log/pcp/pmie/fv-az59/pmie.log -c config.default"
+    inst [128 or "128"] value ""
+    inst [316 or "316"] value "fv-az59.internal.cloudapp.net (10.1.0.4) QA-clientid iiiiiiiii"
+    inst [327 or "327"] value "fv-az59.internal.cloudapp.net (10.1.0.4) QA-clientid foo-bar-mumble"
+    inst [330 or "330"] value "fv-az59.internal.cloudapp.net (10.1.0.4) QA-clientid here is a longer string to go in the ident place holder to try things out that are not quite so short and boring"
+    inst [332 or "332"] value ""

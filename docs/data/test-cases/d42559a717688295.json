@@ -1,0 +1,58 @@
+{
+  "uid" : "d42559a717688295",
+  "name" : "QA 070",
+  "fullName" : "QA #070 on centos6-container",
+  "historyId" : "070@centos6-container",
+  "time" : {
+    "start" : 1596806450000,
+    "stop" : 1596806450000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 070\n\ntests flags options in template.c \n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 070</p>\n<p>tests flags options in template.c</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "./getpmcdhosts: unable to get 1 host(s) with options: \"-L -n 1\"",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos6-container"
+  }, {
+    "name" : "host",
+    "value" : "centos6-container"
+  }, {
+    "name" : "epic",
+    "value" : "other"
+  }, {
+    "name" : "epic",
+    "value" : "ostest"
+  }, {
+    "name" : "epic",
+    "value" : "remote"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/5c4cb0868de9cc3352747b7436d1b394eacb9f55/qa/070",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/5c4cb0868de9cc3352747b7436d1b394eacb9f55/qa/070.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d42559a717688295.json",
+  "parameterValues" : [ ]
+}

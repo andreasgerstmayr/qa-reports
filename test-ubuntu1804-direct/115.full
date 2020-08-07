@@ -1,0 +1,22 @@
+
+=== /tmp/115-13807.out ===
+./getpmcdhosts: unable to get 1 host(s) with options: "-n 1 -L"
+
+=== /tmp/115-13807.tmp ===
+[Unit]
+Description=Performance Metrics Collector Daemon
+Documentation=man:pmcd(8)
+Wants=avahi-daemon.service
+After=network-online.target avahi-daemon.service
+Before=zabbix-agent.service
+ 
+[Service]
+Type=notify
+NotifyAccess=all
+Restart=no
+ExecStart=/etc/init.d/pmcd start-systemd
+ExecStop=/etc/init.d/pmcd stop-systemd
+PIDFile=/run/pcp/pmcd.pid
+ 
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,528 @@
+Group "not_in_container" is empty or not defined; ignored
+PMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch
+[0%] 000
+[0%] 001
+[0%] 002 0s ...
+[0%] 003
+[0%] 004
+[0%] 005
+[0%] 006
+[0%] 007
+[0%] 008 [not run] No qualified results file (008.out.31bf4ba31c7a) for the localhost
+[0%] 010
+[0%] 011
+[0%] 012
+[0%] 013
+[0%] 014
+[1%] 015
+[1%] 016
+[1%] 017
+[1%] 018
+[1%] 019
+[1%] 020
+[1%] 021
+[1%] 022
+[1%] 023 - output mismatch (see 023.out.bad)
+185a186,188
+> $PCP_RC_DIR/pmlogger: Warning: Performance Co-Pilot archive logger(s) not permanently enabled.
+>     To enable pmlogger, run the following as root:
+>     # /sbin/chkconfig pmlogger on
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch
+[1%] 024 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1 -a sample"
+[1%] 025 - output mismatch (see 025.out.bad)
+126a127,129
+> $PCP_RC_DIR/pmlogger: Warning: Performance Co-Pilot archive logger(s) not permanently enabled.
+>     To enable pmlogger, run the following as root:
+>     # /sbin/chkconfig pmlogger on
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch
+[1%] 026
+[1%] 027
+[2%] 028
+[2%] 029
+[2%] 030
+[2%] 031
+[2%] 032 - output mismatch (see 032.out.bad)
+1a2,4
+> $PCP_RC_DIR/pmlogger: Warning: Performance Co-Pilot archive logger(s) not permanently enabled.
+>     To enable pmlogger, run the following as root:
+>     # /sbin/chkconfig pmlogger on
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch
+[2%] 033 - output mismatch (see 033.out.bad)
+3d2
+<     inst [DISK] value NUMBER
+5d3
+<     inst [DISK] value NUMBER
+7d4
+<     inst [DISK] value NUMBER
+9d5
+<     inst [DISK] value NUMBER
+11d6
+<     inst [DISK] value NUMBER
+13d7
+<     inst [DISK] value NUMBER
+15d8
+<     inst [DISK] value STRING
+17d9
+<     inst [DISK] value NUMBER
+19d10
+<     inst [DISK] value NUMBER
+21d11
+<     inst [DISK] value NUMBER
+23d12
+<     inst [DISK] value NUMBER
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch
+[2%] 034
+[2%] 035
+[2%] 036 - output mismatch (see 036.out.bad)
+34,41c34,35
+< my arg echoer ...
+< [0] TMP.sh
+< [1] blah;trickme|foo
+< [2] cat
+< [3] and
+< [4] dog
+< __pmProcessExec: pid=PID wait_pid=PID exit=0
+< __pmProcessExec -> 0
+---
+> __pmProcessExec: pid=PID wait_pid=PID exit=127
+> __pmProcessExec -> 127 exit=127
+46,51d39
+< my arg echoer ...
+< [0] TMP.sh
+< [1] blah;trickme|foo
+< [2] cat
+< [3] and
+< [4] dog
+53,54c41,42
+< __pmProcessPipeClose: pid=PID wait_pid=PID exit=0
+< __pmProcessPipeClose() -> 0
+---
+> __pmProcessPipeClose: pid=PID wait_pid=PID exit=127
+> __pmProcessPipeClose() -> 127 exit=127
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch
+[2%] 037
+[2%] 038
+[2%] 039
+[2%] 040
+[2%] 041 - output mismatch (see 041.out.bad)
+14a15,17
+> $PCP_RC_DIR/pmlogger: Warning: Performance Co-Pilot archive logger(s) not permanently enabled.
+>     To enable pmlogger, run the following as root:
+>     # /sbin/chkconfig pmlogger on
+17a21,23
+> $PCP_RC_DIR/pmlogger: Warning: Performance Co-Pilot archive logger(s) not permanently enabled.
+>     To enable pmlogger, run the following as root:
+>     # /sbin/chkconfig pmlogger on
+27a34,36
+> $PCP_RC_DIR/pmlogger: Warning: Performance Co-Pilot archive logger(s) not permanently enabled.
+>     To enable pmlogger, run the following as root:
+>     # /sbin/chkconfig pmlogger on
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch
+[3%] 042 [not run] Running kernel does not support containers
+[3%] 043
+[3%] 044
+[3%] 045
+[3%] 046
+[3%] 047 [not run] Running kernel does not support containers
+[3%] 048
+[3%] 049
+[3%] 050
+[3%] 051 - output mismatch (see 051.out.bad)
+60a61
+> [Fri Aug  7 13:18:34] pmcd(43775) Error: Failed to create avahi client: Daemon not running
+77a79
+> [Fri Aug  7 13:18:34] pmcd(43801) Error: Failed to create avahi client: Daemon not running
+94a97
+> [Fri Aug  7 13:18:34] pmcd(43827) Error: Failed to create avahi client: Daemon not running
+114a118
+> [Fri Aug  7 13:18:34] pmcd(43853) Error: Failed to create avahi client: Daemon not running
+132a137
+> [Fri Aug  7 13:18:34] pmcd(43879) Error: Failed to create avahi client: Daemon not running
+151a157
+> [Fri Aug  7 13:18:34] pmcd(43905) Error: Failed to create avahi client: Daemon not running
+170a177
+> [Fri Aug  7 13:18:34] pmcd(43931) Error: Failed to create avahi client: Daemon not running
+189a197
+> [Fri Aug  7 13:18:34] pmcd(43957) Error: Failed to create avahi client: Daemon not running
+208a217
+> [Fri Aug  7 13:18:34] pmcd(43983) Error: Failed to create avahi client: Daemon not running
+227a237
+> [Fri Aug  7 13:18:34] pmcd(44009) Error: Failed to create avahi client: Daemon not running
+258a269
+> [Fri Aug  7 13:18:34] pmcd(44035) Error: Failed to create avahi client: Daemon not running
+280a292
+> [Fri Aug  7 13:18:34] pmcd(44061) Error: Failed to create avahi client: Daemon not running
+298a311
+> [Fri Aug  7 13:18:35] pmcd(44087) Error: Failed to create avahi client: Daemon not running
+316a330
+> [Fri Aug  7 13:18:35] pmcd(44113) Error: Failed to create avahi client: Daemon not running
+335a350
+> [Fri Aug  7 13:18:35] pmcd(44139) Error: Failed to create avahi client: Daemon not running
+353a369
+> [Fri Aug  7 13:18:35] pmcd(44165) Error: Failed to create avahi client: Daemon not running
+371a388
+> [Fri Aug  7 13:18:35] pmcd(44191) Error: Failed to create avahi client: Daemon not running
+390a408
+> [Fri Aug  7 13:18:35] pmcd(44217) Error: Failed to create avahi client: Daemon not running
+409a428
+> [Fri Aug  7 13:18:35] pmcd(44243) Error: Failed to create avahi client: Daemon not running
+427a447
+> [Fri Aug  7 13:18:35] pmcd(44269) Error: Failed to create avahi client: Daemon not running
+448a469
+> [Fri Aug  7 13:18:35] pmcd(44295) Error: Failed to create avahi client: Daemon not running
+469a491
+> [Fri Aug  7 13:18:46] pmcd(44321) Error: Failed to create avahi client: Daemon not running
+490a513
+> [Fri Aug  7 13:18:51] pmcd(44347) Error: Failed to create avahi client: Daemon not running
+510a534
+> [Fri Aug  7 13:18:51] pmcd(44373) Error: Failed to create avahi client: Daemon not running
+530a555
+> [Fri Aug  7 13:18:51] pmcd(44399) Error: Failed to create avahi client: Daemon not running
+551a577
+> [Fri Aug  7 13:18:51] pmcd(44425) Error: Failed to create avahi client: Daemon not running
+574a601
+> [Fri Aug  7 13:18:51] pmcd(44451) Error: Failed to create avahi client: Daemon not running
+593a621
+> [Fri Aug  7 13:18:51] pmcd(44477) Error: Failed to create avahi client: Daemon not running
+606a635
+> [Fri Aug  7 13:18:51] pmcd(44501) Error: Failed to create avahi client: Daemon not running
+627a657
+> [Fri Aug  7 13:18:51] pmcd(44527) Error: Failed to create avahi client: Daemon not running
+648a679
+> [Fri Aug  7 13:18:51] pmcd(44554) Error: Failed to create avahi client: Daemon not running
+667a699
+> [Fri Aug  7 13:18:52] pmcd(44580) Error: Failed to create avahi client: Daemon not running
+686a719
+> [Fri Aug  7 13:18:52] pmcd(44606) Error: Failed to create avahi client: Daemon not running
+707a741
+> [Fri Aug  7 13:18:53] pmcd(44633) Error: Failed to create avahi client: Daemon not running
+731a766
+> [Fri Aug  7 13:18:53] pmcd(44660) Error: Failed to create avahi client: Daemon not running
+763a799
+> [Fri Aug  7 13:18:53] pmcd(44686) Error: Failed to create avahi client: Daemon not running
+783a820
+> [Fri Aug  7 13:18:53] pmcd(44712) Error: Failed to create avahi client: Daemon not running
+801a839
+> [Fri Aug  7 13:18:53] pmcd(44738) Error: Failed to create avahi client: Daemon not running
+820a859
+> [Fri Aug  7 13:18:53] pmcd(44764) Error: Failed to create avahi client: Daemon not running
+839a879
+> [Fri Aug  7 13:18:53] pmcd(44790) Error: Failed to create avahi client: Daemon not running
+859a900
+> [Fri Aug  7 13:18:53] pmcd(44816) Error: Failed to create avahi client: Daemon not running
+879a921
+> [Fri Aug  7 13:18:53] pmcd(44842) Error: Failed to create avahi client: Daemon not running
+892a935
+> [Fri Aug  7 13:18:53] pmcd(44865) Error: Failed to create avahi client: Daemon not running
+915a959
+> [Fri Aug  7 13:18:53] pmcd(44891) Error: Failed to create avahi client: Daemon not running
+935a980
+> [Fri Aug  7 13:18:53] pmcd(44917) Error: Failed to create avahi client: Daemon not running
+958a1004
+> [Fri Aug  7 13:18:53] pmcd(44944) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch
+[3%] 052
+[3%] 053
+[3%] 054 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n1"
+[4%] 055
+[4%] 056
+[4%] 057
+[4%] 058
+[4%] 059
+[4%] 060
+[4%] 061
+[4%] 062
+[4%] 063 [failed, exit status 126] - output mismatch (see 063.out.bad)
+2c2
+< __pmOptFetchRedo returns: 0
+---
+> ./063: line 36: /tmp/063-48759: Permission denied
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch
+[4%] 064
+[4%] 065
+[4%] 066 [not run] Cannot find two remote hosts running pmcd
+[4%] 067 - output mismatch (see 067.out.bad)
+5a6
+> [Fri Aug  7 13:20:28] pmcd(50888) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch
+[4%] 068
+[5%] 069 [not run] Cannot find first remote host running pmcd
+[5%] 070 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[5%] 071
+[5%] 072 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[5%] 073
+[5%] 074
+[5%] 075 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1 -a sample"
+[5%] 076
+[5%] 077 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-n 1 -L"
+[5%] 078
+[5%] 079
+[5%] 080
+[5%] 081 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-p single -n 1 -v pcp>=2"
+[6%] 082
+[6%] 083 [not run] Cannot find first remote host running pmcd v2.x
+[6%] 084
+[6%] 085
+[6%] 086 [not run] Unable to find two other hosts
+[6%] 087
+[6%] 088
+[6%] 089
+[6%] 090
+[6%] 091
+[6%] 092
+[6%] 093
+[6%] 094
+[6%] 095
+[7%] 096
+[7%] 097
+[7%] 098
+[7%] 099
+[7%] 100
+[7%] 101
+[7%] 102
+[7%] 103
+[7%] 104
+[7%] 105
+[7%] 106
+[7%] 107
+[7%] 108
+[8%] 109
+[8%] 110
+[8%] 111
+[8%] 112
+[8%] 113 [not run] System has active loop devices, bailing
+[8%] 114
+[8%] 115 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-n 1 -L"
+[8%] 116 [not run] PCPQA_HYPHEN_HOST is not set in ./common.config
+[8%] 117 [not run] network.ip checks for linux done in test 216
+[8%] 118
+[8%] 119
+[8%] 120
+[8%] 121
+[8%] 122 [not run] Cannot find big endian host running pmdatrace
+[9%] 123
+[9%] 124
+[9%] 125
+[9%] 127
+[9%] 128
+[9%] 129
+[9%] 130 [not run] TODO: Need to reconcile rpc.server metrics for PCP_PLATFORM linux
+[9%] 131 [not run] PCPQA_FAR_PMCD is not set in ./common.config
+[9%] 132
+[9%] 133
+[9%] 134
+[9%] 135
+[9%] 136
+[10%] 137
+[10%] 138
+[10%] 139
+[10%] 140
+[10%] 141
+[10%] 142
+[10%] 143
+[10%] 144
+[10%] 145
+[10%] 146
+[10%] 147
+[10%] 149
+[10%] 150
+[10%] 151 - output mismatch (see 151.out.bad)
+67a68
+> Info: found .NeedRewrite => rewrite all archives
+70a72
+> Info: pmlogrewrite all archives in TMP
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch
+[11%] 152
+[11%] 153
+[11%] 154
+[11%] 155
+[11%] 156
+[11%] 157
+[11%] 158
+[11%] 159 [not run] No cisco router set via $PCPQA_CISCO_ROUTER in ./common.config
+[11%] 160
+[11%] 161
+[11%] 163
+[11%] 165
+[11%] 166
+[12%] 167
+[12%] 168
+[12%] 169 - output mismatch (see 169.out.bad)
+4a5
+> [Fri Aug  7 13:34:20] pmcd(126432) Error: Failed to create avahi client: Daemon not running
+34a36
+> [Fri Aug  7 13:34:42] pmcd(126934) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch
+[12%] 170
+[12%] 171
+[12%] 172 - output mismatch (see 172.out.bad)
+2a3
+> [Fri Aug  7 13:34:56] pmcd(814) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch
+[12%] 173
+[12%] 174
+[12%] 175
+[12%] 176
+[12%] 177
+[12%] 178
+[12%] 179
+[12%] 180
+[13%] 181
+[13%] 182
+[13%] 186
+[13%] 187 [not run] Cannot find a remote host running pmcd
+[13%] 188
+[13%] 189
+[13%] 190
+[13%] 191
+[13%] 192
+[13%] 193
+[13%] 194
+[13%] 195
+[13%] 196
+[14%] 197
+[14%] 198
+[14%] 199
+[14%] 200 - output mismatch (see 200.out.bad)
+28a29
+> [Fri Aug  7 13:37:59] pmcd(16392) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch
+[14%] 201
+[14%] 202
+[14%] 203
+[14%] 204
+[14%] 205
+[14%] 206
+[14%] 207
+[14%] 208
+[14%] 209
+[14%] 210
+[15%] 211
+[15%] 213
+[15%] 214
+[15%] 215 [not run] pmsocks is not installed and/or not configured
+[15%] 216
+[15%] 217
+[15%] 218
+[15%] 219 [not run] new style /usr/include/pcp/pmdbg.h, nothing to test
+[15%] 220
+[15%] 221
+[15%] 222
+[15%] 224
+[15%] 225
+[16%] 226
+[16%] 227
+[16%] 228
+[16%] 229
+[16%] 230
+[16%] 231
+[16%] 232
+[16%] 233
+[16%] 234
+[16%] 235
+[16%] 236
+[16%] 237
+[16%] 238
+[16%] 239
+[17%] 240
+[17%] 241
+[17%] 242
+[17%] 243 - output mismatch (see 243.out.bad)
+1a2
+> [Fri Aug  7 13:40:29] pmcd(34386) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch
+[17%] 244
+[17%] 245
+[17%] 246
+[17%] 247
+[17%] 248
+[17%] 249
+[17%] 250 - output mismatch (see 250.out.bad)
+10a11
+> sudo: unable to execute ./Rebuild: Permission denied
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch
+[17%] 251
+[17%] 252
+[18%] 253
+[18%] 254
+[18%] 255 - output mismatch (see 255.out.bad)
+23a24
+> [Fri Aug  7 13:41:24] pmcd(40290) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds
+PMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch
+[18%] 256
+[18%] 257 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-s linux -b 32 -m pmcd.version>2.0 -n 1 -a sample"
+[18%] 258
+[18%] 259
+[18%] 260
+[18%] 261
+[18%] 262 [not run] pmsocks is not installed and/or not configured
+[18%] 263
+[18%] 264
+[18%] 265
+[18%] 266
+[19%] 267
+[19%] 268
+[19%] 269
+[19%] 270
+[19%] 271
+[19%] 272 [not run] ./getpmcdhosts: unable to get 2 host(s) with options: "-n 2 -L -a sample -v pcp>=2 -s IRIX64"
+[19%] 273
+[19%] 274
+[19%] 275
+[19%] 276 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[19%] 277
+[19%] 278
+[19%] 279
+[20%] 280
+[20%] 281
+[20%] 282

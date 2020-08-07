@@ -1,0 +1,36 @@
+QA output created by 169
+
+Test pmcd timeouts with the pmcd PMDA's pmcd.control.timeout
+
+[Fri Aug  7 13:34:20] pmcd(126432) Error: Failed to create avahi client: Daemon not running
+
+*** pmcd agent timeout < app timeout ***
+*** pmcd will killoff agent ***
+
+app timeout = 10
+pmcd timeout = 5
+pmcd.control.timeout old value=5 new value=5
+
+Expect dummyproc to fail (IPC protocol failure):
+dummyproc: pmLookupDesc: IPC protocol failure
+
+pmcd terminated dummy the dumb_pmda agent as desired
+
+
+*** pmcd agent timeout > app timeout ***
+*** pmcd will not killoff agent until later ***
+
+app timeout = 5
+pmcd timeout = 10
+pmcd.control.timeout old value=5 new value=10
+
+Expect dummyproc to fail (timeout for pmcd failure):
+dummyproc: pmLookupDesc: Timeout waiting for a response from PMCD
+
+pmcd did NOT terminate the dumb_pmda agent as desired
+
+Now wait for pmcd to timeout...
+
+pmcd terminated the dumb_pmda agent as desired
+
+[Fri Aug  7 13:34:42] pmcd(126934) Error: Failed to create avahi client: Daemon not running

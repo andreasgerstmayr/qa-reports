@@ -1,0 +1,150 @@
+
+13:44:06.036360 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [384535 or "384535"] value "fv-az157.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [384535 or "384535"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [384535 or "384535"] value "/tmp/103-384505"
+    2.0.23 (pmcd.pid): value 383726
+    2.0.24 (pmcd.seqnum): value 13
+
+13:44:07.540039 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+        inst [300 or "bin-300"] value 300
+
+13:44:08.048555 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [200 or "bin-200"] value 200
+        inst [400 or "bin-400"] value 400
+
+13:44:08.558026 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+        inst [300 or "bin-300"] value 300
+
+13:44:09.575227 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+        inst [300 or "bin-300"] value 300
+
+13:44:10.591915 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+        inst [300 or "bin-300"] value 300
+
+13:44:11.099752 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [400 or "bin-400"] value 400
+
+13:44:11.608576 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+        inst [300 or "bin-300"] value 300
+
+13:44:13.131934 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [200 or "bin-200"] value 200
+        inst [400 or "bin-400"] value 400
+
+13:44:16.179344 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [200 or "bin-200"] value 200
+        inst [400 or "bin-400"] value 400
+
+13:44:18.211843 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [200 or "bin-200"] value 200
+        inst [400 or "bin-400"] value 400
+
+13:44:21.267398 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): inst [400 or "bin-400"] value 400
+
+13:44:22.795270 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+        inst [300 or "bin-300"] value 300
+
+13:44:23.303214 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [200 or "bin-200"] value 200
+        inst [400 or "bin-400"] value 400
+
+13:44:23.812160 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+        inst [300 or "bin-300"] value 300
+
+13:44:24.828081 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+        inst [300 or "bin-300"] value 300
+
+13:44:25.844678 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+        inst [300 or "bin-300"] value 300
+
+13:44:26.352090 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [200 or "bin-200"] value 200
+        inst [400 or "bin-400"] value 400
+
+13:44:26.861201 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [100 or "bin-100"] value 100
+        inst [200 or "bin-200"] value 200
+        inst [300 or "bin-300"] value 300
+
+13:44:28.386703 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [200 or "bin-200"] value 200
+        inst [400 or "bin-400"] value 400
+
+13:44:31.435285 1 metric
+    29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin):
+        inst [200 or "bin-200"] value 200
+        inst [400 or "bin-400"] value 400
+
+13:44:32.960039 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:44:32.985043 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:44:33.010053 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:44:33.035047 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:44:33.060056 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:44:33.085105 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:44:33.110101 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:44:33.135100 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:44:33.160023 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:44:33.185013 1 metric
+    29.0.10 (sample.long.one): value 1
+
+13:44:33.219697 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [384535 or "384535"] value "fv-az157.internal.cloudapp.net"
+    2.3.0 (pmcd.pmlogger.port): inst [384535 or "384535"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [384535 or "384535"] value "/tmp/103-384505"
+    2.0.23 (pmcd.pid): value 383726
+    2.0.24 (pmcd.seqnum): value 13

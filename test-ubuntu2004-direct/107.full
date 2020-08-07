@@ -461,235 +461,235 @@ disk.md.flush_rawactive
     adv  off nl              [0 or "md0"]
 
 network.interface.collisions
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.mtu
-    adv  on  nl         once [0 or "lo"]
-    adv  on  nl         once [1 or "eth0"]
-    adv  on  nl         once [2 or "virbr0-nic"]
-    adv  on  nl         once [3 or "docker0"]
-    adv  on  nl         once [4 or "virbr0"]
+    adv  on  nl         once [0 or "virbr0"]
+    adv  on  nl         once [1 or "docker0"]
+    adv  on  nl         once [2 or "lo"]
+    adv  on  nl         once [3 or "virbr0-nic"]
+    adv  on  nl         once [4 or "eth0"]
 
 network.interface.speed
-    adv  on  nl         once [0 or "lo"]
-    adv  on  nl         once [1 or "eth0"]
-    adv  on  nl         once [2 or "virbr0-nic"]
-    adv  on  nl         once [3 or "docker0"]
-    adv  on  nl         once [4 or "virbr0"]
+    adv  on  nl         once [0 or "virbr0"]
+    adv  on  nl         once [1 or "docker0"]
+    adv  on  nl         once [2 or "lo"]
+    adv  on  nl         once [3 or "virbr0-nic"]
+    adv  on  nl         once [4 or "eth0"]
 
 network.interface.baudrate
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.duplex
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.up
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.running
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.wireless
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.type
-    adv  off nl              [0 or "lo"]
-    adv  off nl              [1 or "eth0"]
-    adv  off nl              [2 or "virbr0-nic"]
-    adv  off nl              [3 or "docker0"]
-    adv  off nl              [4 or "virbr0"]
+    adv  off nl              [0 or "virbr0"]
+    adv  off nl              [1 or "docker0"]
+    adv  off nl              [2 or "lo"]
+    adv  off nl              [3 or "virbr0-nic"]
+    adv  off nl              [4 or "eth0"]
 
 network.interface.inet_addr
-    adv  on  nl         once [0 or "lo"]
-    adv  on  nl         once [1 or "eth0"]
-    adv  on  nl         once [2 or "docker0"]
-    adv  on  nl         once [3 or "virbr0"]
-    adv  on  nl         once [4 or "virbr0-nic"]
+    adv  on  nl         once [0 or "virbr0"]
+    adv  on  nl         once [1 or "lo"]
+    adv  on  nl         once [2 or "virbr0-nic"]
+    adv  on  nl         once [3 or "eth0"]
+    adv  on  nl         once [4 or "docker0"]
 
 network.interface.ipv6_addr
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "docker0"]
-    adv  on  nl       1 min  [3 or "virbr0"]
-    adv  on  nl       1 min  [4 or "virbr0-nic"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "lo"]
+    adv  on  nl       1 min  [2 or "virbr0-nic"]
+    adv  on  nl       1 min  [3 or "eth0"]
+    adv  on  nl       1 min  [4 or "docker0"]
 
 network.interface.ipv6_scope
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "docker0"]
-    adv  on  nl       1 min  [3 or "virbr0"]
-    adv  on  nl       1 min  [4 or "virbr0-nic"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "lo"]
+    adv  on  nl       1 min  [2 or "virbr0-nic"]
+    adv  on  nl       1 min  [3 or "eth0"]
+    adv  on  nl       1 min  [4 or "docker0"]
 
 network.interface.hw_addr
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "docker0"]
-    adv  on  nl       1 min  [3 or "virbr0"]
-    adv  on  nl       1 min  [4 or "virbr0-nic"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "lo"]
+    adv  on  nl       1 min  [2 or "virbr0-nic"]
+    adv  on  nl       1 min  [3 or "eth0"]
+    adv  on  nl       1 min  [4 or "docker0"]
 
 network.interface.in.bytes
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.in.packets
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.in.errors
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.in.drops
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.in.fifo
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.in.frame
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.in.compressed
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.in.mcasts
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.out.bytes
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.out.packets
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.out.errors
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.out.drops
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.out.fifo
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.out.carrier
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.out.compressed
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.total.bytes
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.total.packets
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.total.errors
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.total.drops
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.interface.total.mcasts
-    adv  on  nl       1 min  [0 or "lo"]
-    adv  on  nl       1 min  [1 or "eth0"]
-    adv  on  nl       1 min  [2 or "virbr0-nic"]
-    adv  on  nl       1 min  [3 or "docker0"]
-    adv  on  nl       1 min  [4 or "virbr0"]
+    adv  on  nl       1 min  [0 or "virbr0"]
+    adv  on  nl       1 min  [1 or "docker0"]
+    adv  on  nl       1 min  [2 or "lo"]
+    adv  on  nl       1 min  [3 or "virbr0-nic"]
+    adv  on  nl       1 min  [4 or "eth0"]
 
 network.sockstat.total
     adv  on  nl       1 min 
@@ -2227,6 +2227,45 @@ network.tcpconn6.listen
 network.tcpconn6.closing
     adv  off nl             
 
+network.mptcp.mpcapablesynrx
+    adv  off nl             
+
+network.mptcp.mpcapableackrx
+    adv  off nl             
+
+network.mptcp.mpcapablefallbackack
+    adv  off nl             
+
+network.mptcp.mpcapablefallbacksynack
+    adv  off nl             
+
+network.mptcp.mptcpretrans
+    adv  off nl             
+
+network.mptcp.mpjoinnotokenfound
+    adv  off nl             
+
+network.mptcp.mpjoinsynrx
+    adv  off nl             
+
+network.mptcp.mpjoinsynackrx
+    adv  off nl             
+
+network.mptcp.mpjoinsynackhmacfailure
+    adv  off nl             
+
+network.mptcp.mpjoinackrx
+    adv  off nl             
+
+network.mptcp.mpjoinackhmacfailure
+    adv  off nl             
+
+network.mptcp.dssnotmatching
+    adv  off nl             
+
+network.mptcp.infinitemaprx
+    adv  off nl             
+
 kernel.all.load
     adv  on  nl       1 min  [1 or "1 minute"]
     adv  on  nl       1 min  [5 or "5 minute"]
@@ -2949,19 +2988,19 @@ pmcd.agent.name
     adv  off nl              [253 or "simple"]
 
 pmcd.pmlogger.host
-    adv  on  nl         once [334170 or "334170"]
+    adv  on  nl         once [386692 or "386692"]
     adv  on  nl         once [0 or "primary"]
 
 pmcd.pmlogger.port
-    adv  on  nl         once [334170 or "334170"]
+    adv  on  nl         once [386692 or "386692"]
     adv  on  nl         once [0 or "primary"]
 
 pmcd.pmlogger.archive
-    adv  on  nl         once [334170 or "334170"]
+    adv  on  nl         once [386692 or "386692"]
     adv  on  nl         once [0 or "primary"]
 
 pmcd.pmlogger.pmcd_host
-    adv  on  nl         once [334170 or "334170"]
+    adv  on  nl         once [386692 or "386692"]
     adv  on  nl         once [0 or "primary"]
 
 pmcd.pmie.configfile
@@ -3013,15 +3052,15 @@ pmcd.buf.free
     adv  off nl              [8193 or "8192+"]
 
 pmcd.client.whoami
-    adv  off nl              [3 or "3"]
+    adv  off nl              [2 or "2"]
     adv  off nl              [5 or "5"]
 
 pmcd.client.start_date
-    adv  off nl              [3 or "3"]
+    adv  off nl              [2 or "2"]
     adv  off nl              [5 or "5"]
 
 pmcd.client.container
-    adv  off nl              [3 or "3"]
+    adv  off nl              [2 or "2"]
     adv  off nl              [5 or "5"]
 
 pmcd.cputime.total

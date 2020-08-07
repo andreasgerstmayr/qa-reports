@@ -1,4 +1,4 @@
-Name space load: 2.55 msec
+Name space load: 2.56 msec
 
 pmid: 60.0.29 name: disk.all.total
 
@@ -69,6 +69,7 @@ children of "sample.longlong" ...
 pmid: PM_ID_NULL name: bozo.the.clown
 
 children of "" ...
+    acct                <s = 1>
     cgroup              <s = 1>
     containers          <s = 1>
     disk                <s = 1>
@@ -106,27 +107,27 @@ children of "" ...
     zram                <s = 1>
 
 Real-time result ...
-pmResult dump from 0x558bedc61ad0 timestamp: 1593702144.996499 15:02:24.996 numpmid: 12
+pmResult dump from 0x55947b266080 timestamp: 1596806788.924743 13:26:28.924 numpmid: 12
   60.0.29 (disk.all.total): numval: 1 valfmt: 1 vlist[]:
-   value 229280
+   value 157898
   PM_ID_NULL (<noname>): No PMCD agent for domain of request
   60.0.13 (kernel.all.pswitch): numval: 1 valfmt: 1 vlist[]:
-   value 9527681
+   value 9528789
   60.0.20 (kernel.all.cpu.user): numval: 1 valfmt: 1 vlist[]:
-   value 1575010
+   value 991120
   60.0.35 (kernel.all.cpu.wait.total): numval: 1 valfmt: 1 vlist[]:
-   value 90630
+   value 71020
   60.0.32 (hinv.ncpu): numval: 1 valfmt: 0 vlist[]:
    value 2
   PM_ID_NULL (<noname>): No PMCD agent for domain of request
   30.0.34 (sampledso.aggregate.hullo): numval: 1 valfmt: 1 vlist[]:
    value "hullo world!" [68756c6c6f20776f726c6421]
   29.0.2 (sample.dupnames.two.seconds, sample.seconds): numval: 1 valfmt: 0 vlist[]:
-   value 317
+   value 10
   29.0.5 (sample.colour): numval: 3 valfmt: 0 vlist[]:
-    inst [0 or "red"] value 160
-    inst [1 or "green"] value 261
-    inst [2 or "blue"] value 362
+    inst [0 or "red"] value 125
+    inst [1 or "green"] value 226
+    inst [2 or "blue"] value 327
   PM_ID_NULL (<noname>): No PMCD agent for domain of request
   PM_ID_NULL (<noname>): No PMCD agent for domain of request
 

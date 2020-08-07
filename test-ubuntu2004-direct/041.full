@@ -1,0 +1,33 @@
+
+### Expect: connection refused ###
+
+pminfo: Cannot connect to PMCD on host "local:": Connection refused
+
+### Expect: one million retrieved OK from sample.long.million ###
+
+pmcd pid=352695
+UID          PID    PPID  C STIME TTY          TIME CMD
+pcp       352695       1  0 13:36 ?        00:00:00 /usr/lib/pcp/bin/pmcd -T 3
+root      352698  352695  0 13:36 ?        00:00:00 /var/lib/pcp/pmdas/root/pmdaroot
+pcpqa     353019  352102  0 13:36 ?        00:00:00 grep -E PID|352695
+
+### Expect: Forcing termination ###
+
+UID          PID    PPID  C STIME TTY          TIME CMD
+pcp       352695       1  0 13:36 ?        00:00:00 /usr/lib/pcp/bin/pmcd -T 3
+root      352698  352695  0 13:36 ?        00:00:00 /var/lib/pcp/pmdas/root/pmdaroot
+pcpqa     353043  352102  0 13:36 ?        00:00:00 grep -E PID|352695
+....................
+Process ...
+UID          PID    PPID  C STIME TTY          TIME CMD
+pcp       352695       1  0 13:36 ?        00:00:00 /usr/lib/pcp/bin/pmcd -T 3
+/etc/init.d/pmcd: Warning: Forcing pmcd to terminate!
+Starting pmcd ... 
+Starting pmlogger ... 
+
+### Expect: Timeout waiting for a response from PMCD ###
+
+pminfo: Cannot connect to PMCD on host "local:": Timeout waiting for a response from PMCD
+
+### Expect: one million again ###
+

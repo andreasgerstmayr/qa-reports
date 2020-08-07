@@ -1,0 +1,374 @@
+dbpmda> debug 1
+dbpmda> getdesc on
+dbpmda> open pipe /var/lib/pcp/pmdas/sample/pmdasample -U pcpqa -d 29 -l /tmp/174-68083.log
+Start pmdasample PMDA: /var/lib/pcp/pmdas/sample/pmdasample -U pcpqa -d 29 -l /tmp/174-68083.log
+dbpmda> fetch 29.0.6
+PMID(s): 29.0.6
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+pmResult dump from 0x55b51664a000 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or ???] value 100
+    inst [200 or ???] value 200
+    inst [300 or ???] value 300
+    inst [400 or ???] value 400
+    inst [500 or ???] value 500
+    inst [600 or ???] value 600
+    inst [700 or ???] value 700
+    inst [800 or ???] value 800
+    inst [900 or ???] value 900
+dbpmda> fetch 29.0.6
+PMID(s): 29.0.6
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+pmResult dump from 0x55b51664a000 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or ???] value 100
+    inst [200 or ???] value 200
+    inst [300 or ???] value 300
+    inst [400 or ???] value 400
+    inst [500 or ???] value 500
+    inst [600 or ???] value 600
+    inst [700 or ???] value 700
+    inst [800 or ???] value 800
+    inst [900 or ???] value 900
+dbpmda> fetch 29.0.6
+PMID(s): 29.0.6
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+pmResult dump from 0x55b51664a000 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or ???] value 100
+    inst [200 or ???] value 200
+    inst [300 or ???] value 300
+    inst [400 or ???] value 400
+    inst [500 or ???] value 500
+    inst [600 or ???] value 600
+    inst [700 or ???] value 700
+    inst [800 or ???] value 800
+    inst [900 or ???] value 900
+dbpmda> profile 29.2 none
+dbpmda> profile 29.2 add 200
+dbpmda> fetch 29.0.6
+PMID(s): 29.0.6
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+pmResult dump from 0x55b51664a000 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): numval: 1 valfmt: 0 vlist[]:
+    inst [200 or ???] value 200
+dbpmda> fetch 29.0.6
+PMID(s): 29.0.6
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+pmResult dump from 0x55b51664a000 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): numval: 1 valfmt: 0 vlist[]:
+    inst [200 or ???] value 200
+dbpmda> fetch 29.0.6
+PMID(s): 29.0.6
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+pmResult dump from 0x55b51664a000 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): numval: 1 valfmt: 0 vlist[]:
+    inst [200 or ???] value 200
+dbpmda> profile 29.2 add 400
+dbpmda> fetch 29.0.6
+PMID(s): 29.0.6
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+pmResult dump from 0x55b51664a000 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): numval: 2 valfmt: 0 vlist[]:
+    inst [200 or ???] value 200
+    inst [400 or ???] value 400
+dbpmda> fetch 29.0.6
+PMID(s): 29.0.6
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+pmResult dump from 0x55b51664a000 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): numval: 2 valfmt: 0 vlist[]:
+    inst [200 or ???] value 200
+    inst [400 or ???] value 400
+dbpmda> fetch 29.0.6
+PMID(s): 29.0.6
+    Data Type: 32-bit int  InDom: 29.2 0x7400002
+    Semantics: instant  Units: none
+pmResult dump from 0x55b51664a000 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.6 (sample.dupnames.three.bin or sample.dupnames.two.bin or sample.bin): numval: 2 valfmt: 0 vlist[]:
+    inst [200 or ???] value 200
+    inst [400 or ???] value 400
+dbpmda> open dso /var/lib/pcp/pmdas/sample/pmda_sample.so sample_init 30
+dbpmda> fetch 30.0.6
+PMID(s): 30.0.6
+    Data Type: 32-bit int  InDom: 30.2 0x7800002
+    Semantics: instant  Units: none
+pmResult dump from 0x55b51664a260 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  30.0.6 (sampledso.dupnames.three.bin or sampledso.dupnames.two.bin or sampledso.bin): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or ???] value 100
+    inst [200 or ???] value 200
+    inst [300 or ???] value 300
+    inst [400 or ???] value 400
+    inst [500 or ???] value 500
+    inst [600 or ???] value 600
+    inst [700 or ???] value 700
+    inst [800 or ???] value 800
+    inst [900 or ???] value 900
+dbpmda> fetch 30.0.6
+PMID(s): 30.0.6
+    Data Type: 32-bit int  InDom: 30.2 0x7800002
+    Semantics: instant  Units: none
+pmResult dump from 0x55b51664a260 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  30.0.6 (sampledso.dupnames.three.bin or sampledso.dupnames.two.bin or sampledso.bin): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or ???] value 100
+    inst [200 or ???] value 200
+    inst [300 or ???] value 300
+    inst [400 or ???] value 400
+    inst [500 or ???] value 500
+    inst [600 or ???] value 600
+    inst [700 or ???] value 700
+    inst [800 or ???] value 800
+    inst [900 or ???] value 900
+dbpmda> fetch 30.0.6
+PMID(s): 30.0.6
+    Data Type: 32-bit int  InDom: 30.2 0x7800002
+    Semantics: instant  Units: none
+pmResult dump from 0x55b51664a260 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  30.0.6 (sampledso.dupnames.three.bin or sampledso.dupnames.two.bin or sampledso.bin): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or ???] value 100
+    inst [200 or ???] value 200
+    inst [300 or ???] value 300
+    inst [400 or ???] value 400
+    inst [500 or ???] value 500
+    inst [600 or ???] value 600
+    inst [700 or ???] value 700
+    inst [800 or ???] value 800
+    inst [900 or ???] value 900
+dbpmda> profile 30.2 none
+dbpmda> profile 30.2 add 100
+dbpmda> fetch 30.0.6
+PMID(s): 30.0.6
+    Data Type: 32-bit int  InDom: 30.2 0x7800002
+    Semantics: instant  Units: none
+pmResult dump from 0x55b51664a260 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  30.0.6 (sampledso.dupnames.three.bin or sampledso.dupnames.two.bin or sampledso.bin): numval: 1 valfmt: 0 vlist[]:
+    inst [100 or ???] value 100
+dbpmda> fetch 30.0.6
+PMID(s): 30.0.6
+    Data Type: 32-bit int  InDom: 30.2 0x7800002
+    Semantics: instant  Units: none
+pmResult dump from 0x55b51664a260 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  30.0.6 (sampledso.dupnames.three.bin or sampledso.dupnames.two.bin or sampledso.bin): numval: 1 valfmt: 0 vlist[]:
+    inst [100 or ???] value 100
+dbpmda> fetch 30.0.6
+PMID(s): 30.0.6
+    Data Type: 32-bit int  InDom: 30.2 0x7800002
+    Semantics: instant  Units: none
+pmResult dump from 0x55b51664a260 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  30.0.6 (sampledso.dupnames.three.bin or sampledso.dupnames.two.bin or sampledso.bin): numval: 1 valfmt: 0 vlist[]:
+    inst [100 or ???] value 100
+dbpmda> profile 30.2 add 300
+dbpmda> fetch 30.0.6
+PMID(s): 30.0.6
+    Data Type: 32-bit int  InDom: 30.2 0x7800002
+    Semantics: instant  Units: none
+pmResult dump from 0x55b51664a260 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  30.0.6 (sampledso.dupnames.three.bin or sampledso.dupnames.two.bin or sampledso.bin): numval: 2 valfmt: 0 vlist[]:
+    inst [100 or ???] value 100
+    inst [300 or ???] value 300
+dbpmda> fetch 30.0.6
+PMID(s): 30.0.6
+    Data Type: 32-bit int  InDom: 30.2 0x7800002
+    Semantics: instant  Units: none
+pmResult dump from 0x55b51664a260 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  30.0.6 (sampledso.dupnames.three.bin or sampledso.dupnames.two.bin or sampledso.bin): numval: 2 valfmt: 0 vlist[]:
+    inst [100 or ???] value 100
+    inst [300 or ???] value 300
+dbpmda> fetch 30.0.6
+PMID(s): 30.0.6
+    Data Type: 32-bit int  InDom: 30.2 0x7800002
+    Semantics: instant  Units: none
+pmResult dump from 0x55b51664a260 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  30.0.6 (sampledso.dupnames.three.bin or sampledso.dupnames.two.bin or sampledso.bin): numval: 2 valfmt: 0 vlist[]:
+    inst [100 or ???] value 100
+    inst [300 or ???] value 300
+dbpmda> 
+
+PDUs sent ...
+[68111]pmGetPDU: CREDS fd=5 len=20 from=68112
+000:       14     700c    10a10  1000000  4000201 
+[68111]pmXmitPDU: CREDS fd=4 len=20
+000:       14     700c    10a0f  1000000      201 
+[68111]pmXmitPDU: DESC_REQ fd=4 len=16
+000:       10     7004        0  6004007 
+[68111]pmGetPDU: DESC fd=5 len=32 from=0
+000:       20     7005        0  6004007        0  2004007  3000000        0 
+[68111]pmXmitPDU: PROFILE fd=4 len=28
+000:       1c     7002        0        0        0        0        0 
+[68111]pmXmitPDU: FETCH fd=4 len=32
+000:       20     7003        0        0        0        0  1000000  6004007 
+[68111]pmGetPDU: RESULT fd=5 len=108 from=0
+000:       6c     7001        0        0        0  1000000  6004007  9000000 
+008:        0 64000000 64000000 c8000000 c8000000 2c010000 2c010000 90010000 
+016: 90010000 f4010000 f4010000 58020000 58020000 bc020000 bc020000 20030000 
+024: 20030000 84030000 84030000 
+pmResult dump from 0x55b51664a000 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.6 (sample.dupnames.three.bin, sample.dupnames.two.bin, sample.bin): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or ???] value 100 1.4012985e-43 0x64
+    inst [200 or ???] value 200 2.8025969e-43 0xc8
+    inst [300 or ???] value 300 4.2038954e-43 0x12c
+    inst [400 or ???] value 400 5.6051939e-43 0x190
+    inst [500 or ???] value 500 7.0064923e-43 0x1f4
+    inst [600 or ???] value 600 8.4077908e-43 0x258
+    inst [700 or ???] value 700 9.8090893e-43 0x2bc
+    inst [800 or ???] value 800 1.1210388e-42 0x320
+    inst [900 or ???] value 900 1.2611686e-42 0x384
+[68111]pmXmitPDU: DESC_REQ fd=4 len=16
+000:       10     7004        0  6004007 
+[68111]pmGetPDU: DESC fd=5 len=32 from=0
+000:       20     7005        0  6004007        0  2004007  3000000        0 
+[68111]pmXmitPDU: FETCH fd=4 len=32
+000:       20     7003        0        0        0        0  1000000  6004007 
+[68111]pmGetPDU: RESULT fd=5 len=108 from=0
+000:       6c     7001        0        0        0  1000000  6004007  9000000 
+008:        0 64000000 64000000 c8000000 c8000000 2c010000 2c010000 90010000 
+016: 90010000 f4010000 f4010000 58020000 58020000 bc020000 bc020000 20030000 
+024: 20030000 84030000 84030000 
+pmResult dump from 0x55b51664a000 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.6 (sample.dupnames.three.bin, sample.dupnames.two.bin, sample.bin): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or ???] value 100 1.4012985e-43 0x64
+    inst [200 or ???] value 200 2.8025969e-43 0xc8
+    inst [300 or ???] value 300 4.2038954e-43 0x12c
+    inst [400 or ???] value 400 5.6051939e-43 0x190
+    inst [500 or ???] value 500 7.0064923e-43 0x1f4
+    inst [600 or ???] value 600 8.4077908e-43 0x258
+    inst [700 or ???] value 700 9.8090893e-43 0x2bc
+    inst [800 or ???] value 800 1.1210388e-42 0x320
+    inst [900 or ???] value 900 1.2611686e-42 0x384
+[68111]pmXmitPDU: DESC_REQ fd=4 len=16
+000:       10     7004        0  6004007 
+[68111]pmGetPDU: DESC fd=5 len=32 from=0
+000:       20     7005        0  6004007        0  2004007  3000000        0 
+[68111]pmXmitPDU: FETCH fd=4 len=32
+000:       20     7003        0        0        0        0  1000000  6004007 
+[68111]pmGetPDU: RESULT fd=5 len=108 from=0
+000:       6c     7001        0        0        0  1000000  6004007  9000000 
+008:        0 64000000 64000000 c8000000 c8000000 2c010000 2c010000 90010000 
+016: 90010000 f4010000 f4010000 58020000 58020000 bc020000 bc020000 20030000 
+024: 20030000 84030000 84030000 
+pmResult dump from 0x55b51664a000 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.6 (sample.dupnames.three.bin, sample.dupnames.two.bin, sample.bin): numval: 9 valfmt: 0 vlist[]:
+    inst [100 or ???] value 100 1.4012985e-43 0x64
+    inst [200 or ???] value 200 2.8025969e-43 0xc8
+    inst [300 or ???] value 300 4.2038954e-43 0x12c
+    inst [400 or ???] value 400 5.6051939e-43 0x190
+    inst [500 or ???] value 500 7.0064923e-43 0x1f4
+    inst [600 or ???] value 600 8.4077908e-43 0x258
+    inst [700 or ???] value 700 9.8090893e-43 0x2bc
+    inst [800 or ???] value 800 1.1210388e-42 0x320
+    inst [900 or ???] value 900 1.2611686e-42 0x384
+[68111]pmXmitPDU: DESC_REQ fd=4 len=16
+000:       10     7004        0  6004007 
+[68111]pmGetPDU: DESC fd=5 len=32 from=0
+000:       20     7005        0  6004007        0  2004007  3000000        0 
+[68111]pmXmitPDU: PROFILE fd=4 len=48
+000:       30     7002        0        0        0  1000000        0  2004007 
+008:  1000000  1000000        0 c8000000 
+[68111]pmXmitPDU: FETCH fd=4 len=32
+000:       20     7003        0        0        0        0  1000000  6004007 
+[68111]pmGetPDU: RESULT fd=5 len=44 from=0
+000:       2c     7001        0        0        0  1000000  6004007  1000000 
+008:        0 c8000000 c8000000 
+pmResult dump from 0x55b51664a000 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.6 (sample.dupnames.three.bin, sample.dupnames.two.bin, sample.bin): numval: 1 valfmt: 0 vlist[]:
+    inst [200 or ???] value 200 2.8025969e-43 0xc8
+[68111]pmXmitPDU: DESC_REQ fd=4 len=16
+000:       10     7004        0  6004007 
+[68111]pmGetPDU: DESC fd=5 len=32 from=0
+000:       20     7005        0  6004007        0  2004007  3000000        0 
+[68111]pmXmitPDU: FETCH fd=4 len=32
+000:       20     7003        0        0        0        0  1000000  6004007 
+[68111]pmGetPDU: RESULT fd=5 len=44 from=0
+000:       2c     7001        0        0        0  1000000  6004007  1000000 
+008:        0 c8000000 c8000000 
+pmResult dump from 0x55b51664a000 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.6 (sample.dupnames.three.bin, sample.dupnames.two.bin, sample.bin): numval: 1 valfmt: 0 vlist[]:
+    inst [200 or ???] value 200 2.8025969e-43 0xc8
+[68111]pmXmitPDU: DESC_REQ fd=4 len=16
+000:       10     7004        0  6004007 
+[68111]pmGetPDU: DESC fd=5 len=32 from=0
+000:       20     7005        0  6004007        0  2004007  3000000        0 
+[68111]pmXmitPDU: FETCH fd=4 len=32
+000:       20     7003        0        0        0        0  1000000  6004007 
+[68111]pmGetPDU: RESULT fd=5 len=44 from=0
+000:       2c     7001        0        0        0  1000000  6004007  1000000 
+008:        0 c8000000 c8000000 
+pmResult dump from 0x55b51664a000 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.6 (sample.dupnames.three.bin, sample.dupnames.two.bin, sample.bin): numval: 1 valfmt: 0 vlist[]:
+    inst [200 or ???] value 200 2.8025969e-43 0xc8
+[68111]pmXmitPDU: DESC_REQ fd=4 len=16
+000:       10     7004        0  6004007 
+[68111]pmGetPDU: DESC fd=5 len=32 from=0
+000:       20     7005        0  6004007        0  2004007  3000000        0 
+[68111]pmXmitPDU: PROFILE fd=4 len=52
+000:       34     7002        0        0        0  1000000        0  2004007 
+008:  1000000  2000000        0 c8000000 90010000 
+[68111]pmXmitPDU: FETCH fd=4 len=32
+000:       20     7003        0        0        0        0  1000000  6004007 
+[68111]pmGetPDU: RESULT fd=5 len=52 from=0
+000:       34     7001        0        0        0  1000000  6004007  2000000 
+008:        0 c8000000 c8000000 90010000 90010000 
+pmResult dump from 0x55b51664a000 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.6 (sample.dupnames.three.bin, sample.dupnames.two.bin, sample.bin): numval: 2 valfmt: 0 vlist[]:
+    inst [200 or ???] value 200 2.8025969e-43 0xc8
+    inst [400 or ???] value 400 5.6051939e-43 0x190
+[68111]pmXmitPDU: DESC_REQ fd=4 len=16
+000:       10     7004        0  6004007 
+[68111]pmGetPDU: DESC fd=5 len=32 from=0
+000:       20     7005        0  6004007        0  2004007  3000000        0 
+[68111]pmXmitPDU: FETCH fd=4 len=32
+000:       20     7003        0        0        0        0  1000000  6004007 
+[68111]pmGetPDU: RESULT fd=5 len=52 from=0
+000:       34     7001        0        0        0  1000000  6004007  2000000 
+008:        0 c8000000 c8000000 90010000 90010000 
+pmResult dump from 0x55b51664a000 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.6 (sample.dupnames.three.bin, sample.dupnames.two.bin, sample.bin): numval: 2 valfmt: 0 vlist[]:
+    inst [200 or ???] value 200 2.8025969e-43 0xc8
+    inst [400 or ???] value 400 5.6051939e-43 0x190
+[68111]pmXmitPDU: DESC_REQ fd=4 len=16
+000:       10     7004        0  6004007 
+[68111]pmGetPDU: DESC fd=5 len=32 from=0
+000:       20     7005        0  6004007        0  2004007  3000000        0 
+[68111]pmXmitPDU: FETCH fd=4 len=32
+000:       20     7003        0        0        0        0  1000000  6004007 
+[68111]pmGetPDU: RESULT fd=5 len=52 from=0
+000:       34     7001        0        0        0  1000000  6004007  2000000 
+008:        0 c8000000 c8000000 90010000 90010000 
+pmResult dump from 0x55b51664a000 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  29.0.6 (sample.dupnames.three.bin, sample.dupnames.two.bin, sample.bin): numval: 2 valfmt: 0 vlist[]:
+    inst [200 or ???] value 200 2.8025969e-43 0xc8
+    inst [400 or ???] value 400 5.6051939e-43 0x190
+DSO init sample_init->0x7fa774aebe40() domain=0 challenge: pmda_interface=0xff pmapi_version=2
+DSO has domain=30 pmda_interface=7 pmapi_version=2
+DSO desc()
+DSO profile()
+DSO fetch()
+DSO desc()
+DSO fetch()
+DSO desc()
+DSO fetch()
+DSO desc()
+DSO profile()
+DSO fetch()
+DSO desc()
+DSO fetch()
+DSO desc()
+DSO fetch()
+DSO desc()
+DSO profile()
+DSO fetch()
+DSO desc()
+DSO fetch()
+DSO desc()
+DSO fetch()
+Log for pmdasample on fv-az59 started Fri Aug  7 13:43:08 2020
+
+
+Log finished Fri Aug  7 13:43:08 2020

@@ -1,0 +1,89 @@
+{
+  "uid" : "801d8f0ea3a39ce7",
+  "name" : "QA 032",
+  "fullName" : "QA #032 on centos6-container",
+  "historyId" : "032@centos6-container",
+  "time" : {
+    "start" : 1596806168000,
+    "stop" : 1596806235000,
+    "duration" : 67000
+  },
+  "description" : "PCP QA Test No. 032\n\nexercise pmControlLog over the primary logger\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 032</p>\n<p>exercise pmControlLog over the primary logger</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform centos6 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 032.out.bad)\n1a2,4\n> $PCP_RC_DIR/pmlogger: Warning: Performance Co-Pilot archive logger(s) not permanently enabled.\n>     To enable pmlogger, run the following as root:\n>     # /sbin/chkconfig pmlogger on\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds\nPMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds\nPMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 032\n\nexercise pmControlLog over the primary logger\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 032.out.bad)\n1a2,4\n> $PCP_RC_DIR/pmlogger: Warning: Performance Co-Pilot archive logger(s) not permanently enabled.\n>     To enable pmlogger, run the following as root:\n>     # /sbin/chkconfig pmlogger on\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 31bf4ba31c7a -f sample.milliseconds\nPMDA probe: pminfo -h 31bf4ba31c7a -f sampledso.milliseconds\nPMDA probe: pminfo -h 31bf4ba31c7a -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c4625d7b0eb80216",
+      "name" : "032.out.bad",
+      "source" : "c4625d7b0eb80216.txt",
+      "type" : "text/plain",
+      "size" : 2813
+    }, {
+      "uid" : "f830d6bf11136ac",
+      "name" : "032.full",
+      "source" : "f830d6bf11136ac.txt",
+      "type" : "text/plain",
+      "size" : 87
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos6-container"
+  }, {
+    "name" : "host",
+    "value" : "centos6-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmlc"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "ostest"
+  }, {
+    "name" : "epic",
+    "value" : "pmlogger"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/5c4cb0868de9cc3352747b7436d1b394eacb9f55/qa/032",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/5c4cb0868de9cc3352747b7436d1b394eacb9f55/qa/032.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "801d8f0ea3a39ce7.json",
+  "parameterValues" : [ ]
+}

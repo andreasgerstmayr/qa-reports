@@ -1,0 +1,31 @@
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address               Foreign Address             State      
+tcp        0      0 0.0.0.0:44322               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:42000               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:43000               0.0.0.0:*                   LISTEN      
+tcp        0      0 :::44322                    :::*                        LISTEN      
+tcp        0      0 :::42000                    :::*                        LISTEN      
+tcp        0      0 :::43000                    :::*                        LISTEN      
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node Path
+unix  2      [ ACC ]     STREAM     LISTENING     1156311 /run/pcp/pmcd.socket
+unix  2      [ ACC ]     STREAM     LISTENING     1157672 /run/pcp/pmlogger.1136.socket
+unix  2      [ ACC ]     STREAM     LISTENING     1155898 /var/lib/pcp/tmp/pmcd/root.socket
+unix  2      [ ACC ]     STREAM     LISTENING     45307  @/com/ubuntu/upstart
+unix  2      [ ]         DGRAM                    84410  @/org/kernel/udev/udevd
+unix  3      [ ]         STREAM     CONNECTED     1155918 
+unix  3      [ ]         STREAM     CONNECTED     1155907 
+unix  2      [ ]         STREAM     CONNECTED     1140313 
+unix  2      [ ]         STREAM     CONNECTED     1140340 
+unix  2      [ ]         STREAM     CONNECTED     1140344 
+unix  3      [ ]         STREAM     CONNECTED     1156338 /var/lib/pcp/tmp/pmcd/root.socket
+unix  3      [ ]         STREAM     CONNECTED     1156974 /run/pcp/pmcd.socket
+unix  3      [ ]         STREAM     CONNECTED     1156328 /var/lib/pcp/tmp/pmcd/root.socket
+unix  3      [ ]         STREAM     CONNECTED     1157431 
+unix  3      [ ]         STREAM     CONNECTED     1156322 /var/lib/pcp/tmp/pmcd/root.socket
+unix  3      [ ]         STREAM     CONNECTED     1156321 
+unix  3      [ ]         DGRAM                    84413  
+unix  3      [ ]         DGRAM                    84412  
+unix  3      [ ]         STREAM     CONNECTED     1156319 
+unix  3      [ ]         STREAM     CONNECTED     1156320 /var/lib/pcp/tmp/pmcd/root.socket
+unix  2      [ ]         DGRAM                    712163 
