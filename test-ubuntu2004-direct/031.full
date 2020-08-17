@@ -1,0 +1,134 @@
+Name space load: 2.33 msec
+
+pmid: 60.0.29 name: disk.all.total
+
+pmid: PM_ID_NULL name: pmcd
+children of "pmcd" ...
+    agent               <s = 1>
+    buf                 <s = 1>
+    build               <s = 0>
+    client              <s = 1>
+    control             <s = 1>
+    cputime             <s = 1>
+    datasize            <s = 0>
+    feature             <s = 1>
+    hostname            <s = 0>
+    labels              <s = 0>
+    numagents           <s = 0>
+    numclients          <s = 0>
+    openfds             <s = 0>
+    pdu_in              <s = 1>
+    pdu_out             <s = 1>
+    pid                 <s = 0>
+    pmie                <s = 1>
+    pmlogger            <s = 1>
+    seqnum              <s = 0>
+    services            <s = 0>
+    sighups             <s = 0>
+    simabi              <s = 0>
+    timezone            <s = 0>
+    version             <s = 0>
+
+pmid: 60.0.13 name: kernel.all.pswitch
+
+pmid: 60.0.20 name: kernel.all.cpu.user
+
+pmid: 60.0.35 name: kernel.all.cpu.wait.total
+
+pmid: 60.0.32 name: hinv.ncpu
+
+pmid: PM_ID_NULL name: pmcd.control
+children of "pmcd.control" ...
+    debug               <s = 0>
+    dumpconn            <s = 0>
+    dumptrace           <s = 0>
+    register            <s = 0>
+    sighup              <s = 0>
+    timeout             <s = 0>
+    tracebufs           <s = 0>
+    traceconn           <s = 0>
+    tracenobuf          <s = 0>
+    tracepdu            <s = 0>
+
+pmid: 30.0.34 name: sampledso.aggregate.hullo
+
+pmid: 29.0.2 name: sample.seconds
+
+pmid: 29.0.5 name: sample.colour
+
+pmid: PM_ID_NULL name: sample.longlong
+children of "sample.longlong" ...
+    bin                 <s = 0>
+    bin_ctr             <s = 0>
+    hundred             <s = 0>
+    million             <s = 0>
+    one                 <s = 0>
+    ten                 <s = 0>
+    write_me            <s = 0>
+
+pmid: PM_ID_NULL name: bozo.the.clown
+
+children of "" ...
+    acct                <s = 1>
+    cgroup              <s = 1>
+    containers          <s = 1>
+    disk                <s = 1>
+    event               <s = 1>
+    filesys             <s = 1>
+    hinv                <s = 1>
+    hotproc             <s = 1>
+    ipc                 <s = 1>
+    jbd2                <s = 1>
+    kernel              <s = 1>
+    kvm                 <s = 1>
+    mem                 <s = 1>
+    mmv                 <s = 1>
+    network             <s = 1>
+    nfs                 <s = 1>
+    nfs3                <s = 1>
+    nfs4                <s = 1>
+    pmcd                <s = 1>
+    pmda                <s = 1>
+    pmproxy             <s = 1>
+    proc                <s = 1>
+    quota               <s = 1>
+    rpc                 <s = 1>
+    sample              <s = 1>
+    sampledso           <s = 1>
+    simple              <s = 1>
+    swap                <s = 1>
+    swapdev             <s = 1>
+    sysfs               <s = 1>
+    tape                <s = 1>
+    tmpfs               <s = 1>
+    tty                 <s = 1>
+    vfs                 <s = 1>
+    xfs                 <s = 1>
+    zram                <s = 1>
+
+Real-time result ...
+pmResult dump from 0x55aa9c52c090 timestamp: 1597676050.220467 14:54:10.220 numpmid: 12
+  60.0.29 (disk.all.total): numval: 1 valfmt: 1 vlist[]:
+   value 154452
+  PM_ID_NULL (<noname>): No PMCD agent for domain of request
+  60.0.13 (kernel.all.pswitch): numval: 1 valfmt: 1 vlist[]:
+   value 10796361
+  60.0.20 (kernel.all.cpu.user): numval: 1 valfmt: 1 vlist[]:
+   value 1242700
+  60.0.35 (kernel.all.cpu.wait.total): numval: 1 valfmt: 1 vlist[]:
+   value 88250
+  60.0.32 (hinv.ncpu): numval: 1 valfmt: 0 vlist[]:
+   value 2
+  PM_ID_NULL (<noname>): No PMCD agent for domain of request
+  30.0.34 (sampledso.aggregate.hullo): numval: 1 valfmt: 1 vlist[]:
+   value "hullo world!" [68756c6c6f20776f726c6421]
+  29.0.2 (sample.dupnames.two.seconds, sample.seconds): numval: 1 valfmt: 0 vlist[]:
+   value 318
+  29.0.5 (sample.colour): numval: 3 valfmt: 0 vlist[]:
+    inst [0 or "red"] value 160
+    inst [1 or "green"] value 261
+    inst [2 or "blue"] value 362
+  PM_ID_NULL (<noname>): No PMCD agent for domain of request
+  PM_ID_NULL (<noname>): No PMCD agent for domain of request
+
+Unexpected failure for 0 of 53 PMAPI operations

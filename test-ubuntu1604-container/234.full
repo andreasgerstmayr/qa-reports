@@ -1,0 +1,1254 @@
+=== tmp.a ===
+
+14:46:30.779498 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [3140 or "3140"] value "26d3b23865d4"
+    2.3.0 (pmcd.pmlogger.port): inst [3140 or "3140"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [3140 or "3140"] value "/tmp/234-3121.a"
+    2.0.23 (pmcd.pid): value 128851
+    2.0.24 (pmcd.seqnum): value 15
+
+14:46:30.799528 4 metrics
+    29.0.64 (sample.rapid): value 800000000
+    29.0.42 (sample.xmit_pdu): value 379
+    29.0.7 (sample.drift): value 347
+    29.0.0 (sample.control): value 0
+
+14:46:30.829474 4 metrics
+    29.0.64 (sample.rapid): value 1600000000
+    29.0.42 (sample.xmit_pdu): value 394
+    29.0.7 (sample.drift): value 376
+    29.0.0 (sample.control): value 0
+
+14:46:30.859937 4 metrics
+    29.0.64 (sample.rapid): value 2400000000
+    29.0.42 (sample.xmit_pdu): value 395
+    29.0.7 (sample.drift): value 415
+    29.0.0 (sample.control): value 0
+
+14:46:30.860132 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [3140 or "3140"] value "26d3b23865d4"
+    2.3.0 (pmcd.pmlogger.port): inst [3140 or "3140"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [3140 or "3140"] value "/tmp/234-3121.a"
+    2.0.23 (pmcd.pid): value 128851
+    2.0.24 (pmcd.seqnum): value 15
+=== tmp.b ===
+
+14:46:30.866484 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [3142 or "3142"] value "26d3b23865d4"
+    2.3.0 (pmcd.pmlogger.port): inst [3142 or "3142"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [3142 or "3142"] value "/tmp/234-3121.b"
+    2.0.23 (pmcd.pid): value 128851
+    2.0.24 (pmcd.seqnum): value 15
+
+14:46:30.886516 4 metrics
+    29.0.64 (sample.rapid): value 3200000000
+    29.0.42 (sample.xmit_pdu): value 400
+    29.0.7 (sample.drift): value 462
+    29.0.0 (sample.control): value 0
+
+14:46:30.976545 4 metrics
+    29.0.64 (sample.rapid): value 4000000000
+    29.0.42 (sample.xmit_pdu): value 415
+    29.0.7 (sample.drift): value 479
+    29.0.0 (sample.control): value 0
+
+14:46:31.066542 4 metrics
+    29.0.64 (sample.rapid): value 505032704
+    29.0.42 (sample.xmit_pdu): value 416
+    29.0.7 (sample.drift): value 509
+    29.0.0 (sample.control): value 0
+
+14:46:31.156635 4 metrics
+    29.0.64 (sample.rapid): value 1305032704
+    29.0.42 (sample.xmit_pdu): value 417
+    29.0.7 (sample.drift): value 521
+    29.0.0 (sample.control): value 0
+
+14:46:31.246580 4 metrics
+    29.0.64 (sample.rapid): value 2105032704
+    29.0.42 (sample.xmit_pdu): value 418
+    29.0.7 (sample.drift): value 551
+    29.0.0 (sample.control): value 0
+
+14:46:31.246829 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [3142 or "3142"] value "26d3b23865d4"
+    2.3.0 (pmcd.pmlogger.port): inst [3142 or "3142"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [3142 or "3142"] value "/tmp/234-3121.b"
+    2.0.23 (pmcd.pid): value 128851
+    2.0.24 (pmcd.seqnum): value 15
+=== tmp.merge ===
+
+14:46:30.779498 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [3140 or "3140"] value "26d3b23865d4"
+    2.3.0 (pmcd.pmlogger.port): inst [3140 or "3140"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [3140 or "3140"] value "/tmp/234-3121.a"
+    2.0.23 (pmcd.pid): value 128851
+    2.0.24 (pmcd.seqnum): value 15
+
+14:46:30.799528 4 metrics
+    29.0.64 (sample.rapid): value 800000000
+    29.0.42 (sample.xmit_pdu): value 379
+    29.0.7 (sample.drift): value 347
+    29.0.0 (sample.control): value 0
+
+14:46:30.829474 4 metrics
+    29.0.64 (sample.rapid): value 1600000000
+    29.0.42 (sample.xmit_pdu): value 394
+    29.0.7 (sample.drift): value 376
+    29.0.0 (sample.control): value 0
+
+14:46:30.859937 4 metrics
+    29.0.64 (sample.rapid): value 2400000000
+    29.0.42 (sample.xmit_pdu): value 395
+    29.0.7 (sample.drift): value 415
+    29.0.0 (sample.control): value 0
+
+14:46:30.860132 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [3140 or "3140"] value "26d3b23865d4"
+    2.3.0 (pmcd.pmlogger.port): inst [3140 or "3140"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [3140 or "3140"] value "/tmp/234-3121.a"
+    2.0.23 (pmcd.pid): value 128851
+    2.0.24 (pmcd.seqnum): value 15
+
+14:46:30.866484 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [3142 or "3142"] value "26d3b23865d4"
+    2.3.0 (pmcd.pmlogger.port): inst [3142 or "3142"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [3142 or "3142"] value "/tmp/234-3121.b"
+    2.0.23 (pmcd.pid): value 128851
+    2.0.24 (pmcd.seqnum): value 15
+
+14:46:30.886516 4 metrics
+    29.0.64 (sample.rapid): value 3200000000
+    29.0.42 (sample.xmit_pdu): value 400
+    29.0.7 (sample.drift): value 462
+    29.0.0 (sample.control): value 0
+
+14:46:30.976545 4 metrics
+    29.0.64 (sample.rapid): value 4000000000
+    29.0.42 (sample.xmit_pdu): value 415
+    29.0.7 (sample.drift): value 479
+    29.0.0 (sample.control): value 0
+
+14:46:31.066542 4 metrics
+    29.0.64 (sample.rapid): value 505032704
+    29.0.42 (sample.xmit_pdu): value 416
+    29.0.7 (sample.drift): value 509
+    29.0.0 (sample.control): value 0
+
+14:46:31.156635 4 metrics
+    29.0.64 (sample.rapid): value 1305032704
+    29.0.42 (sample.xmit_pdu): value 417
+    29.0.7 (sample.drift): value 521
+    29.0.0 (sample.control): value 0
+
+14:46:31.246580 4 metrics
+    29.0.64 (sample.rapid): value 2105032704
+    29.0.42 (sample.xmit_pdu): value 418
+    29.0.7 (sample.drift): value 551
+    29.0.0 (sample.control): value 0
+
+14:46:31.246829 5 metrics
+    2.3.3 (pmcd.pmlogger.host): inst [3142 or "3142"] value "26d3b23865d4"
+    2.3.0 (pmcd.pmlogger.port): inst [3142 or "3142"] value 4331
+    2.3.2 (pmcd.pmlogger.archive): inst [3142 or "3142"] value "/tmp/234-3121.b"
+    2.0.23 (pmcd.pid): value 128851
+    2.0.24 (pmcd.seqnum): value 15
+pmResult dump from 0x8ca2c0 timestamp: 1597675591.246829 14:46:31.246 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3142 or ???] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "/tmp/234-3121.b"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:31.246 0x8ca1dc ... 0x8ca288
+000: 47983a5f 2dc40300  5000000  30c8000  1000000  1000000 460c0000 1f000000 
+008:    c8000  1000000        0 460c0000 eb100000  20c8000  1000000  1000000 
+016: 460c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   622e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x8ca2c0 timestamp: 1597675590.779498 14:46:30.779 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3140 or "3140"] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "/tmp/234-3121.a"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:30.779 0x8ca1dc ... 0x8ca288
+000: 46983a5f eae40b00  5000000  30c8000  1000000  1000000 440c0000 1f000000 
+008:    c8000  1000000        0 440c0000 eb100000  20c8000  1000000  1000000 
+016: 440c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   612e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x8ca250 timestamp: 1597675590.799528 14:46:30.799 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 800000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 379
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 347
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.799 0x8ca1dc ... 0x8ca240
+000: 46983a5f 28330c00  4000000 40004007  1000000        0 ffffffff    8af2f 
+008: 2a004007  1000000        0 ffffffff 7b010000  7004007  1000000        0 
+016: ffffffff 5b010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x8ca250 timestamp: 1597675590.829474 14:46:30.829 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 1600000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 394
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 376
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.829 0x8ca1dc ... 0x8ca240
+000: 46983a5f 22a80c00  4000000 40004007  1000000        0 ffffffff   105e5f 
+008: 2a004007  1000000        0 ffffffff 8a010000  7004007  1000000        0 
+016: ffffffff 78010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x8ca250 timestamp: 1597675590.859937 14:46:30.859 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 2400000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 395
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 415
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.859 0x8ca1dc ... 0x8ca240
+000: 46983a5f 211f0d00  4000000 40004007  1000000        0 ffffffff   180d8f 
+008: 2a004007  1000000        0 ffffffff 8b010000  7004007  1000000        0 
+016: ffffffff 9f010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x8cc570 timestamp: 1597675590.860132 14:46:30.860 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3140 or "3140"] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "/tmp/234-3121.a"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:30.860 0x8cc4bc ... 0x8cc568
+000: 46983a5f e41f0d00  5000000  30c8000  1000000  1000000 440c0000 1f000000 
+008:    c8000  1000000        0 440c0000 eb100000  20c8000  1000000  1000000 
+016: 440c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   612e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x8cc570 timestamp: 1597675590.866484 14:46:30.866 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3142 or ???] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "/tmp/234-3121.b"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:30.866 0x8cc4bc ... 0x8cc568
+000: 46983a5f b4380d00  5000000  30c8000  1000000  1000000 460c0000 1f000000 
+008:    c8000  1000000        0 460c0000 eb100000  20c8000  1000000  1000000 
+016: 460c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   622e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x8ca250 timestamp: 1597675590.886516 14:46:30.886 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 3200000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 400
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 462
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.886 0x8cc4bc ... 0x8cc520
+000: 46983a5f f4860d00  4000000 40004007  1000000        0 ffffffff   20bcbe 
+008: 2a004007  1000000        0 ffffffff 90010000  7004007  1000000        0 
+016: ffffffff ce010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x8ca250 timestamp: 1597675590.976545 14:46:30.976 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 4000000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 415
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 479
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.976 0x8cc4bc ... 0x8cc520
+000: 46983a5f a1e60e00  4000000 40004007  1000000        0 ffffffff   286bee 
+008: 2a004007  1000000        0 ffffffff 9f010000  7004007  1000000        0 
+016: ffffffff df010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x8ca250 timestamp: 1597675591.066542 14:46:31.066 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 505032704
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 416
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 509
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:31.066 0x8cc4bc ... 0x8cc520
+000: 47983a5f ee030100  4000000 40004007  1000000        0 ffffffff   301a1e 
+008: 2a004007  1000000        0 ffffffff a0010000  7004007  1000000        0 
+016: ffffffff fd010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x8ca250 timestamp: 1597675591.156635 14:46:31.156 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 1305032704
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 417
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 521
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:31.156 0x8cc4bc ... 0x8cc520
+000: 47983a5f db630200  4000000 40004007  1000000        0 ffffffff   38c94d 
+008: 2a004007  1000000        0 ffffffff a1010000  7004007  1000000        0 
+016: ffffffff  9020000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x8ca250 timestamp: 1597675591.246580 14:46:31.246 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 2105032704
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 418
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 551
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:31.246 0x8cc4bc ... 0x8cc520
+000: 47983a5f 34c30300  4000000 40004007  1000000        0 ffffffff   40787d 
+008: 2a004007  1000000        0 ffffffff a2010000  7004007  1000000        0 
+016: ffffffff 27020000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x8cc570 timestamp: 1597675591.246829 14:46:31.246 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or "3142"] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3142 or "3142"] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or "3142"] value "/tmp/234-3121.b"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:31.246 0x8cc4bc ... 0x8cc568
+000: 47983a5f 2dc40300  5000000  30c8000  1000000  1000000 460c0000 1f000000 
+008:    c8000  1000000        0 460c0000 eb100000  20c8000  1000000  1000000 
+016: 460c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   622e31  300000c    1f753 
+040:        0 
+
+14:46:30.799528 1 metric
+    29.0.7 (sample.drift): value 347
+
+14:46:30.829474 1 metric
+    29.0.7 (sample.drift): value 376
+
+14:46:30.859937 1 metric
+    29.0.7 (sample.drift): value 415
+
+14:46:30.886516 1 metric
+    29.0.7 (sample.drift): value 462
+
+14:46:30.976545 1 metric
+    29.0.7 (sample.drift): value 479
+
+14:46:31.066542 1 metric
+    29.0.7 (sample.drift): value 509
+
+14:46:31.156635 1 metric
+    29.0.7 (sample.drift): value 521
+
+14:46:31.246580 1 metric
+    29.0.7 (sample.drift): value 551
+_check_counter_stocave
+pmResult dump from 0x1d3d2c0 timestamp: 1597675591.246829 14:46:31.246 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3142 or ???] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "/tmp/234-3121.b"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:31.246 0x1d3d1dc ... 0x1d3d288
+000: 47983a5f 2dc40300  5000000  30c8000  1000000  1000000 460c0000 1f000000 
+008:    c8000  1000000        0 460c0000 eb100000  20c8000  1000000  1000000 
+016: 460c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   622e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x1d3d2c0 timestamp: 1597675590.779498 14:46:30.779 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3140 or "3140"] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "/tmp/234-3121.a"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:30.779 0x1d3d1dc ... 0x1d3d288
+000: 46983a5f eae40b00  5000000  30c8000  1000000  1000000 440c0000 1f000000 
+008:    c8000  1000000        0 440c0000 eb100000  20c8000  1000000  1000000 
+016: 440c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   612e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x1d3d250 timestamp: 1597675590.799528 14:46:30.799 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 800000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 379
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 347
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.799 0x1d3d1dc ... 0x1d3d240
+000: 46983a5f 28330c00  4000000 40004007  1000000        0 ffffffff    8af2f 
+008: 2a004007  1000000        0 ffffffff 7b010000  7004007  1000000        0 
+016: ffffffff 5b010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x1d3d250 timestamp: 1597675590.829474 14:46:30.829 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 1600000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 394
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 376
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.829 0x1d3d1dc ... 0x1d3d240
+000: 46983a5f 22a80c00  4000000 40004007  1000000        0 ffffffff   105e5f 
+008: 2a004007  1000000        0 ffffffff 8a010000  7004007  1000000        0 
+016: ffffffff 78010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x1d3d250 timestamp: 1597675590.859937 14:46:30.859 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 2400000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 395
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 415
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.859 0x1d3d1dc ... 0x1d3d240
+000: 46983a5f 211f0d00  4000000 40004007  1000000        0 ffffffff   180d8f 
+008: 2a004007  1000000        0 ffffffff 8b010000  7004007  1000000        0 
+016: ffffffff 9f010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x1d3f570 timestamp: 1597675590.860132 14:46:30.860 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3140 or "3140"] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "/tmp/234-3121.a"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:30.860 0x1d3f4bc ... 0x1d3f568
+000: 46983a5f e41f0d00  5000000  30c8000  1000000  1000000 440c0000 1f000000 
+008:    c8000  1000000        0 440c0000 eb100000  20c8000  1000000  1000000 
+016: 440c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   612e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x1d3f570 timestamp: 1597675590.866484 14:46:30.866 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3142 or ???] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "/tmp/234-3121.b"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:30.866 0x1d3f4bc ... 0x1d3f568
+000: 46983a5f b4380d00  5000000  30c8000  1000000  1000000 460c0000 1f000000 
+008:    c8000  1000000        0 460c0000 eb100000  20c8000  1000000  1000000 
+016: 460c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   622e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x1d3d250 timestamp: 1597675590.886516 14:46:30.886 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 3200000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 400
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 462
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.886 0x1d3f4bc ... 0x1d3f520
+000: 46983a5f f4860d00  4000000 40004007  1000000        0 ffffffff   20bcbe 
+008: 2a004007  1000000        0 ffffffff 90010000  7004007  1000000        0 
+016: ffffffff ce010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x1d3d250 timestamp: 1597675590.976545 14:46:30.976 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 4000000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 415
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 479
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.976 0x1d3f4bc ... 0x1d3f520
+000: 46983a5f a1e60e00  4000000 40004007  1000000        0 ffffffff   286bee 
+008: 2a004007  1000000        0 ffffffff 9f010000  7004007  1000000        0 
+016: ffffffff df010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x1d3d250 timestamp: 1597675591.066542 14:46:31.066 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 505032704
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 416
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 509
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:31.066 0x1d3f4bc ... 0x1d3f520
+000: 47983a5f ee030100  4000000 40004007  1000000        0 ffffffff   301a1e 
+008: 2a004007  1000000        0 ffffffff a0010000  7004007  1000000        0 
+016: ffffffff fd010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x1d3d250 timestamp: 1597675591.156635 14:46:31.156 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 1305032704
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 417
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 521
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:31.156 0x1d3f4bc ... 0x1d3f520
+000: 47983a5f db630200  4000000 40004007  1000000        0 ffffffff   38c94d 
+008: 2a004007  1000000        0 ffffffff a1010000  7004007  1000000        0 
+016: ffffffff  9020000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x1d3d250 timestamp: 1597675591.246580 14:46:31.246 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 2105032704
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 418
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 551
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:31.246 0x1d3f4bc ... 0x1d3f520
+000: 47983a5f 34c30300  4000000 40004007  1000000        0 ffffffff   40787d 
+008: 2a004007  1000000        0 ffffffff a2010000  7004007  1000000        0 
+016: ffffffff 27020000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x1d3f570 timestamp: 1597675591.246829 14:46:31.246 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or "3142"] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3142 or "3142"] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or "3142"] value "/tmp/234-3121.b"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:31.246 0x1d3f4bc ... 0x1d3f568
+000: 47983a5f 2dc40300  5000000  30c8000  1000000  1000000 460c0000 1f000000 
+008:    c8000  1000000        0 460c0000 eb100000  20c8000  1000000  1000000 
+016: 460c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   622e31  300000c    1f753 
+040:        0 
+
+14:46:30.799528 1 metric
+    29.0.42 (sample.xmit_pdu): value 379
+
+14:46:30.829474 1 metric
+    29.0.42 (sample.xmit_pdu): value 394
+
+14:46:30.859937 1 metric
+    29.0.42 (sample.xmit_pdu): value 395
+
+14:46:30.886516 1 metric
+    29.0.42 (sample.xmit_pdu): value 400
+
+14:46:30.976545 1 metric
+    29.0.42 (sample.xmit_pdu): value 415
+
+14:46:31.066542 1 metric
+    29.0.42 (sample.xmit_pdu): value 416
+
+14:46:31.156635 1 metric
+    29.0.42 (sample.xmit_pdu): value 417
+
+14:46:31.246580 1 metric
+    29.0.42 (sample.xmit_pdu): value 418
+14:46:30.799 1597675590.799528 379
+14:46:30.829 1597675590.829474 394
+14:46:30.859 1597675590.859937 395
+14:46:30.886 1597675590.886516 400
+14:46:30.976 1597675590.976545 415
+14:46:31.066 1597675591.066542 416
+14:46:31.156 1597675591.156635 417
+14:46:31.246 1597675591.246580 418
+pmResult dump from 0x7cf2c0 timestamp: 1597675591.246829 14:46:31.246 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3142 or ???] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "/tmp/234-3121.b"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:31.246 0x7cf1dc ... 0x7cf288
+000: 47983a5f 2dc40300  5000000  30c8000  1000000  1000000 460c0000 1f000000 
+008:    c8000  1000000        0 460c0000 eb100000  20c8000  1000000  1000000 
+016: 460c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   622e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x7cf2c0 timestamp: 1597675590.779498 14:46:30.779 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3140 or "3140"] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "/tmp/234-3121.a"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:30.779 0x7cf1dc ... 0x7cf288
+000: 46983a5f eae40b00  5000000  30c8000  1000000  1000000 440c0000 1f000000 
+008:    c8000  1000000        0 440c0000 eb100000  20c8000  1000000  1000000 
+016: 440c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   612e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x7cf250 timestamp: 1597675590.799528 14:46:30.799 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 800000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 379
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 347
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.799 0x7cf1dc ... 0x7cf240
+000: 46983a5f 28330c00  4000000 40004007  1000000        0 ffffffff    8af2f 
+008: 2a004007  1000000        0 ffffffff 7b010000  7004007  1000000        0 
+016: ffffffff 5b010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x7cf250 timestamp: 1597675590.829474 14:46:30.829 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 1600000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 394
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 376
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.829 0x7cf1dc ... 0x7cf240
+000: 46983a5f 22a80c00  4000000 40004007  1000000        0 ffffffff   105e5f 
+008: 2a004007  1000000        0 ffffffff 8a010000  7004007  1000000        0 
+016: ffffffff 78010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x7cf250 timestamp: 1597675590.859937 14:46:30.859 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 2400000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 395
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 415
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.859 0x7cf1dc ... 0x7cf240
+000: 46983a5f 211f0d00  4000000 40004007  1000000        0 ffffffff   180d8f 
+008: 2a004007  1000000        0 ffffffff 8b010000  7004007  1000000        0 
+016: ffffffff 9f010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x7d1570 timestamp: 1597675590.860132 14:46:30.860 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3140 or "3140"] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "/tmp/234-3121.a"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:30.860 0x7d14bc ... 0x7d1568
+000: 46983a5f e41f0d00  5000000  30c8000  1000000  1000000 440c0000 1f000000 
+008:    c8000  1000000        0 440c0000 eb100000  20c8000  1000000  1000000 
+016: 440c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   612e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x7d1570 timestamp: 1597675590.866484 14:46:30.866 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3142 or ???] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "/tmp/234-3121.b"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:30.866 0x7d14bc ... 0x7d1568
+000: 46983a5f b4380d00  5000000  30c8000  1000000  1000000 460c0000 1f000000 
+008:    c8000  1000000        0 460c0000 eb100000  20c8000  1000000  1000000 
+016: 460c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   622e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x7cf250 timestamp: 1597675590.886516 14:46:30.886 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 3200000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 400
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 462
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.886 0x7d14bc ... 0x7d1520
+000: 46983a5f f4860d00  4000000 40004007  1000000        0 ffffffff   20bcbe 
+008: 2a004007  1000000        0 ffffffff 90010000  7004007  1000000        0 
+016: ffffffff ce010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x7cf250 timestamp: 1597675590.976545 14:46:30.976 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 4000000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 415
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 479
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.976 0x7d14bc ... 0x7d1520
+000: 46983a5f a1e60e00  4000000 40004007  1000000        0 ffffffff   286bee 
+008: 2a004007  1000000        0 ffffffff 9f010000  7004007  1000000        0 
+016: ffffffff df010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x7cf250 timestamp: 1597675591.066542 14:46:31.066 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 505032704
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 416
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 509
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:31.066 0x7d14bc ... 0x7d1520
+000: 47983a5f ee030100  4000000 40004007  1000000        0 ffffffff   301a1e 
+008: 2a004007  1000000        0 ffffffff a0010000  7004007  1000000        0 
+016: ffffffff fd010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x7cf250 timestamp: 1597675591.156635 14:46:31.156 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 1305032704
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 417
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 521
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:31.156 0x7d14bc ... 0x7d1520
+000: 47983a5f db630200  4000000 40004007  1000000        0 ffffffff   38c94d 
+008: 2a004007  1000000        0 ffffffff a1010000  7004007  1000000        0 
+016: ffffffff  9020000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x7cf250 timestamp: 1597675591.246580 14:46:31.246 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 2105032704
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 418
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 551
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:31.246 0x7d14bc ... 0x7d1520
+000: 47983a5f 34c30300  4000000 40004007  1000000        0 ffffffff   40787d 
+008: 2a004007  1000000        0 ffffffff a2010000  7004007  1000000        0 
+016: ffffffff 27020000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x7d1570 timestamp: 1597675591.246829 14:46:31.246 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or "3142"] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3142 or "3142"] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or "3142"] value "/tmp/234-3121.b"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:31.246 0x7d14bc ... 0x7d1568
+000: 47983a5f 2dc40300  5000000  30c8000  1000000  1000000 460c0000 1f000000 
+008:    c8000  1000000        0 460c0000 eb100000  20c8000  1000000  1000000 
+016: 460c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   622e31  300000c    1f753 
+040:        0 
+
+14:46:30.799528 1 metric
+    29.0.42 (sample.xmit_pdu): value 379
+
+14:46:30.829474 1 metric
+    29.0.42 (sample.xmit_pdu): value 394
+
+14:46:30.859937 1 metric
+    29.0.42 (sample.xmit_pdu): value 395
+
+14:46:30.886516 1 metric
+    29.0.42 (sample.xmit_pdu): value 400
+
+14:46:30.976545 1 metric
+    29.0.42 (sample.xmit_pdu): value 415
+
+14:46:31.066542 1 metric
+    29.0.42 (sample.xmit_pdu): value 416
+
+14:46:31.156635 1 metric
+    29.0.42 (sample.xmit_pdu): value 417
+
+14:46:31.246580 1 metric
+    29.0.42 (sample.xmit_pdu): value 418
+pmResult dump from 0x192b2c0 timestamp: 1597675591.246829 14:46:31.246 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3142 or ???] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "/tmp/234-3121.b"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:31.246 0x192b1dc ... 0x192b288
+000: 47983a5f 2dc40300  5000000  30c8000  1000000  1000000 460c0000 1f000000 
+008:    c8000  1000000        0 460c0000 eb100000  20c8000  1000000  1000000 
+016: 460c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   622e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x192b2c0 timestamp: 1597675590.779498 14:46:30.779 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3140 or "3140"] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "/tmp/234-3121.a"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:30.779 0x192b1dc ... 0x192b288
+000: 46983a5f eae40b00  5000000  30c8000  1000000  1000000 440c0000 1f000000 
+008:    c8000  1000000        0 440c0000 eb100000  20c8000  1000000  1000000 
+016: 440c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   612e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x192b250 timestamp: 1597675590.799528 14:46:30.799 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 800000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 379
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 347
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.799 0x192b1dc ... 0x192b240
+000: 46983a5f 28330c00  4000000 40004007  1000000        0 ffffffff    8af2f 
+008: 2a004007  1000000        0 ffffffff 7b010000  7004007  1000000        0 
+016: ffffffff 5b010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x192b250 timestamp: 1597675590.829474 14:46:30.829 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 1600000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 394
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 376
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.829 0x192b1dc ... 0x192b240
+000: 46983a5f 22a80c00  4000000 40004007  1000000        0 ffffffff   105e5f 
+008: 2a004007  1000000        0 ffffffff 8a010000  7004007  1000000        0 
+016: ffffffff 78010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x192b250 timestamp: 1597675590.859937 14:46:30.859 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 2400000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 395
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 415
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.859 0x192b1dc ... 0x192b240
+000: 46983a5f 211f0d00  4000000 40004007  1000000        0 ffffffff   180d8f 
+008: 2a004007  1000000        0 ffffffff 8b010000  7004007  1000000        0 
+016: ffffffff 9f010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x192d570 timestamp: 1597675590.860132 14:46:30.860 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3140 or "3140"] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "/tmp/234-3121.a"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:30.860 0x192d4bc ... 0x192d568
+000: 46983a5f e41f0d00  5000000  30c8000  1000000  1000000 440c0000 1f000000 
+008:    c8000  1000000        0 440c0000 eb100000  20c8000  1000000  1000000 
+016: 440c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   612e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x192d570 timestamp: 1597675590.866484 14:46:30.866 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3142 or ???] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "/tmp/234-3121.b"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:30.866 0x192d4bc ... 0x192d568
+000: 46983a5f b4380d00  5000000  30c8000  1000000  1000000 460c0000 1f000000 
+008:    c8000  1000000        0 460c0000 eb100000  20c8000  1000000  1000000 
+016: 460c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   622e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x192b250 timestamp: 1597675590.886516 14:46:30.886 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 3200000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 400
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 462
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.886 0x192d4bc ... 0x192d520
+000: 46983a5f f4860d00  4000000 40004007  1000000        0 ffffffff   20bcbe 
+008: 2a004007  1000000        0 ffffffff 90010000  7004007  1000000        0 
+016: ffffffff ce010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x192b250 timestamp: 1597675590.976545 14:46:30.976 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 4000000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 415
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 479
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.976 0x192d4bc ... 0x192d520
+000: 46983a5f a1e60e00  4000000 40004007  1000000        0 ffffffff   286bee 
+008: 2a004007  1000000        0 ffffffff 9f010000  7004007  1000000        0 
+016: ffffffff df010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x192b250 timestamp: 1597675591.066542 14:46:31.066 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 505032704
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 416
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 509
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:31.066 0x192d4bc ... 0x192d520
+000: 47983a5f ee030100  4000000 40004007  1000000        0 ffffffff   301a1e 
+008: 2a004007  1000000        0 ffffffff a0010000  7004007  1000000        0 
+016: ffffffff fd010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x192b250 timestamp: 1597675591.156635 14:46:31.156 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 1305032704
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 417
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 521
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:31.156 0x192d4bc ... 0x192d520
+000: 47983a5f db630200  4000000 40004007  1000000        0 ffffffff   38c94d 
+008: 2a004007  1000000        0 ffffffff a1010000  7004007  1000000        0 
+016: ffffffff  9020000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x192b250 timestamp: 1597675591.246580 14:46:31.246 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 2105032704
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 418
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 551
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:31.246 0x192d4bc ... 0x192d520
+000: 47983a5f 34c30300  4000000 40004007  1000000        0 ffffffff   40787d 
+008: 2a004007  1000000        0 ffffffff a2010000  7004007  1000000        0 
+016: ffffffff 27020000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x192d570 timestamp: 1597675591.246829 14:46:31.246 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or "3142"] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3142 or "3142"] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or "3142"] value "/tmp/234-3121.b"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:31.246 0x192d4bc ... 0x192d568
+000: 47983a5f 2dc40300  5000000  30c8000  1000000  1000000 460c0000 1f000000 
+008:    c8000  1000000        0 460c0000 eb100000  20c8000  1000000  1000000 
+016: 460c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   622e31  300000c    1f753 
+040:        0 
+
+14:46:30.799528 1 metric
+    29.0.64 (sample.rapid): value 800000000
+
+14:46:30.829474 1 metric
+    29.0.64 (sample.rapid): value 1600000000
+
+14:46:30.859937 1 metric
+    29.0.64 (sample.rapid): value 2400000000
+
+14:46:30.886516 1 metric
+    29.0.64 (sample.rapid): value 3200000000
+
+14:46:30.976545 1 metric
+    29.0.64 (sample.rapid): value 4000000000
+
+14:46:31.066542 1 metric
+    29.0.64 (sample.rapid): value 505032704
+
+14:46:31.156635 1 metric
+    29.0.64 (sample.rapid): value 1305032704
+
+14:46:31.246580 1 metric
+    29.0.64 (sample.rapid): value 2105032704
+pmResult dump from 0x1f462c0 timestamp: 1597675591.246829 14:46:31.246 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3142 or ???] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "/tmp/234-3121.b"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:31.246 0x1f461dc ... 0x1f46288
+000: 47983a5f 2dc40300  5000000  30c8000  1000000  1000000 460c0000 1f000000 
+008:    c8000  1000000        0 460c0000 eb100000  20c8000  1000000  1000000 
+016: 460c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   622e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x1f462c0 timestamp: 1597675590.779498 14:46:30.779 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3140 or "3140"] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "/tmp/234-3121.a"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:30.779 0x1f461dc ... 0x1f46288
+000: 46983a5f eae40b00  5000000  30c8000  1000000  1000000 440c0000 1f000000 
+008:    c8000  1000000        0 440c0000 eb100000  20c8000  1000000  1000000 
+016: 440c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   612e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x1f46250 timestamp: 1597675590.799528 14:46:30.799 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 800000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 379
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 347
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.799 0x1f461dc ... 0x1f46240
+000: 46983a5f 28330c00  4000000 40004007  1000000        0 ffffffff    8af2f 
+008: 2a004007  1000000        0 ffffffff 7b010000  7004007  1000000        0 
+016: ffffffff 5b010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x1f46250 timestamp: 1597675590.829474 14:46:30.829 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 1600000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 394
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 376
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.829 0x1f461dc ... 0x1f46240
+000: 46983a5f 22a80c00  4000000 40004007  1000000        0 ffffffff   105e5f 
+008: 2a004007  1000000        0 ffffffff 8a010000  7004007  1000000        0 
+016: ffffffff 78010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x1f46250 timestamp: 1597675590.859937 14:46:30.859 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 2400000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 395
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 415
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.859 0x1f461dc ... 0x1f46240
+000: 46983a5f 211f0d00  4000000 40004007  1000000        0 ffffffff   180d8f 
+008: 2a004007  1000000        0 ffffffff 8b010000  7004007  1000000        0 
+016: ffffffff 9f010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x1f48570 timestamp: 1597675590.860132 14:46:30.860 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3140 or "3140"] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3140 or "3140"] value "/tmp/234-3121.a"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:30.860 0x1f484bc ... 0x1f48568
+000: 46983a5f e41f0d00  5000000  30c8000  1000000  1000000 440c0000 1f000000 
+008:    c8000  1000000        0 440c0000 eb100000  20c8000  1000000  1000000 
+016: 440c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   612e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x1f48570 timestamp: 1597675590.866484 14:46:30.866 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3142 or ???] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or ???] value "/tmp/234-3121.b"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:30.866 0x1f484bc ... 0x1f48568
+000: 46983a5f b4380d00  5000000  30c8000  1000000  1000000 460c0000 1f000000 
+008:    c8000  1000000        0 460c0000 eb100000  20c8000  1000000  1000000 
+016: 460c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   622e31  300000c    1f753 
+040:        0 
+pmResult dump from 0x1f46250 timestamp: 1597675590.886516 14:46:30.886 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 3200000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 400
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 462
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.886 0x1f484bc ... 0x1f48520
+000: 46983a5f f4860d00  4000000 40004007  1000000        0 ffffffff   20bcbe 
+008: 2a004007  1000000        0 ffffffff 90010000  7004007  1000000        0 
+016: ffffffff ce010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x1f46250 timestamp: 1597675590.976545 14:46:30.976 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 4000000000
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 415
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 479
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:30.976 0x1f484bc ... 0x1f48520
+000: 46983a5f a1e60e00  4000000 40004007  1000000        0 ffffffff   286bee 
+008: 2a004007  1000000        0 ffffffff 9f010000  7004007  1000000        0 
+016: ffffffff df010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x1f46250 timestamp: 1597675591.066542 14:46:31.066 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 505032704
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 416
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 509
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:31.066 0x1f484bc ... 0x1f48520
+000: 47983a5f ee030100  4000000 40004007  1000000        0 ffffffff   301a1e 
+008: 2a004007  1000000        0 ffffffff a0010000  7004007  1000000        0 
+016: ffffffff fd010000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x1f46250 timestamp: 1597675591.156635 14:46:31.156 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 1305032704
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 417
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 521
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:31.156 0x1f484bc ... 0x1f48520
+000: 47983a5f db630200  4000000 40004007  1000000        0 ffffffff   38c94d 
+008: 2a004007  1000000        0 ffffffff a1010000  7004007  1000000        0 
+016: ffffffff  9020000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x1f46250 timestamp: 1597675591.246580 14:46:31.246 numpmid: 4
+  29.0.64 (sample.rapid): numval: 1 valfmt: 0 vlist[]:
+   value 2105032704
+  29.0.42 (sample.xmit_pdu): numval: 1 valfmt: 0 vlist[]:
+   value 418
+  29.0.7 (sample.drift): numval: 1 valfmt: 0 vlist[]:
+   value 551
+  29.0.0 (sample.control): numval: 1 valfmt: 0 vlist[]:
+   value 0
+__pmLogRead timestamp=14:46:31.246 0x1f484bc ... 0x1f48520
+000: 47983a5f 34c30300  4000000 40004007  1000000        0 ffffffff   40787d 
+008: 2a004007  1000000        0 ffffffff a2010000  7004007  1000000        0 
+016: ffffffff 27020000     4007  1000000        0 ffffffff        0 
+pmResult dump from 0x1f48570 timestamp: 1597675591.246829 14:46:31.246 numpmid: 5
+  2.3.3 (pmcd.pmlogger.host): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or "3142"] value "26d3b23865d4"
+  2.3.0 (pmcd.pmlogger.port): numval: 1 valfmt: 0 vlist[]:
+    inst [3142 or "3142"] value 4331
+  2.3.2 (pmcd.pmlogger.archive): numval: 1 valfmt: 1 vlist[]:
+    inst [3142 or "3142"] value "/tmp/234-3121.b"
+  2.0.23 (pmcd.pid): numval: 1 valfmt: 1 vlist[]:
+   value 128851
+  2.0.24 (pmcd.seqnum): numval: 1 valfmt: 0 vlist[]:
+   value 15
+__pmLogRead timestamp=14:46:31.246 0x1f484bc ... 0x1f48568
+000: 47983a5f 2dc40300  5000000  30c8000  1000000  1000000 460c0000 1f000000 
+008:    c8000  1000000        0 460c0000 eb100000  20c8000  1000000  1000000 
+016: 460c0000 24000000 17008000  1000000  1000000 ffffffff 29000000 18008000 
+024:  1000000        0 ffffffff  f000000  6000011 33643632 38333262 34643536 
+032: 7e7e7e00  6000014 706d742f 3433322f 3231332d   622e31  300000c    1f753 
+040:        0 
+
+14:46:30.799528 1 metric
+    29.0.64 (sample.rapid): value 800000000
+
+14:46:30.829474 1 metric
+    29.0.64 (sample.rapid): value 1600000000
+
+14:46:30.859937 1 metric
+    29.0.64 (sample.rapid): value 2400000000
+
+14:46:30.886516 1 metric
+    29.0.64 (sample.rapid): value 3200000000
+
+14:46:30.976545 1 metric
+    29.0.64 (sample.rapid): value 4000000000
+
+14:46:31.066542 1 metric
+    29.0.64 (sample.rapid): value 505032704
+
+14:46:31.156635 1 metric
+    29.0.64 (sample.rapid): value 1305032704
+
+14:46:31.246580 1 metric
+    29.0.64 (sample.rapid): value 2105032704

@@ -1,0 +1,324 @@
+
+s/20200817.00.02/NOW-0.00.02/g
+s/20200817.00.04/NOW-0.00.04/g
+s/20200816.00.02/NOW-1.00.02/g
+s/20200816.00.04/NOW-1.00.04/g
+s/20200815.00.02/NOW-2.00.02/g
+s/20200815.00.04/NOW-2.00.04/g
+s/20200814.00.02/NOW-3.00.02/g
+s/20200814.00.04/NOW-3.00.04/g
+s/20200813.00.02/NOW-4.00.02/g
+s/20200813.00.04/NOW-4.00.04/g
+s/20200812.00.02/NOW-5.00.02/g
+s/20200812.00.04/NOW-5.00.04/g
+s/NOW-0/TODAY/g
+s/NOW-1/YESTERDAY/g
+s/20200817/TODAY/g
+s/20200816/YESTERDAY/g
+
+=== [] regular show ===
+pmlogger_daily: [/tmp/338-240961.control:2]
+Error: no pmlogger instance running for host "local:"
+... logging for host "local:" unchanged
+pmlogger_daily: [/tmp/338-240961.control:2]
+Warning: skipping log rotation because we don't know which pmlogger to signal
+total 84
+-rw-r--r-- 1 pcp pcp 864 Aug 17 14:52 20200816.0
+-rw-r--r-- 1 pcp pcp 192 Aug 17 14:52 20200816.index
+-rw-r--r-- 1 pcp pcp 455 Aug 17 14:52 20200816.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 17 00:04 20200817.00.04.0
+-rw-r--r-- 1 pcp pcp 192 Aug 17 00:04 20200817.00.04.index
+-rw-r--r-- 1 pcp pcp 414 Aug 17 00:04 20200817.00.04.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 17 00:02 20200817.00.02.0
+-rw-r--r-- 1 pcp pcp 192 Aug 17 00:02 20200817.00.02.index
+-rw-r--r-- 1 pcp pcp 414 Aug 17 00:02 20200817.00.02.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 15 00:04 20200815.00.04.0
+-rw-r--r-- 1 pcp pcp 192 Aug 15 00:04 20200815.00.04.index
+-rw-r--r-- 1 pcp pcp 414 Aug 15 00:04 20200815.00.04.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 15 00:02 20200815.00.02.0
+-rw-r--r-- 1 pcp pcp 192 Aug 15 00:02 20200815.00.02.index
+-rw-r--r-- 1 pcp pcp 414 Aug 15 00:02 20200815.00.02.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 14 00:04 20200814.00.04.0
+-rw-r--r-- 1 pcp pcp 192 Aug 14 00:04 20200814.00.04.index
+-rw-r--r-- 1 pcp pcp 414 Aug 14 00:04 20200814.00.04.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 14 00:02 20200814.00.02.0
+-rw-r--r-- 1 pcp pcp 192 Aug 14 00:02 20200814.00.02.index
+-rw-r--r-- 1 pcp pcp 414 Aug 14 00:02 20200814.00.02.meta
+NOW-3.00.02.0
+NOW-3.00.02.index
+NOW-3.00.02.meta
+NOW-3.00.04.0
+NOW-3.00.04.index
+NOW-3.00.04.meta
+NOW-2.00.02.0
+NOW-2.00.02.index
+NOW-2.00.02.meta
+NOW-2.00.04.0
+NOW-2.00.04.index
+NOW-2.00.04.meta
+YESTERDAY.0
+YESTERDAY.index
+YESTERDAY.meta
+TODAY.00.02.0
+TODAY.00.02.index
+TODAY.00.02.meta
+TODAY.00.04.0
+TODAY.00.04.index
+TODAY.00.04.meta
+=== [] nothing to do but cull some more ===
+pmlogger_daily: [/tmp/338-240961.control:2]
+Error: no pmlogger instance running for host "local:"
+... logging for host "local:" unchanged
+pmlogger_daily: [/tmp/338-240961.control:2]
+Warning: skipping log rotation because we don't know which pmlogger to signal
+total 60
+-rw-r--r-- 1 pcp pcp 864 Aug 17 14:52 save.0
+-rw-r--r-- 1 pcp pcp 192 Aug 17 14:52 save.index
+-rw-r--r-- 1 pcp pcp 455 Aug 17 14:52 save.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 17 00:04 20200817.00.04.0
+-rw-r--r-- 1 pcp pcp 192 Aug 17 00:04 20200817.00.04.index
+-rw-r--r-- 1 pcp pcp 414 Aug 17 00:04 20200817.00.04.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 17 00:02 20200817.00.02.0
+-rw-r--r-- 1 pcp pcp 192 Aug 17 00:02 20200817.00.02.index
+-rw-r--r-- 1 pcp pcp 414 Aug 17 00:02 20200817.00.02.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 15 00:04 20200815.00.04.0
+-rw-r--r-- 1 pcp pcp 192 Aug 15 00:04 20200815.00.04.index
+-rw-r--r-- 1 pcp pcp 414 Aug 15 00:04 20200815.00.04.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 15 00:02 20200815.00.02.0
+-rw-r--r-- 1 pcp pcp 192 Aug 15 00:02 20200815.00.02.index
+-rw-r--r-- 1 pcp pcp 414 Aug 15 00:02 20200815.00.02.meta
+NOW-2.00.02.0
+NOW-2.00.02.index
+NOW-2.00.02.meta
+NOW-2.00.04.0
+NOW-2.00.04.index
+NOW-2.00.04.meta
+TODAY.00.02.0
+TODAY.00.02.index
+TODAY.00.02.meta
+TODAY.00.04.0
+TODAY.00.04.index
+TODAY.00.04.meta
+save.0
+save.index
+save.meta
+=== [] error, output already exists ===
+pmlogger_daily: [/tmp/338-240961.control:2]
+Error: no pmlogger instance running for host "local:"
+... logging for host "local:" unchanged
+pmlogger_daily: [/tmp/338-240961.control:2]
+Warning: skipping log rotation because we don't know which pmlogger to signal
+pmlogger_daily: Warning: output archive (20200816) already exists
+[/tmp/338-240961.control:2] ... skip log merging and compressing for host "local:"
+total 72
+-rw-r--r-- 1 pcp pcp 414 Aug 17 14:52 20200816.17.18.meta
+-rw-r--r-- 1 pcp pcp 192 Aug 17 14:52 20200816.17.18.index
+-rw-r--r-- 1 pcp pcp 488 Aug 17 14:52 20200816.17.18.0
+-rw-r--r-- 1 pcp pcp 864 Aug 17 14:52 20200816.0
+-rw-r--r-- 1 pcp pcp 192 Aug 17 14:52 20200816.index
+-rw-r--r-- 1 pcp pcp 455 Aug 17 14:52 20200816.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 17 00:04 20200817.00.04.0
+-rw-r--r-- 1 pcp pcp 192 Aug 17 00:04 20200817.00.04.index
+-rw-r--r-- 1 pcp pcp 414 Aug 17 00:04 20200817.00.04.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 17 00:02 20200817.00.02.0
+-rw-r--r-- 1 pcp pcp 192 Aug 17 00:02 20200817.00.02.index
+-rw-r--r-- 1 pcp pcp 414 Aug 17 00:02 20200817.00.02.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 15 00:04 20200815.00.04.0
+-rw-r--r-- 1 pcp pcp 192 Aug 15 00:04 20200815.00.04.index
+-rw-r--r-- 1 pcp pcp 414 Aug 15 00:04 20200815.00.04.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 15 00:02 20200815.00.02.0
+-rw-r--r-- 1 pcp pcp 192 Aug 15 00:02 20200815.00.02.index
+-rw-r--r-- 1 pcp pcp 414 Aug 15 00:02 20200815.00.02.meta
+NOW-2.00.02.0
+NOW-2.00.02.index
+NOW-2.00.02.meta
+NOW-2.00.04.0
+NOW-2.00.04.index
+NOW-2.00.04.meta
+YESTERDAY.0
+YESTERDAY.17.18.0
+YESTERDAY.17.18.index
+YESTERDAY.17.18.meta
+YESTERDAY.index
+YESTERDAY.meta
+TODAY.00.02.0
+TODAY.00.02.index
+TODAY.00.02.meta
+TODAY.00.04.0
+TODAY.00.04.index
+TODAY.00.04.meta
+
+s/20200817.00.02/NOW-0.00.02/g
+s/20200817.00.04/NOW-0.00.04/g
+s/20200816.00.02/NOW-1.00.02/g
+s/20200816.00.04/NOW-1.00.04/g
+s/20200815.00.02/NOW-2.00.02/g
+s/20200815.00.04/NOW-2.00.04/g
+s/20200814.00.02/NOW-3.00.02/g
+s/20200814.00.04/NOW-3.00.04/g
+s/20200813.00.02/NOW-4.00.02/g
+s/20200813.00.04/NOW-4.00.04/g
+s/20200812.00.02/NOW-5.00.02/g
+s/20200812.00.04/NOW-5.00.04/g
+s/NOW-0/TODAY/g
+s/NOW-1/YESTERDAY/g
+s/20200817/TODAY/g
+s/20200816/YESTERDAY/g
+
+=== [verbose] regular show ===
+
+=== daily maintenance of PCP archives for host local: ===
+
+pmlogger_daily: [/tmp/338-240961.control:2]
+Error: no pmlogger instance running for host "local:"
+... logging for host "local:" unchanged
+pmlogger_daily: [/tmp/338-240961.control:2]
+Warning: skipping log rotation because we don't know which pmlogger to signal
+Archive files older than 4 days being removed ...
+    20200812.00.02.0 20200812.00.02.index 20200812.00.02.meta
+    20200812.00.04.0 20200812.00.04.index 20200812.00.04.meta
+    20200813.00.02.0 20200813.00.02.index 20200813.00.02.meta 20200813.00.04.0
+    20200813.00.04.index 20200813.00.04.meta
+Input archives to be merged:
+	20200816.00.02
+	20200816.00.04
+Output archive files:
+-rw-r--r-- 1 pcp pcp 455 Aug 17 14:52 20200816.meta
+-rw-r--r-- 1 pcp pcp 192 Aug 17 14:52 20200816.index
+-rw-r--r-- 1 pcp pcp 864 Aug 17 14:52 20200816.0
+Removing input archive files ...... done
+total 84
+-rw-r--r-- 1 pcp pcp 864 Aug 17 14:52 20200816.0
+-rw-r--r-- 1 pcp pcp 192 Aug 17 14:52 20200816.index
+-rw-r--r-- 1 pcp pcp 455 Aug 17 14:52 20200816.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 17 00:04 20200817.00.04.0
+-rw-r--r-- 1 pcp pcp 192 Aug 17 00:04 20200817.00.04.index
+-rw-r--r-- 1 pcp pcp 414 Aug 17 00:04 20200817.00.04.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 17 00:02 20200817.00.02.0
+-rw-r--r-- 1 pcp pcp 192 Aug 17 00:02 20200817.00.02.index
+-rw-r--r-- 1 pcp pcp 414 Aug 17 00:02 20200817.00.02.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 15 00:04 20200815.00.04.0
+-rw-r--r-- 1 pcp pcp 192 Aug 15 00:04 20200815.00.04.index
+-rw-r--r-- 1 pcp pcp 414 Aug 15 00:04 20200815.00.04.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 15 00:02 20200815.00.02.0
+-rw-r--r-- 1 pcp pcp 192 Aug 15 00:02 20200815.00.02.index
+-rw-r--r-- 1 pcp pcp 414 Aug 15 00:02 20200815.00.02.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 14 00:04 20200814.00.04.0
+-rw-r--r-- 1 pcp pcp 192 Aug 14 00:04 20200814.00.04.index
+-rw-r--r-- 1 pcp pcp 414 Aug 14 00:04 20200814.00.04.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 14 00:02 20200814.00.02.0
+-rw-r--r-- 1 pcp pcp 192 Aug 14 00:02 20200814.00.02.index
+-rw-r--r-- 1 pcp pcp 414 Aug 14 00:02 20200814.00.02.meta
+NOW-3.00.02.0
+NOW-3.00.02.index
+NOW-3.00.02.meta
+NOW-3.00.04.0
+NOW-3.00.04.index
+NOW-3.00.04.meta
+NOW-2.00.02.0
+NOW-2.00.02.index
+NOW-2.00.02.meta
+NOW-2.00.04.0
+NOW-2.00.04.index
+NOW-2.00.04.meta
+YESTERDAY.0
+YESTERDAY.index
+YESTERDAY.meta
+TODAY.00.02.0
+TODAY.00.02.index
+TODAY.00.02.meta
+TODAY.00.04.0
+TODAY.00.04.index
+TODAY.00.04.meta
+=== [verbose] nothing to do but cull some more ===
+
+=== daily maintenance of PCP archives for host local: ===
+
+pmlogger_daily: [/tmp/338-240961.control:2]
+Error: no pmlogger instance running for host "local:"
+... logging for host "local:" unchanged
+pmlogger_daily: [/tmp/338-240961.control:2]
+Warning: skipping log rotation because we don't know which pmlogger to signal
+Archive files older than 3 days being removed ...
+    20200814.00.02.0 20200814.00.02.index 20200814.00.02.meta 20200814.00.04.0
+    20200814.00.04.index 20200814.00.04.meta
+Warning: no archives found to merge
+total 60
+-rw-r--r-- 1 pcp pcp 864 Aug 17 14:52 save.0
+-rw-r--r-- 1 pcp pcp 192 Aug 17 14:52 save.index
+-rw-r--r-- 1 pcp pcp 455 Aug 17 14:52 save.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 17 00:04 20200817.00.04.0
+-rw-r--r-- 1 pcp pcp 192 Aug 17 00:04 20200817.00.04.index
+-rw-r--r-- 1 pcp pcp 414 Aug 17 00:04 20200817.00.04.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 17 00:02 20200817.00.02.0
+-rw-r--r-- 1 pcp pcp 192 Aug 17 00:02 20200817.00.02.index
+-rw-r--r-- 1 pcp pcp 414 Aug 17 00:02 20200817.00.02.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 15 00:04 20200815.00.04.0
+-rw-r--r-- 1 pcp pcp 192 Aug 15 00:04 20200815.00.04.index
+-rw-r--r-- 1 pcp pcp 414 Aug 15 00:04 20200815.00.04.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 15 00:02 20200815.00.02.0
+-rw-r--r-- 1 pcp pcp 192 Aug 15 00:02 20200815.00.02.index
+-rw-r--r-- 1 pcp pcp 414 Aug 15 00:02 20200815.00.02.meta
+NOW-2.00.02.0
+NOW-2.00.02.index
+NOW-2.00.02.meta
+NOW-2.00.04.0
+NOW-2.00.04.index
+NOW-2.00.04.meta
+TODAY.00.02.0
+TODAY.00.02.index
+TODAY.00.02.meta
+TODAY.00.04.0
+TODAY.00.04.index
+TODAY.00.04.meta
+save.0
+save.index
+save.meta
+=== [verbose] error, output already exists ===
+
+=== daily maintenance of PCP archives for host local: ===
+
+pmlogger_daily: [/tmp/338-240961.control:2]
+Error: no pmlogger instance running for host "local:"
+... logging for host "local:" unchanged
+pmlogger_daily: [/tmp/338-240961.control:2]
+Warning: skipping log rotation because we don't know which pmlogger to signal
+pmlogger_daily: Warning: output archive (20200816) already exists
+[/tmp/338-240961.control:2] ... skip log merging and compressing for host "local:"
+total 72
+-rw-r--r-- 1 pcp pcp 414 Aug 17 14:52 20200816.17.18.meta
+-rw-r--r-- 1 pcp pcp 192 Aug 17 14:52 20200816.17.18.index
+-rw-r--r-- 1 pcp pcp 488 Aug 17 14:52 20200816.17.18.0
+-rw-r--r-- 1 pcp pcp 864 Aug 17 14:52 20200816.0
+-rw-r--r-- 1 pcp pcp 192 Aug 17 14:52 20200816.index
+-rw-r--r-- 1 pcp pcp 455 Aug 17 14:52 20200816.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 17 00:04 20200817.00.04.0
+-rw-r--r-- 1 pcp pcp 192 Aug 17 00:04 20200817.00.04.index
+-rw-r--r-- 1 pcp pcp 414 Aug 17 00:04 20200817.00.04.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 17 00:02 20200817.00.02.0
+-rw-r--r-- 1 pcp pcp 192 Aug 17 00:02 20200817.00.02.index
+-rw-r--r-- 1 pcp pcp 414 Aug 17 00:02 20200817.00.02.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 15 00:04 20200815.00.04.0
+-rw-r--r-- 1 pcp pcp 192 Aug 15 00:04 20200815.00.04.index
+-rw-r--r-- 1 pcp pcp 414 Aug 15 00:04 20200815.00.04.meta
+-rw-r--r-- 1 pcp pcp 488 Aug 15 00:02 20200815.00.02.0
+-rw-r--r-- 1 pcp pcp 192 Aug 15 00:02 20200815.00.02.index
+-rw-r--r-- 1 pcp pcp 414 Aug 15 00:02 20200815.00.02.meta
+NOW-2.00.02.0
+NOW-2.00.02.index
+NOW-2.00.02.meta
+NOW-2.00.04.0
+NOW-2.00.04.index
+NOW-2.00.04.meta
+YESTERDAY.0
+YESTERDAY.17.18.0
+YESTERDAY.17.18.index
+YESTERDAY.17.18.meta
+YESTERDAY.index
+YESTERDAY.meta
+TODAY.00.02.0
+TODAY.00.02.index
+TODAY.00.02.meta
+TODAY.00.04.0
+TODAY.00.04.index
+TODAY.00.04.meta

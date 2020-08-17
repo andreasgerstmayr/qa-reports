@@ -1,0 +1,13 @@
+Performance Co-Pilot configuration on fv-az204:
+
+ platform: Linux fv-az204 5.4.0-1022-azure #22-Ubuntu SMP Fri Jul 10 06:14:37 UTC 2020 x86_64
+ hardware: 2 cpus, 2 disks, 1 node, 6954MB RAM
+ timezone: UTC
+ services: pmcd
+     pmcd: Version 5.2.1-1, 12 agents, 1 client
+     pmda: root pmcd proc pmproxy xfs sample sampledso linux mmv kvm
+           jbd2 simple
+ pmlogger: primary logger: /var/log/pcp/pmlogger/fv-az204/20200817.14.54-00
+Ubuntu and libvirt version 
+Ubuntu and libvirt version 
+Ubuntu and libvirt version 

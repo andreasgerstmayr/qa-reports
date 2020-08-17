@@ -1,0 +1,12 @@
+--- pcp stop ---
+
+--- run pmcdgone ---
+
+--- cleanup ---
+
+--- pcp stop ---
+--- pcp start ---
+
+--- _wait_for_pmcd ---
+
+--- _wait_for_pmlogger ---

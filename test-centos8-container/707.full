@@ -1,0 +1,81 @@
+.
+----------------------------------------------------------------------
+Ran 1 test in 6.011s
+
+OK
+Running as archive archives/pyapi.0
+pmGetContextHostName: smash
+pmParseMetricSpec: localhost
+pmLookupName: <pcp.pmapi.c_uint_Array_3 object at 0x7f9acb3971e0>
+pmIDStr: 60.0.32
+pmFetch: <pcp.pmapi.LP_pmResult object at 0x7f9acb397598>
+pmExtractValue: 8
+pmGetPMNSLocation: 3
+pmTraversePMNS: 93
+pmLookupName: PM_ERR_NAME Unknown metric name <pcp.pmapi.c_uint_Array_1 object at 0x7f9acb397510>
+pmLookupName relaxed mode ('no.such.metric.name', 'sample.bin')
+pmLookupName
+0xf000800
+  0x7400006
+  0xf000002
+  0xf000402
+pmNameAll: kernel.all.load
+pmNameID: kernel.all.load
+pmLookupDesc
+pmDesc@0x7f9ad4070f90 id=0xf000800 type=4
+pmNameAll: sample.bin
+pmNameID: sample.bin
+pmLookupDesc
+pmDesc@0x7f9ad4070f78 id=0x7400006 type=0
+pmNameAll: kernel.percpu.cpu.sys
+pmNameID: kernel.percpu.cpu.sys
+pmLookupDesc
+pmDesc@0x7f9acb3ad030 id=0xf000002 type=3
+pmNameAll: mem.util.free
+pmNameID: mem.util.free
+pmLookupDesc
+pmDesc@0x7f9acb3ad048 id=0xf000402 type=3
+pmGetInDomArchive: ['bin-100', 'bin-200', 'bin-300', 'bin-400', 'bin-500', 'bin-600', 'bin-700', 'bin-800', 'bin-900']
+pmInDomStr: 60.2
+pmDelProfile: ok
+pmLookupInDomArchive: 1
+pmNameInDomArchive: 1 minute
+pmLookupInDomText: PM_ERR_NOTHOST Operation requires context with host source of metrics
+pmLookupInDom: PM_ERR_INST_LOG Instance identifier not defined in the PCP archive log
+pmLookupInDomArchive: 5 15
+pmAddProfile:
+pmParseInterval: 3.000
+pmParseUnitsStr[bytes]: Mbyte / sec 0.8
+pmParseUnitsStr[unicode]: Mbyte / sec 0.8
+pmParseUnitsStr:  PM_ERR_CONV Impossible value or scale conversion unrecognized or duplicate base unit
+pmParseUnitsStr:  PM_ERR_CONV Impossible value or scale conversion 5
+pmFetch: <pcp.pmapi.LP_pmResult object at 0x7f9acb397e18>
+pmSortInstances: ok
+pmStore:  PM_ERR_NOTHOST Operation requires context with host source of metrics
+pmExtractValue 0 100.0
+pmExtractValue 1 200.0
+pmExtractValue 2 300.0
+pmExtractValue 3 400.0
+pmExtractValue 4 500.0
+pmExtractValue 5 600.0
+pmExtractValue 6 700.0
+pmExtractValue 7 800.0
+pmExtractValue 8 900.0
+pmConvScale, integer arg 7390504.0 7217.2890625
+pmConvScale, pmUnits arg 7390504.0 7217.2890625
+pmAtomStr 7.217289e+03
+pmSemStr counter
+pmtimevalSleep
+pmDupContext 1
+pmWhichContext: ok
+pmTypeStr FLOAT
+pmSetMode: ok
+pmGetArchiveLabel: ok
+pmGetArchiveEnd:  1395712709.856
+pmReconnectContext: ok
+pmRegisterDerived:  PM_ERR_CONV Impossible value or scale conversion Error: pmRegisterDerivedMetric("a.bad.expression", ...) syntax error
+a $ bad @ expression
+  ^
+Illegal character
+
+pmFreeResult

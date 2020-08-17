@@ -1,0 +1,453 @@
+=== folio name relative to cwd ===
+v5w36W.localhost.0
+v5w36Wa.localhost.0
+MKTEMP=v5w36W
+host: 26d3b23865d4
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-8214/v5w36W.26d3b23865d4.log
+host: localhost
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-8214/v5w36W.localhost.log
+host: 26d3b23865d4
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-8214/v5w36Wa.26d3b23865d4.log
+host: localhost
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-8214/v5w36Wa.localhost.log
+
+sleeping ...
+
+host: 26d3b23865d4
+f_config: NULL f_ipc: 6 pid: 8249 status: -1
+logfile: /tmp/354-8214/v5w36W.26d3b23865d4.log
+host: localhost
+f_config: NULL f_ipc: 7 pid: 8248 status: -1
+logfile: /tmp/354-8214/v5w36W.localhost.log
+host: 26d3b23865d4
+f_config: NULL f_ipc: 8 pid: 8247 status: -1
+logfile: /tmp/354-8214/v5w36Wa.26d3b23865d4.log
+host: localhost
+f_config: NULL f_ipc: 9 pid: 8246 status: -1
+logfile: /tmp/354-8214/v5w36Wa.localhost.log
+
+send some control requests ...
+host: 26d3b23865d4
+ OFF
+host: localhost
+ DETACH
+host: 26d3b23865d4
+ STATUS
+host: localhost
+ close(fd_ipc)
+
+now stop 'em all ...
+host: 26d3b23865d4
+pmRecordControl(... OFF ...): Invalid argument
+host: localhost
+pmRecordControl(... OFF ...): Invalid argument
+host: 26d3b23865d4
+host: localhost
+pmRecordControl(... OFF ...): IPC protocol failure
+
+and again to get any exit status ...
+pmRecordControl( ... OFF ...): Invalid argument
+
+
+discover what's happened ...
+
+host: 26d3b23865d4
+f_config: NULL f_ipc: -1 pid: 8249 status: 0
+logfile: /tmp/354-8214/v5w36W.26d3b23865d4.log
+host: localhost
+f_config: NULL f_ipc: -1 pid: 8248 status: -1
+logfile: /tmp/354-8214/v5w36W.localhost.log
+host: 26d3b23865d4
+f_config: NULL f_ipc: -1 pid: 8247 status: 0
+logfile: /tmp/354-8214/v5w36Wa.26d3b23865d4.log
+host: localhost
+f_config: NULL f_ipc: -1 pid: 8246 status: 0
+logfile: /tmp/354-8214/v5w36Wa.localhost.log
+pmlogger processes:
+UID         PID   PPID  C STIME TTY          TIME CMD
+root          1      0  0 14:18 ?        00:00:03 /sbin/init
+root         29      1  0 14:18 ?        00:00:00 /lib/systemd/systemd-journald
+root         47      1  0 14:18 tty6     00:00:00 /sbin/agetty --noclear tty6 linux
+root         48      1  0 14:18 tty5     00:00:00 /sbin/agetty --noclear tty5 linux
+root         49      1  0 14:18 tty4     00:00:00 /sbin/agetty --noclear tty4 linux
+root         50      1  0 14:18 tty3     00:00:00 /sbin/agetty --noclear tty3 linux
+root         51      1  0 14:18 tty2     00:00:00 /sbin/agetty --noclear tty2 linux
+root         63      1  0 14:18 tty1     00:00:00 /sbin/agetty --noclear tty1 linux
+root       5789      1  0 14:19 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data   5792   5789  0 14:19 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data   5793   5789  0 14:19 ?        00:00:00 /usr/sbin/apache2 -k start
+avahi      6534      1  0 14:19 ?        00:00:00 avahi-daemon: running [26d3b23865d4.local]
+avahi      6535   6534  0 14:19 ?        00:00:00 avahi-daemon: chroot helper
+message+   6536      1  0 14:19 ?        00:00:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+root       6568      1  0 14:19 ?        00:00:00 /lib/systemd/systemd-logind
+root       7204      1  0 14:19 ?        00:00:00 /usr/lib/postfix/sbin/master
+postfix    7205   7204  0 14:19 ?        00:00:00 pickup -l -t unix -u -c
+postfix    7206   7204  0 14:19 ?        00:00:00 qmgr -l -t unix -u
+root       8053      1  0 14:20 ?        00:00:00 /usr/sbin/cron -f
+pcpqa      8214 123444  0 14:46 ?        00:00:00 /bin/sh ./354
+pcpqa      8248      1  0 14:46 ?        00:00:00 pmlogger -x 6 -h localhost -l v5w36W.localhost.log -c v5w36W.localhost.config v5w36W.localhost
+pcpqa      8274   8214  0 14:46 ?        00:00:00 ps -efw
+pcpqa      8275   8214  0 14:46 ?        00:00:00 tee -a /var/lib/pcp/testsuite/354.full
+pcpqa      8276   8214  0 14:46 ?        00:00:00 sed -n -e 1p -e /[p]mlogger.*-x/{ s/ -x [0-9][0-9]*/ -x N/ p }
+pcpqa      8277   8214  0 14:46 ?        00:00:00 /bin/sh ./354
+pcpqa      8278   8214  0 14:46 ?        00:00:00 tee /tmp/354-8214.tmp
+pcpqa      8279   8214  0 14:46 ?        00:00:00 sed -f /tmp/354-8214.sed
+pcpqa      8280   8214  0 14:46 ?        00:00:00 sort
+pcpqa      8281   8277  0 14:46 ?        00:00:00 /bin/sh ./354
+root      27387      1  0 14:20 ?        00:00:06 /usr/bin/containerd
+root      27564      1  0 14:20 ?        00:00:00 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root      75661      1  0 14:23 ?        00:00:00 /usr/sbin/virtlogd
+root      75718      1  0 14:23 ?        00:00:00 /usr/sbin/virtlockd
+root      75776      1  0 14:23 ?        00:00:00 /usr/sbin/libvirtd
+libvirt+  86565      1  0 14:23 ?        00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/lib/libvirt/libvirt_leaseshelper
+root      86566  86565  0 14:23 ?        00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/lib/libvirt/libvirt_leaseshelper
+memcache  88787      1  0 14:23 ?        00:00:00 /usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1
+redis     93124      1  0 14:24 ?        00:00:00 /usr/bin/redis-server 127.0.0.1:6379
+unbound   96456      1  0 14:25 ?        00:00:00 /usr/sbin/unbound
+zabbix    97989      1  0 14:25 ?        00:00:00 /usr/sbin/zabbix_agentd
+zabbix    97990  97989  0 14:25 ?        00:00:00 /usr/sbin/zabbix_agentd: collector [idle 1 sec]
+zabbix    97991  97989  0 14:25 ?        00:00:00 /usr/sbin/zabbix_agentd: listener #1 [waiting for connection]
+zabbix    97992  97989  0 14:25 ?        00:00:00 /usr/sbin/zabbix_agentd: listener #2 [waiting for connection]
+zabbix    97993  97989  0 14:25 ?        00:00:00 /usr/sbin/zabbix_agentd: listener #3 [waiting for connection]
+zabbix    97994  97989  0 14:25 ?        00:00:00 /usr/sbin/zabbix_agentd: active checks #1 [idle 1 sec]
+pcpbuild 123436      0  0 14:45 ?        00:00:00 bash -
+root     123442 123436  0 14:45 ?        00:00:00 sudo -i -u pcpqa ./check -TT -g sanity -x not_in_container
+pcpbuild 123443 123436  0 14:45 ?        00:00:00 tee ./artifacts/test/test.log
+pcpqa    123444 123442  0 14:45 ?        00:00:00 /bin/sh ./check -TT -g sanity -x not_in_container
+pcp      128851      1  1 14:45 ?        00:00:00 /usr/lib/pcp/bin/pmcd -T 3
+root     128854 128851  0 14:45 ?        00:00:00 /var/lib/pcp/pmdas/root/pmdaroot
+root     128855 128854  0 14:45 ?        00:00:00 /var/lib/pcp/pmdas/proc/pmdaproc -d 3
+root     128856 128854  0 14:45 ?        00:00:00 /var/lib/pcp/pmdas/xfs/pmdaxfs -d 11
+pcp      128857 128854  0 14:45 ?        00:00:00 /var/lib/pcp/pmdas/sample/pmdasample -d 29
+root     128858 128854  0 14:45 ?        00:00:00 /var/lib/pcp/pmdas/linux/pmdalinux
+root     128859 128854  0 14:45 ?        00:00:00 /var/lib/pcp/pmdas/kvm/pmdakvm -d 95
+pcp      129182      1  0 14:45 ?        00:00:00 /usr/lib/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M
+pcp      130150 128854  0 14:45 ?        00:00:00 /var/lib/pcp/pmdas/simple/pmdasimple -d 253
+pmlogger pid: 8248
+=== MKTEMP.HOST.log ===
+Log for pmlogger on 26d3b23865d4 started Mon Aug 17 14:46:36 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs v5w36W.26d3b23865d4.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "26d3b23865d4" via "26d3b23865d4"
+Archive basename: v5w36W.26d3b23865d4
+
+Log finished Mon Aug 17 14:46:39 2020
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "foo" and the host "26d3b23865d4" has been in progress for 3 seconds and in that time the pmlogger process has created an archive of 364 bytes.
+
+This archive may be replayed with the following command:
+  $ pmafm foo replay
+
+The application that launched pmlogger has terminated this PCP recording session.
+pmlogger: Recording session terminated, exiting
+
+Log finished Mon Aug 17 14:46:39 2020
+=== MKTEMP.localhost.log ===
+Log for pmlogger on 26d3b23865d4 started Mon Aug 17 14:46:36 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs v5w36W.localhost.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "26d3b23865d4" via "localhost"
+Archive basename: v5w36W.localhost
+
+Log finished Mon Aug 17 14:46:40 2020
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "foo" and the host "26d3b23865d4" has been in progress for 4 seconds and in that time the pmlogger process has created an archive of 360 bytes.
+
+This archive may be replayed with the following command:
+  $ pmafm foo replay
+
+The application that launched pmlogger has asked pmlogger to continue independently and the PCP archive will grow at the rate of 316.4 Kbytes per hour or 7593.8 Kbytes per day.
+
+At any time this pmlogger process may be terminated with the following command:
+  $ pmsignal -s TERM 8248
+pmlogger: Caught signal 15, exiting
+
+Log finished Mon Aug 17 14:46:46 2020
+=== MKTEMPa.HOST.log ===
+Log for pmlogger on 26d3b23865d4 started Mon Aug 17 14:46:36 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs v5w36Wa.26d3b23865d4.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "26d3b23865d4" via "26d3b23865d4"
+Archive basename: v5w36Wa.26d3b23865d4
+
+Log finished Mon Aug 17 14:46:41 2020
+
+Warning: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "foo" and the host "26d3b23865d4" has been in progress for 5 seconds and in that time the pmlogger process has created an archive of 364 bytes.
+
+This archive may be replayed with the following command:
+  $ pmafm foo replay
+
+At any time this pmlogger process may be terminated with the following command:
+  $ pmsignal -s TERM 8247
+
+Log finished Mon Aug 17 14:46:43 2020
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "foo" and the host "26d3b23865d4" has been in progress for 7 seconds and in that time the pmlogger process has created an archive of 364 bytes.
+
+This archive may be replayed with the following command:
+  $ pmafm foo replay
+
+The application that launched pmlogger has terminated this PCP recording session.
+pmlogger: Recording session terminated, exiting
+
+Log finished Mon Aug 17 14:46:43 2020
+=== MKTEMPa.localhost.log ===
+Log for pmlogger on 26d3b23865d4 started Mon Aug 17 14:46:36 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs v5w36Wa.localhost.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "26d3b23865d4" via "localhost"
+Archive basename: v5w36Wa.localhost
+
+Log finished Mon Aug 17 14:46:42 2020
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "foo" and the host "26d3b23865d4" has been in progress for 6 seconds and in that time the pmlogger process has created an archive of 360 bytes.
+
+This archive may be replayed with the following command:
+  $ pmafm foo replay
+
+The application that launched pmlogger has exited and you must decide if the PCP recording session should be terminated or continued.  If recording is continued the PCP archive will grow at the rate of 210.9 Kbytes per hour or 5062.5 Kbytes per day.
+
+At any time this pmlogger process may be terminated with the following command:
+  $ pmsignal -s TERM 8246
+
+
+Terminate this PCP recording session now?pmlogger: Recording session terminated, exiting
+
+Log finished Mon Aug 17 14:46:42 2020
+=== absolute folio name ===
+7NVKvr.localhost.0
+7NVKvra.localhost.0
+MKTEMP=7NVKvr
+host: 26d3b23865d4
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-8214/7NVKvr.26d3b23865d4.log
+host: localhost
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-8214/7NVKvr.localhost.log
+host: 26d3b23865d4
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-8214/7NVKvra.26d3b23865d4.log
+host: localhost
+f_config: OK f_ipc: -1 pid: 0 status: -1
+logfile: /tmp/354-8214/7NVKvra.localhost.log
+
+sleeping ...
+
+host: 26d3b23865d4
+f_config: NULL f_ipc: 7 pid: 8426 status: -1
+logfile: /tmp/354-8214/7NVKvr.26d3b23865d4.log
+host: localhost
+f_config: NULL f_ipc: 8 pid: 8425 status: -1
+logfile: /tmp/354-8214/7NVKvr.localhost.log
+host: 26d3b23865d4
+f_config: NULL f_ipc: 9 pid: 8424 status: -1
+logfile: /tmp/354-8214/7NVKvra.26d3b23865d4.log
+host: localhost
+f_config: NULL f_ipc: 10 pid: 8423 status: -1
+logfile: /tmp/354-8214/7NVKvra.localhost.log
+
+send some control requests ...
+host: 26d3b23865d4
+ OFF
+host: localhost
+ DETACH
+host: 26d3b23865d4
+ STATUS
+host: localhost
+ close(fd_ipc)
+
+now stop 'em all ...
+host: 26d3b23865d4
+pmRecordControl(... OFF ...): Invalid argument
+host: localhost
+pmRecordControl(... OFF ...): Invalid argument
+host: 26d3b23865d4
+host: localhost
+pmRecordControl(... OFF ...): IPC protocol failure
+
+and again to get any exit status ...
+pmRecordControl( ... OFF ...): Invalid argument
+
+
+discover what's happened ...
+
+host: 26d3b23865d4
+f_config: NULL f_ipc: -1 pid: 8426 status: 0
+logfile: /tmp/354-8214/7NVKvr.26d3b23865d4.log
+host: localhost
+f_config: NULL f_ipc: -1 pid: 8425 status: -1
+logfile: /tmp/354-8214/7NVKvr.localhost.log
+host: 26d3b23865d4
+f_config: NULL f_ipc: -1 pid: 8424 status: 0
+logfile: /tmp/354-8214/7NVKvra.26d3b23865d4.log
+host: localhost
+f_config: NULL f_ipc: -1 pid: 8423 status: 0
+logfile: /tmp/354-8214/7NVKvra.localhost.log
+pmlogger processes:
+UID         PID   PPID  C STIME TTY          TIME CMD
+root          1      0  0 14:18 ?        00:00:03 /sbin/init
+root         29      1  0 14:18 ?        00:00:00 /lib/systemd/systemd-journald
+root         47      1  0 14:18 tty6     00:00:00 /sbin/agetty --noclear tty6 linux
+root         48      1  0 14:18 tty5     00:00:00 /sbin/agetty --noclear tty5 linux
+root         49      1  0 14:18 tty4     00:00:00 /sbin/agetty --noclear tty4 linux
+root         50      1  0 14:18 tty3     00:00:00 /sbin/agetty --noclear tty3 linux
+root         51      1  0 14:18 tty2     00:00:00 /sbin/agetty --noclear tty2 linux
+root         63      1  0 14:18 tty1     00:00:00 /sbin/agetty --noclear tty1 linux
+root       5789      1  0 14:19 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data   5792   5789  0 14:19 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data   5793   5789  0 14:19 ?        00:00:00 /usr/sbin/apache2 -k start
+avahi      6534      1  0 14:19 ?        00:00:00 avahi-daemon: running [26d3b23865d4.local]
+avahi      6535   6534  0 14:19 ?        00:00:00 avahi-daemon: chroot helper
+message+   6536      1  0 14:19 ?        00:00:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+root       6568      1  0 14:19 ?        00:00:00 /lib/systemd/systemd-logind
+root       7204      1  0 14:19 ?        00:00:00 /usr/lib/postfix/sbin/master
+postfix    7205   7204  0 14:19 ?        00:00:00 pickup -l -t unix -u -c
+postfix    7206   7204  0 14:19 ?        00:00:00 qmgr -l -t unix -u
+root       8053      1  0 14:20 ?        00:00:00 /usr/sbin/cron -f
+pcpqa      8214 123444  0 14:46 ?        00:00:00 /bin/sh ./354
+pcpqa      8425      1  0 14:46 ?        00:00:00 pmlogger -x 7 -h localhost -l 7NVKvr.localhost.log -c 7NVKvr.localhost.config 7NVKvr.localhost
+pcpqa      8451   8214  0 14:46 ?        00:00:00 ps -efw
+pcpqa      8452   8214  0 14:46 ?        00:00:00 tee -a /var/lib/pcp/testsuite/354.full
+pcpqa      8453   8214  0 14:46 ?        00:00:00 sed -n -e 1p -e /[p]mlogger.*-x/{ s/ -x [0-9][0-9]*/ -x N/ p }
+pcpqa      8454   8214  0 14:46 ?        00:00:00 /bin/sh ./354
+pcpqa      8455   8214  0 14:46 ?        00:00:00 /bin/sh ./354
+pcpqa      8456   8214  0 14:46 ?        00:00:00 sed -f /tmp/354-8214.sed
+pcpqa      8457   8214  0 14:46 ?        00:00:00 sort
+pcpqa      8458   8454  0 14:46 ?        00:00:00 /bin/sh ./354
+root      27387      1  0 14:20 ?        00:00:06 /usr/bin/containerd
+root      27564      1  0 14:20 ?        00:00:00 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root      75661      1  0 14:23 ?        00:00:00 /usr/sbin/virtlogd
+root      75718      1  0 14:23 ?        00:00:00 /usr/sbin/virtlockd
+root      75776      1  0 14:23 ?        00:00:00 /usr/sbin/libvirtd
+libvirt+  86565      1  0 14:23 ?        00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/lib/libvirt/libvirt_leaseshelper
+root      86566  86565  0 14:23 ?        00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/lib/libvirt/libvirt_leaseshelper
+memcache  88787      1  0 14:23 ?        00:00:00 /usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1
+redis     93124      1  0 14:24 ?        00:00:00 /usr/bin/redis-server 127.0.0.1:6379
+unbound   96456      1  0 14:25 ?        00:00:00 /usr/sbin/unbound
+zabbix    97989      1  0 14:25 ?        00:00:00 /usr/sbin/zabbix_agentd
+zabbix    97990  97989  0 14:25 ?        00:00:00 /usr/sbin/zabbix_agentd: collector [idle 1 sec]
+zabbix    97991  97989  0 14:25 ?        00:00:00 /usr/sbin/zabbix_agentd: listener #1 [waiting for connection]
+zabbix    97992  97989  0 14:25 ?        00:00:00 /usr/sbin/zabbix_agentd: listener #2 [waiting for connection]
+zabbix    97993  97989  0 14:25 ?        00:00:00 /usr/sbin/zabbix_agentd: listener #3 [waiting for connection]
+zabbix    97994  97989  0 14:25 ?        00:00:00 /usr/sbin/zabbix_agentd: active checks #1 [idle 1 sec]
+pcpbuild 123436      0  0 14:45 ?        00:00:00 bash -
+root     123442 123436  0 14:45 ?        00:00:00 sudo -i -u pcpqa ./check -TT -g sanity -x not_in_container
+pcpbuild 123443 123436  0 14:45 ?        00:00:00 tee ./artifacts/test/test.log
+pcpqa    123444 123442  0 14:45 ?        00:00:00 /bin/sh ./check -TT -g sanity -x not_in_container
+pcp      128851      1  0 14:45 ?        00:00:00 /usr/lib/pcp/bin/pmcd -T 3
+root     128854 128851  0 14:45 ?        00:00:00 /var/lib/pcp/pmdas/root/pmdaroot
+root     128855 128854  0 14:45 ?        00:00:00 /var/lib/pcp/pmdas/proc/pmdaproc -d 3
+root     128856 128854  0 14:45 ?        00:00:00 /var/lib/pcp/pmdas/xfs/pmdaxfs -d 11
+pcp      128857 128854  0 14:45 ?        00:00:00 /var/lib/pcp/pmdas/sample/pmdasample -d 29
+root     128858 128854  0 14:45 ?        00:00:00 /var/lib/pcp/pmdas/linux/pmdalinux
+root     128859 128854  0 14:45 ?        00:00:00 /var/lib/pcp/pmdas/kvm/pmdakvm -d 95
+pcp      129182      1  0 14:45 ?        00:00:00 /usr/lib/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M
+pcp      130150 128854  0 14:45 ?        00:00:00 /var/lib/pcp/pmdas/simple/pmdasimple -d 253
+pmlogger pid: 8425
+=== MKTEMP.HOST.log ===
+Log for pmlogger on 26d3b23865d4 started Mon Aug 17 14:46:46 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs 7NVKvr.26d3b23865d4.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "26d3b23865d4" via "26d3b23865d4"
+Archive basename: 7NVKvr.26d3b23865d4
+
+Log finished Mon Aug 17 14:46:49 2020
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "/tmp/354-8214/foo" and the host "26d3b23865d4" has been in progress for 3 seconds and in that time the pmlogger process has created an archive of 364 bytes.
+
+The application that launched pmlogger has terminated this PCP recording session.
+pmlogger: Recording session terminated, exiting
+
+Log finished Mon Aug 17 14:46:49 2020
+=== MKTEMP.localhost.log ===
+Log for pmlogger on 26d3b23865d4 started Mon Aug 17 14:46:46 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs 7NVKvr.localhost.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "26d3b23865d4" via "localhost"
+Archive basename: 7NVKvr.localhost
+
+Log finished Mon Aug 17 14:46:50 2020
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "/tmp/354-8214/foo" and the host "26d3b23865d4" has been in progress for 4 seconds and in that time the pmlogger process has created an archive of 360 bytes.
+
+The application that launched pmlogger has asked pmlogger to continue independently and the PCP archive will grow at the rate of 316.4 Kbytes per hour or 7593.8 Kbytes per day.
+
+At any time this pmlogger process may be terminated with the following command:
+  $ pmsignal -s TERM 8425
+pmlogger: Caught signal 15, exiting
+
+Log finished Mon Aug 17 14:46:56 2020
+=== MKTEMPa.HOST.log ===
+Log for pmlogger on 26d3b23865d4 started Mon Aug 17 14:46:46 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs 7NVKvra.26d3b23865d4.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "26d3b23865d4" via "26d3b23865d4"
+Archive basename: 7NVKvra.26d3b23865d4
+
+Log finished Mon Aug 17 14:46:51 2020
+
+Warning: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "/tmp/354-8214/foo" and the host "26d3b23865d4" has been in progress for 5 seconds and in that time the pmlogger process has created an archive of 364 bytes.
+
+At any time this pmlogger process may be terminated with the following command:
+  $ pmsignal -s TERM 8424
+
+Log finished Mon Aug 17 14:46:53 2020
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "/tmp/354-8214/foo" and the host "26d3b23865d4" has been in progress for 7 seconds and in that time the pmlogger process has created an archive of 364 bytes.
+
+The application that launched pmlogger has terminated this PCP recording session.
+pmlogger: Recording session terminated, exiting
+
+Log finished Mon Aug 17 14:46:53 2020
+=== MKTEMPa.localhost.log ===
+Log for pmlogger on 26d3b23865d4 started Mon Aug 17 14:46:46 2020
+
+preprocessor cmd: /usr/lib/pcp/bin/pmcpp -rs 7NVKvra.localhost.config -I /var/lib/pcp/config/pmlogger
+Config parsed
+Starting logger for host "26d3b23865d4" via "localhost"
+Archive basename: 7NVKvra.localhost
+
+Log finished Mon Aug 17 14:46:52 2020
+
+Error: pmconfirm(1) failed for recording session dialog
+Dialog:
+PCP recording for the archive folio "/tmp/354-8214/foo" and the host "26d3b23865d4" has been in progress for 6 seconds and in that time the pmlogger process has created an archive of 360 bytes.
+
+The application that launched pmlogger has exited and you must decide if the PCP recording session should be terminated or continued.  If recording is continued the PCP archive will grow at the rate of 210.9 Kbytes per hour or 5062.5 Kbytes per day.
+
+At any time this pmlogger process may be terminated with the following command:
+  $ pmsignal -s TERM 8423
+
+
+Terminate this PCP recording session now?pmlogger: Recording session terminated, exiting
+
+Log finished Mon Aug 17 14:46:52 2020

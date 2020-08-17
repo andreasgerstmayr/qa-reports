@@ -1,4 +1,114 @@
 {
-  "total" : 0,
-  "items" : [ ]
+  "total" : 53,
+  "items" : [ {
+    "uid" : "5a28ff24753a3a2fae74f89ef3f1cd8e",
+    "name" : "local",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 760,
+      "unknown" : 0,
+      "total" : 760
+    }
+  }, {
+    "uid" : "3c2fd161d37da8eab58e0d7dcc419317",
+    "name" : "sanity",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 760,
+      "unknown" : 0,
+      "total" : 760
+    }
+  }, {
+    "uid" : "38c62ee5555e24c5ef9c0f8f81c54954",
+    "name" : "libpcp",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 200,
+      "unknown" : 0,
+      "total" : 200
+    }
+  }, {
+    "uid" : "e6e002a8210bff4f1628acabbbef5e27",
+    "name" : "ostest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 170,
+      "unknown" : 0,
+      "total" : 170
+    }
+  }, {
+    "uid" : "2374fd5fa88405976f599a9f8b93b314",
+    "name" : "pmdumplog",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 120,
+      "unknown" : 0,
+      "total" : 120
+    }
+  }, {
+    "uid" : "1e21c98df92b2dfeb3b0dc0b8f990f9f",
+    "name" : "archive",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 110,
+      "unknown" : 0,
+      "total" : 110
+    }
+  }, {
+    "uid" : "234fba4e9e83ccf1955cb5f9de00f3a3",
+    "name" : "pmns",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 100,
+      "unknown" : 0,
+      "total" : 100
+    }
+  }, {
+    "uid" : "1a42c7e51e4fad2068ffb5c96fa6ea52",
+    "name" : "pmda.sample",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 70,
+      "unknown" : 0,
+      "total" : 70
+    }
+  }, {
+    "uid" : "594502bde0e141f8a6ea8eb6a2b5e58c",
+    "name" : "pmlogextract",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 70,
+      "unknown" : 0,
+      "total" : 70
+    }
+  }, {
+    "uid" : "817d2dda6a5d27390d5d4ca371ecfe05",
+    "name" : "python",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 70,
+      "unknown" : 0,
+      "total" : 70
+    }
+  } ]
 }

@@ -1,0 +1,73 @@
+{
+  "uid" : "a734973f004d225a",
+  "name" : "QA 561",
+  "fullName" : "QA #561 on fedora_rawhide-container",
+  "historyId" : "561@fedora_rawhide-container",
+  "time" : {
+    "start" : 1597676016000,
+    "stop" : 1597676018000,
+    "duration" : 2000
+  },
+  "description" : "PCP QA Test No. 561\n\nExercise pmMergeLabels(3) handling of various input data.\n\n\n\nCopyright (c) 2016-2017 Red Hat.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 561</p>\n<p>Exercise pmMergeLabels(3) handling of various input data.</p>\n<p>Copyright (c) 2016-2017 Red Hat.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "epic",
+    "value" : "libpcp"
+  }, {
+    "name" : "epic",
+    "value" : "python"
+  }, {
+    "name" : "epic",
+    "value" : "labels"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "sanity"
+  }, {
+    "name" : "epic",
+    "value" : "BAD"
+  }, {
+    "name" : "epic",
+    "value" : "@vm13"
+  }, {
+    "name" : "epic",
+    "value" : "@vm33"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/9a8efce8c556a54dae3dff3106e0dfeab3a220a8/qa/561",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/9a8efce8c556a54dae3dff3106e0dfeab3a220a8/qa/561.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a734973f004d225a.json",
+  "parameterValues" : [ ]
+}
