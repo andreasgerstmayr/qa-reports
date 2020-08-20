@@ -1,0 +1,34 @@
+pmdabcc config:
+# Installed by PCP QA test 1118 on Thu Aug 20 18:51:47 UTC 2020
+[pmda]
+modules = runqlat
+prefix = bcc.
+[runqlat]
+module = runqlat
+cluster = 4
+Log for pmdabcc on 316bddff7759 started Thu Aug 20 18:51:48 2020
+
+[Thu Aug 20 18:51:48] pmdabcc(2249) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 18:51:48] pmdabcc(2249) Info: Enabled modules:
+[Thu Aug 20 18:51:48] pmdabcc(2249) Info: ['runqlat']
+[Thu Aug 20 18:51:48] pmdabcc(2249) Info: Configuring modules:
+[Thu Aug 20 18:51:48] pmdabcc(2249) Info: runqlat
+[Thu Aug 20 18:51:48] pmdabcc(2249) Info: Modules configured.
+[Thu Aug 20 18:51:48] pmdabcc(2249) Info: Initializing modules:
+[Thu Aug 20 18:51:48] pmdabcc(2249) Info: runqlat
+[Thu Aug 20 18:51:48] pmdabcc(2249) Info: runqlat: Initialized.
+[Thu Aug 20 18:51:48] pmdabcc(2249) Info: Modules initialized.
+[Thu Aug 20 18:51:48] pmdabcc(2249) Info: Registering metrics:
+[Thu Aug 20 18:51:48] pmdabcc(2249) Info: runqlat
+[Thu Aug 20 18:51:48] pmdabcc(2249) Info: Metrics registered.
+[Thu Aug 20 18:51:48] pmdabcc(2249) Info: Registering helpers:
+[Thu Aug 20 18:51:48] pmdabcc(2249) Info: runqlat
+[Thu Aug 20 18:51:48] pmdabcc(2249) Info: Helpers registered.
+[Thu Aug 20 18:51:48] pmdabcc(2249) Info: Compiling modules:
+[Thu Aug 20 18:51:48] pmdabcc(2249) Info: runqlat
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 18:51:48] pmdabcc(2249) Error: runqlat: Failed to compile BPF text
+[Thu Aug 20 18:51:48] pmdabcc(2249) Error: runqlat: Module NOT active!
+[Thu Aug 20 18:51:48] pmdabcc(2249) Error: Failed to compile module runqlat, aborting.
+
+Log finished Thu Aug 20 18:51:48 2020

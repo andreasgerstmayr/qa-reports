@@ -1,0 +1,55 @@
+{
+  "uid" : "679e0765c874a040",
+  "name" : "QA 826",
+  "fullName" : "QA #826 on fedora_rawhide-container",
+  "historyId" : "826@fedora_rawhide-container",
+  "time" : {
+    "start" : 1597948322000,
+    "stop" : 1597948322000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 826\n\nExercise Linux PMDA NUMA memory metrics.\n\n\n\nCopyright (c) 2016 Red Hat.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 826</p>\n<p>Exercise Linux PMDA NUMA memory metrics.</p>\n<p>Copyright (c) 2016 Red Hat.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.linux"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/826",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/826.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "679e0765c874a040.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,89 @@
+{
+  "uid" : "38837ad085fd87f5",
+  "name" : "QA 393",
+  "fullName" : "QA #393 on debian11-container",
+  "historyId" : "393@debian11-container",
+  "time" : {
+    "start" : 1597945202000,
+    "stop" : 1597945217000,
+    "duration" : 15000
+  },
+  "description" : "PCP QA Test No. 393\n\nInterp mode (similar to qa/093, but with valgrind) (see also 331)\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian11 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 393</p>\n<p>Interp mode (similar to qa/093, but with valgrind) (see also 331)</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform debian11 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 393.out.bad)\n7a8,57\n> 24 bytes in 1 blocks are possibly lost in loss record 29 of 78\n> at 0x483877F: malloc (vg_replace_malloc.c:307)\n> by 0x49F80DF: tsearch (tsearch.c:338)\n> by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)\n> by 0x487A403: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)\n> by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4899B5B: ??? (in /usr/lib/libpcp.so.3)\n> by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)\n> by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)\n> by 0x1094CB: main (interp2.c:188)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:tsearch\n>    fun:__pmFindPDUBuf\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogRead_ctx\n>    obj:/usr/lib/libpcp.so.3\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogFetch\n>    obj:/usr/lib/libpcp.so.3\n>    fun:main\n> }\n> 872 bytes in 1 blocks are possibly lost in loss record 74 of 78\n> at 0x483877F: malloc (vg_replace_malloc.c:307)\n> by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)\n> by 0x487A403: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)\n> by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4899B5B: ??? (in /usr/lib/libpcp.so.3)\n> by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)\n> by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)\n> by 0x1094CB: main (interp2.c:188)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:__pmFindPDUBuf\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogRead_ctx\n>    obj:/usr/lib/libpcp.so.3\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogFetch\n>    obj:/usr/lib/libpcp.so.3\n>    fun:main\n> }\n11c61\n< ERROR SUMMARY: 0 errors from 0 contexts ...\n---\n> ERROR SUMMARY: 2 errors from 2 contexts ...\n17a68,117\n> 24 bytes in 1 blocks are possibly lost in loss record 27 of 77\n> at 0x483877F: malloc (vg_replace_malloc.c:307)\n> by 0x49F80DF: tsearch (tsearch.c:338)\n> by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)\n> by 0x487A403: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)\n> by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4899B5B: ??? (in /usr/lib/libpcp.so.3)\n> by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)\n> by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)\n> by 0x1094CB: main (interp2.c:188)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:tsearch\n>    fun:__pmFindPDUBuf\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogRead_ctx\n>    obj:/usr/lib/libpcp.so.3\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogFetch\n>    obj:/usr/lib/libpcp.so.3\n>    fun:main\n> }\n> 872 bytes in 1 blocks are possibly lost in loss record 73 of 77\n> at 0x483877F: malloc (vg_replace_malloc.c:307)\n> by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)\n> by 0x487A403: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)\n> by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4899B5B: ??? (in /usr/lib/libpcp.so.3)\n> by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)\n> by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)\n> by 0x1094CB: main (interp2.c:188)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:__pmFindPDUBuf\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogRead_ctx\n>    obj:/usr/lib/libpcp.so.3\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogFetch\n>    obj:/usr/lib/libpcp.so.3\n>    fun:main\n> }\n21c121\n< ERROR SUMMARY: 0 errors from 0 contexts ...\n---\n> ERROR SUMMARY: 2 errors from 2 contexts ...\n27a128,179\n> 24 bytes in 1 blocks are possibly lost in loss record 26 of 75\n> at 0x483877F: malloc (vg_replace_malloc.c:307)\n> by 0x49F80DF: tsearch (tsearch.c:338)\n> by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)\n> by 0x4893114: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)\n> by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)\n> by 0x48980AB: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4898E22: ??? (in /usr/lib/libpcp.so.3)\n> by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)\n> by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)\n> by 0x10947A: main (interp2.c:178)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:tsearch\n>    fun:__pmFindPDUBuf\n>    fun:__pmLogRead_ctx\n>    obj:/usr/lib/libpcp.so.3\n>    obj:/usr/lib/libpcp.so.3\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogFetch\n>    obj:/usr/lib/libpcp.so.3\n>    fun:main\n> }\n> 248 bytes in 1 blocks are possibly lost in loss record 65 of 75\n> at 0x483877F: malloc (vg_replace_malloc.c:307)\n> by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)\n> by 0x487A403: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)\n> by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)\n> by 0x48980AB: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4898E22: ??? (in /usr/lib/libpcp.so.3)\n> by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)\n> by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)\n> by 0x10947A: main (interp2.c:178)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:__pmFindPDUBuf\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogRead_ctx\n>    obj:/usr/lib/libpcp.so.3\n>    obj:/usr/lib/libpcp.so.3\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogFetch\n>    obj:/usr/lib/libpcp.so.3\n>    fun:main\n> }\n31c183\n< ERROR SUMMARY: 0 errors from 0 contexts ...\n---\n> ERROR SUMMARY: 2 errors from 2 contexts ...\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 5aea1a73a825 -f sample.milliseconds\nPMDA probe: pminfo -h 5aea1a73a825 -f sampledso.milliseconds\nPMDA probe: pminfo -h 5aea1a73a825 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 393\n\nInterp mode (similar to qa/093, but with valgrind) (see also 331)\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian11 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 393.out.bad)\n7a8,57\n> 24 bytes in 1 blocks are possibly lost in loss record 29 of 78\n> at 0x483877F: malloc (vg_replace_malloc.c:307)\n> by 0x49F80DF: tsearch (tsearch.c:338)\n> by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)\n> by 0x487A403: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)\n> by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4899B5B: ??? (in /usr/lib/libpcp.so.3)\n> by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)\n> by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)\n> by 0x1094CB: main (interp2.c:188)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:tsearch\n>    fun:__pmFindPDUBuf\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogRead_ctx\n>    obj:/usr/lib/libpcp.so.3\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogFetch\n>    obj:/usr/lib/libpcp.so.3\n>    fun:main\n> }\n> 872 bytes in 1 blocks are possibly lost in loss record 74 of 78\n> at 0x483877F: malloc (vg_replace_malloc.c:307)\n> by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)\n> by 0x487A403: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)\n> by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4899B5B: ??? (in /usr/lib/libpcp.so.3)\n> by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)\n> by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)\n> by 0x1094CB: main (interp2.c:188)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:__pmFindPDUBuf\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogRead_ctx\n>    obj:/usr/lib/libpcp.so.3\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogFetch\n>    obj:/usr/lib/libpcp.so.3\n>    fun:main\n> }\n11c61\n< ERROR SUMMARY: 0 errors from 0 contexts ...\n---\n> ERROR SUMMARY: 2 errors from 2 contexts ...\n17a68,117\n> 24 bytes in 1 blocks are possibly lost in loss record 27 of 77\n> at 0x483877F: malloc (vg_replace_malloc.c:307)\n> by 0x49F80DF: tsearch (tsearch.c:338)\n> by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)\n> by 0x487A403: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)\n> by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4899B5B: ??? (in /usr/lib/libpcp.so.3)\n> by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)\n> by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)\n> by 0x1094CB: main (interp2.c:188)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:tsearch\n>    fun:__pmFindPDUBuf\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogRead_ctx\n>    obj:/usr/lib/libpcp.so.3\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogFetch\n>    obj:/usr/lib/libpcp.so.3\n>    fun:main\n> }\n> 872 bytes in 1 blocks are possibly lost in loss record 73 of 77\n> at 0x483877F: malloc (vg_replace_malloc.c:307)\n> by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)\n> by 0x487A403: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)\n> by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4899B5B: ??? (in /usr/lib/libpcp.so.3)\n> by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)\n> by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)\n> by 0x1094CB: main (interp2.c:188)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:__pmFindPDUBuf\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogRead_ctx\n>    obj:/usr/lib/libpcp.so.3\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogFetch\n>    obj:/usr/lib/libpcp.so.3\n>    fun:main\n> }\n21c121\n< ERROR SUMMARY: 0 errors from 0 contexts ...\n---\n> ERROR SUMMARY: 2 errors from 2 contexts ...\n27a128,179\n> 24 bytes in 1 blocks are possibly lost in loss record 26 of 75\n> at 0x483877F: malloc (vg_replace_malloc.c:307)\n> by 0x49F80DF: tsearch (tsearch.c:338)\n> by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)\n> by 0x4893114: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)\n> by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)\n> by 0x48980AB: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4898E22: ??? (in /usr/lib/libpcp.so.3)\n> by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)\n> by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)\n> by 0x10947A: main (interp2.c:178)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:tsearch\n>    fun:__pmFindPDUBuf\n>    fun:__pmLogRead_ctx\n>    obj:/usr/lib/libpcp.so.3\n>    obj:/usr/lib/libpcp.so.3\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogFetch\n>    obj:/usr/lib/libpcp.so.3\n>    fun:main\n> }\n> 248 bytes in 1 blocks are possibly lost in loss record 65 of 75\n> at 0x483877F: malloc (vg_replace_malloc.c:307)\n> by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)\n> by 0x487A403: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)\n> by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)\n> by 0x48980AB: ??? (in /usr/lib/libpcp.so.3)\n> by 0x4898E22: ??? (in /usr/lib/libpcp.so.3)\n> by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)\n> by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)\n> by 0x10947A: main (interp2.c:178)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:__pmFindPDUBuf\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogRead_ctx\n>    obj:/usr/lib/libpcp.so.3\n>    obj:/usr/lib/libpcp.so.3\n>    obj:/usr/lib/libpcp.so.3\n>    fun:__pmLogFetch\n>    obj:/usr/lib/libpcp.so.3\n>    fun:main\n> }\n31c183\n< ERROR SUMMARY: 0 errors from 0 contexts ...\n---\n> ERROR SUMMARY: 2 errors from 2 contexts ...\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 5aea1a73a825 -f sample.milliseconds\nPMDA probe: pminfo -h 5aea1a73a825 -f sampledso.milliseconds\nPMDA probe: pminfo -h 5aea1a73a825 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "97c39b3c73ee4b8b",
+      "name" : "393.out.bad",
+      "source" : "97c39b3c73ee4b8b.txt",
+      "type" : "text/plain",
+      "size" : 5747
+    }, {
+      "uid" : "615100c6880f7d40",
+      "name" : "393.full",
+      "source" : "615100c6880f7d40.txt",
+      "type" : "text/plain",
+      "size" : 9353
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian11-container"
+  }, {
+    "name" : "host",
+    "value" : "debian11-container"
+  }, {
+    "name" : "epic",
+    "value" : "archive"
+  }, {
+    "name" : "epic",
+    "value" : "mem_leak"
+  }, {
+    "name" : "epic",
+    "value" : "valgrind"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/393",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/393.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "38837ad085fd87f5.json",
+  "parameterValues" : [ ]
+}

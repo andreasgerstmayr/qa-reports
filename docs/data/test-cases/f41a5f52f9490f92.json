@@ -1,0 +1,55 @@
+{
+  "uid" : "f41a5f52f9490f92",
+  "name" : "QA 805",
+  "fullName" : "QA #805 on debian10-container",
+  "historyId" : "805@debian10-container",
+  "time" : {
+    "start" : 1597947601000,
+    "stop" : 1597947601000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 805\n\nExercise the postfix PMDA.\n\n\n\nCopyright (c) 2015 Red Hat.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 805</p>\n<p>Exercise the postfix PMDA.</p>\n<p>Copyright (c) 2015 Red Hat.  All Rights Reserved.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "No postfix PMDA",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian10-container"
+  }, {
+    "name" : "host",
+    "value" : "debian10-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.postfix"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/805",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/805.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f41a5f52f9490f92.json",
+  "parameterValues" : [ ]
+}

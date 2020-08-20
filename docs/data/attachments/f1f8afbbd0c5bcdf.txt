@@ -1,0 +1,60 @@
+[Thu Aug 20 18:59:42] pmie(17010) Info: Cannot connect to pmcd no.such.host.pcp.io
+pmie: warning - pmcd via no.such.host.pcp.io is unreachable
+sleepTight: small negative delay (-0.000001). sched=1597949982.190896, cur=1597949982.190897
+This sleepTight() entry: Thu Aug 20 18:59:42.190896 2020
+Harvest children done: Thu Aug 20 18:59:42.190896 2020
+Want sleepTight until: Thu Aug 20 18:59:42.190896 2020
+This Task dump @ 0x55e52274a920
+  nth=0 delta=12.000 tick=0 next=(nil) prev=(nil)
+  eval time: Thu Aug 20 18:59:42.190896 2020
+  retry delta: 5.000 metric/instances missing
+  host= via=no.such.host.pcp.io (up)
+  rules:
+    expr_1
+Evaluating task:
+Task dump @ 0x55e52274a920
+  nth=0 delta=12.000 tick=0 next=(nil) prev=(nil)
+  eval time: Thu Aug 20 18:59:42.190896 2020
+  retry delta: 5.000 metric/instances missing
+  host= via=no.such.host.pcp.io (up)
+  rules:
+    expr_1
+cndEq_n_1(0x55e52274a620) ...
+Expr dump @ 0x55e52274a620
+  op=30 (==) arg1=0x55e52274a4e0 arg2=0x55e52274a580 parent=0x55e52274a880
+  eval=cndEq_n_1 metrics=0x55e522746c20 ring=0x55e52274a6a0
+  valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+sleepTight: negative delay (-3.026456). sched=1597949987.190896, cur=1597949990.217352
+Last sleepTight until: Thu Aug 20 18:59:42.190896 2020
+Last Task dump @ 0x55e52274a920
+  nth=0 delta=12.000 tick=0 next=(nil) prev=(nil)
+  eval time: Thu Aug 20 18:59:47.190896 2020
+  retry delta: 10.000 metric/instances missing
+  host= via=no.such.host.pcp.io (up)
+  rules:
+    expr_1
+This sleepTight() entry: Thu Aug 20 18:59:50.217351 2020
+Harvest children done: Thu Aug 20 18:59:50.217351 2020
+Want sleepTight until: Thu Aug 20 18:59:47.190896 2020
+This Task dump @ 0x55e52274a920
+  nth=0 delta=12.000 tick=0 next=(nil) prev=(nil)
+  eval time: Thu Aug 20 18:59:47.190896 2020
+  retry delta: 10.000 metric/instances missing
+  host= via=no.such.host.pcp.io (up)
+  rules:
+    expr_1
+Evaluating task:
+Task dump @ 0x55e52274a920
+  nth=0 delta=12.000 tick=0 next=(nil) prev=(nil)
+  eval time: Thu Aug 20 18:59:47.190896 2020
+  retry delta: 10.000 metric/instances missing
+  host= via=no.such.host.pcp.io (up)
+  rules:
+    expr_1
+cndEq_n_1(0x55e52274a620) ...
+Expr dump @ 0x55e52274a620
+  op=30 (==) arg1=0x55e52274a4e0 arg2=0x55e52274a580 parent=0x55e52274a880
+  eval=cndEq_n_1 metrics=0x55e522746c20 ring=0x55e52274a6a0
+  valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=

@@ -1,0 +1,203 @@
+--- start control file ---
+# created by pmlogctl on Thu Aug 20 18:34:48 UTC 2020
+$class=default
+#DO NOT REMOVE OR EDIT THE FOLLOWING LINE
+$version=1.1
+localhost n n PCP_ARCHIVE_DIR/localhost -c ./localhost.config
+--- end control file ---
+Installing control file: /etc/pcp/pmlogger/control.d/localhost
++ date-and-timestamp 2020-08-20 18:34:50 1597948490
+Start: 2020-08-20 18:34:50.343826139
+Called from:
+pstree: invalid option -- 's'
+Usage: pstree [ -a ] [ -c ] [ -h | -H PID ] [ -l ] [ -n ] [ -p ] [ -u ]
+              [ -A | -G | -U ] [ PID | USER ]
+       pstree -V
+Display a tree of processes.
+
+    -a     show command line arguments
+    -A     use ASCII line drawing characters
+    -c     don't compact identical subtrees
+    -h     highlight current process and its ancestors
+    -H PID highlight this process and its ancestors
+    -G     use VT100 line drawing characters
+    -l     don't truncate long lines
+    -n     sort output by PID
+    -p     show PIDs; implies -c
+    -u     show uid transitions
+    -U     use UTF-8 (Unicode) line drawing characters
+    -V     display version information
+    -Z     show SELinux security contexts
+    PID    start at this PID; default is 1 (init)
+    USER   show only trees rooted at processes of this user
+
+[control.d/localhost:2] host="$class=default" primary="" socks="" dir="" args=""
+# $class=default    
++ export class; class=default    
+[control.d/localhost:4] host="$version=1.1" primary="" socks="" dir="" args=""
+# $version=1.1    
++ export version; version=1.1    
+[control.d/localhost:5] host="localhost" primary="n" socks="n" dir="/var/log/pcp/pmlogger/localhost" args="-c ./localhost.config"
+
+=== daily maintenance of PCP archives for host localhost ===
+
+Check pmlogger -h localhost ... in /var/log/pcp/pmlogger/localhost ...
++ cd /var/log/pcp/pmlogger/localhost
++ get mutex lock
+... try /var/lib/pcp/tmp/pmlogger/12144 host=97d404ba7f88 arch=/var/log/pcp/pmlogger/localhost/20200820.18.34: match=2 pmlogger process 12144 identified, OK
+non-primary pmlogger process(es) 12144 identified, OK
++ pmsignal -s USR2 12144
+[control.d/localhost:5] skip cull for current 20200820.18.34 archive
+Warning: no archive files found to cull
+COMPRESSAFTER=never
+End: 2020-08-20 18:34:50.414999978
++ date-and-timestamp 2020-08-20 18:34:50 1597948490
+Start: 2020-08-20 18:34:50.606943670
+Called from:
+pstree: invalid option -- 's'
+Usage: pstree [ -a ] [ -c ] [ -h | -H PID ] [ -l ] [ -n ] [ -p ] [ -u ]
+              [ -A | -G | -U ] [ PID | USER ]
+       pstree -V
+Display a tree of processes.
+
+    -a     show command line arguments
+    -A     use ASCII line drawing characters
+    -c     don't compact identical subtrees
+    -h     highlight current process and its ancestors
+    -H PID highlight this process and its ancestors
+    -G     use VT100 line drawing characters
+    -l     don't truncate long lines
+    -n     sort output by PID
+    -p     show PIDs; implies -c
+    -u     show uid transitions
+    -U     use UTF-8 (Unicode) line drawing characters
+    -V     display version information
+    -Z     show SELinux security contexts
+    PID    start at this PID; default is 1 (init)
+    USER   show only trees rooted at processes of this user
+
+[control.d/localhost:2] host="$class=default" primary="" socks="" dir="" args=""
+# $class=default    
++ export class; class=default    
+[control.d/localhost:4] host="$version=1.1" primary="" socks="" dir="" args=""
+# $version=1.1    
++ export version; version=1.1    
+[control.d/localhost:5] host="#!#localhost" primary="n" socks="n" dir="/var/log/pcp/pmlogger/localhost" args="-c ./localhost.config"
+
+=== daily maintenance of PCP archives for host localhost ===
+
+Check pmlogger -h localhost ... in /var/log/pcp/pmlogger/localhost ...
++ cd /var/log/pcp/pmlogger/localhost
++ get mutex lock
+... try /var/lib/pcp/tmp/pmlogger/48002 host=97d404ba7f88 arch=/var/log/pcp/pmlogger/97d404ba7f88/20200820.18.32-00: match=0 different directory, skip
+No non-primary pmlogger process(es) found
+pmlogger_daily: [control.d/localhost:5]
+Error: no pmlogger instance running for host "localhost"
+... logging for host "localhost" unchanged
+pmlogger_daily: [control.d/localhost:5]
+Warning: skipping log rotation because we don't know which pmlogger to signal
+Archive files older than 0 days being removed ...
+    20200820.18.34.0 20200820.18.34.index 20200820.18.34.meta
++ rm -f 20200820.18.34.0 20200820.18.34.index 20200820.18.34.meta
+COMPRESSAFTER=never
+End: 2020-08-20 18:34:50.663936562
++ date-and-timestamp 2020-08-20 18:34:52 1597948492
+Start: 2020-08-20 18:34:52.246015782
+Called from:
+pstree: invalid option -- 's'
+Usage: pstree [ -a ] [ -c ] [ -h | -H PID ] [ -l ] [ -n ] [ -p ] [ -u ]
+              [ -A | -G | -U ] [ PID | USER ]
+       pstree -V
+Display a tree of processes.
+
+    -a     show command line arguments
+    -A     use ASCII line drawing characters
+    -c     don't compact identical subtrees
+    -h     highlight current process and its ancestors
+    -H PID highlight this process and its ancestors
+    -G     use VT100 line drawing characters
+    -l     don't truncate long lines
+    -n     sort output by PID
+    -p     show PIDs; implies -c
+    -u     show uid transitions
+    -U     use UTF-8 (Unicode) line drawing characters
+    -V     display version information
+    -Z     show SELinux security contexts
+    PID    start at this PID; default is 1 (init)
+    USER   show only trees rooted at processes of this user
+
+[control.d/localhost:2] host="$class=default" primary="" socks="" dir="" args=""
+# $class=default    
++ export class; class=default    
+[control.d/localhost:4] host="$version=1.1" primary="" socks="" dir="" args=""
+# $version=1.1    
++ export version; version=1.1    
+[control.d/localhost:5] host="localhost" primary="n" socks="n" dir="/var/log/pcp/pmlogger/localhost" args="-c ./localhost.config"
+
+=== daily maintenance of PCP archives for host localhost ===
+
+Check pmlogger -h localhost ... in /var/log/pcp/pmlogger/localhost ...
++ cd /var/log/pcp/pmlogger/localhost
++ get mutex lock
+... try /var/lib/pcp/tmp/pmlogger/13030 host=97d404ba7f88 arch=/var/log/pcp/pmlogger/localhost/20200820.18.34-00: match=2 pmlogger process 13030 identified, OK
+non-primary pmlogger process(es) 13030 identified, OK
++ pmsignal -s USR2 13030
+[control.d/localhost:5] skip cull for current 20200820.18.34-00 archive
+Archive files older than 0 days being removed ...
+    20200820.18.34.0 20200820.18.34.index 20200820.18.34.meta
++ rm -f 20200820.18.34.0 20200820.18.34.index 20200820.18.34.meta
+COMPRESSAFTER=never
+End: 2020-08-20 18:34:52.318710436
++ date-and-timestamp 2020-08-20 18:34:52 1597948492
+Start: 2020-08-20 18:34:52.508467606
+Called from:
+pstree: invalid option -- 's'
+Usage: pstree [ -a ] [ -c ] [ -h | -H PID ] [ -l ] [ -n ] [ -p ] [ -u ]
+              [ -A | -G | -U ] [ PID | USER ]
+       pstree -V
+Display a tree of processes.
+
+    -a     show command line arguments
+    -A     use ASCII line drawing characters
+    -c     don't compact identical subtrees
+    -h     highlight current process and its ancestors
+    -H PID highlight this process and its ancestors
+    -G     use VT100 line drawing characters
+    -l     don't truncate long lines
+    -n     sort output by PID
+    -p     show PIDs; implies -c
+    -u     show uid transitions
+    -U     use UTF-8 (Unicode) line drawing characters
+    -V     display version information
+    -Z     show SELinux security contexts
+    PID    start at this PID; default is 1 (init)
+    USER   show only trees rooted at processes of this user
+
+[control.d/localhost:2] host="$class=default" primary="" socks="" dir="" args=""
+# $class=default    
++ export class; class=default    
+[control.d/localhost:4] host="$version=1.1" primary="" socks="" dir="" args=""
+# $version=1.1    
++ export version; version=1.1    
+[control.d/localhost:5] host="#!#localhost" primary="n" socks="n" dir="/var/log/pcp/pmlogger/localhost" args="-c ./localhost.config"
+
+=== daily maintenance of PCP archives for host localhost ===
+
+Check pmlogger -h localhost ... in /var/log/pcp/pmlogger/localhost ...
++ cd /var/log/pcp/pmlogger/localhost
++ get mutex lock
+... try /var/lib/pcp/tmp/pmlogger/48002 host=97d404ba7f88 arch=/var/log/pcp/pmlogger/97d404ba7f88/20200820.18.32-00: match=0 different directory, skip
+No non-primary pmlogger process(es) found
+pmlogger_daily: [control.d/localhost:5]
+Error: no pmlogger instance running for host "localhost"
+... logging for host "localhost" unchanged
+pmlogger_daily: [control.d/localhost:5]
+Warning: skipping log rotation because we don't know which pmlogger to signal
+Archive files older than 0 days being removed ...
+    20200820.18.34-00.0 20200820.18.34-00.index 20200820.18.34-00.meta
+    20200820.18.34.0 20200820.18.34.index 20200820.18.34.meta
++ rm -f 20200820.18.34-00.0 20200820.18.34-00.index 20200820.18.34-00.meta 20200820.18.34.0 20200820.18.34.index 20200820.18.34.meta
+COMPRESSAFTER=never
+End: 2020-08-20 18:34:52.584854899
+_cleanup: ...
+Warning: pmlogger for host localhost already stopped, nothing to do

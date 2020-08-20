@@ -1,0 +1,83 @@
+{
+  "uid" : "945c334ca27aeb54",
+  "name" : "QA 1768",
+  "fullName" : "QA #1768 on centos6-container",
+  "historyId" : "1768@centos6-container",
+  "time" : {
+    "start" : 1597948902000,
+    "stop" : 1597948902000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 1768\n\nExercise the pmfind_check(1) utility.\n\n\n\nCopyright (c) 2020 Red Hat.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 1768</p>\n<p>Exercise the pmfind_check(1) utility.</p>\n<p>Copyright (c) 2020 Red Hat.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform centos6 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 1768.out.bad)\n2,93d1\n< Discovered host pcp://slick:44321 [243f90596d76cf23e8da47476ec452a2adbe0b32]\n< PCP_ETC_DIR/pcp/pmie/class.d/pmfind: host pcp://slick:44321 hostname(.*) true\n< --- start control file ---\n< # created by pmiectl on DATE\n< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE\n< $version=1.1\n< $class=pmfind\n< pcp://slick:44321 n n PCP_LOG_DIR/pmie/243f90596d76cf23e8da47476ec452a2adbe0b32/pmie.log -c ./243f90596d76cf23e8da47476ec452a2adbe0b32.config\n< --- end control file ---\n< Installing control file: PCP_ETC_DIR/pcp/pmie/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32\n< + cp PCP_TMPFILE_DIR/pmiectl.XXXXX/control PCP_ETC_DIR/pcp/pmie/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32\n< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmie_check -c PCP_ETC_DIR/pcp/pmie/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32\n< PCP_ETC_DIR/pcp/pmlogger/class.d/pmfind: host pcp://slick:44321 hostname(.*) true\n< --- start control file ---\n< # created by pmlogctl on DATE\n< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE\n< $version=1.1\n< $class=pmfind\n< pcp://slick:44321 n n PCP_ARCHIVE_DIR/243f90596d76cf23e8da47476ec452a2adbe0b32 -c ./243f90596d76cf23e8da47476ec452a2adbe0b32.config\n< --- end control file ---\n< Installing control file: PCP_ETC_DIR/pcp/pmlogger/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32\n< + cp PCP_TMPFILE_DIR/pmlogctl.XXXXX/control PCP_ETC_DIR/pcp/pmlogger/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32\n< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmlogger_check -c PCP_ETC_DIR/pcp/pmlogger/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32\n< Discovered host pcp://slack:44321 [8d00c4cf51d11bb9dced8a0e7507542653635377]\n< PCP_ETC_DIR/pcp/pmie/class.d/pmfind: host pcp://slack:44321 hostname(.*) true\n< --- start control file ---\n< # created by pmiectl on DATE\n< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE\n< $version=1.1\n< $class=pmfind\n< pcp://slack:44321 n n PCP_LOG_DIR/pmie/8d00c4cf51d11bb9dced8a0e7507542653635377/pmie.log -c ./8d00c4cf51d11bb9dced8a0e7507542653635377.config\n< --- end control file ---\n< Installing control file: PCP_ETC_DIR/pcp/pmie/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377\n< + cp PCP_TMPFILE_DIR/pmiectl.XXXXX/control PCP_ETC_DIR/pcp/pmie/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377\n< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmie_check -c PCP_ETC_DIR/pcp/pmie/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377\n< PCP_ETC_DIR/pcp/pmlogger/class.d/pmfind: host pcp://slack:44321 hostname(.*) true\n< --- start control file ---\n< # created by pmlogctl on DATE\n< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE\n< $version=1.1\n< $class=pmfind\n< pcp://slack:44321 n n PCP_ARCHIVE_DIR/8d00c4cf51d11bb9dced8a0e7507542653635377 -c ./8d00c4cf51d11bb9dced8a0e7507542653635377.config\n< --- end control file ---\n< Installing control file: PCP_ETC_DIR/pcp/pmlogger/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377\n< + cp PCP_TMPFILE_DIR/pmlogctl.XXXXX/control PCP_ETC_DIR/pcp/pmlogger/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377\n< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmlogger_check -c PCP_ETC_DIR/pcp/pmlogger/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377\n< Discovered host pcp://localhost:44321?container=b0cd2cc912a3 [7745e45ed37ca712f418ec7b871c04fc898b9276]\n< PCP_ETC_DIR/pcp/pmie/class.d/pmfind: host pcp://localhost:44321?container=b0cd2cc912a3 hostname(.*) true\n< --- start control file ---\n< # created by pmiectl on DATE\n< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE\n< $version=1.1\n< $class=pmfind\n< pcp://localhost:44321?container=b0cd2cc912a3 n n PCP_LOG_DIR/pmie/7745e45ed37ca712f418ec7b871c04fc898b9276/pmie.log -c ./7745e45ed37ca712f418ec7b871c04fc898b9276.config\n< --- end control file ---\n< Installing control file: PCP_ETC_DIR/pcp/pmie/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276\n< + cp PCP_TMPFILE_DIR/pmiectl.XXXXX/control PCP_ETC_DIR/pcp/pmie/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276\n< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmie_check -c PCP_ETC_DIR/pcp/pmie/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276\n< PCP_ETC_DIR/pcp/pmlogger/class.d/pmfind: host pcp://localhost:44321?container=b0cd2cc912a3 hostname(.*) true\n< --- start control file ---\n< # created by pmlogctl on DATE\n< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE\n< $version=1.1\n< $class=pmfind\n< pcp://localhost:44321?container=b0cd2cc912a3 n n PCP_ARCHIVE_DIR/7745e45ed37ca712f418ec7b871c04fc898b9276 -c ./7745e45ed37ca712f418ec7b871c04fc898b9276.config\n< --- end control file ---\n< Installing control file: PCP_ETC_DIR/pcp/pmlogger/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276\n< + cp PCP_TMPFILE_DIR/pmlogctl.XXXXX/control PCP_ETC_DIR/pcp/pmlogger/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276\n< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmlogger_check -c PCP_ETC_DIR/pcp/pmlogger/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276\n< Discovered host pcp://localhost:44321?container=77475e5fa09c [68dcffbdd4111d3ee82bb855286e3e35da828ca2]\n< PCP_ETC_DIR/pcp/pmie/class.d/pmfind: host pcp://localhost:44321?container=77475e5fa09c hostname(.*) true\n< --- start control file ---\n< # created by pmiectl on DATE\n< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE\n< $version=1.1\n< $class=pmfind\n< pcp://localhost:44321?container=77475e5fa09c n n PCP_LOG_DIR/pmie/68dcffbdd4111d3ee82bb855286e3e35da828ca2/pmie.log -c ./68dcffbdd4111d3ee82bb855286e3e35da828ca2.config\n< --- end control file ---\n< Installing control file: PCP_ETC_DIR/pcp/pmie/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2\n< + cp PCP_TMPFILE_DIR/pmiectl.XXXXX/control PCP_ETC_DIR/pcp/pmie/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2\n< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmie_check -c PCP_ETC_DIR/pcp/pmie/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2\n< PCP_ETC_DIR/pcp/pmlogger/class.d/pmfind: host pcp://localhost:44321?container=77475e5fa09c hostname(.*) true\n< --- start control file ---\n< # created by pmlogctl on DATE\n< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE\n< $version=1.1\n< $class=pmfind\n< pcp://localhost:44321?container=77475e5fa09c n n PCP_ARCHIVE_DIR/68dcffbdd4111d3ee82bb855286e3e35da828ca2 -c ./68dcffbdd4111d3ee82bb855286e3e35da828ca2.config\n< --- end control file ---\n< Installing control file: PCP_ETC_DIR/pcp/pmlogger/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2\n< + cp PCP_TMPFILE_DIR/pmlogctl.XXXXX/control PCP_ETC_DIR/pcp/pmlogger/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2\n< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmlogger_check -c PCP_ETC_DIR/pcp/pmlogger/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 1768\n\nExercise the pmfind_check(1) utility.\n\n\n\nCopyright (c) 2020 Red Hat.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 1768.out.bad)\n2,93d1\n< Discovered host pcp://slick:44321 [243f90596d76cf23e8da47476ec452a2adbe0b32]\n< PCP_ETC_DIR/pcp/pmie/class.d/pmfind: host pcp://slick:44321 hostname(.*) true\n< --- start control file ---\n< # created by pmiectl on DATE\n< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE\n< $version=1.1\n< $class=pmfind\n< pcp://slick:44321 n n PCP_LOG_DIR/pmie/243f90596d76cf23e8da47476ec452a2adbe0b32/pmie.log -c ./243f90596d76cf23e8da47476ec452a2adbe0b32.config\n< --- end control file ---\n< Installing control file: PCP_ETC_DIR/pcp/pmie/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32\n< + cp PCP_TMPFILE_DIR/pmiectl.XXXXX/control PCP_ETC_DIR/pcp/pmie/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32\n< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmie_check -c PCP_ETC_DIR/pcp/pmie/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32\n< PCP_ETC_DIR/pcp/pmlogger/class.d/pmfind: host pcp://slick:44321 hostname(.*) true\n< --- start control file ---\n< # created by pmlogctl on DATE\n< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE\n< $version=1.1\n< $class=pmfind\n< pcp://slick:44321 n n PCP_ARCHIVE_DIR/243f90596d76cf23e8da47476ec452a2adbe0b32 -c ./243f90596d76cf23e8da47476ec452a2adbe0b32.config\n< --- end control file ---\n< Installing control file: PCP_ETC_DIR/pcp/pmlogger/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32\n< + cp PCP_TMPFILE_DIR/pmlogctl.XXXXX/control PCP_ETC_DIR/pcp/pmlogger/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32\n< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmlogger_check -c PCP_ETC_DIR/pcp/pmlogger/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32\n< Discovered host pcp://slack:44321 [8d00c4cf51d11bb9dced8a0e7507542653635377]\n< PCP_ETC_DIR/pcp/pmie/class.d/pmfind: host pcp://slack:44321 hostname(.*) true\n< --- start control file ---\n< # created by pmiectl on DATE\n< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE\n< $version=1.1\n< $class=pmfind\n< pcp://slack:44321 n n PCP_LOG_DIR/pmie/8d00c4cf51d11bb9dced8a0e7507542653635377/pmie.log -c ./8d00c4cf51d11bb9dced8a0e7507542653635377.config\n< --- end control file ---\n< Installing control file: PCP_ETC_DIR/pcp/pmie/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377\n< + cp PCP_TMPFILE_DIR/pmiectl.XXXXX/control PCP_ETC_DIR/pcp/pmie/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377\n< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmie_check -c PCP_ETC_DIR/pcp/pmie/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377\n< PCP_ETC_DIR/pcp/pmlogger/class.d/pmfind: host pcp://slack:44321 hostname(.*) true\n< --- start control file ---\n< # created by pmlogctl on DATE\n< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE\n< $version=1.1\n< $class=pmfind\n< pcp://slack:44321 n n PCP_ARCHIVE_DIR/8d00c4cf51d11bb9dced8a0e7507542653635377 -c ./8d00c4cf51d11bb9dced8a0e7507542653635377.config\n< --- end control file ---\n< Installing control file: PCP_ETC_DIR/pcp/pmlogger/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377\n< + cp PCP_TMPFILE_DIR/pmlogctl.XXXXX/control PCP_ETC_DIR/pcp/pmlogger/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377\n< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmlogger_check -c PCP_ETC_DIR/pcp/pmlogger/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377\n< Discovered host pcp://localhost:44321?container=b0cd2cc912a3 [7745e45ed37ca712f418ec7b871c04fc898b9276]\n< PCP_ETC_DIR/pcp/pmie/class.d/pmfind: host pcp://localhost:44321?container=b0cd2cc912a3 hostname(.*) true\n< --- start control file ---\n< # created by pmiectl on DATE\n< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE\n< $version=1.1\n< $class=pmfind\n< pcp://localhost:44321?container=b0cd2cc912a3 n n PCP_LOG_DIR/pmie/7745e45ed37ca712f418ec7b871c04fc898b9276/pmie.log -c ./7745e45ed37ca712f418ec7b871c04fc898b9276.config\n< --- end control file ---\n< Installing control file: PCP_ETC_DIR/pcp/pmie/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276\n< + cp PCP_TMPFILE_DIR/pmiectl.XXXXX/control PCP_ETC_DIR/pcp/pmie/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276\n< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmie_check -c PCP_ETC_DIR/pcp/pmie/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276\n< PCP_ETC_DIR/pcp/pmlogger/class.d/pmfind: host pcp://localhost:44321?container=b0cd2cc912a3 hostname(.*) true\n< --- start control file ---\n< # created by pmlogctl on DATE\n< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE\n< $version=1.1\n< $class=pmfind\n< pcp://localhost:44321?container=b0cd2cc912a3 n n PCP_ARCHIVE_DIR/7745e45ed37ca712f418ec7b871c04fc898b9276 -c ./7745e45ed37ca712f418ec7b871c04fc898b9276.config\n< --- end control file ---\n< Installing control file: PCP_ETC_DIR/pcp/pmlogger/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276\n< + cp PCP_TMPFILE_DIR/pmlogctl.XXXXX/control PCP_ETC_DIR/pcp/pmlogger/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276\n< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmlogger_check -c PCP_ETC_DIR/pcp/pmlogger/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276\n< Discovered host pcp://localhost:44321?container=77475e5fa09c [68dcffbdd4111d3ee82bb855286e3e35da828ca2]\n< PCP_ETC_DIR/pcp/pmie/class.d/pmfind: host pcp://localhost:44321?container=77475e5fa09c hostname(.*) true\n< --- start control file ---\n< # created by pmiectl on DATE\n< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE\n< $version=1.1\n< $class=pmfind\n< pcp://localhost:44321?container=77475e5fa09c n n PCP_LOG_DIR/pmie/68dcffbdd4111d3ee82bb855286e3e35da828ca2/pmie.log -c ./68dcffbdd4111d3ee82bb855286e3e35da828ca2.config\n< --- end control file ---\n< Installing control file: PCP_ETC_DIR/pcp/pmie/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2\n< + cp PCP_TMPFILE_DIR/pmiectl.XXXXX/control PCP_ETC_DIR/pcp/pmie/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2\n< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmie_check -c PCP_ETC_DIR/pcp/pmie/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2\n< PCP_ETC_DIR/pcp/pmlogger/class.d/pmfind: host pcp://localhost:44321?container=77475e5fa09c hostname(.*) true\n< --- start control file ---\n< # created by pmlogctl on DATE\n< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE\n< $version=1.1\n< $class=pmfind\n< pcp://localhost:44321?container=77475e5fa09c n n PCP_ARCHIVE_DIR/68dcffbdd4111d3ee82bb855286e3e35da828ca2 -c ./68dcffbdd4111d3ee82bb855286e3e35da828ca2.config\n< --- end control file ---\n< Installing control file: PCP_ETC_DIR/pcp/pmlogger/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2\n< + cp PCP_TMPFILE_DIR/pmlogctl.XXXXX/control PCP_ETC_DIR/pcp/pmlogger/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2\n< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmlogger_check -c PCP_ETC_DIR/pcp/pmlogger/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7ed2580c7003aee9",
+      "name" : "1768.out.bad",
+      "source" : "7ed2580c7003aee9.txt",
+      "type" : "text/plain",
+      "size" : 26
+    }, {
+      "uid" : "7774498334ca4bf1",
+      "name" : "1768.full",
+      "source" : "7774498334ca4bf1.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos6-container"
+  }, {
+    "name" : "host",
+    "value" : "centos6-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmfind"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1768",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1768.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "945c334ca27aeb54.json",
+  "parameterValues" : [ ]
+}

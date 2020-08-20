@@ -1,0 +1,89 @@
+{
+  "uid" : "b29792c98e4bfa9b",
+  "name" : "QA 944",
+  "fullName" : "QA #944 on centos6-container",
+  "historyId" : "944@centos6-container",
+  "time" : {
+    "start" : 1597947062000,
+    "stop" : 1597947081000,
+    "duration" : 19000
+  },
+  "description" : "PCP QA Test No. 944\n\nExercise user/group access control lists in pmcd.\n\n\n\nHave to take extra care with filtering in this test,\n\nas user ID and group ID may well be equal for a given\n\nuser (user name and group name might well be too).\n\nAs a result, testing is performed separately to avoid\n\nincorrectly filtering one as the other.\n\n\n\nCopyright (c) 2013 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 944</p>\n<p>Exercise user/group access control lists in pmcd.</p>\n<p>Have to take extra care with filtering in this test,</p>\n<p>as user ID and group ID may well be equal for a given</p>\n<p>user (user name and group name might well be too).</p>\n<p>As a result, testing is performed separately to avoid</p>\n<p>incorrectly filtering one as the other.</p>\n<p>Copyright (c) 2013 Red Hat.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform centos6 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 944.out.bad)\n1a2\n> [Thu Aug 20 18:11:17] pmcd(106272) Error: Failed to create avahi client: Daemon not running\n59a61\n> [Thu Aug 20 18:11:19] pmcd(106335) Error: Failed to create avahi client: Daemon not running\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 944\n\nExercise user/group access control lists in pmcd.\n\n\n\nHave to take extra care with filtering in this test,\n\nas user ID and group ID may well be equal for a given\n\nuser (user name and group name might well be too).\n\nAs a result, testing is performed separately to avoid\n\nincorrectly filtering one as the other.\n\n\n\nCopyright (c) 2013 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 944.out.bad)\n1a2\n> [Thu Aug 20 18:11:17] pmcd(106272) Error: Failed to create avahi client: Daemon not running\n59a61\n> [Thu Aug 20 18:11:19] pmcd(106335) Error: Failed to create avahi client: Daemon not running\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "321f39475380fa16",
+      "name" : "944.out.bad",
+      "source" : "321f39475380fa16.txt",
+      "type" : "text/plain",
+      "size" : 4580
+    }, {
+      "uid" : "acab4e997c853237",
+      "name" : "944.full",
+      "source" : "acab4e997c853237.txt",
+      "type" : "text/plain",
+      "size" : 5678
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos6-container"
+  }, {
+    "name" : "host",
+    "value" : "centos6-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmcd"
+  }, {
+    "name" : "epic",
+    "value" : "secure"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "pmstore"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/944",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/944.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "b29792c98e4bfa9b.json",
+  "parameterValues" : [ ]
+}

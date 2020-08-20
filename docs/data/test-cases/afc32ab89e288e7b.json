@@ -1,0 +1,89 @@
+{
+  "uid" : "afc32ab89e288e7b",
+  "name" : "QA 1168",
+  "fullName" : "QA #1168 on fedora_rawhide-container",
+  "historyId" : "1168@fedora_rawhide-container",
+  "time" : {
+    "start" : 1597951363000,
+    "stop" : 1597951381000,
+    "duration" : 18000
+  },
+  "description" : "PCP QA Test No. 1168\n\nExercise the pmrep with newly appearing BCC PMDA klockstat metrics.\n\n\n\nCopyright (c) 2019 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform fedora_rawhide reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 1168</p>\n<p>Exercise the pmrep with newly appearing BCC PMDA klockstat metrics.</p>\n<p>Copyright (c) 2019 Red Hat.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform fedora_rawhide reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 1168.out.bad)\n45d44\n< [ ] - bcc.kernel.lock.mutex.spin.avg[\"inst\"] - nanosec\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h d6bbf0991c84 -f sample.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f sampledso.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 1168\n\nExercise the pmrep with newly appearing BCC PMDA klockstat metrics.\n\n\n\nCopyright (c) 2019 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform fedora_rawhide reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 1168.out.bad)\n45d44\n< [ ] - bcc.kernel.lock.mutex.spin.avg[\"inst\"] - nanosec\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h d6bbf0991c84 -f sample.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f sampledso.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "23a0831fd49ebeba",
+      "name" : "1168.out.bad",
+      "source" : "23a0831fd49ebeba.txt",
+      "type" : "text/plain",
+      "size" : 1392
+    }, {
+      "uid" : "bb70f9f928e8857e",
+      "name" : "1168.full",
+      "source" : "bb70f9f928e8857e.txt",
+      "type" : "text/plain",
+      "size" : 2028
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmrep"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.bcc"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "python"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1168",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1168.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "afc32ab89e288e7b.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,39 @@
+pmdabcc config:
+# Installed by PCP QA test 1173 on Thu Aug 20 19:15:43 UTC 2020
+[pmda]
+modules = ucalls
+prefix = bcc.
+[ucalls]
+module = ucalls
+cluster = 16
+process = .*/pmdabcc.python
+latency = True
+Log for pmdabcc on 4687b293bd5e started Thu Aug 20 19:15:45 2020
+
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: Enabled modules:
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: ['ucalls']
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: Configuring modules:
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: ucalls
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: Modules configured.
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: Initializing modules:
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: ucalls
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: ucalls: Tracing PID 1008864: python3 /var/lib/pcp/pmdas/bcc/pmdabcc.python.
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: ucalls: Language not set, detected: python.
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: ucalls: Initialized.
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: Modules initialized.
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: Registering metrics:
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: ucalls
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: Metrics registered.
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: Registering helpers:
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: ucalls
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: Helpers registered.
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: Compiling modules:
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Info: ucalls
+modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1034-azure
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Error: ucalls: Failed to compile BPF module <text>
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Error: ucalls: Module NOT active!
+[Thu Aug 20 19:15:45] pmdabcc(1008864) Error: Failed to compile module ucalls, aborting.
+
+Log finished Thu Aug 20 19:15:45 2020

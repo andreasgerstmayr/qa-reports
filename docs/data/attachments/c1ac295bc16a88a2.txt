@@ -1,0 +1,41 @@
+pmdabcc config:
+# Installed by PCP QA test 1150 on Thu Aug 20 19:14:59 UTC 2020
+[pmda]
+modules = usdt_hits
+prefix = bcc.
+[usdt_hits]
+module = usdt_hits
+cluster = 101
+process = pmcd
+usdts = /usr/libexec/pcp/bin/pmcd:PMCD,/usr/libexec/pcp/bin/pmcd:PMCD_PDU
+Log for pmdabcc on d6bbf0991c84 started Thu Aug 20 19:15:01 2020
+
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: Enabled modules:
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: ['usdt_hits']
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: Configuring modules:
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: usdt_hits
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: Modules configured.
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: Initializing modules:
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: usdt_hits
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: usdt_hits: Tracing PID 967015: /usr/libexec/pcp/bin/pmcd -T 3.
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: usdt_hits: Configured USDTs: ['/usr/libexec/pcp/bin/pmcd:PMCD', '/usr/libexec/pcp/bin/pmcd:PMCD_PDU']
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: usdt_hits: Found 2 USDTs: ['/usr/libexec/pcp/bin/pmcd:PMCD', '/usr/libexec/pcp/bin/pmcd:PMCD_PDU'].
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: usdt_hits: Initialized.
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: Modules initialized.
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: Registering metrics:
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: usdt_hits
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: Metrics registered.
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: Registering helpers:
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: usdt_hits
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: Helpers registered.
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: Compiling modules:
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: usdt_hits
+[Thu Aug 20 19:15:01] pmdabcc(978410) Info: usdt_hits: Compiling 2 probes: ['/usr/libexec/pcp/bin/pmcd:PMCD', '/usr/libexec/pcp/bin/pmcd:PMCD_PDU']
+modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1034-azure
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 19:15:01] pmdabcc(978410) Error: usdt_hits: Failed to compile BPF module <text>
+[Thu Aug 20 19:15:01] pmdabcc(978410) Error: usdt_hits: Module NOT active!
+[Thu Aug 20 19:15:01] pmdabcc(978410) Error: Failed to compile module usdt_hits, aborting.
+
+Log finished Thu Aug 20 19:15:01 2020

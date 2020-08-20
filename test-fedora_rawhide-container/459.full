@@ -1,0 +1,142 @@
+Warning: no extra suppressions found for valgrind version 3.16.1
+=== valgrind report ===
+==520856== Memcheck, a memory error detector
+==520856== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==520856== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==520856== Command: pmlogreduce -t 30sec archives/20101004-trunc /tmp/459-520821
+==520856== Parent PID: 520850
+==520856== 
+
+parse DIE(readdwarf3.c:3689): confused by:
+ <2><4bd8>: Abbrev Number: 96 (DW_TAG_subrange_type) (in alternate .debug_info)
+     DW_AT_type        : 0x4c	
+     DW_AT_count       : 0	
+parse_type_DIE:
+--520856-- WARNING: Serious error when reading debug info
+--520856-- When reading debug info from /usr/libexec/pcp/bin/pmlogreduce:
+--520856-- confused by the above DIE
+
+parse DIE(readdwarf3.c:3689): confused by:
+ <2><a2311>: Abbrev Number: 96 (DW_TAG_subrange_type) (in alternate .debug_info)
+     DW_AT_type        : 0x4c	
+     DW_AT_count       : 0	
+parse_type_DIE:
+--520856-- WARNING: Serious error when reading debug info
+--520856-- When reading debug info from /usr/lib64/libpcp.so.3:
+--520856-- confused by the above DIE
+==520856== 
+==520856== HEAP SUMMARY:
+==520856==     in use at exit: 760,573 bytes in 10,788 blocks
+==520856==   total heap usage: 30,211 allocs, 19,423 frees, 10,946,586 bytes allocated
+==520856== 
+==520856== 24 bytes in 1 blocks are possibly lost in loss record 29 of 93
+==520856==    at 0x4839809: malloc (vg_replace_malloc.c:307)
+==520856==    by 0x49FDB97: tsearch (in /usr/lib64/libc-2.32.so)
+==520856==    by 0x487F7A7: __pmFindPDUBuf (pdubuf.c:126)
+==520856==    by 0x4880896: __pmDecodeResult_ctx (p_result.c:386)
+==520856==    by 0x489B510: __pmLogRead_ctx (logutil.c:1828)
+==520856==    by 0x489C876: cache_read (interp.c:229)
+==520856==    by 0x489E38E: do_roll (interp.c:820)
+==520856==    by 0x489F211: __pmLogFetch (interp.c:1173)
+==520856==    by 0x4875D9F: pmFetch_ctx (fetch.c:164)
+==520856==    by 0x10AD6A: main (pmlogreduce.c:365)
+==520856== 
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:do_roll
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+==520856== 48 bytes in 2 blocks are possibly lost in loss record 38 of 93
+==520856==    at 0x4839809: malloc (vg_replace_malloc.c:307)
+==520856==    by 0x49FDB97: tsearch (in /usr/lib64/libc-2.32.so)
+==520856==    by 0x487F7A7: __pmFindPDUBuf (pdubuf.c:126)
+==520856==    by 0x4880896: __pmDecodeResult_ctx (p_result.c:386)
+==520856==    by 0x489B510: __pmLogRead_ctx (logutil.c:1828)
+==520856==    by 0x489C876: cache_read (interp.c:229)
+==520856==    by 0x48A0999: __pmLogFetch (interp.c:1364)
+==520856==    by 0x4875D9F: pmFetch_ctx (fetch.c:164)
+==520856==    by 0x10AD6A: main (pmlogreduce.c:365)
+==520856== 
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+==520856== 6,592 bytes in 2 blocks are possibly lost in loss record 75 of 93
+==520856==    at 0x4839809: malloc (vg_replace_malloc.c:307)
+==520856==    by 0x487F75B: __pmFindPDUBuf (pdubuf.c:115)
+==520856==    by 0x4880896: __pmDecodeResult_ctx (p_result.c:386)
+==520856==    by 0x489B510: __pmLogRead_ctx (logutil.c:1828)
+==520856==    by 0x489C876: cache_read (interp.c:229)
+==520856==    by 0x48A0999: __pmLogFetch (interp.c:1364)
+==520856==    by 0x4875D9F: pmFetch_ctx (fetch.c:164)
+==520856==    by 0x10AD6A: main (pmlogreduce.c:365)
+==520856== 
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+==520856== 10,984 bytes in 1 blocks are possibly lost in loss record 82 of 93
+==520856==    at 0x4839809: malloc (vg_replace_malloc.c:307)
+==520856==    by 0x487F75B: __pmFindPDUBuf (pdubuf.c:115)
+==520856==    by 0x4880896: __pmDecodeResult_ctx (p_result.c:386)
+==520856==    by 0x489B510: __pmLogRead_ctx (logutil.c:1828)
+==520856==    by 0x489C876: cache_read (interp.c:229)
+==520856==    by 0x489E38E: do_roll (interp.c:820)
+==520856==    by 0x489F211: __pmLogFetch (interp.c:1173)
+==520856==    by 0x4875D9F: pmFetch_ctx (fetch.c:164)
+==520856==    by 0x10AD6A: main (pmlogreduce.c:365)
+==520856== 
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:do_roll
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+==520856== LEAK SUMMARY:
+==520856==    definitely lost: 0 bytes in 0 blocks
+==520856==    indirectly lost: 0 bytes in 0 blocks
+==520856==      possibly lost: 17,648 bytes in 6 blocks
+==520856==    still reachable: 742,925 bytes in 10,782 blocks
+==520856==         suppressed: 0 bytes in 0 blocks
+==520856== Reachable blocks (those to which a pointer was found) are not shown.
+==520856== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==520856== 
+==520856== For lists of detected and suppressed errors, rerun with: -s
+==520856== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)

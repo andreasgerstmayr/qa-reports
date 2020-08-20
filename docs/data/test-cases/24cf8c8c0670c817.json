@@ -1,0 +1,83 @@
+{
+  "uid" : "24cf8c8c0670c817",
+  "name" : "QA 855",
+  "fullName" : "QA #855 on centos6-container",
+  "historyId" : "855@centos6-container",
+  "time" : {
+    "start" : 1597946727000,
+    "stop" : 1597946738000,
+    "duration" : 11000
+  },
+  "description" : "PCP QA Test No. 855\n\nExercise adding/removing the netfilter PMDA, reading values\n\n\n\nCopyright (c) 2015-2016 Red Hat.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 855</p>\n<p>Exercise adding/removing the netfilter PMDA, reading values</p>\n<p>Copyright (c) 2015-2016 Red Hat.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform centos6 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 855.out.bad)\n21a22\n> [Thu Aug 20 18:05:34] pmcd(74642) Error: Failed to create avahi client: Daemon not running\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 855\n\nExercise adding/removing the netfilter PMDA, reading values\n\n\n\nCopyright (c) 2015-2016 Red Hat.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 855.out.bad)\n21a22\n> [Thu Aug 20 18:05:34] pmcd(74642) Error: Failed to create avahi client: Daemon not running\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "de7224144896bd1",
+      "name" : "855.out.bad",
+      "source" : "de7224144896bd1.txt",
+      "type" : "text/plain",
+      "size" : 774
+    }, {
+      "uid" : "5aa332347f3807f1",
+      "name" : "855.full",
+      "source" : "5aa332347f3807f1.txt",
+      "type" : "text/plain",
+      "size" : 279
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos6-container"
+  }, {
+    "name" : "host",
+    "value" : "centos6-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.netfilter"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/855",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/855.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "24cf8c8c0670c817.json",
+  "parameterValues" : [ ]
+}

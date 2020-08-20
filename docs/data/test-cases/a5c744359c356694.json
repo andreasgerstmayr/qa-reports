@@ -1,0 +1,55 @@
+{
+  "uid" : "a5c744359c356694",
+  "name" : "QA 305",
+  "fullName" : "QA #305 on ubuntu1604-container",
+  "historyId" : "305@ubuntu1604-container",
+  "time" : {
+    "start" : 1597944425000,
+    "stop" : 1597944425000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 305\n\nPV 939998 affecting pmgadgets instance cache\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 305</p>\n<p>PV 939998 affecting pmgadgets instance cache</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1604-container"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1604-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmgadgets"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/305",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/305.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a5c744359c356694.json",
+  "parameterValues" : [ ]
+}

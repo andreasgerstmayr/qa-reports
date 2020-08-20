@@ -1,0 +1,58 @@
+{
+  "uid" : "191f6d76824a0615",
+  "name" : "QA 1045",
+  "fullName" : "QA #1045 on fedora_rawhide-container",
+  "historyId" : "1045@fedora_rawhide-container",
+  "time" : {
+    "start" : 1597949838000,
+    "stop" : 1597949839000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 1045 (formerly 526)\n\nexercise pmieconf version control (pmie config/rules)\n\n\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 1045 (formerly 526)</p>\n<p>exercise pmieconf version control (pmie config/rules)</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmie"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "pmieconf"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1045",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1045.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "191f6d76824a0615.json",
+  "parameterValues" : [ ]
+}

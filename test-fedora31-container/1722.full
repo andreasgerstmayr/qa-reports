@@ -1,0 +1,16 @@
+pmdabpftrace config:
+# Installed by PCP QA test 1722 on Thu Aug 20 19:43:05 UTC 2020
+Log for pmdabpftrace on 564f0d2de60c started Thu Aug 20 19:43:07 2020
+
+[Thu Aug 20 19:43:07] pmdabpftrace(1229488) Info: manager: started pmdabpftrace process manager
+[Thu Aug 20 19:43:07] pmdabpftrace(1229488) Info: manager: using bpftrace v0.11.0
+[Thu Aug 20 19:43:07] pmdabpftrace(1229479) Info: registering script from file /var/lib/pcp/pmdas/bpftrace/autostart/script.bt...
+[Thu Aug 20 19:43:07] pmdabpftrace(1229488) Info: script: starting script sa67c0114f3ab4c378f9e403403c5fb73 (name=testscript, user=root)...
+[Thu Aug 20 19:43:07] pmdabpftrace(1229488) Info: script: started script sa67c0114f3ab4c378f9e403403c5fb73 (name=testscript, user=root, PID=1229493)
+[Thu Aug 20 19:43:07] pmdabpftrace(1229488) Info: script: stopped script sa67c0114f3ab4c378f9e403403c5fb73 (name=testscript, user=root, PID=1229493) due to error: Could not resolve symbol: /proc/self/exe:BEGIN_trigger
+[Thu Aug 20 19:43:11] pmdabpftrace(1229488) Info: manager: shutting down pmdabpftrace process manager...
+[Thu Aug 20 19:43:11] pmdabpftrace(1229488) Info: script: deregistered script sa67c0114f3ab4c378f9e403403c5fb73 (name=testscript, user=root, PID=1229493)
+[Thu Aug 20 19:43:11] pmdabpftrace(1229488) Info: manager: waiting 10 secs for running tasks to stop...
+[Thu Aug 20 19:43:11] pmdabpftrace(1229488) Info: manager: shutdown pmdabpftrace process manager
+
+Log finished Thu Aug 20 19:43:11 2020

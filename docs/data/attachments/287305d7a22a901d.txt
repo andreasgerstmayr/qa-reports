@@ -1,0 +1,23 @@
+QA output created by 462
+*** test 1 ***
+[Thu Aug 20 17:32:42] pmcd(41557) Error: Failed to create avahi client: Daemon not running
+
+pmcd_wait succeeded as expected for running pmcd
+
+*** test 2 ***
+pmcd_wait: Failed to connect to PMCD on host "LOCALHOST" in 10 seconds
+
+pmcd_wait failed as expected for dead pmcd
+
+*** test 4 ***
+[Thu Aug 20 17:33:04] pmcd(42203) Error: Failed to create avahi client: Daemon not running
+
+pmcd_wait succeeded as expected for sleeping pmcd - under timeout
+
+$PCP_RC_DIR/pmcd: pmcd not running
+*** test 5 ***
+pmcd_wait: Failed to connect to PMCD on host "LOCALHOST" in 10 seconds
+
+pmcd_wait failed as expected for sleeping pmcd - over timeout
+
+[Thu Aug 20 17:33:22] pmcd(42825) Error: Failed to create avahi client: Daemon not running

@@ -1,0 +1,34 @@
+QA output created by 1243
+./1243: line 107: /tmp/1243-16507.discover/localhost.sh: Permission denied
+./1243: line 109: /tmp/1243-16507.discover/hostnames.sh: Permission denied
+== checking pcp-kube-pods argument handling
+/usr/libexec/pcp/bin/discover/pcp-kube-pods: line 25: /tmp/1243-16507.kubectl.sh: Permission denied
+/usr/libexec/pcp/bin/discover/pcp-kube-pods: line 25: exec: /tmp/1243-16507.kubectl.sh: cannot execute: Permission denied
+cat: /tmp/1243-16507.kubectl.args: No such file or directory
+== checking pmfind results and memory access
+=== std out ===
+No pmcd servers discovered
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: pmfind -m shell,path=DISCOVER_DIR,maxThreads=1 -s pmcd
+execve(0x7a02470(DISCOVER_DIR/hostnames.sh), 0x7a02420, 0x7feffff58) failed, errno 13
+EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+Add more stringent tests in PRE(sys_execve), or work out how to recover.
+execve(0x7a028a0(DISCOVER_DIR/localhost.sh), 0x7a02850, 0x7feffff58) failed, errno 13
+EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+Add more stringent tests in PRE(sys_execve), or work out how to recover.
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+== checking pmfind results and thread locks
+=== filtered valgrind report ===
+Helgrind, a thread error detector
+execve(0x7a031a0(DISCOVER_DIR/hostnames.sh), 0x7a03150, 0x7feffff58) failed, errno 13
+EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+Add more stringent tests in PRE(sys_execve), or work out how to recover.
+execve(0x7a031f0(DISCOVER_DIR/localhost.sh), 0x7a031a0, 0x7feffff58) failed, errno 13
+EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+Add more stringent tests in PRE(sys_execve), or work out how to recover.
+ERROR SUMMARY: 0 errors from 0 contexts ...

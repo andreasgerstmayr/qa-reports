@@ -1,0 +1,64 @@
+{
+  "uid" : "8a032a9defcf4425",
+  "name" : "QA 585",
+  "fullName" : "QA #585 on ubuntu2004-direct",
+  "historyId" : "585@ubuntu2004-direct",
+  "time" : {
+    "start" : 1597946599000,
+    "stop" : 1597946599000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 585\n\npmprobe -O not working?  As reported by Marko at\n\nhttps://github.com/performancecopilot/pcp/issues/354\n\n\n\nCopyright (c) 2017 Ken McDonell.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 585</p>\n<p>pmprobe -O not working?  As reported by Marko at</p>\n<p>https://github.com/performancecopilot/pcp/issues/354</p>\n<p>Copyright (c) 2017 Ken McDonell.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu2004-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu2004-direct"
+  }, {
+    "name" : "epic",
+    "value" : "pmval"
+  }, {
+    "name" : "epic",
+    "value" : "pmprobe"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "pminfo"
+  }, {
+    "name" : "epic",
+    "value" : "kernel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/585",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/585.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8a032a9defcf4425.json",
+  "parameterValues" : [ ]
+}

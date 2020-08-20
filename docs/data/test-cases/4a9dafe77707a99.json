@@ -1,0 +1,86 @@
+{
+  "uid" : "4a9dafe77707a99",
+  "name" : "QA 1051",
+  "fullName" : "QA #1051 on ubuntu1804-direct",
+  "historyId" : "1051@ubuntu1804-direct",
+  "time" : {
+    "start" : 1597948718000,
+    "stop" : 1597948718000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 1051 (formerly 582)\n\npmieconf dumps core\n\n\n\nCopyright (c) 2015 Red Hat.\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner direct --platform ubuntu1804 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 1051 (formerly 582)</p>\n<p>pmieconf dumps core</p>\n<p>Copyright (c) 2015 Red Hat.</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner direct --platform ubuntu1804 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 1051.out.bad)\n17a18,23\n> Warning - failed to expand action for rule network.listenoverflows\n>   string: \"$syslog_prefix$$rule$^ $action_expand$\"\n> Warning - failed to expand action for rule network.tcpqfulldocookies\n>   string: \"$syslog_prefix$$rule$^ $action_expand$\"\n> Warning - failed to expand action for rule network.tcpqfulldrops\n>   string: \"$syslog_prefix$$rule$^ $action_expand$\"\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h fv-az60 -f sample.milliseconds\nPMDA probe: pminfo -h fv-az60 -f sampledso.milliseconds\nPMDA probe: pminfo -h fv-az60 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 1051 (formerly 582)\n\npmieconf dumps core\n\n\n\nCopyright (c) 2015 Red Hat.\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner direct --platform ubuntu1804 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 1051.out.bad)\n17a18,23\n> Warning - failed to expand action for rule network.listenoverflows\n>   string: \"$syslog_prefix$$rule$^ $action_expand$\"\n> Warning - failed to expand action for rule network.tcpqfulldocookies\n>   string: \"$syslog_prefix$$rule$^ $action_expand$\"\n> Warning - failed to expand action for rule network.tcpqfulldrops\n>   string: \"$syslog_prefix$$rule$^ $action_expand$\"\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h fv-az60 -f sample.milliseconds\nPMDA probe: pminfo -h fv-az60 -f sampledso.milliseconds\nPMDA probe: pminfo -h fv-az60 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3a375780812edf6c",
+      "name" : "1051.out.bad",
+      "source" : "3a375780812edf6c.txt",
+      "type" : "text/plain",
+      "size" : 2031
+    }, {
+      "uid" : "5a9ef22b14b176ff",
+      "name" : "1051.full",
+      "source" : "5a9ef22b14b176ff.txt",
+      "type" : "text/plain",
+      "size" : 6901
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "epic",
+    "value" : "pmieconf"
+  }, {
+    "name" : "epic",
+    "value" : "#696008"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1051",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1051.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "4a9dafe77707a99.json",
+  "parameterValues" : [ ]
+}

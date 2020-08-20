@@ -1,0 +1,139 @@
+QA output created by 244
+$PCP_PMCDCONF_PATH contains:
+<BEGIN>
+fake_irix 1 pipe binary dumb_pmda -d 1 fake_irix
+fake_sampledso 30 pipe binary dumb_pmda -d 30 fake_sampledso
+fake_cisco 5 pipe binary dumb_pmda -d 5 fake_cisco
+fake_linux 60 pipe binary dumb_pmda -d 60 fake_linux
+pmcd 2 dso pmcd_init ...pmda_pmcd.$DSO_SUFFIX
+[access]
+allow localhost : all;
+disallow * : all;
+<END>
+Thu Aug 20 17:18:22 UTC 2020
+Arrgghhh ... pmcd at localhost failed to start after 20 seconds
+=== failing pmprobes stdout ===
+-- 0 --
+-- 1 --
+-- 2 --
+-- 3 --
+-- 4 --
+-- 5 --
+-- 6 --
+-- 7 --
+-- 8 --
+-- 9 --
+-- 10 --
+-- 11 --
+-- 12 --
+-- 13 --
+-- 14 --
+-- 15 --
+-- 16 --
+-- 17 --
+-- 18 --
+-- 19 --
+=== failing pmprobes stderr ===
+-- 0 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+-- 1 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+-- 2 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+-- 3 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+-- 4 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+-- 5 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+-- 6 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+-- 7 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+-- 8 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+-- 9 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+-- 10 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+-- 11 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+-- 12 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+-- 13 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+-- 14 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+-- 15 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+-- 16 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+-- 17 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+-- 18 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+-- 19 --
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+... and now
++ pmprobe -n /var/lib/pcp/pmns/root_pmcd  pmcd.numclients
+pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+=== pmcd.log ===
+Log for pmcd on fv-az60 started Thu Aug 20 17:17:51 2020
+
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+fake_irix      1 20405   6   7   2 bin pipe cmd=/var/lib/pcp/testsuite/src/dumb_pmda -d 1 fake_irix
+fake_sampledso  30 20406   8   9   2 bin pipe cmd=/var/lib/pcp/testsuite/src/dumb_pmda -d 30 fake_sampledso
+fake_cisco     5 20407  10  11   2 bin pipe cmd=/var/lib/pcp/testsuite/src/dumb_pmda -d 5 fake_cisco
+fake_linux    60 20408  12  13   2 bin pipe cmd=/var/lib/pcp/testsuite/src/dumb_pmda -d 60 fake_linux
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7f66fb1a8af0]
+
+Host access list:
+00 01 Cur/MaxCons host-spec                               host-mask                               lvl host-name
+== == =========== ======================================= ======================================= === ==============
+ y  y     0     0 10.1.0.4                                255.255.255.255                           0 localhost
+ n  n     0     0 /                                       /                                         1 unix:
+ n  n     0     0 0.0.0.0                                 0.0.0.0                                   4 .*
+ n  n     0     0 ::                                      ::                                        8 :*
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+
+pmcd: PID = 20399, PDU version = 2
+pmcd request port(s):
+  sts fd   port  family address
+  === ==== ===== ====== =======
+  ok     4       unix   /run/pcp/pmcd.socket
+  ok     0 44321 inet   INADDR_ANY
+  ok     3 44321 ipv6   INADDR_ANY
+access violation from host /run/pcp/pmcd.socket
+endclient client[0]: (fd 5) No permission to perform requested operation (-12387)
+likely looking processes ...
+UID         PID   PPID  C STIME TTY          TIME CMD
+root         80      2  0 16:20 ?        00:00:00 [tpm_dev_wq]
+root       1146      1  0 16:21 ?        00:00:00 php-fpm: master process (/etc/php/7.2/fpm/php-fpm.conf)
+root       1156      1  0 16:21 ?        00:00:00 php-fpm: master process (/etc/php/7.1/fpm/php-fpm.conf)
+root       1163      1  0 16:21 ?        00:00:00 php-fpm: master process (/etc/php/7.3/fpm/php-fpm.conf)
+root       1175      1  0 16:21 ?        00:00:00 php-fpm: master process (/etc/php/7.4/fpm/php-fpm.conf)
+www-data   1549   1163  0 16:21 ?        00:00:00 php-fpm: pool www
+www-data   1550   1163  0 16:21 ?        00:00:00 php-fpm: pool www
+www-data   1552   1146  0 16:21 ?        00:00:00 php-fpm: pool www
+www-data   1553   1146  0 16:21 ?        00:00:00 php-fpm: pool www
+www-data   1555   1175  0 16:21 ?        00:00:00 php-fpm: pool www
+www-data   1556   1175  0 16:21 ?        00:00:00 php-fpm: pool www
+www-data   1573   1156  0 16:21 ?        00:00:00 php-fpm: pool www
+www-data   1575   1156  0 16:21 ?        00:00:00 php-fpm: pool www
+root      20119      1  0 17:17 ?        00:00:00 /bin/sh /etc/init.d/pmcd start-systemd
+pcp       20399      1  0 17:17 ?        00:00:00 /usr/lib/pcp/bin/pmcd -T 3
+root      20404  20119  0 17:17 ?        00:00:00 /usr/lib/pcp/bin/pmcd_wait
+root      20405  20399  0 17:17 ?        00:00:00 /var/lib/pcp/testsuite/src/dumb_pmda -d 1 fake_irix
+root      20406  20399  0 17:17 ?        00:00:00 /var/lib/pcp/testsuite/src/dumb_pmda -d 30 fake_sampledso
+root      20407  20399  0 17:17 ?        00:00:00 /var/lib/pcp/testsuite/src/dumb_pmda -d 5 fake_cisco
+root      20408  20399  0 17:17 ?        00:00:00 /var/lib/pcp/testsuite/src/dumb_pmda -d 60 fake_linux
+root      20409      1  0 17:17 ?        00:00:00 /bin/sh /etc/init.d/pmie start-systemd
+root      20507  20409  0 17:17 ?        00:00:00 pmcd_wait
+/usr/lib/pcp/bin/pmsignal: 123: kill: No such process
+
+Restart and ping pmcd ...
+pmcd.control.debug 1

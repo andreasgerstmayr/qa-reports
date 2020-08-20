@@ -1,0 +1,51 @@
+QA output created by 1178
+
+=== bcc agent installation ===
+Info: Initializing, currently in 'notready' state.
+Info: Enabled modules:
+Info: ['tcpperpid']
+Info: Configuring modules:
+Info: tcpperpid
+Info: Modules configured.
+Info: Initializing modules:
+Info: tcpperpid
+Info: tcpperpid: Filtering on remote ports: [80].
+Info: tcpperpid: Using BPF source file X
+Info: tcpperpid: Initialized.
+Info: Modules initialized.
+Info: Registering metrics:
+Info: tcpperpid
+Info: Metrics registered.
+Info: Registering helpers:
+Info: tcpperpid
+Info: Helpers registered.
+Info: Initializing, currently in 'notready' state.
+Info: Enabled modules:
+Info: ['tcpperpid']
+Info: Configuring modules:
+Info: tcpperpid
+Info: Modules configured.
+Info: Initializing modules:
+Info: tcpperpid
+Info: tcpperpid: Filtering on remote ports: [80].
+Info: tcpperpid: Using BPF source file X
+Info: tcpperpid: Initialized.
+Info: Modules initialized.
+Info: Registering metrics:
+Info: tcpperpid
+Info: Metrics registered.
+Info: Registering helpers:
+Info: tcpperpid
+Info: Helpers registered.
+Updating the Performance Metrics Name Space (PMNS) ...
+Terminate PMDA if already installed ...
+[...install files, make output...]
+Updating the PMCD control file, and notifying PMCD ...
+Check bcc metrics have appeared ... X metrics and X values
+
+[Thu Aug 20 19:28:22] pmdabcc(1004193) Error: tcpperpid: Failed to compile BPF module <text>
+[Thu Aug 20 19:28:22] pmdabcc(1004193) Error: tcpperpid: Module NOT active!
+[Thu Aug 20 19:28:22] pmdabcc(1004193) Error: Failed to compile module tcpperpid, aborting.
+
+Log finished Thu Aug 20 19:28:22 2020
+PMDA was not ready in 60 seconds, test failed

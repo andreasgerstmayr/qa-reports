@@ -1,0 +1,61 @@
+{
+  "uid" : "eae7051b05a7a56b",
+  "name" : "QA 1573",
+  "fullName" : "QA #1573 on ubuntu1804-direct",
+  "historyId" : "1573@ubuntu1804-direct",
+  "time" : {
+    "start" : 1597950316000,
+    "stop" : 1597950316000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 1573\n\nExercise libpcp_web memory leak without a redis-server.\n\n\n\nCopyright (c) 2020 Red Hat.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 1573</p>\n<p>Exercise libpcp_web memory leak without a redis-server.</p>\n<p>Copyright (c) 2020 Red Hat.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Redis 4 too old",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "epic",
+    "value" : "pmproxy"
+  }, {
+    "name" : "epic",
+    "value" : "libpcp_web"
+  }, {
+    "name" : "epic",
+    "value" : "pmlogger"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1573",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1573.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "eae7051b05a7a56b.json",
+  "parameterValues" : [ ]
+}

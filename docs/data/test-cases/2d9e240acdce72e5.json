@@ -1,0 +1,58 @@
+{
+  "uid" : "2d9e240acdce72e5",
+  "name" : "QA 894",
+  "fullName" : "QA #894 on centos6-container",
+  "historyId" : "894@centos6-container",
+  "time" : {
+    "start" : 1597946847000,
+    "stop" : 1597946848000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 894\n\nExercise pmlogconf and pmiconf handling of empty files.\n\n\n\nCopyright (c) 2016 Red Hat.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 894</p>\n<p>Exercise pmlogconf and pmiconf handling of empty files.</p>\n<p>Copyright (c) 2016 Red Hat.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos6-container"
+  }, {
+    "name" : "host",
+    "value" : "centos6-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmlogconf"
+  }, {
+    "name" : "epic",
+    "value" : "pmieconf"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/894",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/894.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2d9e240acdce72e5.json",
+  "parameterValues" : [ ]
+}

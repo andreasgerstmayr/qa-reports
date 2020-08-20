@@ -1,0 +1,58 @@
+{
+  "uid" : "aaad704ab5488d3",
+  "name" : "QA 1696",
+  "fullName" : "QA #1696 on fedora31-container",
+  "historyId" : "1696@fedora31-container",
+  "time" : {
+    "start" : 1597952380000,
+    "stop" : 1597952380000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 1696\n\nValgrind pmproxy REST API load testing.\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 1696</p>\n<p>Valgrind pmproxy REST API load testing.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Redis server not running locally",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmproxy"
+  }, {
+    "name" : "epic",
+    "value" : "valgrind"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1696",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1696.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "aaad704ab5488d3.json",
+  "parameterValues" : [ ]
+}

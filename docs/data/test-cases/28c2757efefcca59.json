@@ -1,0 +1,55 @@
+{
+  "uid" : "28c2757efefcca59",
+  "name" : "QA 381",
+  "fullName" : "QA #381 on fedora32-container",
+  "historyId" : "381@fedora32-container",
+  "time" : {
+    "start" : 1597944779000,
+    "stop" : 1597944779000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 381\n\npmlc with new -p port and \"connect port <n>\" options\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 381</p>\n<p>pmlc with new -p port and &quot;connect port <n>&quot; options</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "./getpmcdhosts: unable to get 1 host(s) with options: \"-L -n 1 -P -a sample\"",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora32-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora32-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmlc"
+  }, {
+    "name" : "epic",
+    "value" : "remote"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/381",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/381.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "28c2757efefcca59.json",
+  "parameterValues" : [ ]
+}

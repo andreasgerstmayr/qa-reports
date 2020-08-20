@@ -1,0 +1,83 @@
+== discovery directory
+/tmp/1243-16507.discover
+/tmp/1243-16507.discover/hostnames.sh
+/tmp/1243-16507.discover/localhost.sh
+== localhost.sh
+== hostnames.sh
+== checking pcp-kube-pods argument handling
+== checking pmfind results and memory access
+Warning: using extra --suppressions=/var/lib/pcp/testsuite/valgrind-suppress-3.8.1
+=== std out ===
+No pmcd servers discovered
+=== std err ===
+=== valgrind report ===
+==16581== Memcheck, a memory error detector
+==16581== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==16581== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==16581== Command: pmfind -m shell,path=/tmp/1243-16507.discover,maxThreads=1 -s pmcd
+==16581== Parent PID: 16572
+==16581== 
+==16582== execve(0x7a02470(/tmp/1243-16507.discover/hostnames.sh), 0x7a02420, 0x7feffff58) failed, errno 13
+==16582== EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+==16582== Add more stringent tests in PRE(sys_execve), or work out how to recover.
+==16583== execve(0x7a028a0(/tmp/1243-16507.discover/localhost.sh), 0x7a02850, 0x7feffff58) failed, errno 13
+==16583== EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+==16583== Add more stringent tests in PRE(sys_execve), or work out how to recover.
+==16581== 
+==16581== HEAP SUMMARY:
+==16581==     in use at exit: 16 bytes in 1 blocks
+==16581==   total heap usage: 14 allocs, 13 frees, 34,706 bytes allocated
+==16581== 
+==16581== LEAK SUMMARY:
+==16581==    definitely lost: 0 bytes in 0 blocks
+==16581==    indirectly lost: 0 bytes in 0 blocks
+==16581==      possibly lost: 0 bytes in 0 blocks
+==16581==    still reachable: 16 bytes in 1 blocks
+==16581==         suppressed: 0 bytes in 0 blocks
+==16581== Reachable blocks (those to which a pointer was found) are not shown.
+==16581== To see them, rerun with: --leak-check=full --show-reachable=yes
+==16581== 
+==16581== For counts of detected and suppressed errors, rerun with: -v
+==16581== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: pmfind -m shell,path=/tmp/1243-16507.discover,maxThreads=1 -s pmcd
+execve(0x7a02470(/tmp/1243-16507.discover/hostnames.sh), 0x7a02420, 0x7feffff58) failed, errno 13
+EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+Add more stringent tests in PRE(sys_execve), or work out how to recover.
+execve(0x7a028a0(/tmp/1243-16507.discover/localhost.sh), 0x7a02850, 0x7feffff58) failed, errno 13
+EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+Add more stringent tests in PRE(sys_execve), or work out how to recover.
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+== checking pmfind results and thread locks
+Warning: no extra suppressions found for helgrind version 3.8.1
+=== valgrind report ===
+==16607== Helgrind, a thread error detector
+==16607== Copyright (C) 2007-2012, and GNU GPL'd, by OpenWorks LLP et al.
+==16607== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==16607== Command: pmfind -m shell,path=/tmp/1243-16507.discover,maxThreads=4 -s pmcd
+==16607== Parent PID: 16596
+==16607== 
+==16608== execve(0x7a031a0(/tmp/1243-16507.discover/hostnames.sh), 0x7a03150, 0x7feffff58) failed, errno 13
+==16608== EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+==16608== Add more stringent tests in PRE(sys_execve), or work out how to recover.
+==16609== execve(0x7a031f0(/tmp/1243-16507.discover/localhost.sh), 0x7a031a0, 0x7feffff58) failed, errno 13
+==16609== EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+==16609== Add more stringent tests in PRE(sys_execve), or work out how to recover.
+==16607== 
+==16607== For counts of detected and suppressed errors, rerun with: -v
+==16607== Use --history-level=approx or =none to gain increased speed, at
+==16607== the cost of reduced accuracy of conflicting-access information
+==16607== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=== filtered valgrind report ===
+Helgrind, a thread error detector
+execve(0x7a031a0(/tmp/1243-16507.discover/hostnames.sh), 0x7a03150, 0x7feffff58) failed, errno 13
+EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+Add more stringent tests in PRE(sys_execve), or work out how to recover.
+execve(0x7a031f0(/tmp/1243-16507.discover/localhost.sh), 0x7a031a0, 0x7feffff58) failed, errno 13
+EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+Add more stringent tests in PRE(sys_execve), or work out how to recover.
+ERROR SUMMARY: 0 errors from 0 contexts ...

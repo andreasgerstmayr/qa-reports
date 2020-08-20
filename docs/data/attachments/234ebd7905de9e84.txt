@@ -1,0 +1,3462 @@
+
+pmie PID 62456
+
+=== pmie output ===
+Performance Co-Pilot Inference Engine (pmie), Version 5.2.1
+
+pmie debugger commands
+
+  f [file-name]      - load expressions from given file or stdin
+  l [expr-name]      - list named expression or all expressions
+  r [interval]       - run for given or default interval
+  S time-spec        - set start time for run
+  T time-spec        - set default interval for run command
+  v [expr-name]      - print subexpression used for %h, %i and
+                       %v bindings
+  h or ?             - print this menu of commands
+  q                  - quit
+
+pmie> pmie> expr_1 =
+some_inst (sample.part_bin :97d404ba7f88 #bin-100 #bin-200 #bin-300 #bin-400 #bin-500 #bin-600 #bin-700 #bin-800 #bin-900 > 500) -> print "some > 500:" " [%i] %v";
+
+expr_2 =
+all_inst (sample.part_bin :97d404ba7f88 #bin-100 #bin-200 #bin-300 #bin-400 #bin-500 #bin-600 #bin-700 #bin-800 #bin-900 > 0) -> shell "echo 'all > 0:'" " [%i] %v";
+
+expr_3 =
+some_sample (hinv.ncpu :97d404ba7f88 @0..2 == hinv.ncpu :97d404ba7f88) -> ([level=30 tag="pcp-pmie"] "PCP QA 514 - please ignore: some sample ncpu equal") syslog 10;
+
+expr_4 =
+((((sample.long.million :97d404ba7f88 + sample.long.one :97d404ba7f88) - sample.long.ten :97d404ba7f88) * sample.long.hundred :97d404ba7f88) / sample.long.ten :97d404ba7f88) >= 0 -> print "arith %v";
+
+expr_5 =
+(sample.long.one :97d404ba7f88 != 2) && (((((sample.long.million :97d404ba7f88 + sample.long.one :97d404ba7f88) - sample.long.ten :97d404ba7f88) * sample.long.hundred :97d404ba7f88) / sample.long.ten :97d404ba7f88) >= 0) -> print "boolean1 %v";
+
+expr_6 =
+(sample.long.one :97d404ba7f88 <= 0) && (((((sample.long.million :97d404ba7f88 + sample.long.one :97d404ba7f88) - sample.long.ten :97d404ba7f88) * sample.long.hundred :97d404ba7f88) / sample.long.ten :97d404ba7f88) >= 0) -> print "boolean2 %v";
+
+expr_7 =
+(sample.long.one :97d404ba7f88 < 9) && (! (((((sample.long.million :97d404ba7f88 + sample.long.one :97d404ba7f88) - sample.long.ten :97d404ba7f88) * sample.long.hundred :97d404ba7f88) / sample.long.ten :97d404ba7f88) >= 0)) -> print "boolean3 %v";
+
+expr_8 =
+(sample.long.one :97d404ba7f88 < 1) && (! (((((sample.long.million :97d404ba7f88 + sample.long.one :97d404ba7f88) - sample.long.ten :97d404ba7f88) * sample.long.hundred :97d404ba7f88) / sample.long.ten :97d404ba7f88) >= 0)) -> print "boolean4 %v";
+
+expr_9 =
+(min_inst (no_such_metric :97d404ba7f88) == 100) || (sample.long.million :97d404ba7f88 > 0) -> print "error1 %v";
+
+expr_10 =
+(min_inst (sample.part_bin :97d404ba7f88 #bin-100 #bin-200 #bin-300 #bin-400 #bin-500 #bin-600 #bin-700 #bin-800 #bin-900) == 100) || (((((sample.long.million :97d404ba7f88 + sample.long.one :97d404ba7f88) - sample.long.ten :97d404ba7f88) * sample.long.hundred :97d404ba7f88) / sample.long.ten :97d404ba7f88) >= 0) -> print "boolean5:" " [%i] %v";
+
+expr_11 =
+(max_inst (sample.part_bin :97d404ba7f88 #bin-100 #bin-200 #bin-300 #bin-400 #bin-500 #bin-600 #bin-700 #bin-800 #bin-900) == 100) || (((((sample.long.million :97d404ba7f88 + sample.long.one :97d404ba7f88) - sample.long.ten :97d404ba7f88) * sample.long.hundred :97d404ba7f88) / sample.long.ten :97d404ba7f88) >= 0) -> print "boolean6:" " [%i] %v";
+
+expr_12 =
+(sum_inst (sample.part_bin :97d404ba7f88 #bin-100 #bin-200 #bin-300 #bin-400 #bin-500 #bin-600 #bin-700 #bin-800 #bin-900) > 500) || (! (((((sample.long.million :97d404ba7f88 + sample.long.one :97d404ba7f88) - sample.long.ten :97d404ba7f88) * sample.long.hundred :97d404ba7f88) / sample.long.ten :97d404ba7f88) >= 0)) -> print "boolean7:" " [%i] %v";
+
+expr_13 =
+(avg_inst (sample.part_bin :97d404ba7f88 #bin-100 #bin-200 #bin-300 #bin-400 #bin-500 #bin-600 #bin-700 #bin-800 #bin-900) == 0) || (! (((((sample.long.million :97d404ba7f88 + sample.long.one :97d404ba7f88) - sample.long.ten :97d404ba7f88) * sample.long.hundred :97d404ba7f88) / sample.long.ten :97d404ba7f88) >= 0)) -> print "boolean8:" " [%i] %v";
+
+expr_14 =
+count_inst (sample.part_bin :97d404ba7f88 #bin-100 #bin-200 #bin-300 #bin-400 #bin-500 #bin-600 #bin-700 #bin-800 #bin-900 > 0) > 0 -> print "count_inst:" "[%i] %v";
+
+expr_15 =
+some_inst (match_inst /<regex>/ (sample.part_bin :97d404ba7f88 #bin-100 #bin-200 #bin-300 #bin-400 #bin-500 #bin-600 #bin-700 #bin-800 #bin-900 > 100)) -> print "match_inst:" " [%i] %v";
+
+expr_16 =
+some_inst (nomatch_inst /<regex>/ (sample.part_bin :97d404ba7f88 #bin-100 #bin-200 #bin-300 #bin-400 #bin-500 #bin-600 #bin-700 #bin-800 #bin-900 > 200)) -> print "nomatch_inst:" " [%i] %v";
+
+expr_17 =
+all_inst (rate (sample.bin :97d404ba7f88 #bin-100 #bin-200 #bin-300 #bin-400 #bin-500 #bin-600 #bin-700 #bin-800 #bin-900) == 0) -> print "rate:" " [%i] %v";
+
+expr_18 =
+pcnt_inst 66% (sample.colour :97d404ba7f88 #red #green #blue >= 200) -> print "66%_inst:" " [%i] %v";
+
+expr_19 =
+all_sample (sample.long.ten :97d404ba7f88 @0..2 == 10) -> print "all_sample: " " [%i] %v";
+
+expr_20 =
+pcnt_sample 60% (some_inst (sample.part_bin :97d404ba7f88 #bin-300 #bin-500 #bin-700 @0..1 >= 500)) -> print "60%_sample: " " [%i] %v";
+
+expr_21 =
+min_sample (sample.long.hundred :97d404ba7f88 @0..1) == 100 -> print "min_sample: " " [%i] %v";
+
+expr_22 =
+max_sample (sample.long.hundred :97d404ba7f88 @0..1) == 100 -> print "max_sample: " " [%i] %v";
+
+expr_23 =
+sum_sample (sample.bin :97d404ba7f88 #bin-100 @0..3) == 400 -> print "sum_sample: " " [%i] %v";
+
+expr_24 =
+avg_sample (sample.bin :97d404ba7f88 #bin-200 @0..1) == 200 -> print "avg_sample: " " [%i] %v";
+
+expr_25 =
+count_sample (some_inst (sample.bin :97d404ba7f88 #bin-200 #bin-300 #bin-400 @0..2 == 300)) == 3 -> print "count_sample: " " [%i] %v";
+
+expr_26 =
+min_inst (sample.part_bin :97d404ba7f88 #bin-100 #bin-200 #bin-300 #bin-400 #bin-500 #bin-600 #bin-700 #bin-800 #bin-900) > 0 -> print "min_inst:" " @%h [%i] %v";
+
+expr_27 =
+max_inst (sample.part_bin :97d404ba7f88 #bin-100 #bin-200 #bin-300 #bin-400 #bin-500 #bin-600 #bin-700 #bin-800 #bin-900) > 0 -> print "max_inst:" " @%h [%i] %v";
+
+expr_28 =
+sample.long.one :97d404ba7f88 == 1 -> (shell "false") | (print "false |: %v");
+
+expr_29 =
+sample.long.ten :97d404ba7f88 == 10 -> (shell "true") & (print "true &: %v");
+
+expr_30 =
+sample.long.hundred :97d404ba7f88 == 100 -> (print "print |:" " %v") | (print "bozo don't execute me!");
+
+pmie> Thu Aug 20 17:36:38 2020: some > 500: [bin-700] 700 [bin-900] 900
+all > 0: [bin-100] 100 [bin-300] 300 [bin-500] 500 [bin-700] 700 [bin-900] 900
+Thu Aug 20 17:36:38 2020: arith 9999910
+Thu Aug 20 17:36:38 2020: boolean1 1
+Thu Aug 20 17:36:38 2020: error1 %v
+Thu Aug 20 17:36:38 2020: boolean5: [bin-100] 100
+Thu Aug 20 17:36:38 2020: boolean6: [bin-900] 900
+Thu Aug 20 17:36:38 2020: boolean7: [<%i undefined>] 2500
+Thu Aug 20 17:36:38 2020: count_inst:[<%i undefined>] 5
+Thu Aug 20 17:36:38 2020: match_inst: [bin-300] 300 [bin-500] 500
+Thu Aug 20 17:36:38 2020: nomatch_inst: [bin-700] 700 [bin-900] 900
+Thu Aug 20 17:36:38 2020: 66%_inst: [green] 202 [blue] 303
+Thu Aug 20 17:36:38 2020: min_inst: @97d404ba7f88 [bin-100] 100
+Thu Aug 20 17:36:38 2020: max_inst: @97d404ba7f88 [bin-900] 900
+Thu Aug 20 17:36:38 2020: false |: 1
+Thu Aug 20 17:36:38 2020: true &: 10
+Thu Aug 20 17:36:38 2020: print |: 100
+Thu Aug 20 17:36:38 2020: some > 500: [bin-700] 700 [bin-900] 900
+all > 0: [bin-100] 100 [bin-300] 300 [bin-500] 500 [bin-700] 700 [bin-900] 900
+Thu Aug 20 17:36:38 2020: arith 9999910
+Thu Aug 20 17:36:38 2020: boolean1 1
+Thu Aug 20 17:36:38 2020: error1 %v
+Thu Aug 20 17:36:38 2020: boolean5: [bin-100] 100
+Thu Aug 20 17:36:38 2020: boolean6: [bin-900] 900
+Thu Aug 20 17:36:38 2020: boolean7: [<%i undefined>] 2500
+Thu Aug 20 17:36:38 2020: count_inst:[<%i undefined>] 5
+Thu Aug 20 17:36:38 2020: match_inst: [bin-300] 300 [bin-500] 500
+Thu Aug 20 17:36:38 2020: nomatch_inst: [bin-700] 700 [bin-900] 900
+Thu Aug 20 17:36:38 2020: rate: [bin-100] 0 [bin-200] 0 [bin-300] 0 [bin-400] 0 [bin-500] 0 [bin-600] 0 [bin-700] 0 [bin-800] 0 [bin-900] 0
+Thu Aug 20 17:36:38 2020: 66%_inst: [green] 205 [blue] 306
+Thu Aug 20 17:36:38 2020: 60%_sample:  [bin-500] 500 500 [bin-700] 700 700
+Thu Aug 20 17:36:38 2020: min_sample:  [<%i undefined>] 100
+Thu Aug 20 17:36:38 2020: max_sample:  [<%i undefined>] 100
+Thu Aug 20 17:36:38 2020: avg_sample:  [bin-200] 200
+Thu Aug 20 17:36:38 2020: min_inst: @97d404ba7f88 [bin-100] 100
+Thu Aug 20 17:36:38 2020: max_inst: @97d404ba7f88 [bin-900] 900
+Thu Aug 20 17:36:38 2020: false |: 1
+Thu Aug 20 17:36:38 2020: true &: 10
+Thu Aug 20 17:36:38 2020: print |: 100
+Thu Aug 20 17:36:39 2020: some > 500: [bin-700] 700 [bin-900] 900
+all > 0: [bin-100] 100 [bin-300] 300 [bin-500] 500 [bin-700] 700 [bin-900] 900
+Thu Aug 20 17:36:39 2020: arith 9999910
+Thu Aug 20 17:36:39 2020: boolean1 1
+Thu Aug 20 17:36:39 2020: error1 %v
+Thu Aug 20 17:36:39 2020: boolean5: [bin-100] 100
+Thu Aug 20 17:36:39 2020: boolean6: [bin-900] 900
+Thu Aug 20 17:36:39 2020: boolean7: [<%i undefined>] 2500
+Thu Aug 20 17:36:39 2020: count_inst:[<%i undefined>] 5
+Thu Aug 20 17:36:39 2020: match_inst: [bin-300] 300 [bin-500] 500
+Thu Aug 20 17:36:39 2020: nomatch_inst: [bin-700] 700 [bin-900] 900
+Thu Aug 20 17:36:39 2020: rate: [bin-100] 0 [bin-200] 0 [bin-300] 0 [bin-400] 0 [bin-500] 0 [bin-600] 0 [bin-700] 0 [bin-800] 0 [bin-900] 0
+Thu Aug 20 17:36:39 2020: 66%_inst: [green] 208 [blue] 309
+Thu Aug 20 17:36:39 2020: all_sample:  [<%i undefined>] 10 10 10
+Thu Aug 20 17:36:39 2020: 60%_sample:  [bin-500] 500 500 [bin-700] 700 700
+Thu Aug 20 17:36:39 2020: min_sample:  [<%i undefined>] 100
+Thu Aug 20 17:36:39 2020: max_sample:  [<%i undefined>] 100
+Thu Aug 20 17:36:39 2020: avg_sample:  [bin-200] 200
+Thu Aug 20 17:36:39 2020: count_sample:  [<%i undefined>] 3
+Thu Aug 20 17:36:39 2020: min_inst: @97d404ba7f88 [bin-100] 100
+Thu Aug 20 17:36:39 2020: max_inst: @97d404ba7f88 [bin-900] 900
+Thu Aug 20 17:36:39 2020: false |: 1
+Thu Aug 20 17:36:39 2020: true &: 10
+Thu Aug 20 17:36:39 2020: print |: 100
+Thu Aug 20 17:36:39 2020: some > 500: [bin-700] 700 [bin-900] 900
+all > 0: [bin-100] 100 [bin-300] 300 [bin-500] 500 [bin-700] 700 [bin-900] 900
+Thu Aug 20 17:36:39 2020: arith 9999910
+Thu Aug 20 17:36:39 2020: boolean1 1
+Thu Aug 20 17:36:39 2020: error1 %v
+Thu Aug 20 17:36:39 2020: boolean5: [bin-100] 100
+Thu Aug 20 17:36:39 2020: boolean6: [bin-900] 900
+Thu Aug 20 17:36:39 2020: boolean7: [<%i undefined>] 2500
+Thu Aug 20 17:36:39 2020: count_inst:[<%i undefined>] 5
+Thu Aug 20 17:36:39 2020: match_inst: [bin-300] 300 [bin-500] 500
+Thu Aug 20 17:36:39 2020: nomatch_inst: [bin-700] 700 [bin-900] 900
+Thu Aug 20 17:36:39 2020: rate: [bin-100] 0 [bin-200] 0 [bin-300] 0 [bin-400] 0 [bin-500] 0 [bin-600] 0 [bin-700] 0 [bin-800] 0 [bin-900] 0
+Thu Aug 20 17:36:39 2020: 66%_inst: [green] 211 [blue] 312
+Thu Aug 20 17:36:39 2020: all_sample:  [<%i undefined>] 10 10 10
+Thu Aug 20 17:36:39 2020: 60%_sample:  [bin-500] 500 500 [bin-700] 700 700
+Thu Aug 20 17:36:39 2020: min_sample:  [<%i undefined>] 100
+Thu Aug 20 17:36:39 2020: max_sample:  [<%i undefined>] 100
+Thu Aug 20 17:36:39 2020: sum_sample:  [bin-100] 400
+Thu Aug 20 17:36:39 2020: avg_sample:  [bin-200] 200
+Thu Aug 20 17:36:39 2020: count_sample:  [<%i undefined>] 3
+Thu Aug 20 17:36:39 2020: min_inst: @97d404ba7f88 [bin-100] 100
+Thu Aug 20 17:36:39 2020: max_inst: @97d404ba7f88 [bin-900] 900
+Thu Aug 20 17:36:39 2020: false |: 1
+Thu Aug 20 17:36:39 2020: true &: 10
+Thu Aug 20 17:36:39 2020: print |: 100
+Thu Aug 20 17:36:39 2020: some > 500: [bin-700] 700 [bin-900] 900
+all > 0: [bin-100] 100 [bin-300] 300 [bin-500] 500 [bin-700] 700 [bin-900] 900
+Thu Aug 20 17:36:39 2020: arith 9999910
+Thu Aug 20 17:36:39 2020: boolean1 1
+Thu Aug 20 17:36:39 2020: error1 %v
+Thu Aug 20 17:36:39 2020: boolean5: [bin-100] 100
+Thu Aug 20 17:36:39 2020: boolean6: [bin-900] 900
+Thu Aug 20 17:36:39 2020: boolean7: [<%i undefined>] 2500
+Thu Aug 20 17:36:39 2020: count_inst:[<%i undefined>] 5
+Thu Aug 20 17:36:39 2020: match_inst: [bin-300] 300 [bin-500] 500
+Thu Aug 20 17:36:39 2020: nomatch_inst: [bin-700] 700 [bin-900] 900
+Thu Aug 20 17:36:39 2020: rate: [bin-100] 0 [bin-200] 0 [bin-300] 0 [bin-400] 0 [bin-500] 0 [bin-600] 0 [bin-700] 0 [bin-800] 0 [bin-900] 0
+Thu Aug 20 17:36:39 2020: 66%_inst: [green] 214 [blue] 315
+Thu Aug 20 17:36:39 2020: all_sample:  [<%i undefined>] 10 10 10
+Thu Aug 20 17:36:39 2020: 60%_sample:  [bin-500] 500 500 [bin-700] 700 700
+Thu Aug 20 17:36:39 2020: min_sample:  [<%i undefined>] 100
+Thu Aug 20 17:36:39 2020: max_sample:  [<%i undefined>] 100
+Thu Aug 20 17:36:39 2020: sum_sample:  [bin-100] 400
+Thu Aug 20 17:36:39 2020: avg_sample:  [bin-200] 200
+Thu Aug 20 17:36:39 2020: count_sample:  [<%i undefined>] 3
+Thu Aug 20 17:36:39 2020: min_inst: @97d404ba7f88 [bin-100] 100
+Thu Aug 20 17:36:39 2020: max_inst: @97d404ba7f88 [bin-900] 900
+Thu Aug 20 17:36:39 2020: false |: 1
+Thu Aug 20 17:36:39 2020: true &: 10
+Thu Aug 20 17:36:39 2020: print |: 100
+pmie> expr_1 (subexpression for %h, %i and %v bindings) =
+sample.part_bin :97d404ba7f88 #bin-100 #bin-300 #bin-500 #bin-700 #bin-900
+
+expr_2 (subexpression for %h, %i and %v bindings) =
+sample.part_bin :97d404ba7f88 #bin-100 #bin-300 #bin-500 #bin-700 #bin-900
+
+expr_3 (subexpression for %h, %i and %v bindings) =
+hinv.ncpu :97d404ba7f88 @0..2
+
+expr_4 (subexpression for %h, %i and %v bindings) =
+(((sample.long.million :97d404ba7f88 + sample.long.one :97d404ba7f88) - sample.long.ten :97d404ba7f88) * sample.long.hundred :97d404ba7f88) / sample.long.ten :97d404ba7f88
+
+expr_5 (subexpression for %h, %i and %v bindings) =
+sample.long.one :97d404ba7f88
+
+expr_6 (subexpression for %h, %i and %v bindings) =
+sample.long.one :97d404ba7f88
+
+expr_7 (subexpression for %h, %i and %v bindings) =
+sample.long.one :97d404ba7f88
+
+expr_8 (subexpression for %h, %i and %v bindings) =
+sample.long.one :97d404ba7f88
+
+expr_9 (subexpression for %h, %i and %v bindings) =
+min_inst (no_such_metric :97d404ba7f88)
+
+expr_10 (subexpression for %h, %i and %v bindings) =
+min_inst (sample.part_bin :97d404ba7f88 #bin-100 #bin-300 #bin-500 #bin-700 #bin-900)
+
+expr_11 (subexpression for %h, %i and %v bindings) =
+max_inst (sample.part_bin :97d404ba7f88 #bin-100 #bin-300 #bin-500 #bin-700 #bin-900)
+
+expr_12 (subexpression for %h, %i and %v bindings) =
+sum_inst (sample.part_bin :97d404ba7f88 #bin-100 #bin-300 #bin-500 #bin-700 #bin-900)
+
+expr_13 (subexpression for %h, %i and %v bindings) =
+avg_inst (sample.part_bin :97d404ba7f88 #bin-100 #bin-300 #bin-500 #bin-700 #bin-900)
+
+expr_14 (subexpression for %h, %i and %v bindings) =
+count_inst (sample.part_bin :97d404ba7f88 #bin-100 #bin-300 #bin-500 #bin-700 #bin-900 > 0)
+
+expr_15 (subexpression for %h, %i and %v bindings) =
+sample.part_bin :97d404ba7f88 #bin-100 #bin-300 #bin-500 #bin-700 #bin-900
+
+expr_16 (subexpression for %h, %i and %v bindings) =
+sample.part_bin :97d404ba7f88 #bin-100 #bin-300 #bin-500 #bin-700 #bin-900
+
+expr_17 (subexpression for %h, %i and %v bindings) =
+rate (sample.bin :97d404ba7f88 #bin-100 #bin-200 #bin-300 #bin-400 #bin-500 #bin-600 #bin-700 #bin-800 #bin-900)
+
+expr_18 (subexpression for %h, %i and %v bindings) =
+sample.colour :97d404ba7f88 #red #green #blue
+
+expr_19 (subexpression for %h, %i and %v bindings) =
+sample.long.ten :97d404ba7f88 @0..2
+
+expr_20 (subexpression for %h, %i and %v bindings) =
+sample.part_bin :97d404ba7f88 #bin-300 #bin-500 #bin-700 @0..1
+
+expr_21 (subexpression for %h, %i and %v bindings) =
+min_sample (sample.long.hundred :97d404ba7f88 @0..1)
+
+expr_22 (subexpression for %h, %i and %v bindings) =
+max_sample (sample.long.hundred :97d404ba7f88 @0..1)
+
+expr_23 (subexpression for %h, %i and %v bindings) =
+sum_sample (sample.bin :97d404ba7f88 #bin-100 @0..3)
+
+expr_24 (subexpression for %h, %i and %v bindings) =
+avg_sample (sample.bin :97d404ba7f88 #bin-200 @0..1)
+
+expr_25 (subexpression for %h, %i and %v bindings) =
+count_sample (some_inst (sample.bin :97d404ba7f88 #bin-200 #bin-300 #bin-400 @0..2 == 300))
+
+expr_26 (subexpression for %h, %i and %v bindings) =
+min_inst (sample.part_bin :97d404ba7f88 #bin-100 #bin-300 #bin-500 #bin-700 #bin-900)
+
+expr_27 (subexpression for %h, %i and %v bindings) =
+max_inst (sample.part_bin :97d404ba7f88 #bin-100 #bin-300 #bin-500 #bin-700 #bin-900)
+
+expr_28 (subexpression for %h, %i and %v bindings) =
+sample.long.one :97d404ba7f88
+
+expr_29 (subexpression for %h, %i and %v bindings) =
+sample.long.ten :97d404ba7f88
+
+expr_30 (subexpression for %h, %i and %v bindings) =
+sample.long.hundred :97d404ba7f88
+
+pmie> 
+
+=== pmie errors ===
+initMetric: sample.part_bin from 97d404ba7f88: instance domain specinst=0
+  indom[0] 100 "bin-100"
+  indom[1] 200 "bin-200"
+  indom[2] 300 "bin-300"
+  indom[3] 400 "bin-400"
+  indom[4] 500 "bin-500"
+  indom[5] 600 "bin-600"
+  indom[6] 700 "bin-700"
+  indom[7] 800 "bin-800"
+  indom[8] 900 "bin-900"
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=1
+.. Expr dump @ 0x55ee2e0954c0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e095610
+..   eval=cndFetch_all metrics=0x55ee2e094ba0 ring=0x55ee2e095540
+..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e094ba0
+.. .. expr=0x55ee2e0954c0 profile=0x55ee2e096b10 host=0x55ee2e0959d0 next=(nil) prev=(nil)
+.. .. metric=sample.part_bin host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=9
+.. .. [0] iid=100 iname="bin-100"
+.. .. [1] iid=200 iname="bin-200"
+.. .. [2] iid=300 iname="bin-300"
+.. .. [3] iid=400 iname="bin-400"
+.. .. [4] iid=500 iname="bin-500"
+.. .. [5] iid=600 iname="bin-600"
+.. .. [6] iid=700 iname="bin-700"
+.. .. [7] iid=800 iname="bin-800"
+.. .. [8] iid=900 iname="bin-900"
+.. .. 
+initMetric: sample.part_bin from 97d404ba7f88: instance domain specinst=0
+  indom[0] 100 "bin-100"
+  indom[1] 200 "bin-200"
+  indom[2] 300 "bin-300"
+  indom[3] 400 "bin-400"
+  indom[4] 500 "bin-500"
+  indom[5] 600 "bin-600"
+  indom[6] 700 "bin-700"
+  indom[7] 800 "bin-800"
+  indom[8] 900 "bin-900"
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=2
+.. Expr dump @ 0x55ee2e096f70
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0970c0
+..   eval=cndFetch_all metrics=0x55ee2e0961f0 ring=0x55ee2e096ff0
+..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0961f0
+.. .. expr=0x55ee2e096f70 profile=0x55ee2e096b10 host=0x55ee2e0959d0 next=0x55ee2e094ba0 prev=(nil)
+.. .. metric=sample.part_bin host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=9
+.. .. [0] iid=100 iname="bin-100"
+.. .. [1] iid=200 iname="bin-200"
+.. .. [2] iid=300 iname="bin-300"
+.. .. [3] iid=400 iname="bin-400"
+.. .. [4] iid=500 iname="bin-500"
+.. .. [5] iid=600 iname="bin-600"
+.. .. [6] iid=700 iname="bin-700"
+.. .. [7] iid=800 iname="bin-800"
+.. .. [8] iid=900 iname="bin-900"
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=3
+.. Expr dump @ 0x55ee2e0976b0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0978c0
+..   eval=cndFetch_1 metrics=0x55ee2e0974e0 ring=0x55ee2e0975d0
+..   valid=0 cardinality[H,I,T]=[1,1,3] tspan=1
+..   nsmpls=3 nvals=3 sem=DISCRETE units=
+.. .. Metric dump @ 0x55ee2e0974e0
+.. .. expr=0x55ee2e0976b0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=(nil) prev=(nil)
+.. .. metric=hinv.ncpu host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=3
+.. Expr dump @ 0x55ee2e097840
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0978c0
+..   eval=cndFetch_1 metrics=0x55ee2e097750 ring=0x55ee2e097690
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=DISCRETE units=
+.. .. Metric dump @ 0x55ee2e097750
+.. .. expr=0x55ee2e097840 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0974e0 prev=(nil)
+.. .. metric=hinv.ncpu host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=4
+.. Expr dump @ 0x55ee2e097f60
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e098150
+..   eval=cndFetch_1 metrics=0x55ee2e097db0 ring=0x55ee2e097ea0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e097db0
+.. .. expr=0x55ee2e097f60 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e097750 prev=(nil)
+.. .. metric=sample.long.million host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=4
+.. Expr dump @ 0x55ee2e0980d0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e098150
+..   eval=cndFetch_1 metrics=0x55ee2e097fe0 ring=0x55ee2e097ec0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e097fe0
+.. .. expr=0x55ee2e0980d0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e097db0 prev=(nil)
+.. .. metric=sample.long.one host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=4
+.. Expr dump @ 0x55ee2e0982e0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e098360
+..   eval=cndFetch_1 metrics=0x55ee2e0981d0 ring=0x55ee2e097e80
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0981d0
+.. .. expr=0x55ee2e0982e0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e097fe0 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=4
+.. Expr dump @ 0x55ee2e0984f0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e098570
+..   eval=cndFetch_1 metrics=0x55ee2e0983e0 ring=0x55ee2e098280
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0983e0
+.. .. expr=0x55ee2e0984f0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0981d0 prev=(nil)
+.. .. metric=sample.long.hundred host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=4
+.. Expr dump @ 0x55ee2e0986e0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e098760
+..   eval=cndFetch_1 metrics=0x55ee2e0985f0 ring=0x55ee2e097f40
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0985f0
+.. .. expr=0x55ee2e0986e0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0983e0 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=5
+.. Expr dump @ 0x55ee2e0990e0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0991e0
+..   eval=cndFetch_1 metrics=0x55ee2e098b00 ring=0x55ee2e098bd0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e098b00
+.. .. expr=0x55ee2e0990e0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0985f0 prev=(nil)
+.. .. metric=sample.long.one host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=5
+.. Expr dump @ 0x55ee2e099370
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e099540
+..   eval=cndFetch_1 metrics=0x55ee2e099260 ring=0x55ee2e098c30
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e099260
+.. .. expr=0x55ee2e099370 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e098b00 prev=(nil)
+.. .. metric=sample.long.million host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=5
+.. Expr dump @ 0x55ee2e0994c0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e099540
+..   eval=cndFetch_1 metrics=0x55ee2e0993f0 ring=0x55ee2e099350
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0993f0
+.. .. expr=0x55ee2e0994c0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e099260 prev=(nil)
+.. .. metric=sample.long.one host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=5
+.. Expr dump @ 0x55ee2e0996b0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e099730
+..   eval=cndFetch_1 metrics=0x55ee2e0995c0 ring=0x55ee2e098c10
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0995c0
+.. .. expr=0x55ee2e0996b0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0993f0 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=5
+.. Expr dump @ 0x55ee2e0998a0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e099920
+..   eval=cndFetch_1 metrics=0x55ee2e0997b0 ring=0x55ee2e098bb0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0997b0
+.. .. expr=0x55ee2e0998a0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0995c0 prev=(nil)
+.. .. metric=sample.long.hundred host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=5
+.. Expr dump @ 0x55ee2e099a90
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e099b10
+..   eval=cndFetch_1 metrics=0x55ee2e0999a0 ring=0x55ee2e099330
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0999a0
+.. .. expr=0x55ee2e099a90 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0997b0 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=6
+.. Expr dump @ 0x55ee2e098ee0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e098fe0
+..   eval=cndFetch_1 metrics=0x55ee2e098d50 ring=0x55ee2e098e20
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e098d50
+.. .. expr=0x55ee2e098ee0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0999a0 prev=(nil)
+.. .. metric=sample.long.one host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=6
+.. Expr dump @ 0x55ee2e09a3b0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09a560
+..   eval=cndFetch_1 metrics=0x55ee2e099eb0 ring=0x55ee2e098e80
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e099eb0
+.. .. expr=0x55ee2e09a3b0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e098d50 prev=(nil)
+.. .. metric=sample.long.million host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=6
+.. Expr dump @ 0x55ee2e09a4e0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09a560
+..   eval=cndFetch_1 metrics=0x55ee2e09a430 ring=0x55ee2e0990a0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09a430
+.. .. expr=0x55ee2e09a4e0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e099eb0 prev=(nil)
+.. .. metric=sample.long.one host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=6
+.. Expr dump @ 0x55ee2e09a6d0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09a750
+..   eval=cndFetch_1 metrics=0x55ee2e09a5e0 ring=0x55ee2e098e60
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09a5e0
+.. .. expr=0x55ee2e09a6d0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09a430 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=6
+.. Expr dump @ 0x55ee2e09a8c0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09a940
+..   eval=cndFetch_1 metrics=0x55ee2e09a7d0 ring=0x55ee2e098e00
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09a7d0
+.. .. expr=0x55ee2e09a8c0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09a5e0 prev=(nil)
+.. .. metric=sample.long.hundred host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=6
+.. Expr dump @ 0x55ee2e09aab0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09ab30
+..   eval=cndFetch_1 metrics=0x55ee2e09a9c0 ring=0x55ee2e099080
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09a9c0
+.. .. expr=0x55ee2e09aab0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09a7d0 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=7
+.. Expr dump @ 0x55ee2e09a1b0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09a2b0
+..   eval=cndFetch_1 metrics=0x55ee2e09a020 ring=0x55ee2e09a0f0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09a020
+.. .. expr=0x55ee2e09a1b0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09a9c0 prev=(nil)
+.. .. metric=sample.long.one host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=7
+.. Expr dump @ 0x55ee2e09b3d0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09b580
+..   eval=cndFetch_1 metrics=0x55ee2e09aed0 ring=0x55ee2e09a150
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09aed0
+.. .. expr=0x55ee2e09b3d0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09a020 prev=(nil)
+.. .. metric=sample.long.million host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=7
+.. Expr dump @ 0x55ee2e09b500
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09b580
+..   eval=cndFetch_1 metrics=0x55ee2e09b450 ring=0x55ee2e09a370
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09b450
+.. .. expr=0x55ee2e09b500 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09aed0 prev=(nil)
+.. .. metric=sample.long.one host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=7
+.. Expr dump @ 0x55ee2e09b6f0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09b770
+..   eval=cndFetch_1 metrics=0x55ee2e09b600 ring=0x55ee2e09a130
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09b600
+.. .. expr=0x55ee2e09b6f0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09b450 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=7
+.. Expr dump @ 0x55ee2e09b8e0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09b960
+..   eval=cndFetch_1 metrics=0x55ee2e09b7f0 ring=0x55ee2e09a0d0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09b7f0
+.. .. expr=0x55ee2e09b8e0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09b600 prev=(nil)
+.. .. metric=sample.long.hundred host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=7
+.. Expr dump @ 0x55ee2e09bad0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09bb50
+..   eval=cndFetch_1 metrics=0x55ee2e09b9e0 ring=0x55ee2e09a350
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09b9e0
+.. .. expr=0x55ee2e09bad0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09b7f0 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=8
+.. Expr dump @ 0x55ee2e09b270
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09bef0
+..   eval=cndFetch_1 metrics=0x55ee2e09b0e0 ring=0x55ee2e09b1b0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09b0e0
+.. .. expr=0x55ee2e09b270 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09b9e0 prev=(nil)
+.. .. metric=sample.long.one host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=8
+.. Expr dump @ 0x55ee2e09c470
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09c640
+..   eval=cndFetch_1 metrics=0x55ee2e09bf70 ring=0x55ee2e09b210
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09bf70
+.. .. expr=0x55ee2e09c470 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09b0e0 prev=(nil)
+.. .. metric=sample.long.million host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=8
+.. Expr dump @ 0x55ee2e09c5c0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09c640
+..   eval=cndFetch_1 metrics=0x55ee2e09c4f0 ring=0x55ee2e09b3b0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09c4f0
+.. .. expr=0x55ee2e09c5c0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09bf70 prev=(nil)
+.. .. metric=sample.long.one host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=8
+.. Expr dump @ 0x55ee2e09c7b0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09c830
+..   eval=cndFetch_1 metrics=0x55ee2e09c6c0 ring=0x55ee2e09b1f0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09c6c0
+.. .. expr=0x55ee2e09c7b0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09c4f0 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=8
+.. Expr dump @ 0x55ee2e09c9a0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09ca20
+..   eval=cndFetch_1 metrics=0x55ee2e09c8b0 ring=0x55ee2e09b190
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09c8b0
+.. .. expr=0x55ee2e09c9a0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09c6c0 prev=(nil)
+.. .. metric=sample.long.hundred host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=8
+.. Expr dump @ 0x55ee2e09cb90
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09cc10
+..   eval=cndFetch_1 metrics=0x55ee2e09caa0 ring=0x55ee2e09b390
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09caa0
+.. .. expr=0x55ee2e09cb90 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09c8b0 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+pmie: metric no_such_metric not in namespace for pmcd local: (host 97d404ba7f88)
+pmLookupName failed: Unknown metric name
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=9
+.. Expr dump @ 0x55ee2e09c380
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09cfb0
+..   eval=cndFetch_1 metrics=0x55ee2e09c1d0 ring=0x55ee2e09c2c0
+..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=UNKNOWN units=UNKNOWN
+.. .. Metric dump @ 0x55ee2e09c1d0
+.. .. expr=0x55ee2e09c380 profile=(nil) host=0x55ee2e0959d0 next=(nil) prev=(nil)
+.. .. metric=no_such_metric host=97d404ba7f88 via=local: conv=0 specinst=0 m_indom=-1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=9
+.. Expr dump @ 0x55ee2e09d630
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09d730
+..   eval=cndFetch_1 metrics=0x55ee2e09d130 ring=0x55ee2e09c300
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09d130
+.. .. expr=0x55ee2e09d630 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09caa0 prev=(nil)
+.. .. metric=sample.long.million host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+initMetric: sample.part_bin from 97d404ba7f88: instance domain specinst=0
+  indom[0] 100 "bin-100"
+  indom[1] 200 "bin-200"
+  indom[2] 300 "bin-300"
+  indom[3] 400 "bin-400"
+  indom[4] 500 "bin-500"
+  indom[5] 600 "bin-600"
+  indom[6] 700 "bin-700"
+  indom[7] 800 "bin-800"
+  indom[8] 900 "bin-900"
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=10
+.. Expr dump @ 0x55ee2e09d580
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09da50
+..   eval=cndFetch_all metrics=0x55ee2e09d220 ring=0x55ee2e09d500
+..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09d220
+.. .. expr=0x55ee2e09d580 profile=0x55ee2e096b10 host=0x55ee2e0959d0 next=0x55ee2e0961f0 prev=(nil)
+.. .. metric=sample.part_bin host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=9
+.. .. [0] iid=100 iname="bin-100"
+.. .. [1] iid=200 iname="bin-200"
+.. .. [2] iid=300 iname="bin-300"
+.. .. [3] iid=400 iname="bin-400"
+.. .. [4] iid=500 iname="bin-500"
+.. .. [5] iid=600 iname="bin-600"
+.. .. [6] iid=700 iname="bin-700"
+.. .. [7] iid=800 iname="bin-800"
+.. .. [8] iid=900 iname="bin-900"
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=10
+.. Expr dump @ 0x55ee2e09e110
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09dd40
+..   eval=cndFetch_1 metrics=0x55ee2e09dbd0 ring=0x55ee2e09d350
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09dbd0
+.. .. expr=0x55ee2e09e110 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09d130 prev=(nil)
+.. .. metric=sample.long.million host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=10
+.. Expr dump @ 0x55ee2e09dcc0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09dd40
+..   eval=cndFetch_1 metrics=0x55ee2e09e190 ring=0x55ee2e09dca0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09e190
+.. .. expr=0x55ee2e09dcc0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09dbd0 prev=(nil)
+.. .. metric=sample.long.one host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=10
+.. Expr dump @ 0x55ee2e09deb0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09df30
+..   eval=cndFetch_1 metrics=0x55ee2e09ddc0 ring=0x55ee2e09d330
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09ddc0
+.. .. expr=0x55ee2e09deb0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09e190 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=10
+.. Expr dump @ 0x55ee2e09e280
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09e300
+..   eval=cndFetch_1 metrics=0x55ee2e09dfb0 ring=0x55ee2e09e240
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09dfb0
+.. .. expr=0x55ee2e09e280 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09ddc0 prev=(nil)
+.. .. metric=sample.long.hundred host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=10
+.. Expr dump @ 0x55ee2e09e430
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09e4b0
+..   eval=cndFetch_1 metrics=0x55ee2e09e380 ring=0x55ee2e09dc80
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09e380
+.. .. expr=0x55ee2e09e430 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09dfb0 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+initMetric: sample.part_bin from 97d404ba7f88: instance domain specinst=0
+  indom[0] 100 "bin-100"
+  indom[1] 200 "bin-200"
+  indom[2] 300 "bin-300"
+  indom[3] 400 "bin-400"
+  indom[4] 500 "bin-500"
+  indom[5] 600 "bin-600"
+  indom[6] 700 "bin-700"
+  indom[7] 800 "bin-800"
+  indom[8] 900 "bin-900"
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=11
+.. Expr dump @ 0x55ee2e09ed00
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09ed80
+..   eval=cndFetch_all metrics=0x55ee2e09e9b0 ring=0x55ee2e09ec70
+..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09e9b0
+.. .. expr=0x55ee2e09ed00 profile=0x55ee2e096b10 host=0x55ee2e0959d0 next=0x55ee2e09d220 prev=(nil)
+.. .. metric=sample.part_bin host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=9
+.. .. [0] iid=100 iname="bin-100"
+.. .. [1] iid=200 iname="bin-200"
+.. .. [2] iid=300 iname="bin-300"
+.. .. [3] iid=400 iname="bin-400"
+.. .. [4] iid=500 iname="bin-500"
+.. .. [5] iid=600 iname="bin-600"
+.. .. [6] iid=700 iname="bin-700"
+.. .. [7] iid=800 iname="bin-800"
+.. .. [8] iid=900 iname="bin-900"
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=11
+.. Expr dump @ 0x55ee2e09f480
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09f650
+..   eval=cndFetch_1 metrics=0x55ee2e09ef00 ring=0x55ee2e09eae0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09ef00
+.. .. expr=0x55ee2e09f480 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09e380 prev=(nil)
+.. .. metric=sample.long.million host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=11
+.. Expr dump @ 0x55ee2e09f5d0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09f650
+..   eval=cndFetch_1 metrics=0x55ee2e09f500 ring=0x55ee2e09f010
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09f500
+.. .. expr=0x55ee2e09f5d0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09ef00 prev=(nil)
+.. .. metric=sample.long.one host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=11
+.. Expr dump @ 0x55ee2e09f7c0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09f840
+..   eval=cndFetch_1 metrics=0x55ee2e09f6d0 ring=0x55ee2e09eac0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09f6d0
+.. .. expr=0x55ee2e09f7c0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09f500 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=11
+.. Expr dump @ 0x55ee2e09f9b0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09fa30
+..   eval=cndFetch_1 metrics=0x55ee2e09f8c0 ring=0x55ee2e09efb0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09f8c0
+.. .. expr=0x55ee2e09f9b0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09f6d0 prev=(nil)
+.. .. metric=sample.long.hundred host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=11
+.. Expr dump @ 0x55ee2e09fba0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09fc20
+..   eval=cndFetch_1 metrics=0x55ee2e09fab0 ring=0x55ee2e09eff0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09fab0
+.. .. expr=0x55ee2e09fba0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09f8c0 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+initMetric: sample.part_bin from 97d404ba7f88: instance domain specinst=0
+  indom[0] 100 "bin-100"
+  indom[1] 200 "bin-200"
+  indom[2] 300 "bin-300"
+  indom[3] 400 "bin-400"
+  indom[4] 500 "bin-500"
+  indom[5] 600 "bin-600"
+  indom[6] 700 "bin-700"
+  indom[7] 800 "bin-800"
+  indom[8] 900 "bin-900"
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=12
+.. Expr dump @ 0x55ee2e09f400
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a00c0
+..   eval=cndFetch_all metrics=0x55ee2e09f190 ring=0x55ee2e0a0070
+..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e09f190
+.. .. expr=0x55ee2e09f400 profile=0x55ee2e096b10 host=0x55ee2e0959d0 next=0x55ee2e09e9b0 prev=(nil)
+.. .. metric=sample.part_bin host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=9
+.. .. [0] iid=100 iname="bin-100"
+.. .. [1] iid=200 iname="bin-200"
+.. .. [2] iid=300 iname="bin-300"
+.. .. [3] iid=400 iname="bin-400"
+.. .. [4] iid=500 iname="bin-500"
+.. .. [5] iid=600 iname="bin-600"
+.. .. [6] iid=700 iname="bin-700"
+.. .. [7] iid=800 iname="bin-800"
+.. .. [8] iid=900 iname="bin-900"
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=12
+.. Expr dump @ 0x55ee2e0a07c0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a0990
+..   eval=cndFetch_1 metrics=0x55ee2e0a0240 ring=0x55ee2e09f2c0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a0240
+.. .. expr=0x55ee2e0a07c0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e09fab0 prev=(nil)
+.. .. metric=sample.long.million host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=12
+.. Expr dump @ 0x55ee2e0a0910
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a0990
+..   eval=cndFetch_1 metrics=0x55ee2e0a0840 ring=0x55ee2e0a0350
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a0840
+.. .. expr=0x55ee2e0a0910 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0a0240 prev=(nil)
+.. .. metric=sample.long.one host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=12
+.. Expr dump @ 0x55ee2e0a0b00
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a0b80
+..   eval=cndFetch_1 metrics=0x55ee2e0a0a10 ring=0x55ee2e09f2a0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a0a10
+.. .. expr=0x55ee2e0a0b00 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0a0840 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=12
+.. Expr dump @ 0x55ee2e0a0cf0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a0d70
+..   eval=cndFetch_1 metrics=0x55ee2e0a0c00 ring=0x55ee2e0a02f0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a0c00
+.. .. expr=0x55ee2e0a0cf0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0a0a10 prev=(nil)
+.. .. metric=sample.long.hundred host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=12
+.. Expr dump @ 0x55ee2e0a0ee0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a0f60
+..   eval=cndFetch_1 metrics=0x55ee2e0a0df0 ring=0x55ee2e0a0330
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a0df0
+.. .. expr=0x55ee2e0a0ee0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0a0c00 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+initMetric: sample.part_bin from 97d404ba7f88: instance domain specinst=0
+  indom[0] 100 "bin-100"
+  indom[1] 200 "bin-200"
+  indom[2] 300 "bin-300"
+  indom[3] 400 "bin-400"
+  indom[4] 500 "bin-500"
+  indom[5] 600 "bin-600"
+  indom[6] 700 "bin-700"
+  indom[7] 800 "bin-800"
+  indom[8] 900 "bin-900"
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=13
+.. Expr dump @ 0x55ee2e0a13a0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a14a0
+..   eval=cndFetch_all metrics=0x55ee2e0a0570 ring=0x55ee2e0a1450
+..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a0570
+.. .. expr=0x55ee2e0a13a0 profile=0x55ee2e096b10 host=0x55ee2e0959d0 next=0x55ee2e09f190 prev=(nil)
+.. .. metric=sample.part_bin host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=9
+.. .. [0] iid=100 iname="bin-100"
+.. .. [1] iid=200 iname="bin-200"
+.. .. [2] iid=300 iname="bin-300"
+.. .. [3] iid=400 iname="bin-400"
+.. .. [4] iid=500 iname="bin-500"
+.. .. [5] iid=600 iname="bin-600"
+.. .. [6] iid=700 iname="bin-700"
+.. .. [7] iid=800 iname="bin-800"
+.. .. [8] iid=900 iname="bin-900"
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=13
+.. Expr dump @ 0x55ee2e0a1ba0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a1d70
+..   eval=cndFetch_1 metrics=0x55ee2e0a1620 ring=0x55ee2e0a06a0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a1620
+.. .. expr=0x55ee2e0a1ba0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0a0df0 prev=(nil)
+.. .. metric=sample.long.million host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=13
+.. Expr dump @ 0x55ee2e0a1cf0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a1d70
+..   eval=cndFetch_1 metrics=0x55ee2e0a1c20 ring=0x55ee2e0a1730
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a1c20
+.. .. expr=0x55ee2e0a1cf0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0a1620 prev=(nil)
+.. .. metric=sample.long.one host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=13
+.. Expr dump @ 0x55ee2e0a1ee0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a1f60
+..   eval=cndFetch_1 metrics=0x55ee2e0a1df0 ring=0x55ee2e0a0680
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a1df0
+.. .. expr=0x55ee2e0a1ee0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0a1c20 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=13
+.. Expr dump @ 0x55ee2e0a20d0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a2150
+..   eval=cndFetch_1 metrics=0x55ee2e0a1fe0 ring=0x55ee2e0a16d0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a1fe0
+.. .. expr=0x55ee2e0a20d0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0a1df0 prev=(nil)
+.. .. metric=sample.long.hundred host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=13
+.. Expr dump @ 0x55ee2e0a22c0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a2340
+..   eval=cndFetch_1 metrics=0x55ee2e0a21d0 ring=0x55ee2e0a1710
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a21d0
+.. .. expr=0x55ee2e0a22c0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0a1fe0 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+initMetric: sample.part_bin from 97d404ba7f88: instance domain specinst=0
+  indom[0] 100 "bin-100"
+  indom[1] 200 "bin-200"
+  indom[2] 300 "bin-300"
+  indom[3] 400 "bin-400"
+  indom[4] 500 "bin-500"
+  indom[5] 600 "bin-600"
+  indom[6] 700 "bin-700"
+  indom[7] 800 "bin-800"
+  indom[8] 900 "bin-900"
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=14
+.. Expr dump @ 0x55ee2e0a2780
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a2900
+..   eval=cndFetch_all metrics=0x55ee2e0a1950 ring=0x55ee2e0a2830
+..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a1950
+.. .. expr=0x55ee2e0a2780 profile=0x55ee2e096b10 host=0x55ee2e0959d0 next=0x55ee2e0a0570 prev=(nil)
+.. .. metric=sample.part_bin host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=9
+.. .. [0] iid=100 iname="bin-100"
+.. .. [1] iid=200 iname="bin-200"
+.. .. [2] iid=300 iname="bin-300"
+.. .. [3] iid=400 iname="bin-400"
+.. .. [4] iid=500 iname="bin-500"
+.. .. [5] iid=600 iname="bin-600"
+.. .. [6] iid=700 iname="bin-700"
+.. .. [7] iid=800 iname="bin-800"
+.. .. [8] iid=900 iname="bin-900"
+.. .. 
+initMetric: sample.part_bin from 97d404ba7f88: instance domain specinst=0
+  indom[0] 100 "bin-100"
+  indom[1] 200 "bin-200"
+  indom[2] 300 "bin-300"
+  indom[3] 400 "bin-400"
+  indom[4] 500 "bin-500"
+  indom[5] 600 "bin-600"
+  indom[6] 700 "bin-700"
+  indom[7] 800 "bin-800"
+  indom[8] 900 "bin-900"
+binaryExpr: regex="bin-[12345]" handle=0x55ee2e0a33c0
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=15
+.. Expr dump @ 0x55ee2e0a31b0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a3340
+..   eval=cndFetch_all metrics=0x55ee2e0a2f40 ring=0x55ee2e0a3270
+..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a2f40
+.. .. expr=0x55ee2e0a31b0 profile=0x55ee2e096b10 host=0x55ee2e0959d0 next=0x55ee2e0a1950 prev=(nil)
+.. .. metric=sample.part_bin host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=9
+.. .. [0] iid=100 iname="bin-100"
+.. .. [1] iid=200 iname="bin-200"
+.. .. [2] iid=300 iname="bin-300"
+.. .. [3] iid=400 iname="bin-400"
+.. .. [4] iid=500 iname="bin-500"
+.. .. [5] iid=600 iname="bin-600"
+.. .. [6] iid=700 iname="bin-700"
+.. .. [7] iid=800 iname="bin-800"
+.. .. [8] iid=900 iname="bin-900"
+.. .. 
+initMetric: sample.part_bin from 97d404ba7f88: instance domain specinst=0
+  indom[0] 100 "bin-100"
+  indom[1] 200 "bin-200"
+  indom[2] 300 "bin-300"
+  indom[3] 400 "bin-400"
+  indom[4] 500 "bin-500"
+  indom[5] 600 "bin-600"
+  indom[6] 700 "bin-700"
+  indom[7] 800 "bin-800"
+  indom[8] 900 "bin-900"
+binaryExpr: regex="bin-[12345]" handle=0x55ee2e0a45c0
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=16
+.. Expr dump @ 0x55ee2e0a43f0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a4540
+..   eval=cndFetch_all metrics=0x55ee2e0a4010 ring=0x55ee2e0a4470
+..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a4010
+.. .. expr=0x55ee2e0a43f0 profile=0x55ee2e096b10 host=0x55ee2e0959d0 next=0x55ee2e0a2f40 prev=(nil)
+.. .. metric=sample.part_bin host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=9
+.. .. [0] iid=100 iname="bin-100"
+.. .. [1] iid=200 iname="bin-200"
+.. .. [2] iid=300 iname="bin-300"
+.. .. [3] iid=400 iname="bin-400"
+.. .. [4] iid=500 iname="bin-500"
+.. .. [5] iid=600 iname="bin-600"
+.. .. [6] iid=700 iname="bin-700"
+.. .. [7] iid=800 iname="bin-800"
+.. .. [8] iid=900 iname="bin-900"
+.. .. 
+initMetric: sample.bin from 97d404ba7f88: instance domain specinst=0
+  indom[0] 100 "bin-100"
+  indom[1] 200 "bin-200"
+  indom[2] 300 "bin-300"
+  indom[3] 400 "bin-400"
+  indom[4] 500 "bin-500"
+  indom[5] 600 "bin-600"
+  indom[6] 700 "bin-700"
+  indom[7] 800 "bin-800"
+  indom[8] 900 "bin-900"
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=17
+.. Expr dump @ 0x55ee2e0a5510
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a2e00
+..   eval=cndFetch_all metrics=0x55ee2e0a5160 ring=0x55ee2e0a55a0
+..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+..   nsmpls=2 nvals=18 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a5160
+.. .. expr=0x55ee2e0a5510 profile=0x55ee2e096b10 host=0x55ee2e0959d0 next=0x55ee2e0a4010 prev=(nil)
+.. .. metric=sample.bin host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=9
+.. .. [0] iid=100 iname="bin-100"
+.. .. [1] iid=200 iname="bin-200"
+.. .. [2] iid=300 iname="bin-300"
+.. .. [3] iid=400 iname="bin-400"
+.. .. [4] iid=500 iname="bin-500"
+.. .. [5] iid=600 iname="bin-600"
+.. .. [6] iid=700 iname="bin-700"
+.. .. [7] iid=800 iname="bin-800"
+.. .. [8] iid=900 iname="bin-900"
+.. .. 
+initMetric: sample.colour from 97d404ba7f88: instance domain specinst=0
+  indom[0] 0 "red"
+  indom[1] 1 "green"
+  indom[2] 2 "blue"
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=18
+.. Expr dump @ 0x55ee2e0a5d40
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a5e40
+..   eval=cndFetch_all metrics=0x55ee2e0a5a60 ring=0x55ee2e0a5b50
+..   valid=0 cardinality[H,I,T]=[1,3,1] tspan=3
+..   nsmpls=1 nvals=3 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a5a60
+.. .. expr=0x55ee2e0a5d40 profile=0x55ee2e0a5310 host=0x55ee2e0959d0 next=(nil) prev=(nil)
+.. .. metric=sample.colour host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=3
+.. .. [0] iid=0 iname="red"
+.. .. [1] iid=1 iname="green"
+.. .. [2] iid=2 iname="blue"
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=19
+.. Expr dump @ 0x55ee2e0a64e0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a6600
+..   eval=cndFetch_1 metrics=0x55ee2e0a6340 ring=0x55ee2e0a50f0
+..   valid=0 cardinality[H,I,T]=[1,1,3] tspan=1
+..   nsmpls=3 nvals=3 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a6340
+.. .. expr=0x55ee2e0a64e0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0a21d0 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+initMetric: sample.part_bin from 97d404ba7f88: instance domain specinst=3
+  indom[0] 300 "bin-300"
+  indom[1] 500 "bin-500"
+  indom[2] 700 "bin-700"
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=20
+.. Expr dump @ 0x55ee2e0a6db0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a6ec0
+..   eval=cndFetch_n metrics=0x55ee2e0a6a60 ring=0x55ee2e0a3c50
+..   valid=0 cardinality[H,I,T]=[1,3,2] tspan=3
+..   nsmpls=2 nvals=6 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a6a60
+.. .. expr=0x55ee2e0a6db0 profile=0x55ee2e096b10 host=0x55ee2e0959d0 next=0x55ee2e0a5160 prev=(nil)
+.. .. metric=sample.part_bin host=97d404ba7f88 via=local: conv=1 specinst=3 m_indom=3
+.. .. [0] iid=300 iname="bin-300"
+.. .. [1] iid=500 iname="bin-500"
+.. .. [2] iid=700 iname="bin-700"
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=21
+.. Expr dump @ 0x55ee2e0a74c0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a7550
+..   eval=cndFetch_1 metrics=0x55ee2e0a7410 ring=0x55ee2e0a6cc0
+..   valid=0 cardinality[H,I,T]=[1,1,2] tspan=1
+..   nsmpls=2 nvals=2 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a7410
+.. .. expr=0x55ee2e0a74c0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0a6340 prev=(nil)
+.. .. metric=sample.long.hundred host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=22
+.. Expr dump @ 0x55ee2e0a7a80
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a7b10
+..   eval=cndFetch_1 metrics=0x55ee2e0a7950 ring=0x55ee2e0a6490
+..   valid=0 cardinality[H,I,T]=[1,1,2] tspan=1
+..   nsmpls=2 nvals=2 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a7950
+.. .. expr=0x55ee2e0a7a80 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0a7410 prev=(nil)
+.. .. metric=sample.long.hundred host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+initMetric: sample.bin from 97d404ba7f88: instance domain specinst=1
+  indom[0] 100 "bin-100"
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=23
+.. Expr dump @ 0x55ee2e0a8330
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a83e0
+..   eval=cndFetch_n metrics=0x55ee2e0a8050 ring=0x55ee2e0a64b0
+..   valid=0 cardinality[H,I,T]=[1,1,4] tspan=1
+..   nsmpls=4 nvals=4 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a8050
+.. .. expr=0x55ee2e0a8330 profile=0x55ee2e096b10 host=0x55ee2e0959d0 next=0x55ee2e0a6a60 prev=(nil)
+.. .. metric=sample.bin host=97d404ba7f88 via=local: conv=1 specinst=1 m_indom=1
+.. .. [0] iid=100 iname="bin-100"
+.. .. 
+initMetric: sample.bin from 97d404ba7f88: instance domain specinst=1
+  indom[0] 200 "bin-200"
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=24
+.. Expr dump @ 0x55ee2e0a8a20
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a8ab0
+..   eval=cndFetch_n metrics=0x55ee2e0a87e0 ring=0x55ee2e0a8250
+..   valid=0 cardinality[H,I,T]=[1,1,2] tspan=1
+..   nsmpls=2 nvals=2 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a87e0
+.. .. expr=0x55ee2e0a8a20 profile=0x55ee2e096b10 host=0x55ee2e0959d0 next=0x55ee2e0a8050 prev=(nil)
+.. .. metric=sample.bin host=97d404ba7f88 via=local: conv=1 specinst=1 m_indom=1
+.. .. [0] iid=200 iname="bin-200"
+.. .. 
+initMetric: sample.bin from 97d404ba7f88: instance domain specinst=3
+  indom[0] 200 "bin-200"
+  indom[1] 300 "bin-300"
+  indom[2] 400 "bin-400"
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=25
+.. Expr dump @ 0x55ee2e0a9170
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a9290
+..   eval=cndFetch_n metrics=0x55ee2e0a7f90 ring=0x55ee2e0a81c0
+..   valid=0 cardinality[H,I,T]=[1,3,3] tspan=3
+..   nsmpls=3 nvals=9 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a7f90
+.. .. expr=0x55ee2e0a9170 profile=0x55ee2e096b10 host=0x55ee2e0959d0 next=0x55ee2e0a87e0 prev=(nil)
+.. .. metric=sample.bin host=97d404ba7f88 via=local: conv=1 specinst=3 m_indom=3
+.. .. [0] iid=200 iname="bin-200"
+.. .. [1] iid=300 iname="bin-300"
+.. .. [2] iid=400 iname="bin-400"
+.. .. 
+initMetric: sample.part_bin from 97d404ba7f88: instance domain specinst=0
+  indom[0] 100 "bin-100"
+  indom[1] 200 "bin-200"
+  indom[2] 300 "bin-300"
+  indom[3] 400 "bin-400"
+  indom[4] 500 "bin-500"
+  indom[5] 600 "bin-600"
+  indom[6] 700 "bin-700"
+  indom[7] 800 "bin-800"
+  indom[8] 900 "bin-900"
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=26
+.. Expr dump @ 0x55ee2e0a9a90
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a9b60
+..   eval=cndFetch_all metrics=0x55ee2e0a97d0 ring=0x55ee2e0a9b10
+..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a97d0
+.. .. expr=0x55ee2e0a9a90 profile=0x55ee2e096b10 host=0x55ee2e0959d0 next=0x55ee2e0a7f90 prev=(nil)
+.. .. metric=sample.part_bin host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=9
+.. .. [0] iid=100 iname="bin-100"
+.. .. [1] iid=200 iname="bin-200"
+.. .. [2] iid=300 iname="bin-300"
+.. .. [3] iid=400 iname="bin-400"
+.. .. [4] iid=500 iname="bin-500"
+.. .. [5] iid=600 iname="bin-600"
+.. .. [6] iid=700 iname="bin-700"
+.. .. [7] iid=800 iname="bin-800"
+.. .. [8] iid=900 iname="bin-900"
+.. .. 
+initMetric: sample.part_bin from 97d404ba7f88: instance domain specinst=0
+  indom[0] 100 "bin-100"
+  indom[1] 200 "bin-200"
+  indom[2] 300 "bin-300"
+  indom[3] 400 "bin-400"
+  indom[4] 500 "bin-500"
+  indom[5] 600 "bin-600"
+  indom[6] 700 "bin-700"
+  indom[7] 800 "bin-800"
+  indom[8] 900 "bin-900"
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=27
+.. Expr dump @ 0x55ee2e0aa2a0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0aa370
+..   eval=cndFetch_all metrics=0x55ee2e0a8eb0 ring=0x55ee2e0aa320
+..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a8eb0
+.. .. expr=0x55ee2e0aa2a0 profile=0x55ee2e096b10 host=0x55ee2e0959d0 next=0x55ee2e0a97d0 prev=(nil)
+.. .. metric=sample.part_bin host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=9
+.. .. [0] iid=100 iname="bin-100"
+.. .. [1] iid=200 iname="bin-200"
+.. .. [2] iid=300 iname="bin-300"
+.. .. [3] iid=400 iname="bin-400"
+.. .. [4] iid=500 iname="bin-500"
+.. .. [5] iid=600 iname="bin-600"
+.. .. [6] iid=700 iname="bin-700"
+.. .. [7] iid=800 iname="bin-800"
+.. .. [8] iid=900 iname="bin-900"
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=28
+.. Expr dump @ 0x55ee2e0aa960
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0aaa60
+..   eval=cndFetch_1 metrics=0x55ee2e0aa7d0 ring=0x55ee2e0aa8a0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0aa7d0
+.. .. expr=0x55ee2e0aa960 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0a7950 prev=(nil)
+.. .. metric=sample.long.one host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=29
+.. Expr dump @ 0x55ee2e0ab110
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0ab210
+..   eval=cndFetch_1 metrics=0x55ee2e0a9f80 ring=0x55ee2e0ab050
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0a9f80
+.. .. expr=0x55ee2e0ab110 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0aa7d0 prev=(nil)
+.. .. metric=sample.long.ten host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+bundle: task 0x55ee2e0952a0 nth=0 prev=(nil) next=(nil) delta=0.250 nrules=30
+.. Expr dump @ 0x55ee2e0ab8c0
+..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0ab9c0
+..   eval=cndFetch_1 metrics=0x55ee2e0ab730 ring=0x55ee2e0ab800
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Metric dump @ 0x55ee2e0ab730
+.. .. expr=0x55ee2e0ab8c0 profile=0x55ee2e097d60 host=0x55ee2e0959d0 next=0x55ee2e0a9f80 prev=(nil)
+.. .. metric=sample.long.hundred host=97d404ba7f88 via=local: conv=1 specinst=0 m_indom=1
+.. .. 
+
+Rule: expr_1
+Expr dump @ 0x55ee2e095910
+  op=0 (->) arg1=0x55ee2e095690 arg2=0x55ee2e095890 parent=(nil)
+  eval=rule metrics=0x55ee2e094ba0 ring=0x55ee2e095990
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e095690
+..   op=54 (some_inst) arg1=0x55ee2e095610 arg2=(nil) parent=0x55ee2e095910
+..   eval=cndSome_inst metrics=0x55ee2e094ba0 ring=0x55ee2e094d70
+..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e095610
+.. ..   op=34 (>) arg1=0x55ee2e0954c0 arg2=0x55ee2e095590 parent=0x55ee2e095690
+.. ..   eval=cndGt_n_1 metrics=0x55ee2e094ba0 ring=0x55ee2e094cf0
+.. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. ..   nsmpls=1 nvals=9 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e0954c0
+.. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e095610
+.. .. ..   eval=cndFetch_all metrics=0x55ee2e094ba0 ring=0x55ee2e095540
+.. .. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. .. ..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e095590
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e095610
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e094620
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. ..   smpls[0].ptr 0x55ee2e094620 500
+.. Expr dump @ 0x55ee2e095890
+..   op=75 (print) arg1=0x55ee2e095810 arg2=(nil) parent=0x55ee2e095910
+..   eval=actPrint metrics=(nil) ring=0x55ee2e094d30
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e095810
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e095790 arg2=(nil) parent=0x55ee2e095890
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e094d90
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e095790
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e095710 arg2=(nil) parent=0x55ee2e095810
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e094d10
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=11
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e094d10 "some > 500:"
+.. .. .. .. Expr dump @ 0x55ee2e095710
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e095790
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e094d50
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e094d50 " [%i] %v"
+
+Rule: expr_2
+Expr dump @ 0x55ee2e097420
+  op=0 (->) arg1=0x55ee2e097140 arg2=0x55ee2e0973a0 parent=(nil)
+  eval=rule metrics=0x55ee2e0961f0 ring=0x55ee2e096e20
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e097140
+..   op=51 (all_inst) arg1=0x55ee2e0970c0 arg2=(nil) parent=0x55ee2e097420
+..   eval=cndAll_inst metrics=0x55ee2e0961f0 ring=0x55ee2e096d20
+..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0970c0
+.. ..   op=34 (>) arg1=0x55ee2e096f70 arg2=0x55ee2e097040 parent=0x55ee2e097140
+.. ..   eval=cndGt_n_1 metrics=0x55ee2e0961f0 ring=0x55ee2e096ca0
+.. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. ..   nsmpls=1 nvals=9 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e096f70
+.. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0970c0
+.. .. ..   eval=cndFetch_all metrics=0x55ee2e0961f0 ring=0x55ee2e096ff0
+.. .. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. .. ..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e097040
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0970c0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0961d0
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. ..   smpls[0].ptr 0x55ee2e0961d0 0
+.. Expr dump @ 0x55ee2e0973a0
+..   op=72 (shell) arg1=0x55ee2e097320 arg2=(nil) parent=0x55ee2e097420
+..   eval=actShell metrics=(nil) ring=0x55ee2e096ce0
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e097320
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e0972a0 arg2=(nil) parent=0x55ee2e0973a0
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e096d40
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e0972a0
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e097220 arg2=(nil) parent=0x55ee2e097320
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e096cc0
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=15
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e096cc0 "echo 'all > 0:'"
+.. .. .. .. Expr dump @ 0x55ee2e097220
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0972a0
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e096d00
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e096d00 " [%i] %v"
+
+Rule: expr_3
+Expr dump @ 0x55ee2e097ce0
+  op=0 (->) arg1=0x55ee2e097960 arg2=0x55ee2e097b60 parent=(nil)
+  eval=rule metrics=0x55ee2e0974e0 ring=0x55ee2e097670
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e097960
+..   op=55 (some_sample) arg1=0x55ee2e0978c0 arg2=(nil) parent=0x55ee2e097ce0
+..   eval=cndSome_time metrics=0x55ee2e0974e0 ring=0x55ee2e097800
+..   valid=0 cardinality[H,I,T]=[1,1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0978c0
+.. ..   op=30 (==) arg1=0x55ee2e0976b0 arg2=0x55ee2e097840 parent=0x55ee2e097960
+.. ..   eval=cndEq_1_1 metrics=0x55ee2e0974e0 ring=0x55ee2e0974c0
+.. ..   valid=0 cardinality[H,I,T]=[1,1,3] tspan=1
+.. ..   nsmpls=3 nvals=3 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e0976b0
+.. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0978c0
+.. .. ..   eval=cndFetch_1 metrics=0x55ee2e0974e0 ring=0x55ee2e0975d0
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,3] tspan=1
+.. .. ..   nsmpls=3 nvals=3 sem=DISCRETE units=
+.. .. .. Expr dump @ 0x55ee2e097840
+.. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0978c0
+.. .. ..   eval=cndFetch_1 metrics=0x55ee2e097750 ring=0x55ee2e097690
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=DISCRETE units=
+.. Expr dump @ 0x55ee2e097b60
+..   op=74 (syslog) arg1=0x55ee2e097be0 arg2=0x55ee2e0979e0 parent=0x55ee2e097ce0
+..   eval=actSyslog metrics=(nil) ring=0x55ee2e097200
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e097be0
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e097ae0 arg2=0x55ee2e097c60 parent=0x55ee2e097b60
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e097820
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e097ae0
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e097a60 arg2=(nil) parent=0x55ee2e097be0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e095fe0
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=50
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e095fe0 "PCP QA 514 - please ignore: some sample ncpu equal"
+.. .. .. .. Expr dump @ 0x55ee2e097a60
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e097ae0
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0975b0
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0975b0 " [%i] %v"
+.. .. .. Expr dump @ 0x55ee2e097c60
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e097be0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e096050
+.. .. ..   valid=0 cardinality[H,I,T]=[0,0,0] tspan=0
+.. .. ..   nsmpls=0 nvals=0 sem=UNKNOWN units=
+.. .. Expr dump @ 0x55ee2e0979e0
+.. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e097b60
+.. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0975f0
+.. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=NUMCONST units=sec
+.. ..   smpls[0].ptr 0x55ee2e0975f0 10
+
+Rule: expr_4
+Expr dump @ 0x55ee2e098a60
+  op=0 (->) arg1=0x55ee2e098860 arg2=0x55ee2e0989e0 parent=(nil)
+  eval=rule metrics=0x55ee2e097db0 ring=0x55ee2e0984d0
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e098860
+..   op=35 (>=) arg1=0x55ee2e098760 arg2=0x55ee2e0987e0 parent=0x55ee2e098a60
+..   eval=cndGte_1_1 metrics=0x55ee2e097db0 ring=0x55ee2e0986c0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e098760
+.. ..   op=8 (/) arg1=0x55ee2e098570 arg2=0x55ee2e0986e0 parent=0x55ee2e098860
+.. ..   eval=cndDiv_1_1 metrics=0x55ee2e097db0 ring=0x55ee2e0984b0
+.. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e098570
+.. .. ..   op=7 (*) arg1=0x55ee2e098360 arg2=0x55ee2e0984f0 parent=0x55ee2e098760
+.. .. ..   eval=cndMul_1_1 metrics=0x55ee2e097db0 ring=0x55ee2e0982a0
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e098360
+.. .. .. ..   op=6 (-) arg1=0x55ee2e098150 arg2=0x55ee2e0982e0 parent=0x55ee2e098570
+.. .. .. ..   eval=cndSub_1_1 metrics=0x55ee2e097db0 ring=0x55ee2e098090
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. Expr dump @ 0x55ee2e098150
+.. .. .. .. ..   op=5 (+) arg1=0x55ee2e097f60 arg2=0x55ee2e0980d0 parent=0x55ee2e098360
+.. .. .. .. ..   eval=cndAdd_1_1 metrics=0x55ee2e097db0 ring=0x55ee2e097d90
+.. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. Expr dump @ 0x55ee2e097f60
+.. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e098150
+.. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e097db0 ring=0x55ee2e097ea0
+.. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. Expr dump @ 0x55ee2e0980d0
+.. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e098150
+.. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e097fe0 ring=0x55ee2e097ec0
+.. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. Expr dump @ 0x55ee2e0982e0
+.. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e098360
+.. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e0981d0 ring=0x55ee2e097e80
+.. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e0984f0
+.. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e098570
+.. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e0983e0 ring=0x55ee2e098280
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e0986e0
+.. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e098760
+.. .. ..   eval=cndFetch_1 metrics=0x55ee2e0985f0 ring=0x55ee2e097f40
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Expr dump @ 0x55ee2e0987e0
+.. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e098860
+.. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0986a0
+.. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. ..   smpls[0].ptr 0x55ee2e0986a0 0
+.. Expr dump @ 0x55ee2e0989e0
+..   op=75 (print) arg1=0x55ee2e098960 arg2=(nil) parent=0x55ee2e098a60
+..   eval=actPrint metrics=(nil) ring=0x55ee2e097f00
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e098960
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e0988e0 arg2=(nil) parent=0x55ee2e0989e0
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e098490
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e0988e0
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e098960
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e097ee0
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e097ee0 "arith %v"
+
+Rule: expr_5
+Expr dump @ 0x55ee2e098c90
+  op=0 (->) arg1=0x55ee2e099c90 arg2=0x55ee2e099e10 parent=(nil)
+  eval=rule metrics=0x55ee2e098b00 ring=0x55ee2e099e90
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e099c90
+..   op=43 (&&) arg1=0x55ee2e0991e0 arg2=0x55ee2e099c10 parent=0x55ee2e098c90
+..   eval=cndAnd_1_1 metrics=0x55ee2e098b00 ring=0x55ee2e0994a0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0991e0
+.. ..   op=31 (!=) arg1=0x55ee2e0990e0 arg2=0x55ee2e099160 parent=0x55ee2e099c90
+.. ..   eval=cndNeq_1_1 metrics=0x55ee2e098b00 ring=0x55ee2e098c50
+.. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e0990e0
+.. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0991e0
+.. .. ..   eval=cndFetch_1 metrics=0x55ee2e098b00 ring=0x55ee2e098bd0
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e099160
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0991e0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0961b0
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. ..   smpls[0].ptr 0x55ee2e0961b0 2
+.. .. Expr dump @ 0x55ee2e099c10
+.. ..   op=35 (>=) arg1=0x55ee2e099b10 arg2=0x55ee2e099b90 parent=0x55ee2e099c90
+.. ..   eval=cndGte_1_1 metrics=0x55ee2e099260 ring=0x55ee2e099a70
+.. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e099b10
+.. .. ..   op=8 (/) arg1=0x55ee2e099920 arg2=0x55ee2e099a90 parent=0x55ee2e099c10
+.. .. ..   eval=cndDiv_1_1 metrics=0x55ee2e099260 ring=0x55ee2e099860
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e099920
+.. .. .. ..   op=7 (*) arg1=0x55ee2e099730 arg2=0x55ee2e0998a0 parent=0x55ee2e099b10
+.. .. .. ..   eval=cndMul_1_1 metrics=0x55ee2e099260 ring=0x55ee2e099670
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. Expr dump @ 0x55ee2e099730
+.. .. .. .. ..   op=6 (-) arg1=0x55ee2e099540 arg2=0x55ee2e0996b0 parent=0x55ee2e099920
+.. .. .. .. ..   eval=cndSub_1_1 metrics=0x55ee2e099260 ring=0x55ee2e098bf0
+.. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. Expr dump @ 0x55ee2e099540
+.. .. .. .. .. ..   op=5 (+) arg1=0x55ee2e099370 arg2=0x55ee2e0994c0 parent=0x55ee2e099730
+.. .. .. .. .. ..   eval=cndAdd_1_1 metrics=0x55ee2e099260 ring=0x55ee2e098c70
+.. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. Expr dump @ 0x55ee2e099370
+.. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e099540
+.. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e099260 ring=0x55ee2e098c30
+.. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. Expr dump @ 0x55ee2e0994c0
+.. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e099540
+.. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e0993f0 ring=0x55ee2e099350
+.. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. Expr dump @ 0x55ee2e0996b0
+.. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e099730
+.. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e0995c0 ring=0x55ee2e098c10
+.. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. Expr dump @ 0x55ee2e0998a0
+.. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e099920
+.. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e0997b0 ring=0x55ee2e098bb0
+.. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e099a90
+.. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e099b10
+.. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e0999a0 ring=0x55ee2e099330
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e099b90
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e099c10
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e099a50
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. ..   smpls[0].ptr 0x55ee2e099a50 0
+.. Expr dump @ 0x55ee2e099e10
+..   op=75 (print) arg1=0x55ee2e099d90 arg2=(nil) parent=0x55ee2e098c90
+..   eval=actPrint metrics=(nil) ring=0x55ee2e099880
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e099d90
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e099d10 arg2=(nil) parent=0x55ee2e099e10
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e099690
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e099d10
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e099d90
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e099310
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=11
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e099310 "boolean1 %v"
+
+Rule: expr_6
+Expr dump @ 0x55ee2e099f60
+  op=0 (->) arg1=0x55ee2e09acb0 arg2=0x55ee2e09ae30 parent=(nil)
+  eval=rule metrics=0x55ee2e098d50 ring=0x55ee2e09aeb0
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e09acb0
+..   op=43 (&&) arg1=0x55ee2e098fe0 arg2=0x55ee2e09ac30 parent=0x55ee2e099f60
+..   eval=cndAnd_1_1 metrics=0x55ee2e098d50 ring=0x55ee2e098e40
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e098fe0
+.. ..   op=33 (<=) arg1=0x55ee2e098ee0 arg2=0x55ee2e098f60 parent=0x55ee2e09acb0
+.. ..   eval=cndLte_1_1 metrics=0x55ee2e098d50 ring=0x55ee2e098ea0
+.. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e098ee0
+.. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e098fe0
+.. .. ..   eval=cndFetch_1 metrics=0x55ee2e098d50 ring=0x55ee2e098e20
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e098f60
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e098fe0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e098d30
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. ..   smpls[0].ptr 0x55ee2e098d30 0
+.. .. Expr dump @ 0x55ee2e09ac30
+.. ..   op=35 (>=) arg1=0x55ee2e09ab30 arg2=0x55ee2e09abb0 parent=0x55ee2e09acb0
+.. ..   eval=cndGte_1_1 metrics=0x55ee2e099eb0 ring=0x55ee2e09aa90
+.. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e09ab30
+.. .. ..   op=8 (/) arg1=0x55ee2e09a940 arg2=0x55ee2e09aab0 parent=0x55ee2e09ac30
+.. .. ..   eval=cndDiv_1_1 metrics=0x55ee2e099eb0 ring=0x55ee2e09a880
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e09a940
+.. .. .. ..   op=7 (*) arg1=0x55ee2e09a750 arg2=0x55ee2e09a8c0 parent=0x55ee2e09ab30
+.. .. .. ..   eval=cndMul_1_1 metrics=0x55ee2e099eb0 ring=0x55ee2e09a690
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. Expr dump @ 0x55ee2e09a750
+.. .. .. .. ..   op=6 (-) arg1=0x55ee2e09a560 arg2=0x55ee2e09a6d0 parent=0x55ee2e09a940
+.. .. .. .. ..   eval=cndSub_1_1 metrics=0x55ee2e099eb0 ring=0x55ee2e0990c0
+.. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. Expr dump @ 0x55ee2e09a560
+.. .. .. .. .. ..   op=5 (+) arg1=0x55ee2e09a3b0 arg2=0x55ee2e09a4e0 parent=0x55ee2e09a750
+.. .. .. .. .. ..   eval=cndAdd_1_1 metrics=0x55ee2e099eb0 ring=0x55ee2e098ec0
+.. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. Expr dump @ 0x55ee2e09a3b0
+.. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09a560
+.. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e099eb0 ring=0x55ee2e098e80
+.. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. Expr dump @ 0x55ee2e09a4e0
+.. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09a560
+.. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09a430 ring=0x55ee2e0990a0
+.. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. Expr dump @ 0x55ee2e09a6d0
+.. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09a750
+.. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09a5e0 ring=0x55ee2e098e60
+.. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. Expr dump @ 0x55ee2e09a8c0
+.. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09a940
+.. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09a7d0 ring=0x55ee2e098e00
+.. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e09aab0
+.. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09ab30
+.. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09a9c0 ring=0x55ee2e099080
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e09abb0
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09ac30
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e09aa70
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. ..   smpls[0].ptr 0x55ee2e09aa70 0
+.. Expr dump @ 0x55ee2e09ae30
+..   op=75 (print) arg1=0x55ee2e09adb0 arg2=(nil) parent=0x55ee2e099f60
+..   eval=actPrint metrics=(nil) ring=0x55ee2e09a8a0
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e09adb0
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e09ad30 arg2=(nil) parent=0x55ee2e09ae30
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e09a6b0
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e09ad30
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09adb0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e099060
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=11
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e099060 "boolean2 %v"
+
+Rule: expr_7
+Expr dump @ 0x55ee2e09b000
+  op=0 (->) arg1=0x55ee2e09bd50 arg2=0x55ee2e09af80 parent=(nil)
+  eval=rule metrics=0x55ee2e09a020 ring=0x55ee2e09b080
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e09bd50
+..   op=43 (&&) arg1=0x55ee2e09a2b0 arg2=0x55ee2e09bcd0 parent=0x55ee2e09b000
+..   eval=cndAnd_1_1 metrics=0x55ee2e09a020 ring=0x55ee2e09b6d0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e09a2b0
+.. ..   op=32 (<) arg1=0x55ee2e09a1b0 arg2=0x55ee2e09a230 parent=0x55ee2e09bd50
+.. ..   eval=cndLt_1_1 metrics=0x55ee2e09a020 ring=0x55ee2e09a170
+.. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e09a1b0
+.. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09a2b0
+.. .. ..   eval=cndFetch_1 metrics=0x55ee2e09a020 ring=0x55ee2e09a0f0
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e09a230
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09a2b0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e09a000
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. ..   smpls[0].ptr 0x55ee2e09a000 9
+.. .. Expr dump @ 0x55ee2e09bcd0
+.. ..   op=40 (!) arg1=0x55ee2e09bc50 arg2=(nil) parent=0x55ee2e09bd50
+.. ..   eval=cndNot_1 metrics=0x55ee2e09aed0 ring=0x55ee2e09a110
+.. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e09bc50
+.. .. ..   op=35 (>=) arg1=0x55ee2e09bb50 arg2=0x55ee2e09bbd0 parent=0x55ee2e09bcd0
+.. .. ..   eval=cndGte_1_1 metrics=0x55ee2e09aed0 ring=0x55ee2e09bab0
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. .. Expr dump @ 0x55ee2e09bb50
+.. .. .. ..   op=8 (/) arg1=0x55ee2e09b960 arg2=0x55ee2e09bad0 parent=0x55ee2e09bc50
+.. .. .. ..   eval=cndDiv_1_1 metrics=0x55ee2e09aed0 ring=0x55ee2e09b8a0
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. Expr dump @ 0x55ee2e09b960
+.. .. .. .. ..   op=7 (*) arg1=0x55ee2e09b770 arg2=0x55ee2e09b8e0 parent=0x55ee2e09bb50
+.. .. .. .. ..   eval=cndMul_1_1 metrics=0x55ee2e09aed0 ring=0x55ee2e09b6b0
+.. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. Expr dump @ 0x55ee2e09b770
+.. .. .. .. .. ..   op=6 (-) arg1=0x55ee2e09b580 arg2=0x55ee2e09b6f0 parent=0x55ee2e09b960
+.. .. .. .. .. ..   eval=cndSub_1_1 metrics=0x55ee2e09aed0 ring=0x55ee2e09a390
+.. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. Expr dump @ 0x55ee2e09b580
+.. .. .. .. .. .. ..   op=5 (+) arg1=0x55ee2e09b3d0 arg2=0x55ee2e09b500 parent=0x55ee2e09b770
+.. .. .. .. .. .. ..   eval=cndAdd_1_1 metrics=0x55ee2e09aed0 ring=0x55ee2e09a190
+.. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. .. Expr dump @ 0x55ee2e09b3d0
+.. .. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09b580
+.. .. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09aed0 ring=0x55ee2e09a150
+.. .. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. .. Expr dump @ 0x55ee2e09b500
+.. .. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09b580
+.. .. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09b450 ring=0x55ee2e09a370
+.. .. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. Expr dump @ 0x55ee2e09b6f0
+.. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09b770
+.. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09b600 ring=0x55ee2e09a130
+.. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. Expr dump @ 0x55ee2e09b8e0
+.. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09b960
+.. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09b7f0 ring=0x55ee2e09a0d0
+.. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. Expr dump @ 0x55ee2e09bad0
+.. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09bb50
+.. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09b9e0 ring=0x55ee2e09a350
+.. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e09bbd0
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09bc50
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e09ba90
+.. .. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e09ba90 0
+.. Expr dump @ 0x55ee2e09af80
+..   op=75 (print) arg1=0x55ee2e09be50 arg2=(nil) parent=0x55ee2e09b000
+..   eval=actPrint metrics=(nil) ring=0x55ee2e09bed0
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e09be50
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e09bdd0 arg2=(nil) parent=0x55ee2e09af80
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e09a330
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e09bdd0
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09be50
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e09b8c0
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=11
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e09b8c0 "boolean3 %v"
+
+Rule: expr_8
+Expr dump @ 0x55ee2e09c0a0
+  op=0 (->) arg1=0x55ee2e09ce10 arg2=0x55ee2e09c020 parent=(nil)
+  eval=rule metrics=0x55ee2e09b0e0 ring=0x55ee2e09c120
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e09ce10
+..   op=43 (&&) arg1=0x55ee2e09bef0 arg2=0x55ee2e09cd90 parent=0x55ee2e09c0a0
+..   eval=cndAnd_1_1 metrics=0x55ee2e09b0e0 ring=0x55ee2e09c790
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e09bef0
+.. ..   op=32 (<) arg1=0x55ee2e09b270 arg2=0x55ee2e09b2f0 parent=0x55ee2e09ce10
+.. ..   eval=cndLt_1_1 metrics=0x55ee2e09b0e0 ring=0x55ee2e09b230
+.. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e09b270
+.. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09bef0
+.. .. ..   eval=cndFetch_1 metrics=0x55ee2e09b0e0 ring=0x55ee2e09b1b0
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e09b2f0
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09bef0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e09b0c0
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. ..   smpls[0].ptr 0x55ee2e09b0c0 1
+.. .. Expr dump @ 0x55ee2e09cd90
+.. ..   op=40 (!) arg1=0x55ee2e09cd10 arg2=(nil) parent=0x55ee2e09ce10
+.. ..   eval=cndNot_1 metrics=0x55ee2e09bf70 ring=0x55ee2e09c5a0
+.. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e09cd10
+.. .. ..   op=35 (>=) arg1=0x55ee2e09cc10 arg2=0x55ee2e09cc90 parent=0x55ee2e09cd90
+.. .. ..   eval=cndGte_1_1 metrics=0x55ee2e09bf70 ring=0x55ee2e09cb70
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. .. Expr dump @ 0x55ee2e09cc10
+.. .. .. ..   op=8 (/) arg1=0x55ee2e09ca20 arg2=0x55ee2e09cb90 parent=0x55ee2e09cd10
+.. .. .. ..   eval=cndDiv_1_1 metrics=0x55ee2e09bf70 ring=0x55ee2e09c960
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. Expr dump @ 0x55ee2e09ca20
+.. .. .. .. ..   op=7 (*) arg1=0x55ee2e09c830 arg2=0x55ee2e09c9a0 parent=0x55ee2e09cc10
+.. .. .. .. ..   eval=cndMul_1_1 metrics=0x55ee2e09bf70 ring=0x55ee2e09c770
+.. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. Expr dump @ 0x55ee2e09c830
+.. .. .. .. .. ..   op=6 (-) arg1=0x55ee2e09c640 arg2=0x55ee2e09c7b0 parent=0x55ee2e09ca20
+.. .. .. .. .. ..   eval=cndSub_1_1 metrics=0x55ee2e09bf70 ring=0x55ee2e09b1d0
+.. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. Expr dump @ 0x55ee2e09c640
+.. .. .. .. .. .. ..   op=5 (+) arg1=0x55ee2e09c470 arg2=0x55ee2e09c5c0 parent=0x55ee2e09c830
+.. .. .. .. .. .. ..   eval=cndAdd_1_1 metrics=0x55ee2e09bf70 ring=0x55ee2e09b250
+.. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. .. Expr dump @ 0x55ee2e09c470
+.. .. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09c640
+.. .. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09bf70 ring=0x55ee2e09b210
+.. .. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. .. Expr dump @ 0x55ee2e09c5c0
+.. .. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09c640
+.. .. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09c4f0 ring=0x55ee2e09b3b0
+.. .. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. Expr dump @ 0x55ee2e09c7b0
+.. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09c830
+.. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09c6c0 ring=0x55ee2e09b1f0
+.. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. Expr dump @ 0x55ee2e09c9a0
+.. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09ca20
+.. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09c8b0 ring=0x55ee2e09b190
+.. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. Expr dump @ 0x55ee2e09cb90
+.. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09cc10
+.. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09caa0 ring=0x55ee2e09b390
+.. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e09cc90
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09cd10
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e09cb50
+.. .. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e09cb50 0
+.. Expr dump @ 0x55ee2e09c020
+..   op=75 (print) arg1=0x55ee2e09cf10 arg2=(nil) parent=0x55ee2e09c0a0
+..   eval=actPrint metrics=(nil) ring=0x55ee2e09cf90
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e09cf10
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e09ce90 arg2=(nil) parent=0x55ee2e09c020
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e09b370
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e09ce90
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09cf10
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e09c980
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=11
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e09c980 "boolean4 %v"
+
+Rule: expr_9
+Expr dump @ 0x55ee2e09d9b0
+  op=0 (->) arg1=0x55ee2e09d7b0 arg2=0x55ee2e09d930 parent=(nil)
+  eval=rule metrics=0x55ee2e09c1d0 ring=0x55ee2e09da30
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e09d7b0
+..   op=44 (||) arg1=0x55ee2e09d0b0 arg2=0x55ee2e09d730 parent=0x55ee2e09d9b0
+..   eval=cndOr_n_1 metrics=0x55ee2e09c1d0 ring=0x55ee2e0971c0
+..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e09d0b0
+.. ..   op=30 (==) arg1=0x55ee2e09cfb0 arg2=0x55ee2e09d030 parent=0x55ee2e09d7b0
+.. ..   eval=cndEq_1_1 metrics=0x55ee2e09c1d0 ring=0x55ee2e09c360
+.. ..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e09cfb0
+.. .. ..   op=20 (min_inst) arg1=0x55ee2e09c380 arg2=(nil) parent=0x55ee2e09d0b0
+.. .. ..   eval=cndMin_inst metrics=0x55ee2e09c1d0 ring=0x55ee2e09c1b0
+.. .. ..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=UNKNOWN units=UNKNOWN
+.. .. .. .. Expr dump @ 0x55ee2e09c380
+.. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09cfb0
+.. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09c1d0 ring=0x55ee2e09c2c0
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=UNKNOWN units=UNKNOWN
+.. .. .. Expr dump @ 0x55ee2e09d030
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09d0b0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e09c340
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. ..   smpls[0].ptr 0x55ee2e09c340 100
+.. .. Expr dump @ 0x55ee2e09d730
+.. ..   op=34 (>) arg1=0x55ee2e09d630 arg2=0x55ee2e09d6b0 parent=0x55ee2e09d7b0
+.. ..   eval=cndGt_1_1 metrics=0x55ee2e09d130 ring=0x55ee2e09c420
+.. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e09d630
+.. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09d730
+.. .. ..   eval=cndFetch_1 metrics=0x55ee2e09d130 ring=0x55ee2e09c300
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e09d6b0
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09d730
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e09c2e0
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. ..   smpls[0].ptr 0x55ee2e09c2e0 0
+.. Expr dump @ 0x55ee2e09d930
+..   op=75 (print) arg1=0x55ee2e09d8b0 arg2=(nil) parent=0x55ee2e09d9b0
+..   eval=actPrint metrics=(nil) ring=0x55ee2e09c320
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e09d8b0
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e09d830 arg2=(nil) parent=0x55ee2e09d930
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e09c400
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e09d830
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09d8b0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0971e0
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=9
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e0971e0 "error1 %v"
+
+Rule: expr_10
+Expr dump @ 0x55ee2e09e8d0
+  op=0 (->) arg1=0x55ee2e09e630 arg2=0x55ee2e09e830 parent=(nil)
+  eval=rule metrics=0x55ee2e09d220 ring=0x55ee2e09e950
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e09e630
+..   op=44 (||) arg1=0x55ee2e09db50 arg2=0x55ee2e09e5b0 parent=0x55ee2e09e8d0
+..   eval=cndOr_n_1 metrics=0x55ee2e09d220 ring=0x55ee2e09d310
+..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e09db50
+.. ..   op=30 (==) arg1=0x55ee2e09da50 arg2=0x55ee2e09dad0 parent=0x55ee2e09e630
+.. ..   eval=cndEq_1_1 metrics=0x55ee2e09d220 ring=0x55ee2e09d370
+.. ..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e09da50
+.. .. ..   op=20 (min_inst) arg1=0x55ee2e09d580 arg2=(nil) parent=0x55ee2e09db50
+.. .. ..   eval=cndMin_inst metrics=0x55ee2e09d220 ring=0x55ee2e09d200
+.. .. ..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e09d580
+.. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09da50
+.. .. .. ..   eval=cndFetch_all metrics=0x55ee2e09d220 ring=0x55ee2e09d500
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. .. .. ..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e09dad0
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09db50
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e09d2f0
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. ..   smpls[0].ptr 0x55ee2e09d2f0 100
+.. .. Expr dump @ 0x55ee2e09e5b0
+.. ..   op=35 (>=) arg1=0x55ee2e09e4b0 arg2=0x55ee2e09e530 parent=0x55ee2e09e630
+.. ..   eval=cndGte_1_1 metrics=0x55ee2e09dbd0 ring=0x55ee2e09de90
+.. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e09e4b0
+.. .. ..   op=8 (/) arg1=0x55ee2e09e300 arg2=0x55ee2e09e430 parent=0x55ee2e09e5b0
+.. .. ..   eval=cndDiv_1_1 metrics=0x55ee2e09dbd0 ring=0x55ee2e09e080
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e09e300
+.. .. .. ..   op=7 (*) arg1=0x55ee2e09df30 arg2=0x55ee2e09e280 parent=0x55ee2e09e4b0
+.. .. .. ..   eval=cndMul_1_1 metrics=0x55ee2e09dbd0 ring=0x55ee2e09de70
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. Expr dump @ 0x55ee2e09df30
+.. .. .. .. ..   op=6 (-) arg1=0x55ee2e09dd40 arg2=0x55ee2e09deb0 parent=0x55ee2e09e300
+.. .. .. .. ..   eval=cndSub_1_1 metrics=0x55ee2e09dbd0 ring=0x55ee2e09e260
+.. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. Expr dump @ 0x55ee2e09dd40
+.. .. .. .. .. ..   op=5 (+) arg1=0x55ee2e09e110 arg2=0x55ee2e09dcc0 parent=0x55ee2e09df30
+.. .. .. .. .. ..   eval=cndAdd_1_1 metrics=0x55ee2e09dbd0 ring=0x55ee2e09d390
+.. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. Expr dump @ 0x55ee2e09e110
+.. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09dd40
+.. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09dbd0 ring=0x55ee2e09d350
+.. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. Expr dump @ 0x55ee2e09dcc0
+.. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09dd40
+.. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09e190 ring=0x55ee2e09dca0
+.. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. Expr dump @ 0x55ee2e09deb0
+.. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09df30
+.. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09ddc0 ring=0x55ee2e09d330
+.. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. Expr dump @ 0x55ee2e09e280
+.. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09e300
+.. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09dfb0 ring=0x55ee2e09e240
+.. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e09e430
+.. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09e4b0
+.. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09e380 ring=0x55ee2e09dc80
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e09e530
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09e5b0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e09e060
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. ..   smpls[0].ptr 0x55ee2e09e060 0
+.. Expr dump @ 0x55ee2e09e830
+..   op=75 (print) arg1=0x55ee2e09e7b0 arg2=(nil) parent=0x55ee2e09e8d0
+..   eval=actPrint metrics=(nil) ring=0x55ee2e09e8b0
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e09e7b0
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e09e730 arg2=(nil) parent=0x55ee2e09e830
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e09e0a0
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e09e730
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e09e6b0 arg2=(nil) parent=0x55ee2e09e7b0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e09e0c0
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=9
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e09e0c0 "boolean5:"
+.. .. .. .. Expr dump @ 0x55ee2e09e6b0
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09e730
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e09e0e0
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e09e0e0 " [%i] %v"
+
+Rule: expr_11
+Expr dump @ 0x55ee2e09f0b0
+  op=0 (->) arg1=0x55ee2e09fda0 arg2=0x55ee2e09f030 parent=(nil)
+  eval=rule metrics=0x55ee2e09e9b0 ring=0x55ee2e09f130
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e09fda0
+..   op=44 (||) arg1=0x55ee2e09ee80 arg2=0x55ee2e09fd20 parent=0x55ee2e09f0b0
+..   eval=cndOr_n_1 metrics=0x55ee2e09e9b0 ring=0x55ee2e09f5b0
+..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e09ee80
+.. ..   op=30 (==) arg1=0x55ee2e09ed80 arg2=0x55ee2e09ee00 parent=0x55ee2e09fda0
+.. ..   eval=cndEq_1_1 metrics=0x55ee2e09e9b0 ring=0x55ee2e09eb00
+.. ..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e09ed80
+.. .. ..   op=17 (max_inst) arg1=0x55ee2e09ed00 arg2=(nil) parent=0x55ee2e09ee80
+.. .. ..   eval=cndMax_inst metrics=0x55ee2e09e9b0 ring=0x55ee2e09e990
+.. .. ..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e09ed00
+.. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09ed80
+.. .. .. ..   eval=cndFetch_all metrics=0x55ee2e09e9b0 ring=0x55ee2e09ec70
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. .. .. ..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e09ee00
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09ee80
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e09ea80
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. ..   smpls[0].ptr 0x55ee2e09ea80 100
+.. .. Expr dump @ 0x55ee2e09fd20
+.. ..   op=35 (>=) arg1=0x55ee2e09fc20 arg2=0x55ee2e09fca0 parent=0x55ee2e09fda0
+.. ..   eval=cndGte_1_1 metrics=0x55ee2e09ef00 ring=0x55ee2e09fb80
+.. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e09fc20
+.. .. ..   op=8 (/) arg1=0x55ee2e09fa30 arg2=0x55ee2e09fba0 parent=0x55ee2e09fd20
+.. .. ..   eval=cndDiv_1_1 metrics=0x55ee2e09ef00 ring=0x55ee2e09f970
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e09fa30
+.. .. .. ..   op=7 (*) arg1=0x55ee2e09f840 arg2=0x55ee2e09f9b0 parent=0x55ee2e09fc20
+.. .. .. ..   eval=cndMul_1_1 metrics=0x55ee2e09ef00 ring=0x55ee2e09f780
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. Expr dump @ 0x55ee2e09f840
+.. .. .. .. ..   op=6 (-) arg1=0x55ee2e09f650 arg2=0x55ee2e09f7c0 parent=0x55ee2e09fa30
+.. .. .. .. ..   eval=cndSub_1_1 metrics=0x55ee2e09ef00 ring=0x55ee2e09eaa0
+.. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. Expr dump @ 0x55ee2e09f650
+.. .. .. .. .. ..   op=5 (+) arg1=0x55ee2e09f480 arg2=0x55ee2e09f5d0 parent=0x55ee2e09f840
+.. .. .. .. .. ..   eval=cndAdd_1_1 metrics=0x55ee2e09ef00 ring=0x55ee2e09eb20
+.. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. Expr dump @ 0x55ee2e09f480
+.. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09f650
+.. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09ef00 ring=0x55ee2e09eae0
+.. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. Expr dump @ 0x55ee2e09f5d0
+.. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09f650
+.. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09f500 ring=0x55ee2e09f010
+.. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. Expr dump @ 0x55ee2e09f7c0
+.. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09f840
+.. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09f6d0 ring=0x55ee2e09eac0
+.. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. Expr dump @ 0x55ee2e09f9b0
+.. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09fa30
+.. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09f8c0 ring=0x55ee2e09efb0
+.. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e09fba0
+.. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09fc20
+.. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e09fab0 ring=0x55ee2e09eff0
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e09fca0
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09fd20
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e09fb60
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. ..   smpls[0].ptr 0x55ee2e09fb60 0
+.. Expr dump @ 0x55ee2e09f030
+..   op=75 (print) arg1=0x55ee2e09ff20 arg2=(nil) parent=0x55ee2e09f0b0
+..   eval=actPrint metrics=(nil) ring=0x55ee2e09ffa0
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e09ff20
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e09fea0 arg2=(nil) parent=0x55ee2e09f030
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e09f7a0
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e09fea0
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e09fe20 arg2=(nil) parent=0x55ee2e09ff20
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e09efd0
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=9
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e09efd0 "boolean6:"
+.. .. .. .. Expr dump @ 0x55ee2e09fe20
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e09fea0
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e09f990
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e09f990 " [%i] %v"
+
+Rule: expr_12
+Expr dump @ 0x55ee2e0a0490
+  op=0 (->) arg1=0x55ee2e0a1160 arg2=0x55ee2e0a03f0 parent=(nil)
+  eval=rule metrics=0x55ee2e09f190 ring=0x55ee2e0a0510
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e0a1160
+..   op=44 (||) arg1=0x55ee2e0a01c0 arg2=0x55ee2e0a10e0 parent=0x55ee2e0a0490
+..   eval=cndOr_n_1 metrics=0x55ee2e09f190 ring=0x55ee2e0a0ae0
+..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a01c0
+.. ..   op=34 (>) arg1=0x55ee2e0a00c0 arg2=0x55ee2e0a0140 parent=0x55ee2e0a1160
+.. ..   eval=cndGt_1_1 metrics=0x55ee2e09f190 ring=0x55ee2e09f2e0
+.. ..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e0a00c0
+.. .. ..   op=11 (sum_inst) arg1=0x55ee2e09f400 arg2=(nil) parent=0x55ee2e0a01c0
+.. .. ..   eval=cndSum_inst metrics=0x55ee2e09f190 ring=0x55ee2e09f170
+.. .. ..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e09f400
+.. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a00c0
+.. .. .. ..   eval=cndFetch_all metrics=0x55ee2e09f190 ring=0x55ee2e0a0070
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. .. .. ..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e0a0140
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a01c0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e09f260
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. ..   smpls[0].ptr 0x55ee2e09f260 500
+.. .. Expr dump @ 0x55ee2e0a10e0
+.. ..   op=40 (!) arg1=0x55ee2e0a1060 arg2=(nil) parent=0x55ee2e0a1160
+.. ..   eval=cndNot_1 metrics=0x55ee2e0a0240 ring=0x55ee2e0a08f0
+.. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e0a1060
+.. .. ..   op=35 (>=) arg1=0x55ee2e0a0f60 arg2=0x55ee2e0a0fe0 parent=0x55ee2e0a10e0
+.. .. ..   eval=cndGte_1_1 metrics=0x55ee2e0a0240 ring=0x55ee2e0a0ec0
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. .. Expr dump @ 0x55ee2e0a0f60
+.. .. .. ..   op=8 (/) arg1=0x55ee2e0a0d70 arg2=0x55ee2e0a0ee0 parent=0x55ee2e0a1060
+.. .. .. ..   eval=cndDiv_1_1 metrics=0x55ee2e0a0240 ring=0x55ee2e0a0cb0
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. Expr dump @ 0x55ee2e0a0d70
+.. .. .. .. ..   op=7 (*) arg1=0x55ee2e0a0b80 arg2=0x55ee2e0a0cf0 parent=0x55ee2e0a0f60
+.. .. .. .. ..   eval=cndMul_1_1 metrics=0x55ee2e0a0240 ring=0x55ee2e0a0ac0
+.. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. Expr dump @ 0x55ee2e0a0b80
+.. .. .. .. .. ..   op=6 (-) arg1=0x55ee2e0a0990 arg2=0x55ee2e0a0b00 parent=0x55ee2e0a0d70
+.. .. .. .. .. ..   eval=cndSub_1_1 metrics=0x55ee2e0a0240 ring=0x55ee2e09f280
+.. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. Expr dump @ 0x55ee2e0a0990
+.. .. .. .. .. .. ..   op=5 (+) arg1=0x55ee2e0a07c0 arg2=0x55ee2e0a0910 parent=0x55ee2e0a0b80
+.. .. .. .. .. .. ..   eval=cndAdd_1_1 metrics=0x55ee2e0a0240 ring=0x55ee2e09f300
+.. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. .. Expr dump @ 0x55ee2e0a07c0
+.. .. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a0990
+.. .. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e0a0240 ring=0x55ee2e09f2c0
+.. .. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. .. Expr dump @ 0x55ee2e0a0910
+.. .. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a0990
+.. .. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e0a0840 ring=0x55ee2e0a0350
+.. .. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. Expr dump @ 0x55ee2e0a0b00
+.. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a0b80
+.. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e0a0a10 ring=0x55ee2e09f2a0
+.. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. Expr dump @ 0x55ee2e0a0cf0
+.. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a0d70
+.. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e0a0c00 ring=0x55ee2e0a02f0
+.. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. Expr dump @ 0x55ee2e0a0ee0
+.. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a0f60
+.. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e0a0df0 ring=0x55ee2e0a0330
+.. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e0a0fe0
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a1060
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a0ea0
+.. .. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a0ea0 0
+.. Expr dump @ 0x55ee2e0a03f0
+..   op=75 (print) arg1=0x55ee2e0a0370 arg2=(nil) parent=0x55ee2e0a0490
+..   eval=actPrint metrics=(nil) ring=0x55ee2e0a0470
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a0370
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e0a1280 arg2=(nil) parent=0x55ee2e0a03f0
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e0a0310
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e0a1280
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e0a11e0 arg2=(nil) parent=0x55ee2e0a0370
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a0cd0
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=9
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e0a0cd0 "boolean7:"
+.. .. .. .. Expr dump @ 0x55ee2e0a11e0
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a1280
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a1260
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a1260 " [%i] %v"
+
+Rule: expr_13
+Expr dump @ 0x55ee2e0a1870
+  op=0 (->) arg1=0x55ee2e0a2540 arg2=0x55ee2e0a17d0 parent=(nil)
+  eval=rule metrics=0x55ee2e0a0570 ring=0x55ee2e0a18f0
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e0a2540
+..   op=44 (||) arg1=0x55ee2e0a15a0 arg2=0x55ee2e0a24c0 parent=0x55ee2e0a1870
+..   eval=cndOr_n_1 metrics=0x55ee2e0a0570 ring=0x55ee2e0a1ec0
+..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a15a0
+.. ..   op=30 (==) arg1=0x55ee2e0a14a0 arg2=0x55ee2e0a1520 parent=0x55ee2e0a2540
+.. ..   eval=cndEq_1_1 metrics=0x55ee2e0a0570 ring=0x55ee2e0a06c0
+.. ..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e0a14a0
+.. .. ..   op=14 (avg_inst) arg1=0x55ee2e0a13a0 arg2=(nil) parent=0x55ee2e0a15a0
+.. .. ..   eval=cndAvg_inst metrics=0x55ee2e0a0570 ring=0x55ee2e0a0550
+.. .. ..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e0a13a0
+.. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a14a0
+.. .. .. ..   eval=cndFetch_all metrics=0x55ee2e0a0570 ring=0x55ee2e0a1450
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. .. .. ..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e0a1520
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a15a0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a0640
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. ..   smpls[0].ptr 0x55ee2e0a0640 0
+.. .. Expr dump @ 0x55ee2e0a24c0
+.. ..   op=40 (!) arg1=0x55ee2e0a2440 arg2=(nil) parent=0x55ee2e0a2540
+.. ..   eval=cndNot_1 metrics=0x55ee2e0a1620 ring=0x55ee2e0a1cd0
+.. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e0a2440
+.. .. ..   op=35 (>=) arg1=0x55ee2e0a2340 arg2=0x55ee2e0a23c0 parent=0x55ee2e0a24c0
+.. .. ..   eval=cndGte_1_1 metrics=0x55ee2e0a1620 ring=0x55ee2e0a22a0
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. .. Expr dump @ 0x55ee2e0a2340
+.. .. .. ..   op=8 (/) arg1=0x55ee2e0a2150 arg2=0x55ee2e0a22c0 parent=0x55ee2e0a2440
+.. .. .. ..   eval=cndDiv_1_1 metrics=0x55ee2e0a1620 ring=0x55ee2e0a2090
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. Expr dump @ 0x55ee2e0a2150
+.. .. .. .. ..   op=7 (*) arg1=0x55ee2e0a1f60 arg2=0x55ee2e0a20d0 parent=0x55ee2e0a2340
+.. .. .. .. ..   eval=cndMul_1_1 metrics=0x55ee2e0a1620 ring=0x55ee2e0a1ea0
+.. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. Expr dump @ 0x55ee2e0a1f60
+.. .. .. .. .. ..   op=6 (-) arg1=0x55ee2e0a1d70 arg2=0x55ee2e0a1ee0 parent=0x55ee2e0a2150
+.. .. .. .. .. ..   eval=cndSub_1_1 metrics=0x55ee2e0a1620 ring=0x55ee2e0a0660
+.. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. Expr dump @ 0x55ee2e0a1d70
+.. .. .. .. .. .. ..   op=5 (+) arg1=0x55ee2e0a1ba0 arg2=0x55ee2e0a1cf0 parent=0x55ee2e0a1f60
+.. .. .. .. .. .. ..   eval=cndAdd_1_1 metrics=0x55ee2e0a1620 ring=0x55ee2e0a06e0
+.. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. .. Expr dump @ 0x55ee2e0a1ba0
+.. .. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a1d70
+.. .. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e0a1620 ring=0x55ee2e0a06a0
+.. .. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. .. Expr dump @ 0x55ee2e0a1cf0
+.. .. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a1d70
+.. .. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e0a1c20 ring=0x55ee2e0a1730
+.. .. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. .. Expr dump @ 0x55ee2e0a1ee0
+.. .. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a1f60
+.. .. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e0a1df0 ring=0x55ee2e0a0680
+.. .. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. .. Expr dump @ 0x55ee2e0a20d0
+.. .. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a2150
+.. .. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e0a1fe0 ring=0x55ee2e0a16d0
+.. .. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. .. Expr dump @ 0x55ee2e0a22c0
+.. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a2340
+.. .. .. .. ..   eval=cndFetch_1 metrics=0x55ee2e0a21d0 ring=0x55ee2e0a1710
+.. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e0a23c0
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a2440
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a2280
+.. .. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a2280 0
+.. Expr dump @ 0x55ee2e0a17d0
+..   op=75 (print) arg1=0x55ee2e0a1750 arg2=(nil) parent=0x55ee2e0a1870
+..   eval=actPrint metrics=(nil) ring=0x55ee2e0a1850
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a1750
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e0a2660 arg2=(nil) parent=0x55ee2e0a17d0
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e0a16f0
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e0a2660
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e0a25c0 arg2=(nil) parent=0x55ee2e0a1750
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a20b0
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=9
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e0a20b0 "boolean8:"
+.. .. .. .. Expr dump @ 0x55ee2e0a25c0
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a2660
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a2640
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a2640 " [%i] %v"
+
+Rule: expr_14
+Expr dump @ 0x55ee2e0a2d40
+  op=0 (->) arg1=0x55ee2e0a2a80 arg2=0x55ee2e0a2ca0 parent=(nil)
+  eval=rule metrics=0x55ee2e0a1950 ring=0x55ee2e0a2dc0
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e0a2a80
+..   op=34 (>) arg1=0x55ee2e0a2980 arg2=0x55ee2e0a2a00 parent=0x55ee2e0a2d40
+..   eval=cndGt_1_1 metrics=0x55ee2e0a1950 ring=0x55ee2e0a1a40
+..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a2980
+.. ..   op=60 (count_inst) arg1=0x55ee2e0a2900 arg2=(nil) parent=0x55ee2e0a2a80
+.. ..   eval=cndCount_inst metrics=0x55ee2e0a1950 ring=0x55ee2e0a1aa0
+.. ..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=INSTANT units=count
+.. .. .. Expr dump @ 0x55ee2e0a2900
+.. .. ..   op=34 (>) arg1=0x55ee2e0a2780 arg2=0x55ee2e0a2880 parent=0x55ee2e0a2980
+.. .. ..   eval=cndGt_n_1 metrics=0x55ee2e0a1950 ring=0x55ee2e0a1a20
+.. .. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. .. ..   nsmpls=1 nvals=9 sem=TRUTH units=
+.. .. .. .. Expr dump @ 0x55ee2e0a2780
+.. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a2900
+.. .. .. ..   eval=cndFetch_all metrics=0x55ee2e0a1950 ring=0x55ee2e0a2830
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. .. .. ..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e0a2880
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a2900
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a1930
+.. .. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a1930 0
+.. .. Expr dump @ 0x55ee2e0a2a00
+.. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a2a80
+.. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a1ac0
+.. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. ..   smpls[0].ptr 0x55ee2e0a1ac0 0
+.. Expr dump @ 0x55ee2e0a2ca0
+..   op=75 (print) arg1=0x55ee2e0a2c20 arg2=(nil) parent=0x55ee2e0a2d40
+..   eval=actPrint metrics=(nil) ring=0x55ee2e0a2d20
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a2c20
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e0a2ba0 arg2=(nil) parent=0x55ee2e0a2ca0
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e0a1a80
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e0a2ba0
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e0a2b00 arg2=(nil) parent=0x55ee2e0a2c20
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a1a60
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=11
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e0a1a60 "count_inst:"
+.. .. .. .. Expr dump @ 0x55ee2e0a2b00
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a2ba0
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a2b80
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=7
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a2b80 "[%i] %v"
+
+Rule: expr_15
+Expr dump @ 0x55ee2e0a3ed0
+  op=0 (->) arg1=0x55ee2e0a3870 arg2=0x55ee2e0a3ad0 parent=(nil)
+  eval=rule metrics=0x55ee2e0a2f40 ring=0x55ee2e0a3b70
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e0a3870
+..   op=54 (some_inst) arg1=0x55ee2e0a37f0 arg2=(nil) parent=0x55ee2e0a3ed0
+..   eval=cndSome_inst metrics=0x55ee2e0a2f40 ring=0x55ee2e0a3e50
+..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a37f0
+.. ..   op=45 (match_inst) arg1=0x55ee2e0a3340 arg2=0x55ee2e0a2ea0 parent=0x55ee2e0a3870
+.. ..   eval=0x55ee2c1493a0() metrics=0x55ee2e0a2f40 ring=0x55ee2e0a2f20
+.. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. ..   nsmpls=1 nvals=9 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e0a3340
+.. .. ..   op=34 (>) arg1=0x55ee2e0a31b0 arg2=0x55ee2e0a32c0 parent=0x55ee2e0a37f0
+.. .. ..   eval=cndGt_n_1 metrics=0x55ee2e0a2f40 ring=0x55ee2e0a3010
+.. .. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. .. ..   nsmpls=1 nvals=9 sem=TRUTH units=
+.. .. .. .. Expr dump @ 0x55ee2e0a31b0
+.. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a3340
+.. .. .. ..   eval=cndFetch_all metrics=0x55ee2e0a2f40 ring=0x55ee2e0a3270
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. .. .. ..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e0a32c0
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a3340
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a2e80
+.. .. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a2e80 100
+.. .. .. Expr dump @ 0x55ee2e0a2ea0
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a37f0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a33c0
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=REGEX units=
+.. .. ..   handle=0x55ee2e0a33c0
+.. Expr dump @ 0x55ee2e0a3ad0
+..   op=75 (print) arg1=0x55ee2e0a3a50 arg2=(nil) parent=0x55ee2e0a3ed0
+..   eval=actPrint metrics=(nil) ring=0x55ee2e0a3b50
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a3a50
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e0a39d0 arg2=(nil) parent=0x55ee2e0a3ad0
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e0a38f0
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e0a39d0
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e0a3930 arg2=(nil) parent=0x55ee2e0a3a50
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a3910
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=11
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e0a3910 "match_inst:"
+.. .. .. .. Expr dump @ 0x55ee2e0a3930
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a39d0
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a39b0
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a39b0 " [%i] %v"
+
+Rule: expr_16
+Expr dump @ 0x55ee2e0a5030
+  op=0 (->) arg1=0x55ee2e0a4a70 arg2=0x55ee2e0a4cd0 parent=(nil)
+  eval=rule metrics=0x55ee2e0a4010 ring=0x55ee2e0a4d70
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e0a4a70
+..   op=54 (some_inst) arg1=0x55ee2e0a49f0 arg2=(nil) parent=0x55ee2e0a5030
+..   eval=cndSome_inst metrics=0x55ee2e0a4010 ring=0x55ee2e0a4fb0
+..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a49f0
+.. ..   op=46 (nomatch_inst) arg1=0x55ee2e0a4540 arg2=0x55ee2e0a3f70 parent=0x55ee2e0a4a70
+.. ..   eval=0x55ee2c1493a0() metrics=0x55ee2e0a4010 ring=0x55ee2e0a3ff0
+.. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. ..   nsmpls=1 nvals=9 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e0a4540
+.. .. ..   op=34 (>) arg1=0x55ee2e0a43f0 arg2=0x55ee2e0a44c0 parent=0x55ee2e0a49f0
+.. .. ..   eval=cndGt_n_1 metrics=0x55ee2e0a4010 ring=0x55ee2e0a40e0
+.. .. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. .. ..   nsmpls=1 nvals=9 sem=TRUTH units=
+.. .. .. .. Expr dump @ 0x55ee2e0a43f0
+.. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a4540
+.. .. .. ..   eval=cndFetch_all metrics=0x55ee2e0a4010 ring=0x55ee2e0a4470
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. .. .. ..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e0a44c0
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a4540
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a3f50
+.. .. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a3f50 200
+.. .. .. Expr dump @ 0x55ee2e0a3f70
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a49f0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a45c0
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=REGEX units=
+.. .. ..   handle=0x55ee2e0a45c0
+.. Expr dump @ 0x55ee2e0a4cd0
+..   op=75 (print) arg1=0x55ee2e0a4c50 arg2=(nil) parent=0x55ee2e0a5030
+..   eval=actPrint metrics=(nil) ring=0x55ee2e0a4d50
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a4c50
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e0a4bd0 arg2=(nil) parent=0x55ee2e0a4cd0
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e0a4af0
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e0a4bd0
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e0a4b30 arg2=(nil) parent=0x55ee2e0a4c50
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a4b10
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=13
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e0a4b10 "nomatch_inst:"
+.. .. .. .. Expr dump @ 0x55ee2e0a4b30
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a4bd0
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a4bb0
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a4bb0 " [%i] %v"
+
+Rule: expr_17
+Expr dump @ 0x55ee2e0a59c0
+  op=0 (->) arg1=0x55ee2e0a5740 arg2=0x55ee2e0a5940 parent=(nil)
+  eval=rule metrics=0x55ee2e0a5160 ring=0x55ee2e0a4df0
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e0a5740
+..   op=51 (all_inst) arg1=0x55ee2e0a56c0 arg2=(nil) parent=0x55ee2e0a59c0
+..   eval=cndAll_inst metrics=0x55ee2e0a5160 ring=0x55ee2e0a52d0
+..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a56c0
+.. ..   op=30 (==) arg1=0x55ee2e0a2e00 arg2=0x55ee2e0a5640 parent=0x55ee2e0a5740
+.. ..   eval=cndEq_n_1 metrics=0x55ee2e0a5160 ring=0x55ee2e0a5250
+.. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. ..   nsmpls=1 nvals=9 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e0a2e00
+.. .. ..   op=3 (rate) arg1=0x55ee2e0a5510 arg2=(nil) parent=0x55ee2e0a56c0
+.. .. ..   eval=cndRate_n metrics=0x55ee2e0a5160 ring=0x55ee2e0a54c0
+.. .. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. .. ..   nsmpls=1 nvals=9 sem=INSTANT units=/ sec
+.. .. .. .. Expr dump @ 0x55ee2e0a5510
+.. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a2e00
+.. .. .. ..   eval=cndFetch_all metrics=0x55ee2e0a5160 ring=0x55ee2e0a55a0
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. .. .. ..   nsmpls=2 nvals=18 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e0a5640
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a56c0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a5140
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. ..   smpls[0].ptr 0x55ee2e0a5140 0
+.. Expr dump @ 0x55ee2e0a5940
+..   op=75 (print) arg1=0x55ee2e0a58c0 arg2=(nil) parent=0x55ee2e0a59c0
+..   eval=actPrint metrics=(nil) ring=0x55ee2e0a5290
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a58c0
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e0a5840 arg2=(nil) parent=0x55ee2e0a5940
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e0a52f0
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e0a5840
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e0a57c0 arg2=(nil) parent=0x55ee2e0a58c0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a5270
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=5
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e0a5270 "rate:"
+.. .. .. .. Expr dump @ 0x55ee2e0a57c0
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a5840
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a52b0
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a52b0 " [%i] %v"
+
+Rule: expr_18
+Expr dump @ 0x55ee2e0a61c0
+  op=0 (->) arg1=0x55ee2e0a5ec0 arg2=0x55ee2e0a6140 parent=(nil)
+  eval=rule metrics=0x55ee2e0a5a60 ring=0x55ee2e0a6240
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e0a5ec0
+..   op=57 (pcnt_inst) arg1=0x55ee2e0a5e40 arg2=0x55ee2e0a5f40 parent=0x55ee2e0a61c0
+..   eval=cndPcnt_inst metrics=0x55ee2e0a5a60 ring=0x55ee2e0a5bf0
+..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a5e40
+.. ..   op=35 (>=) arg1=0x55ee2e0a5d40 arg2=0x55ee2e0a5dc0 parent=0x55ee2e0a5ec0
+.. ..   eval=cndGte_n_1 metrics=0x55ee2e0a5a60 ring=0x55ee2e0a5bd0
+.. ..   valid=0 cardinality[H,I,T]=[1,3,1] tspan=3
+.. ..   nsmpls=1 nvals=3 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e0a5d40
+.. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a5e40
+.. .. ..   eval=cndFetch_all metrics=0x55ee2e0a5a60 ring=0x55ee2e0a5b50
+.. .. ..   valid=0 cardinality[H,I,T]=[1,3,1] tspan=3
+.. .. ..   nsmpls=1 nvals=3 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e0a5dc0
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a5e40
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e096b40
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. ..   smpls[0].ptr 0x55ee2e096b40 200
+.. .. Expr dump @ 0x55ee2e0a5f40
+.. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=(nil)
+.. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a5b70
+.. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. ..   smpls[0].ptr 0x55ee2e0a5b70 0.66
+.. Expr dump @ 0x55ee2e0a6140
+..   op=75 (print) arg1=0x55ee2e0a60c0 arg2=(nil) parent=0x55ee2e0a61c0
+..   eval=actPrint metrics=(nil) ring=0x55ee2e0a5cc0
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a60c0
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e0a6040 arg2=(nil) parent=0x55ee2e0a6140
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e0a5bb0
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e0a6040
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e0a5fc0 arg2=(nil) parent=0x55ee2e0a60c0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a5b90
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=9
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e0a5b90 "66%_inst:"
+.. .. .. .. Expr dump @ 0x55ee2e0a5fc0
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a6040
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a5ce0
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a5ce0 " [%i] %v"
+
+Rule: expr_19
+Expr dump @ 0x55ee2e0a6920
+  op=0 (->) arg1=0x55ee2e0a66a0 arg2=0x55ee2e0a68a0 parent=(nil)
+  eval=rule metrics=0x55ee2e0a6340 ring=0x55ee2e0a4250
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e0a66a0
+..   op=52 (all_sample) arg1=0x55ee2e0a6600 arg2=(nil) parent=0x55ee2e0a6920
+..   eval=cndAll_time metrics=0x55ee2e0a6340 ring=0x55ee2e0a6450
+..   valid=0 cardinality[H,I,T]=[1,1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a6600
+.. ..   op=30 (==) arg1=0x55ee2e0a64e0 arg2=0x55ee2e0a6580 parent=0x55ee2e0a66a0
+.. ..   eval=cndEq_1_1 metrics=0x55ee2e0a6340 ring=0x55ee2e0a6430
+.. ..   valid=0 cardinality[H,I,T]=[1,1,3] tspan=1
+.. ..   nsmpls=3 nvals=3 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e0a64e0
+.. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a6600
+.. .. ..   eval=cndFetch_1 metrics=0x55ee2e0a6340 ring=0x55ee2e0a50f0
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,3] tspan=1
+.. .. ..   nsmpls=3 nvals=3 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e0a6580
+.. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a6600
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a50b0
+.. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. ..   smpls[0].ptr 0x55ee2e0a50b0 10
+.. Expr dump @ 0x55ee2e0a68a0
+..   op=75 (print) arg1=0x55ee2e0a6820 arg2=(nil) parent=0x55ee2e0a6920
+..   eval=actPrint metrics=(nil) ring=0x55ee2e0a4230
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a6820
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e0a67a0 arg2=(nil) parent=0x55ee2e0a68a0
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e0a6410
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e0a67a0
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e0a6720 arg2=(nil) parent=0x55ee2e0a6820
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a63f0
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=12
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e0a63f0 "all_sample: "
+.. .. .. .. Expr dump @ 0x55ee2e0a6720
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a67a0
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a50d0
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a50d0 " [%i] %v"
+
+Rule: expr_20
+Expr dump @ 0x55ee2e0a72e0
+  op=0 (->) arg1=0x55ee2e0a6fe0 arg2=0x55ee2e0a7260 parent=(nil)
+  eval=rule metrics=0x55ee2e0a6a60 ring=0x55ee2e0a6d40
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e0a6fe0
+..   op=58 (pcnt_sample) arg1=0x55ee2e0a6f50 arg2=0x55ee2e0a7060 parent=0x55ee2e0a72e0
+..   eval=cndPcnt_time metrics=0x55ee2e0a6a60 ring=0x55ee2e0a6bf0
+..   valid=0 cardinality[H,I,T]=[1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a6f50
+.. ..   op=54 (some_inst) arg1=0x55ee2e0a6ec0 arg2=(nil) parent=0x55ee2e0a6fe0
+.. ..   eval=cndSome_inst metrics=0x55ee2e0a6a60 ring=0x55ee2e0a6bd0
+.. ..   valid=0 cardinality[H,I,T]=[1,-1,2] tspan=1
+.. ..   nsmpls=2 nvals=2 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e0a6ec0
+.. .. ..   op=35 (>=) arg1=0x55ee2e0a6db0 arg2=0x55ee2e0a6e40 parent=0x55ee2e0a6f50
+.. .. ..   eval=cndGte_n_1 metrics=0x55ee2e0a6a60 ring=0x55ee2e0a6b50
+.. .. ..   valid=0 cardinality[H,I,T]=[1,3,2] tspan=3
+.. .. ..   nsmpls=2 nvals=6 sem=TRUTH units=
+.. .. .. .. Expr dump @ 0x55ee2e0a6db0
+.. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a6ec0
+.. .. .. ..   eval=cndFetch_n metrics=0x55ee2e0a6a60 ring=0x55ee2e0a3c50
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,3,2] tspan=3
+.. .. .. ..   nsmpls=2 nvals=6 sem=INSTANT units=
+.. .. .. .. Expr dump @ 0x55ee2e0a6e40
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a6ec0
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a69c0
+.. .. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a69c0 500
+.. .. Expr dump @ 0x55ee2e0a7060
+.. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=(nil)
+.. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a6b70
+.. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. ..   smpls[0].ptr 0x55ee2e0a6b70 0.6
+.. Expr dump @ 0x55ee2e0a7260
+..   op=75 (print) arg1=0x55ee2e0a71e0 arg2=(nil) parent=0x55ee2e0a72e0
+..   eval=actPrint metrics=(nil) ring=0x55ee2e0a6d60
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a71e0
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e0a7160 arg2=(nil) parent=0x55ee2e0a7260
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e0a6bb0
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e0a7160
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e0a70e0 arg2=(nil) parent=0x55ee2e0a71e0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a6b90
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=12
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e0a6b90 "60%_sample: "
+.. .. .. .. Expr dump @ 0x55ee2e0a70e0
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a7160
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a6b10
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a6b10 " [%i] %v"
+
+Rule: expr_21
+Expr dump @ 0x55ee2e0a78d0
+  op=0 (->) arg1=0x55ee2e0a7650 arg2=0x55ee2e0a7850 parent=(nil)
+  eval=rule metrics=0x55ee2e0a7410 ring=0x55ee2e0a5110
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e0a7650
+..   op=30 (==) arg1=0x55ee2e0a7550 arg2=0x55ee2e0a75d0 parent=0x55ee2e0a78d0
+..   eval=cndEq_1_1 metrics=0x55ee2e0a7410 ring=0x55ee2e0a62c0
+..   valid=0 cardinality[H,I,T]=[1,1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a7550
+.. ..   op=21 (min_sample) arg1=0x55ee2e0a74c0 arg2=(nil) parent=0x55ee2e0a7650
+.. ..   eval=cndMin_time metrics=0x55ee2e0a7410 ring=0x55ee2e0a6d00
+.. ..   valid=0 cardinality[H,I,T]=[1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e0a74c0
+.. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a7550
+.. .. ..   eval=cndFetch_1 metrics=0x55ee2e0a7410 ring=0x55ee2e0a6cc0
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,2] tspan=1
+.. .. ..   nsmpls=2 nvals=2 sem=INSTANT units=
+.. .. Expr dump @ 0x55ee2e0a75d0
+.. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a7650
+.. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a62a0
+.. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. ..   smpls[0].ptr 0x55ee2e0a62a0 100
+.. Expr dump @ 0x55ee2e0a7850
+..   op=75 (print) arg1=0x55ee2e0a77d0 arg2=(nil) parent=0x55ee2e0a78d0
+..   eval=actPrint metrics=(nil) ring=0x55ee2e0a6ce0
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a77d0
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e0a7750 arg2=(nil) parent=0x55ee2e0a7850
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e0a6ca0
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e0a7750
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e0a76d0 arg2=(nil) parent=0x55ee2e0a77d0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a6c60
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=12
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e0a6c60 "min_sample: "
+.. .. .. .. Expr dump @ 0x55ee2e0a76d0
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a7750
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a6c80
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a6c80 " [%i] %v"
+
+Rule: expr_22
+Expr dump @ 0x55ee2e0a7ed0
+  op=0 (->) arg1=0x55ee2e0a7c10 arg2=0x55ee2e0a7e30 parent=(nil)
+  eval=rule metrics=0x55ee2e0a7950 ring=0x55ee2e0a7f50
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e0a7c10
+..   op=30 (==) arg1=0x55ee2e0a7b10 arg2=0x55ee2e0a7b90 parent=0x55ee2e0a7ed0
+..   eval=cndEq_1_1 metrics=0x55ee2e0a7950 ring=0x55ee2e0a7a20
+..   valid=0 cardinality[H,I,T]=[1,1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a7b10
+.. ..   op=18 (max_sample) arg1=0x55ee2e0a7a80 arg2=(nil) parent=0x55ee2e0a7c10
+.. ..   eval=cndMax_time metrics=0x55ee2e0a7950 ring=0x55ee2e0a7a40
+.. ..   valid=0 cardinality[H,I,T]=[1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e0a7a80
+.. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a7b10
+.. .. ..   eval=cndFetch_1 metrics=0x55ee2e0a7950 ring=0x55ee2e0a6490
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,2] tspan=1
+.. .. ..   nsmpls=2 nvals=2 sem=INSTANT units=
+.. .. Expr dump @ 0x55ee2e0a7b90
+.. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a7c10
+.. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a7a60
+.. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. ..   smpls[0].ptr 0x55ee2e0a7a60 100
+.. Expr dump @ 0x55ee2e0a7e30
+..   op=75 (print) arg1=0x55ee2e0a7db0 arg2=(nil) parent=0x55ee2e0a7ed0
+..   eval=actPrint metrics=(nil) ring=0x55ee2e0a7eb0
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a7db0
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e0a7d30 arg2=(nil) parent=0x55ee2e0a7e30
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e0a7a00
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e0a7d30
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e0a7c90 arg2=(nil) parent=0x55ee2e0a7db0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a6470
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=12
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e0a6470 "max_sample: "
+.. .. .. .. Expr dump @ 0x55ee2e0a7c90
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a7d30
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a7d10
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a7d10 " [%i] %v"
+
+Rule: expr_23
+Expr dump @ 0x55ee2e0a8760
+  op=0 (->) arg1=0x55ee2e0a84e0 arg2=0x55ee2e0a86e0 parent=(nil)
+  eval=rule metrics=0x55ee2e0a8050 ring=0x55ee2e0a73c0
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e0a84e0
+..   op=30 (==) arg1=0x55ee2e0a83e0 arg2=0x55ee2e0a8460 parent=0x55ee2e0a8760
+..   eval=cndEq_1_1 metrics=0x55ee2e0a8050 ring=0x55ee2e0a8180
+..   valid=0 cardinality[H,I,T]=[1,1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a83e0
+.. ..   op=12 (sum_sample) arg1=0x55ee2e0a8330 arg2=(nil) parent=0x55ee2e0a84e0
+.. ..   eval=cndSum_time metrics=0x55ee2e0a8050 ring=0x55ee2e0a7360
+.. ..   valid=0 cardinality[H,I,T]=[1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e0a8330
+.. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a83e0
+.. .. ..   eval=cndFetch_n metrics=0x55ee2e0a8050 ring=0x55ee2e0a64b0
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,4] tspan=1
+.. .. ..   nsmpls=4 nvals=4 sem=INSTANT units=
+.. .. Expr dump @ 0x55ee2e0a8460
+.. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a84e0
+.. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a8100
+.. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. ..   smpls[0].ptr 0x55ee2e0a8100 400
+.. Expr dump @ 0x55ee2e0a86e0
+..   op=75 (print) arg1=0x55ee2e0a8660 arg2=(nil) parent=0x55ee2e0a8760
+..   eval=actPrint metrics=(nil) ring=0x55ee2e0a8140
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a8660
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e0a85e0 arg2=(nil) parent=0x55ee2e0a86e0
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e0a81a0
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e0a85e0
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e0a8560 arg2=(nil) parent=0x55ee2e0a8660
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a8120
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=12
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e0a8120 "sum_sample: "
+.. .. .. .. Expr dump @ 0x55ee2e0a8560
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a85e0
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a8160
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a8160 " [%i] %v"
+
+Rule: expr_24
+Expr dump @ 0x55ee2e0a8e30
+  op=0 (->) arg1=0x55ee2e0a8bb0 arg2=0x55ee2e0a8db0 parent=(nil)
+  eval=rule metrics=0x55ee2e0a87e0 ring=0x55ee2e0a89b0
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e0a8bb0
+..   op=30 (==) arg1=0x55ee2e0a8ab0 arg2=0x55ee2e0a8b30 parent=0x55ee2e0a8e30
+..   eval=cndEq_1_1 metrics=0x55ee2e0a87e0 ring=0x55ee2e0a88b0
+..   valid=0 cardinality[H,I,T]=[1,1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a8ab0
+.. ..   op=15 (avg_sample) arg1=0x55ee2e0a8a20 arg2=(nil) parent=0x55ee2e0a8bb0
+.. ..   eval=cndAvg_time metrics=0x55ee2e0a87e0 ring=0x55ee2e0a82f0
+.. ..   valid=0 cardinality[H,I,T]=[1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e0a8a20
+.. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a8ab0
+.. .. ..   eval=cndFetch_n metrics=0x55ee2e0a87e0 ring=0x55ee2e0a8250
+.. .. ..   valid=0 cardinality[H,I,T]=[1,1,2] tspan=1
+.. .. ..   nsmpls=2 nvals=2 sem=INSTANT units=
+.. .. Expr dump @ 0x55ee2e0a8b30
+.. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a8bb0
+.. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a8890
+.. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. ..   smpls[0].ptr 0x55ee2e0a8890 200
+.. Expr dump @ 0x55ee2e0a8db0
+..   op=75 (print) arg1=0x55ee2e0a8d30 arg2=(nil) parent=0x55ee2e0a8e30
+..   eval=actPrint metrics=(nil) ring=0x55ee2e0a89d0
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a8d30
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e0a8cb0 arg2=(nil) parent=0x55ee2e0a8db0
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e0a8230
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e0a8cb0
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e0a8c30 arg2=(nil) parent=0x55ee2e0a8d30
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a8210
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=12
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e0a8210 "avg_sample: "
+.. .. .. .. Expr dump @ 0x55ee2e0a8c30
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a8cb0
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a8290
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a8290 " [%i] %v"
+
+Rule: expr_25
+Expr dump @ 0x55ee2e0a9750
+  op=0 (->) arg1=0x55ee2e0a94d0 arg2=0x55ee2e0a96d0 parent=(nil)
+  eval=rule metrics=0x55ee2e0a7f90 ring=0x55ee2e0a90e0
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e0a94d0
+..   op=30 (==) arg1=0x55ee2e0a93d0 arg2=0x55ee2e0a9450 parent=0x55ee2e0a9750
+..   eval=cndEq_1_1 metrics=0x55ee2e0a7f90 ring=0x55ee2e0a9000
+..   valid=0 cardinality[H,I,T]=[1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a93d0
+.. ..   op=61 (count_sample) arg1=0x55ee2e0a9330 arg2=(nil) parent=0x55ee2e0a94d0
+.. ..   eval=cndCount_time metrics=0x55ee2e0a7f90 ring=0x55ee2e0a9040
+.. ..   valid=0 cardinality[H,I,T]=[1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=INSTANT units=count
+.. .. .. Expr dump @ 0x55ee2e0a9330
+.. .. ..   op=54 (some_inst) arg1=0x55ee2e0a9290 arg2=(nil) parent=0x55ee2e0a93d0
+.. .. ..   eval=cndSome_inst metrics=0x55ee2e0a7f90 ring=0x55ee2e0a9020
+.. .. ..   valid=0 cardinality[H,I,T]=[1,-1,3] tspan=1
+.. .. ..   nsmpls=3 nvals=3 sem=TRUTH units=
+.. .. .. .. Expr dump @ 0x55ee2e0a9290
+.. .. .. ..   op=30 (==) arg1=0x55ee2e0a9170 arg2=0x55ee2e0a9210 parent=0x55ee2e0a9330
+.. .. .. ..   eval=cndEq_n_1 metrics=0x55ee2e0a7f90 ring=0x55ee2e0a8fa0
+.. .. .. ..   valid=0 cardinality[H,I,T]=[1,3,3] tspan=3
+.. .. .. ..   nsmpls=3 nvals=9 sem=TRUTH units=
+.. .. .. .. .. Expr dump @ 0x55ee2e0a9170
+.. .. .. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a9290
+.. .. .. .. ..   eval=cndFetch_n metrics=0x55ee2e0a7f90 ring=0x55ee2e0a81c0
+.. .. .. .. ..   valid=0 cardinality[H,I,T]=[1,3,3] tspan=3
+.. .. .. .. ..   nsmpls=3 nvals=9 sem=INSTANT units=
+.. .. .. .. .. Expr dump @ 0x55ee2e0a9210
+.. .. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a9290
+.. .. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a8970
+.. .. .. .. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. .. .. .. ..   smpls[0].ptr 0x55ee2e0a8970 300
+.. .. Expr dump @ 0x55ee2e0a9450
+.. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a94d0
+.. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a8fc0
+.. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. ..   smpls[0].ptr 0x55ee2e0a8fc0 3
+.. Expr dump @ 0x55ee2e0a96d0
+..   op=75 (print) arg1=0x55ee2e0a9650 arg2=(nil) parent=0x55ee2e0a9750
+..   eval=actPrint metrics=(nil) ring=0x55ee2e0a9100
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a9650
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e0a95d0 arg2=(nil) parent=0x55ee2e0a96d0
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e0a8fe0
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e0a95d0
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e0a9550 arg2=(nil) parent=0x55ee2e0a9650
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a88d0
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=14
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e0a88d0 "count_sample: "
+.. .. .. .. Expr dump @ 0x55ee2e0a9550
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a95d0
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a9120
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a9120 " [%i] %v"
+
+Rule: expr_26
+Expr dump @ 0x55ee2e0a9ee0
+  op=0 (->) arg1=0x55ee2e0a9c60 arg2=0x55ee2e0a9e60 parent=(nil)
+  eval=rule metrics=0x55ee2e0a97d0 ring=0x55ee2e0a9970
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e0a9c60
+..   op=34 (>) arg1=0x55ee2e0a9b60 arg2=0x55ee2e0a9be0 parent=0x55ee2e0a9ee0
+..   eval=cndGt_1_1 metrics=0x55ee2e0a97d0 ring=0x55ee2e0a98e0
+..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a9b60
+.. ..   op=20 (min_inst) arg1=0x55ee2e0a9a90 arg2=(nil) parent=0x55ee2e0a9c60
+.. ..   eval=cndMin_inst metrics=0x55ee2e0a97d0 ring=0x55ee2e0a90a0
+.. ..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e0a9a90
+.. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a9b60
+.. .. ..   eval=cndFetch_all metrics=0x55ee2e0a97d0 ring=0x55ee2e0a9b10
+.. .. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. .. ..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. Expr dump @ 0x55ee2e0a9be0
+.. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a9c60
+.. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a9060
+.. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. ..   smpls[0].ptr 0x55ee2e0a9060 0
+.. Expr dump @ 0x55ee2e0a9e60
+..   op=75 (print) arg1=0x55ee2e0a9de0 arg2=(nil) parent=0x55ee2e0a9ee0
+..   eval=actPrint metrics=(nil) ring=0x55ee2e0a98a0
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0a9de0
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e0a9d60 arg2=(nil) parent=0x55ee2e0a9e60
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e0a9900
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e0a9d60
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e0a9ce0 arg2=(nil) parent=0x55ee2e0a9de0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a9880
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=9
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e0a9880 "min_inst:"
+.. .. .. .. Expr dump @ 0x55ee2e0a9ce0
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0a9d60
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a98c0
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=12
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0a98c0 " @%h [%i] %v"
+
+Rule: expr_27
+Expr dump @ 0x55ee2e0aa6f0
+  op=0 (->) arg1=0x55ee2e0aa470 arg2=0x55ee2e0aa670 parent=(nil)
+  eval=rule metrics=0x55ee2e0a8eb0 ring=0x55ee2e0aa770
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e0aa470
+..   op=34 (>) arg1=0x55ee2e0aa370 arg2=0x55ee2e0aa3f0 parent=0x55ee2e0aa6f0
+..   eval=cndGt_1_1 metrics=0x55ee2e0a8eb0 ring=0x55ee2e0aa0e0
+..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0aa370
+.. ..   op=17 (max_inst) arg1=0x55ee2e0aa2a0 arg2=(nil) parent=0x55ee2e0aa470
+.. ..   eval=cndMax_inst metrics=0x55ee2e0a8eb0 ring=0x55ee2e0aa040
+.. ..   valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. .. Expr dump @ 0x55ee2e0aa2a0
+.. .. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0aa370
+.. .. ..   eval=cndFetch_all metrics=0x55ee2e0a8eb0 ring=0x55ee2e0aa320
+.. .. ..   valid=0 cardinality[H,I,T]=[1,9,1] tspan=9
+.. .. ..   nsmpls=1 nvals=9 sem=INSTANT units=
+.. .. Expr dump @ 0x55ee2e0aa3f0
+.. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0aa470
+.. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0aa0c0
+.. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. ..   smpls[0].ptr 0x55ee2e0aa0c0 0
+.. Expr dump @ 0x55ee2e0aa670
+..   op=75 (print) arg1=0x55ee2e0aa5f0 arg2=(nil) parent=0x55ee2e0aa6f0
+..   eval=actPrint metrics=(nil) ring=0x55ee2e0aa150
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0aa5f0
+.. ..   op=76 (<action arg node>) arg1=0x55ee2e0aa570 arg2=(nil) parent=0x55ee2e0aa670
+.. ..   eval=actArg metrics=(nil) ring=0x55ee2e0aa060
+.. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. Expr dump @ 0x55ee2e0aa570
+.. .. ..   op=80 (<nop node>) arg1=0x55ee2e0aa4f0 arg2=(nil) parent=0x55ee2e0aa5f0
+.. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0aa0a0
+.. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=9
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. ..   smpls[0].ptr 0x55ee2e0aa0a0 "max_inst:"
+.. .. .. .. Expr dump @ 0x55ee2e0aa4f0
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0aa570
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0aa080
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=12
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0aa080 " @%h [%i] %v"
+
+Rule: expr_28
+Expr dump @ 0x55ee2e0aae80
+  op=0 (->) arg1=0x55ee2e0aaa60 arg2=0x55ee2e0aade0 parent=(nil)
+  eval=rule metrics=0x55ee2e0aa7d0 ring=0x55ee2e0aaf00
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e0aaa60
+..   op=30 (==) arg1=0x55ee2e0aa960 arg2=0x55ee2e0aa9e0 parent=0x55ee2e0aae80
+..   eval=cndEq_1_1 metrics=0x55ee2e0aa7d0 ring=0x55ee2e0aa920
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0aa960
+.. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0aaa60
+.. ..   eval=cndFetch_1 metrics=0x55ee2e0aa7d0 ring=0x55ee2e0aa8a0
+.. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Expr dump @ 0x55ee2e0aa9e0
+.. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0aaa60
+.. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0aa7b0
+.. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. ..   smpls[0].ptr 0x55ee2e0aa7b0 1
+.. Expr dump @ 0x55ee2e0aade0
+..   op=71 (|) arg1=0x55ee2e0aabe0 arg2=0x55ee2e0aad60 parent=0x55ee2e0aae80
+..   eval=actOr metrics=(nil) ring=0x55ee2e0aae60
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0aabe0
+.. ..   op=72 (shell) arg1=0x55ee2e0aab60 arg2=(nil) parent=0x55ee2e0aade0
+.. ..   eval=actShell metrics=(nil) ring=0x55ee2e0aa900
+.. ..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e0aab60
+.. .. ..   op=76 (<action arg node>) arg1=0x55ee2e0aaae0 arg2=(nil) parent=0x55ee2e0aabe0
+.. .. ..   eval=actArg metrics=(nil) ring=0x55ee2e0aa940
+.. .. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. .. Expr dump @ 0x55ee2e0aaae0
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0aab60
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0aa8c0
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=5
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0aa8c0 "false"
+.. .. Expr dump @ 0x55ee2e0aad60
+.. ..   op=75 (print) arg1=0x55ee2e0aace0 arg2=(nil) parent=0x55ee2e0aade0
+.. ..   eval=actPrint metrics=(nil) ring=0x55ee2e0a9140
+.. ..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e0aace0
+.. .. ..   op=76 (<action arg node>) arg1=0x55ee2e0aac60 arg2=(nil) parent=0x55ee2e0aad60
+.. .. ..   eval=actArg metrics=(nil) ring=0x55ee2e0aa8e0
+.. .. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. .. Expr dump @ 0x55ee2e0aac60
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0aace0
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0aa880
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=11
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0aa880 "false |: %v"
+
+Rule: expr_29
+Expr dump @ 0x55ee2e0ab650
+  op=0 (->) arg1=0x55ee2e0ab210 arg2=0x55ee2e0ab5b0 parent=(nil)
+  eval=rule metrics=0x55ee2e0a9f80 ring=0x55ee2e0ab6d0
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e0ab210
+..   op=30 (==) arg1=0x55ee2e0ab110 arg2=0x55ee2e0ab190 parent=0x55ee2e0ab650
+..   eval=cndEq_1_1 metrics=0x55ee2e0a9f80 ring=0x55ee2e0ab0d0
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0ab110
+.. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0ab210
+.. ..   eval=cndFetch_1 metrics=0x55ee2e0a9f80 ring=0x55ee2e0ab050
+.. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Expr dump @ 0x55ee2e0ab190
+.. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0ab210
+.. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0a9f60
+.. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. ..   smpls[0].ptr 0x55ee2e0a9f60 10
+.. Expr dump @ 0x55ee2e0ab5b0
+..   op=70 (&) arg1=0x55ee2e0ab390 arg2=0x55ee2e0ab510 parent=0x55ee2e0ab650
+..   eval=actAnd metrics=(nil) ring=0x55ee2e0ab630
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0ab390
+.. ..   op=72 (shell) arg1=0x55ee2e0ab310 arg2=(nil) parent=0x55ee2e0ab5b0
+.. ..   eval=actShell metrics=(nil) ring=0x55ee2e0ab0b0
+.. ..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e0ab310
+.. .. ..   op=76 (<action arg node>) arg1=0x55ee2e0ab290 arg2=(nil) parent=0x55ee2e0ab390
+.. .. ..   eval=actArg metrics=(nil) ring=0x55ee2e0ab0f0
+.. .. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. .. Expr dump @ 0x55ee2e0ab290
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0ab310
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0ab070
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=4
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0ab070 "true"
+.. .. Expr dump @ 0x55ee2e0ab510
+.. ..   op=75 (print) arg1=0x55ee2e0ab490 arg2=(nil) parent=0x55ee2e0ab5b0
+.. ..   eval=actPrint metrics=(nil) ring=0x55ee2e0ab590
+.. ..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e0ab490
+.. .. ..   op=76 (<action arg node>) arg1=0x55ee2e0ab410 arg2=(nil) parent=0x55ee2e0ab510
+.. .. ..   eval=actArg metrics=(nil) ring=0x55ee2e0ab090
+.. .. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. .. Expr dump @ 0x55ee2e0ab410
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0ab490
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0ab030
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=10
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0ab030 "true &: %v"
+
+Rule: expr_30
+Expr dump @ 0x55ee2e0abea0
+  op=0 (->) arg1=0x55ee2e0ab9c0 arg2=0x55ee2e0abe00 parent=(nil)
+  eval=rule metrics=0x55ee2e0ab730 ring=0x55ee2e0abf20
+  valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+.. Expr dump @ 0x55ee2e0ab9c0
+..   op=30 (==) arg1=0x55ee2e0ab8c0 arg2=0x55ee2e0ab940 parent=0x55ee2e0abea0
+..   eval=cndEq_1_1 metrics=0x55ee2e0ab730 ring=0x55ee2e0ab880
+..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0ab8c0
+.. ..   op=1 (<fetch node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0ab9c0
+.. ..   eval=cndFetch_1 metrics=0x55ee2e0ab730 ring=0x55ee2e0ab800
+.. ..   valid=0 cardinality[H,I,T]=[1,1,1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=INSTANT units=
+.. .. Expr dump @ 0x55ee2e0ab940
+.. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0ab9c0
+.. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0ab710
+.. ..   valid=1 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=NUMCONST units=
+.. ..   smpls[0].ptr 0x55ee2e0ab710 100
+.. Expr dump @ 0x55ee2e0abe00
+..   op=71 (|) arg1=0x55ee2e0abbc0 arg2=0x55ee2e0abd60 parent=0x55ee2e0abea0
+..   eval=actOr metrics=(nil) ring=0x55ee2e0abe80
+..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. Expr dump @ 0x55ee2e0abbc0
+.. ..   op=75 (print) arg1=0x55ee2e0abb40 arg2=(nil) parent=0x55ee2e0abe00
+.. ..   eval=actPrint metrics=(nil) ring=0x55ee2e0ab840
+.. ..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e0abb40
+.. .. ..   op=76 (<action arg node>) arg1=0x55ee2e0abac0 arg2=(nil) parent=0x55ee2e0abbc0
+.. .. ..   eval=actArg metrics=(nil) ring=0x55ee2e0ab8a0
+.. .. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. .. Expr dump @ 0x55ee2e0abac0
+.. .. .. ..   op=80 (<nop node>) arg1=0x55ee2e0aba40 arg2=(nil) parent=0x55ee2e0abb40
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0ab820
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=8
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0ab820 "print |:"
+.. .. .. .. .. Expr dump @ 0x55ee2e0aba40
+.. .. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0abac0
+.. .. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0ab860
+.. .. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=3
+.. .. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. .. ..   smpls[0].ptr 0x55ee2e0ab860 " %v"
+.. .. Expr dump @ 0x55ee2e0abd60
+.. ..   op=75 (print) arg1=0x55ee2e0abce0 arg2=(nil) parent=0x55ee2e0abe00
+.. ..   eval=actPrint metrics=(nil) ring=0x55ee2e0abde0
+.. ..   valid=0 cardinality[H,I,T]=[-1,-1,-1] tspan=1
+.. ..   nsmpls=1 nvals=1 sem=TRUTH units=
+.. .. .. Expr dump @ 0x55ee2e0abce0
+.. .. ..   op=76 (<action arg node>) arg1=0x55ee2e0abc40 arg2=(nil) parent=0x55ee2e0abd60
+.. .. ..   eval=actArg metrics=(nil) ring=0x55ee2e0ab7e0
+.. .. ..   valid=0 cardinality[H,I,T]=[-1,1,-1] tspan=1
+.. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. .. Expr dump @ 0x55ee2e0abc40
+.. .. .. ..   op=80 (<nop node>) arg1=(nil) arg2=(nil) parent=0x55ee2e0abce0
+.. .. .. ..   eval=(nil)() metrics=(nil) ring=0x55ee2e0abcc0
+.. .. .. ..   valid=1 cardinality[H,I,T]=[0,0,0] tspan=22
+.. .. .. ..   nsmpls=1 nvals=1 sem=CHAR units=
+.. .. .. ..   smpls[0].ptr 0x55ee2e0abcc0 "bozo don't execute me!"
+[Thu Aug 20 17:36:39] pmie(62456) Info: evaluator exiting
+
+=== tail SYSLOG (/var/log/messages) ===
+0 lines ... expect 200

@@ -1,0 +1,40 @@
+pmdabcc config:
+# Installed by PCP QA test 1150 on Thu Aug 20 18:55:16 UTC 2020
+[pmda]
+modules = usdt_hits
+prefix = bcc.
+[usdt_hits]
+module = usdt_hits
+cluster = 101
+process = pmcd
+usdts = /usr/lib/pcp/bin/pmcd:PMCD,/usr/lib/pcp/bin/pmcd:PMCD_PDU
+Log for pmdabcc on 316bddff7759 started Thu Aug 20 18:55:18 2020
+
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: Enabled modules:
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: ['usdt_hits']
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: Configuring modules:
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: usdt_hits
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: Modules configured.
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: Initializing modules:
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: usdt_hits
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: usdt_hits: Tracing PID 11953: /usr/lib/pcp/bin/pmcd -T 3.
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: usdt_hits: Configured USDTs: ['/usr/lib/pcp/bin/pmcd:PMCD', '/usr/lib/pcp/bin/pmcd:PMCD_PDU']
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: usdt_hits: Found 2 USDTs: ['/usr/lib/pcp/bin/pmcd:PMCD', '/usr/lib/pcp/bin/pmcd:PMCD_PDU'].
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: usdt_hits: Initialized.
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: Modules initialized.
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: Registering metrics:
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: usdt_hits
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: Metrics registered.
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: Registering helpers:
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: usdt_hits
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: Helpers registered.
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: Compiling modules:
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: usdt_hits
+[Thu Aug 20 18:55:18] pmdabcc(23083) Info: usdt_hits: Compiling 2 probes: ['/usr/lib/pcp/bin/pmcd:PMCD', '/usr/lib/pcp/bin/pmcd:PMCD_PDU']
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 18:55:18] pmdabcc(23083) Error: usdt_hits: Failed to compile BPF text
+[Thu Aug 20 18:55:18] pmdabcc(23083) Error: usdt_hits: Module NOT active!
+[Thu Aug 20 18:55:18] pmdabcc(23083) Error: Failed to compile module usdt_hits, aborting.
+
+Log finished Thu Aug 20 18:55:18 2020

@@ -1,0 +1,83 @@
+{
+  "uid" : "b21ea2c40cf6167b",
+  "name" : "QA 1720",
+  "fullName" : "QA #1720 on fedora_rawhide-container",
+  "historyId" : "1720@fedora_rawhide-container",
+  "time" : {
+    "start" : 1597953586000,
+    "stop" : 1597953652000,
+    "duration" : 66000
+  },
+  "description" : "PCP QA Test No. 1720\n\nExercises pmdastatsd - agent's memory handling with Valgrind\n\n\n\nCopyright (c) 2020 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform fedora_rawhide reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 1720</p>\n<p>Exercises pmdastatsd - agent's memory handling with Valgrind</p>\n<p>Copyright (c) 2020 Red Hat.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform fedora_rawhide reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 1720.out.bad)\n1a2,65\n> __pmGetPDU(7): Timeout waiting for a response from PMCD\n> Warning: no version exchange with PMDA ./pmdastatsd after 3 secs\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> __pmGetPDU(7): Timeout waiting for a response from PMCD\n> Warning: no version exchange with PMDA ./pmdastatsd after 3 secs\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> __pmGetPDU(7): Timeout waiting for a response from PMCD\n> Warning: no version exchange with PMDA ./pmdastatsd after 3 secs\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> __pmGetPDU(7): Timeout waiting for a response from PMCD\n> Warning: no version exchange with PMDA ./pmdastatsd after 3 secs\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h d6bbf0991c84 -f sample.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f sampledso.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 1720\n\nExercises pmdastatsd - agent's memory handling with Valgrind\n\n\n\nCopyright (c) 2020 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform fedora_rawhide reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 1720.out.bad)\n1a2,65\n> __pmGetPDU(7): Timeout waiting for a response from PMCD\n> Warning: no version exchange with PMDA ./pmdastatsd after 3 secs\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> __pmGetPDU(7): Timeout waiting for a response from PMCD\n> Warning: no version exchange with PMDA ./pmdastatsd after 3 secs\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> __pmGetPDU(7): Timeout waiting for a response from PMCD\n> Warning: no version exchange with PMDA ./pmdastatsd after 3 secs\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> __pmGetPDU(7): Timeout waiting for a response from PMCD\n> Warning: no version exchange with PMDA ./pmdastatsd after 3 secs\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\n> Error: Unknown metric name\n> Type 'help' for a list of commands.\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h d6bbf0991c84 -f sample.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f sampledso.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "baf8dcf2fec60afe",
+      "name" : "1720.out.bad",
+      "source" : "baf8dcf2fec60afe.txt",
+      "type" : "text/plain",
+      "size" : 3671
+    }, {
+      "uid" : "cbc5baacf80974a9",
+      "name" : "1720.full",
+      "source" : "cbc5baacf80974a9.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.statsd"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1720",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1720.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "b21ea2c40cf6167b.json",
+  "parameterValues" : [ ]
+}

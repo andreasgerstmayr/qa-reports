@@ -1,0 +1,61 @@
+{
+  "uid" : "fef86b95b4a6292",
+  "name" : "QA 1010",
+  "fullName" : "QA #1010 on debian10-container",
+  "historyId" : "1010@debian10-container",
+  "time" : {
+    "start" : 1597948746000,
+    "stop" : 1597948761000,
+    "duration" : 15000
+  },
+  "description" : "PCP QA Test No. 1010\n\nTest pmdumptext output formats\n\n\n\nseq=`basename $0`\n\necho \"QA output created by $seq\"\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 1010</p>\n<p>Test pmdumptext output formats</p>\n<p>seq=<code>basename $0</code></p>\n<p>echo &quot;QA output created by $seq&quot;</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "$PCPQA_CLOSE_X_SERVER not set in ./common.config",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian10-container"
+  }, {
+    "name" : "host",
+    "value" : "debian10-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmdumptext"
+  }, {
+    "name" : "epic",
+    "value" : "pmlogger"
+  }, {
+    "name" : "epic",
+    "value" : "libpcp_qmc"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1010",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1010.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fef86b95b4a6292.json",
+  "parameterValues" : [ ]
+}

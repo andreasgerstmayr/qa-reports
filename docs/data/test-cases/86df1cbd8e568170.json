@@ -1,0 +1,61 @@
+{
+  "uid" : "86df1cbd8e568170",
+  "name" : "QA 864",
+  "fullName" : "QA #864 on fedora_rawhide-container",
+  "historyId" : "864@fedora_rawhide-container",
+  "time" : {
+    "start" : 1597948587000,
+    "stop" : 1597948587000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 864\n\nExercise pcp-collectl(1) -R/--runtime option.\n\n\n\nCopyright (c) 2015 Red Hat.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 864</p>\n<p>Exercise pcp-collectl(1) -R/--runtime option.</p>\n<p>Copyright (c) 2015 Red Hat.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "pcp-collectl not installed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "epic",
+    "value" : "pcp"
+  }, {
+    "name" : "epic",
+    "value" : "python"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "collectl"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/864",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/864.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "86df1cbd8e568170.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,86 @@
+{
+  "uid" : "7d3e7aeef082e3b5",
+  "name" : "QA 444",
+  "fullName" : "QA #444 on debian10-container",
+  "historyId" : "444@debian10-container",
+  "time" : {
+    "start" : 1597945390000,
+    "stop" : 1597945391000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 444\n\npmid and desc caching in pmevent\n\n\n\nCopyright (c) 2011 Ken McDonell.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian10 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 444</p>\n<p>pmid and desc caching in pmevent</p>\n<p>Copyright (c) 2011 Ken McDonell.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform debian10 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 444.out.bad)\n4,5c4,5\n< pmRegisterDerived: register metric[0] event.flags = anon(PM_TYPE_U32)\n< pmRegisterDerived: register metric[1] event.missed = anon(PM_TYPE_U32)\n---\n> pmRegisterDerived: global metric[0] event.flags = anon(PM_TYPE_U32)\n> pmRegisterDerived: global metric[1] event.missed = anon(PM_TYPE_U32)\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 316bddff7759 -f sample.milliseconds\nPMDA probe: pminfo -h 316bddff7759 -f sampledso.milliseconds\nPMDA probe: pminfo -h 316bddff7759 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 444\n\npmid and desc caching in pmevent\n\n\n\nCopyright (c) 2011 Ken McDonell.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian10 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 444.out.bad)\n4,5c4,5\n< pmRegisterDerived: register metric[0] event.flags = anon(PM_TYPE_U32)\n< pmRegisterDerived: register metric[1] event.missed = anon(PM_TYPE_U32)\n---\n> pmRegisterDerived: global metric[0] event.flags = anon(PM_TYPE_U32)\n> pmRegisterDerived: global metric[1] event.missed = anon(PM_TYPE_U32)\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 316bddff7759 -f sample.milliseconds\nPMDA probe: pminfo -h 316bddff7759 -f sampledso.milliseconds\nPMDA probe: pminfo -h 316bddff7759 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "55a2c77a7cfbf08a",
+      "name" : "444.out.bad",
+      "source" : "55a2c77a7cfbf08a.txt",
+      "type" : "text/plain",
+      "size" : 18717
+    }, {
+      "uid" : "c7c959ad0d33db92",
+      "name" : "444.full",
+      "source" : "c7c959ad0d33db92.txt",
+      "type" : "text/plain",
+      "size" : 38117
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian10-container"
+  }, {
+    "name" : "host",
+    "value" : "debian10-container"
+  }, {
+    "name" : "epic",
+    "value" : "event"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "pmstore"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/444",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/444.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "7d3e7aeef082e3b5.json",
+  "parameterValues" : [ ]
+}

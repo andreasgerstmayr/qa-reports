@@ -1,0 +1,212 @@
+=== I am PID 58337
+=== /tmp files
+-rw-rw-r-- 1 pcpqa pcpqa    0 Aug 20 16:40 /tmp/42501.__tmp
+-rw-rw-r-- 1 pcpqa pcpqa   25 Aug 20 17:05 /tmp/42501.out
+-rw-rw-r-- 1 pcpqa pcpqa 1261 Aug 20 17:05 /tmp/42501.time
+-rw-rw-r-- 1 pcpqa pcpqa    0 Aug 20 17:05 /tmp/42501.tmp
+=== config files
+-r--r--r-- 1 root root 1016 Aug 20 17:05 /etc/pcp/pmcd/pmcd.conf
+-rw-r--r-- 1 root root  913 Aug 20 16:35 /etc/pcp/pmcd/pmcd.options
+=== pmcd log
+Log for pmcd on 97d404ba7f88 started Thu Aug 20 17:05:41 2020
+
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+linux         60                 2 dso i:7  lib=/var/lib/pcp/pmdas/linux/pmda_linux.so entry=linux_init [0x7f3718946ff0]
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7f3718733fd0]
+
+Host access list empty: host-based access control turned off
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+
+pmcd: PID = 58711, PDU version = 2
+pmcd request port(s):
+  sts fd   port  family address
+  === ==== ===== ====== =======
+  ok     6       unix   /run/pcp/pmcd.socket
+  ok     0 44321 inet   INADDR_ANY
+  ok     3 44321 ipv6   INADDR_ANY
+[Thu Aug 20 17:05:42] pmcd(58711) Info: 
+
+pmcd RESTARTED at Thu Aug 20 17:05:42 2020
+
+
+Current PMCD clients ...
+     fd  client connection from                    ipc ver  operations denied
+     ==  ========================================  =======  =================
+      7  /run/pcp/pmcd.socket                            2
+
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+linux         60                 2 dso i:7  lib=/var/lib/pcp/pmdas/linux/pmda_linux.so entry=linux_init [0x7f3718946ff0]
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7f3718733fd0]
+simple       253 59167  11  12   2 bin pipe cmd=/var/lib/pcp/pmdas/simple/pmdasimple -d 253
+
+Host access list empty: host-based access control turned off
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+[Thu Aug 20 17:05:42] pmcd(58711) Info: PMNS file "DEFAULT" is unchanged
+[Thu Aug 20 17:05:46] pmcd(58711) Info: 
+
+pmcd RESTARTED at Thu Aug 20 17:05:46 2020
+
+
+Current PMCD clients ...
+     fd  client connection from                    ipc ver  operations denied
+     ==  ========================================  =======  =================
+      7  /run/pcp/pmcd.socket                            2
+
+[Thu Aug 20 17:05:46] pmcd(58711) Info: CleanupAgent ...
+Cleanup "simple" agent (dom 253): unconfigured, exit(0)
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+linux         60                 2 dso i:7  lib=/var/lib/pcp/pmdas/linux/pmda_linux.so entry=linux_init [0x7f3718946ff0]
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7f3718733fd0]
+
+Host access list empty: host-based access control turned off
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+[Thu Aug 20 17:05:47] pmcd(58711) Info: PMNS file "DEFAULT" is unchanged
+[Thu Aug 20 17:05:51] pmcd(58711) Info: 
+
+pmcd RESTARTED at Thu Aug 20 17:05:51 2020
+
+
+Current PMCD clients ...
+     fd  client connection from                    ipc ver  operations denied
+     ==  ========================================  =======  =================
+      7  /run/pcp/pmcd.socket                            2
+
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+linux         60                 2 dso i:7  lib=/var/lib/pcp/pmdas/linux/pmda_linux.so entry=linux_init [0x7f3718946ff0]
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7f3718733fd0]
+simple       253                 2 dso i:7  lib=/var/lib/pcp/pmdas/simple/pmda_simple.so entry=simple_init [0x7f3718320a40]
+
+Host access list empty: host-based access control turned off
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+[Thu Aug 20 17:05:51] pmcd(58711) Info: PMNS file "DEFAULT" is unchanged
+[Thu Aug 20 17:05:55] pmcd(58711) Info: 
+
+pmcd RESTARTED at Thu Aug 20 17:05:55 2020
+
+
+Current PMCD clients ...
+     fd  client connection from                    ipc ver  operations denied
+     ==  ========================================  =======  =================
+      7  /run/pcp/pmcd.socket                            2
+
+[Thu Aug 20 17:05:55] pmcd(58711) Info: CleanupAgent ...
+Cleanup "simple" agent (dom 253): unconfigured, exit(0)
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+linux         60                 2 dso i:7  lib=/var/lib/pcp/pmdas/linux/pmda_linux.so entry=linux_init [0x7f3718946ff0]
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7f3718733fd0]
+
+Host access list empty: host-based access control turned off
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+[Thu Aug 20 17:05:55] pmcd(58711) Info: PMNS file "DEFAULT" is unchanged
+[Thu Aug 20 17:05:59] pmcd(58711) Info: 
+
+pmcd RESTARTED at Thu Aug 20 17:05:59 2020
+
+
+Current PMCD clients ...
+     fd  client connection from                    ipc ver  operations denied
+     ==  ========================================  =======  =================
+      7  /run/pcp/pmcd.socket                            2
+
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+linux         60                 2 dso i:7  lib=/var/lib/pcp/pmdas/linux/pmda_linux.so entry=linux_init [0x7f3718946ff0]
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7f3718733fd0]
+broken       249 59378  11  12   2 bin pipe cmd=/var/lib/pcp/testsuite/pmdas/broken/broken_pmda_2_0 -d 249
+
+Host access list empty: host-based access control turned off
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+[Thu Aug 20 17:05:59] pmcd(58711) Info: PMNS file "DEFAULT" is unchanged
+[Thu Aug 20 17:06:03] pmcd(58711) Info: 
+
+pmcd RESTARTED at Thu Aug 20 17:06:03 2020
+
+
+Current PMCD clients ...
+     fd  client connection from                    ipc ver  operations denied
+     ==  ========================================  =======  =================
+      7  /run/pcp/pmcd.socket                            2
+
+[Thu Aug 20 17:06:03] pmcd(58711) Info: CleanupAgent ...
+Cleanup "broken" agent (dom 249): unconfigured, exit(0)
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+linux         60                 2 dso i:7  lib=/var/lib/pcp/pmdas/linux/pmda_linux.so entry=linux_init [0x7f3718946ff0]
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7f3718733fd0]
+
+Host access list empty: host-based access control turned off
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+[Thu Aug 20 17:06:03] pmcd(58711) Info: PMNS file "DEFAULT" is unchanged
+[Thu Aug 20 17:06:07] pmcd(58711) Info: 
+
+pmcd RESTARTED at Thu Aug 20 17:06:07 2020
+
+
+Current PMCD clients ...
+     fd  client connection from                    ipc ver  operations denied
+     ==  ========================================  =======  =================
+      7  /run/pcp/pmcd.socket                            2
+
+Configuration file '/etc/pcp/pmcd/pmcd.conf' unchanged
+Restarting any deceased agents:
+    (no agents required restarting)
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+linux         60                 2 dso i:7  lib=/var/lib/pcp/pmdas/linux/pmda_linux.so entry=linux_init [0x7f3718946ff0]
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7f3718733fd0]
+
+Host access list empty: host-based access control turned off
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+[Thu Aug 20 17:06:07] pmcd(58711) Info: Reloading PMNS "DEFAULT"
+[Thu Aug 20 17:06:08] pmcd(58711) Info: pmcd caught SIGTERM from pid=59643 uid=0
+[Thu Aug 20 17:06:08] pmcd(58711) Info: pmcd Shutdown
+
+Log finished Thu Aug 20 17:06:08 2020
+=== /tmp files
+-rw-rw-r-- 1 pcpqa pcpqa     8 Aug 20 17:06 /tmp/255-58337._wait_for_pmcd.err
+-rw-rw-r-- 1 pcpqa pcpqa    26 Aug 20 17:06 /tmp/255-58337._wait_for_pmcd.out
+-rw-rw-r-- 1 pcpqa pcpqa    37 Aug 20 17:06 /tmp/255-58337.fetch
+-rw-rw-r-- 1 pcpqa pcpqa   358 Aug 20 17:05 /tmp/255-58337.latest
+-rw-r--r-- 1 root  root   8354 Aug 20 17:06 /tmp/255-58337.log
+-rw-rw-r-- 1 pcpqa pcpqa    40 Aug 20 17:05 /tmp/255-58337.make
+-rw-rw-r-- 1 pcpqa pcpqa   213 Aug 20 17:05 /tmp/255-58337.newconf
+-rw-rw-r-- 1 pcpqa pcpqa    86 Aug 20 17:05 /tmp/255-58337.newoptions
+-rw-r--r-- 1 pcpqa pcpqa 59143 Aug 20 17:05 /tmp/255-58337.pmns
+-rw-rw-r-- 1 pcpqa pcpqa    13 Aug 20 17:05 /tmp/255-58337.simple.conf
+-rw-rw-r-- 1 pcpqa pcpqa   979 Aug 20 17:06 /tmp/255-58337.verify
+-rw-rw-r-- 1 pcpqa pcpqa     0 Aug 20 16:40 /tmp/42501.__tmp
+-rw-rw-r-- 1 pcpqa pcpqa  8729 Aug 20 17:06 /tmp/42501.out
+-rw-rw-r-- 1 pcpqa pcpqa  1261 Aug 20 17:05 /tmp/42501.time
+-rw-rw-r-- 1 pcpqa pcpqa     0 Aug 20 17:05 /tmp/42501.tmp
+=== config files
+-r--r--r-- 1 root root 1016 Aug 20 17:06 /etc/pcp/pmcd/pmcd.conf
+-rw-r--r-- 1 root root  913 Aug 20 16:35 /etc/pcp/pmcd/pmcd.options

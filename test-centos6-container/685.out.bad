@@ -1,0 +1,6 @@
+QA output created by 685
+[Thu Aug 20 17:53:05] pmcd(101042) Error: Failed to create avahi client: Daemon not running
+Error: qa: Unknown metric name
+pmnsdel: Error: metricpath "qa" not defined in the PMNS
+[Thu Aug 20 17:53:06] pmcd(101563) Error: Failed to create avahi client: Daemon not running
+Error: qa: Unknown metric name

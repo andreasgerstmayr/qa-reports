@@ -1,0 +1,35 @@
+total 76
+-rw-r--r-- 1 pcp   pcp    236 Aug 20 17:20 20200820.17.20-00.0.xz
+-rw-r--r-- 1 pcp   pcp    172 Aug 20 17:20 20200820.17.20-00.index
+-rw-r--r-- 1 pcp   pcp    808 Aug 20 17:20 20200820.17.20-00.meta.xz
+-rw-r--r-- 1 pcp   pcp    236 Aug 20 17:20 20200820.17.20-01.0.xz
+-rw-r--r-- 1 pcp   pcp    172 Aug 20 17:20 20200820.17.20-01.index
+-rw-r--r-- 1 pcp   pcp    808 Aug 20 17:20 20200820.17.20-01.meta.xz
+-rw-r--r-- 1 pcp   pcp    236 Aug 20 17:20 20200820.17.20-02.0.xz
+-rw-r--r-- 1 pcp   pcp    172 Aug 20 17:20 20200820.17.20-02.index
+-rw-r--r-- 1 pcp   pcp    808 Aug 20 17:20 20200820.17.20-02.meta.xz
+-rw-r--r-- 1 pcp   pcp    548 Aug 20 17:20 20200820.17.20-03.0
+-rw-r--r-- 1 pcp   pcp    172 Aug 20 17:20 20200820.17.20-03.index
+-rw-r--r-- 1 pcp   pcp   1438 Aug 20 17:20 20200820.17.20-03.meta
+-rw-r--r-- 1 pcp   pcp    236 Aug 20 17:20 20200820.17.20.0.xz
+-rw-r--r-- 1 pcp   pcp    172 Aug 20 17:20 20200820.17.20.index
+-rw-r--r-- 1 pcp   pcp    808 Aug 20 17:20 20200820.17.20.meta.xz
+-rw-rw-r-- 1 pcpqa pcpqa   41 Aug 20 17:20 config
+-rw-rw-r-- 1 pcpqa pcpqa  118 Aug 20 17:20 control
+-rw-rw-rw- 1 pcpqa pcpqa    0 Aug 20 17:20 pmcheck.log
+-rw-r--r-- 1 pcp   pcp    632 Aug 20 17:20 pmlogger.log
+-rw-r--r-- 1 pcp   pcp    557 Aug 20 17:20 pmlogger.log.prior
+
+metric:    pmcd.control.debug
+archive:   out
+host:      74ebe952d6a4
+start:     Thu Aug 20 17:20:38 2020
+end:       Thu Aug 20 17:20:40 2020
+semantics: discrete instantaneous value
+units:     none
+samples:   all
+17:20:38.532          0
+17:20:38.805          0
+17:20:39.259          0
+17:20:39.649          0
+17:20:40.022          0

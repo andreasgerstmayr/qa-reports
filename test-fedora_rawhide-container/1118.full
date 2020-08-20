@@ -1,0 +1,35 @@
+pmdabcc config:
+# Installed by PCP QA test 1118 on Thu Aug 20 19:07:55 UTC 2020
+[pmda]
+modules = runqlat
+prefix = bcc.
+[runqlat]
+module = runqlat
+cluster = 4
+Log for pmdabcc on d6bbf0991c84 started Thu Aug 20 19:08:29 2020
+
+[Thu Aug 20 19:08:29] pmdabcc(957524) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 19:08:29] pmdabcc(957524) Info: Enabled modules:
+[Thu Aug 20 19:08:29] pmdabcc(957524) Info: ['runqlat']
+[Thu Aug 20 19:08:29] pmdabcc(957524) Info: Configuring modules:
+[Thu Aug 20 19:08:29] pmdabcc(957524) Info: runqlat
+[Thu Aug 20 19:08:29] pmdabcc(957524) Info: Modules configured.
+[Thu Aug 20 19:08:29] pmdabcc(957524) Info: Initializing modules:
+[Thu Aug 20 19:08:29] pmdabcc(957524) Info: runqlat
+[Thu Aug 20 19:08:29] pmdabcc(957524) Info: runqlat: Initialized.
+[Thu Aug 20 19:08:29] pmdabcc(957524) Info: Modules initialized.
+[Thu Aug 20 19:08:29] pmdabcc(957524) Info: Registering metrics:
+[Thu Aug 20 19:08:29] pmdabcc(957524) Info: runqlat
+[Thu Aug 20 19:08:29] pmdabcc(957524) Info: Metrics registered.
+[Thu Aug 20 19:08:29] pmdabcc(957524) Info: Registering helpers:
+[Thu Aug 20 19:08:29] pmdabcc(957524) Info: runqlat
+[Thu Aug 20 19:08:29] pmdabcc(957524) Info: Helpers registered.
+[Thu Aug 20 19:08:29] pmdabcc(957524) Info: Compiling modules:
+[Thu Aug 20 19:08:29] pmdabcc(957524) Info: runqlat
+modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1034-azure
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 19:08:29] pmdabcc(957524) Error: runqlat: Failed to compile BPF module <text>
+[Thu Aug 20 19:08:29] pmdabcc(957524) Error: runqlat: Module NOT active!
+[Thu Aug 20 19:08:29] pmdabcc(957524) Error: Failed to compile module runqlat, aborting.
+
+Log finished Thu Aug 20 19:08:29 2020

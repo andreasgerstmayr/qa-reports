@@ -1,0 +1,9 @@
+QA output created by 861
+[Thu Aug 20 18:06:07] pmcd(78359) Error: Failed to create avahi client: Daemon not running
+Checking custom pmcd.hostname setting from client side:
+
+pmcd.hostname PMID: 2.0.21
+    Data Type: string  InDom: PM_INDOM_NULL 0xffffffff
+    Semantics: discrete  Units: none
+    value "no.such.host.pcp.io"
+Terminating local pmcd process

@@ -1,0 +1,18 @@
+pmdabpftrace config:
+# Installed by PCP QA test 1701 on Thu Aug 20 19:39:57 UTC 2020
+[dynamic_scripts]
+enabled = true
+auth_enabled = false
+Log for pmdabpftrace on 564f0d2de60c started Thu Aug 20 19:39:59 2020
+
+[Thu Aug 20 19:39:59] pmdabpftrace(1213738) Info: manager: started pmdabpftrace process manager
+[Thu Aug 20 19:39:59] pmdabpftrace(1213738) Info: manager: using bpftrace v0.11.0
+[Thu Aug 20 19:40:01] pmdabpftrace(1213738) Info: script: starting script s6146951a1db54a5a997878e4ad110a7a (user=pcpqa)...
+[Thu Aug 20 19:40:01] pmdabpftrace(1213738) Info: script: started script s6146951a1db54a5a997878e4ad110a7a (user=pcpqa, PID=1213771)
+[Thu Aug 20 19:40:01] pmdabpftrace(1213738) Info: script: stopped script s6146951a1db54a5a997878e4ad110a7a (user=pcpqa, PID=1213771) due to error: Could not resolve symbol: /proc/self/exe:BEGIN_trigger
+[Thu Aug 20 19:40:12] pmdabpftrace(1213738) Info: manager: shutting down pmdabpftrace process manager...
+[Thu Aug 20 19:40:12] pmdabpftrace(1213738) Info: script: deregistered script s6146951a1db54a5a997878e4ad110a7a (user=pcpqa, PID=1213771)
+[Thu Aug 20 19:40:12] pmdabpftrace(1213738) Info: manager: waiting 10 secs for running tasks to stop...
+[Thu Aug 20 19:40:13] pmdabpftrace(1213738) Info: manager: shutdown pmdabpftrace process manager
+
+Log finished Thu Aug 20 19:40:13 2020

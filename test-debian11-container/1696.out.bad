@@ -1,0 +1,46 @@
+QA output created by 1696
+=== pmproxy load test ===
+Sending 100 /context and /fetch requests...
+Successful responses: 100/100 (100%)
+=== check pmproxy is running ===
+pmproxy check passed
+=== valgrind stdout ===
+128 bytes in 1 blocks are definitely lost in loss record 13 of 16
+at 0x48386AF: malloc (vg_replace_malloc.c:306)
+by 0x483ADE7: realloc (vg_replace_malloc.c:834)
+by 0x4C46C44: ??? (in /usr/lib/x86_64-linux-gnu/libuv.so.1.0.0)
+by 0x4C4AAA0: ??? (in /usr/lib/x86_64-linux-gnu/libuv.so.1.0.0)
+by 0x4C53C28: uv_signal_init (in /usr/lib/x86_64-linux-gnu/libuv.so.1.0.0)
+by 0x4C509EB: uv_loop_init (in /usr/lib/x86_64-linux-gnu/libuv.so.1.0.0)
+by 0x4C48E73: uv_default_loop (in /usr/lib/x86_64-linux-gnu/libuv.so.1.0.0)
+by 0x111DEE: ??? (in /usr/lib/pcp/bin/pmproxy)
+by 0x110943: ??? (in /usr/lib/pcp/bin/pmproxy)
+by 0x4D5CCC9: (below main) (libc-start.c:308)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:malloc
+   fun:realloc
+   obj:/usr/lib/x86_64-linux-gnu/libuv.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/libuv.so.1.0.0
+   fun:uv_signal_init
+   fun:uv_loop_init
+   fun:uv_default_loop
+   obj:/usr/lib/pcp/bin/pmproxy
+   obj:/usr/lib/pcp/bin/pmproxy
+   fun:(below main)
+}
+=== valgrind stderr ===
+Log for pmproxy on HOST started DATE
+
+pmproxy: PID = PID
+pmproxy request port(s):
+  sts fd   port  family address
+  === ==== ===== ====== =======
+ok FD unix UNIX_DOMAIN_SOCKET
+ok FD PORT inet INADDR_ANY
+[DATE] pmproxy(PID) Info: pmproxy caught SIGTERM
+[DATE] pmproxy(PID) Info: pmproxy Shutdown
+
+Log finished DATE

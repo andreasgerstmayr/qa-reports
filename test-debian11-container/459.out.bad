@@ -1,0 +1,124 @@
+QA output created by 459
+=== std out ===
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: pmlogreduce -t 30sec archives/20101004-trunc TMP
+24 bytes in 1 blocks are possibly lost in loss record 29 of 93
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x49F80DF: tsearch (tsearch.c:338)
+by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487A403: ??? (in /usr/lib/libpcp.so.3)
+by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)
+by 0x48980AB: ??? (in /usr/lib/libpcp.so.3)
+by 0x4898E22: ??? (in /usr/lib/libpcp.so.3)
+by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x10AA46: ??? (in /usr/lib/pcp/bin/pmlogreduce)
+by 0x4924CC9: (below main) (libc-start.c:308)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/pcp/bin/pmlogreduce
+   fun:(below main)
+}
+48 bytes in 2 blocks are possibly lost in loss record 38 of 93
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x49F80DF: tsearch (tsearch.c:338)
+by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487A403: ??? (in /usr/lib/libpcp.so.3)
+by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)
+by 0x4899E56: ??? (in /usr/lib/libpcp.so.3)
+by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x10AA46: ??? (in /usr/lib/pcp/bin/pmlogreduce)
+by 0x4924CC9: (below main) (libc-start.c:308)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/pcp/bin/pmlogreduce
+   fun:(below main)
+}
+6,592 bytes in 2 blocks are possibly lost in loss record 75 of 93
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487A403: ??? (in /usr/lib/libpcp.so.3)
+by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)
+by 0x4899E56: ??? (in /usr/lib/libpcp.so.3)
+by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x10AA46: ??? (in /usr/lib/pcp/bin/pmlogreduce)
+by 0x4924CC9: (below main) (libc-start.c:308)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/pcp/bin/pmlogreduce
+   fun:(below main)
+}
+10,984 bytes in 1 blocks are possibly lost in loss record 82 of 93
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487A403: ??? (in /usr/lib/libpcp.so.3)
+by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)
+by 0x48980AB: ??? (in /usr/lib/libpcp.so.3)
+by 0x4898E22: ??? (in /usr/lib/libpcp.so.3)
+by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x10AA46: ??? (in /usr/lib/pcp/bin/pmlogreduce)
+by 0x4924CC9: (below main) (libc-start.c:308)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/pcp/bin/pmlogreduce
+   fun:(below main)
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 4 errors from 4 contexts ...
+
+Samples: 6

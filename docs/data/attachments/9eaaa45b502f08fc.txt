@@ -1,0 +1,38 @@
+pmdabcc config:
+[pmda]
+modules = kprobe_hits
+prefix = bcc.
+[kprobe_hits]
+module = kprobe_hits
+cluster = 103
+kprobes = kprobe:sched_exec
+Log for pmdabcc on 564f0d2de60c started Thu Aug 20 19:20:49 2020
+
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: Enabled modules:
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: ['kprobe_hits']
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: Configuring modules:
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: kprobe_hits
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: Modules configured.
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: Initializing modules:
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: kprobe_hits
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: kprobe_hits: Configured kprobes: ['kprobe:sched_exec']
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: kprobe_hits: Found 1 kprobes: ['sched_exec'].
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: kprobe_hits: Initialized.
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: Modules initialized.
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: Registering metrics:
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: kprobe_hits
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: Metrics registered.
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: Registering helpers:
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: kprobe_hits
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: Helpers registered.
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: Compiling modules:
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: kprobe_hits
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Info: kprobe_hits: Compiling 1 kprobes: ['sched_exec']
+modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1034-azure
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Error: kprobe_hits: Failed to compile BPF module <text>
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Error: kprobe_hits: Module NOT active!
+[Thu Aug 20 19:20:49] pmdabcc(1021091) Error: Failed to compile module kprobe_hits, aborting.
+
+Log finished Thu Aug 20 19:20:49 2020

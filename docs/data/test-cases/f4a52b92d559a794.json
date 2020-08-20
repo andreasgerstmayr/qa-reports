@@ -1,0 +1,86 @@
+{
+  "uid" : "f4a52b92d559a794",
+  "name" : "QA 507",
+  "fullName" : "QA #507 on ubuntu1604-container",
+  "historyId" : "507@ubuntu1604-container",
+  "time" : {
+    "start" : 1597945630000,
+    "stop" : 1597945683000,
+    "duration" : 53000
+  },
+  "description" : "PCP QA Test No. 507\n\nexercises the pcp(1) works with an archive generates from\n\nour own pmlogger config file for it.  also checks bug #640234\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform ubuntu1604 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 507</p>\n<p>exercises the pcp(1) works with an archive generates from</p>\n<p>our own pmlogger config file for it.  also checks bug #640234</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform ubuntu1604 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 507.out.bad)\n7a8,21\n> 1,11c1\n> < Performance Co-Pilot configuration on HOST:\n> < \n> <  platform: Linux HOST 5.3.0-1034-azure #35~18.04.1-Ubuntu SMP Mon Jul 13 12:54:45 UTC 2020 x86_64\n> <  hardware: 2 cpus, 2 disks, 1 node, 6927MB RAM\n> <  timezone: UTC\n> <  services: pmcd\n> <      pmcd: Version 5.2.1-1, 12 agents, 3 clients\n> <      pmda: root pmcd proc pmproxy xfs sample sampledso linux mmv kvm\n> <            jbd2 simple\n> <  pmlogger: primary logger: /var/log/pcp/pmlogger/HOST/20200820.17.44\n> <      pmie: primary engine: /var/log/pcp/pmie/HOST/pmie.log\n> ---\n> > pcp-summary: Cannot connect to PMCD on host \"HOST\": No route to host\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h db1c1a872c32 -f sample.milliseconds\nPMDA probe: pminfo -h db1c1a872c32 -f sampledso.milliseconds\nPMDA probe: pminfo -h db1c1a872c32 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 507\n\nexercises the pcp(1) works with an archive generates from\n\nour own pmlogger config file for it.  also checks bug #640234\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform ubuntu1604 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 507.out.bad)\n7a8,21\n> 1,11c1\n> < Performance Co-Pilot configuration on HOST:\n> < \n> <  platform: Linux HOST 5.3.0-1034-azure #35~18.04.1-Ubuntu SMP Mon Jul 13 12:54:45 UTC 2020 x86_64\n> <  hardware: 2 cpus, 2 disks, 1 node, 6927MB RAM\n> <  timezone: UTC\n> <  services: pmcd\n> <      pmcd: Version 5.2.1-1, 12 agents, 3 clients\n> <      pmda: root pmcd proc pmproxy xfs sample sampledso linux mmv kvm\n> <            jbd2 simple\n> <  pmlogger: primary logger: /var/log/pcp/pmlogger/HOST/20200820.17.44\n> <      pmie: primary engine: /var/log/pcp/pmie/HOST/pmie.log\n> ---\n> > pcp-summary: Cannot connect to PMCD on host \"HOST\": No route to host\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h db1c1a872c32 -f sample.milliseconds\nPMDA probe: pminfo -h db1c1a872c32 -f sampledso.milliseconds\nPMDA probe: pminfo -h db1c1a872c32 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "748c36fd1702c587",
+      "name" : "507.out.bad",
+      "source" : "748c36fd1702c587.txt",
+      "type" : "text/plain",
+      "size" : 2114
+    }, {
+      "uid" : "b92441966fb26a53",
+      "name" : "507.full",
+      "source" : "b92441966fb26a53.txt",
+      "type" : "text/plain",
+      "size" : 7511
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1604-container"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1604-container"
+  }, {
+    "name" : "epic",
+    "value" : "pcp"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "kernel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/507",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/507.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f4a52b92d559a794.json",
+  "parameterValues" : [ ]
+}

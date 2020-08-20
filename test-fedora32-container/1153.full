@@ -1,0 +1,35 @@
+pmdabcc config:
+# Installed by PCP QA test 1153 on Thu Aug 20 19:06:09 UTC 2020
+[pmda]
+modules = xfsdist
+prefix = bcc.
+[xfsdist]
+module = fs.xfsdist
+cluster = 6
+Log for pmdabcc on 4687b293bd5e started Thu Aug 20 19:07:13 2020
+
+[Thu Aug 20 19:07:13] pmdabcc(988296) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 19:07:13] pmdabcc(988296) Info: Enabled modules:
+[Thu Aug 20 19:07:13] pmdabcc(988296) Info: ['xfsdist']
+[Thu Aug 20 19:07:13] pmdabcc(988296) Info: Configuring modules:
+[Thu Aug 20 19:07:13] pmdabcc(988296) Info: xfsdist
+[Thu Aug 20 19:07:13] pmdabcc(988296) Info: Modules configured.
+[Thu Aug 20 19:07:13] pmdabcc(988296) Info: Initializing modules:
+[Thu Aug 20 19:07:13] pmdabcc(988296) Info: xfsdist
+[Thu Aug 20 19:07:13] pmdabcc(988296) Info: xfsdist: Initialized.
+[Thu Aug 20 19:07:13] pmdabcc(988296) Info: Modules initialized.
+[Thu Aug 20 19:07:13] pmdabcc(988296) Info: Registering metrics:
+[Thu Aug 20 19:07:13] pmdabcc(988296) Info: xfsdist
+[Thu Aug 20 19:07:13] pmdabcc(988296) Info: Metrics registered.
+[Thu Aug 20 19:07:13] pmdabcc(988296) Info: Registering helpers:
+[Thu Aug 20 19:07:13] pmdabcc(988296) Info: xfsdist
+[Thu Aug 20 19:07:13] pmdabcc(988296) Info: Helpers registered.
+[Thu Aug 20 19:07:13] pmdabcc(988296) Info: Compiling modules:
+[Thu Aug 20 19:07:13] pmdabcc(988296) Info: xfsdist
+modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1034-azure
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 19:07:13] pmdabcc(988296) Error: xfsdist: Failed to compile BPF module <text>
+[Thu Aug 20 19:07:13] pmdabcc(988296) Error: xfsdist: Module NOT active!
+[Thu Aug 20 19:07:13] pmdabcc(988296) Error: Failed to compile module xfsdist, aborting.
+
+Log finished Thu Aug 20 19:07:13 2020

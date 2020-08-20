@@ -1,0 +1,86 @@
+{
+  "uid" : "c9bde4e6f95c44bb",
+  "name" : "QA 1127",
+  "fullName" : "QA #1127 on fedora31-container",
+  "historyId" : "1127@fedora31-container",
+  "time" : {
+    "start" : 1597950147000,
+    "stop" : 1597950219000,
+    "duration" : 72000
+  },
+  "description" : "PCP QA Test No. 1127\n\nExercise the BCC PMDA uprobe hits module - install, remove and values.\n\n\n\nCopyright (c) 2018 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform fedora31 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 1127</p>\n<p>Exercise the BCC PMDA uprobe hits module - install, remove and values.</p>\n<p>Copyright (c) 2018 Red Hat.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform fedora31 reproduce\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "[failed, exit status 1] - output mismatch (see 1127.out.bad)\n46,47c46,48\n< === report metric values ===\n< OK\n---\n> [Thu Aug 20 19:02:30] pmdabcc(980920) Error: uprobe_hits: Failed to compile BPF module <text>\n> [Thu Aug 20 19:02:30] pmdabcc(980920) Error: uprobe_hits: Module NOT active!\n> [Thu Aug 20 19:02:30] pmdabcc(980920) Error: Failed to compile module uprobe_hits, aborting.\n49,54c50,51\n< === remove bcc agent ===\n< Culling the Performance Metrics Name Space ...\n< bcc ... done\n< Updating the PMCD control file, and notifying PMCD ...\n< [...removing files...]\n< Check bcc metrics have gone away ... OK\n---\n> Log finished Thu Aug 20 19:02:30 2020\n> PMDA was not ready in 60 seconds, test failed\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 564f0d2de60c -f sample.milliseconds\nPMDA probe: pminfo -h 564f0d2de60c -f sampledso.milliseconds\nPMDA probe: pminfo -h 564f0d2de60c -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 1127\n\nExercise the BCC PMDA uprobe hits module - install, remove and values.\n\n\n\nCopyright (c) 2018 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform fedora31 reproduce",
+    "status" : "broken",
+    "statusMessage" : "[failed, exit status 1] - output mismatch (see 1127.out.bad)\n46,47c46,48\n< === report metric values ===\n< OK\n---\n> [Thu Aug 20 19:02:30] pmdabcc(980920) Error: uprobe_hits: Failed to compile BPF module <text>\n> [Thu Aug 20 19:02:30] pmdabcc(980920) Error: uprobe_hits: Module NOT active!\n> [Thu Aug 20 19:02:30] pmdabcc(980920) Error: Failed to compile module uprobe_hits, aborting.\n49,54c50,51\n< === remove bcc agent ===\n< Culling the Performance Metrics Name Space ...\n< bcc ... done\n< Updating the PMCD control file, and notifying PMCD ...\n< [...removing files...]\n< Check bcc metrics have gone away ... OK\n---\n> Log finished Thu Aug 20 19:02:30 2020\n> PMDA was not ready in 60 seconds, test failed\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 564f0d2de60c -f sample.milliseconds\nPMDA probe: pminfo -h 564f0d2de60c -f sampledso.milliseconds\nPMDA probe: pminfo -h 564f0d2de60c -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "cf0eb163f0d5bdfc",
+      "name" : "1127.out.bad",
+      "source" : "cf0eb163f0d5bdfc.txt",
+      "type" : "text/plain",
+      "size" : 1684
+    }, {
+      "uid" : "a5332512d3efd76c",
+      "name" : "1127.full",
+      "source" : "a5332512d3efd76c.txt",
+      "type" : "text/plain",
+      "size" : 2126
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.bcc"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "python"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1127",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1127.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "c9bde4e6f95c44bb.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,58 @@
+{
+  "uid" : "169f610210f0a447",
+  "name" : "QA 778",
+  "fullName" : "QA #778 on fedora_rawhide-container",
+  "historyId" : "778@fedora_rawhide-container",
+  "time" : {
+    "start" : 1597948106000,
+    "stop" : 1597948106000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 778\n\nInstall/Remove postgresql PMDA and check some basic metrics\n\n\n\nCopyright (c) 2015 Ken McDonell.  All Rights Reserved.\n\nCopyright (c) 2018 Red Hat.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 778</p>\n<p>Install/Remove postgresql PMDA and check some basic metrics</p>\n<p>Copyright (c) 2015 Ken McDonell.  All Rights Reserved.</p>\n<p>Copyright (c) 2018 Red Hat.  All Rights Reserved.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Cannot run psql as the postgres user, postgresql not installed or running?",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.postgresql"
+  }, {
+    "name" : "epic",
+    "value" : "pmie"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/778",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/778.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "169f610210f0a447.json",
+  "parameterValues" : [ ]
+}

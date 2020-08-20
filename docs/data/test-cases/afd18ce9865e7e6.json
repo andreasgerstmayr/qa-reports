@@ -1,0 +1,61 @@
+{
+  "uid" : "afd18ce9865e7e6",
+  "name" : "QA 455",
+  "fullName" : "QA #455 on fedora31-container",
+  "historyId" : "455@fedora31-container",
+  "time" : {
+    "start" : 1597945466000,
+    "stop" : 1597945480000,
+    "duration" : 14000
+  },
+  "description" : "PCP QA Test No. 455\n\nSanity checks for rsyslog pmda\n\n\n\nCopyright (c) 2011 Aconex.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 455</p>\n<p>Sanity checks for rsyslog pmda</p>\n<p>Copyright (c) 2011 Aconex.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.rsyslog"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "flakey"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.install"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/455",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/455.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "afd18ce9865e7e6.json",
+  "parameterValues" : [ ]
+}

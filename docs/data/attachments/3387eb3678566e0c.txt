@@ -1,0 +1,1611 @@
+
+=== archive tmparch/foo ===
+
+metric: sample.seconds
+Warning: no extra suppressions found for valgrind version 3.16.1
+=== std out ===
+metric[0]: sample.seconds
+
+sample 1, delta time=-1.000 secs
+sample.seconds: 
+delta[0]: -1
+
+sample 2, delta time=-1.000 secs
+sample.seconds: 
+delta[0]: -1
+
+sample 3, delta time=-1.000 secs
+sample.seconds: 
+delta[0]: -1
+
+sample 4, delta time=-1.000 secs
+sample.seconds: 
+delta[0]: -1
+
+sample 5, delta time=-1.000 secs
+sample.seconds: 
+delta[0]: -1
+
+6 samples required 10 log reads
+=== std err ===
+=== valgrind report ===
+==482640== Memcheck, a memory error detector
+==482640== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==482640== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==482640== Command: src/interp1 -s 6 -a tmparch/foo sample.seconds
+==482640== Parent PID: 482633
+==482640== 
+
+parse DIE(readdwarf3.c:3689): confused by:
+ <2><a2311>: Abbrev Number: 96 (DW_TAG_subrange_type) (in alternate .debug_info)
+     DW_AT_type        : 0x4c	
+     DW_AT_count       : 0	
+parse_type_DIE:
+--482640-- WARNING: Serious error when reading debug info
+--482640-- When reading debug info from /usr/lib64/libpcp.so.3:
+--482640-- confused by the above DIE
+==482640== 
+==482640== HEAP SUMMARY:
+==482640==     in use at exit: 12,067 bytes in 236 blocks
+==482640==   total heap usage: 333 allocs, 97 frees, 72,242 bytes allocated
+==482640== 
+==482640== 24 bytes in 1 blocks are possibly lost in loss record 26 of 77
+==482640==    at 0x4839809: malloc (vg_replace_malloc.c:307)
+==482640==    by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)
+==482640==    by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)
+==482640==    by 0x488C205: __pmLogRead_ctx (logutil.c:1725)
+==482640==    by 0x488D876: cache_read (interp.c:229)
+==482640==    by 0x489064B: __pmLogFetch (interp.c:1227)
+==482640==    by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+==482640==    by 0x109722: main (interp1.c:197)
+==482640== 
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+==482640== 344 bytes in 1 blocks are possibly lost in loss record 69 of 77
+==482640==    at 0x4839809: malloc (vg_replace_malloc.c:307)
+==482640==    by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)
+==482640==    by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+==482640==    by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+==482640==    by 0x488D876: cache_read (interp.c:229)
+==482640==    by 0x489064B: __pmLogFetch (interp.c:1227)
+==482640==    by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+==482640==    by 0x109722: main (interp1.c:197)
+==482640== 
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+==482640== LEAK SUMMARY:
+==482640==    definitely lost: 0 bytes in 0 blocks
+==482640==    indirectly lost: 0 bytes in 0 blocks
+==482640==      possibly lost: 368 bytes in 2 blocks
+==482640==    still reachable: 11,699 bytes in 234 blocks
+==482640==         suppressed: 0 bytes in 0 blocks
+==482640== Reachable blocks (those to which a pointer was found) are not shown.
+==482640== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==482640== 
+==482640== For lists of detected and suppressed errors, rerun with: -s
+==482640== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/foo sample.seconds
+24 bytes in 1 blocks are possibly lost in loss record 26 of 77
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x488C205: __pmLogRead_ctx (logutil.c:1725)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+344 bytes in 1 blocks are possibly lost in loss record 69 of 77
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)
+by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 2 errors from 2 contexts ...
+
+metric: sample.bin
+Warning: no extra suppressions found for valgrind version 3.16.1
+=== std out ===
+metric[0]: sample.bin
+
+sample 1, delta time=-1.000 secs
+sample.bin: 
+delta[0]: 0
+delta[1]: 0
+delta[2]: 0
+delta[3]: 0
+delta[4]: 0
+delta[5]: 0
+delta[6]: 0
+delta[7]: 0
+delta[8]: 0
+
+sample 2, delta time=-1.000 secs
+sample.bin: 
+delta[0]: 0
+delta[1]: 0
+delta[2]: 0
+delta[3]: 0
+delta[4]: 0
+delta[5]: 0
+delta[6]: 0
+delta[7]: 0
+delta[8]: 0
+
+sample 3, delta time=-1.000 secs
+sample.bin: 
+delta[0]: 0
+delta[1]: 0
+delta[2]: 0
+delta[3]: 0
+delta[4]: 0
+delta[5]: 0
+delta[6]: 0
+delta[7]: 0
+delta[8]: 0
+
+sample 4, delta time=-1.000 secs
+sample.bin: 
+delta[0]: 0
+delta[1]: 0
+delta[2]: 0
+delta[3]: 0
+delta[4]: 0
+delta[5]: 0
+delta[6]: 0
+delta[7]: 0
+delta[8]: 0
+
+sample 5, delta time=-1.000 secs
+sample.bin: 
+delta[0]: 0
+delta[1]: 0
+delta[2]: 0
+delta[3]: 0
+delta[4]: 0
+delta[5]: 0
+delta[6]: 0
+delta[7]: 0
+delta[8]: 0
+
+6 samples required 10 log reads
+=== std err ===
+=== valgrind report ===
+==482662== Memcheck, a memory error detector
+==482662== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==482662== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==482662== Command: src/interp1 -s 6 -a tmparch/foo sample.bin
+==482662== Parent PID: 482655
+==482662== 
+
+parse DIE(readdwarf3.c:3689): confused by:
+ <2><a2311>: Abbrev Number: 96 (DW_TAG_subrange_type) (in alternate .debug_info)
+     DW_AT_type        : 0x4c	
+     DW_AT_count       : 0	
+parse_type_DIE:
+--482662-- WARNING: Serious error when reading debug info
+--482662-- When reading debug info from /usr/lib64/libpcp.so.3:
+--482662-- confused by the above DIE
+==482662== 
+==482662== HEAP SUMMARY:
+==482662==     in use at exit: 13,283 bytes in 252 blocks
+==482662==   total heap usage: 367 allocs, 115 frees, 74,778 bytes allocated
+==482662== 
+==482662== 24 bytes in 1 blocks are possibly lost in loss record 24 of 77
+==482662==    at 0x4839809: malloc (vg_replace_malloc.c:307)
+==482662==    by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)
+==482662==    by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)
+==482662==    by 0x488C205: __pmLogRead_ctx (logutil.c:1725)
+==482662==    by 0x488D876: cache_read (interp.c:229)
+==482662==    by 0x489064B: __pmLogFetch (interp.c:1227)
+==482662==    by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+==482662==    by 0x109722: main (interp1.c:197)
+==482662== 
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+==482662== 344 bytes in 1 blocks are possibly lost in loss record 68 of 77
+==482662==    at 0x4839809: malloc (vg_replace_malloc.c:307)
+==482662==    by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)
+==482662==    by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+==482662==    by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+==482662==    by 0x488D876: cache_read (interp.c:229)
+==482662==    by 0x489064B: __pmLogFetch (interp.c:1227)
+==482662==    by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+==482662==    by 0x109722: main (interp1.c:197)
+==482662== 
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+==482662== LEAK SUMMARY:
+==482662==    definitely lost: 0 bytes in 0 blocks
+==482662==    indirectly lost: 0 bytes in 0 blocks
+==482662==      possibly lost: 368 bytes in 2 blocks
+==482662==    still reachable: 12,915 bytes in 250 blocks
+==482662==         suppressed: 0 bytes in 0 blocks
+==482662== Reachable blocks (those to which a pointer was found) are not shown.
+==482662== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==482662== 
+==482662== For lists of detected and suppressed errors, rerun with: -s
+==482662== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/foo sample.bin
+24 bytes in 1 blocks are possibly lost in loss record 24 of 77
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x488C205: __pmLogRead_ctx (logutil.c:1725)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+344 bytes in 1 blocks are possibly lost in loss record 68 of 77
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)
+by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 2 errors from 2 contexts ...
+
+metric: sample.colour
+Warning: no extra suppressions found for valgrind version 3.16.1
+=== std out ===
+metric[0]: sample.colour
+
+sample 1, delta time=-1.000 secs
+sample.colour: 
+delta[0]: -6
+delta[1]: -6
+delta[2]: -6
+
+sample 2, delta time=-1.000 secs
+sample.colour: 
+delta[0]: -3
+delta[1]: -3
+delta[2]: -3
+
+sample 3, delta time=-1.000 secs
+sample.colour: 
+delta[0]: -3
+delta[1]: -3
+delta[2]: -3
+
+sample 4, delta time=-1.000 secs
+sample.colour: 
+delta[0]: -3
+delta[1]: -3
+delta[2]: -3
+
+sample 5, delta time=-1.000 secs
+sample.colour: 
+delta[0]: 0
+delta[1]: 0
+delta[2]: 0
+
+6 samples required 10 log reads
+=== std err ===
+=== valgrind report ===
+==482684== Memcheck, a memory error detector
+==482684== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==482684== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==482684== Command: src/interp1 -s 6 -a tmparch/foo sample.colour
+==482684== Parent PID: 482677
+==482684== 
+
+parse DIE(readdwarf3.c:3689): confused by:
+ <2><a2311>: Abbrev Number: 96 (DW_TAG_subrange_type) (in alternate .debug_info)
+     DW_AT_type        : 0x4c	
+     DW_AT_count       : 0	
+parse_type_DIE:
+--482684-- WARNING: Serious error when reading debug info
+--482684-- When reading debug info from /usr/lib64/libpcp.so.3:
+--482684-- confused by the above DIE
+==482684== 
+==482684== HEAP SUMMARY:
+==482684==     in use at exit: 12,371 bytes in 240 blocks
+==482684==   total heap usage: 343 allocs, 103 frees, 72,813 bytes allocated
+==482684== 
+==482684== 24 bytes in 1 blocks are possibly lost in loss record 25 of 77
+==482684==    at 0x4839809: malloc (vg_replace_malloc.c:307)
+==482684==    by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)
+==482684==    by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)
+==482684==    by 0x488C205: __pmLogRead_ctx (logutil.c:1725)
+==482684==    by 0x488D876: cache_read (interp.c:229)
+==482684==    by 0x489064B: __pmLogFetch (interp.c:1227)
+==482684==    by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+==482684==    by 0x109722: main (interp1.c:197)
+==482684== 
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+==482684== 344 bytes in 1 blocks are possibly lost in loss record 69 of 77
+==482684==    at 0x4839809: malloc (vg_replace_malloc.c:307)
+==482684==    by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)
+==482684==    by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+==482684==    by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+==482684==    by 0x488D876: cache_read (interp.c:229)
+==482684==    by 0x489064B: __pmLogFetch (interp.c:1227)
+==482684==    by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+==482684==    by 0x109722: main (interp1.c:197)
+==482684== 
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+==482684== LEAK SUMMARY:
+==482684==    definitely lost: 0 bytes in 0 blocks
+==482684==    indirectly lost: 0 bytes in 0 blocks
+==482684==      possibly lost: 368 bytes in 2 blocks
+==482684==    still reachable: 12,003 bytes in 238 blocks
+==482684==         suppressed: 0 bytes in 0 blocks
+==482684== Reachable blocks (those to which a pointer was found) are not shown.
+==482684== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==482684== 
+==482684== For lists of detected and suppressed errors, rerun with: -s
+==482684== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/foo sample.colour
+24 bytes in 1 blocks are possibly lost in loss record 25 of 77
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x488C205: __pmLogRead_ctx (logutil.c:1725)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+344 bytes in 1 blocks are possibly lost in loss record 69 of 77
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)
+by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 2 errors from 2 contexts ...
+
+metric: sample.drift
+Warning: no extra suppressions found for valgrind version 3.16.1
+=== std out ===
+metric[0]: sample.drift
+
+sample 1, delta time=-1.000 secs
+sample.drift: 
+delta[0]: 13
+
+sample 2, delta time=-1.000 secs
+sample.drift: 
+delta[0]: 21
+
+sample 3, delta time=-1.000 secs
+sample.drift: 
+delta[0]: 23
+
+sample 4, delta time=-1.000 secs
+sample.drift: 
+delta[0]: 12
+
+sample 5, delta time=-1.000 secs
+sample.drift: 
+delta[0]: 0
+
+6 samples required 10 log reads
+=== std err ===
+=== valgrind report ===
+==482708== Memcheck, a memory error detector
+==482708== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==482708== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==482708== Command: src/interp1 -s 6 -a tmparch/foo sample.drift
+==482708== Parent PID: 482701
+==482708== 
+
+parse DIE(readdwarf3.c:3689): confused by:
+ <2><a2311>: Abbrev Number: 96 (DW_TAG_subrange_type) (in alternate .debug_info)
+     DW_AT_type        : 0x4c	
+     DW_AT_count       : 0	
+parse_type_DIE:
+--482708-- WARNING: Serious error when reading debug info
+--482708-- When reading debug info from /usr/lib64/libpcp.so.3:
+--482708-- confused by the above DIE
+==482708== 
+==482708== HEAP SUMMARY:
+==482708==     in use at exit: 12,067 bytes in 236 blocks
+==482708==   total heap usage: 333 allocs, 97 frees, 72,242 bytes allocated
+==482708== 
+==482708== 24 bytes in 1 blocks are possibly lost in loss record 26 of 77
+==482708==    at 0x4839809: malloc (vg_replace_malloc.c:307)
+==482708==    by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)
+==482708==    by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)
+==482708==    by 0x488C205: __pmLogRead_ctx (logutil.c:1725)
+==482708==    by 0x488D876: cache_read (interp.c:229)
+==482708==    by 0x489064B: __pmLogFetch (interp.c:1227)
+==482708==    by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+==482708==    by 0x109722: main (interp1.c:197)
+==482708== 
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+==482708== 344 bytes in 1 blocks are possibly lost in loss record 69 of 77
+==482708==    at 0x4839809: malloc (vg_replace_malloc.c:307)
+==482708==    by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)
+==482708==    by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+==482708==    by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+==482708==    by 0x488D876: cache_read (interp.c:229)
+==482708==    by 0x489064B: __pmLogFetch (interp.c:1227)
+==482708==    by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+==482708==    by 0x109722: main (interp1.c:197)
+==482708== 
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+==482708== LEAK SUMMARY:
+==482708==    definitely lost: 0 bytes in 0 blocks
+==482708==    indirectly lost: 0 bytes in 0 blocks
+==482708==      possibly lost: 368 bytes in 2 blocks
+==482708==    still reachable: 11,699 bytes in 234 blocks
+==482708==         suppressed: 0 bytes in 0 blocks
+==482708== Reachable blocks (those to which a pointer was found) are not shown.
+==482708== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==482708== 
+==482708== For lists of detected and suppressed errors, rerun with: -s
+==482708== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/foo sample.drift
+24 bytes in 1 blocks are possibly lost in loss record 26 of 77
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x488C205: __pmLogRead_ctx (logutil.c:1725)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+344 bytes in 1 blocks are possibly lost in loss record 69 of 77
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)
+by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 2 errors from 2 contexts ...
+
+metric: sample.lights
+Warning: no extra suppressions found for valgrind version 3.16.1
+=== std out ===
+metric[0]: sample.lights
+
+sample 1, delta time=-1.000 secs
+sample.lights: 
+value[0]: red
+
+sample 2, delta time=-1.000 secs
+sample.lights: 
+value[0]: red
+
+sample 3, delta time=-1.000 secs
+sample.lights: 
+value[0]: red
+
+sample 4, delta time=-1.000 secs
+sample.lights: 
+value[0]: red
+
+sample 5, delta time=-1.000 secs
+sample.lights: 
+value[0]: red
+
+6 samples required 10 log reads
+=== std err ===
+=== valgrind report ===
+==482731== Memcheck, a memory error detector
+==482731== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==482731== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==482731== Command: src/interp1 -s 6 -a tmparch/foo sample.lights
+==482731== Parent PID: 482724
+==482731== 
+
+parse DIE(readdwarf3.c:3689): confused by:
+ <2><a2311>: Abbrev Number: 96 (DW_TAG_subrange_type) (in alternate .debug_info)
+     DW_AT_type        : 0x4c	
+     DW_AT_count       : 0	
+parse_type_DIE:
+--482731-- WARNING: Serious error when reading debug info
+--482731-- When reading debug info from /usr/lib64/libpcp.so.3:
+--482731-- confused by the above DIE
+==482731== 
+==482731== HEAP SUMMARY:
+==482731==     in use at exit: 12,075 bytes in 237 blocks
+==482731==   total heap usage: 339 allocs, 102 frees, 72,290 bytes allocated
+==482731== 
+==482731== 24 bytes in 1 blocks are possibly lost in loss record 27 of 78
+==482731==    at 0x4839809: malloc (vg_replace_malloc.c:307)
+==482731==    by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)
+==482731==    by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)
+==482731==    by 0x488C205: __pmLogRead_ctx (logutil.c:1725)
+==482731==    by 0x488D876: cache_read (interp.c:229)
+==482731==    by 0x489064B: __pmLogFetch (interp.c:1227)
+==482731==    by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+==482731==    by 0x109722: main (interp1.c:197)
+==482731== 
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+==482731== 344 bytes in 1 blocks are possibly lost in loss record 70 of 78
+==482731==    at 0x4839809: malloc (vg_replace_malloc.c:307)
+==482731==    by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)
+==482731==    by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+==482731==    by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+==482731==    by 0x488D876: cache_read (interp.c:229)
+==482731==    by 0x489064B: __pmLogFetch (interp.c:1227)
+==482731==    by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+==482731==    by 0x109722: main (interp1.c:197)
+==482731== 
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+==482731== LEAK SUMMARY:
+==482731==    definitely lost: 0 bytes in 0 blocks
+==482731==    indirectly lost: 0 bytes in 0 blocks
+==482731==      possibly lost: 368 bytes in 2 blocks
+==482731==    still reachable: 11,707 bytes in 235 blocks
+==482731==         suppressed: 0 bytes in 0 blocks
+==482731== Reachable blocks (those to which a pointer was found) are not shown.
+==482731== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==482731== 
+==482731== For lists of detected and suppressed errors, rerun with: -s
+==482731== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/foo sample.lights
+24 bytes in 1 blocks are possibly lost in loss record 27 of 78
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x488C205: __pmLogRead_ctx (logutil.c:1725)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+344 bytes in 1 blocks are possibly lost in loss record 70 of 78
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)
+by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 2 errors from 2 contexts ...
+
+=== archive tmparch/mv-foo ===
+
+metric: sample.seconds
+Warning: no extra suppressions found for valgrind version 3.16.1
+=== std out ===
+metric[0]: sample.seconds
+
+sample 1, delta time=-1.000 secs
+sample.seconds: 
+delta[0]: -1
+
+sample 2, delta time=-1.000 secs
+sample.seconds: 
+delta[0]: -1
+
+sample 3, delta time=-1.000 secs
+sample.seconds: 
+delta[0]: -1
+
+sample 4, delta time=-1.000 secs
+sample.seconds: 
+delta[0]: -1
+
+sample 5, delta time=-1.000 secs
+sample.seconds: 
+delta[0]: -1
+
+6 samples required 12 log reads
+=== std err ===
+=== valgrind report ===
+==482757== Memcheck, a memory error detector
+==482757== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==482757== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==482757== Command: src/interp1 -s 6 -a tmparch/mv-foo sample.seconds
+==482757== Parent PID: 482750
+==482757== 
+
+parse DIE(readdwarf3.c:3689): confused by:
+ <2><a2311>: Abbrev Number: 96 (DW_TAG_subrange_type) (in alternate .debug_info)
+     DW_AT_type        : 0x4c	
+     DW_AT_count       : 0	
+parse_type_DIE:
+--482757-- WARNING: Serious error when reading debug info
+--482757-- When reading debug info from /usr/lib64/libpcp.so.3:
+--482757-- confused by the above DIE
+==482757== 
+==482757== HEAP SUMMARY:
+==482757==     in use at exit: 12,548 bytes in 237 blocks
+==482757==   total heap usage: 366 allocs, 129 frees, 101,549 bytes allocated
+==482757== 
+==482757== LEAK SUMMARY:
+==482757==    definitely lost: 0 bytes in 0 blocks
+==482757==    indirectly lost: 0 bytes in 0 blocks
+==482757==      possibly lost: 0 bytes in 0 blocks
+==482757==    still reachable: 12,548 bytes in 237 blocks
+==482757==         suppressed: 0 bytes in 0 blocks
+==482757== Reachable blocks (those to which a pointer was found) are not shown.
+==482757== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==482757== 
+==482757== For lists of detected and suppressed errors, rerun with: -s
+==482757== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/mv-foo sample.seconds
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+metric: sample.bin
+Warning: no extra suppressions found for valgrind version 3.16.1
+=== std out ===
+metric[0]: sample.bin
+
+sample 1, delta time=-1.000 secs
+sample.bin: 
+delta[0]: 0
+delta[1]: 0
+delta[2]: 0
+delta[3]: 0
+delta[4]: 0
+delta[5]: 0
+delta[6]: 0
+delta[7]: 0
+delta[8]: 0
+
+sample 2, delta time=-1.000 secs
+sample.bin: 
+delta[0]: 0
+delta[1]: 0
+delta[2]: 0
+delta[3]: 0
+delta[4]: 0
+delta[5]: 0
+delta[6]: 0
+delta[7]: 0
+delta[8]: 0
+
+sample 3, delta time=-1.000 secs
+sample.bin: 
+delta[0]: 0
+delta[1]: 0
+delta[2]: 0
+delta[3]: 0
+delta[4]: 0
+delta[5]: 0
+delta[6]: 0
+delta[7]: 0
+delta[8]: 0
+
+sample 4, delta time=-1.000 secs
+sample.bin: 
+delta[0]: 0
+delta[1]: 0
+delta[2]: 0
+delta[3]: 0
+delta[4]: 0
+delta[5]: 0
+delta[6]: 0
+delta[7]: 0
+delta[8]: 0
+
+sample 5, delta time=-1.000 secs
+sample.bin: 
+delta[0]: 0
+delta[1]: 0
+delta[2]: 0
+delta[3]: 0
+delta[4]: 0
+delta[5]: 0
+delta[6]: 0
+delta[7]: 0
+delta[8]: 0
+
+6 samples required 12 log reads
+=== std err ===
+=== valgrind report ===
+==482779== Memcheck, a memory error detector
+==482779== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==482779== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==482779== Command: src/interp1 -s 6 -a tmparch/mv-foo sample.bin
+==482779== Parent PID: 482772
+==482779== 
+
+parse DIE(readdwarf3.c:3689): confused by:
+ <2><a2311>: Abbrev Number: 96 (DW_TAG_subrange_type) (in alternate .debug_info)
+     DW_AT_type        : 0x4c	
+     DW_AT_count       : 0	
+parse_type_DIE:
+--482779-- WARNING: Serious error when reading debug info
+--482779-- When reading debug info from /usr/lib64/libpcp.so.3:
+--482779-- confused by the above DIE
+==482779== 
+==482779== HEAP SUMMARY:
+==482779==     in use at exit: 13,764 bytes in 253 blocks
+==482779==   total heap usage: 400 allocs, 147 frees, 104,085 bytes allocated
+==482779== 
+==482779== LEAK SUMMARY:
+==482779==    definitely lost: 0 bytes in 0 blocks
+==482779==    indirectly lost: 0 bytes in 0 blocks
+==482779==      possibly lost: 0 bytes in 0 blocks
+==482779==    still reachable: 13,764 bytes in 253 blocks
+==482779==         suppressed: 0 bytes in 0 blocks
+==482779== Reachable blocks (those to which a pointer was found) are not shown.
+==482779== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==482779== 
+==482779== For lists of detected and suppressed errors, rerun with: -s
+==482779== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/mv-foo sample.bin
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+metric: sample.colour
+Warning: no extra suppressions found for valgrind version 3.16.1
+=== std out ===
+metric[0]: sample.colour
+
+sample 1, delta time=-1.000 secs
+sample.colour: 
+delta[0]: -3
+delta[1]: -3
+delta[2]: -3
+
+sample 2, delta time=-1.000 secs
+sample.colour: 
+delta[0]: -6
+delta[1]: -6
+delta[2]: -6
+
+sample 3, delta time=-1.000 secs
+sample.colour: 
+delta[0]: -3
+delta[1]: -3
+delta[2]: -3
+
+sample 4, delta time=-1.000 secs
+sample.colour: 
+delta[0]: -3
+delta[1]: -3
+delta[2]: -3
+
+sample 5, delta time=-1.000 secs
+sample.colour: 
+delta[0]: -3
+delta[1]: -3
+delta[2]: -3
+
+6 samples required 12 log reads
+=== std err ===
+=== valgrind report ===
+==482801== Memcheck, a memory error detector
+==482801== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==482801== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==482801== Command: src/interp1 -s 6 -a tmparch/mv-foo sample.colour
+==482801== Parent PID: 482794
+==482801== 
+
+parse DIE(readdwarf3.c:3689): confused by:
+ <2><a2311>: Abbrev Number: 96 (DW_TAG_subrange_type) (in alternate .debug_info)
+     DW_AT_type        : 0x4c	
+     DW_AT_count       : 0	
+parse_type_DIE:
+--482801-- WARNING: Serious error when reading debug info
+--482801-- When reading debug info from /usr/lib64/libpcp.so.3:
+--482801-- confused by the above DIE
+==482801== 
+==482801== HEAP SUMMARY:
+==482801==     in use at exit: 12,852 bytes in 241 blocks
+==482801==   total heap usage: 376 allocs, 135 frees, 102,120 bytes allocated
+==482801== 
+==482801== LEAK SUMMARY:
+==482801==    definitely lost: 0 bytes in 0 blocks
+==482801==    indirectly lost: 0 bytes in 0 blocks
+==482801==      possibly lost: 0 bytes in 0 blocks
+==482801==    still reachable: 12,852 bytes in 241 blocks
+==482801==         suppressed: 0 bytes in 0 blocks
+==482801== Reachable blocks (those to which a pointer was found) are not shown.
+==482801== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==482801== 
+==482801== For lists of detected and suppressed errors, rerun with: -s
+==482801== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/mv-foo sample.colour
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+metric: sample.drift
+Warning: no extra suppressions found for valgrind version 3.16.1
+=== std out ===
+metric[0]: sample.drift
+
+sample 1, delta time=-1.000 secs
+sample.drift: 
+delta[0]: 18
+
+sample 2, delta time=-1.000 secs
+sample.drift: 
+delta[0]: 51
+
+sample 3, delta time=-1.000 secs
+sample.drift: 
+delta[0]: 22
+
+sample 4, delta time=-1.000 secs
+sample.drift: 
+delta[0]: 25
+
+sample 5, delta time=-1.000 secs
+sample.drift: 
+delta[0]: -49
+
+6 samples required 12 log reads
+=== std err ===
+=== valgrind report ===
+==482824== Memcheck, a memory error detector
+==482824== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==482824== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==482824== Command: src/interp1 -s 6 -a tmparch/mv-foo sample.drift
+==482824== Parent PID: 482817
+==482824== 
+
+parse DIE(readdwarf3.c:3689): confused by:
+ <2><a2311>: Abbrev Number: 96 (DW_TAG_subrange_type) (in alternate .debug_info)
+     DW_AT_type        : 0x4c	
+     DW_AT_count       : 0	
+parse_type_DIE:
+--482824-- WARNING: Serious error when reading debug info
+--482824-- When reading debug info from /usr/lib64/libpcp.so.3:
+--482824-- confused by the above DIE
+==482824== 
+==482824== HEAP SUMMARY:
+==482824==     in use at exit: 12,548 bytes in 237 blocks
+==482824==   total heap usage: 366 allocs, 129 frees, 101,549 bytes allocated
+==482824== 
+==482824== LEAK SUMMARY:
+==482824==    definitely lost: 0 bytes in 0 blocks
+==482824==    indirectly lost: 0 bytes in 0 blocks
+==482824==      possibly lost: 0 bytes in 0 blocks
+==482824==    still reachable: 12,548 bytes in 237 blocks
+==482824==         suppressed: 0 bytes in 0 blocks
+==482824== Reachable blocks (those to which a pointer was found) are not shown.
+==482824== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==482824== 
+==482824== For lists of detected and suppressed errors, rerun with: -s
+==482824== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/mv-foo sample.drift
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+metric: sample.lights
+Warning: no extra suppressions found for valgrind version 3.16.1
+=== std out ===
+metric[0]: sample.lights
+
+sample 1, delta time=-1.000 secs
+sample.lights: 
+value[0]: red
+
+sample 2, delta time=-1.000 secs
+sample.lights: 
+value[0]: yellow
+
+sample 3, delta time=-1.000 secs
+sample.lights: 
+value[0]: yellow
+
+sample 4, delta time=-1.000 secs
+sample.lights: 
+value[0]: yellow
+
+sample 5, delta time=-1.000 secs
+sample.lights: 
+value[0]: yellow
+
+6 samples required 12 log reads
+=== std err ===
+=== valgrind report ===
+==482846== Memcheck, a memory error detector
+==482846== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==482846== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==482846== Command: src/interp1 -s 6 -a tmparch/mv-foo sample.lights
+==482846== Parent PID: 482839
+==482846== 
+
+parse DIE(readdwarf3.c:3689): confused by:
+ <2><a2311>: Abbrev Number: 96 (DW_TAG_subrange_type) (in alternate .debug_info)
+     DW_AT_type        : 0x4c	
+     DW_AT_count       : 0	
+parse_type_DIE:
+--482846-- WARNING: Serious error when reading debug info
+--482846-- When reading debug info from /usr/lib64/libpcp.so.3:
+--482846-- confused by the above DIE
+==482846== 
+==482846== HEAP SUMMARY:
+==482846==     in use at exit: 12,559 bytes in 238 blocks
+==482846==   total heap usage: 372 allocs, 134 frees, 101,609 bytes allocated
+==482846== 
+==482846== LEAK SUMMARY:
+==482846==    definitely lost: 0 bytes in 0 blocks
+==482846==    indirectly lost: 0 bytes in 0 blocks
+==482846==      possibly lost: 0 bytes in 0 blocks
+==482846==    still reachable: 12,559 bytes in 238 blocks
+==482846==         suppressed: 0 bytes in 0 blocks
+==482846== Reachable blocks (those to which a pointer was found) are not shown.
+==482846== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==482846== 
+==482846== For lists of detected and suppressed errors, rerun with: -s
+==482846== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/mv-foo sample.lights
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+=== archive tmparch/noti-foo ===
+
+metric: sample.seconds
+Warning: no extra suppressions found for valgrind version 3.16.1
+=== std out ===
+metric[0]: sample.seconds
+
+sample 1, delta time=-1.000 secs
+sample.seconds: 
+delta[0]: -1
+
+sample 2, delta time=-1.000 secs
+sample.seconds: 
+delta[0]: -1
+
+sample 3, delta time=-1.000 secs
+sample.seconds: 
+delta[0]: -1
+
+sample 4, delta time=-1.000 secs
+sample.seconds: 
+delta[0]: -1
+
+sample 5, delta time=-1.000 secs
+sample.seconds: 
+delta[0]: -1
+
+6 samples required 10 log reads
+=== std err ===
+=== valgrind report ===
+==482872== Memcheck, a memory error detector
+==482872== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==482872== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==482872== Command: src/interp1 -s 6 -a tmparch/noti-foo sample.seconds
+==482872== Parent PID: 482865
+==482872== 
+
+parse DIE(readdwarf3.c:3689): confused by:
+ <2><a2311>: Abbrev Number: 96 (DW_TAG_subrange_type) (in alternate .debug_info)
+     DW_AT_type        : 0x4c	
+     DW_AT_count       : 0	
+parse_type_DIE:
+--482872-- WARNING: Serious error when reading debug info
+--482872-- When reading debug info from /usr/lib64/libpcp.so.3:
+--482872-- confused by the above DIE
+==482872== 
+==482872== HEAP SUMMARY:
+==482872==     in use at exit: 11,869 bytes in 237 blocks
+==482872==   total heap usage: 328 allocs, 91 frees, 67,559 bytes allocated
+==482872== 
+==482872== LEAK SUMMARY:
+==482872==    definitely lost: 0 bytes in 0 blocks
+==482872==    indirectly lost: 0 bytes in 0 blocks
+==482872==      possibly lost: 0 bytes in 0 blocks
+==482872==    still reachable: 11,869 bytes in 237 blocks
+==482872==         suppressed: 0 bytes in 0 blocks
+==482872== Reachable blocks (those to which a pointer was found) are not shown.
+==482872== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==482872== 
+==482872== For lists of detected and suppressed errors, rerun with: -s
+==482872== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/noti-foo sample.seconds
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+metric: sample.bin
+Warning: no extra suppressions found for valgrind version 3.16.1
+=== std out ===
+metric[0]: sample.bin
+
+sample 1, delta time=-1.000 secs
+sample.bin: 
+delta[0]: 0
+delta[1]: 0
+delta[2]: 0
+delta[3]: 0
+delta[4]: 0
+delta[5]: 0
+delta[6]: 0
+delta[7]: 0
+delta[8]: 0
+
+sample 2, delta time=-1.000 secs
+sample.bin: 
+delta[0]: 0
+delta[1]: 0
+delta[2]: 0
+delta[3]: 0
+delta[4]: 0
+delta[5]: 0
+delta[6]: 0
+delta[7]: 0
+delta[8]: 0
+
+sample 3, delta time=-1.000 secs
+sample.bin: 
+delta[0]: 0
+delta[1]: 0
+delta[2]: 0
+delta[3]: 0
+delta[4]: 0
+delta[5]: 0
+delta[6]: 0
+delta[7]: 0
+delta[8]: 0
+
+sample 4, delta time=-1.000 secs
+sample.bin: 
+delta[0]: 0
+delta[1]: 0
+delta[2]: 0
+delta[3]: 0
+delta[4]: 0
+delta[5]: 0
+delta[6]: 0
+delta[7]: 0
+delta[8]: 0
+
+sample 5, delta time=-1.000 secs
+sample.bin: 
+delta[0]: 0
+delta[1]: 0
+delta[2]: 0
+delta[3]: 0
+delta[4]: 0
+delta[5]: 0
+delta[6]: 0
+delta[7]: 0
+delta[8]: 0
+
+6 samples required 10 log reads
+=== std err ===
+=== valgrind report ===
+==482894== Memcheck, a memory error detector
+==482894== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==482894== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==482894== Command: src/interp1 -s 6 -a tmparch/noti-foo sample.bin
+==482894== Parent PID: 482887
+==482894== 
+
+parse DIE(readdwarf3.c:3689): confused by:
+ <2><a2311>: Abbrev Number: 96 (DW_TAG_subrange_type) (in alternate .debug_info)
+     DW_AT_type        : 0x4c	
+     DW_AT_count       : 0	
+parse_type_DIE:
+--482894-- WARNING: Serious error when reading debug info
+--482894-- When reading debug info from /usr/lib64/libpcp.so.3:
+--482894-- confused by the above DIE
+==482894== 
+==482894== HEAP SUMMARY:
+==482894==     in use at exit: 13,085 bytes in 253 blocks
+==482894==   total heap usage: 362 allocs, 109 frees, 70,095 bytes allocated
+==482894== 
+==482894== LEAK SUMMARY:
+==482894==    definitely lost: 0 bytes in 0 blocks
+==482894==    indirectly lost: 0 bytes in 0 blocks
+==482894==      possibly lost: 0 bytes in 0 blocks
+==482894==    still reachable: 13,085 bytes in 253 blocks
+==482894==         suppressed: 0 bytes in 0 blocks
+==482894== Reachable blocks (those to which a pointer was found) are not shown.
+==482894== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==482894== 
+==482894== For lists of detected and suppressed errors, rerun with: -s
+==482894== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/noti-foo sample.bin
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+metric: sample.colour
+Warning: no extra suppressions found for valgrind version 3.16.1
+=== std out ===
+metric[0]: sample.colour
+
+sample 1, delta time=-1.000 secs
+sample.colour: 
+delta[0]: -6
+delta[1]: -6
+delta[2]: -6
+
+sample 2, delta time=-1.000 secs
+sample.colour: 
+delta[0]: -3
+delta[1]: -3
+delta[2]: -3
+
+sample 3, delta time=-1.000 secs
+sample.colour: 
+delta[0]: -3
+delta[1]: -3
+delta[2]: -3
+
+sample 4, delta time=-1.000 secs
+sample.colour: 
+delta[0]: -3
+delta[1]: -3
+delta[2]: -3
+
+sample 5, delta time=-1.000 secs
+sample.colour: 
+delta[0]: 0
+delta[1]: 0
+delta[2]: 0
+
+6 samples required 10 log reads
+=== std err ===
+=== valgrind report ===
+==482916== Memcheck, a memory error detector
+==482916== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==482916== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==482916== Command: src/interp1 -s 6 -a tmparch/noti-foo sample.colour
+==482916== Parent PID: 482909
+==482916== 
+
+parse DIE(readdwarf3.c:3689): confused by:
+ <2><a2311>: Abbrev Number: 96 (DW_TAG_subrange_type) (in alternate .debug_info)
+     DW_AT_type        : 0x4c	
+     DW_AT_count       : 0	
+parse_type_DIE:
+--482916-- WARNING: Serious error when reading debug info
+--482916-- When reading debug info from /usr/lib64/libpcp.so.3:
+--482916-- confused by the above DIE
+==482916== 
+==482916== HEAP SUMMARY:
+==482916==     in use at exit: 12,173 bytes in 241 blocks
+==482916==   total heap usage: 338 allocs, 97 frees, 68,130 bytes allocated
+==482916== 
+==482916== LEAK SUMMARY:
+==482916==    definitely lost: 0 bytes in 0 blocks
+==482916==    indirectly lost: 0 bytes in 0 blocks
+==482916==      possibly lost: 0 bytes in 0 blocks
+==482916==    still reachable: 12,173 bytes in 241 blocks
+==482916==         suppressed: 0 bytes in 0 blocks
+==482916== Reachable blocks (those to which a pointer was found) are not shown.
+==482916== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==482916== 
+==482916== For lists of detected and suppressed errors, rerun with: -s
+==482916== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/noti-foo sample.colour
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+metric: sample.drift
+Warning: no extra suppressions found for valgrind version 3.16.1
+=== std out ===
+metric[0]: sample.drift
+
+sample 1, delta time=-1.000 secs
+sample.drift: 
+delta[0]: 13
+
+sample 2, delta time=-1.000 secs
+sample.drift: 
+delta[0]: 21
+
+sample 3, delta time=-1.000 secs
+sample.drift: 
+delta[0]: 23
+
+sample 4, delta time=-1.000 secs
+sample.drift: 
+delta[0]: 12
+
+sample 5, delta time=-1.000 secs
+sample.drift: 
+delta[0]: 0
+
+6 samples required 10 log reads
+=== std err ===
+=== valgrind report ===
+==482940== Memcheck, a memory error detector
+==482940== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==482940== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==482940== Command: src/interp1 -s 6 -a tmparch/noti-foo sample.drift
+==482940== Parent PID: 482933
+==482940== 
+
+parse DIE(readdwarf3.c:3689): confused by:
+ <2><a2311>: Abbrev Number: 96 (DW_TAG_subrange_type) (in alternate .debug_info)
+     DW_AT_type        : 0x4c	
+     DW_AT_count       : 0	
+parse_type_DIE:
+--482940-- WARNING: Serious error when reading debug info
+--482940-- When reading debug info from /usr/lib64/libpcp.so.3:
+--482940-- confused by the above DIE
+==482940== 
+==482940== HEAP SUMMARY:
+==482940==     in use at exit: 11,869 bytes in 237 blocks
+==482940==   total heap usage: 328 allocs, 91 frees, 67,559 bytes allocated
+==482940== 
+==482940== LEAK SUMMARY:
+==482940==    definitely lost: 0 bytes in 0 blocks
+==482940==    indirectly lost: 0 bytes in 0 blocks
+==482940==      possibly lost: 0 bytes in 0 blocks
+==482940==    still reachable: 11,869 bytes in 237 blocks
+==482940==         suppressed: 0 bytes in 0 blocks
+==482940== Reachable blocks (those to which a pointer was found) are not shown.
+==482940== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==482940== 
+==482940== For lists of detected and suppressed errors, rerun with: -s
+==482940== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/noti-foo sample.drift
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+metric: sample.lights
+Warning: no extra suppressions found for valgrind version 3.16.1
+=== std out ===
+metric[0]: sample.lights
+
+sample 1, delta time=-1.000 secs
+sample.lights: 
+value[0]: red
+
+sample 2, delta time=-1.000 secs
+sample.lights: 
+value[0]: red
+
+sample 3, delta time=-1.000 secs
+sample.lights: 
+value[0]: red
+
+sample 4, delta time=-1.000 secs
+sample.lights: 
+value[0]: red
+
+sample 5, delta time=-1.000 secs
+sample.lights: 
+value[0]: red
+
+6 samples required 10 log reads
+=== std err ===
+=== valgrind report ===
+==482962== Memcheck, a memory error detector
+==482962== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==482962== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==482962== Command: src/interp1 -s 6 -a tmparch/noti-foo sample.lights
+==482962== Parent PID: 482955
+==482962== 
+
+parse DIE(readdwarf3.c:3689): confused by:
+ <2><a2311>: Abbrev Number: 96 (DW_TAG_subrange_type) (in alternate .debug_info)
+     DW_AT_type        : 0x4c	
+     DW_AT_count       : 0	
+parse_type_DIE:
+--482962-- WARNING: Serious error when reading debug info
+--482962-- When reading debug info from /usr/lib64/libpcp.so.3:
+--482962-- confused by the above DIE
+==482962== 
+==482962== HEAP SUMMARY:
+==482962==     in use at exit: 11,877 bytes in 238 blocks
+==482962==   total heap usage: 334 allocs, 96 frees, 67,607 bytes allocated
+==482962== 
+==482962== LEAK SUMMARY:
+==482962==    definitely lost: 0 bytes in 0 blocks
+==482962==    indirectly lost: 0 bytes in 0 blocks
+==482962==      possibly lost: 0 bytes in 0 blocks
+==482962==    still reachable: 11,877 bytes in 238 blocks
+==482962==         suppressed: 0 bytes in 0 blocks
+==482962== Reachable blocks (those to which a pointer was found) are not shown.
+==482962== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==482962== 
+==482962== For lists of detected and suppressed errors, rerun with: -s
+==482962== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/noti-foo sample.lights
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...

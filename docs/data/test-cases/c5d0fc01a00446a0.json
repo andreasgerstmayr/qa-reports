@@ -1,0 +1,58 @@
+{
+  "uid" : "c5d0fc01a00446a0",
+  "name" : "QA 783",
+  "fullName" : "QA #783 on ubuntu1804-direct",
+  "historyId" : "783@ubuntu1804-direct",
+  "time" : {
+    "start" : 1597947553000,
+    "stop" : 1597947553000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 783\n\nCheck for memory issues in RPM PMDA instance handling\n\n\n\nCopyright (c) 2013 Red Hat.  All Rights Reserved.\n\n\n\nseq=`basename $0`\n\necho \"QA output created by $seq\"\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 783</p>\n<p>Check for memory issues in RPM PMDA instance handling</p>\n<p>Copyright (c) 2013 Red Hat.  All Rights Reserved.</p>\n<p>seq=<code>basename $0</code></p>\n<p>echo &quot;QA output created by $seq&quot;</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "pmdarpm not installed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.rpm"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "valgrind"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/783",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/783.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c5d0fc01a00446a0.json",
+  "parameterValues" : [ ]
+}

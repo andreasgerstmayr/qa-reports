@@ -1,0 +1,7 @@
+QA output created by 975
+Comparing stock iostat output to PCP archive
+Verifying sample 1
+Verifying sample 2
+[25] loop0            0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+Device: (new -x format) number of values? expected 23, found 21
+Arrgh: non-zero exit status from 2nd iostat2pcp

@@ -1,0 +1,89 @@
+{
+  "uid" : "c6871d5c4956f633",
+  "name" : "QA 750",
+  "fullName" : "QA #750 on fedora_rawhide-container",
+  "historyId" : "750@fedora_rawhide-container",
+  "time" : {
+    "start" : 1597947930000,
+    "stop" : 1597947998000,
+    "duration" : 68000
+  },
+  "description" : "PCP QA Test No. 750\n\nExercise the RPM Package Manager PMDA\n\n\n\nCopyright (c) 2013-2014 Red Hat.\n\n\n\nseq=`basename $0`\n\necho \"QA output created by $seq\"\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform fedora_rawhide reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 750</p>\n<p>Exercise the RPM Package Manager PMDA</p>\n<p>Copyright (c) 2013-2014 Red Hat.</p>\n<p>seq=<code>basename $0</code></p>\n<p>echo &quot;QA output created by $seq&quot;</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform fedora_rawhide reproduce\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "[failed, exit status 1] - output mismatch (see 750.out.bad)\n4,166c4\n< \n< metric:    rpm.arch\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n<              \"noarch\" \n< \n< metric:    rpm.buildhost\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n< \"BUILDHOST\" \n< \n< metric:    rpm.buildtime\n< host:      HOST\n< semantics: instantaneous value\n< units:     sec\n< samples:   1\n< full label for instance[0]: qaplayer-1.0-1.noarch\n< \n< qaplayer-1. \n<  TIMESTAMP \n< \n< metric:    rpm.description\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n< \"It slices!  It dices!  It's a QA player app that\n< can't be beat.  By using the resonant frequency\n< of the QA itself, it is able to simulate 20X\n< oversampling.  This leads to sound quality that\n< cannot be equaled with more mundane software...\" \n< \n< metric:    rpm.epoch\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< full label for instance[0]: qaplayer-1.0-1.noarch\n< \n< qaplayer-1. \n<           0 \n< \n< metric:    rpm.group\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n<  \"Applications/Sound\" \n< \n< metric:    rpm.installtime\n< host:      HOST\n< semantics: instantaneous value\n< units:     sec\n< samples:   1\n< full label for instance[0]: qaplayer-1.0-1.noarch\n< \n< qaplayer-1. \n<  TIMESTAMP \n< \n< metric:    rpm.license\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n<                 \"GPL\" \n< \n< metric:    rpm.packager\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n< \"Santa Claus <sclaus@northpole.com>\" \n< \n< metric:    rpm.release\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n<                   \"1\" \n< \n< metric:    rpm.size\n< host:      HOST\n< semantics: instantaneous value\n< units:     byte\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n<                     0 \n< \n< metric:    rpm.sourcerpm\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n< \"qaplayer-1.0-1.src.rpm\" \n< \n< metric:    rpm.summary\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n< \"A QA player app that rocks!\" \n< \n< metric:    rpm.url\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n< \"http://www.gnomovision.com/qaplayer/qaplayer.html\" \n< \n< metric:    rpm.vendor\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n< \"White Socks Software, Inc.\" \n< \n< metric:    rpm.version\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n<                 \"1.0\" \n< \n< metric:    rpm.name\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n<            \"qaplayer\" \n< \n< Total bytes check: OK\n< Total count check: OK\n---\n> rpm_package_install_await gave up awaiting qaplayer-1.0-1.noarch install!\n168,184d5\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h d6bbf0991c84 -f sample.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f sampledso.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 750\n\nExercise the RPM Package Manager PMDA\n\n\n\nCopyright (c) 2013-2014 Red Hat.\n\n\n\nseq=`basename $0`\n\necho \"QA output created by $seq\"\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform fedora_rawhide reproduce",
+    "status" : "broken",
+    "statusMessage" : "[failed, exit status 1] - output mismatch (see 750.out.bad)\n4,166c4\n< \n< metric:    rpm.arch\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n<              \"noarch\" \n< \n< metric:    rpm.buildhost\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n< \"BUILDHOST\" \n< \n< metric:    rpm.buildtime\n< host:      HOST\n< semantics: instantaneous value\n< units:     sec\n< samples:   1\n< full label for instance[0]: qaplayer-1.0-1.noarch\n< \n< qaplayer-1. \n<  TIMESTAMP \n< \n< metric:    rpm.description\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n< \"It slices!  It dices!  It's a QA player app that\n< can't be beat.  By using the resonant frequency\n< of the QA itself, it is able to simulate 20X\n< oversampling.  This leads to sound quality that\n< cannot be equaled with more mundane software...\" \n< \n< metric:    rpm.epoch\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< full label for instance[0]: qaplayer-1.0-1.noarch\n< \n< qaplayer-1. \n<           0 \n< \n< metric:    rpm.group\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n<  \"Applications/Sound\" \n< \n< metric:    rpm.installtime\n< host:      HOST\n< semantics: instantaneous value\n< units:     sec\n< samples:   1\n< full label for instance[0]: qaplayer-1.0-1.noarch\n< \n< qaplayer-1. \n<  TIMESTAMP \n< \n< metric:    rpm.license\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n<                 \"GPL\" \n< \n< metric:    rpm.packager\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n< \"Santa Claus <sclaus@northpole.com>\" \n< \n< metric:    rpm.release\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n<                   \"1\" \n< \n< metric:    rpm.size\n< host:      HOST\n< semantics: instantaneous value\n< units:     byte\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n<                     0 \n< \n< metric:    rpm.sourcerpm\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n< \"qaplayer-1.0-1.src.rpm\" \n< \n< metric:    rpm.summary\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n< \"A QA player app that rocks!\" \n< \n< metric:    rpm.url\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n< \"http://www.gnomovision.com/qaplayer/qaplayer.html\" \n< \n< metric:    rpm.vendor\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n< \"White Socks Software, Inc.\" \n< \n< metric:    rpm.version\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n<                 \"1.0\" \n< \n< metric:    rpm.name\n< host:      HOST\n< semantics: instantaneous value\n< units:     none\n< samples:   1\n< \n< qaplayer-1.0-1.noarch \n<            \"qaplayer\" \n< \n< Total bytes check: OK\n< Total count check: OK\n---\n> rpm_package_install_await gave up awaiting qaplayer-1.0-1.noarch install!\n168,184d5\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\n< pmval: instance qaplayer-1.0-1.noarch not available\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h d6bbf0991c84 -f sample.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f sampledso.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d48928e78679cd3d",
+      "name" : "750.out.bad",
+      "source" : "d48928e78679cd3d.txt",
+      "type" : "text/plain",
+      "size" : 159
+    }, {
+      "uid" : "bd622f185163bf80",
+      "name" : "750.full",
+      "source" : "bd622f185163bf80.txt",
+      "type" : "text/plain",
+      "size" : 59708
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.rpm"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "flakey"
+  }, {
+    "name" : "epic",
+    "value" : "pmval"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/750",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/750.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "c6871d5c4956f633.json",
+  "parameterValues" : [ ]
+}

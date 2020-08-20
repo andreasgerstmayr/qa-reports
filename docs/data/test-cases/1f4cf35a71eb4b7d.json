@@ -1,0 +1,55 @@
+{
+  "uid" : "1f4cf35a71eb4b7d",
+  "name" : "QA 1359",
+  "fullName" : "QA #1359 on ubuntu1804-direct",
+  "historyId" : "1359@ubuntu1804-direct",
+  "time" : {
+    "start" : 1597950014000,
+    "stop" : 1597950015000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 1359\n\nNew debug flag setting/clearing routines ...\n\npmSetDebug() and pmClearDebug(), and the deprecated __pmParseDebug()\n\n\n\nCopyright (c) 2017 Ken McDonell.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 1359</p>\n<p>New debug flag setting/clearing routines ...</p>\n<p>pmSetDebug() and pmClearDebug(), and the deprecated __pmParseDebug()</p>\n<p>Copyright (c) 2017 Ken McDonell.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "epic",
+    "value" : "libpcp"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1359",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1359.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1f4cf35a71eb4b7d.json",
+  "parameterValues" : [ ]
+}

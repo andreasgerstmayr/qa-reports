@@ -1,0 +1,151 @@
+QA output created by 394
+
+=== tmparch/bigbin delta=2 ===
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp3 -a tmparch/bigbin -t 2
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+=== tmparch/bigbin delta=0.012 ===
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp3 -a tmparch/bigbin -t 0.012
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+=== tmparch/noti-ok-foo delta=0.5 ===
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp3 -a tmparch/noti-ok-foo -t 0.5
+24 bytes in 1 blocks are possibly lost in loss record 35 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x49F80DF: tsearch (tsearch.c:338)
+by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487A403: ??? (in /usr/lib/libpcp.so.3)
+by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)
+by 0x4899B5B: ??? (in /usr/lib/libpcp.so.3)
+by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x109CFC: main (interp3.c:395)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   fun:main
+}
+348 bytes in 1 blocks are possibly lost in loss record 76 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487A403: ??? (in /usr/lib/libpcp.so.3)
+by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)
+by 0x4899B5B: ??? (in /usr/lib/libpcp.so.3)
+by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x109CFC: main (interp3.c:395)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 2 errors from 2 contexts ...
+
+=== tmparch/noti-ok-foo delta=1.0 ===
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp3 -a tmparch/noti-ok-foo -t 1.0
+24 bytes in 1 blocks are possibly lost in loss record 36 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x49F80DF: tsearch (tsearch.c:338)
+by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487A403: ??? (in /usr/lib/libpcp.so.3)
+by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)
+by 0x4899B5B: ??? (in /usr/lib/libpcp.so.3)
+by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x109CFC: main (interp3.c:395)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   fun:main
+}
+348 bytes in 1 blocks are possibly lost in loss record 76 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487A403: ??? (in /usr/lib/libpcp.so.3)
+by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)
+by 0x4899B5B: ??? (in /usr/lib/libpcp.so.3)
+by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x109CFC: main (interp3.c:395)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 2 errors from 2 contexts ...
+
+=== tmparch/noti-ok-foo delta=2.0 ===
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp3 -a tmparch/noti-ok-foo -t 2.0
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...

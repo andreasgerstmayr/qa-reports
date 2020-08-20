@@ -1,0 +1,2629 @@
+Group "not_in_container" is empty or not defined; ignored
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[0%] 000
+[0%] 001
+[0%] 002 0s ...
+[0%] 003
+[0%] 004
+[0%] 005
+[0%] 006
+[0%] 007
+[0%] 008 [not run] No qualified results file (008.out.97d404ba7f88) for the localhost
+[0%] 010
+[0%] 011
+[0%] 012
+[0%] 013
+[0%] 014
+[1%] 015
+[1%] 016
+[1%] 017
+[1%] 018
+[1%] 019
+[1%] 020
+[1%] 021
+[1%] 022
+[1%] 023 - output mismatch (see 023.out.bad)
+185a186,188
+> $PCP_RC_DIR/pmlogger: Warning: Performance Co-Pilot archive logger(s) not permanently enabled.
+>     To enable pmlogger, run the following as root:
+>     # /sbin/chkconfig pmlogger on
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[1%] 024 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1 -a sample"
+[1%] 025 - output mismatch (see 025.out.bad)
+126a127,129
+> $PCP_RC_DIR/pmlogger: Warning: Performance Co-Pilot archive logger(s) not permanently enabled.
+>     To enable pmlogger, run the following as root:
+>     # /sbin/chkconfig pmlogger on
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[1%] 026
+[1%] 027
+[1%] 028
+[2%] 029
+[2%] 030
+[2%] 031
+[2%] 032 - output mismatch (see 032.out.bad)
+1a2,4
+> $PCP_RC_DIR/pmlogger: Warning: Performance Co-Pilot archive logger(s) not permanently enabled.
+>     To enable pmlogger, run the following as root:
+>     # /sbin/chkconfig pmlogger on
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[2%] 033 - output mismatch (see 033.out.bad)
+3d2
+<     inst [DISK] value NUMBER
+5d3
+<     inst [DISK] value NUMBER
+7d4
+<     inst [DISK] value NUMBER
+9d5
+<     inst [DISK] value NUMBER
+11d6
+<     inst [DISK] value NUMBER
+13d7
+<     inst [DISK] value NUMBER
+15d8
+<     inst [DISK] value STRING
+17d9
+<     inst [DISK] value NUMBER
+19d10
+<     inst [DISK] value NUMBER
+21d11
+<     inst [DISK] value NUMBER
+23d12
+<     inst [DISK] value NUMBER
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[2%] 034
+[2%] 035
+[2%] 036 - output mismatch (see 036.out.bad)
+34,41c34,35
+< my arg echoer ...
+< [0] TMP.sh
+< [1] blah;trickme|foo
+< [2] cat
+< [3] and
+< [4] dog
+< __pmProcessExec: pid=PID wait_pid=PID exit=0
+< __pmProcessExec -> 0
+---
+> __pmProcessExec: pid=PID wait_pid=PID exit=127
+> __pmProcessExec -> 127 exit=127
+46,51d39
+< my arg echoer ...
+< [0] TMP.sh
+< [1] blah;trickme|foo
+< [2] cat
+< [3] and
+< [4] dog
+53,54c41,42
+< __pmProcessPipeClose: pid=PID wait_pid=PID exit=0
+< __pmProcessPipeClose() -> 0
+---
+> __pmProcessPipeClose: pid=PID wait_pid=PID exit=127
+> __pmProcessPipeClose() -> 127 exit=127
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[2%] 037
+[2%] 038
+[2%] 039
+[2%] 040
+[2%] 041 - output mismatch (see 041.out.bad)
+14a15,17
+> $PCP_RC_DIR/pmlogger: Warning: Performance Co-Pilot archive logger(s) not permanently enabled.
+>     To enable pmlogger, run the following as root:
+>     # /sbin/chkconfig pmlogger on
+17a21,23
+> $PCP_RC_DIR/pmlogger: Warning: Performance Co-Pilot archive logger(s) not permanently enabled.
+>     To enable pmlogger, run the following as root:
+>     # /sbin/chkconfig pmlogger on
+27a34,36
+> $PCP_RC_DIR/pmlogger: Warning: Performance Co-Pilot archive logger(s) not permanently enabled.
+>     To enable pmlogger, run the following as root:
+>     # /sbin/chkconfig pmlogger on
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[3%] 042 [not run] Running kernel does not support containers
+[3%] 043
+[3%] 044
+[3%] 045
+[3%] 046
+[3%] 047 [not run] Running kernel does not support containers
+[3%] 048
+[3%] 049
+[3%] 050
+[3%] 051 - output mismatch (see 051.out.bad)
+60a61
+> [Thu Aug 20 16:43:32] pmcd(63669) Error: Failed to create avahi client: Daemon not running
+77a79
+> [Thu Aug 20 16:43:32] pmcd(63695) Error: Failed to create avahi client: Daemon not running
+94a97
+> [Thu Aug 20 16:43:32] pmcd(63721) Error: Failed to create avahi client: Daemon not running
+114a118
+> [Thu Aug 20 16:43:32] pmcd(63747) Error: Failed to create avahi client: Daemon not running
+132a137
+> [Thu Aug 20 16:43:32] pmcd(63773) Error: Failed to create avahi client: Daemon not running
+151a157
+> [Thu Aug 20 16:43:32] pmcd(63799) Error: Failed to create avahi client: Daemon not running
+170a177
+> [Thu Aug 20 16:43:32] pmcd(63825) Error: Failed to create avahi client: Daemon not running
+189a197
+> [Thu Aug 20 16:43:32] pmcd(63851) Error: Failed to create avahi client: Daemon not running
+208a217
+> [Thu Aug 20 16:43:32] pmcd(63877) Error: Failed to create avahi client: Daemon not running
+227a237
+> [Thu Aug 20 16:43:33] pmcd(63903) Error: Failed to create avahi client: Daemon not running
+258a269
+> [Thu Aug 20 16:43:33] pmcd(63929) Error: Failed to create avahi client: Daemon not running
+280a292
+> [Thu Aug 20 16:43:33] pmcd(63955) Error: Failed to create avahi client: Daemon not running
+298a311
+> [Thu Aug 20 16:43:33] pmcd(63981) Error: Failed to create avahi client: Daemon not running
+316a330
+> [Thu Aug 20 16:43:33] pmcd(64007) Error: Failed to create avahi client: Daemon not running
+335a350
+> [Thu Aug 20 16:43:33] pmcd(64033) Error: Failed to create avahi client: Daemon not running
+353a369
+> [Thu Aug 20 16:43:33] pmcd(64059) Error: Failed to create avahi client: Daemon not running
+371a388
+> [Thu Aug 20 16:43:33] pmcd(64085) Error: Failed to create avahi client: Daemon not running
+390a408
+> [Thu Aug 20 16:43:33] pmcd(64111) Error: Failed to create avahi client: Daemon not running
+409a428
+> [Thu Aug 20 16:43:33] pmcd(64137) Error: Failed to create avahi client: Daemon not running
+427a447
+> [Thu Aug 20 16:43:33] pmcd(64163) Error: Failed to create avahi client: Daemon not running
+448a469
+> [Thu Aug 20 16:43:33] pmcd(64189) Error: Failed to create avahi client: Daemon not running
+469a491
+> [Thu Aug 20 16:43:33] pmcd(64215) Error: Failed to create avahi client: Daemon not running
+490a513
+> [Thu Aug 20 16:43:44] pmcd(64241) Error: Failed to create avahi client: Daemon not running
+510a534
+> [Thu Aug 20 16:43:44] pmcd(64267) Error: Failed to create avahi client: Daemon not running
+530a555
+> [Thu Aug 20 16:43:44] pmcd(64293) Error: Failed to create avahi client: Daemon not running
+551a577
+> [Thu Aug 20 16:43:44] pmcd(64319) Error: Failed to create avahi client: Daemon not running
+574a601
+> [Thu Aug 20 16:43:44] pmcd(64345) Error: Failed to create avahi client: Daemon not running
+593a621
+> [Thu Aug 20 16:43:44] pmcd(64371) Error: Failed to create avahi client: Daemon not running
+606a635
+> [Thu Aug 20 16:43:44] pmcd(64395) Error: Failed to create avahi client: Daemon not running
+627a657
+> [Thu Aug 20 16:43:45] pmcd(64421) Error: Failed to create avahi client: Daemon not running
+648a679
+> [Thu Aug 20 16:43:45] pmcd(64448) Error: Failed to create avahi client: Daemon not running
+667a699
+> [Thu Aug 20 16:43:45] pmcd(64474) Error: Failed to create avahi client: Daemon not running
+686a719
+> [Thu Aug 20 16:43:45] pmcd(64500) Error: Failed to create avahi client: Daemon not running
+707a741
+> [Thu Aug 20 16:43:45] pmcd(64527) Error: Failed to create avahi client: Daemon not running
+731a766
+> [Thu Aug 20 16:43:45] pmcd(64554) Error: Failed to create avahi client: Daemon not running
+763a799
+> [Thu Aug 20 16:43:45] pmcd(64580) Error: Failed to create avahi client: Daemon not running
+783a820
+> [Thu Aug 20 16:43:45] pmcd(64606) Error: Failed to create avahi client: Daemon not running
+801a839
+> [Thu Aug 20 16:43:45] pmcd(64632) Error: Failed to create avahi client: Daemon not running
+820a859
+> [Thu Aug 20 16:43:45] pmcd(64658) Error: Failed to create avahi client: Daemon not running
+839a879
+> [Thu Aug 20 16:43:45] pmcd(64684) Error: Failed to create avahi client: Daemon not running
+859a900
+> [Thu Aug 20 16:43:45] pmcd(64710) Error: Failed to create avahi client: Daemon not running
+879a921
+> [Thu Aug 20 16:43:46] pmcd(64736) Error: Failed to create avahi client: Daemon not running
+892a935
+> [Thu Aug 20 16:43:46] pmcd(64759) Error: Failed to create avahi client: Daemon not running
+915a959
+> [Thu Aug 20 16:43:46] pmcd(64785) Error: Failed to create avahi client: Daemon not running
+935a980
+> [Thu Aug 20 16:43:46] pmcd(64811) Error: Failed to create avahi client: Daemon not running
+958a1004
+> [Thu Aug 20 16:43:46] pmcd(64838) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[3%] 052
+[3%] 053
+[3%] 054 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n1"
+[3%] 055
+[4%] 056
+[4%] 057
+[4%] 058
+[4%] 059
+[4%] 060
+[4%] 061
+[4%] 062
+[4%] 063 [failed, exit status 126] - output mismatch (see 063.out.bad)
+2c2
+< __pmOptFetchRedo returns: 0
+---
+> ./063: line 36: /tmp/063-68653: Permission denied
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[4%] 064
+[4%] 065
+[4%] 066 [not run] Cannot find two remote hosts running pmcd
+[4%] 067 - output mismatch (see 067.out.bad)
+5a6
+> [Thu Aug 20 16:45:20] pmcd(70804) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[4%] 068
+[5%] 069 [not run] Cannot find first remote host running pmcd
+[5%] 070 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[5%] 071
+[5%] 072 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[5%] 073
+[5%] 074
+[5%] 075 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1 -a sample"
+[5%] 076
+[5%] 077 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-n 1 -L"
+[5%] 078
+[5%] 079
+[5%] 080
+[5%] 081 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-p single -n 1 -v pcp>=2"
+[5%] 082
+[6%] 083 [not run] Cannot find first remote host running pmcd v2.x
+[6%] 084
+[6%] 085
+[6%] 086 [not run] Unable to find two other hosts
+[6%] 087
+[6%] 088
+[6%] 089
+[6%] 090
+[6%] 091
+[6%] 092
+[6%] 093
+[6%] 094
+[6%] 095
+[6%] 096
+[7%] 097
+[7%] 098
+[7%] 099
+[7%] 100
+[7%] 101
+[7%] 102
+[7%] 103
+[7%] 104
+[7%] 105
+[7%] 106
+[7%] 107
+[7%] 108
+[7%] 109
+[8%] 110
+[8%] 111
+[8%] 112
+[8%] 113 [not run] System has active loop devices, bailing
+[8%] 114
+[8%] 115 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-n 1 -L"
+[8%] 116 [not run] PCPQA_HYPHEN_HOST is not set in ./common.config
+[8%] 117 [not run] network.ip checks for linux done in test 216
+[8%] 118
+[8%] 119
+[8%] 120
+[8%] 121
+[8%] 122 [not run] Cannot find big endian host running pmdatrace
+[8%] 123
+[9%] 124
+[9%] 125
+[9%] 127
+[9%] 128
+[9%] 129
+[9%] 130 [not run] TODO: Need to reconcile rpc.server metrics for PCP_PLATFORM linux
+[9%] 131 [not run] PCPQA_FAR_PMCD is not set in ./common.config
+[9%] 132
+[9%] 133
+[9%] 134
+[9%] 135
+[9%] 136
+[9%] 137
+[10%] 138
+[10%] 139
+[10%] 140
+[10%] 141
+[10%] 142
+[10%] 143
+[10%] 144
+[10%] 145
+[10%] 146
+[10%] 147
+[10%] 149
+[10%] 150
+[10%] 151 - output mismatch (see 151.out.bad)
+67a68
+> Info: found .NeedRewrite => rewrite all archives
+70a72
+> Info: pmlogrewrite all archives in TMP
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[10%] 152
+[11%] 153
+[11%] 154
+[11%] 155
+[11%] 156
+[11%] 157
+[11%] 158
+[11%] 159 [not run] No cisco router set via $PCPQA_CISCO_ROUTER in ./common.config
+[11%] 160
+[11%] 161
+[11%] 163
+[11%] 165
+[11%] 166
+[11%] 167
+[11%] 168
+[12%] 169 - output mismatch (see 169.out.bad)
+4a5
+> [Thu Aug 20 16:58:40] pmcd(14084) Error: Failed to create avahi client: Daemon not running
+34a36
+> [Thu Aug 20 16:59:02] pmcd(14586) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[12%] 170
+[12%] 171
+[12%] 172 - output mismatch (see 172.out.bad)
+2a3
+> [Thu Aug 20 16:59:16] pmcd(19262) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[12%] 173
+[12%] 174
+[12%] 175
+[12%] 176
+[12%] 177
+[12%] 178
+[12%] 179
+[12%] 180
+[12%] 181
+[13%] 182
+[13%] 186
+[13%] 187 [not run] Cannot find a remote host running pmcd
+[13%] 188
+[13%] 189
+[13%] 190
+[13%] 191
+[13%] 192
+[13%] 193
+[13%] 194
+[13%] 195
+[13%] 196
+[13%] 197
+[13%] 198
+[14%] 199
+[14%] 200 - output mismatch (see 200.out.bad)
+28a29
+> [Thu Aug 20 17:02:18] pmcd(34840) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[14%] 201
+[14%] 202
+[14%] 203
+[14%] 204
+[14%] 205
+[14%] 206
+[14%] 207
+[14%] 208
+[14%] 209
+[14%] 210
+[14%] 211
+[15%] 213
+[15%] 214
+[15%] 215 [not run] pmsocks is not installed and/or not configured
+[15%] 216
+[15%] 217
+[15%] 218
+[15%] 219 [not run] new style /usr/include/pcp/pmdbg.h, nothing to test
+[15%] 220
+[15%] 221
+[15%] 222
+[15%] 224
+[15%] 225
+[15%] 226
+[15%] 227
+[16%] 228
+[16%] 229
+[16%] 230
+[16%] 231
+[16%] 232
+[16%] 233
+[16%] 234
+[16%] 235
+[16%] 236
+[16%] 237
+[16%] 238
+[16%] 239
+[16%] 240
+[16%] 241
+[17%] 242
+[17%] 243 - output mismatch (see 243.out.bad)
+1a2
+> [Thu Aug 20 17:04:46] pmcd(52829) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[17%] 244
+[17%] 245
+[17%] 246
+[17%] 247
+[17%] 248
+[17%] 249
+[17%] 250 - output mismatch (see 250.out.bad)
+10a11
+> sudo: unable to execute ./Rebuild: Permission denied
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[17%] 251
+[17%] 252
+[17%] 253
+[17%] 254
+[18%] 255 - output mismatch (see 255.out.bad)
+23a24
+> [Thu Aug 20 17:05:41] pmcd(58711) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[18%] 256
+[18%] 257 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-s linux -b 32 -m pmcd.version>2.0 -n 1 -a sample"
+[18%] 258
+[18%] 259
+[18%] 260
+[18%] 261
+[18%] 262 [not run] pmsocks is not installed and/or not configured
+[18%] 263
+[18%] 264
+[18%] 265
+[18%] 266
+[18%] 267
+[18%] 268
+[19%] 269
+[19%] 270
+[19%] 271
+[19%] 272 [not run] ./getpmcdhosts: unable to get 2 host(s) with options: "-n 2 -L -a sample -v pcp>=2 -s IRIX64"
+[19%] 273
+[19%] 274
+[19%] 275
+[19%] 276 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[19%] 277
+[19%] 278
+[19%] 279
+[19%] 280
+[19%] 281
+[20%] 282
+[20%] 283 - output mismatch (see 283.out.bad)
+3a4
+> [Thu Aug 20 17:13:36] pmcd(87003) Error: Failed to create avahi client: Daemon not running
+11a13,14
+> [Thu Aug 20 17:13:40] pmcd(87040) Error: Failed to create avahi client: Daemon not running
+> pmcd: avahi.c:106: createServices: Assertion `c' failed.
+13,14c16
+< __pmConnectPMCD(HOST): pmcd connection port=44321 fd=<n> PDU version=2
+< sample.long.one 1 1
+---
+> __pmConnectPMCD(HOST): pmcd connection port=44321 failed: Connection refused
+16,17c18,19
+< __pmConnectPMCD(HOST): pmcd connection port=9876 fd=<n> PDU version=2
+< sample.long.one 1 1
+---
+> __pmConnectPMCD(HOST): pmcd connection port=9876,4321,44321 failed: Connection refused
+> /usr/libexec/pcp/bin/pmsignal: line 123: kill: (87040) - No such process
+19a22,23
+> [Thu Aug 20 17:13:44] pmcd(87069) Error: Failed to create avahi client: Daemon not running
+> pmcd: avahi.c:106: createServices: Assertion `c' failed.
+21,22c25
+< __pmConnectPMCD(HOST): pmcd connection port=44321 fd=<n> PDU version=2
+< sample.long.one 1 1
+---
+> __pmConnectPMCD(HOST): pmcd connection port=44321 failed: Connection refused
+24,25c27,28
+< __pmConnectPMCD(HOST): pmcd connection port=9876 fd=<n> PDU version=2
+< sample.long.one 1 1
+---
+> __pmConnectPMCD(HOST): pmcd connection port=9876,4321,44321 failed: Connection refused
+> /usr/libexec/pcp/bin/pmsignal: line 123: kill: (87069) - No such process
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[20%] 285
+[20%] 286
+[20%] 287
+[20%] 288
+[20%] 289
+[20%] 291
+[20%] 292
+[20%] 293
+[20%] 294
+[20%] 295
+[20%] 296
+[20%] 297
+[21%] 298
+[21%] 299
+[21%] 300
+[21%] 301 - output mismatch (see 301.out.bad)
+1a2
+> [Thu Aug 20 17:16:59] pmcd(100381) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[21%] 302
+[21%] 303
+[21%] 304 - output mismatch (see 304.out.bad)
+12a13,14
+> Log finished DATE
+> 
+36a39,40
+> Log finished DATE
+> 
+56a61,62
+> Log finished DATE
+> 
+79a86,87
+> Log finished DATE
+> 
+101a110,111
+> Log finished DATE
+> 
+109a120,121
+> Log finished DATE
+> 
+134a147,148
+> Log finished DATE
+> 
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[21%] 305
+[21%] 306
+[21%] 307 [not run] metric network.tcp.drops is not available
+[21%] 308 [not run] Cannot get first remote pmcd host with proc.psinfo.ppid metrics
+[21%] 309
+[21%] 310
+[21%] 312
+[22%] 313
+[22%] 314
+[22%] 315
+[22%] 316
+[22%] 317
+[22%] 318
+[22%] 319
+[22%] 320
+[22%] 321
+[22%] 322 [not run] ./getpmcdhosts failed to find a suitable host
+[22%] 323
+[22%] 324
+[22%] 325 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[23%] 326
+[23%] 327
+[23%] 328
+[23%] 334
+[23%] 335
+[23%] 336
+[23%] 337
+[23%] 338
+[23%] 339
+[23%] 340 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-n 1 -L -v pcp>=2"
+[23%] 341
+[23%] 342
+[23%] 343
+[23%] 344 - output mismatch (see 344.out.bad)
+18a19,20
+> __pmConnectLocal: Warning: error attaching DSO "/tmp/344-118146.so"
+> /tmp/344-118146.so: failed to map segment from shared object: Operation not permitted
+20,23c22
+< qa.colour PMID: 400.0.5
+<     inst [0 or "red"] value 101
+<     inst [1 or "green"] value 202
+<     inst [2 or "blue"] value 303
+---
+> qa.colour: pmLookupDesc: No PMCD agent for domain of request
+691a691,693
+> __pmConnectLocal: Warning: error attaching DSO "TMP.$DSO_SUFFIX"
+> TMP.$DSO_SUFFIX: failed to map segment from shared object: Operation not permitted
+> 
+693d694
+< NotifyEndLocalContext: DSO PMDA TMP.$DSO_SUFFIX (400) notified of context 0 close
+697,699c698
+< 
+< qa.string.write_me PMID: 400.0.29
+<     value 13
+---
+> qa.string.write_me: pmLookupDesc: No PMCD agent for domain of request
+965a965,967
+> __pmConnectLocal: Warning: error attaching DSO "TMP.$DSO_SUFFIX"
+> TMP.$DSO_SUFFIX: failed to map segment from shared object: Operation not permitted
+> 
+967d968
+< NotifyEndLocalContext: DSO PMDA TMP.$DSO_SUFFIX (400) notified of context 0 close
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[24%] 345
+[24%] 346
+[24%] 347
+[24%] 348 [not run] KVM sysfs interface not available
+[24%] 349
+[24%] 350
+[24%] 351
+[24%] 352
+[24%] 353 [not run] pmsocks is not configured
+[24%] 354
+[24%] 355
+[24%] 356
+[24%] 357
+[25%] 358
+[25%] 359
+[25%] 360 [not run] ./getpmcdhosts: unable to get 2 host(s) with options: "-L -v pcp>=2 -n 2 -a sample"
+[25%] 361 [not run] One or more cgroups already in use
+[25%] 362
+[25%] 363
+[25%] 364
+[25%] 365 [not run] Cannot find first remote host running pmcd
+[25%] 367
+[25%] 368
+[25%] 369
+[25%] 370
+[25%] 371 [not run] perl Spreadsheet::Read module not installed
+[25%] 372 [not run] perl Spreadsheet::Read module not installed
+[26%] 373
+[26%] 374 [not run] Cannot find a 64-bit host running PCP
+[26%] 375 [not run] Cannot find a 64-bit host running PCP
+[26%] 376
+[26%] 377 [not run] HAVE_BITFIELDS_LTOR is false
+[26%] 378
+[26%] 379
+[26%] 380
+[26%] 381 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1 -P -a sample"
+[26%] 382
+[26%] 383
+[26%] 384
+[26%] 385
+[26%] 386
+[27%] 387
+[27%] 388
+[27%] 389
+[27%] 390
+[27%] 391
+[27%] 392 - output mismatch (see 392.out.bad)
+2a3
+> sudo: unable to execute ./Rebuild: Permission denied
+5,6d5
+< hw.new_hw PMID: 1.44.2
+< hw.hub.nasid PMID: 1.44.8
+10d8
+< hpux.new_irix PMID: 1.10.2
+16c14,15
+< foo.bar PMID: 1.2.0
+---
+> sudo: unable to execute ./Rebuild: Permission denied
+> hw.old_hw PMID: 1.44.0
+18,19c17
+< hw.new_hw PMID: 1.44.2
+< hw.hub.nasid PMID: 1.44.8
+---
+> hpux.old_irix PMID: 1.10.0
+21c19,20
+< hpux.new_irix PMID: 1.10.2
+---
+> hpux.hub.nasid PMID: 1.44.8
+> foo.bar PMID: 1.2.0
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[27%] 393
+[27%] 394
+[27%] 395
+[27%] 396
+[27%] 397
+[27%] 398
+[27%] 399
+[28%] 400
+[28%] 401
+[28%] 402
+[28%] 403
+[28%] 404
+[28%] 405
+[28%] 406
+[28%] 407
+[28%] 408
+[28%] 409
+[28%] 410
+[28%] 411
+[28%] 412
+[28%] 413
+[29%] 414
+[29%] 415
+[29%] 416
+[29%] 417
+[29%] 418
+[29%] 419
+[29%] 420 [not run] Not yet working - libpcp_gui recording
+[29%] 421
+[29%] 422
+[29%] 423
+[29%] 424
+[29%] 425
+[29%] 426
+[30%] 427
+[30%] 428
+[30%] 429 - output mismatch (see 429.out.bad)
+2,5c2
+< Rebuilding the Performance Metrics Name Space (PMNS) in TMPDIR ...
+< Rebuild: merging the following PMNS files: 
+< root
+< Rebuild: PMNS is unchanged.
+---
+> sudo: unable to execute ./Rebuild: Permission denied
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[30%] 430
+[30%] 431
+[30%] 432
+[30%] 433
+[30%] 434
+[30%] 435
+[30%] 436
+[30%] 437
+[30%] 438
+[30%] 439
+[30%] 440
+[31%] 441
+[31%] 442
+[31%] 443
+[31%] 444 - output mismatch (see 444.out.bad)
+4,5c4,5
+< pmRegisterDerived: register metric[0] event.flags = anon(PM_TYPE_U32)
+< pmRegisterDerived: register metric[1] event.missed = anon(PM_TYPE_U32)
+---
+> pmRegisterDerived: global metric[0] event.flags = anon(PM_TYPE_U32)
+> pmRegisterDerived: global metric[1] event.missed = anon(PM_TYPE_U32)
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[31%] 445
+[31%] 446
+[31%] 447
+[31%] 448
+[31%] 449
+[31%] 450
+[31%] 451
+[31%] 452
+[31%] 453
+[31%] 454
+[32%] 455
+[32%] 456
+[32%] 457
+[32%] 458
+[32%] 459
+[32%] 460
+[32%] 461
+[32%] 462 - output mismatch (see 462.out.bad)
+2a3
+> [Thu Aug 20 17:32:42] pmcd(41557) Error: Failed to create avahi client: Daemon not running
+11a13
+> [Thu Aug 20 17:33:04] pmcd(42203) Error: Failed to create avahi client: Daemon not running
+20a23
+> [Thu Aug 20 17:33:22] pmcd(42825) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[32%] 463
+[32%] 464
+[32%] 465
+[32%] 466
+[32%] 467
+[33%] 468
+[33%] 469 - output mismatch (see 469.out.bad)
+1a2,11
+> kernel.percpu.softirqs.RCU, full help text is too long: 251
+> kernel.percpu.softirqs.HRTIMER, full help text is too long: 251
+> kernel.percpu.softirqs.SCHED, full help text is too long: 251
+> kernel.percpu.softirqs.TASKLET, full help text is too long: 251
+> kernel.percpu.softirqs.IRQ_POLL, full help text is too long: 251
+> kernel.percpu.softirqs.BLOCK, full help text is too long: 251
+> kernel.percpu.softirqs.NET_RX, full help text is too long: 251
+> kernel.percpu.softirqs.NET_TX, full help text is too long: 251
+> kernel.percpu.softirqs.TIMER, full help text is too long: 251
+> kernel.percpu.softirqs.HI, full help text is too long: 251
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[33%] 470
+[33%] 471 - output mismatch (see 471.out.bad)
+3c3
+< Error: You must be root (uid 0) to update the pmcd(1) configuration.
+---
+> ./471: line 30: /tmp/471-45774.script: Permission denied
+6a7
+> sudo: unable to execute /tmp/471-45774.script: Permission denied
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[33%] 472
+[33%] 473
+[33%] 474
+[33%] 475
+[33%] 476 [not run] libpcp not built with fault injection enabled
+[33%] 477 [not run] libpcp not built with fault injection enabled
+[33%] 478 [not run] libpcp not built with fault injection enabled
+[33%] 479
+[33%] 480 [not run] libpcp not built with fault injection enabled
+[33%] 481
+[34%] 482
+[34%] 483
+[34%] 484
+[34%] 485
+[34%] 486
+[34%] 487
+[34%] 488
+[34%] 489
+[34%] 490
+[34%] 491
+[34%] 492
+[34%] 493
+[34%] 494
+[35%] 495
+[35%] 496
+[35%] 497
+[35%] 498
+[35%] 499
+[35%] 501
+[35%] 502
+[35%] 503
+[35%] 504 [not run] libpcp not built with fault injection enabled
+[35%] 505
+[35%] 506
+[35%] 507 - output mismatch (see 507.out.bad)
+7a8,20
+> 1,10c1
+> < Performance Co-Pilot configuration on HOST:
+> < 
+> <  platform: Linux HOST 5.3.0-1034-azure #35~18.04.1-Ubuntu SMP Mon Jul 13 12:54:45 UTC 2020 x86_64
+> <  hardware: 2 cpus, 2 disks, 1 node, 6927MB RAM
+> <  timezone: UTC
+> <  services: pmcd
+> <      pmcd: Version 5.2.1-1, 13 agents, 1 client
+> <      pmda: root pmcd proc pmproxy xfs sample sampledso linux mmv kvm
+> <            jbd2 dm simple
+> <  pmlogger: primary logger: /var/log/pcp/pmlogger/HOST/20200820.17.33
+> ---
+> > pcp-summary: Cannot connect to PMCD on host "HOST": No route to host
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[35%] 508
+[35%] 509
+[36%] 510
+[36%] 511
+[36%] 512 [not run] libpcp not built with fault injection & lock tracing enabled
+[36%] 513
+[36%] 514 - output mismatch (see 514.out.bad)
+2438d2437
+< ...: some sample ncpu equal [<%i undefined>] N N N
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[36%] 515
+[36%] 516
+[36%] 517
+[36%] 518
+[36%] 519 [not run] Cannot find first remote host running pmcd
+[36%] 520
+[36%] 521
+[36%] 522
+[36%] 523
+[37%] 524
+[37%] 525
+[37%] 526
+[37%] 527
+[37%] 528
+[37%] 529
+[37%] 530
+[37%] 531
+[37%] 532
+[37%] 533
+[37%] 534
+[37%] 535
+[37%] 536
+[38%] 537
+[38%] 538
+[38%] 539
+[38%] 540 [not run] libpcp not built with fault injection enabled
+[38%] 541
+[38%] 542
+[38%] 543 [not run] Noone listening on smtp port 25
+[38%] 544
+[38%] 545 [not run] pmsocks is not installed and/or not configured
+[38%] 546
+[38%] 547
+[38%] 548
+[38%] 549
+[38%] 550
+[39%] 551
+[39%] 552
+[39%] 553 [not run] python pcp pmda module not installed
+[39%] 554
+[39%] 555 [not run] No /etc/rsyslog.conf -- probably using a different syslog package
+[39%] 556
+[39%] 557
+[39%] 558
+[39%] 559
+[39%] 560
+[39%] 561 [not run] python argparse module not installed
+[39%] 562
+[39%] 563
+[40%] 564
+[40%] 565
+[40%] 566
+[40%] 567 [not run] python argparse module not installed
+[40%] 568
+[40%] 569
+[40%] 571
+[40%] 572
+[40%] 573
+[40%] 574
+[40%] 575
+[40%] 576
+[40%] 577
+[40%] 578 - output mismatch (see 578.out.bad)
+4a5
+> [Thu Aug 20 17:41:11] pmcd(88852) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[41%] 579
+[41%] 580
+[41%] 581 - output mismatch (see 581.out.bad)
+40a41
+> FILESYS overlay
+42a44,63
+> FILESYS overlay
+> FILESYS overlay
+> FILESYS overlay
+> FILESYS overlay
+> FILESYS overlay
+> FILESYS overlay
+> FILESYS overlay
+> FILESYS overlay
+> FILESYS overlay
+> FILESYS overlay
+> FILESYS overlay
+> FILESYS overlay
+> FILESYS overlay
+> FILESYS overlay
+> FILESYS overlay
+> FILESYS overlay
+> FILESYS overlay
+> FILESYS overlay
+> FILESYS overlay
+> FILESYS overlay
+45a67
+> FILESYS overlay
+50a73
+> FILESYS overlay
+55a79
+> FILESYS overlay
+60a85
+> FILESYS overlay
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[41%] 582
+[41%] 583 [not run] Cannot find first remote host running pmcd
+[41%] 585
+[41%] 586
+[41%] 587
+[41%] 588
+[41%] 589 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[41%] 590
+[41%] 591
+[41%] 592
+[41%] 593
+[42%] 594
+[42%] 595
+[42%] 596
+[42%] 597
+[42%] 598
+[42%] 599
+[42%] 600
+[42%] 601
+[42%] 602
+[42%] 603 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[42%] 604
+[42%] 605
+[42%] 606
+[43%] 607
+[43%] 608
+[43%] 609
+[43%] 610
+[43%] 611
+[43%] 612
+[43%] 613
+[43%] 614
+[43%] 615
+[43%] 616
+[43%] 617
+[43%] 618
+[43%] 619
+[43%] 620
+[44%] 621
+[44%] 622 [not run] PCPQA_HYPHEN_HOST is not set in ./common.config
+[44%] 623
+[44%] 624
+[44%] 625
+[44%] 626
+[44%] 627
+[44%] 628
+[44%] 629
+[44%] 630
+[44%] 632
+[44%] 633
+[44%] 634
+[45%] 635 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[45%] 636
+[45%] 637
+[45%] 638
+[45%] 639
+[45%] 640
+[45%] 641
+[45%] 642
+[45%] 643
+[45%] 644
+[45%] 645
+[45%] 646
+[45%] 647 - output mismatch (see 647.out.bad)
+119a120
+> [Thu Aug 20 17:50:03] pmcd(62067) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[45%] 648 - output mismatch (see 648.out.bad)
+61a62
+> [Thu Aug 20 17:50:20] pmcd(64062) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[46%] 649 - output mismatch (see 649.out.bad)
+54a55
+> [Thu Aug 20 17:50:39] pmcd(66251) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[46%] 650
+[46%] 651 [not run] need sensible setup, not simply hostname => localhost
+[46%] 652 [not run] systemd PMDA not installed
+[46%] 653
+[46%] 654 [not run] no GFS2 module to load and not builtin
+[46%] 655 [not run] no GFS2 module to load and not builtin
+[46%] 656
+[46%] 657 [not run] PMDA not built with dmstats support
+[46%] 658
+[46%] 659
+[46%] 662 [not run] pmseries command line utility not installed
+[46%] 664
+[46%] 665
+[47%] 667 [not run] socat binary not installed
+[47%] 670
+[47%] 671
+[47%] 672
+[47%] 673
+[47%] 674 - output mismatch (see 674.out.bad)
+3c3
+< ./674.sh: It is me, QA 674
+---
+> ./674: line 43: ./674.sh: Permission denied
+6c6,7
+< TMP/674.sh: It is me, QA 674
+---
+> Cannot find a pcp-674.sh command to execute
+> Please install pcp system tools package
+9c10,11
+< TMP/674.sh: It is me, QA 674
+---
+> Cannot find a pcp-674.sh command to execute
+> Please install pcp system tools package
+12c14,15
+< TMP/674.sh: It is me, QA 674
+---
+> Cannot find a pcp-../674.sh command to execute
+> Please install pcp system tools package
+15c18,19
+< TMP/674.sh: It is me, QA 674
+---
+> Cannot find a pcp-/tmp/674-75873/674.sh command to execute
+> Please install pcp system tools package
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[47%] 675
+[47%] 676
+[47%] 677
+[47%] 678
+[47%] 679
+[47%] 680
+[47%] 681 - output mismatch (see 681.out.bad)
+70,76c70
+< my arg echoer ...
+< [0] TMP.sh
+< [1] blah;trickme|foo
+< [2] cat
+< [3] and
+< [4] dog
+< __pmProcessExec -> 0
+---
+> __pmProcessExec -> 101 exit=101
+79c73
+< __pmProcessExec: pid=PID wait_pid=PID exit=0
+---
+> __pmProcessExec: pid=PID wait_pid=PID exit=101
+82a77,79
+> execve(0x79fa1b0(TMP.sh), 0x79fa440, 0x7ff0001b8) failed, errno 13
+> EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+> Add more stringent tests in PRE(sys_execve), or work out how to recover.
+91,96d87
+< my arg echoer ...
+< [0] TMP.sh
+< [1] blah;trickme|foo
+< [2] cat
+< [3] and
+< [4] dog
+98c89
+< __pmProcessPipeClose() -> 0
+---
+> __pmProcessPipeClose() -> 101 exit=101
+101c92
+< __pmProcessPipeClose: pid=PID wait_pid=PID exit=0
+---
+> __pmProcessPipeClose: pid=PID wait_pid=PID exit=101
+104a96,98
+> execve(0x79fa1c0(TMP.sh), 0x79fa450, 0x7ff0001b0) failed, errno 13
+> EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+> Add more stringent tests in PRE(sys_execve), or work out how to recover.
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[48%] 682
+[48%] 683 - output mismatch (see 683.out.bad)
+37a38
+> [Thu Aug 20 17:52:55] pmcd(99114) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[48%] 684
+[48%] 685 - output mismatch (see 685.out.bad)
+1a2
+> [Thu Aug 20 17:53:05] pmcd(101042) Error: Failed to create avahi client: Daemon not running
+3a5
+> [Thu Aug 20 17:53:06] pmcd(101563) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[48%] 686
+[48%] 687 - output mismatch (see 687.out.bad)
+11,12c11
+<  pmlogger [-...C...] ...
+<  The -C option will cause the configuration file ...
+---
+> No manual entry for pmlogger
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[48%] 688
+[48%] 689
+[48%] 690
+[48%] 691
+[48%] 692
+[48%] 693
+[48%] 694
+[48%] 695 - output mismatch (see 695.out.bad)
+16a17
+> [Thu Aug 20 17:53:43] pmcd(107266) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[49%] 696 [not run] python pcp pmda module not installed
+[49%] 697
+[49%] 698
+[49%] 699
+[49%] 700
+[49%] 701
+[49%] 702
+[49%] 703 [not run] weblog PMDA not installed
+[49%] 704
+[49%] 705
+[49%] 706
+[49%] 707
+[49%] 708
+[50%] 710
+[50%] 711
+[50%] 712 - output mismatch (see 712.out.bad)
+3a4
+> [Thu Aug 20 17:54:47] pmcd(113186) Error: Failed to create avahi client: Daemon not running
+10a12
+> [Thu Aug 20 17:54:52] pmcd(114138) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[50%] 713 - output mismatch (see 713.out.bad)
+5a6
+> [Thu Aug 20 17:55:20] pmcd(116404) Error: Failed to create avahi client: Daemon not running
+7a9
+> [Thu Aug 20 17:55:23] pmproxy(116970) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[50%] 714 - output mismatch (see 714.out.bad)
+5a6
+> [Thu Aug 20 17:55:45] pmcd(118810) Error: Failed to create avahi client: Daemon not running
+10a12
+> [Thu Aug 20 17:55:49] pmcd(119755) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[50%] 715
+[50%] 716
+[50%] 717 [not run] python pcp pmda module not installed
+[50%] 718 [not run] python pcp pmda module not installed
+[50%] 719
+[50%] 720
+[50%] 721
+[50%] 722
+[50%] 723
+[51%] 724 [not run] No discovery mechanisms are available
+[51%] 725
+[51%] 726
+[51%] 728
+[51%] 729
+[51%] 730
+[51%] 731
+[51%] 732
+[51%] 733
+[51%] 734 [not run] No remote hosts available
+[51%] 735 [failed, exit status 1] - output mismatch (see 735.out.bad)
+2,34c2,4
+< Control group list for current process checks out
+< 
+< Checking logged control group proc data ...
+< 
+< == Fetching proc.psinfo.cgroups metric - procpid-4.14.5-root-005.tgz
+< 
+< proc.psinfo.cgroups
+<     inst [N or "000001 /usr/lib/systemd/systemd"] value "cpuset:/;hugetlb:/;memory:/init.scope;pids:/init.scope;devices:/init.scope;freezer:/;blkio:/init.scope;net_cls,net_prio:/;perf_event:/;cpu,cpuacct:/init.scope;name=systemd:/init.scope;:/init.scope"
+<     inst [N or "000996 /usr/libexec/docker/docker-containerd-current"] value "cpuset:/;hugetlb:/;memory:/system.slice/docker-containerd.service;pids:/system.slice/docker-containerd.service;devices:/system.slice/docker-containerd.service;freezer:/;blkio:/system.slice/docker-containerd.service;net_cls,net_prio:/;perf_event:/;cpu,cpuacct:/system.slice/docker-containerd.service;name=systemd:/system.slice/docker-containerd.service;:/system.slice/docker-containerd.service"
+<     inst [N or "026287 /usr/libexec/docker/docker-containerd-shim-current"] value "cpuset:/;hugetlb:/;memory:/system.slice/docker-containerd.service;pids:/system.slice/docker-containerd.service;devices:/system.slice/docker-containerd.service;freezer:/;blkio:/system.slice/docker-containerd.service;net_cls,net_prio:/;perf_event:/;cpu,cpuacct:/system.slice/docker-containerd.service;name=systemd:/system.slice/docker-containerd.service;:/system.slice/docker-containerd.service"
+<     inst [N or "026304 /bin/prometheus"] value "cpuset:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;hugetlb:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;memory:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;pids:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;devices:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;freezer:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;blkio:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;net_cls,net_prio:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope;perf_event:/system.slice/docker-0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736.scope"
+< 
+< == Fetching proc.id.container metric - procpid-4.14.5-root-005.tgz
+< 
+< proc.id.container
+<     inst [N or "000001 /usr/lib/systemd/systemd"] value ""
+<     inst [N or "000996 /usr/libexec/docker/docker-containerd-current"] value ""
+<     inst [N or "026287 /usr/libexec/docker/docker-containerd-shim-current"] value ""
+<     inst [N or "026304 /bin/prometheus"] value "0ea0c47ef0e1a90cd10059a0da0abd4da28d3bc35ce15c7beb46da1c7ab02736"
+< 
+< == Fetching proc.psinfo.cgroups metric - procpid-4.18.13-root-006.tgz
+< 
+< proc.psinfo.cgroups
+<     inst [N or "000001 /usr/lib/systemd/systemd"] value "blkio:/;devices:/;freezer:/;hugetlb:/;perf_event:/;cpu,cpuacct:/;cpuset:/;net_cls,net_prio:/;pids:/;memory:/;name=systemd:/init.scope;:/init.scope"
+<     inst [N or "025731 podman"] value "blkio:/;devices:/user.slice;freezer:/;hugetlb:/;perf_event:/;cpu,cpuacct:/;cpuset:/;net_cls,net_prio:/;pids:/user.slice/user-1000.slice/user@1000.service;memory:/user.slice/user-1000.slice/user@1000.service;name=systemd:/user.slice/user-1000.slice/user@1000.service/gnome-terminal-server.service;:/user.slice/user-1000.slice/user@1000.service/gnome-terminal-server.service"
+<     inst [N or "025951 /bin/prometheus"] value "blkio:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;devices:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;freezer:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;hugetlb:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;perf_event:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;cpu,cpuacct:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;cpuset:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;net_cls,net_prio:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope;pids:/machine.slice/libpod-06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c.scope"
+< 
+< == Fetching proc.id.container metric - procpid-4.18.13-root-006.tgz
+< 
+< proc.id.container
+<     inst [N or "000001 /usr/lib/systemd/systemd"] value ""
+<     inst [N or "025731 podman"] value ""
+<     inst [N or "025951 /bin/prometheus"] value "06e531ab675fb4a8141bcfd0f199957b132bfbd3080b7c6b99bd3f2ce0bca85c"
+---
+> Mismatch on control group list:
+> PCP cgroups: memory:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope;rdma:/;blkio:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope;freezer:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope;perf_event:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope;hugetlb:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope;cpu,cpuacct:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope;net_cls,net_prio:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope;pids:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope;devices:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope
+> SYS cgroups: memory:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope;rdma:/;blkio:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope;freezer:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope;perf_event:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope;hugetlb:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope;cpu,cpuacct:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope;net_cls,net_prio:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope;pids:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope;devices:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope;cpuset:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope;name=systemd:/machine.slice/libpod-97d404ba7f88ebc3759f29a3eb15745f37cf046a51f98e4d8316a48c277d7464.scope;:/system.slice/runner-provisioner.service
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[51%] 736
+[51%] 737
+[51%] 738
+[52%] 739
+[52%] 740
+[52%] 741
+[52%] 742
+[52%] 743
+[52%] 744
+[52%] 745
+[52%] 746
+[52%] 747
+[52%] 748
+[52%] 749 [not run] No systemtap stap executable found
+[52%] 750
+[52%] 751
+[53%] 752
+[53%] 753
+[53%] 754 [not run] python pcp pmda module not installed
+[53%] 755 - output mismatch (see 755.out.bad)
+15a16
+> [Thu Aug 20 17:59:01] pmcd(10451) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[53%] 756 [not run] PMDA_PERFEVENT is not true in builddefs
+[53%] 757 [not run] Optional perfevent PMDA not present
+[53%] 758
+[53%] 759 [not run] unbound-control not installed
+[53%] 760 [not run] Noones home on the default ActiveMQ REST port 8161
+[53%] 761
+[53%] 762
+[53%] 763
+[53%] 764
+[53%] 765
+[54%] 766 - output mismatch (see 766.out.bad)
+3c3,5
+< Discovered pmcd servers:
+---
+> [Thu Aug 20 18:00:37] pmfind(15294) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+> [Thu Aug 20 18:00:37] pmfind(15294) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+> No pmcd servers discovered
+7c9,10
+< Discovered pmcd servers:
+---
+> [Thu Aug 20 18:00:37] pmfind(15301) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+> No pmcd servers discovered
+9a13,14
+> [Thu Aug 20 18:00:37] pmfind(15308) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+> [Thu Aug 20 18:00:37] pmfind(15308) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+11a17
+> [Thu Aug 20 18:00:37] pmfind(15315) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+13a20
+> [Thu Aug 20 18:00:37] pmfind(15322) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[54%] 767 [not run] Running kernel does not support containers
+[54%] 768
+[54%] 769
+[54%] 770 [not run] libpcp not built with fault injection enabled
+[54%] 771
+[54%] 772
+[54%] 773
+[54%] 774
+[54%] 775 [not run] No discovery mechanisms are available
+[54%] 776
+[54%] 777
+[54%] 778 [not run] Cannot run psql as the postgres user, postgresql not installed or running?
+[55%] 779
+[55%] 780 [not run] pmseries command line utility not installed
+[55%] 781
+[55%] 783
+[55%] 784 [not run] python pcp pmda module not installed
+[55%] 785
+[55%] 786
+[55%] 787
+[55%] 788 - output mismatch (see 788.out.bad)
+15a16
+> [Thu Aug 20 18:01:07] pmcd(20357) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[55%] 789 [not run] Zimbra not installed
+[55%] 790
+[55%] 791
+[55%] 792
+[55%] 793
+[56%] 794 [not run] Running kernel does not support containers
+[56%] 795 [not run] perl Spreadsheet::ReadSXC module not installed
+[56%] 796 [not run] Noones home on the default elasticsearch port 9200
+[56%] 797
+[56%] 798 [not run] python pcp pmda module not installed
+[56%] 799
+[56%] 800
+[56%] 801
+[56%] 802
+[56%] 803
+[56%] 804
+[56%] 805 - output mismatch (see 805.out.bad)
+8c8
+< Check postfix metrics have appeared ... X metrics and Y values
+---
+> Check postfix metrics have appeared ... X metrics and 3 values
+12,22c12
+<     inst [0 or "total"] value 0
+<     inst [1 or "0-5 mins"] value 1
+<     inst [2 or "5-10 mins"] value 0
+<     inst [3 or "10-20 mins"] value 1
+<     inst [4 or "20-40 mins"] value 0
+<     inst [5 or "40-80 mins"] value 1
+<     inst [6 or "80-160 mins"] value 0
+<     inst [7 or "160-320 mins"] value 1
+<     inst [8 or "320-640 mins"] value 0
+<     inst [9 or "640-1280 mins"] value 1
+<     inst [10 or "1280+ mins"] value 10
+---
+> Error: Try again. Information not currently available
+25,35c15
+<     inst [0 or "total"] value 10
+<     inst [1 or "0-5 mins"] value 9
+<     inst [2 or "5-10 mins"] value 8
+<     inst [3 or "10-20 mins"] value 7
+<     inst [4 or "20-40 mins"] value 6
+<     inst [5 or "40-80 mins"] value 5
+<     inst [6 or "80-160 mins"] value 4
+<     inst [7 or "160-320 mins"] value 3
+<     inst [8 or "320-640 mins"] value 2
+<     inst [9 or "640-1280 mins"] value 1
+<     inst [10 or "1280+ mins"] value 0
+---
+> Error: Try again. Information not currently available
+38,48c18
+<     inst [0 or "total"] value 10
+<     inst [1 or "0-5 mins"] value 9
+<     inst [2 or "5-10 mins"] value 8
+<     inst [3 or "10-20 mins"] value 7
+<     inst [4 or "20-40 mins"] value 6
+<     inst [5 or "40-80 mins"] value 5
+<     inst [6 or "80-160 mins"] value 4
+<     inst [7 or "160-320 mins"] value 3
+<     inst [8 or "320-640 mins"] value 2
+<     inst [9 or "640-1280 mins"] value 1
+<     inst [10 or "1280+ mins"] value 0
+---
+> Error: Try again. Information not currently available
+51,61c21
+<     inst [0 or "total"] value 9
+<     inst [1 or "0-5 mins"] value 0
+<     inst [2 or "5-10 mins"] value 1
+<     inst [3 or "10-20 mins"] value 2
+<     inst [4 or "20-40 mins"] value 3
+<     inst [5 or "40-80 mins"] value 4
+<     inst [6 or "80-160 mins"] value 5
+<     inst [7 or "160-320 mins"] value 6
+<     inst [8 or "320-640 mins"] value 7
+<     inst [9 or "640-1280 mins"] value 8
+<     inst [10 or "1280+ mins"] value 9
+---
+> Error: Try again. Information not currently available
+64,74c24
+<     inst [0 or "total"] value 0
+<     inst [1 or "0-5 mins"] value 1
+<     inst [2 or "5-10 mins"] value 2
+<     inst [3 or "10-20 mins"] value 3
+<     inst [4 or "20-40 mins"] value 4
+<     inst [5 or "40-80 mins"] value 5
+<     inst [6 or "80-160 mins"] value 6
+<     inst [7 or "160-320 mins"] value 7
+<     inst [8 or "320-640 mins"] value 8
+<     inst [9 or "640-1280 mins"] value 9
+<     inst [10 or "1280+ mins"] value 10
+---
+> Error: Try again. Information not currently available
+87,97c37
+<     inst [0 or "total"] value 0
+<     inst [1 or "0-5 mins"] value 1
+<     inst [2 or "5-10 mins"] value 0
+<     inst [3 or "10-20 mins"] value 1
+<     inst [4 or "20-40 mins"] value 0
+<     inst [5 or "40-80 mins"] value 1
+<     inst [6 or "80-160 mins"] value 0
+<     inst [7 or "160-320 mins"] value 1
+<     inst [8 or "320-640 mins"] value 0
+<     inst [9 or "640-1280 mins"] value 1
+<     inst [10 or "1280+ mins"] value 10
+---
+> Error: Try again. Information not currently available
+100,110c40
+<     inst [0 or "total"] value 10
+<     inst [1 or "0-5 mins"] value 9
+<     inst [2 or "5-10 mins"] value 8
+<     inst [3 or "10-20 mins"] value 7
+<     inst [4 or "20-40 mins"] value 6
+<     inst [5 or "40-80 mins"] value 5
+<     inst [6 or "80-160 mins"] value 4
+<     inst [7 or "160-320 mins"] value 3
+<     inst [8 or "320-640 mins"] value 2
+<     inst [9 or "640-1280 mins"] value 1
+<     inst [10 or "1280+ mins"] value 0
+---
+> Error: Try again. Information not currently available
+113,123c43
+<     inst [0 or "total"] value 10
+<     inst [1 or "0-5 mins"] value 9
+<     inst [2 or "5-10 mins"] value 8
+<     inst [3 or "10-20 mins"] value 7
+<     inst [4 or "20-40 mins"] value 6
+<     inst [5 or "40-80 mins"] value 5
+<     inst [6 or "80-160 mins"] value 4
+<     inst [7 or "160-320 mins"] value 3
+<     inst [8 or "320-640 mins"] value 2
+<     inst [9 or "640-1280 mins"] value 1
+<     inst [10 or "1280+ mins"] value 0
+---
+> Error: Try again. Information not currently available
+126,136c46
+<     inst [0 or "total"] value 9
+<     inst [1 or "0-5 mins"] value 0
+<     inst [2 or "5-10 mins"] value 1
+<     inst [3 or "10-20 mins"] value 2
+<     inst [4 or "20-40 mins"] value 3
+<     inst [5 or "40-80 mins"] value 4
+<     inst [6 or "80-160 mins"] value 5
+<     inst [7 or "160-320 mins"] value 6
+<     inst [8 or "320-640 mins"] value 7
+<     inst [9 or "640-1280 mins"] value 8
+<     inst [10 or "1280+ mins"] value 9
+---
+> Error: Try again. Information not currently available
+139,149c49
+<     inst [0 or "total"] value 0
+<     inst [1 or "0-5 mins"] value 1
+<     inst [2 or "5-10 mins"] value 2
+<     inst [3 or "10-20 mins"] value 3
+<     inst [4 or "20-40 mins"] value 4
+<     inst [5 or "40-80 mins"] value 5
+<     inst [6 or "80-160 mins"] value 6
+<     inst [7 or "160-320 mins"] value 7
+<     inst [8 or "320-640 mins"] value 8
+<     inst [9 or "640-1280 mins"] value 9
+<     inst [10 or "1280+ mins"] value 10
+---
+> Error: Try again. Information not currently available
+166a67
+> [Thu Aug 20 18:01:47] pmcd(27146) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[56%] 806
+[56%] 807
+[57%] 808
+[57%] 810
+[57%] 811
+[57%] 812
+[57%] 813
+[57%] 814
+[57%] 815
+[57%] 816
+[57%] 817
+[57%] 818
+[57%] 819 [not run] Noones home on the default elasticsearch port 9200
+[57%] 820
+[57%] 821
+[58%] 823
+[58%] 824
+[58%] 825 [not run] Noones home on the default DS 389 port
+[58%] 826
+[58%] 827
+[58%] 828
+[58%] 829
+[58%] 830
+[58%] 831
+[58%] 832
+[58%] 833
+[58%] 834
+[58%] 835 [not run] Noones home on the default memcached port 11211
+[58%] 836
+[59%] 837 [not run] Running kernel does not support containers
+[59%] 838
+[59%] 839
+[59%] 840 [not run] avahi-daemon is not available
+[59%] 841 [not run] Python pcp pmda module is not installed
+[59%] 842
+[59%] 843 [not run] python pcp pmda module not installed
+[59%] 844
+[59%] 845 - output mismatch (see 845.out.bad)
+74a75
+> [Thu Aug 20 18:04:43] pmcd(67448) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[59%] 846 [not run] perl Spreadsheet::XLSX module not installed
+[59%] 847 [not run] Running kernel does not support containers
+[59%] 848 - output mismatch (see 848.out.bad)
+5a6
+> [Thu Aug 20 18:05:09] pmcd(68940) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[59%] 849
+[60%] 851
+[60%] 852
+[60%] 853
+[60%] 854
+[60%] 855 - output mismatch (see 855.out.bad)
+21a22
+> [Thu Aug 20 18:05:34] pmcd(74642) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[60%] 856
+[60%] 857
+[60%] 858
+[60%] 859
+[60%] 860
+[60%] 861 - output mismatch (see 861.out.bad)
+1a2
+> [Thu Aug 20 18:06:07] pmcd(78359) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[60%] 862
+[60%] 863 [not run] No binary named python3 found
+[60%] 864 [not run] pcp-collectl not installed
+[61%] 865
+[61%] 866 [not run] libpcp not built with fault injection enabled
+[61%] 867 [not run] pmseries command line utility not installed
+[61%] 868
+[61%] 869
+[61%] 870
+[61%] 871
+[61%] 872
+[61%] 873 [not run] only tested on single CPU systems
+[61%] 874
+[61%] 875
+[61%] 876 [not run] XFS module not present: FATAL: Could not load /lib/modules/5.3.0-1034-azure/modules.dep: No such file or directory
+[61%] 877
+[61%] 878 - output mismatch (see 878.out.bad)
+42a43
+> [Thu Aug 20 18:06:57] pmcd(82359) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[62%] 879
+[62%] 880
+[62%] 881
+[62%] 882
+[62%] 883
+[62%] 884
+[62%] 885
+[62%] 886
+[62%] 887
+[62%] 888
+[62%] 889
+[62%] 890
+[62%] 891
+[63%] 892
+[63%] 893 - output mismatch (see 893.out.bad)
+2c2,3
+< Local pmcd count: 1
+---
+> ./893: line 40: /tmp/893-92033.pmcd/pmcd: Permission denied
+> Local pmcd count: 0
+3a5
+> /usr/libexec/pcp/bin/pmsignal: line 123: kill: (92064) - No such process
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[63%] 894
+[63%] 895
+[63%] 896
+[63%] 897
+[63%] 898
+[63%] 899
+[63%] 900
+[63%] 901
+[63%] 902
+[63%] 903
+[63%] 904
+[63%] 905 [not run] Cannot find a PCP 2.7 QA host
+[64%] 906
+[64%] 907
+[64%] 908
+[64%] 909
+[64%] 910
+[64%] 911
+[64%] 912 [not run] NutCracker PMDA is not installed
+[64%] 913 [not run] Noone home on default Redis port 6379
+[64%] 914
+[64%] 915 [not run] No systemctl executable
+[64%] 916
+[64%] 917 [not run] seinfo version bad: can't load default policy
+[64%] 918 [not run] PCP_SYSTEMDUNIT_DIR not set, so no systemd here
+[65%] 919
+[65%] 920
+[65%] 921
+[65%] 922
+[65%] 923
+[65%] 924
+[65%] 925
+[65%] 926
+[65%] 927
+[65%] 928
+[65%] 929
+[65%] 930
+[65%] 931
+[65%] 932
+[66%] 933
+[66%] 934
+[66%] 935
+[66%] 936
+[66%] 937
+[66%] 938
+[66%] 939
+[66%] 940 [not run] upstream container policy package not loaded
+[66%] 941
+[66%] 942
+[66%] 943 - output mismatch (see 943.out.bad)
+207c207
+< proc.psinfo.tty_pgrp COUNT
+---
+> proc.psinfo.tty_pgrp 0
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[66%] 944 - output mismatch (see 944.out.bad)
+1a2
+> [Thu Aug 20 18:11:17] pmcd(106272) Error: Failed to create avahi client: Daemon not running
+59a61
+> [Thu Aug 20 18:11:19] pmcd(106335) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[66%] 945
+[66%] 946 [not run] avahi discovery mechanism is not available
+[67%] 947
+[67%] 948
+[67%] 949
+[67%] 950 [not run] avahi-daemon is not available
+[67%] 951
+[67%] 952
+[67%] 953
+[67%] 954 [not run] libpcp not built with -DPM_MULTI_THREAD_DEBUG
+[67%] 955
+[67%] 956
+[67%] 957
+[67%] 958
+[67%] 959
+[68%] 960 [not run] No ds389 directory log files accessible
+[68%] 961
+[68%] 962
+[68%] 963
+[68%] 964 - output mismatch (see 964.out.bad)
+13a14
+> [Thu Aug 20 18:13:33] pmcd(115064) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[68%] 965
+[68%] 966 - output mismatch (see 966.out.bad)
+5a6
+> [Thu Aug 20 18:14:02] pmcd(116355) Error: Failed to create avahi client: Daemon not running
+12a14
+> [DATE] pmcd(PID) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[68%] 967 [not run] No zsh executable
+[68%] 968
+[68%] 969
+[68%] 970
+[68%] 971
+[68%] 972 [not run] python pcp pmda module not installed
+[68%] 973 [not run] No kernel support for zswap
+[69%] 974
+[69%] 975
+[69%] 976
+[69%] 977 [not run] Running kernel does not support containers
+[69%] 978
+[69%] 979
+[69%] 980
+[69%] 981
+[69%] 982
+[69%] 983 [not run] socat binary not installed
+[69%] 984
+[69%] 985 [not run] perl Spreadsheet::ParseExcel module not installed
+[69%] 986 [not run] perl Spreadsheet::ReadSXC module not installed
+[70%] 987
+[70%] 988
+[70%] 989
+[70%] 990
+[70%] 991
+[70%] 992
+[70%] 993
+[70%] 994
+[70%] 995
+[70%] 996
+[70%] 997
+[70%] 998
+[70%] 999
+[70%] 1000 - output mismatch (see 1000.out.bad)
+25a26
+> [Thu Aug 20 18:15:41] pmcd(126957) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[71%] 1001 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1002 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1003 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1004 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1005 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1006 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1007 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1008 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1009 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1010 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1011 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1012 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1013 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1014 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1015 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1016 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1021 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1022 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1023 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1024
+[72%] 1025 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1026 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1027 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1028 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1029 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1030
+[72%] 1031 [not run] perl Slurm module not installed
+[73%] 1032 [not run] pmseries command line utility not installed
+[73%] 1033
+[73%] 1034 [not run] no named stats file(s)
+[73%] 1035 [not run] Oracle PMDA not configured
+[73%] 1036
+[73%] 1037
+[73%] 1038
+[73%] 1039
+[73%] 1040
+[73%] 1041 [not run] python pcp pmda module not installed
+[73%] 1042 [not run] pmseries command line utility not installed
+[73%] 1043
+[73%] 1044
+[73%] 1045
+[74%] 1046
+[74%] 1047
+[74%] 1048
+[74%] 1049
+[74%] 1050
+[74%] 1051 - output mismatch (see 1051.out.bad)
+17a18,23
+> Warning - failed to expand action for rule network.listenoverflows
+>   string: "$syslog_prefix$$rule$^ $action_expand$"
+> Warning - failed to expand action for rule network.tcpqfulldocookies
+>   string: "$syslog_prefix$$rule$^ $action_expand$"
+> Warning - failed to expand action for rule network.tcpqfulldrops
+>   string: "$syslog_prefix$$rule$^ $action_expand$"
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[74%] 1052 [not run] python pcp pmda module not installed
+[74%] 1053 [not run] python pcp pmda module not installed
+[74%] 1054
+[74%] 1055
+[74%] 1056
+[74%] 1057
+[74%] 1058 - output mismatch (see 1058.out.bad)
+25a26
+> [Thu Aug 20 18:24:18] pmcd(6125) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[75%] 1059
+[75%] 1060
+[75%] 1061 [not run] python pcp pmda module not installed
+[75%] 1062
+[75%] 1063
+[75%] 1064
+[75%] 1065
+[75%] 1066
+[75%] 1067 [not run] No zabbix_agentd binary found
+[75%] 1068 [not run] socat binary not installed
+[75%] 1069
+[75%] 1070 [not run] perl Spreadsheet::Read module not installed
+[75%] 1071
+[75%] 1072
+[76%] 1073
+[76%] 1074
+[76%] 1075
+[76%] 1076
+[76%] 1077
+[76%] 1078
+[76%] 1079
+[76%] 1080
+[76%] 1081 [not run] No binary named python3 found
+[76%] 1082
+[76%] 1083 [not run] PCP_SYSTEMDUNIT_DIR not set, so no systemd here
+[76%] 1084
+[76%] 1085
+[76%] 1086
+[77%] 1087
+[77%] 1089
+[77%] 1090 [not run] pmseries command line utility not installed
+[77%] 1091
+[77%] 1092
+[77%] 1093
+[77%] 1094
+[77%] 1095
+[77%] 1097
+[77%] 1098 [not run] python pcp pmda module not installed
+[77%] 1099
+[77%] 1100
+[77%] 1101
+[78%] 1102 [not run] python load generator does not currently work with python 2.6.6
+[78%] 1103
+[78%] 1104
+[78%] 1105
+[78%] 1106
+[78%] 1107
+[78%] 1108
+[78%] 1109
+[78%] 1110 [not run] python pcp pmda module not installed
+[78%] 1111 [not run] socat binary not installed
+[78%] 1112
+[78%] 1113
+[78%] 1114
+[78%] 1115 [not run] python pcp pmda module not installed
+[79%] 1116 [not run] python pcp pmda module not installed
+[79%] 1117 [not run] python pcp pmda module not installed
+[79%] 1118 [not run] python pcp pmda module not installed
+[79%] 1119
+[79%] 1120 [not run] python load generator does not currently work with python 2.6.6
+[79%] 1121
+[79%] 1122
+[79%] 1123 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[79%] 1124 [not run] python pcp pmda module not installed
+[79%] 1126 [not run] python pcp pmda module not installed
+[79%] 1127 [not run] python pcp pmda module not installed
+[79%] 1128
+[79%] 1129
+[80%] 1130 [not run] socat binary not installed
+[80%] 1131
+[80%] 1132 [not run] python openpyxl module not installed
+[80%] 1133
+[80%] 1134
+[80%] 1135
+[80%] 1136
+[80%] 1137
+[80%] 1138
+[80%] 1139
+[80%] 1140
+[80%] 1141 [not run] pcpupstream module not loaded
+[80%] 1142
+[80%] 1143
+[81%] 1144
+[81%] 1145 [not run] libpcp not built with fault injection enabled
+[81%] 1146
+[81%] 1147 [not run] no systemctl executable
+[81%] 1148
+[81%] 1149
+[81%] 1150 [not run] python pcp pmda module not installed
+[81%] 1151 [not run] python pcp pmda module not installed
+[81%] 1152 [not run] python pcp pmda module not installed
+[81%] 1153 [not run] python pcp pmda module not installed
+[81%] 1154 [not run] python pcp pmda module not installed
+[81%] 1155 [not run] python pcp pmda module not installed
+[81%] 1156 [not run] python pcp pmda module not installed
+[81%] 1157 [not run] python pcp pmda module not installed
+[82%] 1158 [not run] python pcp pmda module not installed
+[82%] 1159
+[82%] 1160 [not run] python pcp pmda module not installed
+[82%] 1161 [not run] python pcp pmda module not installed
+[82%] 1162
+[82%] 1163
+[82%] 1164
+[82%] 1165 [not run] python pcp pmda module not installed
+[82%] 1166 - output mismatch (see 1166.out.bad)
+3,32c3
+< __pmGetAPIConfig test: OK
+< __pmOpenLog test: expect to see standard log format
+< Log for 1166 on HOST started DATE
+< 
+< G'day cobber
+< __pmNoMem test: expect to see a message
+< [DATE] qa_libpcp_compat(PID) Warning: 1166: malloc(123456) failed: Cannot allocate memory
+< __pmNotifyErr test: expect to see standard message format
+< [DATE] qa_libpcp_compat(PID) Notice: Hullo world! The answer is 42
+< __pmPrintDesc test:
+<     Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+<     Semantics: counter  Units: Mbyte / sec
+< __pmtimeval* tests:
+< Add (expect 1234.567000): 1234.567000
+< Inc (expect 1234.567000): 1234.567000
+< Sub (expect 1234.567000): 1234.567000
+< Dec (expect 1234.567000): 1234.567000
+< Now: OK
+< Stamp: (expect 01:02:03.456) 01:02:03.456
+< HighResStamp: (expect 02:01:00.123456789) 02:01:00.123456789
+< __pmPathSeparator test: OK
+< __pmGetUsername test: OK
+< pmFreeHighResResult test:
+< __pmFreeHighResResult(ADDR)
+< pmSpecLocalPMDA test:
+< Expected error: pmSpecLocal(foo): bad op in spec
+< pmSpecLocal(clear): OK
+< pmSpecLocal(add,...): OK
+< __pmSetProcessIdentity test: (expect failure)
+< [DATE] qa_libpcp_compat(PID) Critical: cannot find the no-such-user user to switch to
+---
+> ./1166: line 52: /tmp/1166-33764: Permission denied
+35,64c6
+< __pmGetAPIConfig test: OK
+< __pmOpenLog test: expect to see standard log format
+< Log for 1166 on HOST started DATE
+< 
+< G'day cobber
+< __pmNoMem test: expect to see a message
+< [DATE] qa_libpcp_compat(PID) Warning: 1166: malloc(123456) failed: Cannot allocate memory
+< __pmNotifyErr test: expect to see standard message format
+< [DATE] qa_libpcp_compat(PID) Notice: Hullo world! The answer is 42
+< __pmPrintDesc test:
+<     Data Type: 64-bit unsigned int  InDom: PM_INDOM_NULL 0xffffffff
+<     Semantics: counter  Units: Mbyte / sec
+< __pmtimeval* tests:
+< Add (expect 1234.567000): 1234.567000
+< Inc (expect 1234.567000): 1234.567000
+< Sub (expect 1234.567000): 1234.567000
+< Dec (expect 1234.567000): 1234.567000
+< Now: OK
+< Stamp: (expect 01:02:03.456) 01:02:03.456
+< HighResStamp: (expect 02:01:00.123456789) 02:01:00.123456789
+< __pmPathSeparator test: OK
+< __pmGetUsername test: OK
+< pmFreeHighResResult test:
+< __pmFreeHighResResult(ADDR)
+< pmSpecLocalPMDA test:
+< Expected error: pmSpecLocal(foo): bad op in spec
+< pmSpecLocal(clear): OK
+< pmSpecLocal(add,...): OK
+< __pmSetProcessIdentity test: (expect failure)
+< [DATE] qa_libpcp_compat(PID) Critical: cannot find the no-such-user user to switch to
+---
+> ./1166: line 66: /tmp/1166-33764: Permission denied
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[82%] 1167
+[82%] 1168 [not run] python pcp pmda module not installed
+[82%] 1169
+[82%] 1170 [not run] python pcp pmda module not installed
+[83%] 1171 [not run] python pcp pmda module not installed
+[83%] 1172 [not run] python pcp pmda module not installed
+[83%] 1173 [not run] python pcp pmda module not installed
+[83%] 1174
+[83%] 1175 [not run] python pcp pmda module not installed
+[83%] 1176 [not run] python pcp pmda module not installed
+[83%] 1177
+[83%] 1178 [not run] python pcp pmda module not installed
+[83%] 1179 [not run] python pcp pmda module not installed
+[83%] 1180
+[83%] 1181 [not run] python pcp pmda module not installed
+[83%] 1182
+[83%] 1183
+[83%] 1184
+[84%] 1185
+[84%] 1186 - output mismatch (see 1186.out.bad)
+4,9d3
+< eval time last + 5
+<   retry delta  10.000 metric/instances missing
+< eval time last + 10
+<   retry delta  12.000 metric/instances missing
+< eval time last + 12
+<   retry delta  12.000 metric/instances missing
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[84%] 1187
+[84%] 1188 [not run] no device-mapper devices
+[84%] 1189
+[84%] 1190 - output mismatch (see 1190.out.bad)
+19c19,22
+< $PCP_PMDAS_DIR/pipe/pipe.conf ... OK
+---
+> $PCP_PMDAS_DIR/pipe/pipe.conf ... BAD (QA text found)
+>   empty-line   pcpqa   echo
+>   echo-all     pcpqa   echo $0
+>   echo-two     pcpqa   echo $1 $2
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[84%] 1191 [not run] python load generator does not currently work with python 2.6.6
+[84%] 1192 [not run] Running kernel does not support containers
+[84%] 1193
+[84%] 1194
+[84%] 1195
+[84%] 1196
+[84%] 1197
+[85%] 1198
+[85%] 1199
+[85%] 1200
+[85%] 1201 [not run] Cannot find remote host running pmcd
+[85%] 1202
+[85%] 1203
+[85%] 1204
+[85%] 1205
+[85%] 1206
+[85%] 1207
+[85%] 1208
+[85%] 1209
+[85%] 1210
+[85%] 1211 [not run] pmseries command line utility not installed
+[86%] 1212 [not run] pmseries command line utility not installed
+[86%] 1213
+[86%] 1214 [not run] pmseries command line utility not installed
+[86%] 1215
+[86%] 1216
+[86%] 1217
+[86%] 1218
+[86%] 1219
+[86%] 1220 [not run] no tty assigned
+[86%] 1221 [not run] no scripts support on python 2.6.6, check_output method not available
+[86%] 1222
+[86%] 1223
+[86%] 1224
+[86%] 1226 - output mismatch (see 1226.out.bad)
+85a86,88
+>  + Log finished Thu Aug 20 18:24:25 2020
+>  + Log for pmie on 97d404ba7f88 started Thu Aug 20 18:24:22 2020
+>  + pmie: PID = 7341, via local: [primary]
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[87%] 1227
+[87%] 1228
+[87%] 1229
+[87%] 1230
+[87%] 1231
+[87%] 1232 - output mismatch (see 1232.out.bad)
+33c33
+<     DATE.0.xz DATE.index DATE.meta.xz
+---
+>     DATE.0 DATE.index DATE.meta
+43c43
+<     DATE.0.xz DATE.index DATE.meta.xz
+---
+>     DATE.0 DATE.index DATE.meta
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[87%] 1233
+[87%] 1234
+[87%] 1235
+[87%] 1236
+[87%] 1237
+[87%] 1238
+[87%] 1239
+[88%] 1240
+[88%] 1241
+[88%] 1242
+[88%] 1243 - output mismatch (see 1243.out.bad)
+1a2,3
+> ./1243: line 107: /tmp/1243-16507.discover/localhost.sh: Permission denied
+> ./1243: line 109: /tmp/1243-16507.discover/hostnames.sh: Permission denied
+3c5,7
+< get pods -o jsonpath={.items[*].status.podIP}
+---
+> /usr/libexec/pcp/bin/discover/pcp-kube-pods: line 25: /tmp/1243-16507.kubectl.sh: Permission denied
+> /usr/libexec/pcp/bin/discover/pcp-kube-pods: line 25: exec: /tmp/1243-16507.kubectl.sh: cannot execute: Permission denied
+> cat: /tmp/1243-16507.kubectl.args: No such file or directory
+6,7c10
+< Discovered pmcd servers:
+<   >= 2 pcp://IP_ADDRESS:44321 lines
+---
+> No pmcd servers discovered
+11a15,20
+> execve(0x7a02470(DISCOVER_DIR/hostnames.sh), 0x7a02420, 0x7feffff58) failed, errno 13
+> EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+> Add more stringent tests in PRE(sys_execve), or work out how to recover.
+> execve(0x7a028a0(DISCOVER_DIR/localhost.sh), 0x7a02850, 0x7feffff58) failed, errno 13
+> EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+> Add more stringent tests in PRE(sys_execve), or work out how to recover.
+18a28,33
+> execve(0x7a031a0(DISCOVER_DIR/hostnames.sh), 0x7a03150, 0x7feffff58) failed, errno 13
+> EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+> Add more stringent tests in PRE(sys_execve), or work out how to recover.
+> execve(0x7a031f0(DISCOVER_DIR/localhost.sh), 0x7a031a0, 0x7feffff58) failed, errno 13
+> EXEC FAILED: I can't recover from execve() failing, so I'm dying.
+> Add more stringent tests in PRE(sys_execve), or work out how to recover.
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[88%] 1244
+[88%] 1245
+[88%] 1247
+[88%] 1248
+[88%] 1249 - output mismatch (see 1249.out.bad)
+152a153,155
+>  + Log finished Thu Aug 20 18:24:25 2020
+>  + Log for pmie on 97d404ba7f88 started Thu Aug 20 18:24:22 2020
+>  + pmie: PID = 7341, via local: [primary]
+160a164,166
+>  + Log finished Thu Aug 20 18:24:25 2020
+>  + Log for pmie on 97d404ba7f88 started Thu Aug 20 18:24:22 2020
+>  + pmie: PID = 7341, via local: [primary]
+172a179,181
+>  + Log finished Thu Aug 20 18:24:25 2020
+>  + Log for pmie on 97d404ba7f88 started Thu Aug 20 18:24:22 2020
+>  + pmie: PID = 7341, via local: [primary]
+184a194,196
+>  + Log finished Thu Aug 20 18:24:25 2020
+>  + Log for pmie on 97d404ba7f88 started Thu Aug 20 18:24:22 2020
+>  + pmie: PID = 7341, via local: [primary]
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[88%] 1250 [not run] upstream policy package not loaded
+[88%] 1251 [not run] man -k ls won't even work ... apropos/whatis index needs rebuilding?
+[88%] 1252
+[88%] 1253
+[88%] 1254
+[89%] 1255
+[89%] 1256
+[89%] 1257
+[89%] 1258
+[89%] 1259
+[89%] 1260
+[89%] 1261
+[89%] 1262
+[89%] 1263
+[89%] 1265
+[89%] 1266
+[89%] 1267
+[89%] 1268
+[90%] 1269
+[90%] 1270 [not run] libpcp not built with fault injection enabled
+[90%] 1274
+[90%] 1287 [not run] python load generator does not currently work with python 2.6.6
+[90%] 1289
+[90%] 1294
+[90%] 1297 [not run] systemctl tool not installed
+[90%] 1299
+[90%] 1301
+[90%] 1303
+[90%] 1304
+[90%] 1306 [not run] python load generator does not currently work with python 2.6.6
+[90%] 1310 [not run] python argparse module not installed
+[90%] 1318
+[91%] 1321 [not run] python load generator does not currently work with python 2.6.6
+[91%] 1323
+[91%] 1324
+[91%] 1326
+[91%] 1330 [not run] python load generator does not currently work with python 2.6.6
+[91%] 1331
+[91%] 1337 [not run] Microsoft SQL Server tools not installed
+[91%] 1338
+[91%] 1340
+[91%] 1342 [not run] python load generator does not currently work with python 2.6.6
+[91%] 1347
+[91%] 1349
+[91%] 1350
+[91%] 1351
+[92%] 1354
+[92%] 1357 [not run] podman pmda not installed
+[92%] 1358 [not run] podman pmda not installed
+[92%] 1359
+[92%] 1362 [not run] Cannot run psql as the postgres user, postgresql not installed or running?
+[92%] 1367 [not run] python pcp pmda module not installed
+[92%] 1368
+[92%] 1369
+[92%] 1372
+[92%] 1379 [not run] pmseries command line utility not installed
+[92%] 1383
+[92%] 1385 [not run] python load generator does not currently work with python 2.6.6
+[92%] 1388 [not run] pmseries command line utility not installed
+[93%] 1390
+[93%] 1393
+[93%] 1395 [not run] python load generator does not currently work with python 2.6.6
+[93%] 1396
+[93%] 1397
+[93%] 1398
+[93%] 1399
+[93%] 1400
+[93%] 1401 [not run] pmseries command line utility not installed
+[93%] 1403
+[93%] 1407 [not run] need DISPLAY or PCPQA_CLOSE_X_SERVER
+[93%] 1408 [not run] need DISPLAY or PCPQA_CLOSE_X_SERVER
+[93%] 1415
+[93%] 1416
+[94%] 1422
+[94%] 1423
+[94%] 1433 [not run] pmseries command line utility not installed
+[94%] 1434
+[94%] 1435
+[94%] 1436
+[94%] 1437
+[94%] 1455
+[94%] 1457 [not run] pmseries command line utility not installed
+[94%] 1480 [not run] Python pcp pmda module is not installed
+[94%] 1489
+[94%] 1490 [not run] python argparse module not installed
+[94%] 1495
+[95%] 1511 - output mismatch (see 1511.out.bad)
+1a2
+> [Thu Aug 20 18:39:47] pmcd(45807) Error: Failed to create avahi client: Daemon not running
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[95%] 1543 [not run] pmseries command line utility not installed
+[95%] 1544 [not run] pmseries command line utility not installed
+[95%] 1545
+[95%] 1546
+[95%] 1547
+[95%] 1566 - output mismatch (see 1566.out.bad)
+8c8
+< [DATE] test_service_notify(PID) Warning: __pmServerNotify... EXPECTED
+---
+> __pmServerNotify... EXPECTED
+10c10
+< [DATE] test_service_notify(PID) Warning: __pmServerNotify... EXPECTED
+---
+> __pmServerNotify... EXPECTED
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[95%] 1573 [not run] pmseries command line utility not installed
+[95%] 1588
+[95%] 1598 [not run] statsd PMDA not installed
+[95%] 1599 [not run] statsd PMDA not installed
+[95%] 1600 [not run] pmseries command line utility not installed
+[95%] 1601 [not run] pmseries command line utility not installed
+[95%] 1602 [not run] pmseries command line utility not installed
+[96%] 1608 [not run] pmseries command line utility not installed
+[96%] 1613
+[96%] 1622 [not run] upstream policy package not loaded
+[96%] 1623
+[96%] 1644 [not run] perfevent PMDA is not installed
+[96%] 1660
+[96%] 1661 [not run] pmseries command line utility not installed
+[96%] 1671
+[96%] 1672
+[96%] 1680 [not run] missing required ovs-vsctl command
+[96%] 1690 [not run] pmseries command line utility not installed
+[96%] 1692
+[96%] 1694
+[96%] 1695 [not run] pmseries command line utility not installed
+[97%] 1696 [not run] No binary named python3 found
+[97%] 1700 [not run] python pcp pmda module not installed
+[97%] 1701 [not run] python pcp pmda module not installed
+[97%] 1702 [not run] python pcp pmda module not installed
+[97%] 1703 [not run] python pcp pmda module not installed
+[97%] 1704 [not run] python pcp pmda module not installed
+[97%] 1705 [not run] python pcp pmda module not installed
+[97%] 1706 [not run] python pcp pmda module not installed
+[97%] 1707 [not run] python pcp pmda module not installed
+[97%] 1708 [not run] statsd PMDA not installed
+[97%] 1709 [not run] statsd PMDA not installed
+[97%] 1710 [not run] statsd PMDA not installed
+[97%] 1711 [not run] statsd PMDA not installed
+[98%] 1712 [not run] statsd PMDA not installed
+[98%] 1713 [not run] statsd PMDA not installed
+[98%] 1714 [not run] statsd PMDA not installed
+[98%] 1715 [not run] statsd PMDA not installed
+[98%] 1716 [not run] statsd PMDA not installed
+[98%] 1717 [not run] statsd PMDA not installed
+[98%] 1718 [not run] statsd PMDA not installed
+[98%] 1719 [not run] statsd PMDA not installed
+[98%] 1720 [not run] statsd PMDA not installed
+[98%] 1721 [not run] python pcp pmda module not installed
+[98%] 1722 [not run] python pcp pmda module not installed
+[98%] 1723 [not run] python pcp pmda module not installed
+[98%] 1724 [not run] python pcp pmda module not installed
+[98%] 1740
+[99%] 1768 - output mismatch (see 1768.out.bad)
+2,93d1
+< Discovered host pcp://slick:44321 [243f90596d76cf23e8da47476ec452a2adbe0b32]
+< PCP_ETC_DIR/pcp/pmie/class.d/pmfind: host pcp://slick:44321 hostname(.*) true
+< --- start control file ---
+< # created by pmiectl on DATE
+< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE
+< $version=1.1
+< $class=pmfind
+< pcp://slick:44321 n n PCP_LOG_DIR/pmie/243f90596d76cf23e8da47476ec452a2adbe0b32/pmie.log -c ./243f90596d76cf23e8da47476ec452a2adbe0b32.config
+< --- end control file ---
+< Installing control file: PCP_ETC_DIR/pcp/pmie/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32
+< + cp PCP_TMPFILE_DIR/pmiectl.XXXXX/control PCP_ETC_DIR/pcp/pmie/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32
+< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmie_check -c PCP_ETC_DIR/pcp/pmie/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32
+< PCP_ETC_DIR/pcp/pmlogger/class.d/pmfind: host pcp://slick:44321 hostname(.*) true
+< --- start control file ---
+< # created by pmlogctl on DATE
+< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE
+< $version=1.1
+< $class=pmfind
+< pcp://slick:44321 n n PCP_ARCHIVE_DIR/243f90596d76cf23e8da47476ec452a2adbe0b32 -c ./243f90596d76cf23e8da47476ec452a2adbe0b32.config
+< --- end control file ---
+< Installing control file: PCP_ETC_DIR/pcp/pmlogger/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32
+< + cp PCP_TMPFILE_DIR/pmlogctl.XXXXX/control PCP_ETC_DIR/pcp/pmlogger/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32
+< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmlogger_check -c PCP_ETC_DIR/pcp/pmlogger/control.d/243f90596d76cf23e8da47476ec452a2adbe0b32
+< Discovered host pcp://slack:44321 [8d00c4cf51d11bb9dced8a0e7507542653635377]
+< PCP_ETC_DIR/pcp/pmie/class.d/pmfind: host pcp://slack:44321 hostname(.*) true
+< --- start control file ---
+< # created by pmiectl on DATE
+< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE
+< $version=1.1
+< $class=pmfind
+< pcp://slack:44321 n n PCP_LOG_DIR/pmie/8d00c4cf51d11bb9dced8a0e7507542653635377/pmie.log -c ./8d00c4cf51d11bb9dced8a0e7507542653635377.config
+< --- end control file ---
+< Installing control file: PCP_ETC_DIR/pcp/pmie/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377
+< + cp PCP_TMPFILE_DIR/pmiectl.XXXXX/control PCP_ETC_DIR/pcp/pmie/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377
+< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmie_check -c PCP_ETC_DIR/pcp/pmie/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377
+< PCP_ETC_DIR/pcp/pmlogger/class.d/pmfind: host pcp://slack:44321 hostname(.*) true
+< --- start control file ---
+< # created by pmlogctl on DATE
+< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE
+< $version=1.1
+< $class=pmfind
+< pcp://slack:44321 n n PCP_ARCHIVE_DIR/8d00c4cf51d11bb9dced8a0e7507542653635377 -c ./8d00c4cf51d11bb9dced8a0e7507542653635377.config
+< --- end control file ---
+< Installing control file: PCP_ETC_DIR/pcp/pmlogger/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377
+< + cp PCP_TMPFILE_DIR/pmlogctl.XXXXX/control PCP_ETC_DIR/pcp/pmlogger/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377
+< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmlogger_check -c PCP_ETC_DIR/pcp/pmlogger/control.d/8d00c4cf51d11bb9dced8a0e7507542653635377
+< Discovered host pcp://localhost:44321?container=b0cd2cc912a3 [7745e45ed37ca712f418ec7b871c04fc898b9276]
+< PCP_ETC_DIR/pcp/pmie/class.d/pmfind: host pcp://localhost:44321?container=b0cd2cc912a3 hostname(.*) true
+< --- start control file ---
+< # created by pmiectl on DATE
+< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE
+< $version=1.1
+< $class=pmfind
+< pcp://localhost:44321?container=b0cd2cc912a3 n n PCP_LOG_DIR/pmie/7745e45ed37ca712f418ec7b871c04fc898b9276/pmie.log -c ./7745e45ed37ca712f418ec7b871c04fc898b9276.config
+< --- end control file ---
+< Installing control file: PCP_ETC_DIR/pcp/pmie/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276
+< + cp PCP_TMPFILE_DIR/pmiectl.XXXXX/control PCP_ETC_DIR/pcp/pmie/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276
+< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmie_check -c PCP_ETC_DIR/pcp/pmie/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276
+< PCP_ETC_DIR/pcp/pmlogger/class.d/pmfind: host pcp://localhost:44321?container=b0cd2cc912a3 hostname(.*) true
+< --- start control file ---
+< # created by pmlogctl on DATE
+< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE
+< $version=1.1
+< $class=pmfind
+< pcp://localhost:44321?container=b0cd2cc912a3 n n PCP_ARCHIVE_DIR/7745e45ed37ca712f418ec7b871c04fc898b9276 -c ./7745e45ed37ca712f418ec7b871c04fc898b9276.config
+< --- end control file ---
+< Installing control file: PCP_ETC_DIR/pcp/pmlogger/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276
+< + cp PCP_TMPFILE_DIR/pmlogctl.XXXXX/control PCP_ETC_DIR/pcp/pmlogger/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276
+< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmlogger_check -c PCP_ETC_DIR/pcp/pmlogger/control.d/7745e45ed37ca712f418ec7b871c04fc898b9276
+< Discovered host pcp://localhost:44321?container=77475e5fa09c [68dcffbdd4111d3ee82bb855286e3e35da828ca2]
+< PCP_ETC_DIR/pcp/pmie/class.d/pmfind: host pcp://localhost:44321?container=77475e5fa09c hostname(.*) true
+< --- start control file ---
+< # created by pmiectl on DATE
+< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE
+< $version=1.1
+< $class=pmfind
+< pcp://localhost:44321?container=77475e5fa09c n n PCP_LOG_DIR/pmie/68dcffbdd4111d3ee82bb855286e3e35da828ca2/pmie.log -c ./68dcffbdd4111d3ee82bb855286e3e35da828ca2.config
+< --- end control file ---
+< Installing control file: PCP_ETC_DIR/pcp/pmie/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2
+< + cp PCP_TMPFILE_DIR/pmiectl.XXXXX/control PCP_ETC_DIR/pcp/pmie/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2
+< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmie_check -c PCP_ETC_DIR/pcp/pmie/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2
+< PCP_ETC_DIR/pcp/pmlogger/class.d/pmfind: host pcp://localhost:44321?container=77475e5fa09c hostname(.*) true
+< --- start control file ---
+< # created by pmlogctl on DATE
+< # DO NOT REMOVE OR EDIT THE FOLLOWING LINE
+< $version=1.1
+< $class=pmfind
+< pcp://localhost:44321?container=77475e5fa09c n n PCP_ARCHIVE_DIR/68dcffbdd4111d3ee82bb855286e3e35da828ca2 -c ./68dcffbdd4111d3ee82bb855286e3e35da828ca2.config
+< --- end control file ---
+< Installing control file: PCP_ETC_DIR/pcp/pmlogger/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2
+< + cp PCP_TMPFILE_DIR/pmlogctl.XXXXX/control PCP_ETC_DIR/pcp/pmlogger/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2
+< + sudo -u pcp -g pcp PCP_BINADM_DIR/pmlogger_check -c PCP_ETC_DIR/pcp/pmlogger/control.d/68dcffbdd4111d3ee82bb855286e3e35da828ca2
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[99%] 1793 - output mismatch (see 1793.out.bad)
+27d26
+<     "role": "testing"
+30d28
+<     "cluster": "zero"
+32d29
+<     "role": "testing"
+35d31
+<     "cluster": "zero"
+37d32
+<     "role": "testing"
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[99%] 1805
+[99%] 1820 - output mismatch (see 1820.out.bad)
+11,14c11,14
+<             0    14    14    0   14       14      14     14     14    14
+<             1    12    12   12   12       12      12      0     12    13
+<             2     9    11    8   14       15      16     18     13    12
+<             3    11    11    3   15       16      16     21     14    13
+---
+>             0     0     0  100    0        0       0      0      0     0
+>             1    10     0    7    0        5       4   1010      4    69
+>             2     9     0    3    1        0       0      0      0    87
+>             3    10     4    6    4        4       4      4      4    64
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds
+PMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch
+[99%] 1821
+[99%] 1824 [not run] pmseries command line utility not installed
+[99%] 1837 [not run] pmseries command line utility not installed
+[99%] 1855 [not run] rabbitmq not running on default port:15672
+[99%] 1871 [not run] pmseries command line utility not installed
+[99%] 1872 [not run] pmseries command line utility not installed
+[99%] 1886 [not run] pmseries command line utility not installed
+[99%] 1896
+[99%] 4751
+Not run: 008 024 042 047 054 066 069 070 072 075 077 081 083 086 113 115 116 117 122 130 131 159 187 215 219 257 262 272 276 307 308 322 325 340 348 353 360 361 365 371 372 374 375 377 381 420 476 477 478 480 504 512 519 540 543 545 553 555 561 567 583 589 603 622 635 651 652 654 655 657 662 667 696 703 717 718 724 734 749 754 756 757 759 760 767 770 775 778 780 784 789 794 795 796 798 819 825 835 837 840 841 843 846 847 863 864 866 867 873 876 905 912 913 915 917 918 940 946 950 954 960 967 972 973 977 983 985 986 1001 1002 1003 1004 1005 1006 1007 1008 1009 1010 1011 1012 1013 1014 1015 1016 1021 1022 1023 1025 1026 1027 1028 1029 1031 1032 1034 1035 1041 1042 1052 1053 1061 1067 1068 1070 1081 1083 1090 1098 1102 1110 1111 1115 1116 1117 1118 1120 1123 1124 1126 1127 1130 1132 1141 1145 1147 1150 1151 1152 1153 1154 1155 1156 1157 1158 1160 1161 1165 1168 1170 1171 1172 1173 1175 1176 1178 1179 1181 1188 1191 1192 1201 1211 1212 1214 1220 1221 1250 1251 1270 1287 1297 1306 1310 1321 1330 1337 1342 1357 1358 1362 1367 1379 1385 1388 1395 1401 1407 1408 1433 1457 1480 1490 1543 1544 1573 1598 1599 1600 1601 1602 1608 1622 1644 1661 1680 1690 1695 1696 1700 1701 1702 1703 1704 1705 1706 1707 1708 1709 1710 1711 1712 1713 1714 1715 1716 1717 1718 1719 1720 1721 1722 1723 1724 1824 1837 1855 1871 1872 1886
+Failures: 023 025 032 033 036 041 051 063 067 151 169 172 200 243 250 255 283 301 304 344 392 429 444 462 469 471 507 514 578 581 647 648 649 674 681 683 685 687 695 712 713 714 735 755 766 788 805 845 848 855 861 878 893 943 944 964 966 1000 1051 1058 1166 1186 1190 1226 1232 1243 1249 1511 1566 1768 1793 1820
+Failed 72 of 1071 tests

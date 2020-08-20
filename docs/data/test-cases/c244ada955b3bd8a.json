@@ -1,0 +1,83 @@
+{
+  "uid" : "c244ada955b3bd8a",
+  "name" : "QA 301",
+  "fullName" : "QA #301 on centos6-container",
+  "historyId" : "301@centos6-container",
+  "time" : {
+    "start" : 1597943817000,
+    "stop" : 1597943821000,
+    "duration" : 4000
+  },
+  "description" : "PCP QA Test No. 301\n\nStop pmcd and check no pmdas are still running.\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 301</p>\n<p>Stop pmcd and check no pmdas are still running.</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform centos6 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 301.out.bad)\n1a2\n> [Thu Aug 20 17:16:59] pmcd(100381) Error: Failed to create avahi client: Daemon not running\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 301\n\nStop pmcd and check no pmdas are still running.\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 301.out.bad)\n1a2\n> [Thu Aug 20 17:16:59] pmcd(100381) Error: Failed to create avahi client: Daemon not running\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d826bd95c3a1864",
+      "name" : "301.out.bad",
+      "source" : "d826bd95c3a1864.txt",
+      "type" : "text/plain",
+      "size" : 117
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos6-container"
+  }, {
+    "name" : "host",
+    "value" : "centos6-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda"
+  }, {
+    "name" : "epic",
+    "value" : "pmcd"
+  }, {
+    "name" : "epic",
+    "value" : "pmlogger"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/301",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/301.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "c244ada955b3bd8a.json",
+  "parameterValues" : [ ]
+}

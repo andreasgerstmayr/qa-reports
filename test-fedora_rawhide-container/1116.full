@@ -1,0 +1,35 @@
+pmdabcc config:
+# Installed by PCP QA test 1116 on Thu Aug 20 19:05:32 UTC 2020
+[pmda]
+modules = bioperpid
+prefix = bcc.
+[bioperpid]
+module = bioperpid
+cluster = 1
+Log for pmdabcc on d6bbf0991c84 started Thu Aug 20 19:05:34 2020
+
+[Thu Aug 20 19:05:34] pmdabcc(953274) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 19:05:34] pmdabcc(953274) Info: Enabled modules:
+[Thu Aug 20 19:05:34] pmdabcc(953274) Info: ['bioperpid']
+[Thu Aug 20 19:05:34] pmdabcc(953274) Info: Configuring modules:
+[Thu Aug 20 19:05:34] pmdabcc(953274) Info: bioperpid
+[Thu Aug 20 19:05:34] pmdabcc(953274) Info: Modules configured.
+[Thu Aug 20 19:05:34] pmdabcc(953274) Info: Initializing modules:
+[Thu Aug 20 19:05:34] pmdabcc(953274) Info: bioperpid
+[Thu Aug 20 19:05:34] pmdabcc(953274) Info: bioperpid: Initialized.
+[Thu Aug 20 19:05:34] pmdabcc(953274) Info: Modules initialized.
+[Thu Aug 20 19:05:34] pmdabcc(953274) Info: Registering metrics:
+[Thu Aug 20 19:05:34] pmdabcc(953274) Info: bioperpid
+[Thu Aug 20 19:05:34] pmdabcc(953274) Info: Metrics registered.
+[Thu Aug 20 19:05:34] pmdabcc(953274) Info: Registering helpers:
+[Thu Aug 20 19:05:34] pmdabcc(953274) Info: bioperpid
+[Thu Aug 20 19:05:34] pmdabcc(953274) Info: Helpers registered.
+[Thu Aug 20 19:05:34] pmdabcc(953274) Info: Compiling modules:
+[Thu Aug 20 19:05:34] pmdabcc(953274) Info: bioperpid
+modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1034-azure
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 19:05:34] pmdabcc(953274) Error: bioperpid: Failed to compile BPF module b'/var/lib/pcp/pmdas/bcc/modules/biotop.bpf'
+[Thu Aug 20 19:05:34] pmdabcc(953274) Error: bioperpid: Module NOT active!
+[Thu Aug 20 19:05:34] pmdabcc(953274) Error: Failed to compile module bioperpid, aborting.
+
+Log finished Thu Aug 20 19:05:34 2020

@@ -1,0 +1,47 @@
+QA output created by 1156
+
+=== bcc agent installation ===
+Info: Initializing, currently in 'notready' state.
+Info: Enabled modules:
+Info: ['execsnoop']
+Info: Configuring modules:
+Info: execsnoop
+Info: Modules configured.
+Info: Initializing modules:
+Info: execsnoop
+Info: execsnoop: Initialized.
+Info: Modules initialized.
+Info: Registering metrics:
+Info: execsnoop
+Info: Metrics registered.
+Info: Registering helpers:
+Info: execsnoop
+Info: Helpers registered.
+Info: Initializing, currently in 'notready' state.
+Info: Enabled modules:
+Info: ['execsnoop']
+Info: Configuring modules:
+Info: execsnoop
+Info: Modules configured.
+Info: Initializing modules:
+Info: execsnoop
+Info: execsnoop: Initialized.
+Info: Modules initialized.
+Info: Registering metrics:
+Info: execsnoop
+Info: Metrics registered.
+Info: Registering helpers:
+Info: execsnoop
+Info: Helpers registered.
+Updating the Performance Metrics Name Space (PMNS) ...
+Terminate PMDA if already installed ...
+[...install files, make output...]
+Updating the PMCD control file, and notifying PMCD ...
+Check bcc metrics have appeared ... X metrics and X values
+
+[Thu Aug 20 19:18:39] pmdabcc(984684) Error: execsnoop: Failed to compile BPF module <text>
+[Thu Aug 20 19:18:39] pmdabcc(984684) Error: execsnoop: Module NOT active!
+[Thu Aug 20 19:18:39] pmdabcc(984684) Error: Failed to compile module execsnoop, aborting.
+
+Log finished Thu Aug 20 19:18:39 2020
+PMDA was not ready in 60 seconds, test failed

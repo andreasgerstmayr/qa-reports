@@ -1,0 +1,24 @@
+QA output created by 766
+-m probe=INET_ADDR/32
+[Thu Aug 20 18:07:31] pmfind(16967) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+[Thu Aug 20 18:07:31] pmfind(16967) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+No pmcd servers discovered
+Sought pmproxy servers
+Exit status: 0
+-s pmcd -m probe=INET_ADDR/31 -r
+[Thu Aug 20 18:07:31] pmfind(16974) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+No pmcd servers discovered
+Exit status: 0
+-q -m probe=INET_ADDR/30
+[Thu Aug 20 18:07:31] pmfind(16981) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+[Thu Aug 20 18:07:31] pmfind(16981) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+Exit status: 0
+-q -s pmcd -m probe=INET_ADDR/29 --resolve
+[Thu Aug 20 18:07:31] pmfind(16988) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+Exit status: 0
+-q -s pmcd -m probe=INET_ADDR/28,maxThreads=8
+[Thu Aug 20 18:07:31] pmfind(16995) Error: __pmSubnetProbeDiscoverServices: Address '' is not valid
+Exit status: 0
+ulimit -n 10
+Discovered pmcd servers:
+Exit status: 0

@@ -1,0 +1,61 @@
+{
+  "uid" : "2604e6a22714147d",
+  "name" : "QA 1011",
+  "fullName" : "QA #1011 on fedora31-container",
+  "historyId" : "1011@fedora31-container",
+  "time" : {
+    "start" : 1597949058000,
+    "stop" : 1597949078000,
+    "duration" : 20000
+  },
+  "description" : "PCP QA Test No. 1011\n\nCompare pmdumptext output to pmval\n\n\n\nseq=`basename $0`\n\necho \"QA output created by $seq\"\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 1011</p>\n<p>Compare pmdumptext output to pmval</p>\n<p>seq=<code>basename $0</code></p>\n<p>echo &quot;QA output created by $seq&quot;</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "$PCPQA_CLOSE_X_SERVER not set in ./common.config",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmdumptext"
+  }, {
+    "name" : "epic",
+    "value" : "pmval"
+  }, {
+    "name" : "epic",
+    "value" : "libpcp_qmc"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1011",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1011.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2604e6a22714147d.json",
+  "parameterValues" : [ ]
+}

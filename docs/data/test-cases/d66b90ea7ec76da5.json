@@ -1,0 +1,89 @@
+{
+  "uid" : "d66b90ea7ec76da5",
+  "name" : "QA 964",
+  "fullName" : "QA #964 on centos6-container",
+  "historyId" : "964@centos6-container",
+  "time" : {
+    "start" : 1597947207000,
+    "stop" : 1597947217000,
+    "duration" : 10000
+  },
+  "description" : "PCP QA Test No. 964\n\nEnsure pmlogger not (re)started via PMDA Install.\n\n\n\nWe cannot use a PMDA that _might_ provide metrics that the primary\n\npmlogger is logging ... when we Remove that PMDA, then pmlogger will\n\nat some point notice the metrics have gone away and exit ... leaving\n\nno pmlogger to be tested in this test case.\n\n\n\nSo we use the test_perl PMDA.\n\n\n\nCopyright (c) 2015-2016 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 964</p>\n<p>Ensure pmlogger not (re)started via PMDA Install.</p>\n<p>We cannot use a PMDA that <em>might</em> provide metrics that the primary</p>\n<p>pmlogger is logging ... when we Remove that PMDA, then pmlogger will</p>\n<p>at some point notice the metrics have gone away and exit ... leaving</p>\n<p>no pmlogger to be tested in this test case.</p>\n<p>So we use the test_perl PMDA.</p>\n<p>Copyright (c) 2015-2016 Red Hat.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform centos6 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 964.out.bad)\n13a14\n> [Thu Aug 20 18:13:33] pmcd(115064) Error: Failed to create avahi client: Daemon not running\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 964\n\nEnsure pmlogger not (re)started via PMDA Install.\n\n\n\nWe cannot use a PMDA that _might_ provide metrics that the primary\n\npmlogger is logging ... when we Remove that PMDA, then pmlogger will\n\nat some point notice the metrics have gone away and exit ... leaving\n\nno pmlogger to be tested in this test case.\n\n\n\nSo we use the test_perl PMDA.\n\n\n\nCopyright (c) 2015-2016 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 964.out.bad)\n13a14\n> [Thu Aug 20 18:13:33] pmcd(115064) Error: Failed to create avahi client: Daemon not running\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d8073a520446dd5e",
+      "name" : "964.out.bad",
+      "source" : "d8073a520446dd5e.txt",
+      "type" : "text/plain",
+      "size" : 845
+    }, {
+      "uid" : "4e47e3a37de5c942",
+      "name" : "964.full",
+      "source" : "4e47e3a37de5c942.txt",
+      "type" : "text/plain",
+      "size" : 1085
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos6-container"
+  }, {
+    "name" : "host",
+    "value" : "centos6-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmcd"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.xfs"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.dm"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/964",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/964.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "d66b90ea7ec76da5.json",
+  "parameterValues" : [ ]
+}

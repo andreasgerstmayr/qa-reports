@@ -1,0 +1,11 @@
+QA output created by 848
+== Creating empty certificate DB
+== Creating local certificates
+== Certificate DB and local certificates created
+Start pmcd, modified $PCP_PMCDOPTIONS_PATH (pmcd.options):
+[Thu Aug 20 18:05:09] pmcd(68940) Error: Failed to create avahi client: Daemon not running
+Checking pmcd.log for unexpected messages
+Checking local connection if server certificate exists. Should Pass.
+
+hinv.ncpu
+    value NUMBER

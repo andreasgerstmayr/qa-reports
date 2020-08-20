@@ -1,0 +1,61 @@
+{
+  "uid" : "eceab97e959deaa3",
+  "name" : "QA 480",
+  "fullName" : "QA #480 on ubuntu1804-direct",
+  "historyId" : "480@ubuntu1804-direct",
+  "time" : {
+    "start" : 1597945618000,
+    "stop" : 1597945618000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 480\n\nfault injection for libpcp/logmeta.c\n\n\n\nCopyright (c) 2011 Ken McDonell.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 480</p>\n<p>fault injection for libpcp/logmeta.c</p>\n<p>Copyright (c) 2011 Ken McDonell.  All Rights Reserved.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "libpcp not built with fault injection enabled",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "epic",
+    "value" : "archive"
+  }, {
+    "name" : "epic",
+    "value" : "fault"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "pmdumplog"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/480",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/480.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "eceab97e959deaa3.json",
+  "parameterValues" : [ ]
+}

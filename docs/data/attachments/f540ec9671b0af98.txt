@@ -1,0 +1,638 @@
+== Raw iostat:
+Linux 5.4.0-1022-azure (fv-az213) 	2020-08-20 	_x86_64_	(2 CPU)
+
+2020-08-20T18:43:38+0000
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          17.91    0.54    8.14    2.24    0.00   71.17
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.02         0.13         0.00         0.00       1163          0          0
+loop1             0.18         0.22         0.00         0.00       1905          0          0
+loop2             0.01         0.12         0.00         0.00       1094          0          0
+loop3             0.01         0.04         0.00         0.00        371          0          0
+loop4             0.01         0.12         0.00         0.00       1088          0          0
+loop5             1.36         1.43         0.00         0.00      12671          0          0
+loop6             0.01         0.04         0.00         0.00        352          0          0
+loop7             0.00         0.00         0.00         0.00          8          0          0
+sda               0.20         1.82        34.16      1656.86      16113     302644   14678976
+sdb              41.04       378.65      1985.98      1174.40    3354630   17594733   10404576
+
+
+2020-08-20T18:43:39+0000
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           0.00    0.00    0.00    1.51    0.00   98.49
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+loop1             0.00         0.00         0.00         0.00          0          0          0
+loop2             0.00         0.00         0.00         0.00          0          0          0
+loop3             0.00         0.00         0.00         0.00          0          0          0
+loop4             0.00         0.00         0.00         0.00          0          0          0
+loop5             0.00         0.00         0.00         0.00          0          0          0
+loop6             0.00         0.00         0.00         0.00          0          0          0
+loop7             0.00         0.00         0.00         0.00          0          0          0
+sda               0.00         0.00         0.00         0.00          0          0          0
+sdb               2.00        12.00         0.00         0.00         12          0          0
+
+
+2020-08-20T18:43:40+0000
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           0.50    0.00    0.00    0.00    0.00   99.50
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+loop1             0.00         0.00         0.00         0.00          0          0          0
+loop2             0.00         0.00         0.00         0.00          0          0          0
+loop3             0.00         0.00         0.00         0.00          0          0          0
+loop4             0.00         0.00         0.00         0.00          0          0          0
+loop5             0.00         0.00         0.00         0.00          0          0          0
+loop6             0.00         0.00         0.00         0.00          0          0          0
+loop7             0.00         0.00         0.00         0.00          0          0          0
+sda               0.00         0.00         0.00         0.00          0          0          0
+sdb               0.00         0.00         0.00         0.00          0          0          0
+
+
+== Extracted iostat sample 1
+cpu.idle 0.984900
+cpu.nice 0.000000
+cpu.steal 0.000000
+cpu.sys 0.000000
+cpu.user 0.000000
+cpu.wait.total 0.015100
+dev.read_bytes::loop0 0
+dev.read_bytes::loop1 0
+dev.read_bytes::loop2 0
+dev.read_bytes::loop3 0
+dev.read_bytes::loop4 0
+dev.read_bytes::loop5 0
+dev.read_bytes::loop6 0
+dev.read_bytes::loop7 0
+dev.read_bytes::sda 0
+dev.read_bytes::sdb 12
+dev.total::loop0 0.00
+dev.total::loop1 0.00
+dev.total::loop2 0.00
+dev.total::loop3 0.00
+dev.total::loop4 0.00
+dev.total::loop5 0.00
+dev.total::loop6 0.00
+dev.total::loop7 0.00
+dev.total::sda 0.00
+dev.total::sdb 2.00
+dev.write_bytes::loop0 0
+dev.write_bytes::loop1 0
+dev.write_bytes::loop2 0
+dev.write_bytes::loop3 0
+dev.write_bytes::loop4 0
+dev.write_bytes::loop5 0
+dev.write_bytes::loop6 0
+dev.write_bytes::loop7 0
+dev.write_bytes::sda 0
+dev.write_bytes::sdb 0
+== Extracted iostat sample 2
+cpu.idle 0.995000
+cpu.nice 0.000000
+cpu.steal 0.000000
+cpu.sys 0.000000
+cpu.user 0.005000
+cpu.wait.total 0.000000
+dev.read_bytes::loop0 0
+dev.read_bytes::loop1 0
+dev.read_bytes::loop2 0
+dev.read_bytes::loop3 0
+dev.read_bytes::loop4 0
+dev.read_bytes::loop5 0
+dev.read_bytes::loop6 0
+dev.read_bytes::loop7 0
+dev.read_bytes::sda 0
+dev.read_bytes::sdb 0
+dev.total::loop0 0.00
+dev.total::loop1 0.00
+dev.total::loop2 0.00
+dev.total::loop3 0.00
+dev.total::loop4 0.00
+dev.total::loop5 0.00
+dev.total::loop6 0.00
+dev.total::loop7 0.00
+dev.total::sda 0.00
+dev.total::sdb 0.00
+dev.write_bytes::loop0 0
+dev.write_bytes::loop1 0
+dev.write_bytes::loop2 0
+dev.write_bytes::loop3 0
+dev.write_bytes::loop4 0
+dev.write_bytes::loop5 0
+dev.write_bytes::loop6 0
+dev.write_bytes::loop7 0
+dev.write_bytes::sda 0
+dev.write_bytes::sdb 0
+== Run iostat2pcp:
+stamp_style=2 zone=+0000 basedate=2020-08-20 now=1597949019 stamp=2020-08-20T18:43:39.000000
+End of sample 0 @ 1597949019 2020-08-20T18:43:39.000000
+End of sample 1 @ 1597949020 2020-08-20T18:43:40.000000
+== Raw pminfo sample 1:
+
+kernel.all.cpu.idle
+    value 0.9849
+
+kernel.all.cpu.steal
+    value 0
+
+kernel.all.cpu.wait.total
+    value 0.0151
+
+kernel.all.cpu.sys
+    value 0
+
+kernel.all.cpu.nice
+    value 0
+
+kernel.all.cpu.user
+    value 0
+
+disk.dev.write_bytes
+    inst [0 or "loop0"] value 0
+    inst [1 or "loop1"] value 0
+    inst [2 or "loop2"] value 0
+    inst [3 or "loop3"] value 0
+    inst [4 or "loop4"] value 0
+    inst [5 or "loop5"] value 0
+    inst [6 or "loop6"] value 0
+    inst [7 or "loop7"] value 0
+    inst [8 or "sda"] value 0
+    inst [9 or "sdb"] value 0
+
+disk.dev.read_bytes
+    inst [0 or "loop0"] value 0
+    inst [1 or "loop1"] value 0
+    inst [2 or "loop2"] value 0
+    inst [3 or "loop3"] value 0
+    inst [4 or "loop4"] value 0
+    inst [5 or "loop5"] value 0
+    inst [6 or "loop6"] value 0
+    inst [7 or "loop7"] value 0
+    inst [8 or "sda"] value 0
+    inst [9 or "sdb"] value 12
+
+disk.dev.total
+    inst [0 or "loop0"] value 0
+    inst [1 or "loop1"] value 0
+    inst [2 or "loop2"] value 0
+    inst [3 or "loop3"] value 0
+    inst [4 or "loop4"] value 0
+    inst [5 or "loop5"] value 0
+    inst [6 or "loop6"] value 0
+    inst [7 or "loop7"] value 0
+    inst [8 or "sda"] value 0
+    inst [9 or "sdb"] value 2
+== Extracted pcp sample 1:
+cpu.idle 0.9849
+cpu.nice 0
+cpu.steal 0
+cpu.sys 0
+cpu.user 0
+cpu.wait.total 0.0151
+dev.read_bytes::loop0 0
+dev.read_bytes::loop1 0
+dev.read_bytes::loop2 0
+dev.read_bytes::loop3 0
+dev.read_bytes::loop4 0
+dev.read_bytes::loop5 0
+dev.read_bytes::loop6 0
+dev.read_bytes::loop7 0
+dev.read_bytes::sda 0
+dev.read_bytes::sdb 12
+dev.total::loop0 0
+dev.total::loop1 0
+dev.total::loop2 0
+dev.total::loop3 0
+dev.total::loop4 0
+dev.total::loop5 0
+dev.total::loop6 0
+dev.total::loop7 0
+dev.total::sda 0
+dev.total::sdb 2
+dev.write_bytes::loop0 0
+dev.write_bytes::loop1 0
+dev.write_bytes::loop2 0
+dev.write_bytes::loop3 0
+dev.write_bytes::loop4 0
+dev.write_bytes::loop5 0
+dev.write_bytes::loop6 0
+dev.write_bytes::loop7 0
+dev.write_bytes::sda 0
+dev.write_bytes::sdb 0
+== Raw pminfo sample 2:
+
+kernel.all.cpu.idle
+    value 0.995
+
+kernel.all.cpu.steal
+    value 0
+
+kernel.all.cpu.wait.total
+    value 0
+
+kernel.all.cpu.sys
+    value 0
+
+kernel.all.cpu.nice
+    value 0
+
+kernel.all.cpu.user
+    value 0.0049999999
+
+disk.dev.write_bytes
+    inst [0 or "loop0"] value 0
+    inst [1 or "loop1"] value 0
+    inst [2 or "loop2"] value 0
+    inst [3 or "loop3"] value 0
+    inst [4 or "loop4"] value 0
+    inst [5 or "loop5"] value 0
+    inst [6 or "loop6"] value 0
+    inst [7 or "loop7"] value 0
+    inst [8 or "sda"] value 0
+    inst [9 or "sdb"] value 0
+
+disk.dev.read_bytes
+    inst [0 or "loop0"] value 0
+    inst [1 or "loop1"] value 0
+    inst [2 or "loop2"] value 0
+    inst [3 or "loop3"] value 0
+    inst [4 or "loop4"] value 0
+    inst [5 or "loop5"] value 0
+    inst [6 or "loop6"] value 0
+    inst [7 or "loop7"] value 0
+    inst [8 or "sda"] value 0
+    inst [9 or "sdb"] value 0
+
+disk.dev.total
+    inst [0 or "loop0"] value 0
+    inst [1 or "loop1"] value 0
+    inst [2 or "loop2"] value 0
+    inst [3 or "loop3"] value 0
+    inst [4 or "loop4"] value 0
+    inst [5 or "loop5"] value 0
+    inst [6 or "loop6"] value 0
+    inst [7 or "loop7"] value 0
+    inst [8 or "sda"] value 0
+    inst [9 or "sdb"] value 0
+== Extracted pcp sample 2:
+cpu.idle 0.995
+cpu.nice 0
+cpu.steal 0
+cpu.sys 0
+cpu.user 0.0049999999
+cpu.wait.total 0
+dev.read_bytes::loop0 0
+dev.read_bytes::loop1 0
+dev.read_bytes::loop2 0
+dev.read_bytes::loop3 0
+dev.read_bytes::loop4 0
+dev.read_bytes::loop5 0
+dev.read_bytes::loop6 0
+dev.read_bytes::loop7 0
+dev.read_bytes::sda 0
+dev.read_bytes::sdb 0
+dev.total::loop0 0
+dev.total::loop1 0
+dev.total::loop2 0
+dev.total::loop3 0
+dev.total::loop4 0
+dev.total::loop5 0
+dev.total::loop6 0
+dev.total::loop7 0
+dev.total::sda 0
+dev.total::sdb 0
+dev.write_bytes::loop0 0
+dev.write_bytes::loop1 0
+dev.write_bytes::loop2 0
+dev.write_bytes::loop3 0
+dev.write_bytes::loop4 0
+dev.write_bytes::loop5 0
+dev.write_bytes::loop6 0
+dev.write_bytes::loop7 0
+dev.write_bytes::sda 0
+dev.write_bytes::sdb 0
+== Merged /tmp/975-1026577.iostat.values.1 and /tmp/975-1026577.pcp.values.1:
+cpu.idle 0.984900	cpu.idle 0.9849
+cpu.nice 0.000000	cpu.nice 0
+cpu.steal 0.000000	cpu.steal 0
+cpu.sys 0.000000	cpu.sys 0
+cpu.user 0.000000	cpu.user 0
+cpu.wait.total 0.015100	cpu.wait.total 0.0151
+dev.read_bytes::loop0 0	dev.read_bytes::loop0 0
+dev.read_bytes::loop1 0	dev.read_bytes::loop1 0
+dev.read_bytes::loop2 0	dev.read_bytes::loop2 0
+dev.read_bytes::loop3 0	dev.read_bytes::loop3 0
+dev.read_bytes::loop4 0	dev.read_bytes::loop4 0
+dev.read_bytes::loop5 0	dev.read_bytes::loop5 0
+dev.read_bytes::loop6 0	dev.read_bytes::loop6 0
+dev.read_bytes::loop7 0	dev.read_bytes::loop7 0
+dev.read_bytes::sda 0	dev.read_bytes::sda 0
+dev.read_bytes::sdb 12	dev.read_bytes::sdb 12
+dev.total::loop0 0.00	dev.total::loop0 0
+dev.total::loop1 0.00	dev.total::loop1 0
+dev.total::loop2 0.00	dev.total::loop2 0
+dev.total::loop3 0.00	dev.total::loop3 0
+dev.total::loop4 0.00	dev.total::loop4 0
+dev.total::loop5 0.00	dev.total::loop5 0
+dev.total::loop6 0.00	dev.total::loop6 0
+dev.total::loop7 0.00	dev.total::loop7 0
+dev.total::sda 0.00	dev.total::sda 0
+dev.total::sdb 2.00	dev.total::sdb 2
+dev.write_bytes::loop0 0	dev.write_bytes::loop0 0
+dev.write_bytes::loop1 0	dev.write_bytes::loop1 0
+dev.write_bytes::loop2 0	dev.write_bytes::loop2 0
+dev.write_bytes::loop3 0	dev.write_bytes::loop3 0
+dev.write_bytes::loop4 0	dev.write_bytes::loop4 0
+dev.write_bytes::loop5 0	dev.write_bytes::loop5 0
+dev.write_bytes::loop6 0	dev.write_bytes::loop6 0
+dev.write_bytes::loop7 0	dev.write_bytes::loop7 0
+dev.write_bytes::sda 0	dev.write_bytes::sda 0
+dev.write_bytes::sdb 0	dev.write_bytes::sdb 0
+== Merged /tmp/975-1026577.iostat.values.2 and /tmp/975-1026577.pcp.values.2:
+cpu.idle 0.995000	cpu.idle 0.995
+cpu.nice 0.000000	cpu.nice 0
+cpu.steal 0.000000	cpu.steal 0
+cpu.sys 0.000000	cpu.sys 0
+cpu.user 0.005000	cpu.user 0.0049999999
+cpu.wait.total 0.000000	cpu.wait.total 0
+dev.read_bytes::loop0 0	dev.read_bytes::loop0 0
+dev.read_bytes::loop1 0	dev.read_bytes::loop1 0
+dev.read_bytes::loop2 0	dev.read_bytes::loop2 0
+dev.read_bytes::loop3 0	dev.read_bytes::loop3 0
+dev.read_bytes::loop4 0	dev.read_bytes::loop4 0
+dev.read_bytes::loop5 0	dev.read_bytes::loop5 0
+dev.read_bytes::loop6 0	dev.read_bytes::loop6 0
+dev.read_bytes::loop7 0	dev.read_bytes::loop7 0
+dev.read_bytes::sda 0	dev.read_bytes::sda 0
+dev.read_bytes::sdb 0	dev.read_bytes::sdb 0
+dev.total::loop0 0.00	dev.total::loop0 0
+dev.total::loop1 0.00	dev.total::loop1 0
+dev.total::loop2 0.00	dev.total::loop2 0
+dev.total::loop3 0.00	dev.total::loop3 0
+dev.total::loop4 0.00	dev.total::loop4 0
+dev.total::loop5 0.00	dev.total::loop5 0
+dev.total::loop6 0.00	dev.total::loop6 0
+dev.total::loop7 0.00	dev.total::loop7 0
+dev.total::sda 0.00	dev.total::sda 0
+dev.total::sdb 0.00	dev.total::sdb 0
+dev.write_bytes::loop0 0	dev.write_bytes::loop0 0
+dev.write_bytes::loop1 0	dev.write_bytes::loop1 0
+dev.write_bytes::loop2 0	dev.write_bytes::loop2 0
+dev.write_bytes::loop3 0	dev.write_bytes::loop3 0
+dev.write_bytes::loop4 0	dev.write_bytes::loop4 0
+dev.write_bytes::loop5 0	dev.write_bytes::loop5 0
+dev.write_bytes::loop6 0	dev.write_bytes::loop6 0
+dev.write_bytes::loop7 0	dev.write_bytes::loop7 0
+dev.write_bytes::sda 0	dev.write_bytes::sda 0
+dev.write_bytes::sdb 0	dev.write_bytes::sdb 0
+== Raw iostat:
+Linux 5.4.0-1022-azure (fv-az213) 	2020-08-20 	_x86_64_	(2 CPU)
+
+2020-08-20T18:43:40+0000
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          17.90    0.54    8.14    2.24    0.00   71.18
+
+Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz  aqu-sz  %util
+loop0            0.02      0.13     0.00   0.00    0.10     7.41    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+loop1            0.18      0.21     0.00   0.00    7.92     1.18    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.01
+loop2            0.01      0.12     0.00   0.00    0.33    15.19    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+loop3            0.01      0.04     0.00   0.00    0.68     4.95    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+loop4            0.01      0.12     0.00   0.00    2.21    13.60    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+loop5            1.36      1.43     0.00   0.00    2.92     1.05    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.02
+loop6            0.01      0.04     0.00   0.00    3.91     6.29    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+loop7            0.00      0.00     0.00   0.00    0.20     1.60    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+sda              0.08      1.82     0.00   4.62    0.80    22.95    0.11     34.15     0.17  59.20   52.79   297.29    0.00   1656.48     0.00   0.00    0.00 1834872.00    0.01   0.03
+sdb             11.51    378.56     4.79  29.36    4.42    32.88   27.86   1985.51    36.69  56.83   69.17    71.25    1.65   1174.12     0.00   0.00    0.21   712.94    1.94   2.93
+
+
+2020-08-20T18:43:41+0000
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           0.50    0.00    0.00    0.00    0.00   99.50
+
+Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz  aqu-sz  %util
+loop0            0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+loop1            0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+loop2            0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+loop3            0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+loop4            0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+loop5            0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+loop6            0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+loop7            0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+sda              0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+sdb              0.00      0.00     0.00   0.00    0.00     0.00    2.00    396.00     1.00  33.33    1.00   198.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.40
+
+
+2020-08-20T18:43:42+0000
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           0.00    0.00    0.00    0.00    0.00  100.00
+
+Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz  aqu-sz  %util
+loop0            0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+loop1            0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+loop2            0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+loop3            0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+loop4            0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+loop5            0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+loop6            0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+loop7            0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+sda              0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+sdb              0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+
+
+== Extracted iostat sample 1
+cpu.idle 0.995000
+cpu.nice 0.000000
+cpu.steal 0.000000
+cpu.sys 0.000000
+cpu.user 0.005000
+cpu.wait.total 0.000000
+dev.avactive::loop0 0.00
+dev.avactive::loop1 0.00
+dev.avactive::loop2 0.00
+dev.avactive::loop3 0.00
+dev.avactive::loop4 0.00
+dev.avactive::loop5 0.00
+dev.avactive::loop6 0.00
+dev.avactive::loop7 0.00
+dev.avactive::sda 0.00
+dev.avactive::sdb 0.00
+dev.read::loop0 0.00
+dev.read::loop1 0.00
+dev.read::loop2 0.00
+dev.read::loop3 0.00
+dev.read::loop4 0.00
+dev.read::loop5 0.00
+dev.read::loop6 0.00
+dev.read::loop7 0.00
+dev.read::sda 0.00
+dev.read::sdb 0.00
+dev.read_bytes::loop0 0
+dev.read_bytes::loop1 0
+dev.read_bytes::loop2 0
+dev.read_bytes::loop3 0
+dev.read_bytes::loop4 0
+dev.read_bytes::loop5 0
+dev.read_bytes::loop6 0
+dev.read_bytes::loop7 0
+dev.read_bytes::sda 0
+dev.read_bytes::sdb 0
+dev.read_merge::loop0 0.00
+dev.read_merge::loop1 0.00
+dev.read_merge::loop2 0.00
+dev.read_merge::loop3 0.00
+dev.read_merge::loop4 0.00
+dev.read_merge::loop5 0.00
+dev.read_merge::loop6 0.00
+dev.read_merge::loop7 0.00
+dev.read_merge::sda 0.00
+dev.read_merge::sdb 0.00
+dev.read_rawactive::loop0 0.00
+dev.read_rawactive::loop1 0.00
+dev.read_rawactive::loop2 0.00
+dev.read_rawactive::loop3 0.00
+dev.read_rawactive::loop4 0.00
+dev.read_rawactive::loop5 0.00
+dev.read_rawactive::loop6 0.00
+dev.read_rawactive::loop7 0.00
+dev.read_rawactive::sda 0.00
+dev.read_rawactive::sdb 1.00
+dev.write::loop0 0.00
+dev.write::loop1 0.00
+dev.write::loop2 0.00
+dev.write::loop3 0.00
+dev.write::loop4 0.00
+dev.write::loop5 0.00
+dev.write::loop6 0.00
+dev.write::loop7 0.00
+dev.write::sda 0.00
+dev.write::sdb 0.00
+dev.write_bytes::loop0 0
+dev.write_bytes::loop1 0
+dev.write_bytes::loop2 0
+dev.write_bytes::loop3 0
+dev.write_bytes::loop4 0
+dev.write_bytes::loop5 0
+dev.write_bytes::loop6 0
+dev.write_bytes::loop7 0
+dev.write_bytes::sda 0
+dev.write_bytes::sdb 0
+dev.write_merge::loop0 0.00
+dev.write_merge::loop1 0.00
+dev.write_merge::loop2 0.00
+dev.write_merge::loop3 0.00
+dev.write_merge::loop4 0.00
+dev.write_merge::loop5 0.00
+dev.write_merge::loop6 0.00
+dev.write_merge::loop7 0.00
+dev.write_merge::sda 0.00
+dev.write_merge::sdb 0.00
+dev.write_rawactive::loop0 0.00
+dev.write_rawactive::loop1 0.00
+dev.write_rawactive::loop2 0.00
+dev.write_rawactive::loop3 0.00
+dev.write_rawactive::loop4 0.00
+dev.write_rawactive::loop5 0.00
+dev.write_rawactive::loop6 0.00
+dev.write_rawactive::loop7 0.00
+dev.write_rawactive::sda 0.00
+dev.write_rawactive::sdb 33.33
+== Extracted iostat sample 2
+cpu.idle 1.000000
+cpu.nice 0.000000
+cpu.steal 0.000000
+cpu.sys 0.000000
+cpu.user 0.000000
+cpu.wait.total 0.000000
+dev.avactive::loop0 0.00
+dev.avactive::loop1 0.00
+dev.avactive::loop2 0.00
+dev.avactive::loop3 0.00
+dev.avactive::loop4 0.00
+dev.avactive::loop5 0.00
+dev.avactive::loop6 0.00
+dev.avactive::loop7 0.00
+dev.avactive::sda 0.00
+dev.avactive::sdb 0.00
+dev.read::loop0 0.00
+dev.read::loop1 0.00
+dev.read::loop2 0.00
+dev.read::loop3 0.00
+dev.read::loop4 0.00
+dev.read::loop5 0.00
+dev.read::loop6 0.00
+dev.read::loop7 0.00
+dev.read::sda 0.00
+dev.read::sdb 0.00
+dev.read_bytes::loop0 0
+dev.read_bytes::loop1 0
+dev.read_bytes::loop2 0
+dev.read_bytes::loop3 0
+dev.read_bytes::loop4 0
+dev.read_bytes::loop5 0
+dev.read_bytes::loop6 0
+dev.read_bytes::loop7 0
+dev.read_bytes::sda 0
+dev.read_bytes::sdb 0
+dev.read_merge::loop0 0.00
+dev.read_merge::loop1 0.00
+dev.read_merge::loop2 0.00
+dev.read_merge::loop3 0.00
+dev.read_merge::loop4 0.00
+dev.read_merge::loop5 0.00
+dev.read_merge::loop6 0.00
+dev.read_merge::loop7 0.00
+dev.read_merge::sda 0.00
+dev.read_merge::sdb 0.00
+dev.read_rawactive::loop0 0.00
+dev.read_rawactive::loop1 0.00
+dev.read_rawactive::loop2 0.00
+dev.read_rawactive::loop3 0.00
+dev.read_rawactive::loop4 0.00
+dev.read_rawactive::loop5 0.00
+dev.read_rawactive::loop6 0.00
+dev.read_rawactive::loop7 0.00
+dev.read_rawactive::sda 0.00
+dev.read_rawactive::sdb 0.00
+dev.write::loop0 0.00
+dev.write::loop1 0.00
+dev.write::loop2 0.00
+dev.write::loop3 0.00
+dev.write::loop4 0.00
+dev.write::loop5 0.00
+dev.write::loop6 0.00
+dev.write::loop7 0.00
+dev.write::sda 0.00
+dev.write::sdb 0.00
+dev.write_bytes::loop0 0
+dev.write_bytes::loop1 0
+dev.write_bytes::loop2 0
+dev.write_bytes::loop3 0
+dev.write_bytes::loop4 0
+dev.write_bytes::loop5 0
+dev.write_bytes::loop6 0
+dev.write_bytes::loop7 0
+dev.write_bytes::sda 0
+dev.write_bytes::sdb 0
+dev.write_merge::loop0 0.00
+dev.write_merge::loop1 0.00
+dev.write_merge::loop2 0.00
+dev.write_merge::loop3 0.00
+dev.write_merge::loop4 0.00
+dev.write_merge::loop5 0.00
+dev.write_merge::loop6 0.00
+dev.write_merge::loop7 0.00
+dev.write_merge::sda 0.00
+dev.write_merge::sdb 0.00
+dev.write_rawactive::loop0 0.00
+dev.write_rawactive::loop1 0.00
+dev.write_rawactive::loop2 0.00
+dev.write_rawactive::loop3 0.00
+dev.write_rawactive::loop4 0.00
+dev.write_rawactive::loop5 0.00
+dev.write_rawactive::loop6 0.00
+dev.write_rawactive::loop7 0.00
+dev.write_rawactive::sda 0.00
+dev.write_rawactive::sdb 0.00

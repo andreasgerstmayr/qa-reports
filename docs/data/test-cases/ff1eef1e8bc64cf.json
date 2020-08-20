@@ -1,0 +1,55 @@
+{
+  "uid" : "ff1eef1e8bc64cf",
+  "name" : "QA 749",
+  "fullName" : "QA #749 on ubuntu2004-direct",
+  "historyId" : "749@ubuntu2004-direct",
+  "time" : {
+    "start" : 1597947910000,
+    "stop" : 1597947910000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 749\n\nCheck pmcd static probes\n\n\n\nCopyright (c) 2013-2014 Red Hat.\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 749</p>\n<p>Check pmcd static probes</p>\n<p>Copyright (c) 2013-2014 Red Hat.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "No systemtap stap executable found",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu2004-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu2004-direct"
+  }, {
+    "name" : "epic",
+    "value" : "pmcd"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/749",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/749.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ff1eef1e8bc64cf.json",
+  "parameterValues" : [ ]
+}

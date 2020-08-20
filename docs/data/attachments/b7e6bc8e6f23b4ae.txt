@@ -1,0 +1,198 @@
+sed ...
+
+s/20200820.01.10/TODAY-0.1H.MM/g
+s/20200820.01.10-00/TODAY-0.1H.MM-00/g
+s/20200820.01.10-01/TODAY-0.1H.MM-01/g
+s/20200820.04.10/TODAY-0.4H.MM/g
+s/20200820.04.10-00/TODAY-0.4H.MM-00/g
+s/20200820.04.10-01/TODAY-0.4H.MM-01/g
+s/20200820.16.10/TODAY-0.16H.MM/g
+s/20200820.16.10-00/TODAY-0.16H.MM-00/g
+s/20200820.16.10-01/TODAY-0.16H.MM-01/g
+s/20200820/TODAY-0/g
+s/20200819.01.10/TODAY-1.1H.MM/g
+s/20200819.01.10-00/TODAY-1.1H.MM-00/g
+s/20200819.01.10-01/TODAY-1.1H.MM-01/g
+s/20200819/TODAY-1/g
+s/20200818.01.10/TODAY-2.1H.MM/g
+s/20200818.01.10-00/TODAY-2.1H.MM-00/g
+s/20200818.01.10-01/TODAY-2.1H.MM-01/g
+s/20200818/TODAY-2/g
+s/20200817.01.10/TODAY-3.1H.MM/g
+s/20200817.01.10-00/TODAY-3.1H.MM-00/g
+s/20200817.01.10-01/TODAY-3.1H.MM-01/g
+s/20200817/TODAY-3/g
+s/20200816/TODAY-4/g
+s/20200816/TODAY-4/g
+s/20200815/TODAY-5/g
+s/20200815/TODAY-5/g
+s/20200814/TODAY-6/g
+s/20200814/TODAY-6/g
+s/TODAY-0/TODAY/g
+s/20200820/TODAY/g
+before ...
+total 252
+-rw-r--r-- 1 pcp pcp  488 Aug 14 00:10 20200814.0
+-rw-r--r-- 1 pcp pcp  192 Aug 14 00:10 20200814.index
+-rw-r--r-- 1 pcp pcp  414 Aug 14 00:10 20200814.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 15 00:10 20200815.0
+-rw-r--r-- 1 pcp pcp  192 Aug 15 00:10 20200815.index
+-rw-r--r-- 1 pcp pcp  414 Aug 15 00:10 20200815.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 16 00:10 20200816.0
+-rw-r--r-- 1 pcp pcp  192 Aug 16 00:10 20200816.index
+-rw-r--r-- 1 pcp pcp  414 Aug 16 00:10 20200816.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 17 01:20 20200817.01.10-00.0
+-rw-r--r-- 1 pcp pcp  192 Aug 17 01:20 20200817.01.10-00.index
+-rw-r--r-- 1 pcp pcp  414 Aug 17 01:20 20200817.01.10-00.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 17 01:30 20200817.01.10-01.0
+-rw-r--r-- 1 pcp pcp  192 Aug 17 01:30 20200817.01.10-01.index
+-rw-r--r-- 1 pcp pcp  414 Aug 17 01:30 20200817.01.10-01.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 17 01:10 20200817.01.10.0
+-rw-r--r-- 1 pcp pcp  192 Aug 17 01:10 20200817.01.10.index
+-rw-r--r-- 1 pcp pcp  414 Aug 17 01:10 20200817.01.10.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 18 01:20 20200818.01.10-00.0
+-rw-r--r-- 1 pcp pcp  192 Aug 18 01:20 20200818.01.10-00.index
+-rw-r--r-- 1 pcp pcp  414 Aug 18 01:20 20200818.01.10-00.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 18 01:30 20200818.01.10-01.0
+-rw-r--r-- 1 pcp pcp  192 Aug 18 01:30 20200818.01.10-01.index
+-rw-r--r-- 1 pcp pcp  414 Aug 18 01:30 20200818.01.10-01.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 18 01:10 20200818.01.10.0
+-rw-r--r-- 1 pcp pcp  192 Aug 18 01:10 20200818.01.10.index
+-rw-r--r-- 1 pcp pcp  414 Aug 18 01:10 20200818.01.10.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 19 01:20 20200819.01.10-00.0
+-rw-r--r-- 1 pcp pcp  192 Aug 19 01:20 20200819.01.10-00.index
+-rw-r--r-- 1 pcp pcp  414 Aug 19 01:20 20200819.01.10-00.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 19 01:30 20200819.01.10-01.0
+-rw-r--r-- 1 pcp pcp  192 Aug 19 01:30 20200819.01.10-01.index
+-rw-r--r-- 1 pcp pcp  414 Aug 19 01:30 20200819.01.10-01.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 19 01:10 20200819.01.10.0
+-rw-r--r-- 1 pcp pcp  192 Aug 19 01:10 20200819.01.10.index
+-rw-r--r-- 1 pcp pcp  414 Aug 19 01:10 20200819.01.10.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 20 01:20 20200820.01.10-00.0
+-rw-r--r-- 1 pcp pcp  192 Aug 20 01:20 20200820.01.10-00.index
+-rw-r--r-- 1 pcp pcp  414 Aug 20 01:20 20200820.01.10-00.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 20 01:30 20200820.01.10-01.0
+-rw-r--r-- 1 pcp pcp  192 Aug 20 01:30 20200820.01.10-01.index
+-rw-r--r-- 1 pcp pcp  414 Aug 20 01:30 20200820.01.10-01.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 20 01:10 20200820.01.10.0
+-rw-r--r-- 1 pcp pcp  192 Aug 20 01:10 20200820.01.10.index
+-rw-r--r-- 1 pcp pcp  414 Aug 20 01:10 20200820.01.10.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 20 04:20 20200820.04.10-00.0
+-rw-r--r-- 1 pcp pcp  192 Aug 20 04:20 20200820.04.10-00.index
+-rw-r--r-- 1 pcp pcp  414 Aug 20 04:20 20200820.04.10-00.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 20 04:30 20200820.04.10-01.0
+-rw-r--r-- 1 pcp pcp  192 Aug 20 04:30 20200820.04.10-01.index
+-rw-r--r-- 1 pcp pcp  414 Aug 20 04:30 20200820.04.10-01.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 20 16:20 20200820.16.10-00.0
+-rw-r--r-- 1 pcp pcp  192 Aug 20 16:20 20200820.16.10-00.index
+-rw-r--r-- 1 pcp pcp  414 Aug 20 16:20 20200820.16.10-00.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 20 16:30 20200820.16.10-01.0
+-rw-r--r-- 1 pcp pcp  192 Aug 20 16:30 20200820.16.10-01.index
+-rw-r--r-- 1 pcp pcp  414 Aug 20 16:30 20200820.16.10-01.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 20 16:10 20200820.16.10.0
+-rw-r--r-- 1 pcp pcp  192 Aug 20 16:10 20200820.16.10.index
+-rw-r--r-- 1 pcp pcp  414 Aug 20 16:10 20200820.16.10.meta
+-rw-r--r-- 1 pcp pcp   57 Aug 20 17:08 control
+drwxr-xr-x 2 pcp pcp 4096 Aug 20 17:08 foo
+-rw-r--r-- 1 pcp pcp  917 Aug 20 17:08 sed
+pmlogger_daily -k 5 -x never -V ...
+Info: found .NeedRewrite => rewrite all archives
+
+=== daily maintenance of PCP archives for host local: ===
+
+Info: pmlogrewrite all archives in /tmp/151-68455
+pmlogger_daily: [/tmp/151-68455/control:2]
+Error: no pmlogger instance running for host "local:"
+... logging for host "local:" unchanged
+pmlogger_daily: [/tmp/151-68455/control:2]
+Warning: skipping log rotation because we don't know which pmlogger to signal
+Archive files older than 5 days being removed ...
+    20200814.0 20200814.index 20200814.meta 20200815.0 20200815.index
+    20200815.meta
+Input archives to be merged:
+	20200817.01.10
+	20200817.01.10-00
+	20200817.01.10-01
+Output archive files:
+-rw-r--r-- 1 pcp pcp 455 Aug 20 17:08 20200817.meta
+-rw-r--r-- 1 pcp pcp 192 Aug 20 17:08 20200817.index
+-rw-r--r-- 1 pcp pcp 1240 Aug 20 17:08 20200817.0
+Removing input archive files ......... done
+Input archives to be merged:
+	20200818.01.10
+	20200818.01.10-00
+	20200818.01.10-01
+Output archive files:
+-rw-r--r-- 1 pcp pcp 455 Aug 20 17:08 20200818.meta
+-rw-r--r-- 1 pcp pcp 192 Aug 20 17:08 20200818.index
+-rw-r--r-- 1 pcp pcp 1240 Aug 20 17:08 20200818.0
+Removing input archive files ......... done
+Input archives to be merged:
+	20200819.01.10
+	20200819.01.10-00
+	20200819.01.10-01
+Output archive files:
+-rw-r--r-- 1 pcp pcp 455 Aug 20 17:08 20200819.meta
+-rw-r--r-- 1 pcp pcp 192 Aug 20 17:08 20200819.index
+-rw-r--r-- 1 pcp pcp 1240 Aug 20 17:08 20200819.0
+Removing input archive files ......... done
+out.0 ...
+Info: found .NeedRewrite => rewrite all archives
+
+=== daily maintenance of PCP archives for host HOST ===
+
+Info: pmlogrewrite all archives in TMP
+PMLOGGER.DAILY: [TMP/control:2]
+Error: no pmlogger instance running for host "HOST"
+... logging for host "HOST" unchanged
+PMLOGGER.DAILY: [TMP/control:2]
+Warning: skipping log rotation because we don't know which pmlogger to signal
+Archive files older than 5 days being removed ...
+out.1 ...
+TODAY-6.0
+TODAY-6.index
+TODAY-6.meta
+TODAY-5.0
+TODAY-5.index
+TODAY-5.meta
+after ...
+total 156
+-rw-r--r-- 1 pcp pcp  488 Aug 16 00:10 20200816.0
+-rw-r--r-- 1 pcp pcp  192 Aug 16 00:10 20200816.index
+-rw-r--r-- 1 pcp pcp  414 Aug 16 00:10 20200816.meta
+-rw-r--r-- 1 pcp pcp 1240 Aug 20 17:08 20200817.0
+-rw-r--r-- 1 pcp pcp  192 Aug 20 17:08 20200817.index
+-rw-r--r-- 1 pcp pcp  455 Aug 20 17:08 20200817.meta
+-rw-r--r-- 1 pcp pcp 1240 Aug 20 17:08 20200818.0
+-rw-r--r-- 1 pcp pcp  192 Aug 20 17:08 20200818.index
+-rw-r--r-- 1 pcp pcp  455 Aug 20 17:08 20200818.meta
+-rw-r--r-- 1 pcp pcp 1240 Aug 20 17:08 20200819.0
+-rw-r--r-- 1 pcp pcp  192 Aug 20 17:08 20200819.index
+-rw-r--r-- 1 pcp pcp  455 Aug 20 17:08 20200819.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 20 01:20 20200820.01.10-00.0
+-rw-r--r-- 1 pcp pcp  192 Aug 20 01:20 20200820.01.10-00.index
+-rw-r--r-- 1 pcp pcp  414 Aug 20 01:20 20200820.01.10-00.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 20 01:30 20200820.01.10-01.0
+-rw-r--r-- 1 pcp pcp  192 Aug 20 01:30 20200820.01.10-01.index
+-rw-r--r-- 1 pcp pcp  414 Aug 20 01:30 20200820.01.10-01.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 20 01:10 20200820.01.10.0
+-rw-r--r-- 1 pcp pcp  192 Aug 20 01:10 20200820.01.10.index
+-rw-r--r-- 1 pcp pcp  414 Aug 20 01:10 20200820.01.10.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 20 04:20 20200820.04.10-00.0
+-rw-r--r-- 1 pcp pcp  192 Aug 20 04:20 20200820.04.10-00.index
+-rw-r--r-- 1 pcp pcp  414 Aug 20 04:20 20200820.04.10-00.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 20 04:30 20200820.04.10-01.0
+-rw-r--r-- 1 pcp pcp  192 Aug 20 04:30 20200820.04.10-01.index
+-rw-r--r-- 1 pcp pcp  414 Aug 20 04:30 20200820.04.10-01.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 20 16:20 20200820.16.10-00.0
+-rw-r--r-- 1 pcp pcp  192 Aug 20 16:20 20200820.16.10-00.index
+-rw-r--r-- 1 pcp pcp  414 Aug 20 16:20 20200820.16.10-00.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 20 16:30 20200820.16.10-01.0
+-rw-r--r-- 1 pcp pcp  192 Aug 20 16:30 20200820.16.10-01.index
+-rw-r--r-- 1 pcp pcp  414 Aug 20 16:30 20200820.16.10-01.meta
+-rw-r--r-- 1 pcp pcp  488 Aug 20 16:10 20200820.16.10.0
+-rw-r--r-- 1 pcp pcp  192 Aug 20 16:10 20200820.16.10.index
+-rw-r--r-- 1 pcp pcp  414 Aug 20 16:10 20200820.16.10.meta
+-rw-r--r-- 1 pcp pcp   57 Aug 20 17:08 control
+drwxr-xr-x 2 pcp pcp 4096 Aug 20 17:08 foo
+-rw-r--r-- 1 pcp pcp  917 Aug 20 17:08 sed

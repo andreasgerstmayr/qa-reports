@@ -1,0 +1,17 @@
+Generating a RSA private key
+.............++++
+...............++++
+writing new private key to '/tmp/1457-1256908.key'
+-----
+valgrind pid: 1256999
+pmproxy port: 54321
+Startup took 5 secs
+Thu Aug 20 19:13:09 UTC 2020
+=== checking TLS operation ===
+{"context":1140772058,"metrics":[{"name":"sample.long.ten","series":"6182a536bd5843a146cfbc3be9239ee5ec3334f0","pmid":"29.0.11","type":"32","sem":"instant","units":"none","labels":{"agent":"sample","cluster":"zero","domainname":"localdomain","hostname":"5aea1a73a825","machineid":"a8eb6cac33e701ae867269db5ce80e7f","role":"testing"},"text-oneline":"10 as a 32-bit integer","text-help":"10 as a 32-bit integer"}]}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100   414  100   414    0     0    239      0  0:00:01  0:00:01 --:--:--   238
+Thu Aug 20 19:13:11 UTC 2020
+=== valgrind stdout ===
+=== valgrind stderr ===

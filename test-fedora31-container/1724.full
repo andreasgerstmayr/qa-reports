@@ -1,0 +1,41 @@
+pmdabpftrace config:
+# Installed by PCP QA test 1724 on Thu Aug 20 19:44:05 UTC 2020
+[dynamic_scripts]
+enabled = true
+pmdabpftrace config:
+# Installed by PCP QA test 1724 on Thu Aug 20 19:44:09 UTC 2020
+[dynamic_scripts]
+enabled = true
+auth_enabled = true
+allowed_users = some_user
+pmdabpftrace config:
+# Installed by PCP QA test 1724 on Thu Aug 20 19:44:16 UTC 2020
+[dynamic_scripts]
+enabled = true
+auth_enabled = true
+allowed_users = some_user,pcpqa
+pmdabpftrace config:
+# Installed by PCP QA test 1724 on Thu Aug 20 19:44:22 UTC 2020
+[dynamic_scripts]
+enabled = true
+auth_enabled = true
+allowed_users = some_user, pcpqa
+pmdabpftrace config:
+# Installed by PCP QA test 1724 on Thu Aug 20 19:44:29 UTC 2020
+[dynamic_scripts]
+enabled = true
+auth_enabled = false
+Log for pmdabpftrace on 564f0d2de60c started Thu Aug 20 19:44:33 2020
+
+[Thu Aug 20 19:44:33] pmdabpftrace(1235920) Info: manager: started pmdabpftrace process manager
+[Thu Aug 20 19:44:33] pmdabpftrace(1235920) Info: manager: using bpftrace v0.11.0
+[Thu Aug 20 19:44:35] pmdabpftrace(1235920) Info: script: starting script saca31a6583a64d5fbdabf0e94a0a2115 (user=pcpqa)...
+[Thu Aug 20 19:44:35] pmdabpftrace(1235920) Info: script: started script saca31a6583a64d5fbdabf0e94a0a2115 (user=pcpqa, PID=1235952)
+[Thu Aug 20 19:44:36] pmdabpftrace(1235920) Info: manager: shutting down pmdabpftrace process manager...
+[Thu Aug 20 19:44:36] pmdabpftrace(1235920) Info: script: stopping script saca31a6583a64d5fbdabf0e94a0a2115 (user=pcpqa, PID=1235952)...
+[Thu Aug 20 19:44:37] pmdabpftrace(1235920) Info: script: stopped script saca31a6583a64d5fbdabf0e94a0a2115 (user=pcpqa, PID=1235952)
+[Thu Aug 20 19:44:37] pmdabpftrace(1235920) Info: script: deregistered script saca31a6583a64d5fbdabf0e94a0a2115 (user=pcpqa, PID=1235952)
+[Thu Aug 20 19:44:37] pmdabpftrace(1235920) Info: manager: waiting 10 secs for running tasks to stop...
+[Thu Aug 20 19:44:37] pmdabpftrace(1235920) Info: manager: shutdown pmdabpftrace process manager
+
+Log finished Thu Aug 20 19:44:37 2020

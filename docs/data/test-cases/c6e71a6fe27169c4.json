@@ -1,0 +1,58 @@
+{
+  "uid" : "c6e71a6fe27169c4",
+  "name" : "QA 1102",
+  "fullName" : "QA #1102 on centos7-container",
+  "historyId" : "1102@centos7-container",
+  "time" : {
+    "start" : 1597948660000,
+    "stop" : 1597948660000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 1102\n\npmdaopenmetrics testing\n\nspecifically testing generic usecase\n\n\n\nNote: if anything gets added or changed in qa/openmetrics/samples directory,\n\nthen this test (and all tests in group pmda.openmetrics) will need to be remade.\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 1102</p>\n<p>pmdaopenmetrics testing</p>\n<p>specifically testing generic usecase</p>\n<p>Note: if anything gets added or changed in qa/openmetrics/samples directory,</p>\n<p>then this test (and all tests in group pmda.openmetrics) will need to be remade.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "python requests module not installed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos7-container"
+  }, {
+    "name" : "host",
+    "value" : "centos7-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.openmetrics"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "python"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1102",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1102.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c6e71a6fe27169c4.json",
+  "parameterValues" : [ ]
+}

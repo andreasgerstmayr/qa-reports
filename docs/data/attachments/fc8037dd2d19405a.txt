@@ -1,0 +1,367 @@
+QA output created by 386
+=== std out ===
+=== std err ===
++++++++++++++++++++++++++++
++ Mode: PDU_BINARY Pass 0 +
++++++++++++++++++++++++++++
++++++++++++++++++++++++++++
++ Mode: PDU_BINARY Pass 1 +
++++++++++++++++++++++++++++
++++++++++++++++++++++++++++
++ Mode: PDU_BINARY Pass 2 +
++++++++++++++++++++++++++++
++++++++++++++++++++++++++++
++ Mode: PDU_BINARY Pass 3 +
++++++++++++++++++++++++++++
++++++++++++++++++++++++++++
++ Mode: PDU_BINARY Pass 4 +
++++++++++++++++++++++++++++
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/pducheck
+24 bytes in 1 blocks are possibly lost in loss record 15 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x4A020DF: tsearch (tsearch.c:338)
+by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487DC54: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10BCE9: _z (pducheck.c:545)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+24 bytes in 1 blocks are possibly lost in loss record 16 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x4A020DF: tsearch (tsearch.c:338)
+by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487D987: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10BEA9: _z (pducheck.c:581)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+24 bytes in 1 blocks are possibly lost in loss record 17 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x4A020DF: tsearch (tsearch.c:338)
+by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487D987: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10C1C4: _z (pducheck.c:651)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+24 bytes in 1 blocks are possibly lost in loss record 18 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x4A020DF: tsearch (tsearch.c:338)
+by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487DC54: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10C1C4: _z (pducheck.c:651)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+24 bytes in 1 blocks are possibly lost in loss record 19 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x4A020DF: tsearch (tsearch.c:338)
+by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487D987: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10C621: _z (pducheck.c:724)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+24 bytes in 1 blocks are possibly lost in loss record 20 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x4A020DF: tsearch (tsearch.c:338)
+by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487DC54: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10CE1C: _z (pducheck.c:1035)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+24 bytes in 1 blocks are possibly lost in loss record 21 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x4A020DF: tsearch (tsearch.c:338)
+by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487D987: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10D0A8: _z (pducheck.c:1091)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+24 bytes in 1 blocks are possibly lost in loss record 22 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x4A020DF: tsearch (tsearch.c:338)
+by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487DC54: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10D225: _z (pducheck.c:1136)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+24 bytes in 1 blocks are possibly lost in loss record 23 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x4A020DF: tsearch (tsearch.c:338)
+by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487DC54: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10D670: _z (pducheck.c:1241)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+24 bytes in 1 blocks are possibly lost in loss record 24 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x4A020DF: tsearch (tsearch.c:338)
+by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487DC54: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10D8F0: _z (pducheck.c:1333)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+48 bytes in 2 blocks are possibly lost in loss record 33 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x4A020DF: tsearch (tsearch.c:338)
+by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487DC54: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10C621: _z (pducheck.c:724)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+1,040 bytes in 1 blocks are possibly lost in loss record 60 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487DC54: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10BCE9: _z (pducheck.c:545)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+1,040 bytes in 1 blocks are possibly lost in loss record 61 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487DC54: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10BEA9: _z (pducheck.c:581)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+1,040 bytes in 1 blocks are possibly lost in loss record 62 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487DC54: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10CE1C: _z (pducheck.c:1035)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+1,040 bytes in 1 blocks are possibly lost in loss record 63 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487DC54: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10D0A8: _z (pducheck.c:1091)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+1,040 bytes in 1 blocks are possibly lost in loss record 64 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487DC54: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10D225: _z (pducheck.c:1136)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+1,040 bytes in 1 blocks are possibly lost in loss record 65 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487DC54: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10D670: _z (pducheck.c:1241)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+1,040 bytes in 1 blocks are possibly lost in loss record 66 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487DC54: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10D8F0: _z (pducheck.c:1333)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+2,080 bytes in 2 blocks are possibly lost in loss record 67 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487DC54: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10C1C4: _z (pducheck.c:651)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+3,120 bytes in 3 blocks are possibly lost in loss record 68 of 90
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487DC54: __pmGetPDU (in /usr/lib/libpcp.so.3)
+by 0x10C621: _z (pducheck.c:724)
+by 0x10A923: main (pducheck.c:1771)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmGetPDU
+   fun:_z
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 20 errors from 20 contexts ...

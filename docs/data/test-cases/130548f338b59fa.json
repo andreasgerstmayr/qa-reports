@@ -1,0 +1,64 @@
+{
+  "uid" : "130548f338b59fa",
+  "name" : "QA 1070",
+  "fullName" : "QA #1070 on fedora31-container",
+  "historyId" : "1070@fedora31-container",
+  "time" : {
+    "start" : 1597949502000,
+    "stop" : 1597949503000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 1070\n\nExercise pmrep csv / sheet2pcp / pmrep csv roundtrip compatibility.\n\n\n\nCopyright (c) 2016 Red Hat.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 1070</p>\n<p>Exercise pmrep csv / sheet2pcp / pmrep csv roundtrip compatibility.</p>\n<p>Copyright (c) 2016 Red Hat.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "perl Spreadsheet::Read module not installed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmrep"
+  }, {
+    "name" : "epic",
+    "value" : "pmimport"
+  }, {
+    "name" : "epic",
+    "value" : "python"
+  }, {
+    "name" : "epic",
+    "value" : "perl"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1070",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1070.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "130548f338b59fa.json",
+  "parameterValues" : [ ]
+}

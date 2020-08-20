@@ -1,0 +1,55 @@
+{
+  "uid" : "88d7e80ec8638e95",
+  "name" : "QA 1358",
+  "fullName" : "QA #1358 on fedora_rawhide-container",
+  "historyId" : "1358@fedora_rawhide-container",
+  "time" : {
+    "start" : 1597952545000,
+    "stop" : 1597952545000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 1358\n\nExercise the podman PMDA.\n\n\n\nCopyright (c) 2018 Red Hat.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 1358</p>\n<p>Exercise the podman PMDA.</p>\n<p>Copyright (c) 2018 Red Hat.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "No podman binary found",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.podman"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1358",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1358.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "88d7e80ec8638e95.json",
+  "parameterValues" : [ ]
+}

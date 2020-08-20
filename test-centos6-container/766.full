@@ -1,0 +1,262 @@
+addr=
+-m probe=/32
+Exit status: 0
+-s pmcd -m probe=/31 -r
+Exit status: 0
+-q -m probe=/30
+Exit status: 0
+-q -s pmcd -m probe=/29 --resolve
+Exit status: 0
+-q -s pmcd -m probe=/28,maxThreads=8
+Exit status: 0
+ulimit -n 10
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.45
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.46
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.47
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.48
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.49
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.50
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.51
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.52
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.53
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.54
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.55
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.56
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.57
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.58
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.59
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.60
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.61
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.62
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.63
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.64
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.65
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.84
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.85
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.86
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.87
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.88
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.89
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.90
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.91
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.92
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.93
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.94
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.95
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.96
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.97
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.98
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.99
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.100
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.101
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.102
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.103
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.125
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.126
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.127
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.128
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.129
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.130
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.131
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.132
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.133
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.134
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.135
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.136
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.137
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.138
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.139
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.140
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.141
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.142
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.143
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.144
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.145
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.146
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.147
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.148
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.149
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.150
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.151
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.152
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.153
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.154
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.155
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.156
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.157
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.158
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.159
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.160
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.161
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.162
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.163
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.164
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.165
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.167
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.170
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.173
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.176
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.179
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.181
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.182
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.183
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.184
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.185
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.186
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.187
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.188
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.189
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.190
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.191
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.192
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.193
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.194
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.195
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.196
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.197
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.198
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.199
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.200
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.201
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.202
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.203
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.204
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.205
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.206
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.207
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.208
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.209
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.210
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.211
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.212
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.213
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.214
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.215
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.216
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.217
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.218
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.219
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.220
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.221
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.222
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.223
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.224
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.225
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.226
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.227
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.228
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.229
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.230
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.231
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.232
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.233
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.234
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.235
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.236
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.237
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.238
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.239
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.240
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.241
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.242
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.243
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.244
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.245
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.246
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.247
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.248
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.249
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.250
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.251
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.252
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.253
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.254
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.255
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.174
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.169
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.168
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.175
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.172
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.177
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.180
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.178
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.171
+[Thu Aug 20 18:00:37] pmfind(15333) Warning: __pmSubnetProbeDiscoverServices: Cannot create socket for address 127.0.0.166
+Discovered pmcd servers:
+  pcp://127.0.0.2:44321
+  pcp://127.0.0.3:44321
+  pcp://127.0.0.4:44321
+  pcp://127.0.0.5:44321
+  pcp://127.0.0.6:44321
+  pcp://127.0.0.7:44321
+  pcp://127.0.0.8:44321
+  pcp://127.0.0.9:44321
+  pcp://127.0.0.11:44321
+  pcp://127.0.0.12:44321
+  pcp://127.0.0.13:44321
+  pcp://127.0.0.14:44321
+  pcp://127.0.0.15:44321
+  pcp://127.0.0.16:44321
+  pcp://127.0.0.17:44321
+  pcp://127.0.0.18:44321
+  pcp://127.0.0.19:44321
+  pcp://127.0.0.20:44321
+  pcp://127.0.0.21:44321
+  pcp://127.0.0.22:44321
+  pcp://127.0.0.23:44321
+  pcp://127.0.0.24:44321
+  pcp://127.0.0.25:44321
+  pcp://127.0.0.26:44321
+  pcp://127.0.0.27:44321
+  pcp://127.0.0.28:44321
+  pcp://127.0.0.29:44321
+  pcp://127.0.0.30:44321
+  pcp://127.0.0.31:44321
+  pcp://127.0.0.32:44321
+  pcp://127.0.0.33:44321
+  pcp://127.0.0.34:44321
+  pcp://127.0.0.35:44321
+  pcp://127.0.0.36:44321
+  pcp://127.0.0.37:44321
+  pcp://127.0.0.38:44321
+  pcp://127.0.0.39:44321
+  pcp://127.0.0.66:44321
+  pcp://127.0.0.67:44321
+  pcp://127.0.0.68:44321
+  pcp://127.0.0.69:44321
+  pcp://127.0.0.70:44321
+  pcp://127.0.0.71:44321
+  pcp://127.0.0.72:44321
+  pcp://127.0.0.73:44321
+  pcp://127.0.0.74:44321
+  pcp://127.0.0.75:44321
+  pcp://127.0.0.76:44321
+  pcp://127.0.0.77:44321
+  pcp://127.0.0.78:44321
+  pcp://127.0.0.79:44321
+  pcp://127.0.0.80:44321
+  pcp://127.0.0.81:44321
+  pcp://127.0.0.82:44321
+  pcp://127.0.0.10:44321
+  pcp://127.0.0.104:44321
+  pcp://127.0.0.105:44321
+  pcp://127.0.0.106:44321
+  pcp://127.0.0.107:44321
+  pcp://127.0.0.108:44321
+  pcp://127.0.0.109:44321
+  pcp://127.0.0.110:44321
+  pcp://127.0.0.111:44321
+  pcp://127.0.0.112:44321
+  pcp://127.0.0.113:44321
+  pcp://127.0.0.114:44321
+  pcp://127.0.0.115:44321
+  pcp://127.0.0.116:44321
+  pcp://127.0.0.117:44321
+  pcp://127.0.0.118:44321
+  pcp://127.0.0.120:44321
+  pcp://127.0.0.121:44321
+  pcp://127.0.0.122:44321
+  pcp://127.0.0.123:44321
+  pcp://127.0.0.1:44321
+  pcp://127.0.0.119:44321
+Exit status: 0

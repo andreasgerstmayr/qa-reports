@@ -1,0 +1,89 @@
+{
+  "uid" : "c4c53f561d7eae4a",
+  "name" : "QA 1118",
+  "fullName" : "QA #1118 on fedora_rawhide-container",
+  "historyId" : "1118@fedora_rawhide-container",
+  "time" : {
+    "start" : 1597950475000,
+    "stop" : 1597950547000,
+    "duration" : 72000
+  },
+  "description" : "PCP QA Test No. 1118\n\nExercise the BCC PMDA runqlat module - install, remove and values.\n\n\n\nCopyright (c) 2018 Andreas Gerstmayr.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform fedora_rawhide reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 1118</p>\n<p>Exercise the BCC PMDA runqlat module - install, remove and values.</p>\n<p>Copyright (c) 2018 Andreas Gerstmayr.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform fedora_rawhide reproduce\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "[failed, exit status 1] - output mismatch (see 1118.out.bad)\n42,45c42,44\n< === report metric values ===\n< OK\n< === check metric labels ===\n< OK\n---\n> [Thu Aug 20 19:08:29] pmdabcc(957524) Error: runqlat: Failed to compile BPF module <text>\n> [Thu Aug 20 19:08:29] pmdabcc(957524) Error: runqlat: Module NOT active!\n> [Thu Aug 20 19:08:29] pmdabcc(957524) Error: Failed to compile module runqlat, aborting.\n47,52c46,47\n< === remove bcc agent ===\n< Culling the Performance Metrics Name Space ...\n< bcc ... done\n< Updating the PMCD control file, and notifying PMCD ...\n< [...removing files...]\n< Check bcc metrics have gone away ... OK\n---\n> Log finished Thu Aug 20 19:08:29 2020\n> PMDA was not ready in 60 seconds, test failed\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h d6bbf0991c84 -f sample.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f sampledso.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 1118\n\nExercise the BCC PMDA runqlat module - install, remove and values.\n\n\n\nCopyright (c) 2018 Andreas Gerstmayr.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform fedora_rawhide reproduce",
+    "status" : "broken",
+    "statusMessage" : "[failed, exit status 1] - output mismatch (see 1118.out.bad)\n42,45c42,44\n< === report metric values ===\n< OK\n< === check metric labels ===\n< OK\n---\n> [Thu Aug 20 19:08:29] pmdabcc(957524) Error: runqlat: Failed to compile BPF module <text>\n> [Thu Aug 20 19:08:29] pmdabcc(957524) Error: runqlat: Module NOT active!\n> [Thu Aug 20 19:08:29] pmdabcc(957524) Error: Failed to compile module runqlat, aborting.\n47,52c46,47\n< === remove bcc agent ===\n< Culling the Performance Metrics Name Space ...\n< bcc ... done\n< Updating the PMCD control file, and notifying PMCD ...\n< [...removing files...]\n< Check bcc metrics have gone away ... OK\n---\n> Log finished Thu Aug 20 19:08:29 2020\n> PMDA was not ready in 60 seconds, test failed\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h d6bbf0991c84 -f sample.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f sampledso.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "2c61955acf635575",
+      "name" : "1118.out.bad",
+      "source" : "2c61955acf635575.txt",
+      "type" : "text/plain",
+      "size" : 1420
+    }, {
+      "uid" : "481dc9deabacec83",
+      "name" : "1118.full",
+      "source" : "481dc9deabacec83.txt",
+      "type" : "text/plain",
+      "size" : 1784
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.bcc"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "python"
+  }, {
+    "name" : "epic",
+    "value" : "labels"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1118",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1118.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "c4c53f561d7eae4a.json",
+  "parameterValues" : [ ]
+}

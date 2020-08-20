@@ -1,0 +1,55 @@
+{
+  "uid" : "e3eeab97c90647ef",
+  "name" : "QA 1602",
+  "fullName" : "QA #1602 on ubuntu1804-direct",
+  "historyId" : "1602@ubuntu1804-direct",
+  "time" : {
+    "start" : 1597950317000,
+    "stop" : 1597950317000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 1602\n\nExercise Redis protocol proxying using redis-cli(1).\n\n\n\nCopyright (c) 2019 Red Hat.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 1602</p>\n<p>Exercise Redis protocol proxying using redis-cli(1).</p>\n<p>Copyright (c) 2019 Red Hat.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Redis 4 too old",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "epic",
+    "value" : "pmproxy"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1602",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1602.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e3eeab97c90647ef.json",
+  "parameterValues" : [ ]
+}

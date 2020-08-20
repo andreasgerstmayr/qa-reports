@@ -1,0 +1,14 @@
+QA output created by 446
+make succeeded.
+checking for actual/stub lib symbol differences ... files differ.
+--- Symbols from /usr/lib/libpcp_trace.... ---
+
+--- Symbols from demos libpcp_trace.... ---
+pmtraceabort
+pmtracebegin
+pmtracecounter
+pmtraceend
+pmtraceerrstr
+pmtraceobs
+pmtracepoint
+pmtracestate

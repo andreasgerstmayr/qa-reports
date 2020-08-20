@@ -1,0 +1,54 @@
+QA output created by 152
+pmcd.numclients
+    value N
+
+Error: expected value 6
+pmcd.numclients
+    value 8
+--- before
+Thu Aug 20 17:09:09 UTC 2020
+
+pmcd.client.whoami
+    inst [3 or "3"] value "d6bbf0991c84 (10.88.0.2) /usr/libexec/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M"
+    inst [107 or "107"] value ""
+
+pmcd.client.start_date
+    inst [3 or "3"] value "Thu Aug 20 17:07:51 2020"
+    inst [107 or "107"] value "Thu Aug 20 17:09:09 2020"
+
+pmcd.client.container
+    inst [3 or "3"] value ""
+    inst [107 or "107"] value ""
+
+--- after
+Thu Aug 20 17:09:11 UTC 2020
+
+pmcd.client.whoami
+    inst [3 or "3"] value "d6bbf0991c84 (10.88.0.2) /usr/libexec/pcp/bin/pmlogger -N -P -r -T24h10m -c config.default -v 100mb -m pmlogger_check %Y%m%d.%H.%M"
+    inst [109 or "109"] value "d6bbf0991c84 (10.88.0.2) pmval -s3 -t5 pmcd.numagents"
+    inst [110 or "110"] value "d6bbf0991c84 (10.88.0.2) pmval -s3 -t5 pmcd.numagents"
+    inst [111 or "111"] value "d6bbf0991c84 (10.88.0.2) pmval -s3 -t5 pmcd.numagents"
+    inst [112 or "112"] value "d6bbf0991c84 (10.88.0.2) pmval -s3 -t5 pmcd.numagents"
+    inst [113 or "113"] value "d6bbf0991c84 (10.88.0.2) /usr/bin/pmie -b -F -P -l /var/log/pcp/pmie/d6bbf0991c84/pmie.log -c config.default"
+    inst [114 or "114"] value ""
+    inst [137 or "137"] value ""
+
+pmcd.client.start_date
+    inst [3 or "3"] value "Thu Aug 20 17:07:51 2020"
+    inst [109 or "109"] value "Thu Aug 20 17:09:09 2020"
+    inst [110 or "110"] value "Thu Aug 20 17:09:09 2020"
+    inst [111 or "111"] value "Thu Aug 20 17:09:09 2020"
+    inst [112 or "112"] value "Thu Aug 20 17:09:09 2020"
+    inst [113 or "113"] value "Thu Aug 20 17:09:09 2020"
+    inst [114 or "114"] value "Thu Aug 20 17:09:09 2020"
+    inst [137 or "137"] value "Thu Aug 20 17:09:11 2020"
+
+pmcd.client.container
+    inst [3 or "3"] value ""
+    inst [109 or "109"] value ""
+    inst [110 or "110"] value ""
+    inst [111 or "111"] value ""
+    inst [112 or "112"] value ""
+    inst [113 or "113"] value ""
+    inst [114 or "114"] value ""
+    inst [137 or "137"] value ""

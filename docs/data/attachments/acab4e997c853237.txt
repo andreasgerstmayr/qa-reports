@@ -1,0 +1,119 @@
+sample 29  pipe binary  /var/lib/pcp/pmdas/sample/pmdasample -d 29 -U pcpqa
+[access]
+allow user pcpqa : fetch;
+disallow user pcpqa : store;
+--- pmcd.log ---
+Log for pmcd on 97d404ba7f88 started Thu Aug 20 18:11:17 2020
+
+Warning: nports=1 from PMCD_PORT=9876 in environment
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+sample        29 106274   9  10   2 bin pipe cmd=/var/lib/pcp/pmdas/sample/pmdasample -d 29 -U pcpqa
+
+Host access list empty: host-based access control turned off
+User access list:
+00 01 Cur/MaxCons     uid user-name                       group-list
+== == =========== ======= =============================== ==========================================================
+ y  n     0     0     496 pcpqa                           496(pcpqa)
+ n  n     0     0       * *                              
+Group access list empty: group-based access control turned off
+
+
+pmcd: PID = 106272, PDU version = 2
+pmcd request port(s):
+  sts fd   port  family address
+  === ==== ===== ====== =======
+  ok     7       unix   /tmp/944-106204.pmcd.socket
+  ok     3  9876 inet   INADDR_ANY
+  ok     4  9876 ipv6   INADDR_ANY
+CheckAccountAccess: client fd=8 userid=496 groupid=496
+__pmAccAddAccount: userid=496 (2 users in list) groupid=496 (0 groups in list)
+Testing QA user allowed fetch access (explicit)
+sample.control 1 0
+Testing QA user disallowed store access (explicit)
+sample.write_me: new value="1" pmStore: No permission to perform requested operation
+Error: sample.control: No permission to perform requested operation
+--- pmcd.log ---
+Log for pmcd on 97d404ba7f88 started Thu Aug 20 18:11:17 2020
+
+Warning: nports=1 from PMCD_PORT=9876 in environment
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+sample        29 106274   9  10   2 bin pipe cmd=/var/lib/pcp/pmdas/sample/pmdasample -d 29 -U pcpqa
+
+Host access list empty: host-based access control turned off
+User access list:
+00 01 Cur/MaxCons     uid user-name                       group-list
+== == =========== ======= =============================== ==========================================================
+ y  n     0     0     496 pcpqa                           496(pcpqa)
+ n  n     0     0       * *                              
+Group access list empty: group-based access control turned off
+
+
+pmcd: PID = 106272, PDU version = 2
+pmcd request port(s):
+  sts fd   port  family address
+  === ==== ===== ====== =======
+  ok     7       unix   /tmp/944-106204.pmcd.socket
+  ok     3  9876 inet   INADDR_ANY
+  ok     4  9876 ipv6   INADDR_ANY
+CheckAccountAccess: client fd=8 userid=496 groupid=496
+__pmAccAddAccount: userid=496 (2 users in list) groupid=496 (0 groups in list)
+CheckAccountAccess: client fd=8 userid=496 groupid=496
+__pmAccAddAccount: userid=496 (2 users in list) groupid=496 (0 groups in list)
+CheckAccountAccess: client fd=8 userid=496 groupid=496
+__pmAccAddAccount: userid=496 (2 users in list) groupid=496 (0 groups in list)
+CheckAccountAccess: client fd=8 userid=99 groupid=99
+__pmAccAddAccount: userid=99 (2 users in list) groupid=99 (0 groups in list)
+DoCreds: CheckAccountAccess returns -12387: No permission to perform requested operation
+[Thu Aug 20 18:11:19] pmcd(106272) Info: pmcd caught SIGTERM from pid=106307 uid=496
+[Thu Aug 20 18:11:19] pmcd(106272) Info: CleanupAgent ...
+Cleanup "sample" agent (dom 29): terminated, exit(0)
+[Thu Aug 20 18:11:19] pmcd(106272) Info: pmcd Shutdown
+
+Log finished Thu Aug 20 18:11:19 2020
+sample.control 1 0
+sample.write_me: new value="1" pmStore: No permission to perform requested operation
+Error: sample.control: No permission to perform requested operation
+--- pmcd.log ---
+Log for pmcd on 97d404ba7f88 started Thu Aug 20 18:11:19 2020
+
+Warning: nports=1 from PMCD_PORT=9876 in environment
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+sample        29 106337   9  10   2 bin pipe cmd=/var/lib/pcp/pmdas/sample/pmdasample -d 29 -U pcpqa
+
+Host access list empty: host-based access control turned off
+User access list empty: user-based access control turned off
+Group access list:
+00 01 Cur/MaxCons     gid group-name                      user-list
+== == =========== ======= =============================== ==========================================================
+ y  n     0     0     496 pcpqa                           496(pcpqa)
+ n  n     0     0       * *                              
+
+
+pmcd: PID = 106335, PDU version = 2
+pmcd request port(s):
+  sts fd   port  family address
+  === ==== ===== ====== =======
+  ok     7       unix   /tmp/944-106204.pmcd.socket
+  ok     3  9876 inet   INADDR_ANY
+  ok     4  9876 ipv6   INADDR_ANY
+CheckAccountAccess: client fd=8 userid=496 groupid=496
+__pmAccAddAccount: userid=496 (0 users in list) groupid=496 (2 groups in list)
+CheckAccountAccess: client fd=8 userid=496 groupid=496
+__pmAccAddAccount: userid=496 (0 users in list) groupid=496 (2 groups in list)
+CheckAccountAccess: client fd=8 userid=496 groupid=496
+__pmAccAddAccount: userid=496 (0 users in list) groupid=496 (2 groups in list)
+CheckAccountAccess: client fd=8 userid=99 groupid=99
+__pmAccAddAccount: userid=99 (0 users in list) groupid=99 (2 groups in list)
+DoCreds: CheckAccountAccess returns -12387: No permission to perform requested operation
+[Thu Aug 20 18:11:21] pmcd(106335) Info: pmcd caught SIGTERM from pid=106365 uid=496
+[Thu Aug 20 18:11:21] pmcd(106335) Info: CleanupAgent ...
+Cleanup "sample" agent (dom 29): terminated, exit(0)
+[Thu Aug 20 18:11:21] pmcd(106335) Info: pmcd Shutdown
+
+Log finished Thu Aug 20 18:11:21 2020

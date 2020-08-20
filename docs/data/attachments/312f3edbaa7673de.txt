@@ -1,0 +1,51 @@
+QA output created by 1158
+
+=== bcc agent installation ===
+Info: Initializing, currently in 'notready' state.
+Info: Enabled modules:
+Info: ['biotop']
+Info: Configuring modules:
+Info: biotop
+Info: Modules configured.
+Info: Initializing modules:
+Info: biotop
+Info: biotop: Debug logging enabled.
+Info: biotop: Updating disk cache...
+Info: biotop: Initialized.
+Info: Modules initialized.
+Info: Registering metrics:
+Info: biotop
+Info: Metrics registered.
+Info: Registering helpers:
+Info: biotop
+Info: Helpers registered.
+Info: Initializing, currently in 'notready' state.
+Info: Enabled modules:
+Info: ['biotop']
+Info: Configuring modules:
+Info: biotop
+Info: Modules configured.
+Info: Initializing modules:
+Info: biotop
+Info: biotop: Debug logging enabled.
+Info: biotop: Updating disk cache...
+Info: biotop: Initialized.
+Info: Modules initialized.
+Info: Registering metrics:
+Info: biotop
+Info: Metrics registered.
+Info: Registering helpers:
+Info: biotop
+Info: Helpers registered.
+Updating the Performance Metrics Name Space (PMNS) ...
+Terminate PMDA if already installed ...
+[...install files, make output...]
+Updating the PMCD control file, and notifying PMCD ...
+Check bcc metrics have appeared ... X metrics and X values
+
+[Thu Aug 20 19:09:46] pmdabcc(994289) Error: biotop: Failed to compile BPF module b'/var/lib/pcp/pmdas/bcc/modules/biotop.bpf'
+[Thu Aug 20 19:09:46] pmdabcc(994289) Error: biotop: Module NOT active!
+[Thu Aug 20 19:09:46] pmdabcc(994289) Error: Failed to compile module biotop, aborting.
+
+Log finished Thu Aug 20 19:09:46 2020
+PMDA was not ready in 60 seconds, test failed

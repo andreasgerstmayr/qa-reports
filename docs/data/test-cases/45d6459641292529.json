@@ -1,0 +1,64 @@
+{
+  "uid" : "45d6459641292529",
+  "name" : "QA 256",
+  "fullName" : "QA #256 on fedora_rawhide-container",
+  "historyId" : "256@fedora_rawhide-container",
+  "time" : {
+    "start" : 1597944117000,
+    "stop" : 1597944119000,
+    "duration" : 2000
+  },
+  "description" : "PCP QA Test No. 256\n\n\n\nDerived metrics and PMNS operations\n\n\n\nCopyright (c) 2009 Ken McDonell.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 256</p>\n<p>Derived metrics and PMNS operations</p>\n<p>Copyright (c) 2009 Ken McDonell.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "epic",
+    "value" : "derive"
+  }, {
+    "name" : "epic",
+    "value" : "pmns"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "sanity"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.sample"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/256",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/256.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "45d6459641292529.json",
+  "parameterValues" : [ ]
+}

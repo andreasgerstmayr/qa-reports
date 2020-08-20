@@ -1,0 +1,58 @@
+{
+  "uid" : "c997ca58cd32c8db",
+  "name" : "QA 737",
+  "fullName" : "QA #737 on fedora31-container",
+  "historyId" : "737@fedora31-container",
+  "time" : {
+    "start" : 1597947404000,
+    "stop" : 1597947404000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 737\n\nExercise time interfaces in python PMAPI wrapper module.\n\n\n\nCopyright (c) Red Hat.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 737</p>\n<p>Exercise time interfaces in python PMAPI wrapper module.</p>\n<p>Copyright (c) Red Hat.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora31-container"
+  }, {
+    "name" : "epic",
+    "value" : "python"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "timezone"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/737",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/737.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c997ca58cd32c8db.json",
+  "parameterValues" : [ ]
+}

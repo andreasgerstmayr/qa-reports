@@ -1,0 +1,55 @@
+{
+  "uid" : "de828e739e19d9b8",
+  "name" : "QA 1220",
+  "fullName" : "QA #1220 on centos6-container",
+  "historyId" : "1220@centos6-container",
+  "time" : {
+    "start" : 1597948462000,
+    "stop" : 1597948463000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 1220\n\nExercise Linux process ttyname extraction.\n\n\n\nCopyright (c) 2018 Red Hat.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 1220</p>\n<p>Exercise Linux process ttyname extraction.</p>\n<p>Copyright (c) 2018 Red Hat.  All Rights Reserved.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "no tty assigned",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos6-container"
+  }, {
+    "name" : "host",
+    "value" : "centos6-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.proc"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1220",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1220.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "de828e739e19d9b8.json",
+  "parameterValues" : [ ]
+}

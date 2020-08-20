@@ -1,0 +1,680 @@
+[15534]pmGetPDU: ERROR fd=3 len=20 from=0
+000:       14     7000        0        0 57020102 
+[15534]pmXmitPDU: CREDS fd=3 len=20
+000:       14     700c     3cae  1000000      201 
+pmRegisterDerived: global metric[0] event.flags = anon(PM_TYPE_U32)
+pmRegisterDerived: global metric[1] event.missed = anon(PM_TYPE_U32)
+[15534]pmXmitPDU: PMNS_NAMES fd=3 len=48
+000:       30     700e        0 13000000        0  1000000 12000000 64636d70 
+008: 696c632e 2e746e65 616f6877 7e7e696d 
+[15534]pmGetPDU: PMNS_IDS fd=3 len=24 from=0
+000:       18     700d        0  1000000  1000000   188000 
+pmResult dump from 0x7fff93223820 timestamp: 0.000000 00:00:00.000 numpmid: 1
+  2.6.0 (pmcd.client.whoami): numval: 1 valfmt: 2 vlist[]:
+   value "316bddff7759 (10.88.0.2) pmevent -Dpdu,derive -t 10msec -s 20 sample.event.records"
+[15534]pmXmitPDU: RESULT fd=3 len=204
+000:       cc     7001        0        0        0  1000000   188000  1000000 
+008:  2000000 ffffffff  b000000 9e000006 62363133 66666464 39353737 30312820 
+016: 2e38382e 29322e30 656d7020 746e6576 70442d20 642c7564 76697265 742d2065 
+024: 6d303120 20636573 3220732d 61732030 656c706d 6576652e 722e746e 726f6365 
+032:     7364        0        0        0        0        0        0        0 
+040:        0        0        0        0        0        0        0        0 
+048:        0        0 7e7e0000 
+[15534]pmGetPDU: ERROR fd=3 len=16 from=0
+000:       10     7000        0        0 
+[15534]pmXmitPDU: PMNS_NAMES fd=3 len=44
+000:       2c     700e        0  e000000        0  1000000  d000000 64636d70 
+008: 736f682e 6d616e74 7e7e7e65 
+[15534]pmGetPDU: PMNS_IDS fd=3 len=24 from=0
+000:       18     700d        0  1000000  1000000 15008000 
+[15534]pmXmitPDU: PROFILE fd=3 len=28
+000:       1c     7002        0        0        0        0        0 
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 15008000 
+[15534]pmGetPDU: RESULT fd=3 len=64 from=0
+000:       40     7001        0 2eb63e5f c0d70b00  1000000 15008000  1000000 
+008:  1000000 ffffffff  b000000 11000006 62363133 66666464 39353737 7e7e7e00 
+pmResult dump from 0x5646f14a26c0 timestamp: 1597945390.776128 17:43:10.776 numpmid: 1
+  2.0.21 (pmcd.hostname): numval: 1 valfmt: 1 vlist[]:
+   value "316bddff7759"
+[15534]pmXmitPDU: PMNS_NAMES fd=3 len=48
+000:       30     700e        0 15000000        0  1000000 14000000 706d6173 
+008: 652e656c 746e6576 6365722e 7364726f 
+[15534]pmGetPDU: PMNS_IDS fd=3 len=24 from=0
+000:       18     700d        0  1000000  1000000 88004007 
+[15534]pmXmitPDU: DESC_REQ fd=3 len=16
+000:       10     7004        0 88004007 
+[15534]pmGetPDU: DESC fd=3 len=32 from=0
+000:       20     7005        0 88004007  9000000  a004007  3000000        0 
+[15534]pmXmitPDU: INSTANCE_REQ fd=3 len=32
+000:       20     7006        0  a004007        0        0 ffffffff        0 
+[15534]pmGetPDU: INSTANCE fd=3 len=52 from=0
+000:       34     7007        0  a004007  2000000        0  6000000 676e7566 
+008: 7e7e7375  1000000  5000000 75676f62 7e7e7e73 
+host:      316bddff7759
+samples:   20
+interval:  0.01 sec
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=132 from=0
+000:       84     7001        0 2eb63e5f 3ad90b00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000  f000000  8000009        0 48000009 
+016:  2000000 2eb63e5f 27d90b00  1000000  1000000 86004007  c000006 63746566 
+024: 30232068 2eb63e5f 27d90b00  1000000  1000000 86004007  a000006 676e6962 
+032:     216f 
+pmResult dump from 0x5646f14a3480 timestamp: 1597945390.776506 17:43:10.776 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [0 event records]
+    inst [1 or "bogus"] value [2 event records timestamps 17:43:10.776...17:43:10.776]
+sample.event.records[fungus]: 0 event records
+[15534]pmXmitPDU: PMNS_NAMES fd=3 len=40
+000:       28     700e        0  c000000        0  1000000  b000000 6e657665 
+008: 6c662e74 7e736761 
+[15534]pmGetPDU: ERROR fd=3 len=16 from=0
+000:       10     7000        0 bbcfffff 
+__dmgetpmid: metric "event.flags" -> PMID 511.0.1
+[15534]pmXmitPDU: PMNS_NAMES fd=3 len=40
+000:       28     700e        0  d000000        0  1000000  c000000 6e657665 
+008: 696d2e74 64657373 
+[15534]pmGetPDU: ERROR fd=3 len=16 from=0
+000:       10     7000        0 bbcfffff 
+__dmgetpmid: metric "event.missed" -> PMID 511.0.2
+[15534]pmXmitPDU: PMNS_NAMES fd=3 len=40
+000:       28     700e        0  c000000        0  1000000  b000000 6e657665 
+008: 6c662e74 7e736761 
+[15534]pmGetPDU: ERROR fd=3 len=16 from=0
+000:       10     7000        0 bbcfffff 
+__dmgetpmid: metric "event.flags" -> PMID 511.0.1
+sample.event.records[bogus]: 2 event records
+[15534]pmXmitPDU: PMNS_IDS fd=3 len=24
+000:       18     700d        0        0  1000000  100c07f 
+[15534]pmGetPDU: ERROR fd=3 len=16 from=0
+000:       10     7000        0 9ecfffff 
+  17:43:10.776 --- event record [0] flags 0x1 (point) ---
+[15534]pmXmitPDU: PMNS_IDS fd=3 len=24
+000:       18     700d        0        0  1000000 86004007 
+[15534]pmGetPDU: PMNS_NAMES fd=3 len=56 from=0
+000:       38     700e        0 1a000000        0  1000000 19000000 706d6173 
+008: 652e656c 746e6576 7261702e 735f6d61 6e697274 7e7e7e67 
+[15534]pmXmitPDU: DESC_REQ fd=3 len=16
+000:       10     7004        0 86004007 
+[15534]pmGetPDU: DESC fd=3 len=32 from=0
+000:       20     7005        0 86004007  6000000 ffffffff  3000000        0 
+    sample.event.param_string "fetch #0"
+  17:43:10.776 --- event record [1] flags 0x1 (point) ---
+    sample.event.param_string "bingo!"
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=116 from=0
+000:       74     7001        0 2eb63e5f 54030c00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000 13000000 18000009  1000000 24b63e5f 
+016: 3e030c00  1000000        0 28000009  1000000 2eb63e5f 3e030c00  1000000 
+024:  1000000 86004007  c000006 63746566 31232068 
+pmResult dump from 0x5646f14a3620 timestamp: 1597945390.787284 17:43:10.787 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [1 event record timestamp 17:43:00.787]
+    inst [1 or "bogus"] value [1 event record timestamp 17:43:10.787]
+sample.event.records[fungus]: 1 event records
+  17:43:00.787 --- event record [0] flags 0x1 (point) ---
+sample.event.records[bogus]: 1 event records
+  17:43:10.787 --- event record [0] flags 0x1 (point) ---
+    sample.event.param_string "fetch #1"
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=172 from=0
+000:       ac     7001        0 2eb63e5f 822c0c00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000 21000000 50000009  2000000 24b63e5f 
+016: 512c0c00  1000000  1000000 7f004007  8000001  1000000 25b63e5f 512c0c00 
+024:  1000000  2000000 7f004007  8000001  2000000 82004007  c000002 ffffffff 
+032: fdffffff 28000009  1000000 2eb63e5f 522c0c00  1000000  1000000 86004007 
+040:  c000006 63746566 32232068 
+pmResult dump from 0x5646f14a3480 timestamp: 1597945390.797826 17:43:10.797 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [2 event records timestamps 17:43:00.797...17:43:01.797]
+    inst [1 or "bogus"] value [1 event record timestamp 17:43:10.797]
+sample.event.records[fungus]: 2 event records
+  17:43:00.797 --- event record [0] flags 0x1 (point) ---
+[15534]pmXmitPDU: PMNS_IDS fd=3 len=24
+000:       18     700d        0        0  1000000 7f004007 
+[15534]pmGetPDU: PMNS_NAMES fd=3 len=48 from=0
+000:       30     700e        0 12000000        0  1000000 11000000 706d6173 
+008: 652e656c 746e6576 7079742e 7e7e7e65 
+[15534]pmXmitPDU: DESC_REQ fd=3 len=16
+000:       10     7004        0 7f004007 
+[15534]pmGetPDU: DESC fd=3 len=32 from=0
+000:       20     7005        0 7f004007        0 ffffffff  3000000        0 
+    sample.event.type 1
+  17:43:01.797 --- event record [1] flags 0x1 (point) ---
+    sample.event.type 2
+[15534]pmXmitPDU: PMNS_IDS fd=3 len=24
+000:       18     700d        0        0  1000000 82004007 
+[15534]pmGetPDU: PMNS_NAMES fd=3 len=52 from=0
+000:       34     700e        0 16000000        0  1000000 15000000 706d6173 
+008: 652e656c 746e6576 7261702e 365f6d61 7e7e7e34 
+[15534]pmXmitPDU: DESC_REQ fd=3 len=16
+000:       10     7004        0 82004007 
+[15534]pmGetPDU: DESC fd=3 len=32 from=0
+000:       20     7005        0 82004007  2000000 ffffffff  3000000        0 
+    sample.event.param_64 -3
+sample.event.records[bogus]: 1 event records
+  17:43:10.797 --- event record [0] flags 0x1 (point) ---
+    sample.event.param_string "fetch #2"
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=420 from=0
+000:      1a4     7001        0 2eb63e5f ef560c00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000 57000000 28010009  5000000 24b63e5f 
+016: d8560c00 1a000000  3000000 7f004007  8000001  4000000 83004007  c000003 
+024:        0  5000000 86004007  5000006       36 25b63e5f d8560c00  1000000 
+032:  3000000 7f004007  8000001  7000000 85004007  c000005     2040        0 
+040: 85004007  c000005     22c0        0 26b63e5f d8560c00  4000000  6000000 
+048: 7f004007  8000001  a000000 83004007  c000003        0  b000000 86004007 
+056:  a000006 6c657774     6576 86004007  c000006 72696874 6e656574 80004007 
+064:  8000000 f2ffffff 81004007  8000001  f000000 27b63e5f d8560c00       80 
+072:  7000000 28b63e5f d8560c00  1000000  3000000 7f004007  8000001 10000000 
+080: 84004007  8000004     88c1 87004007  c000007  f070301 ff7f3f1f 48000009 
+088:  2000000 2eb63e5f d9560c00  1000000  1000000 86004007  c000006 63746566 
+096: 33232068 2eb63e5f d9560c00  1000000  1000000 86004007  a000006 676e6962 
+104:     216f 
+pmResult dump from 0x5646f14a4a00 timestamp: 1597945390.808687 17:43:10.808 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [5 event records (7 missed) timestamps 17:43:00.808...17:43:03.808]
+    inst [1 or "bogus"] value [2 event records timestamps 17:43:10.808...17:43:10.808]
+[15534]pmXmitPDU: PMNS_NAMES fd=3 len=40
+000:       28     700e        0  d000000        0  1000000  c000000 6e657665 
+008: 696d2e74 64657373 
+[15534]pmGetPDU: ERROR fd=3 len=16 from=0
+000:       10     7000        0 bbcfffff 
+__dmgetpmid: metric "event.missed" -> PMID 511.0.2
+sample.event.records[fungus]: 5 event records
+  17:43:00.808 --- event record [0] flags 0x1a (start,id,parent) ---
+    sample.event.type 4
+[15534]pmXmitPDU: PMNS_IDS fd=3 len=24
+000:       18     700d        0        0  1000000 83004007 
+[15534]pmGetPDU: PMNS_NAMES fd=3 len=52 from=0
+000:       34     700e        0 17000000        0  1000000 16000000 706d6173 
+008: 652e656c 746e6576 7261702e 755f6d61 7e7e3436 
+[15534]pmXmitPDU: DESC_REQ fd=3 len=16
+000:       10     7004        0 83004007 
+[15534]pmGetPDU: DESC fd=3 len=32 from=0
+000:       20     7005        0 83004007  3000000 ffffffff  3000000        0 
+    sample.event.param_u64 5
+    sample.event.param_string "6"
+  17:43:01.808 --- event record [1] flags 0x1 (point) ---
+    sample.event.type 7
+[15534]pmXmitPDU: PMNS_IDS fd=3 len=24
+000:       18     700d        0        0  1000000 85004007 
+[15534]pmGetPDU: PMNS_NAMES fd=3 len=56 from=0
+000:       38     700e        0 1a000000        0  1000000 19000000 706d6173 
+008: 652e656c 746e6576 7261702e 645f6d61 6c62756f 7e7e7e65 
+[15534]pmXmitPDU: DESC_REQ fd=3 len=16
+000:       10     7004        0 85004007 
+[15534]pmGetPDU: DESC fd=3 len=32 from=0
+000:       20     7005        0 85004007  5000000 ffffffff  3000000        0 
+    sample.event.param_double 8
+    sample.event.param_double -9
+  17:43:02.808 --- event record [2] flags 0x4 (end) ---
+    sample.event.type 10
+    sample.event.param_u64 11
+    sample.event.param_string "twelve"
+    sample.event.param_string "thirteen"
+[15534]pmXmitPDU: PMNS_IDS fd=3 len=24
+000:       18     700d        0        0  1000000 80004007 
+[15534]pmGetPDU: PMNS_NAMES fd=3 len=52 from=0
+000:       34     700e        0 16000000        0  1000000 15000000 706d6173 
+008: 652e656c 746e6576 7261702e 335f6d61 7e7e7e32 
+[15534]pmXmitPDU: DESC_REQ fd=3 len=16
+000:       10     7004        0 80004007 
+[15534]pmGetPDU: DESC fd=3 len=32 from=0
+000:       20     7005        0 80004007        0 ffffffff  3000000        0 
+    sample.event.param_32 -14
+[15534]pmXmitPDU: PMNS_IDS fd=3 len=24
+000:       18     700d        0        0  1000000 81004007 
+[15534]pmGetPDU: PMNS_NAMES fd=3 len=52 from=0
+000:       34     700e        0 17000000        0  1000000 16000000 706d6173 
+008: 652e656c 746e6576 7261702e 755f6d61 7e7e3233 
+[15534]pmXmitPDU: DESC_REQ fd=3 len=16
+000:       10     7004        0 81004007 
+[15534]pmGetPDU: DESC fd=3 len=32 from=0
+000:       20     7005        0 81004007  1000000 ffffffff  3000000        0 
+    sample.event.param_u32 15
+  17:43:03.808 --- event record [3] flags 0x80000000 (missed) ---
+[15534]pmXmitPDU: PMNS_IDS fd=3 len=24
+000:       18     700d        0        0  1000000  200c07f 
+[15534]pmGetPDU: ERROR fd=3 len=16 from=0
+000:       10     7000        0 9ecfffff 
+    ==> 7 missed event records
+  17:43:04.808 --- event record [4] flags 0x1 (point) ---
+    sample.event.type 16
+[15534]pmXmitPDU: PMNS_IDS fd=3 len=24
+000:       18     700d        0        0  1000000 84004007 
+[15534]pmGetPDU: PMNS_NAMES fd=3 len=52 from=0
+000:       34     700e        0 19000000        0  1000000 18000000 706d6173 
+008: 652e656c 746e6576 7261702e 665f6d61 74616f6c 
+[15534]pmXmitPDU: DESC_REQ fd=3 len=16
+000:       10     7004        0 84004007 
+[15534]pmGetPDU: DESC fd=3 len=32 from=0
+000:       20     7005        0 84004007  4000000 ffffffff  3000000        0 
+    sample.event.param_float -17
+[15534]pmXmitPDU: PMNS_IDS fd=3 len=24
+000:       18     700d        0        0  1000000 87004007 
+[15534]pmGetPDU: PMNS_NAMES fd=3 len=56 from=0
+000:       38     700e        0 1d000000        0  1000000 1c000000 706d6173 
+008: 652e656c 746e6576 7261702e 615f6d61 65726767 65746167 
+[15534]pmXmitPDU: DESC_REQ fd=3 len=16
+000:       10     7004        0 87004007 
+[15534]pmGetPDU: DESC fd=3 len=32 from=0
+000:       20     7005        0 87004007  7000000 ffffffff  3000000        0 
+    sample.event.param_aggregate [0103070f1f3f7fff]
+sample.event.records[bogus]: 2 event records
+  17:43:10.808 --- event record [0] flags 0x1 (point) ---
+    sample.event.param_string "fetch #3"
+  17:43:10.808 --- event record [1] flags 0x1 (point) ---
+    sample.event.param_string "bingo!"
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=100 from=0
+000:       64     7001        0 2eb63e5f d7830c00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000  f000000  8000009        0 28000009 
+016:  1000000 2eb63e5f c3830c00  1000000  1000000 86004007  c000006 63746566 
+024: 34232068 
+pmResult dump from 0x5646f14a35c0 timestamp: 1597945390.820183 17:43:10.820 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [0 event records]
+    inst [1 or "bogus"] value [1 event record timestamp 17:43:10.820]
+sample.event.records[fungus]: 0 event records
+sample.event.records[bogus]: 1 event records
+  17:43:10.820 --- event record [0] flags 0x1 (point) ---
+    sample.event.param_string "fetch #4"
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=116 from=0
+000:       74     7001        0 2eb63e5f f4ac0c00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000 13000000 18000009  1000000 24b63e5f 
+016: daac0c00  1000000        0 28000009  1000000 2eb63e5f dbac0c00  1000000 
+024:  1000000 86004007  c000006 63746566 35232068 
+pmResult dump from 0x5646f14a3480 timestamp: 1597945390.830708 17:43:10.830 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [1 event record timestamp 17:43:00.830]
+    inst [1 or "bogus"] value [1 event record timestamp 17:43:10.830]
+sample.event.records[fungus]: 1 event records
+  17:43:00.830 --- event record [0] flags 0x1 (point) ---
+sample.event.records[bogus]: 1 event records
+  17:43:10.830 --- event record [0] flags 0x1 (point) ---
+    sample.event.param_string "fetch #5"
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=204 from=0
+000:       cc     7001        0 2eb63e5f 8ed60c00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000 21000000 50000009  2000000 24b63e5f 
+016: 72d60c00  1000000  1000000 7f004007  8000001  1000000 25b63e5f 72d60c00 
+024:  1000000  2000000 7f004007  8000001  2000000 82004007  c000002 ffffffff 
+032: fdffffff 48000009  2000000 2eb63e5f 73d60c00  1000000  1000000 86004007 
+040:  c000006 63746566 36232068 2eb63e5f 73d60c00  1000000  1000000 86004007 
+048:  a000006 676e6962     216f 
+pmResult dump from 0x5646f14a4f60 timestamp: 1597945390.841358 17:43:10.841 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [2 event records timestamps 17:43:00.841...17:43:01.841]
+    inst [1 or "bogus"] value [2 event records timestamps 17:43:10.841...17:43:10.841]
+sample.event.records[fungus]: 2 event records
+  17:43:00.841 --- event record [0] flags 0x1 (point) ---
+    sample.event.type 1
+  17:43:01.841 --- event record [1] flags 0x1 (point) ---
+    sample.event.type 2
+    sample.event.param_64 -3
+sample.event.records[bogus]: 2 event records
+  17:43:10.841 --- event record [0] flags 0x1 (point) ---
+    sample.event.param_string "fetch #6"
+  17:43:10.841 --- event record [1] flags 0x1 (point) ---
+    sample.event.param_string "bingo!"
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=388 from=0
+000:      184     7001        0 2eb63e5f 2b000d00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000 57000000 28010009  5000000 24b63e5f 
+016:  e000d00 1a000000  3000000 7f004007  8000001  4000000 83004007  c000003 
+024:        0  5000000 86004007  5000006       36 25b63e5f  e000d00  1000000 
+032:  3000000 7f004007  8000001  7000000 85004007  c000005     2040        0 
+040: 85004007  c000005     22c0        0 26b63e5f  e000d00  4000000  6000000 
+048: 7f004007  8000001  a000000 83004007  c000003        0  b000000 86004007 
+056:  a000006 6c657774     6576 86004007  c000006 72696874 6e656574 80004007 
+064:  8000000 f2ffffff 81004007  8000001  f000000 27b63e5f  e000d00       80 
+072:  7000000 28b63e5f  e000d00  1000000  3000000 7f004007  8000001 10000000 
+080: 84004007  8000004     88c1 87004007  c000007  f070301 ff7f3f1f 28000009 
+088:  1000000 2eb63e5f 11000d00  1000000  1000000 86004007  c000006 63746566 
+096: 37232068 
+pmResult dump from 0x5646f14a4cb0 timestamp: 1597945390.852011 17:43:10.852 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [5 event records (7 missed) timestamps 17:43:00.851...17:43:03.851]
+    inst [1 or "bogus"] value [1 event record timestamp 17:43:10.851]
+sample.event.records[fungus]: 5 event records
+  17:43:00.851 --- event record [0] flags 0x1a (start,id,parent) ---
+    sample.event.type 4
+    sample.event.param_u64 5
+    sample.event.param_string "6"
+  17:43:01.851 --- event record [1] flags 0x1 (point) ---
+    sample.event.type 7
+    sample.event.param_double 8
+    sample.event.param_double -9
+  17:43:02.851 --- event record [2] flags 0x4 (end) ---
+    sample.event.type 10
+    sample.event.param_u64 11
+    sample.event.param_string "twelve"
+    sample.event.param_string "thirteen"
+    sample.event.param_32 -14
+    sample.event.param_u32 15
+  17:43:03.851 --- event record [3] flags 0x80000000 (missed) ---
+    ==> 7 missed event records
+  17:43:04.851 --- event record [4] flags 0x1 (point) ---
+    sample.event.type 16
+    sample.event.param_float -17
+    sample.event.param_aggregate [0103070f1f3f7fff]
+sample.event.records[bogus]: 1 event records
+  17:43:10.851 --- event record [0] flags 0x1 (point) ---
+    sample.event.param_string "fetch #7"
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=100 from=0
+000:       64     7001        0 2eb63e5f 6a2a0d00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000  f000000  8000009        0 28000009 
+016:  1000000 2eb63e5f 2f2a0d00  1000000  1000000 86004007  c000006 63746566 
+024: 38232068 
+pmResult dump from 0x5646f14a5a60 timestamp: 1597945390.862826 17:43:10.862 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [0 event records]
+    inst [1 or "bogus"] value [1 event record timestamp 17:43:10.862]
+sample.event.records[fungus]: 0 event records
+sample.event.records[bogus]: 1 event records
+  17:43:10.862 --- event record [0] flags 0x1 (point) ---
+    sample.event.param_string "fetch #8"
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=148 from=0
+000:       94     7001        0 2eb63e5f 82540d00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000 13000000 18000009  1000000 24b63e5f 
+016: 6a540d00  1000000        0 48000009  2000000 2eb63e5f 6b540d00  1000000 
+024:  1000000 86004007  c000006 63746566 39232068 2eb63e5f 6b540d00  1000000 
+032:  1000000 86004007  a000006 676e6962     216f 
+pmResult dump from 0x5646f14a4f60 timestamp: 1597945390.873602 17:43:10.873 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [1 event record timestamp 17:43:00.873]
+    inst [1 or "bogus"] value [2 event records timestamps 17:43:10.873...17:43:10.873]
+sample.event.records[fungus]: 1 event records
+  17:43:00.873 --- event record [0] flags 0x1 (point) ---
+sample.event.records[bogus]: 2 event records
+  17:43:10.873 --- event record [0] flags 0x1 (point) ---
+    sample.event.param_string "fetch #9"
+  17:43:10.873 --- event record [1] flags 0x1 (point) ---
+    sample.event.param_string "bingo!"
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=176 from=0
+000:       b0     7001        0 2eb63e5f c77e0d00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000 21000000 50000009  2000000 24b63e5f 
+016: ad7e0d00  1000000  1000000 7f004007  8000001  1000000 25b63e5f ad7e0d00 
+024:  1000000  2000000 7f004007  8000001  2000000 82004007  c000002 ffffffff 
+032: fdffffff 2c000009  1000000 2eb63e5f ae7e0d00  1000000  1000000 86004007 
+040:  d000006 63746566 31232068 5f3eb630 
+pmResult dump from 0x5646f14a4920 timestamp: 1597945390.884423 17:43:10.884 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [2 event records timestamps 17:43:00.884...17:43:01.884]
+    inst [1 or "bogus"] value [1 event record timestamp 17:43:10.884]
+sample.event.records[fungus]: 2 event records
+  17:43:00.884 --- event record [0] flags 0x1 (point) ---
+    sample.event.type 1
+  17:43:01.884 --- event record [1] flags 0x1 (point) ---
+    sample.event.type 2
+    sample.event.param_64 -3
+sample.event.records[bogus]: 1 event records
+  17:43:10.884 --- event record [0] flags 0x1 (point) ---
+    sample.event.param_string "fetch #10"
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=392 from=0
+000:      188     7001        0 2eb63e5f 4ea80d00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000 57000000 28010009  5000000 24b63e5f 
+016: 33a80d00 1a000000  3000000 7f004007  8000001  4000000 83004007  c000003 
+024:        0  5000000 86004007  5000006       36 25b63e5f 33a80d00  1000000 
+032:  3000000 7f004007  8000001  7000000 85004007  c000005     2040        0 
+040: 85004007  c000005     22c0        0 26b63e5f 33a80d00  4000000  6000000 
+048: 7f004007  8000001  a000000 83004007  c000003        0  b000000 86004007 
+056:  a000006 6c657774     6576 86004007  c000006 72696874 6e656574 80004007 
+064:  8000000 f2ffffff 81004007  8000001  f000000 27b63e5f 33a80d00       80 
+072:  7000000 28b63e5f 33a80d00  1000000  3000000 7f004007  8000001 10000000 
+080: 84004007  8000004     88c1 87004007  c000007  f070301 ff7f3f1f 2c000009 
+088:  1000000 2eb63e5f 34a80d00  1000000  1000000 86004007  d000006 63746566 
+096: 31232068 5f3eb631 
+pmResult dump from 0x5646f14a4950 timestamp: 1597945390.895054 17:43:10.895 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [5 event records (7 missed) timestamps 17:43:00.895...17:43:03.895]
+    inst [1 or "bogus"] value [1 event record timestamp 17:43:10.895]
+sample.event.records[fungus]: 5 event records
+  17:43:00.895 --- event record [0] flags 0x1a (start,id,parent) ---
+    sample.event.type 4
+    sample.event.param_u64 5
+    sample.event.param_string "6"
+  17:43:01.895 --- event record [1] flags 0x1 (point) ---
+    sample.event.type 7
+    sample.event.param_double 8
+    sample.event.param_double -9
+  17:43:02.895 --- event record [2] flags 0x4 (end) ---
+    sample.event.type 10
+    sample.event.param_u64 11
+    sample.event.param_string "twelve"
+    sample.event.param_string "thirteen"
+    sample.event.param_32 -14
+    sample.event.param_u32 15
+  17:43:03.895 --- event record [3] flags 0x80000000 (missed) ---
+    ==> 7 missed event records
+  17:43:04.895 --- event record [4] flags 0x1 (point) ---
+    sample.event.type 16
+    sample.event.param_float -17
+    sample.event.param_aggregate [0103070f1f3f7fff]
+sample.event.records[bogus]: 1 event records
+  17:43:10.895 --- event record [0] flags 0x1 (point) ---
+    sample.event.param_string "fetch #11"
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=136 from=0
+000:       88     7001        0 2eb63e5f a8d10d00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000  f000000  8000009        0 4c000009 
+016:  2000000 2eb63e5f 8fd10d00  1000000  1000000 86004007  d000006 63746566 
+024: 31232068 5f3eb632 2eb63e5f 8fd10d00  1000000  1000000 86004007  a000006 
+032: 676e6962     216f 
+pmResult dump from 0x5646f14a4a00 timestamp: 1597945390.905640 17:43:10.905 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [0 event records]
+    inst [1 or "bogus"] value [2 event records timestamps 17:43:10.905...17:43:10.905]
+sample.event.records[fungus]: 0 event records
+sample.event.records[bogus]: 2 event records
+  17:43:10.905 --- event record [0] flags 0x1 (point) ---
+    sample.event.param_string "fetch #12"
+  17:43:10.905 --- event record [1] flags 0x1 (point) ---
+    sample.event.param_string "bingo!"
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=120 from=0
+000:       78     7001        0 2eb63e5f 28fb0d00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000 13000000 18000009  1000000 24b63e5f 
+016:  dfb0d00  1000000        0 2c000009  1000000 2eb63e5f  dfb0d00  1000000 
+024:  1000000 86004007  d000006 63746566 31232068 5f3eb633 
+pmResult dump from 0x5646f14a4cb0 timestamp: 1597945390.916264 17:43:10.916 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [1 event record timestamp 17:43:00.916]
+    inst [1 or "bogus"] value [1 event record timestamp 17:43:10.916]
+sample.event.records[fungus]: 1 event records
+  17:43:00.916 --- event record [0] flags 0x1 (point) ---
+sample.event.records[bogus]: 1 event records
+  17:43:10.916 --- event record [0] flags 0x1 (point) ---
+    sample.event.param_string "fetch #13"
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=176 from=0
+000:       b0     7001        0 2eb63e5f 14250e00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000 21000000 50000009  2000000 24b63e5f 
+016: dd240e00  1000000  1000000 7f004007  8000001  1000000 25b63e5f dd240e00 
+024:  1000000  2000000 7f004007  8000001  2000000 82004007  c000002 ffffffff 
+032: fdffffff 2c000009  1000000 2eb63e5f df240e00  1000000  1000000 86004007 
+040:  d000006 63746566 31232068 5f3eb634 
+pmResult dump from 0x5646f14a35c0 timestamp: 1597945390.926996 17:43:10.926 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [2 event records timestamps 17:43:00.926...17:43:01.926]
+    inst [1 or "bogus"] value [1 event record timestamp 17:43:10.926]
+sample.event.records[fungus]: 2 event records
+  17:43:00.926 --- event record [0] flags 0x1 (point) ---
+    sample.event.type 1
+  17:43:01.926 --- event record [1] flags 0x1 (point) ---
+    sample.event.type 2
+    sample.event.param_64 -3
+sample.event.records[bogus]: 1 event records
+  17:43:10.926 --- event record [0] flags 0x1 (point) ---
+    sample.event.param_string "fetch #14"
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=424 from=0
+000:      1a8     7001        0 2eb63e5f b14e0e00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000 57000000 28010009  5000000 24b63e5f 
+016: 974e0e00 1a000000  3000000 7f004007  8000001  4000000 83004007  c000003 
+024:        0  5000000 86004007  5000006       36 25b63e5f 974e0e00  1000000 
+032:  3000000 7f004007  8000001  7000000 85004007  c000005     2040        0 
+040: 85004007  c000005     22c0        0 26b63e5f 974e0e00  4000000  6000000 
+048: 7f004007  8000001  a000000 83004007  c000003        0  b000000 86004007 
+056:  a000006 6c657774     6576 86004007  c000006 72696874 6e656574 80004007 
+064:  8000000 f2ffffff 81004007  8000001  f000000 27b63e5f 974e0e00       80 
+072:  7000000 28b63e5f 974e0e00  1000000  3000000 7f004007  8000001 10000000 
+080: 84004007  8000004     88c1 87004007  c000007  f070301 ff7f3f1f 4c000009 
+088:  2000000 2eb63e5f 984e0e00  1000000  1000000 86004007  d000006 63746566 
+096: 31232068 5f3eb635 2eb63e5f 984e0e00  1000000  1000000 86004007  a000006 
+104: 676e6962     216f 
+pmResult dump from 0x5646f14a35f0 timestamp: 1597945390.937649 17:43:10.937 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [5 event records (7 missed) timestamps 17:43:00.937...17:43:03.937]
+    inst [1 or "bogus"] value [2 event records timestamps 17:43:10.937...17:43:10.937]
+sample.event.records[fungus]: 5 event records
+  17:43:00.937 --- event record [0] flags 0x1a (start,id,parent) ---
+    sample.event.type 4
+    sample.event.param_u64 5
+    sample.event.param_string "6"
+  17:43:01.937 --- event record [1] flags 0x1 (point) ---
+    sample.event.type 7
+    sample.event.param_double 8
+    sample.event.param_double -9
+  17:43:02.937 --- event record [2] flags 0x4 (end) ---
+    sample.event.type 10
+    sample.event.param_u64 11
+    sample.event.param_string "twelve"
+    sample.event.param_string "thirteen"
+    sample.event.param_32 -14
+    sample.event.param_u32 15
+  17:43:03.937 --- event record [3] flags 0x80000000 (missed) ---
+    ==> 7 missed event records
+  17:43:04.937 --- event record [4] flags 0x1 (point) ---
+    sample.event.type 16
+    sample.event.param_float -17
+    sample.event.param_aggregate [0103070f1f3f7fff]
+sample.event.records[bogus]: 2 event records
+  17:43:10.937 --- event record [0] flags 0x1 (point) ---
+    sample.event.param_string "fetch #15"
+  17:43:10.937 --- event record [1] flags 0x1 (point) ---
+    sample.event.param_string "bingo!"
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=104 from=0
+000:       68     7001        0 2eb63e5f 83780e00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000  f000000  8000009        0 2c000009 
+016:  1000000 2eb63e5f 69780e00  1000000  1000000 86004007  d000006 63746566 
+024: 31232068 5f3eb636 
+pmResult dump from 0x5646f14a4f60 timestamp: 1597945390.948355 17:43:10.948 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [0 event records]
+    inst [1 or "bogus"] value [1 event record timestamp 17:43:10.948]
+sample.event.records[fungus]: 0 event records
+sample.event.records[bogus]: 1 event records
+  17:43:10.948 --- event record [0] flags 0x1 (point) ---
+    sample.event.param_string "fetch #16"
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=120 from=0
+000:       78     7001        0 2eb63e5f afa20e00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000 13000000 18000009  1000000 24b63e5f 
+016: 79a20e00  1000000        0 2c000009  1000000 2eb63e5f 7aa20e00  1000000 
+024:  1000000 86004007  d000006 63746566 31232068 5f3eb637 
+pmResult dump from 0x5646f14a35c0 timestamp: 1597945390.959151 17:43:10.959 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [1 event record timestamp 17:43:00.959]
+    inst [1 or "bogus"] value [1 event record timestamp 17:43:10.959]
+sample.event.records[fungus]: 1 event records
+  17:43:00.959 --- event record [0] flags 0x1 (point) ---
+sample.event.records[bogus]: 1 event records
+  17:43:10.959 --- event record [0] flags 0x1 (point) ---
+    sample.event.param_string "fetch #17"
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=208 from=0
+000:       d0     7001        0 2eb63e5f 48cc0e00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000 21000000 50000009  2000000 24b63e5f 
+016: 2dcc0e00  1000000  1000000 7f004007  8000001  1000000 25b63e5f 2dcc0e00 
+024:  1000000  2000000 7f004007  8000001  2000000 82004007  c000002 ffffffff 
+032: fdffffff 4c000009  2000000 2eb63e5f 2ecc0e00  1000000  1000000 86004007 
+040:  d000006 63746566 31232068 5f3eb638 2eb63e5f 2ecc0e00  1000000  1000000 
+048: 86004007  a000006 676e6962     216f 
+pmResult dump from 0x5646f14a4cb0 timestamp: 1597945390.969800 17:43:10.969 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [2 event records timestamps 17:43:00.969...17:43:01.969]
+    inst [1 or "bogus"] value [2 event records timestamps 17:43:10.969...17:43:10.969]
+sample.event.records[fungus]: 2 event records
+  17:43:00.969 --- event record [0] flags 0x1 (point) ---
+    sample.event.type 1
+  17:43:01.969 --- event record [1] flags 0x1 (point) ---
+    sample.event.type 2
+    sample.event.param_64 -3
+sample.event.records[bogus]: 2 event records
+  17:43:10.969 --- event record [0] flags 0x1 (point) ---
+    sample.event.param_string "fetch #18"
+  17:43:10.969 --- event record [1] flags 0x1 (point) ---
+    sample.event.param_string "bingo!"
+[15534]pmXmitPDU: FETCH fd=3 len=32
+000:       20     7003        0        0        0        0  1000000 88004007 
+[15534]pmGetPDU: RESULT fd=3 len=392 from=0
+000:      188     7001        0 2eb63e5f 5ff60e00  1000000 88004007  2000000 
+008:  2000000        0  d000000  1000000 57000000 28010009  5000000 24b63e5f 
+016: 44f60e00 1a000000  3000000 7f004007  8000001  4000000 83004007  c000003 
+024:        0  5000000 86004007  5000006       36 25b63e5f 44f60e00  1000000 
+032:  3000000 7f004007  8000001  7000000 85004007  c000005     2040        0 
+040: 85004007  c000005     22c0        0 26b63e5f 44f60e00  4000000  6000000 
+048: 7f004007  8000001  a000000 83004007  c000003        0  b000000 86004007 
+056:  a000006 6c657774     6576 86004007  c000006 72696874 6e656574 80004007 
+064:  8000000 f2ffffff 81004007  8000001  f000000 27b63e5f 44f60e00       80 
+072:  7000000 28b63e5f 44f60e00  1000000  3000000 7f004007  8000001 10000000 
+080: 84004007  8000004     88c1 87004007  c000007  f070301 ff7f3f1f 2c000009 
+088:  1000000 2eb63e5f 45f60e00  1000000  1000000 86004007  d000006 63746566 
+096: 31232068 5f3eb639 
+pmResult dump from 0x5646f14a4a00 timestamp: 1597945390.980575 17:43:10.980 numpmid: 1
+  29.0.136 (sample.event.records): numval: 2 valfmt: 2 vlist[]:
+    inst [0 or "fungus"] value [5 event records (7 missed) timestamps 17:43:00.980...17:43:03.980]
+    inst [1 or "bogus"] value [1 event record timestamp 17:43:10.980]
+sample.event.records[fungus]: 5 event records
+  17:43:00.980 --- event record [0] flags 0x1a (start,id,parent) ---
+    sample.event.type 4
+    sample.event.param_u64 5
+    sample.event.param_string "6"
+  17:43:01.980 --- event record [1] flags 0x1 (point) ---
+    sample.event.type 7
+    sample.event.param_double 8
+    sample.event.param_double -9
+  17:43:02.980 --- event record [2] flags 0x4 (end) ---
+    sample.event.type 10
+    sample.event.param_u64 11
+    sample.event.param_string "twelve"
+    sample.event.param_string "thirteen"
+    sample.event.param_32 -14
+    sample.event.param_u32 15
+  17:43:03.980 --- event record [3] flags 0x80000000 (missed) ---
+    ==> 7 missed event records
+  17:43:04.980 --- event record [4] flags 0x1 (point) ---
+    sample.event.type 16
+    sample.event.param_float -17
+    sample.event.param_aggregate [0103070f1f3f7fff]
+sample.event.records[bogus]: 1 event records
+  17:43:10.980 --- event record [0] flags 0x1 (point) ---
+    sample.event.param_string "fetch #19"

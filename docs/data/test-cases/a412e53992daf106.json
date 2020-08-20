@@ -1,0 +1,55 @@
+{
+  "uid" : "a412e53992daf106",
+  "name" : "QA 1401",
+  "fullName" : "QA #1401 on fedora_rawhide-container",
+  "historyId" : "1401@fedora_rawhide-container",
+  "time" : {
+    "start" : 1597952747000,
+    "stop" : 1597952747000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 1401\n\nExercise REST API chunked encoding with persistent HTTP\n\nconnections, end-of-JSON-response EOL strings and other\n\nsmall API buglets that have cropped up over time.\n\n\n\nCopyright (c) 2019 Red Hat.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 1401</p>\n<p>Exercise REST API chunked encoding with persistent HTTP</p>\n<p>connections, end-of-JSON-response EOL strings and other</p>\n<p>small API buglets that have cropped up over time.</p>\n<p>Copyright (c) 2019 Red Hat.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Redis server not running locally",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmproxy"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1401",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1401.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a412e53992daf106.json",
+  "parameterValues" : [ ]
+}

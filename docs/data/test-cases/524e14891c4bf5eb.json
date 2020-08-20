@@ -1,0 +1,83 @@
+{
+  "uid" : "524e14891c4bf5eb",
+  "name" : "QA 469",
+  "fullName" : "QA #469 on fedora_rawhide-container",
+  "historyId" : "469@fedora_rawhide-container",
+  "time" : {
+    "start" : 1597946033000,
+    "stop" : 1597946034000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 469\n\ntest for long help text exceeding maximum length\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform fedora_rawhide reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 469</p>\n<p>test for long help text exceeding maximum length</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform fedora_rawhide reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 469.out.bad)\n1a2,11\n> kernel.percpu.softirqs.RCU, full help text is too long: 251\n> kernel.percpu.softirqs.HRTIMER, full help text is too long: 251\n> kernel.percpu.softirqs.SCHED, full help text is too long: 251\n> kernel.percpu.softirqs.TASKLET, full help text is too long: 251\n> kernel.percpu.softirqs.IRQ_POLL, full help text is too long: 251\n> kernel.percpu.softirqs.BLOCK, full help text is too long: 251\n> kernel.percpu.softirqs.NET_RX, full help text is too long: 251\n> kernel.percpu.softirqs.NET_TX, full help text is too long: 251\n> kernel.percpu.softirqs.TIMER, full help text is too long: 251\n> kernel.percpu.softirqs.HI, full help text is too long: 251\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h d6bbf0991c84 -f sample.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f sampledso.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 469\n\ntest for long help text exceeding maximum length\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform fedora_rawhide reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 469.out.bad)\n1a2,11\n> kernel.percpu.softirqs.RCU, full help text is too long: 251\n> kernel.percpu.softirqs.HRTIMER, full help text is too long: 251\n> kernel.percpu.softirqs.SCHED, full help text is too long: 251\n> kernel.percpu.softirqs.TASKLET, full help text is too long: 251\n> kernel.percpu.softirqs.IRQ_POLL, full help text is too long: 251\n> kernel.percpu.softirqs.BLOCK, full help text is too long: 251\n> kernel.percpu.softirqs.NET_RX, full help text is too long: 251\n> kernel.percpu.softirqs.NET_TX, full help text is too long: 251\n> kernel.percpu.softirqs.TIMER, full help text is too long: 251\n> kernel.percpu.softirqs.HI, full help text is too long: 251\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h d6bbf0991c84 -f sample.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f sampledso.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "478e1a21cf6309e2",
+      "name" : "469.out.bad",
+      "source" : "478e1a21cf6309e2.txt",
+      "type" : "text/plain",
+      "size" : 649
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "epic",
+    "value" : "help"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "#626853"
+  }, {
+    "name" : "epic",
+    "value" : "kernel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/469",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/469.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "524e14891c4bf5eb.json",
+  "parameterValues" : [ ]
+}

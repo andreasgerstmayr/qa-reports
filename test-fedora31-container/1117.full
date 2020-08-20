@@ -1,0 +1,36 @@
+pmdabcc config:
+# Installed by PCP QA test 1117 on Thu Aug 20 18:57:59 UTC 2020
+[pmda]
+modules = biolatency
+prefix = bcc.
+[biolatency]
+module = biolatency
+cluster = 0
+Log for pmdabcc on 564f0d2de60c started Thu Aug 20 18:58:01 2020
+
+[Thu Aug 20 18:58:01] pmdabcc(969794) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 18:58:01] pmdabcc(969794) Info: Enabled modules:
+[Thu Aug 20 18:58:01] pmdabcc(969794) Info: ['biolatency']
+[Thu Aug 20 18:58:01] pmdabcc(969794) Info: Configuring modules:
+[Thu Aug 20 18:58:01] pmdabcc(969794) Info: biolatency
+[Thu Aug 20 18:58:01] pmdabcc(969794) Info: Modules configured.
+[Thu Aug 20 18:58:01] pmdabcc(969794) Info: Initializing modules:
+[Thu Aug 20 18:58:01] pmdabcc(969794) Info: biolatency
+[Thu Aug 20 18:58:01] pmdabcc(969794) Info: biolatency: Excluding OS queued time from I/O time.
+[Thu Aug 20 18:58:01] pmdabcc(969794) Info: biolatency: Initialized.
+[Thu Aug 20 18:58:01] pmdabcc(969794) Info: Modules initialized.
+[Thu Aug 20 18:58:01] pmdabcc(969794) Info: Registering metrics:
+[Thu Aug 20 18:58:01] pmdabcc(969794) Info: biolatency
+[Thu Aug 20 18:58:01] pmdabcc(969794) Info: Metrics registered.
+[Thu Aug 20 18:58:01] pmdabcc(969794) Info: Registering helpers:
+[Thu Aug 20 18:58:01] pmdabcc(969794) Info: biolatency
+[Thu Aug 20 18:58:01] pmdabcc(969794) Info: Helpers registered.
+[Thu Aug 20 18:58:01] pmdabcc(969794) Info: Compiling modules:
+[Thu Aug 20 18:58:01] pmdabcc(969794) Info: biolatency
+modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1034-azure
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 18:58:01] pmdabcc(969794) Error: biolatency: Failed to compile BPF module b'/var/lib/pcp/pmdas/bcc/modules/biolatency.bpf'
+[Thu Aug 20 18:58:01] pmdabcc(969794) Error: biolatency: Module NOT active!
+[Thu Aug 20 18:58:01] pmdabcc(969794) Error: Failed to compile module biolatency, aborting.
+
+Log finished Thu Aug 20 18:58:01 2020

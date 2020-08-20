@@ -1,0 +1,42 @@
+pmdabcc config:
+# Installed by PCP QA test 1124 on Thu Aug 20 18:52:28 UTC 2020
+[pmda]
+modules = tracepoint_hits
+prefix = bcc.
+[tracepoint_hits]
+module = tracepoint_hits
+cluster = 100
+compile_test = True
+tracepoints = random:urandom_read
+Log for pmdabcc on 316bddff7759 started Thu Aug 20 18:52:30 2020
+
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: Enabled modules:
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: ['tracepoint_hits']
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: Configuring modules:
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: tracepoint_hits
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: Modules configured.
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: Initializing modules:
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: tracepoint_hits
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: tracepoint_hits: Configured tracepoints: ['random:urandom_read']
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: tracepoint_hits: Found 1 tracepoints: ['random:urandom_read'].
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: tracepoint_hits: Initialized.
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: Modules initialized.
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: Registering metrics:
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: tracepoint_hits
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: Metrics registered.
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: Registering helpers:
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: tracepoint_hits
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: Helpers registered.
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: Compiling modules:
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: tracepoint_hits
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: tracepoint_hits: Compilation test for tracepoint probe: 'random:urandom_read'.
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 18:52:30] pmdabcc(8158) Error: tracepoint_hits: Failed to compile tracepoint probe 'random:urandom_read', disabling.
+[Thu Aug 20 18:52:30] pmdabcc(8158) Info: tracepoint_hits: Compiling 0 tracepoints: []
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 18:52:30] pmdabcc(8158) Error: tracepoint_hits: Failed to compile BPF text
+[Thu Aug 20 18:52:30] pmdabcc(8158) Error: tracepoint_hits: Module NOT active!
+[Thu Aug 20 18:52:30] pmdabcc(8158) Error: Failed to compile module tracepoint_hits, aborting.
+
+Log finished Thu Aug 20 18:52:30 2020

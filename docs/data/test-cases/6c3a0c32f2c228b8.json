@@ -1,0 +1,83 @@
+{
+  "uid" : "6c3a0c32f2c228b8",
+  "name" : "QA 781",
+  "fullName" : "QA #781 on ubuntu1804-direct",
+  "historyId" : "781@ubuntu1804-direct",
+  "time" : {
+    "start" : 1597947552000,
+    "stop" : 1597947553000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 781\n\nExercise pmlogconf and pmlogger_check interactions.\n\n\n\nCopyright (c) 2014 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner direct --platform ubuntu1804 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 781</p>\n<p>Exercise pmlogconf and pmlogger_check interactions.</p>\n<p>Copyright (c) 2014 Red Hat.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner direct --platform ubuntu1804 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 781.out.bad)\n22a23,26\n> Roll /var/log/pcp/NOTICES -> /var/log/pcp/NOTICES.old\n> Start new /var/log/pcp/NOTICES\n> + mv -f /var/log/pcp/NOTICES /var/log/pcp/NOTICES.old\n> + touch /var/log/pcp/NOTICES\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h fv-az60 -f sample.milliseconds\nPMDA probe: pminfo -h fv-az60 -f sampledso.milliseconds\nPMDA probe: pminfo -h fv-az60 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 781\n\nExercise pmlogconf and pmlogger_check interactions.\n\n\n\nCopyright (c) 2014 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner direct --platform ubuntu1804 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 781.out.bad)\n22a23,26\n> Roll /var/log/pcp/NOTICES -> /var/log/pcp/NOTICES.old\n> Start new /var/log/pcp/NOTICES\n> + mv -f /var/log/pcp/NOTICES /var/log/pcp/NOTICES.old\n> + touch /var/log/pcp/NOTICES\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h fv-az60 -f sample.milliseconds\nPMDA probe: pminfo -h fv-az60 -f sampledso.milliseconds\nPMDA probe: pminfo -h fv-az60 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b238f2d36b353944",
+      "name" : "781.out.bad",
+      "source" : "b238f2d36b353944.txt",
+      "type" : "text/plain",
+      "size" : 2529
+    }, {
+      "uid" : "e722e1222551727b",
+      "name" : "781.full",
+      "source" : "e722e1222551727b.txt",
+      "type" : "text/plain",
+      "size" : 3091
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "epic",
+    "value" : "logutil"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/781",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/781.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "6c3a0c32f2c228b8.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,55 @@
+{
+  "uid" : "9d95ea3f1ebec80a",
+  "name" : "QA 1690",
+  "fullName" : "QA #1690 on fedora_rawhide-container",
+  "historyId" : "1690@fedora_rawhide-container",
+  "time" : {
+    "start" : 1597952989000,
+    "stop" : 1597952989000,
+    "duration" : 0
+  },
+  "description" : "Exercise pmseries handling of multiple host labels.\n\n\n\nCopyright (c) 2019 Red Hat.\n\n\n\n",
+  "descriptionHtml" : "<p>Exercise pmseries handling of multiple host labels.</p>\n<p>Copyright (c) 2019 Red Hat.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Redis server not running locally",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmseries"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1690",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1690.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9d95ea3f1ebec80a.json",
+  "parameterValues" : [ ]
+}

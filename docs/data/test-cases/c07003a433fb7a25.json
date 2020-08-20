@@ -1,0 +1,86 @@
+{
+  "uid" : "c07003a433fb7a25",
+  "name" : "QA 051",
+  "fullName" : "QA #051 on centos6-container",
+  "historyId" : "051@centos6-container",
+  "time" : {
+    "start" : 1597941811000,
+    "stop" : 1597941831000,
+    "duration" : 20000
+  },
+  "description" : "PCP QA Test No. 051\n\nCheck pmcd access control parsing\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 051</p>\n<p>Check pmcd access control parsing</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform centos6 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 051.out.bad)\n60a61\n> [Thu Aug 20 16:43:32] pmcd(63669) Error: Failed to create avahi client: Daemon not running\n77a79\n> [Thu Aug 20 16:43:32] pmcd(63695) Error: Failed to create avahi client: Daemon not running\n94a97\n> [Thu Aug 20 16:43:32] pmcd(63721) Error: Failed to create avahi client: Daemon not running\n114a118\n> [Thu Aug 20 16:43:32] pmcd(63747) Error: Failed to create avahi client: Daemon not running\n132a137\n> [Thu Aug 20 16:43:32] pmcd(63773) Error: Failed to create avahi client: Daemon not running\n151a157\n> [Thu Aug 20 16:43:32] pmcd(63799) Error: Failed to create avahi client: Daemon not running\n170a177\n> [Thu Aug 20 16:43:32] pmcd(63825) Error: Failed to create avahi client: Daemon not running\n189a197\n> [Thu Aug 20 16:43:32] pmcd(63851) Error: Failed to create avahi client: Daemon not running\n208a217\n> [Thu Aug 20 16:43:32] pmcd(63877) Error: Failed to create avahi client: Daemon not running\n227a237\n> [Thu Aug 20 16:43:33] pmcd(63903) Error: Failed to create avahi client: Daemon not running\n258a269\n> [Thu Aug 20 16:43:33] pmcd(63929) Error: Failed to create avahi client: Daemon not running\n280a292\n> [Thu Aug 20 16:43:33] pmcd(63955) Error: Failed to create avahi client: Daemon not running\n298a311\n> [Thu Aug 20 16:43:33] pmcd(63981) Error: Failed to create avahi client: Daemon not running\n316a330\n> [Thu Aug 20 16:43:33] pmcd(64007) Error: Failed to create avahi client: Daemon not running\n335a350\n> [Thu Aug 20 16:43:33] pmcd(64033) Error: Failed to create avahi client: Daemon not running\n353a369\n> [Thu Aug 20 16:43:33] pmcd(64059) Error: Failed to create avahi client: Daemon not running\n371a388\n> [Thu Aug 20 16:43:33] pmcd(64085) Error: Failed to create avahi client: Daemon not running\n390a408\n> [Thu Aug 20 16:43:33] pmcd(64111) Error: Failed to create avahi client: Daemon not running\n409a428\n> [Thu Aug 20 16:43:33] pmcd(64137) Error: Failed to create avahi client: Daemon not running\n427a447\n> [Thu Aug 20 16:43:33] pmcd(64163) Error: Failed to create avahi client: Daemon not running\n448a469\n> [Thu Aug 20 16:43:33] pmcd(64189) Error: Failed to create avahi client: Daemon not running\n469a491\n> [Thu Aug 20 16:43:33] pmcd(64215) Error: Failed to create avahi client: Daemon not running\n490a513\n> [Thu Aug 20 16:43:44] pmcd(64241) Error: Failed to create avahi client: Daemon not running\n510a534\n> [Thu Aug 20 16:43:44] pmcd(64267) Error: Failed to create avahi client: Daemon not running\n530a555\n> [Thu Aug 20 16:43:44] pmcd(64293) Error: Failed to create avahi client: Daemon not running\n551a577\n> [Thu Aug 20 16:43:44] pmcd(64319) Error: Failed to create avahi client: Daemon not running\n574a601\n> [Thu Aug 20 16:43:44] pmcd(64345) Error: Failed to create avahi client: Daemon not running\n593a621\n> [Thu Aug 20 16:43:44] pmcd(64371) Error: Failed to create avahi client: Daemon not running\n606a635\n> [Thu Aug 20 16:43:44] pmcd(64395) Error: Failed to create avahi client: Daemon not running\n627a657\n> [Thu Aug 20 16:43:45] pmcd(64421) Error: Failed to create avahi client: Daemon not running\n648a679\n> [Thu Aug 20 16:43:45] pmcd(64448) Error: Failed to create avahi client: Daemon not running\n667a699\n> [Thu Aug 20 16:43:45] pmcd(64474) Error: Failed to create avahi client: Daemon not running\n686a719\n> [Thu Aug 20 16:43:45] pmcd(64500) Error: Failed to create avahi client: Daemon not running\n707a741\n> [Thu Aug 20 16:43:45] pmcd(64527) Error: Failed to create avahi client: Daemon not running\n731a766\n> [Thu Aug 20 16:43:45] pmcd(64554) Error: Failed to create avahi client: Daemon not running\n763a799\n> [Thu Aug 20 16:43:45] pmcd(64580) Error: Failed to create avahi client: Daemon not running\n783a820\n> [Thu Aug 20 16:43:45] pmcd(64606) Error: Failed to create avahi client: Daemon not running\n801a839\n> [Thu Aug 20 16:43:45] pmcd(64632) Error: Failed to create avahi client: Daemon not running\n820a859\n> [Thu Aug 20 16:43:45] pmcd(64658) Error: Failed to create avahi client: Daemon not running\n839a879\n> [Thu Aug 20 16:43:45] pmcd(64684) Error: Failed to create avahi client: Daemon not running\n859a900\n> [Thu Aug 20 16:43:45] pmcd(64710) Error: Failed to create avahi client: Daemon not running\n879a921\n> [Thu Aug 20 16:43:46] pmcd(64736) Error: Failed to create avahi client: Daemon not running\n892a935\n> [Thu Aug 20 16:43:46] pmcd(64759) Error: Failed to create avahi client: Daemon not running\n915a959\n> [Thu Aug 20 16:43:46] pmcd(64785) Error: Failed to create avahi client: Daemon not running\n935a980\n> [Thu Aug 20 16:43:46] pmcd(64811) Error: Failed to create avahi client: Daemon not running\n958a1004\n> [Thu Aug 20 16:43:46] pmcd(64838) Error: Failed to create avahi client: Daemon not running\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 051\n\nCheck pmcd access control parsing\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 051.out.bad)\n60a61\n> [Thu Aug 20 16:43:32] pmcd(63669) Error: Failed to create avahi client: Daemon not running\n77a79\n> [Thu Aug 20 16:43:32] pmcd(63695) Error: Failed to create avahi client: Daemon not running\n94a97\n> [Thu Aug 20 16:43:32] pmcd(63721) Error: Failed to create avahi client: Daemon not running\n114a118\n> [Thu Aug 20 16:43:32] pmcd(63747) Error: Failed to create avahi client: Daemon not running\n132a137\n> [Thu Aug 20 16:43:32] pmcd(63773) Error: Failed to create avahi client: Daemon not running\n151a157\n> [Thu Aug 20 16:43:32] pmcd(63799) Error: Failed to create avahi client: Daemon not running\n170a177\n> [Thu Aug 20 16:43:32] pmcd(63825) Error: Failed to create avahi client: Daemon not running\n189a197\n> [Thu Aug 20 16:43:32] pmcd(63851) Error: Failed to create avahi client: Daemon not running\n208a217\n> [Thu Aug 20 16:43:32] pmcd(63877) Error: Failed to create avahi client: Daemon not running\n227a237\n> [Thu Aug 20 16:43:33] pmcd(63903) Error: Failed to create avahi client: Daemon not running\n258a269\n> [Thu Aug 20 16:43:33] pmcd(63929) Error: Failed to create avahi client: Daemon not running\n280a292\n> [Thu Aug 20 16:43:33] pmcd(63955) Error: Failed to create avahi client: Daemon not running\n298a311\n> [Thu Aug 20 16:43:33] pmcd(63981) Error: Failed to create avahi client: Daemon not running\n316a330\n> [Thu Aug 20 16:43:33] pmcd(64007) Error: Failed to create avahi client: Daemon not running\n335a350\n> [Thu Aug 20 16:43:33] pmcd(64033) Error: Failed to create avahi client: Daemon not running\n353a369\n> [Thu Aug 20 16:43:33] pmcd(64059) Error: Failed to create avahi client: Daemon not running\n371a388\n> [Thu Aug 20 16:43:33] pmcd(64085) Error: Failed to create avahi client: Daemon not running\n390a408\n> [Thu Aug 20 16:43:33] pmcd(64111) Error: Failed to create avahi client: Daemon not running\n409a428\n> [Thu Aug 20 16:43:33] pmcd(64137) Error: Failed to create avahi client: Daemon not running\n427a447\n> [Thu Aug 20 16:43:33] pmcd(64163) Error: Failed to create avahi client: Daemon not running\n448a469\n> [Thu Aug 20 16:43:33] pmcd(64189) Error: Failed to create avahi client: Daemon not running\n469a491\n> [Thu Aug 20 16:43:33] pmcd(64215) Error: Failed to create avahi client: Daemon not running\n490a513\n> [Thu Aug 20 16:43:44] pmcd(64241) Error: Failed to create avahi client: Daemon not running\n510a534\n> [Thu Aug 20 16:43:44] pmcd(64267) Error: Failed to create avahi client: Daemon not running\n530a555\n> [Thu Aug 20 16:43:44] pmcd(64293) Error: Failed to create avahi client: Daemon not running\n551a577\n> [Thu Aug 20 16:43:44] pmcd(64319) Error: Failed to create avahi client: Daemon not running\n574a601\n> [Thu Aug 20 16:43:44] pmcd(64345) Error: Failed to create avahi client: Daemon not running\n593a621\n> [Thu Aug 20 16:43:44] pmcd(64371) Error: Failed to create avahi client: Daemon not running\n606a635\n> [Thu Aug 20 16:43:44] pmcd(64395) Error: Failed to create avahi client: Daemon not running\n627a657\n> [Thu Aug 20 16:43:45] pmcd(64421) Error: Failed to create avahi client: Daemon not running\n648a679\n> [Thu Aug 20 16:43:45] pmcd(64448) Error: Failed to create avahi client: Daemon not running\n667a699\n> [Thu Aug 20 16:43:45] pmcd(64474) Error: Failed to create avahi client: Daemon not running\n686a719\n> [Thu Aug 20 16:43:45] pmcd(64500) Error: Failed to create avahi client: Daemon not running\n707a741\n> [Thu Aug 20 16:43:45] pmcd(64527) Error: Failed to create avahi client: Daemon not running\n731a766\n> [Thu Aug 20 16:43:45] pmcd(64554) Error: Failed to create avahi client: Daemon not running\n763a799\n> [Thu Aug 20 16:43:45] pmcd(64580) Error: Failed to create avahi client: Daemon not running\n783a820\n> [Thu Aug 20 16:43:45] pmcd(64606) Error: Failed to create avahi client: Daemon not running\n801a839\n> [Thu Aug 20 16:43:45] pmcd(64632) Error: Failed to create avahi client: Daemon not running\n820a859\n> [Thu Aug 20 16:43:45] pmcd(64658) Error: Failed to create avahi client: Daemon not running\n839a879\n> [Thu Aug 20 16:43:45] pmcd(64684) Error: Failed to create avahi client: Daemon not running\n859a900\n> [Thu Aug 20 16:43:45] pmcd(64710) Error: Failed to create avahi client: Daemon not running\n879a921\n> [Thu Aug 20 16:43:46] pmcd(64736) Error: Failed to create avahi client: Daemon not running\n892a935\n> [Thu Aug 20 16:43:46] pmcd(64759) Error: Failed to create avahi client: Daemon not running\n915a959\n> [Thu Aug 20 16:43:46] pmcd(64785) Error: Failed to create avahi client: Daemon not running\n935a980\n> [Thu Aug 20 16:43:46] pmcd(64811) Error: Failed to create avahi client: Daemon not running\n958a1004\n> [Thu Aug 20 16:43:46] pmcd(64838) Error: Failed to create avahi client: Daemon not running\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c15dc4ad4ebc5778",
+      "name" : "051.out.bad",
+      "source" : "c15dc4ad4ebc5778.txt",
+      "type" : "text/plain",
+      "size" : 32476
+    }, {
+      "uid" : "fba383656fa111df",
+      "name" : "051.full",
+      "source" : "fba383656fa111df.txt",
+      "type" : "text/plain",
+      "size" : 45732
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos6-container"
+  }, {
+    "name" : "host",
+    "value" : "centos6-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmcd"
+  }, {
+    "name" : "epic",
+    "value" : "ostest"
+  }, {
+    "name" : "epic",
+    "value" : "remote"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/051",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/051.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "c07003a433fb7a25.json",
+  "parameterValues" : [ ]
+}

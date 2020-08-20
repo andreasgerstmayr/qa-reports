@@ -1,0 +1,355 @@
+Stopping pmlogger ...
+=== Building simple agent ===
+=== Testing a Client ===
+=== Started client ===
+=== pmval output ===
+
+metric:    pmcd.client.whoami
+host:      97d404ba7f88
+semantics: discrete instantaneous value
+units:     none
+samples:   11
+interval:  1.00 sec
+
+                    3 
+"97d404ba7f88 (10.88.0.2) pmval -T 10sec pmcd.client.whoami" 
+"97d404ba7f88 (10.88.0.2) pmval -T 10sec pmcd.client.whoami" 
+"97d404ba7f88 (10.88.0.2) pmval -T 10sec pmcd.client.whoami" 
+"97d404ba7f88 (10.88.0.2) pmval -T 10sec pmcd.client.whoami" 
+"97d404ba7f88 (10.88.0.2) pmval -T 10sec pmcd.client.whoami" 
+"97d404ba7f88 (10.88.0.2) pmval -T 10sec pmcd.client.whoami" 
+"97d404ba7f88 (10.88.0.2) pmval -T 10sec pmcd.client.whoami" 
+"97d404ba7f88 (10.88.0.2) pmval -T 10sec pmcd.client.whoami" 
+"97d404ba7f88 (10.88.0.2) pmval -T 10sec pmcd.client.whoami" 
+"97d404ba7f88 (10.88.0.2) pmval -T 10sec pmcd.client.whoami" 
+=== pminfo output ===
+
+pmcd.openfds
+    value 7
+
+pmcd.client.whoami
+    inst [2 or "2"] value ""
+
+pmcd.openfds
+    value 8
+
+pmcd.client.whoami
+    inst [3 or "3"] value "97d404ba7f88 (10.88.0.2) pmval -T 10sec pmcd.client.whoami"
+    inst [4 or "4"] value ""
+
+pmcd.openfds
+    value 8
+
+pmcd.client.whoami
+    inst [5 or "5"] value ""
+=== pmcd.log from _test_client ===
+Log for pmcd on 97d404ba7f88 started Thu Aug 20 17:41:11 2020
+
+Warning: nports=1 from PMCD_PORT=6060 in environment
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7fb025434fd0]
+linux         60                 2 dso i:7  lib=/var/lib/pcp/pmdas/linux/pmda_linux.so entry=linux_init [0x7fb025200ff0]
+
+Host access list empty: host-based access control turned off
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+
+pmcd: PID = 88852, PDU version = 2
+pmcd request port(s):
+  sts fd   port  family address
+  === ==== ===== ====== =======
+  ok     6       unix   /run/pcp/pmcd.socket
+  ok     0  6060 inet   INADDR_ANY
+  ok     3  6060 ipv6   INADDR_ANY
+=== Testing PMDA as a DSO ===
+=== Installing simple ===
+=== Removing simple ===
+=== Restarting PMCD with minimal PMDAs ===
+=== pminfo output ===
+
+pmcd.openfds
+    value 8
+
+pmcd.client.whoami
+    inst [6 or "6"] value ""
+
+pmcd.openfds
+    value 8
+
+pmcd.client.whoami
+    inst [10 or "10"] value ""
+
+pmcd.openfds
+    value 8
+
+pmcd.client.whoami
+    inst [14 or "14"] value ""
+=== pmcd.log from _test_pmda ===
+Log for pmcd on 97d404ba7f88 started Thu Aug 20 17:41:11 2020
+
+Warning: nports=1 from PMCD_PORT=6060 in environment
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7fb025434fd0]
+linux         60                 2 dso i:7  lib=/var/lib/pcp/pmdas/linux/pmda_linux.so entry=linux_init [0x7fb025200ff0]
+
+Host access list empty: host-based access control turned off
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+
+pmcd: PID = 88852, PDU version = 2
+pmcd request port(s):
+  sts fd   port  family address
+  === ==== ===== ====== =======
+  ok     6       unix   /run/pcp/pmcd.socket
+  ok     0  6060 inet   INADDR_ANY
+  ok     3  6060 ipv6   INADDR_ANY
+[Thu Aug 20 17:41:21] pmcd(88852) Info: 
+
+pmcd RESTARTED at Thu Aug 20 17:41:21 2020
+
+
+Current PMCD clients ...
+     fd  client connection from                    ipc ver  operations denied
+     ==  ========================================  =======  =================
+
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7fb025434fd0]
+linux         60                 2 dso i:7  lib=/var/lib/pcp/pmdas/linux/pmda_linux.so entry=linux_init [0x7fb025200ff0]
+simple       253                 2 dso i:7  lib=/var/lib/pcp/pmdas/simple/pmda_simple.so entry=simple_init [0x7fb024de2a40]
+
+Host access list empty: host-based access control turned off
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+[Thu Aug 20 17:41:21] pmcd(88852) Info: PMNS file "DEFAULT" is unchanged
+[Thu Aug 20 17:41:25] pmcd(88852) Info: 
+
+pmcd RESTARTED at Thu Aug 20 17:41:25 2020
+
+
+Current PMCD clients ...
+     fd  client connection from                    ipc ver  operations denied
+     ==  ========================================  =======  =================
+
+[Thu Aug 20 17:41:25] pmcd(88852) Info: CleanupAgent ...
+Cleanup "simple" agent (dom 253): unconfigured, exit(0)
+
+->PMCD event trace: starting at Thu Aug 20 17:41:25 2020
+->         Xmit: ERROR PDU, fd=7, err=0: No error
+->         Recv: CREDS PDU, fd=7, pdubuf=0x...14a9cb00
+->         Recv: CREDS PDU, fd=7, pdubuf=0x...1
+->         Recv: PMNS_TRAVERSE PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: PMNS_NAMES PDU, fd=7, numpmid=1
+->         Recv: PMNS_TRAVERSE PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: PMNS_NAMES PDU, fd=7, numpmid=1
+->         Recv: PMNS_NAMES PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: PMNS_IDS PDU, fd=7, numpmid=2
+->         Recv: PROFILE PDU, fd=7, pdubuf=0x...14a9cb00
+->         Recv: FETCH PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: RESULT PDU, fd=7, numpmid=2
+->         Recv: DESC_REQ PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: DESC PDU, fd=7, pmid=2.0.17
+->         Recv: DESC_REQ PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: DESC PDU, fd=7, pmid=2.6.0
+->         Recv: INSTANCE_REQ PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: INSTANCE PDU, fd=7, indom=2.6
+->         End client: [0] fd=7
+->         Drop PMDA: domain=253, DSO
+
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7fb025434fd0]
+linux         60                 2 dso i:7  lib=/var/lib/pcp/pmdas/linux/pmda_linux.so entry=linux_init [0x7fb025200ff0]
+
+Host access list empty: host-based access control turned off
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+[Thu Aug 20 17:41:25] pmcd(88852) Info: PMNS file "DEFAULT" is unchanged
+=== Testing PMDA as a PIPE ===
+=== Installing simple ===
+=== Removing simple ===
+=== Restarting PMCD with minimal PMDAs ===
+=== pminfo output ===
+
+pmcd.openfds
+    value 8
+
+pmcd.client.whoami
+    inst [15 or "15"] value ""
+
+pmcd.openfds
+    value 10
+
+pmcd.client.whoami
+    inst [19 or "19"] value ""
+
+pmcd.openfds
+    value 10
+
+pmcd.client.whoami
+    inst [23 or "23"] value ""
+=== pmcd.log from _test_pmda ===
+Log for pmcd on 97d404ba7f88 started Thu Aug 20 17:41:11 2020
+
+Warning: nports=1 from PMCD_PORT=6060 in environment
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7fb025434fd0]
+linux         60                 2 dso i:7  lib=/var/lib/pcp/pmdas/linux/pmda_linux.so entry=linux_init [0x7fb025200ff0]
+
+Host access list empty: host-based access control turned off
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+
+pmcd: PID = 88852, PDU version = 2
+pmcd request port(s):
+  sts fd   port  family address
+  === ==== ===== ====== =======
+  ok     6       unix   /run/pcp/pmcd.socket
+  ok     0  6060 inet   INADDR_ANY
+  ok     3  6060 ipv6   INADDR_ANY
+[Thu Aug 20 17:41:21] pmcd(88852) Info: 
+
+pmcd RESTARTED at Thu Aug 20 17:41:21 2020
+
+
+Current PMCD clients ...
+     fd  client connection from                    ipc ver  operations denied
+     ==  ========================================  =======  =================
+
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7fb025434fd0]
+linux         60                 2 dso i:7  lib=/var/lib/pcp/pmdas/linux/pmda_linux.so entry=linux_init [0x7fb025200ff0]
+simple       253                 2 dso i:7  lib=/var/lib/pcp/pmdas/simple/pmda_simple.so entry=simple_init [0x7fb024de2a40]
+
+Host access list empty: host-based access control turned off
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+[Thu Aug 20 17:41:21] pmcd(88852) Info: PMNS file "DEFAULT" is unchanged
+[Thu Aug 20 17:41:25] pmcd(88852) Info: 
+
+pmcd RESTARTED at Thu Aug 20 17:41:25 2020
+
+
+Current PMCD clients ...
+     fd  client connection from                    ipc ver  operations denied
+     ==  ========================================  =======  =================
+
+[Thu Aug 20 17:41:25] pmcd(88852) Info: CleanupAgent ...
+Cleanup "simple" agent (dom 253): unconfigured, exit(0)
+
+->PMCD event trace: starting at Thu Aug 20 17:41:25 2020
+->         Xmit: ERROR PDU, fd=7, err=0: No error
+->         Recv: CREDS PDU, fd=7, pdubuf=0x...14a9cb00
+->         Recv: CREDS PDU, fd=7, pdubuf=0x...1
+->         Recv: PMNS_TRAVERSE PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: PMNS_NAMES PDU, fd=7, numpmid=1
+->         Recv: PMNS_TRAVERSE PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: PMNS_NAMES PDU, fd=7, numpmid=1
+->         Recv: PMNS_NAMES PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: PMNS_IDS PDU, fd=7, numpmid=2
+->         Recv: PROFILE PDU, fd=7, pdubuf=0x...14a9cb00
+->         Recv: FETCH PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: RESULT PDU, fd=7, numpmid=2
+->         Recv: DESC_REQ PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: DESC PDU, fd=7, pmid=2.0.17
+->         Recv: DESC_REQ PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: DESC PDU, fd=7, pmid=2.6.0
+->         Recv: INSTANCE_REQ PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: INSTANCE PDU, fd=7, indom=2.6
+->         End client: [0] fd=7
+->         Drop PMDA: domain=253, DSO
+
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7fb025434fd0]
+linux         60                 2 dso i:7  lib=/var/lib/pcp/pmdas/linux/pmda_linux.so entry=linux_init [0x7fb025200ff0]
+
+Host access list empty: host-based access control turned off
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+[Thu Aug 20 17:41:25] pmcd(88852) Info: PMNS file "DEFAULT" is unchanged
+[Thu Aug 20 17:41:30] pmcd(88852) Info: 
+
+pmcd RESTARTED at Thu Aug 20 17:41:30 2020
+
+
+Current PMCD clients ...
+     fd  client connection from                    ipc ver  operations denied
+     ==  ========================================  =======  =================
+
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7fb025434fd0]
+linux         60                 2 dso i:7  lib=/var/lib/pcp/pmdas/linux/pmda_linux.so entry=linux_init [0x7fb025200ff0]
+simple       253 89128   8   9   2 bin pipe cmd=/var/lib/pcp/pmdas/simple/pmdasimple -d 253
+
+Host access list empty: host-based access control turned off
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+[Thu Aug 20 17:41:30] pmcd(88852) Info: PMNS file "DEFAULT" is unchanged
+[Thu Aug 20 17:41:34] pmcd(88852) Info: 
+
+pmcd RESTARTED at Thu Aug 20 17:41:34 2020
+
+
+Current PMCD clients ...
+     fd  client connection from                    ipc ver  operations denied
+     ==  ========================================  =======  =================
+
+[Thu Aug 20 17:41:34] pmcd(88852) Info: CleanupAgent ...
+Cleanup "simple" agent (dom 253): unconfigured, exit(0)
+
+->PMCD event trace: starting at Thu Aug 20 17:41:34 2020
+->         Recv: CREDS PDU, fd=7, pdubuf=0x...14a9cb00
+->         Recv: CREDS PDU, fd=7, pdubuf=0x...1
+->         Recv: PMNS_TRAVERSE PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: PMNS_NAMES PDU, fd=7, numpmid=1
+->         Recv: PMNS_TRAVERSE PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: PMNS_NAMES PDU, fd=7, numpmid=1
+->         Recv: PMNS_NAMES PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: PMNS_IDS PDU, fd=7, numpmid=2
+->         Recv: PROFILE PDU, fd=7, pdubuf=0x...14a9cb00
+->         Recv: FETCH PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: RESULT PDU, fd=7, numpmid=2
+->         Recv: DESC_REQ PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: DESC PDU, fd=7, pmid=2.0.17
+->         Recv: DESC_REQ PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: DESC PDU, fd=7, pmid=2.6.0
+->         Recv: INSTANCE_REQ PDU, fd=7, pdubuf=0x...14a9cb00
+->         Xmit: INSTANCE PDU, fd=7, indom=2.6
+->         End client: [0] fd=7
+->         Xmit: ERROR PDU, fd=8, err=-12391: Not Connected
+->         Drop PMDA: domain=253, infd=8, outfd=9
+
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7fb025434fd0]
+linux         60                 2 dso i:7  lib=/var/lib/pcp/pmdas/linux/pmda_linux.so entry=linux_init [0x7fb025200ff0]
+
+Host access list empty: host-based access control turned off
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+[Thu Aug 20 17:41:34] pmcd(88852) Info: PMNS file "DEFAULT" is unchanged
+/etc/rc.d/init.d/pmie: pmie not running

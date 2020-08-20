@@ -1,0 +1,55 @@
+{
+  "uid" : "94c7dc5a1ab287eb",
+  "name" : "QA 1714",
+  "fullName" : "QA #1714 on debian10-container",
+  "historyId" : "1714@debian10-container",
+  "time" : {
+    "start" : 1597950983000,
+    "stop" : 1597950983000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 1714\n\nExercises pmdastatsd - labels\n\n\n\nCopyright (c) 2020 Red Hat.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 1714</p>\n<p>Exercises pmdastatsd - labels</p>\n<p>Copyright (c) 2020 Red Hat.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "statsd PMDA not installed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian10-container"
+  }, {
+    "name" : "host",
+    "value" : "debian10-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.statsd"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1714",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1714.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "94c7dc5a1ab287eb.json",
+  "parameterValues" : [ ]
+}

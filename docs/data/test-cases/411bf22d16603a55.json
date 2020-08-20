@@ -1,0 +1,55 @@
+{
+  "uid" : "411bf22d16603a55",
+  "name" : "QA 898",
+  "fullName" : "QA #898 on ubuntu1804-direct",
+  "historyId" : "898@ubuntu1804-direct",
+  "time" : {
+    "start" : 1597948105000,
+    "stop" : 1597948106000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 898\n\npmlogmv botch in arg parsing\n\n\n\nCopyright (c) 2014 Ken McDonell.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 898</p>\n<p>pmlogmv botch in arg parsing</p>\n<p>Copyright (c) 2014 Ken McDonell.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "epic",
+    "value" : "pmlogmv"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/898",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/898.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "411bf22d16603a55.json",
+  "parameterValues" : [ ]
+}

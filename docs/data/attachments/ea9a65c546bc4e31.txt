@@ -1,0 +1,36 @@
+pmdabcc config:
+# Installed by PCP QA test 1156 on Thu Aug 20 18:55:44 UTC 2020
+[pmda]
+modules = execsnoop
+prefix = bcc.
+[execsnoop]
+module = execsnoop
+cluster = 8
+command = echo
+args = PCP
+Log for pmdabcc on 316bddff7759 started Thu Aug 20 18:55:46 2020
+
+[Thu Aug 20 18:55:46] pmdabcc(28283) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 18:55:46] pmdabcc(28283) Info: Enabled modules:
+[Thu Aug 20 18:55:46] pmdabcc(28283) Info: ['execsnoop']
+[Thu Aug 20 18:55:46] pmdabcc(28283) Info: Configuring modules:
+[Thu Aug 20 18:55:46] pmdabcc(28283) Info: execsnoop
+[Thu Aug 20 18:55:46] pmdabcc(28283) Info: Modules configured.
+[Thu Aug 20 18:55:46] pmdabcc(28283) Info: Initializing modules:
+[Thu Aug 20 18:55:46] pmdabcc(28283) Info: execsnoop
+[Thu Aug 20 18:55:46] pmdabcc(28283) Info: execsnoop: Initialized.
+[Thu Aug 20 18:55:46] pmdabcc(28283) Info: Modules initialized.
+[Thu Aug 20 18:55:46] pmdabcc(28283) Info: Registering metrics:
+[Thu Aug 20 18:55:46] pmdabcc(28283) Info: execsnoop
+[Thu Aug 20 18:55:46] pmdabcc(28283) Info: Metrics registered.
+[Thu Aug 20 18:55:46] pmdabcc(28283) Info: Registering helpers:
+[Thu Aug 20 18:55:46] pmdabcc(28283) Info: execsnoop
+[Thu Aug 20 18:55:46] pmdabcc(28283) Info: Helpers registered.
+[Thu Aug 20 18:55:46] pmdabcc(28283) Info: Compiling modules:
+[Thu Aug 20 18:55:46] pmdabcc(28283) Info: execsnoop
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 18:55:46] pmdabcc(28283) Error: execsnoop: Failed to compile BPF text
+[Thu Aug 20 18:55:46] pmdabcc(28283) Error: execsnoop: Module NOT active!
+[Thu Aug 20 18:55:46] pmdabcc(28283) Error: Failed to compile module execsnoop, aborting.
+
+Log finished Thu Aug 20 18:55:46 2020

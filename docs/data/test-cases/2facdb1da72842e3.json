@@ -1,0 +1,58 @@
+{
+  "uid" : "2facdb1da72842e3",
+  "name" : "QA 149",
+  "fullName" : "QA #149 on fedora32-container",
+  "historyId" : "149@fedora32-container",
+  "time" : {
+    "start" : 1597943058000,
+    "stop" : 1597943059000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 149\n\ncheck inst in pmResult for metrics with indom of PM_INDOM_NULL\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 149</p>\n<p>check inst in pmResult for metrics with indom of PM_INDOM_NULL</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora32-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora32-container"
+  }, {
+    "name" : "epic",
+    "value" : "kernel"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "kernel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/149",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/149.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2facdb1da72842e3.json",
+  "parameterValues" : [ ]
+}

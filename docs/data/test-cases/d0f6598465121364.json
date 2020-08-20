@@ -1,0 +1,92 @@
+{
+  "uid" : "d0f6598465121364",
+  "name" : "QA 713",
+  "fullName" : "QA #713 on centos6-container",
+  "historyId" : "713@centos6-container",
+  "time" : {
+    "start" : 1597946098000,
+    "stop" : 1597946128000,
+    "duration" : 30000
+  },
+  "description" : "PCP QA Test No. 713\n\n\n\nExercise encrypted communications between pmproxy/clients\n\nCopyright (c) 2013 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 713</p>\n<p>Exercise encrypted communications between pmproxy/clients</p>\n<p>Copyright (c) 2013 Red Hat.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform centos6 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 713.out.bad)\n5a6\n> [Thu Aug 20 17:55:20] pmcd(116404) Error: Failed to create avahi client: Daemon not running\n7a9\n> [Thu Aug 20 17:55:23] pmproxy(116970) Error: Failed to create avahi client: Daemon not running\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 713\n\n\n\nExercise encrypted communications between pmproxy/clients\n\nCopyright (c) 2013 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 713.out.bad)\n5a6\n> [Thu Aug 20 17:55:20] pmcd(116404) Error: Failed to create avahi client: Daemon not running\n7a9\n> [Thu Aug 20 17:55:23] pmproxy(116970) Error: Failed to create avahi client: Daemon not running\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c3b1b638421e363b",
+      "name" : "713.out.bad",
+      "source" : "c3b1b638421e363b.txt",
+      "type" : "text/plain",
+      "size" : 953
+    }, {
+      "uid" : "575820530b39d5f3",
+      "name" : "713.full",
+      "source" : "575820530b39d5f3.txt",
+      "type" : "text/plain",
+      "size" : 5216
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos6-container"
+  }, {
+    "name" : "host",
+    "value" : "centos6-container"
+  }, {
+    "name" : "epic",
+    "value" : "context"
+  }, {
+    "name" : "epic",
+    "value" : "libpcp"
+  }, {
+    "name" : "epic",
+    "value" : "pmproxy"
+  }, {
+    "name" : "epic",
+    "value" : "secure"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/713",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/713.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "d0f6598465121364.json",
+  "parameterValues" : [ ]
+}

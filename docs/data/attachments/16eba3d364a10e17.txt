@@ -1,0 +1,361 @@
+QA output created by 1080
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: PCP-ATOP 2 4
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: PCP-ATOP -r .../archives/pcp-atop.folio
+24 bytes in 1 blocks are possibly lost in loss record 20 of 124
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x4BAAB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48887A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x4889896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x48A4510: __pmLogRead_ctx (logutil.c:1828)
+by 0x48A5876: cache_read (interp.c:229)
+by 0x48A738E: do_roll (interp.c:820)
+by 0x48A8211: __pmLogFetch (interp.c:1173)
+by 0x487ED9F: pmFetch_ctx (fetch.c:164)
+by 0x135327: fetch_metrics (various.c:1120)
+by 0x11DDC8: engine (photoproc.c:153)
+by 0x115281: main (atop.c:480)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:do_roll
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:fetch_metrics
+   fun:engine
+   fun:main
+}
+24 bytes in 1 blocks are possibly lost in loss record 21 of 124
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x4BAAB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48887A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x4889896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x48A4510: __pmLogRead_ctx (logutil.c:1828)
+by 0x48A5876: cache_read (interp.c:229)
+by 0x48A9999: __pmLogFetch (interp.c:1364)
+by 0x487ED9F: pmFetch_ctx (fetch.c:164)
+by 0x135327: fetch_metrics (various.c:1120)
+by 0x11DDC8: engine (photoproc.c:153)
+by 0x115281: main (atop.c:480)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:fetch_metrics
+   fun:engine
+   fun:main
+}
+10,400 bytes in 1 blocks are possibly lost in loss record 109 of 124
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x488875B: __pmFindPDUBuf (pdubuf.c:115)
+by 0x4889896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x48A4510: __pmLogRead_ctx (logutil.c:1828)
+by 0x48A5876: cache_read (interp.c:229)
+by 0x48A738E: do_roll (interp.c:820)
+by 0x48A8211: __pmLogFetch (interp.c:1173)
+by 0x487ED9F: pmFetch_ctx (fetch.c:164)
+by 0x135327: fetch_metrics (various.c:1120)
+by 0x11DDC8: engine (photoproc.c:153)
+by 0x115281: main (atop.c:480)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:do_roll
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:fetch_metrics
+   fun:engine
+   fun:main
+}
+10,400 bytes in 1 blocks are possibly lost in loss record 110 of 124
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x488875B: __pmFindPDUBuf (pdubuf.c:115)
+by 0x4889896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x48A4510: __pmLogRead_ctx (logutil.c:1828)
+by 0x48A5876: cache_read (interp.c:229)
+by 0x48A9999: __pmLogFetch (interp.c:1364)
+by 0x487ED9F: pmFetch_ctx (fetch.c:164)
+by 0x135327: fetch_metrics (various.c:1120)
+by 0x11DDC8: engine (photoproc.c:153)
+by 0x115281: main (atop.c:480)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:fetch_metrics
+   fun:engine
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 4 errors from 4 contexts ...
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: PCP-ATOP -r .../archives/pcp-zeroconf 1 15
+24 bytes in 1 blocks are possibly lost in loss record 25 of 144
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x4BAAB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48887A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x48A42AE: __pmLogRead_ctx (logutil.c:1725)
+by 0x48A5876: cache_read (interp.c:229)
+by 0x48A9999: __pmLogFetch (interp.c:1364)
+by 0x487ED9F: pmFetch_ctx (fetch.c:164)
+by 0x135327: fetch_metrics (various.c:1120)
+by 0x11DDC8: engine (photoproc.c:153)
+by 0x115281: main (atop.c:480)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:fetch_metrics
+   fun:engine
+   fun:main
+}
+24 bytes in 1 blocks are possibly lost in loss record 26 of 144
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x4BAAB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48887A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x4889896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x48A4510: __pmLogRead_ctx (logutil.c:1828)
+by 0x48A5876: cache_read (interp.c:229)
+by 0x48A9999: __pmLogFetch (interp.c:1364)
+by 0x487ED9F: pmFetch_ctx (fetch.c:164)
+by 0x135327: fetch_metrics (various.c:1120)
+by 0x11DDC8: engine (photoproc.c:153)
+by 0x115281: main (atop.c:480)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:fetch_metrics
+   fun:engine
+   fun:main
+}
+24 bytes in 1 blocks are possibly lost in loss record 27 of 144
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x4BAAB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48887A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x48A4205: __pmLogRead_ctx (logutil.c:1725)
+by 0x48A5876: cache_read (interp.c:229)
+by 0x48A88BF: __pmLogFetch (interp.c:1096)
+by 0x487ED9F: pmFetch_ctx (fetch.c:164)
+by 0x135327: fetch_metrics (various.c:1120)
+by 0x123362: photosyst (photosyst.c:277)
+by 0x11DCEF: engine (atop.c:587)
+by 0x115281: main (atop.c:480)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:fetch_metrics
+   fun:photosyst
+   fun:engine
+   fun:main
+}
+1,034,120 bytes in 3 blocks are possibly lost in loss record 141 of 144
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x488875B: __pmFindPDUBuf (pdubuf.c:115)
+by 0x4889896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x48A4510: __pmLogRead_ctx (logutil.c:1828)
+by 0x48A5876: cache_read (interp.c:229)
+by 0x48A9999: __pmLogFetch (interp.c:1364)
+by 0x487ED9F: pmFetch_ctx (fetch.c:164)
+by 0x135327: fetch_metrics (various.c:1120)
+by 0x11DDC8: engine (photoproc.c:153)
+by 0x115281: main (atop.c:480)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:fetch_metrics
+   fun:engine
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 4 errors from 4 contexts ...
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: PCP-ATOP -r .../archives/pcp-hotatop.folio
+24 bytes in 1 blocks are possibly lost in loss record 20 of 122
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x4BAAB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48887A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x4889896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x48A4510: __pmLogRead_ctx (logutil.c:1828)
+by 0x48A5876: cache_read (interp.c:229)
+by 0x48A864B: __pmLogFetch (interp.c:1227)
+by 0x487ED9F: pmFetch_ctx (fetch.c:164)
+by 0x135327: fetch_metrics (various.c:1120)
+by 0x11DDC8: engine (photoproc.c:153)
+by 0x115281: main (atop.c:480)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:fetch_metrics
+   fun:engine
+   fun:main
+}
+24 bytes in 1 blocks are possibly lost in loss record 21 of 122
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x4BAAB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48887A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x4889896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x48A4510: __pmLogRead_ctx (logutil.c:1828)
+by 0x48A5876: cache_read (interp.c:229)
+by 0x48A9999: __pmLogFetch (interp.c:1364)
+by 0x487ED9F: pmFetch_ctx (fetch.c:164)
+by 0x135327: fetch_metrics (various.c:1120)
+by 0x11DDC8: engine (photoproc.c:153)
+by 0x115281: main (atop.c:480)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:fetch_metrics
+   fun:engine
+   fun:main
+}
+21,656 bytes in 1 blocks are possibly lost in loss record 110 of 122
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x488875B: __pmFindPDUBuf (pdubuf.c:115)
+by 0x4889896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x48A4510: __pmLogRead_ctx (logutil.c:1828)
+by 0x48A5876: cache_read (interp.c:229)
+by 0x48A9999: __pmLogFetch (interp.c:1364)
+by 0x487ED9F: pmFetch_ctx (fetch.c:164)
+by 0x135327: fetch_metrics (various.c:1120)
+by 0x11DDC8: engine (photoproc.c:153)
+by 0x115281: main (atop.c:480)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:fetch_metrics
+   fun:engine
+   fun:main
+}
+297,832 bytes in 1 blocks are possibly lost in loss record 117 of 122
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x488875B: __pmFindPDUBuf (pdubuf.c:115)
+by 0x4889896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x48A4510: __pmLogRead_ctx (logutil.c:1828)
+by 0x48A5876: cache_read (interp.c:229)
+by 0x48A864B: __pmLogFetch (interp.c:1227)
+by 0x487ED9F: pmFetch_ctx (fetch.c:164)
+by 0x135327: fetch_metrics (various.c:1120)
+by 0x11DDC8: engine (photoproc.c:153)
+by 0x115281: main (atop.c:480)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:fetch_metrics
+   fun:engine
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 4 errors from 4 contexts ...

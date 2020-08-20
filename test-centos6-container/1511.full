@@ -1,0 +1,25 @@
+Log for pmcd on 97d404ba7f88 started Thu Aug 20 18:39:47 2020
+
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7fd2ece41fd0]
+sample        29 45811   8   9   2 bin pipe cmd=/var/lib/pcp/pmdas/sample/pmdasample -d 29
+
+Host access list empty: host-based access control turned off
+User access list:
+00 01 Cur/MaxCons     uid user-name                       group-list
+== == =========== ======= =============================== ==========================================================
+    n     0     0     496 pcpqa                           496(pcpqa)
+ n  n     0     0       * *                              
+Group access list empty: group-based access control turned off
+
+
+pmcd: PID = 45807, PDU version = 2
+pmcd request port(s):
+  sts fd   port  family address
+  === ==== ===== ====== =======
+  ok     6       unix   /run/pcp/pmcd.socket
+  ok     0 44321 inet   INADDR_ANY
+  ok     3 44321 ipv6   INADDR_ANY
+[Thu Aug 20 18:39:47] pmcd(45807) Error: HandleClientInput: error sending Error PDU to client[0] IPC protocol failure

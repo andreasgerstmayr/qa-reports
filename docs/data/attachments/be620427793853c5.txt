@@ -1,0 +1,37 @@
+pmdabcc config:
+# Installed by PCP QA test 1172 on Thu Aug 20 19:14:31 UTC 2020
+[pmda]
+modules = syscount
+prefix = bcc.
+[syscount]
+module = syscount
+cluster = 15
+process = pmcd
+Log for pmdabcc on 4687b293bd5e started Thu Aug 20 19:14:33 2020
+
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Info: Enabled modules:
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Info: ['syscount']
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Info: Configuring modules:
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Info: syscount
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Info: Modules configured.
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Info: Initializing modules:
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Info: syscount
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Info: syscount: Tracing PID 1005576: /usr/libexec/pcp/bin/pmcd -T 3.
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Info: syscount: Initialized.
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Info: Modules initialized.
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Info: Registering metrics:
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Info: syscount
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Info: Metrics registered.
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Info: Registering helpers:
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Info: syscount
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Info: Helpers registered.
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Info: Compiling modules:
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Info: syscount
+modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1034-azure
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Error: syscount: Failed to compile BPF module <text>
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Error: syscount: Module NOT active!
+[Thu Aug 20 19:14:33] pmdabcc(1006826) Error: Failed to compile module syscount, aborting.
+
+Log finished Thu Aug 20 19:14:33 2020

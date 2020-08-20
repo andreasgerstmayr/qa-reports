@@ -1,0 +1,77 @@
+{
+  "uid" : "53f11e96aca36c94",
+  "name" : "QA 446",
+  "fullName" : "QA #446 on debian11-container",
+  "historyId" : "446@debian11-container",
+  "time" : {
+    "start" : 1597945641000,
+    "stop" : 1597945641000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 446\n\nchecks contents of trace stub library\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian11 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 446</p>\n<p>checks contents of trace stub library</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform debian11 reproduce\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "[failed, exit status 1] - output mismatch (see 446.out.bad)\n3c3,14\n< checking for actual/stub lib symbol differences ... none found.\n---\n> checking for actual/stub lib symbol differences ... files differ.\n> --- Symbols from /usr/lib/libpcp_trace.... ---\n> \n> --- Symbols from demos libpcp_trace.... ---\n> pmtraceabort\n> pmtracebegin\n> pmtracecounter\n> pmtraceend\n> pmtraceerrstr\n> pmtraceobs\n> pmtracepoint\n> pmtracestate\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 5aea1a73a825 -f sample.milliseconds\nPMDA probe: pminfo -h 5aea1a73a825 -f sampledso.milliseconds\nPMDA probe: pminfo -h 5aea1a73a825 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 446\n\nchecks contents of trace stub library\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian11 reproduce",
+    "status" : "broken",
+    "statusMessage" : "[failed, exit status 1] - output mismatch (see 446.out.bad)\n3c3,14\n< checking for actual/stub lib symbol differences ... none found.\n---\n> checking for actual/stub lib symbol differences ... files differ.\n> --- Symbols from /usr/lib/libpcp_trace.... ---\n> \n> --- Symbols from demos libpcp_trace.... ---\n> pmtraceabort\n> pmtracebegin\n> pmtracecounter\n> pmtraceend\n> pmtraceerrstr\n> pmtraceobs\n> pmtracepoint\n> pmtracestate\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 5aea1a73a825 -f sample.milliseconds\nPMDA probe: pminfo -h 5aea1a73a825 -f sampledso.milliseconds\nPMDA probe: pminfo -h 5aea1a73a825 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "448e6701ec9f906c",
+      "name" : "446.out.bad",
+      "source" : "448e6701ec9f906c.txt",
+      "type" : "text/plain",
+      "size" : 302
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian11-container"
+  }, {
+    "name" : "host",
+    "value" : "debian11-container"
+  }, {
+    "name" : "epic",
+    "value" : "trace"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/446",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/446.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "53f11e96aca36c94.json",
+  "parameterValues" : [ ]
+}

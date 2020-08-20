@@ -1,0 +1,55 @@
+{
+  "uid" : "f5bb4e394e9fb593",
+  "name" : "QA 519",
+  "fullName" : "QA #519 on fedora32-container",
+  "historyId" : "519@fedora32-container",
+  "time" : {
+    "start" : 1597945686000,
+    "stop" : 1597945686000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 519\n\nexercise new action args (no limit of 2) for pmie ... caused\n\npmie to dump core initially\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n\n\nSolaris Note (OpenIndiana specifically)\n\n\n\nNeed to edit /etc/syslog.conf and add these lines\n\nfor PCP QA\n\ndaemon.info                     /var/log/syslog\n\n\n\nthen kill -HUP <pid-for-syslogd>\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 519</p>\n<p>exercise new action args (no limit of 2) for pmie ... caused</p>\n<p>pmie to dump core initially</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n<p>Solaris Note (OpenIndiana specifically)</p>\n<p>Need to edit /etc/syslog.conf and add these lines</p>\n<p>for PCP QA</p>\n<p>daemon.info                     /var/log/syslog</p>\n<p>then kill -HUP <pid-for-syslogd></p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Cannot find first remote host running pmcd",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora32-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora32-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmie"
+  }, {
+    "name" : "epic",
+    "value" : "remote"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/519",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/519.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f5bb4e394e9fb593.json",
+  "parameterValues" : [ ]
+}

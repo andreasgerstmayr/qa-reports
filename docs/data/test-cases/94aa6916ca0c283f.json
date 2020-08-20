@@ -1,0 +1,89 @@
+{
+  "uid" : "94aa6916ca0c283f",
+  "name" : "QA 393",
+  "fullName" : "QA #393 on fedora_rawhide-container",
+  "historyId" : "393@fedora_rawhide-container",
+  "time" : {
+    "start" : 1597945352000,
+    "stop" : 1597945361000,
+    "duration" : 9000
+  },
+  "description" : "PCP QA Test No. 393\n\nInterp mode (similar to qa/093, but with valgrind) (see also 331)\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform fedora_rawhide reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 393</p>\n<p>Interp mode (similar to qa/093, but with valgrind) (see also 331)</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform fedora_rawhide reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 393.out.bad)\n7a8,53\n> 24 bytes in 1 blocks are possibly lost in loss record 29 of 78\n> at 0x4839809: malloc (vg_replace_malloc.c:307)\n> by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)\n> by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)\n> by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)\n> by 0x488C510: __pmLogRead_ctx (logutil.c:1828)\n> by 0x488D876: cache_read (interp.c:229)\n> by 0x489064B: __pmLogFetch (interp.c:1227)\n> by 0x4866D9F: pmFetch_ctx (fetch.c:164)\n> by 0x1094CB: main (interp2.c:188)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:tsearch\n>    fun:__pmFindPDUBuf\n>    fun:__pmDecodeResult_ctx\n>    fun:__pmLogRead_ctx\n>    fun:cache_read\n>    fun:__pmLogFetch\n>    fun:pmFetch_ctx\n>    fun:main\n> }\n> 872 bytes in 1 blocks are possibly lost in loss record 74 of 78\n> at 0x4839809: malloc (vg_replace_malloc.c:307)\n> by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)\n> by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)\n> by 0x488C510: __pmLogRead_ctx (logutil.c:1828)\n> by 0x488D876: cache_read (interp.c:229)\n> by 0x489064B: __pmLogFetch (interp.c:1227)\n> by 0x4866D9F: pmFetch_ctx (fetch.c:164)\n> by 0x1094CB: main (interp2.c:188)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:__pmFindPDUBuf\n>    fun:__pmDecodeResult_ctx\n>    fun:__pmLogRead_ctx\n>    fun:cache_read\n>    fun:__pmLogFetch\n>    fun:pmFetch_ctx\n>    fun:main\n> }\n11c57\n< ERROR SUMMARY: 0 errors from 0 contexts ...\n---\n> ERROR SUMMARY: 2 errors from 2 contexts ...\n17a64,109\n> 24 bytes in 1 blocks are possibly lost in loss record 27 of 77\n> at 0x4839809: malloc (vg_replace_malloc.c:307)\n> by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)\n> by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)\n> by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)\n> by 0x488C510: __pmLogRead_ctx (logutil.c:1828)\n> by 0x488D876: cache_read (interp.c:229)\n> by 0x489064B: __pmLogFetch (interp.c:1227)\n> by 0x4866D9F: pmFetch_ctx (fetch.c:164)\n> by 0x1094CB: main (interp2.c:188)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:tsearch\n>    fun:__pmFindPDUBuf\n>    fun:__pmDecodeResult_ctx\n>    fun:__pmLogRead_ctx\n>    fun:cache_read\n>    fun:__pmLogFetch\n>    fun:pmFetch_ctx\n>    fun:main\n> }\n> 872 bytes in 1 blocks are possibly lost in loss record 73 of 77\n> at 0x4839809: malloc (vg_replace_malloc.c:307)\n> by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)\n> by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)\n> by 0x488C510: __pmLogRead_ctx (logutil.c:1828)\n> by 0x488D876: cache_read (interp.c:229)\n> by 0x489064B: __pmLogFetch (interp.c:1227)\n> by 0x4866D9F: pmFetch_ctx (fetch.c:164)\n> by 0x1094CB: main (interp2.c:188)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:__pmFindPDUBuf\n>    fun:__pmDecodeResult_ctx\n>    fun:__pmLogRead_ctx\n>    fun:cache_read\n>    fun:__pmLogFetch\n>    fun:pmFetch_ctx\n>    fun:main\n> }\n21c113\n< ERROR SUMMARY: 0 errors from 0 contexts ...\n---\n> ERROR SUMMARY: 2 errors from 2 contexts ...\n27a120,167\n> 24 bytes in 1 blocks are possibly lost in loss record 26 of 75\n> at 0x4839809: malloc (vg_replace_malloc.c:307)\n> by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)\n> by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)\n> by 0x488C2AE: __pmLogRead_ctx (logutil.c:1725)\n> by 0x488D876: cache_read (interp.c:229)\n> by 0x488F38E: do_roll (interp.c:820)\n> by 0x4890211: __pmLogFetch (interp.c:1173)\n> by 0x4866D9F: pmFetch_ctx (fetch.c:164)\n> by 0x10947A: main (interp2.c:178)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:tsearch\n>    fun:__pmFindPDUBuf\n>    fun:__pmLogRead_ctx\n>    fun:cache_read\n>    fun:do_roll\n>    fun:__pmLogFetch\n>    fun:pmFetch_ctx\n>    fun:main\n> }\n> 248 bytes in 1 blocks are possibly lost in loss record 65 of 75\n> at 0x4839809: malloc (vg_replace_malloc.c:307)\n> by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)\n> by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)\n> by 0x488C510: __pmLogRead_ctx (logutil.c:1828)\n> by 0x488D876: cache_read (interp.c:229)\n> by 0x488F38E: do_roll (interp.c:820)\n> by 0x4890211: __pmLogFetch (interp.c:1173)\n> by 0x4866D9F: pmFetch_ctx (fetch.c:164)\n> by 0x10947A: main (interp2.c:178)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:__pmFindPDUBuf\n>    fun:__pmDecodeResult_ctx\n>    fun:__pmLogRead_ctx\n>    fun:cache_read\n>    fun:do_roll\n>    fun:__pmLogFetch\n>    fun:pmFetch_ctx\n>    fun:main\n> }\n31c171\n< ERROR SUMMARY: 0 errors from 0 contexts ...\n---\n> ERROR SUMMARY: 2 errors from 2 contexts ...\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h d6bbf0991c84 -f sample.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f sampledso.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 393\n\nInterp mode (similar to qa/093, but with valgrind) (see also 331)\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform fedora_rawhide reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 393.out.bad)\n7a8,53\n> 24 bytes in 1 blocks are possibly lost in loss record 29 of 78\n> at 0x4839809: malloc (vg_replace_malloc.c:307)\n> by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)\n> by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)\n> by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)\n> by 0x488C510: __pmLogRead_ctx (logutil.c:1828)\n> by 0x488D876: cache_read (interp.c:229)\n> by 0x489064B: __pmLogFetch (interp.c:1227)\n> by 0x4866D9F: pmFetch_ctx (fetch.c:164)\n> by 0x1094CB: main (interp2.c:188)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:tsearch\n>    fun:__pmFindPDUBuf\n>    fun:__pmDecodeResult_ctx\n>    fun:__pmLogRead_ctx\n>    fun:cache_read\n>    fun:__pmLogFetch\n>    fun:pmFetch_ctx\n>    fun:main\n> }\n> 872 bytes in 1 blocks are possibly lost in loss record 74 of 78\n> at 0x4839809: malloc (vg_replace_malloc.c:307)\n> by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)\n> by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)\n> by 0x488C510: __pmLogRead_ctx (logutil.c:1828)\n> by 0x488D876: cache_read (interp.c:229)\n> by 0x489064B: __pmLogFetch (interp.c:1227)\n> by 0x4866D9F: pmFetch_ctx (fetch.c:164)\n> by 0x1094CB: main (interp2.c:188)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:__pmFindPDUBuf\n>    fun:__pmDecodeResult_ctx\n>    fun:__pmLogRead_ctx\n>    fun:cache_read\n>    fun:__pmLogFetch\n>    fun:pmFetch_ctx\n>    fun:main\n> }\n11c57\n< ERROR SUMMARY: 0 errors from 0 contexts ...\n---\n> ERROR SUMMARY: 2 errors from 2 contexts ...\n17a64,109\n> 24 bytes in 1 blocks are possibly lost in loss record 27 of 77\n> at 0x4839809: malloc (vg_replace_malloc.c:307)\n> by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)\n> by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)\n> by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)\n> by 0x488C510: __pmLogRead_ctx (logutil.c:1828)\n> by 0x488D876: cache_read (interp.c:229)\n> by 0x489064B: __pmLogFetch (interp.c:1227)\n> by 0x4866D9F: pmFetch_ctx (fetch.c:164)\n> by 0x1094CB: main (interp2.c:188)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:tsearch\n>    fun:__pmFindPDUBuf\n>    fun:__pmDecodeResult_ctx\n>    fun:__pmLogRead_ctx\n>    fun:cache_read\n>    fun:__pmLogFetch\n>    fun:pmFetch_ctx\n>    fun:main\n> }\n> 872 bytes in 1 blocks are possibly lost in loss record 73 of 77\n> at 0x4839809: malloc (vg_replace_malloc.c:307)\n> by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)\n> by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)\n> by 0x488C510: __pmLogRead_ctx (logutil.c:1828)\n> by 0x488D876: cache_read (interp.c:229)\n> by 0x489064B: __pmLogFetch (interp.c:1227)\n> by 0x4866D9F: pmFetch_ctx (fetch.c:164)\n> by 0x1094CB: main (interp2.c:188)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:__pmFindPDUBuf\n>    fun:__pmDecodeResult_ctx\n>    fun:__pmLogRead_ctx\n>    fun:cache_read\n>    fun:__pmLogFetch\n>    fun:pmFetch_ctx\n>    fun:main\n> }\n21c113\n< ERROR SUMMARY: 0 errors from 0 contexts ...\n---\n> ERROR SUMMARY: 2 errors from 2 contexts ...\n27a120,167\n> 24 bytes in 1 blocks are possibly lost in loss record 26 of 75\n> at 0x4839809: malloc (vg_replace_malloc.c:307)\n> by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)\n> by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)\n> by 0x488C2AE: __pmLogRead_ctx (logutil.c:1725)\n> by 0x488D876: cache_read (interp.c:229)\n> by 0x488F38E: do_roll (interp.c:820)\n> by 0x4890211: __pmLogFetch (interp.c:1173)\n> by 0x4866D9F: pmFetch_ctx (fetch.c:164)\n> by 0x10947A: main (interp2.c:178)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:tsearch\n>    fun:__pmFindPDUBuf\n>    fun:__pmLogRead_ctx\n>    fun:cache_read\n>    fun:do_roll\n>    fun:__pmLogFetch\n>    fun:pmFetch_ctx\n>    fun:main\n> }\n> 248 bytes in 1 blocks are possibly lost in loss record 65 of 75\n> at 0x4839809: malloc (vg_replace_malloc.c:307)\n> by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)\n> by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)\n> by 0x488C510: __pmLogRead_ctx (logutil.c:1828)\n> by 0x488D876: cache_read (interp.c:229)\n> by 0x488F38E: do_roll (interp.c:820)\n> by 0x4890211: __pmLogFetch (interp.c:1173)\n> by 0x4866D9F: pmFetch_ctx (fetch.c:164)\n> by 0x10947A: main (interp2.c:178)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: possible\n>    fun:malloc\n>    fun:__pmFindPDUBuf\n>    fun:__pmDecodeResult_ctx\n>    fun:__pmLogRead_ctx\n>    fun:cache_read\n>    fun:do_roll\n>    fun:__pmLogFetch\n>    fun:pmFetch_ctx\n>    fun:main\n> }\n31c171\n< ERROR SUMMARY: 0 errors from 0 contexts ...\n---\n> ERROR SUMMARY: 2 errors from 2 contexts ...\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h d6bbf0991c84 -f sample.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f sampledso.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "febfd9f62fb471e7",
+      "name" : "393.out.bad",
+      "source" : "febfd9f62fb471e7.txt",
+      "type" : "text/plain",
+      "size" : 5012
+    }, {
+      "uid" : "77266663a000759e",
+      "name" : "393.full",
+      "source" : "77266663a000759e.txt",
+      "type" : "text/plain",
+      "size" : 9611
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "epic",
+    "value" : "archive"
+  }, {
+    "name" : "epic",
+    "value" : "mem_leak"
+  }, {
+    "name" : "epic",
+    "value" : "valgrind"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/393",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/393.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "94aa6916ca0c283f.json",
+  "parameterValues" : [ ]
+}

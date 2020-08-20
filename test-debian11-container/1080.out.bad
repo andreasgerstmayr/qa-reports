@@ -1,0 +1,363 @@
+QA output created by 1080
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: PCP-ATOP 2 4
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: PCP-ATOP -r .../archives/pcp-atop.folio
+24 bytes in 1 blocks are possibly lost in loss record 20 of 121
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x4B9F0DF: tsearch (tsearch.c:338)
+by 0x4887087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x4883403: ??? (in /usr/lib/libpcp.so.3)
+by 0x489C346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x489FB43: ??? (in /usr/lib/libpcp.so.3)
+by 0x48A10AB: ??? (in /usr/lib/libpcp.so.3)
+by 0x48A1E22: ??? (in /usr/lib/libpcp.so.3)
+by 0x489E4FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x487A3AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x1336AF: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x11FCCE: ??? (in /usr/lib/pcp/bin/pcp-atop)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+}
+10,400 bytes in 1 blocks are possibly lost in loss record 107 of 121
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x488703B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x4883403: ??? (in /usr/lib/libpcp.so.3)
+by 0x489C346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x489FB43: ??? (in /usr/lib/libpcp.so.3)
+by 0x48A10AB: ??? (in /usr/lib/libpcp.so.3)
+by 0x48A1E22: ??? (in /usr/lib/libpcp.so.3)
+by 0x489E4FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x487A3AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x1336AF: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x11FCCE: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x115222: ??? (in /usr/lib/pcp/bin/pcp-atop)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 2 errors from 2 contexts ...
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: PCP-ATOP -r .../archives/pcp-zeroconf 1 15
+24 bytes in 1 blocks are possibly lost in loss record 29 of 145
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x4B9F0DF: tsearch (tsearch.c:338)
+by 0x4887087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x4883403: ??? (in /usr/lib/libpcp.so.3)
+by 0x489C346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x489FB43: ??? (in /usr/lib/libpcp.so.3)
+by 0x48A2E56: ??? (in /usr/lib/libpcp.so.3)
+by 0x489E4FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x487A3AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x1336AF: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x11FCCE: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x115222: ??? (in /usr/lib/pcp/bin/pcp-atop)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+}
+48 bytes in 2 blocks are possibly lost in loss record 39 of 145
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x4B9F0DF: tsearch (tsearch.c:338)
+by 0x4887087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x4883403: ??? (in /usr/lib/libpcp.so.3)
+by 0x489C346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x489FB43: ??? (in /usr/lib/libpcp.so.3)
+by 0x48A2B5B: ??? (in /usr/lib/libpcp.so.3)
+by 0x489E4FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x487A3AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x1336AF: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x12089B: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x1151D7: ??? (in /usr/lib/pcp/bin/pcp-atop)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+}
+48 bytes in 2 blocks are possibly lost in loss record 40 of 145
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x4B9F0DF: tsearch (tsearch.c:338)
+by 0x4887087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x489C114: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x489FB43: ??? (in /usr/lib/libpcp.so.3)
+by 0x48A2E56: ??? (in /usr/lib/libpcp.so.3)
+by 0x489E4FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x487A3AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x1336AF: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x11FCCE: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x115222: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x114A30: ??? (in /usr/lib/pcp/bin/pcp-atop)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+}
+4,796 bytes in 1 blocks are possibly lost in loss record 112 of 145
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x488703B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x4883403: ??? (in /usr/lib/libpcp.so.3)
+by 0x489C346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x489FB43: ??? (in /usr/lib/libpcp.so.3)
+by 0x48A2B5B: ??? (in /usr/lib/libpcp.so.3)
+by 0x489E4FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x487A3AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x1336AF: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x12089B: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x1151D7: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x114A30: ??? (in /usr/lib/pcp/bin/pcp-atop)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+}
+1,516,316 bytes in 4 blocks are possibly lost in loss record 143 of 145
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x488703B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x4883403: ??? (in /usr/lib/libpcp.so.3)
+by 0x489C346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x489FB43: ??? (in /usr/lib/libpcp.so.3)
+by 0x48A2E56: ??? (in /usr/lib/libpcp.so.3)
+by 0x489E4FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x487A3AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x1336AF: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x11FCCE: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x115222: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x114A30: ??? (in /usr/lib/pcp/bin/pcp-atop)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 5 errors from 5 contexts ...
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: PCP-ATOP -r .../archives/pcp-hotatop.folio
+24 bytes in 1 blocks are possibly lost in loss record 20 of 122
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x4B9F0DF: tsearch (tsearch.c:338)
+by 0x4887087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x4883403: ??? (in /usr/lib/libpcp.so.3)
+by 0x489C346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x489FB43: ??? (in /usr/lib/libpcp.so.3)
+by 0x48A2B5B: ??? (in /usr/lib/libpcp.so.3)
+by 0x489E4FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x487A3AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x1336AF: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x11FCCE: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x115222: ??? (in /usr/lib/pcp/bin/pcp-atop)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+}
+24 bytes in 1 blocks are possibly lost in loss record 21 of 122
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x4B9F0DF: tsearch (tsearch.c:338)
+by 0x4887087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x4883403: ??? (in /usr/lib/libpcp.so.3)
+by 0x489C346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x489FB43: ??? (in /usr/lib/libpcp.so.3)
+by 0x48A2E56: ??? (in /usr/lib/libpcp.so.3)
+by 0x489E4FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x487A3AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x1336AF: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x11FCCE: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x115222: ??? (in /usr/lib/pcp/bin/pcp-atop)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+}
+21,656 bytes in 1 blocks are possibly lost in loss record 110 of 122
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x488703B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x4883403: ??? (in /usr/lib/libpcp.so.3)
+by 0x489C346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x489FB43: ??? (in /usr/lib/libpcp.so.3)
+by 0x48A2E56: ??? (in /usr/lib/libpcp.so.3)
+by 0x489E4FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x487A3AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x1336AF: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x11FCCE: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x115222: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x114A30: ??? (in /usr/lib/pcp/bin/pcp-atop)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+}
+297,832 bytes in 1 blocks are possibly lost in loss record 117 of 122
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x488703B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x4883403: ??? (in /usr/lib/libpcp.so.3)
+by 0x489C346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x489FB43: ??? (in /usr/lib/libpcp.so.3)
+by 0x48A2B5B: ??? (in /usr/lib/libpcp.so.3)
+by 0x489E4FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x487A3AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x1336AF: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x11FCCE: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x115222: ??? (in /usr/lib/pcp/bin/pcp-atop)
+by 0x114A30: ??? (in /usr/lib/pcp/bin/pcp-atop)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+   obj:/usr/lib/pcp/bin/pcp-atop
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 4 errors from 4 contexts ...

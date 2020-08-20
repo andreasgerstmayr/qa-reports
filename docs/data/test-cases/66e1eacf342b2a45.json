@@ -1,0 +1,55 @@
+{
+  "uid" : "66e1eacf342b2a45",
+  "name" : "QA 895",
+  "fullName" : "QA #895 on ubuntu2004-direct",
+  "historyId" : "895@ubuntu2004-direct",
+  "time" : {
+    "start" : 1597948537000,
+    "stop" : 1597948543000,
+    "duration" : 6000
+  },
+  "description" : "PCP QA Test No. 895\n\npmlogger SIGINT badness\n\n\n\nhttps://github.com/performancecopilot/pcp/issues/116\n\n\n\nCopyright (c) 2016 Ken McDonell.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 895</p>\n<p>pmlogger SIGINT badness</p>\n<p>https://github.com/performancecopilot/pcp/issues/116</p>\n<p>Copyright (c) 2016 Ken McDonell.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu2004-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu2004-direct"
+  }, {
+    "name" : "epic",
+    "value" : "pmlogger"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/895",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/895.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "66e1eacf342b2a45.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,2573 @@
+start PMCD_RECONNECT_TIMEOUT=
+start Thu Aug 20 17:01:54 UTC 2020
+begin stop pmcd Thu Aug 20 17:01:55 UTC 2020
+end stop pmcd Thu Aug 20 17:01:55 UTC 2020
+begin start pmcd Thu Aug 20 17:01:56 UTC 2020
+end start pmcd Thu Aug 20 17:01:56 UTC 2020
+pmWhichContext() -> -12376, cur=-1
+__pmSetSocketIPC: fd=3
+IPC table fd(PDU version):
+__pmSetSocketIPC: fd=4
+IPC table fd(PDU version):
+__pmDecodeXtendError: got error PDU (code=0, datum=386007298, version=2)
+__pmSetFeaturesIPC: fd=3 version=2 features=535
+IPC table fd(PDU version): 3(2,1)
+__pmSendCreds: #0 = 1020000
+__pmConnectPMCD(localhost): pmcd connection port=44321 fd=3 PDU version=2
+IPC table fd(PDU version): 3(2,1)
+pmNewContext(1, localhost) -> 0
+Dump Contexts: current -> contexts[0] handle 0
+contexts[0] handle 0: host localhost: pmcd=CONNECTED profile=NOT_SENT fd=3 origin=0.000000 delta=0
+Dump Instance Profile state=INCLUDE, 0 profiles
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmFetch failed: IPC protocol failure
+__pmSetSocketIPC: fd=3
+IPC table fd(PDU version):
+__pmSetSocketIPC: fd=4
+IPC table fd(PDU version):
+__pmConnectPMCD(localhost): pmcd connection port=44321 failed: Connection refused
+pmReconnectContext(0), failed (wait 5 secs before next attempt)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+__pmSetSocketIPC: fd=3
+IPC table fd(PDU version):
+__pmSetSocketIPC: fd=4
+IPC table fd(PDU version):
+__pmDecodeXtendError: got error PDU (code=0, datum=386007298, version=2)
+__pmSetFeaturesIPC: fd=3 version=2 features=535
+IPC table fd(PDU version): 3(2,1)
+__pmSendCreds: #0 = 1020000
+__pmConnectPMCD(localhost): pmcd connection port=44321 fd=3 PDU version=2
+IPC table fd(PDU version): 3(2,1)
+pmReconnectContext(0), done
+pmReconnectContext(0) -> 0
+pmReconnectContext: success
+delay: 5 secs
+start PMCD_RECONNECT_TIMEOUT=1,1,2,2
+start Thu Aug 20 17:02:00 UTC 2020
+begin stop pmcd Thu Aug 20 17:02:01 UTC 2020
+end stop pmcd Thu Aug 20 17:02:01 UTC 2020
+begin start pmcd Thu Aug 20 17:02:02 UTC 2020
+end start pmcd Thu Aug 20 17:02:02 UTC 2020
+pmWhichContext() -> -12376, cur=-1
+__pmSetSocketIPC: fd=3
+IPC table fd(PDU version):
+__pmSetSocketIPC: fd=4
+IPC table fd(PDU version):
+__pmDecodeXtendError: got error PDU (code=0, datum=386007298, version=2)
+__pmSetFeaturesIPC: fd=3 version=2 features=535
+IPC table fd(PDU version): 3(2,1)
+__pmSendCreds: #0 = 1020000
+__pmConnectPMCD(localhost): pmcd connection port=44321 fd=3 PDU version=2
+IPC table fd(PDU version): 3(2,1)
+pmNewContext(1, localhost) -> 0
+Dump Contexts: current -> contexts[0] handle 0
+contexts[0] handle 0: host localhost: pmcd=CONNECTED profile=NOT_SENT fd=3 origin=0.000000 delta=0
+Dump Instance Profile state=INCLUDE, 0 profiles
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmFetch failed: IPC protocol failure
+__pmSetSocketIPC: fd=3
+IPC table fd(PDU version):
+__pmSetSocketIPC: fd=4
+IPC table fd(PDU version):
+__pmConnectPMCD(localhost): pmcd connection port=44321 failed: Connection refused
+pmReconnectContext(0), failed (wait 1 secs before next attempt)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+__pmSetSocketIPC: fd=3
+IPC table fd(PDU version):
+__pmSetSocketIPC: fd=4
+IPC table fd(PDU version):
+__pmConnectPMCD(localhost): pmcd connection port=44321 failed: Connection refused
+pmReconnectContext(0), failed (wait 1 secs before next attempt)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+__pmSetSocketIPC: fd=3
+IPC table fd(PDU version):
+__pmSetSocketIPC: fd=4
+IPC table fd(PDU version):
+__pmDecodeXtendError: got error PDU (code=0, datum=386007298, version=2)
+__pmSetFeaturesIPC: fd=3 version=2 features=535
+IPC table fd(PDU version): 3(2,1)
+__pmSendCreds: #0 = 1020000
+__pmConnectPMCD(localhost): pmcd connection port=44321 fd=3 PDU version=2
+IPC table fd(PDU version): 3(2,1)
+pmReconnectContext(0), done
+pmReconnectContext(0) -> 0
+pmReconnectContext: success
+delay: 2 secs
+start PMCD_RECONNECT_TIMEOUT=2
+start Thu Aug 20 17:02:03 UTC 2020
+begin stop pmcd Thu Aug 20 17:02:04 UTC 2020
+end stop pmcd Thu Aug 20 17:02:04 UTC 2020
+begin start pmcd Thu Aug 20 17:02:05 UTC 2020
+end start pmcd Thu Aug 20 17:02:05 UTC 2020
+pmWhichContext() -> -12376, cur=-1
+__pmSetSocketIPC: fd=3
+IPC table fd(PDU version):
+__pmSetSocketIPC: fd=4
+IPC table fd(PDU version):
+__pmDecodeXtendError: got error PDU (code=0, datum=386007298, version=2)
+__pmSetFeaturesIPC: fd=3 version=2 features=535
+IPC table fd(PDU version): 3(2,1)
+__pmSendCreds: #0 = 1020000
+__pmConnectPMCD(localhost): pmcd connection port=44321 fd=3 PDU version=2
+IPC table fd(PDU version): 3(2,1)
+pmNewContext(1, localhost) -> 0
+Dump Contexts: current -> contexts[0] handle 0
+contexts[0] handle 0: host localhost: pmcd=CONNECTED profile=NOT_SENT fd=3 origin=0.000000 delta=0
+Dump Instance Profile state=INCLUDE, 0 profiles
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmFetch failed: IPC protocol failure
+__pmSetSocketIPC: fd=3
+IPC table fd(PDU version):
+__pmSetSocketIPC: fd=4
+IPC table fd(PDU version):
+__pmConnectPMCD(localhost): pmcd connection port=44321 failed: Connection refused
+pmReconnectContext(0), failed (wait 2 secs before next attempt)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+__pmSetSocketIPC: fd=3
+IPC table fd(PDU version):
+__pmSetSocketIPC: fd=4
+IPC table fd(PDU version):
+__pmDecodeXtendError: got error PDU (code=0, datum=386007298, version=2)
+__pmSetFeaturesIPC: fd=3 version=2 features=535
+IPC table fd(PDU version): 3(2,1)
+__pmSendCreds: #0 = 1020000
+__pmConnectPMCD(localhost): pmcd connection port=44321 fd=3 PDU version=2
+IPC table fd(PDU version): 3(2,1)
+pmReconnectContext(0), done
+pmReconnectContext(0) -> 0
+pmReconnectContext: success
+delay: 2 secs
+start PMCD_RECONNECT_TIMEOUT=1-2
+start Thu Aug 20 17:02:06 UTC 2020
+begin stop pmcd Thu Aug 20 17:02:07 UTC 2020
+end stop pmcd Thu Aug 20 17:02:07 UTC 2020
+begin start pmcd Thu Aug 20 17:02:08 UTC 2020
+end start pmcd Thu Aug 20 17:02:08 UTC 2020
+pmWhichContext() -> -12376, cur=-1
+__pmSetSocketIPC: fd=3
+IPC table fd(PDU version):
+__pmSetSocketIPC: fd=4
+IPC table fd(PDU version):
+__pmDecodeXtendError: got error PDU (code=0, datum=386007298, version=2)
+__pmSetFeaturesIPC: fd=3 version=2 features=535
+IPC table fd(PDU version): 3(2,1)
+__pmSendCreds: #0 = 1020000
+__pmConnectPMCD(localhost): pmcd connection port=44321 fd=3 PDU version=2
+IPC table fd(PDU version): 3(2,1)
+pmNewContext(1, localhost) -> 0
+Dump Contexts: current -> contexts[0] handle 0
+contexts[0] handle 0: host localhost: pmcd=CONNECTED profile=NOT_SENT fd=3 origin=0.000000 delta=0
+Dump Instance Profile state=INCLUDE, 0 profiles
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmFetch failed: IPC protocol failure
+__pmSetSocketIPC: fd=3
+IPC table fd(PDU version):
+__pmSetSocketIPC: fd=4
+IPC table fd(PDU version):
+__pmConnectPMCD(localhost): pmcd connection port=44321 failed: Connection refused
+[Thu Aug 20 17:02:07] recon(33827) Warning: pmReconnectContext: ignored bad PMCD_RECONNECT_TIMEOUT = '1-2'
+pmReconnectContext(0), failed (wait 5 secs before next attempt)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+__pmSetSocketIPC: fd=3
+IPC table fd(PDU version):
+__pmSetSocketIPC: fd=4
+IPC table fd(PDU version):
+__pmDecodeXtendError: got error PDU (code=0, datum=386007298, version=2)
+__pmSetFeaturesIPC: fd=3 version=2 features=535
+IPC table fd(PDU version): 3(2,1)
+__pmSendCreds: #0 = 1020000
+__pmConnectPMCD(localhost): pmcd connection port=44321 fd=3 PDU version=2
+IPC table fd(PDU version): 3(2,1)
+pmReconnectContext(0), done
+pmReconnectContext(0) -> 0
+pmReconnectContext: success
+delay: 5 secs
+start PMCD_RECONNECT_TIMEOUT=1,2,foo
+start Thu Aug 20 17:02:12 UTC 2020
+begin stop pmcd Thu Aug 20 17:02:13 UTC 2020
+end stop pmcd Thu Aug 20 17:02:13 UTC 2020
+begin start pmcd Thu Aug 20 17:02:14 UTC 2020
+end start pmcd Thu Aug 20 17:02:14 UTC 2020
+pmWhichContext() -> -12376, cur=-1
+__pmSetSocketIPC: fd=3
+IPC table fd(PDU version):
+__pmSetSocketIPC: fd=4
+IPC table fd(PDU version):
+__pmDecodeXtendError: got error PDU (code=0, datum=386007298, version=2)
+__pmSetFeaturesIPC: fd=3 version=2 features=535
+IPC table fd(PDU version): 3(2,1)
+__pmSendCreds: #0 = 1020000
+__pmConnectPMCD(localhost): pmcd connection port=44321 fd=3 PDU version=2
+IPC table fd(PDU version): 3(2,1)
+pmNewContext(1, localhost) -> 0
+Dump Contexts: current -> contexts[0] handle 0
+contexts[0] handle 0: host localhost: pmcd=CONNECTED profile=NOT_SENT fd=3 origin=0.000000 delta=0
+Dump Instance Profile state=INCLUDE, 0 profiles
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmWhichContext() -> 0, cur=0
+pmFetch failed: IPC protocol failure
+__pmSetSocketIPC: fd=3
+IPC table fd(PDU version):
+__pmSetSocketIPC: fd=4
+IPC table fd(PDU version):
+__pmConnectPMCD(localhost): pmcd connection port=44321 failed: Connection refused
+[Thu Aug 20 17:02:13] recon(34147) Warning: pmReconnectContext: ignored bad PMCD_RECONNECT_TIMEOUT = '1,2,foo'
+pmReconnectContext(0), failed (wait 5 secs before next attempt)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 5 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 4 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 3 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 2 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+pmReconnectContext(0) -> -110, too soon (need wait another 1 secs)
+__pmSetSocketIPC: fd=3
+IPC table fd(PDU version):
+__pmSetSocketIPC: fd=4
+IPC table fd(PDU version):
+__pmDecodeXtendError: got error PDU (code=0, datum=386007298, version=2)
+__pmSetFeaturesIPC: fd=3 version=2 features=535
+IPC table fd(PDU version): 3(2,1)
+__pmSendCreds: #0 = 1020000
+__pmConnectPMCD(localhost): pmcd connection port=44321 fd=3 PDU version=2
+IPC table fd(PDU version): 3(2,1)
+pmReconnectContext(0), done
+pmReconnectContext(0) -> 0
+pmReconnectContext: success
+delay: 5 secs

@@ -1,0 +1,60 @@
+[Thu Aug 20 18:42:11] pmie(31651) Info: Cannot connect to pmcd no.such.host.pcp.io
+pmie: warning - pmcd via no.such.host.pcp.io is unreachable
+sleepTight: small negative delay (-0.000003). sched=1597948931.709763, cur=1597948931.709766
+This sleepTight() entry: Thu Aug 20 18:42:11.709765 2020
+Harvest children done: Thu Aug 20 18:42:11.709765 2020
+Want sleepTight until: Thu Aug 20 18:42:11.709763 2020
+This Task dump @ 0x5572d6270870
+  nth=0 delta=12.000 tick=0 next=(nil) prev=(nil)
+  eval time: Thu Aug 20 18:42:11.709763 2020
+  retry delta: 5.000 metric/instances missing
+  host= via=no.such.host.pcp.io (up)
+  rules:
+    expr_1
+Evaluating task:
+Task dump @ 0x5572d6270870
+  nth=0 delta=12.000 tick=0 next=(nil) prev=(nil)
+  eval time: Thu Aug 20 18:42:11.709763 2020
+  retry delta: 5.000 metric/instances missing
+  host= via=no.such.host.pcp.io (up)
+  rules:
+    expr_1
+cndEq_n_1(0x5572d6272eb0) ...
+Expr dump @ 0x5572d6272eb0
+  op=30 (==) arg1=0x5572d6272db0 arg2=0x5572d6272e30 parent=0x5572d62707b0
+  eval=cndEq_n_1 metrics=0x5572d6270a80 ring=0x5572d6270cd0
+  valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+Evaluating task:
+Task dump @ 0x5572d6270870
+  nth=0 delta=12.000 tick=0 next=(nil) prev=(nil)
+  eval time: Thu Aug 20 18:42:16.709763 2020
+  retry delta: 10.000 metric/instances missing
+  host= via=no.such.host.pcp.io (up)
+  rules:
+    expr_1
+cndEq_n_1(0x5572d6272eb0) ...
+Expr dump @ 0x5572d6272eb0
+  op=30 (==) arg1=0x5572d6272db0 arg2=0x5572d6272e30 parent=0x5572d62707b0
+  eval=cndEq_n_1 metrics=0x5572d6270a80 ring=0x5572d6270cd0
+  valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+sleepTight: negative delay (-1.022561). sched=1597948946.709763, cur=1597948947.732324
+Last sleepTight until: Thu Aug 20 18:42:16.709763 2020
+Last Task dump @ 0x5572d6270870
+  nth=0 delta=12.000 tick=0 next=(nil) prev=(nil)
+  eval time: Thu Aug 20 18:42:26.709763 2020
+  retry delta: 12.000 metric/instances missing
+  host= via=no.such.host.pcp.io (up)
+  rules:
+    expr_1
+This sleepTight() entry: Thu Aug 20 18:42:27.732322 2020
+Harvest children done: Thu Aug 20 18:42:27.732323 2020
+Want sleepTight until: Thu Aug 20 18:42:26.709763 2020
+This Task dump @ 0x5572d6270870
+  nth=0 delta=12.000 tick=0 next=(nil) prev=(nil)
+  eval time: Thu Aug 20 18:42:26.709763 2020
+  retry delta: 12.000 metric/instances missing
+  host= via=no.such.host.pcp.io (up)
+  rules:
+    expr_1

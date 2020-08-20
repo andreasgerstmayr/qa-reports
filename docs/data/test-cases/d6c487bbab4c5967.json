@@ -1,0 +1,55 @@
+{
+  "uid" : "d6c487bbab4c5967",
+  "name" : "QA 157",
+  "fullName" : "QA #157 on ubuntu1804-direct",
+  "historyId" : "157@ubuntu1804-direct",
+  "time" : {
+    "start" : 1597943414000,
+    "stop" : 1597943426000,
+    "duration" : 12000
+  },
+  "description" : "PCP QA Test No. 157\n\nexercise the -u (unbuffered) option for pmlogger (now default)\n\n\n\nCopyright (c) 2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 157</p>\n<p>exercise the -u (unbuffered) option for pmlogger (now default)</p>\n<p>Copyright (c) 2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1804-direct"
+  }, {
+    "name" : "epic",
+    "value" : "pmlogger"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/157",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/157.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d6c487bbab4c5967.json",
+  "parameterValues" : [ ]
+}

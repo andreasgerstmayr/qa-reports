@@ -1,0 +1,37 @@
+pmdabcc config:
+[pmda]
+modules = kprobe_hits
+prefix = bcc.
+[kprobe_hits]
+module = kprobe_hits
+cluster = 103
+kprobes = kprobe:sched_exec
+Log for pmdabcc on 316bddff7759 started Thu Aug 20 18:59:20 2020
+
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: Enabled modules:
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: ['kprobe_hits']
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: Configuring modules:
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: kprobe_hits
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: Modules configured.
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: Initializing modules:
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: kprobe_hits
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: kprobe_hits: Configured kprobes: ['kprobe:sched_exec']
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: kprobe_hits: Found 1 kprobes: ['sched_exec'].
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: kprobe_hits: Initialized.
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: Modules initialized.
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: Registering metrics:
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: kprobe_hits
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: Metrics registered.
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: Registering helpers:
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: kprobe_hits
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: Helpers registered.
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: Compiling modules:
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: kprobe_hits
+[Thu Aug 20 18:59:20] pmdabcc(14928) Info: kprobe_hits: Compiling 1 kprobes: ['sched_exec']
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 18:59:20] pmdabcc(14928) Error: kprobe_hits: Failed to compile BPF text
+[Thu Aug 20 18:59:20] pmdabcc(14928) Error: kprobe_hits: Module NOT active!
+[Thu Aug 20 18:59:20] pmdabcc(14928) Error: Failed to compile module kprobe_hits, aborting.
+
+Log finished Thu Aug 20 18:59:20 2020

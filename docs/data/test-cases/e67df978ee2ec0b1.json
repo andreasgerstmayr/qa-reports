@@ -1,0 +1,55 @@
+{
+  "uid" : "e67df978ee2ec0b1",
+  "name" : "QA 670",
+  "fullName" : "QA #670 on debian11-container",
+  "historyId" : "670@debian11-container",
+  "time" : {
+    "start" : 1597946980000,
+    "stop" : 1597947035000,
+    "duration" : 55000
+  },
+  "description" : "PCP QA Test No. 670\n\n\n\nExercise PMAPI pm[Parse]UnitsStr interfaces.\n\n\n\nCopyright (c) 2014-2015,2018 Red Hat.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 670</p>\n<p>Exercise PMAPI pm[Parse]UnitsStr interfaces.</p>\n<p>Copyright (c) 2014-2015,2018 Red Hat.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian11-container"
+  }, {
+    "name" : "host",
+    "value" : "debian11-container"
+  }, {
+    "name" : "epic",
+    "value" : "libpcp"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/670",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/670.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e67df978ee2ec0b1.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,37 @@
+pmdabcc config:
+# Installed by PCP QA test 1165 on Thu Aug 20 19:21:30 UTC 2020
+[pmda]
+modules = klockstat
+prefix = bcc.
+[klockstat]
+module = klockstat
+cluster = 31
+process = pmcd
+Log for pmdabcc on d6bbf0991c84 started Thu Aug 20 19:22:34 2020
+
+[Thu Aug 20 19:22:34] pmdabcc(989964) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 19:22:34] pmdabcc(989964) Info: Enabled modules:
+[Thu Aug 20 19:22:34] pmdabcc(989964) Info: ['klockstat']
+[Thu Aug 20 19:22:34] pmdabcc(989964) Info: Configuring modules:
+[Thu Aug 20 19:22:34] pmdabcc(989964) Info: klockstat
+[Thu Aug 20 19:22:34] pmdabcc(989964) Info: Modules configured.
+[Thu Aug 20 19:22:34] pmdabcc(989964) Info: Initializing modules:
+[Thu Aug 20 19:22:34] pmdabcc(989964) Info: klockstat
+[Thu Aug 20 19:22:34] pmdabcc(989964) Info: klockstat: Tracing PID 987567: /usr/libexec/pcp/bin/pmcd -T 3.
+[Thu Aug 20 19:22:34] pmdabcc(989964) Info: klockstat: Initialized.
+[Thu Aug 20 19:22:34] pmdabcc(989964) Info: Modules initialized.
+[Thu Aug 20 19:22:34] pmdabcc(989964) Info: Registering metrics:
+[Thu Aug 20 19:22:34] pmdabcc(989964) Info: klockstat
+[Thu Aug 20 19:22:34] pmdabcc(989964) Info: Metrics registered.
+[Thu Aug 20 19:22:34] pmdabcc(989964) Info: Registering helpers:
+[Thu Aug 20 19:22:34] pmdabcc(989964) Info: klockstat
+[Thu Aug 20 19:22:34] pmdabcc(989964) Info: Helpers registered.
+[Thu Aug 20 19:22:34] pmdabcc(989964) Info: Compiling modules:
+[Thu Aug 20 19:22:34] pmdabcc(989964) Info: klockstat
+modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1034-azure
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 19:22:34] pmdabcc(989964) Error: klockstat: Failed to compile BPF module <text>
+[Thu Aug 20 19:22:34] pmdabcc(989964) Error: klockstat: Module NOT active!
+[Thu Aug 20 19:22:34] pmdabcc(989964) Error: Failed to compile module klockstat, aborting.
+
+Log finished Thu Aug 20 19:22:34 2020

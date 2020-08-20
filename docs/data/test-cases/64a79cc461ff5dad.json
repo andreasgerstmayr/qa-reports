@@ -1,0 +1,61 @@
+{
+  "uid" : "64a79cc461ff5dad",
+  "name" : "QA 371",
+  "fullName" : "QA #371 on fedora_rawhide-container",
+  "historyId" : "371@fedora_rawhide-container",
+  "time" : {
+    "start" : 1597945096000,
+    "stop" : 1597945096000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 371\n\n\n\nParsing and error checking for the mapfile used by sheet2pcp\n\n\n\nCopyright (c) 2010 Ken McDonell.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 371</p>\n<p>Parsing and error checking for the mapfile used by sheet2pcp</p>\n<p>Copyright (c) 2010 Ken McDonell.  All Rights Reserved.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "perl Spreadsheet::Read module not installed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmimport"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "pmdumplog"
+  }, {
+    "name" : "epic",
+    "value" : "perl"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/371",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/371.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "64a79cc461ff5dad.json",
+  "parameterValues" : [ ]
+}

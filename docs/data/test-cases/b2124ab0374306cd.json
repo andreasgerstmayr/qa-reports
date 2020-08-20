@@ -1,0 +1,86 @@
+{
+  "uid" : "b2124ab0374306cd",
+  "name" : "QA 1695",
+  "fullName" : "QA #1695 on debian11-container",
+  "historyId" : "1695@debian11-container",
+  "time" : {
+    "start" : 1597950953000,
+    "stop" : 1597950977000,
+    "duration" : 24000
+  },
+  "description" : "PCP QA Test No. 1695\n\nValgrind pmproxy REST API test cases.\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian11 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 1695</p>\n<p>Valgrind pmproxy REST API test cases.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform debian11 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 1695.out.bad)\n8a9,34\n> 128 bytes in 1 blocks are definitely lost in loss record 123 of 231\n> at 0x48386AF: malloc (vg_replace_malloc.c:306)\n> by 0x483ADE7: realloc (vg_replace_malloc.c:834)\n> by 0x4C46C44: ??? (in /usr/lib/x86_64-linux-gnu/libuv.so.1.0.0)\n> by 0x4C4AAA0: ??? (in /usr/lib/x86_64-linux-gnu/libuv.so.1.0.0)\n> by 0x4C53C28: uv_signal_init (in /usr/lib/x86_64-linux-gnu/libuv.so.1.0.0)\n> by 0x4C509EB: uv_loop_init (in /usr/lib/x86_64-linux-gnu/libuv.so.1.0.0)\n> by 0x4C48E73: uv_default_loop (in /usr/lib/x86_64-linux-gnu/libuv.so.1.0.0)\n> by 0x111DEE: ??? (in /usr/lib/pcp/bin/pmproxy)\n> by 0x110943: ??? (in /usr/lib/pcp/bin/pmproxy)\n> by 0x4D5CCC9: (below main) (libc-start.c:308)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: definite\n>    fun:malloc\n>    fun:realloc\n>    obj:/usr/lib/x86_64-linux-gnu/libuv.so.1.0.0\n>    obj:/usr/lib/x86_64-linux-gnu/libuv.so.1.0.0\n>    fun:uv_signal_init\n>    fun:uv_loop_init\n>    fun:uv_default_loop\n>    obj:/usr/lib/pcp/bin/pmproxy\n>    obj:/usr/lib/pcp/bin/pmproxy\n>    fun:(below main)\n> }\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 5aea1a73a825 -f sample.milliseconds\nPMDA probe: pminfo -h 5aea1a73a825 -f sampledso.milliseconds\nPMDA probe: pminfo -h 5aea1a73a825 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 1695\n\nValgrind pmproxy REST API test cases.\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform debian11 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 1695.out.bad)\n8a9,34\n> 128 bytes in 1 blocks are definitely lost in loss record 123 of 231\n> at 0x48386AF: malloc (vg_replace_malloc.c:306)\n> by 0x483ADE7: realloc (vg_replace_malloc.c:834)\n> by 0x4C46C44: ??? (in /usr/lib/x86_64-linux-gnu/libuv.so.1.0.0)\n> by 0x4C4AAA0: ??? (in /usr/lib/x86_64-linux-gnu/libuv.so.1.0.0)\n> by 0x4C53C28: uv_signal_init (in /usr/lib/x86_64-linux-gnu/libuv.so.1.0.0)\n> by 0x4C509EB: uv_loop_init (in /usr/lib/x86_64-linux-gnu/libuv.so.1.0.0)\n> by 0x4C48E73: uv_default_loop (in /usr/lib/x86_64-linux-gnu/libuv.so.1.0.0)\n> by 0x111DEE: ??? (in /usr/lib/pcp/bin/pmproxy)\n> by 0x110943: ??? (in /usr/lib/pcp/bin/pmproxy)\n> by 0x4D5CCC9: (below main) (libc-start.c:308)\n> {\n>    <insert_a_suppression_name_here>\n>    Memcheck:Leak\n>    match-leak-kinds: definite\n>    fun:malloc\n>    fun:realloc\n>    obj:/usr/lib/x86_64-linux-gnu/libuv.so.1.0.0\n>    obj:/usr/lib/x86_64-linux-gnu/libuv.so.1.0.0\n>    fun:uv_signal_init\n>    fun:uv_loop_init\n>    fun:uv_default_loop\n>    obj:/usr/lib/pcp/bin/pmproxy\n>    obj:/usr/lib/pcp/bin/pmproxy\n>    fun:(below main)\n> }\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 5aea1a73a825 -f sample.milliseconds\nPMDA probe: pminfo -h 5aea1a73a825 -f sampledso.milliseconds\nPMDA probe: pminfo -h 5aea1a73a825 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "78219534211de1fa",
+      "name" : "1695.out.bad",
+      "source" : "78219534211de1fa.txt",
+      "type" : "text/plain",
+      "size" : 1632
+    }, {
+      "uid" : "5516752992c11c4d",
+      "name" : "1695.full",
+      "source" : "5516752992c11c4d.txt",
+      "type" : "text/plain",
+      "size" : 3082403
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian11-container"
+  }, {
+    "name" : "host",
+    "value" : "debian11-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmproxy"
+  }, {
+    "name" : "epic",
+    "value" : "valgrind"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1695",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1695.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "b2124ab0374306cd.json",
+  "parameterValues" : [ ]
+}

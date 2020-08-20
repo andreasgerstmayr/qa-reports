@@ -1,0 +1,86 @@
+{
+  "uid" : "5a9d8fd4e057e464",
+  "name" : "QA 283",
+  "fullName" : "QA #283 on centos6-container",
+  "historyId" : "283@centos6-container",
+  "time" : {
+    "start" : 1597943612000,
+    "stop" : 1597943631000,
+    "duration" : 19000
+  },
+  "description" : "PCP QA Test No. 283\n\nMove pmcd port to iana registered 44321, and the associated multiple\n\nport changes for ...\n\n\tpmcd via -p\n\n\tpmcd via PMCD_PORT\n\n\tclients via PMCD_PORT\n\n\n\nCopyright (c) 2005 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 283</p>\n<p>Move pmcd port to iana registered 44321, and the associated multiple</p>\n<p>port changes for ...</p>\n<pre><code>pmcd via -p\n\npmcd via PMCD_PORT\n\nclients via PMCD_PORT\n</code></pre>\n<p>Copyright (c) 2005 Silicon Graphics, Inc.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform centos6 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 283.out.bad)\n3a4\n> [Thu Aug 20 17:13:36] pmcd(87003) Error: Failed to create avahi client: Daemon not running\n11a13,14\n> [Thu Aug 20 17:13:40] pmcd(87040) Error: Failed to create avahi client: Daemon not running\n> pmcd: avahi.c:106: createServices: Assertion `c' failed.\n13,14c16\n< __pmConnectPMCD(HOST): pmcd connection port=44321 fd=<n> PDU version=2\n< sample.long.one 1 1\n---\n> __pmConnectPMCD(HOST): pmcd connection port=44321 failed: Connection refused\n16,17c18,19\n< __pmConnectPMCD(HOST): pmcd connection port=9876 fd=<n> PDU version=2\n< sample.long.one 1 1\n---\n> __pmConnectPMCD(HOST): pmcd connection port=9876,4321,44321 failed: Connection refused\n> /usr/libexec/pcp/bin/pmsignal: line 123: kill: (87040) - No such process\n19a22,23\n> [Thu Aug 20 17:13:44] pmcd(87069) Error: Failed to create avahi client: Daemon not running\n> pmcd: avahi.c:106: createServices: Assertion `c' failed.\n21,22c25\n< __pmConnectPMCD(HOST): pmcd connection port=44321 fd=<n> PDU version=2\n< sample.long.one 1 1\n---\n> __pmConnectPMCD(HOST): pmcd connection port=44321 failed: Connection refused\n24,25c27,28\n< __pmConnectPMCD(HOST): pmcd connection port=9876 fd=<n> PDU version=2\n< sample.long.one 1 1\n---\n> __pmConnectPMCD(HOST): pmcd connection port=9876,4321,44321 failed: Connection refused\n> /usr/libexec/pcp/bin/pmsignal: line 123: kill: (87069) - No such process\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 283\n\nMove pmcd port to iana registered 44321, and the associated multiple\n\nport changes for ...\n\n\tpmcd via -p\n\n\tpmcd via PMCD_PORT\n\n\tclients via PMCD_PORT\n\n\n\nCopyright (c) 2005 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 283.out.bad)\n3a4\n> [Thu Aug 20 17:13:36] pmcd(87003) Error: Failed to create avahi client: Daemon not running\n11a13,14\n> [Thu Aug 20 17:13:40] pmcd(87040) Error: Failed to create avahi client: Daemon not running\n> pmcd: avahi.c:106: createServices: Assertion `c' failed.\n13,14c16\n< __pmConnectPMCD(HOST): pmcd connection port=44321 fd=<n> PDU version=2\n< sample.long.one 1 1\n---\n> __pmConnectPMCD(HOST): pmcd connection port=44321 failed: Connection refused\n16,17c18,19\n< __pmConnectPMCD(HOST): pmcd connection port=9876 fd=<n> PDU version=2\n< sample.long.one 1 1\n---\n> __pmConnectPMCD(HOST): pmcd connection port=9876,4321,44321 failed: Connection refused\n> /usr/libexec/pcp/bin/pmsignal: line 123: kill: (87040) - No such process\n19a22,23\n> [Thu Aug 20 17:13:44] pmcd(87069) Error: Failed to create avahi client: Daemon not running\n> pmcd: avahi.c:106: createServices: Assertion `c' failed.\n21,22c25\n< __pmConnectPMCD(HOST): pmcd connection port=44321 fd=<n> PDU version=2\n< sample.long.one 1 1\n---\n> __pmConnectPMCD(HOST): pmcd connection port=44321 failed: Connection refused\n24,25c27,28\n< __pmConnectPMCD(HOST): pmcd connection port=9876 fd=<n> PDU version=2\n< sample.long.one 1 1\n---\n> __pmConnectPMCD(HOST): pmcd connection port=9876,4321,44321 failed: Connection refused\n> /usr/libexec/pcp/bin/pmsignal: line 123: kill: (87069) - No such process\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c01455f403765825",
+      "name" : "283.out.bad",
+      "source" : "c01455f403765825.txt",
+      "type" : "text/plain",
+      "size" : 1356
+    }, {
+      "uid" : "53ca22e9e2a8d537",
+      "name" : "283.full",
+      "source" : "53ca22e9e2a8d537.txt",
+      "type" : "text/plain",
+      "size" : 18946
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos6-container"
+  }, {
+    "name" : "host",
+    "value" : "centos6-container"
+  }, {
+    "name" : "epic",
+    "value" : "context"
+  }, {
+    "name" : "epic",
+    "value" : "pmcd"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/283",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/283.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "5a9d8fd4e057e464.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,38 @@
+pmdabcc config:
+# Installed by PCP QA test 1171 on Thu Aug 20 18:58:35 UTC 2020
+[pmda]
+modules = profile
+prefix = bcc.
+[profile]
+module = profile
+cluster = 14
+=== _pmdabcc_wait_for_metric: after 0 secs, metrics should be available ===
+=== _pmdabcc_wait_for_metric: after another 1 secs, values are available ===
+
+bcc.proc.profile
+    value "{"status": "stopped", "data": null}"
+Log for pmdabcc on 316bddff7759 started Thu Aug 20 18:58:36 2020
+
+[Thu Aug 20 18:58:36] pmdabcc(10439) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 18:58:36] pmdabcc(10439) Info: Enabled modules:
+[Thu Aug 20 18:58:36] pmdabcc(10439) Info: ['profile']
+[Thu Aug 20 18:58:36] pmdabcc(10439) Info: Configuring modules:
+[Thu Aug 20 18:58:36] pmdabcc(10439) Info: profile
+[Thu Aug 20 18:58:36] pmdabcc(10439) Info: Modules configured.
+[Thu Aug 20 18:58:36] pmdabcc(10439) Info: Initializing modules:
+[Thu Aug 20 18:58:36] pmdabcc(10439) Info: profile
+[Thu Aug 20 18:58:36] pmdabcc(10439) Info: profile: Initialized.
+[Thu Aug 20 18:58:36] pmdabcc(10439) Info: Modules initialized.
+[Thu Aug 20 18:58:36] pmdabcc(10439) Info: Registering metrics:
+[Thu Aug 20 18:58:36] pmdabcc(10439) Info: profile
+[Thu Aug 20 18:58:36] pmdabcc(10439) Info: Metrics registered.
+[Thu Aug 20 18:58:36] pmdabcc(10439) Info: Registering helpers:
+[Thu Aug 20 18:58:36] pmdabcc(10439) Info: Helpers registered.
+[Thu Aug 20 18:58:36] pmdabcc(10439) Info: Compiling modules:
+[Thu Aug 20 18:58:36] pmdabcc(10439) Info: profile
+[Thu Aug 20 18:58:36] pmdabcc(10439) Info: Modules compiled.
+[Thu Aug 20 18:58:36] pmdabcc(10439) Info: Ready to process requests.
+[Thu Aug 20 18:58:38] pmdabcc(10439) Info: profile: Starting profiling...
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 18:58:38] pmdabcc(10439) Error: profile: Failed to compile BPF text
+[Thu Aug 20 18:58:38] pmdabcc(10439) Error: profile: Failed to compile BPF code!

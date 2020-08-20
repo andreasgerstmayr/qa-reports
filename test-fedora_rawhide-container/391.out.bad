@@ -1,0 +1,377 @@
+QA output created by 391
+
+=== archive tmparch/foo ===
+
+metric: sample.seconds
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/foo sample.seconds
+24 bytes in 1 blocks are possibly lost in loss record 26 of 77
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x488C205: __pmLogRead_ctx (logutil.c:1725)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+344 bytes in 1 blocks are possibly lost in loss record 69 of 77
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)
+by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 2 errors from 2 contexts ...
+
+metric: sample.bin
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/foo sample.bin
+24 bytes in 1 blocks are possibly lost in loss record 24 of 77
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x488C205: __pmLogRead_ctx (logutil.c:1725)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+344 bytes in 1 blocks are possibly lost in loss record 68 of 77
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)
+by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 2 errors from 2 contexts ...
+
+metric: sample.colour
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/foo sample.colour
+24 bytes in 1 blocks are possibly lost in loss record 25 of 77
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x488C205: __pmLogRead_ctx (logutil.c:1725)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+344 bytes in 1 blocks are possibly lost in loss record 69 of 77
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)
+by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 2 errors from 2 contexts ...
+
+metric: sample.drift
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/foo sample.drift
+24 bytes in 1 blocks are possibly lost in loss record 26 of 77
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x488C205: __pmLogRead_ctx (logutil.c:1725)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+344 bytes in 1 blocks are possibly lost in loss record 69 of 77
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)
+by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 2 errors from 2 contexts ...
+
+metric: sample.lights
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/foo sample.lights
+24 bytes in 1 blocks are possibly lost in loss record 27 of 78
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x488C205: __pmLogRead_ctx (logutil.c:1725)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+344 bytes in 1 blocks are possibly lost in loss record 70 of 78
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)
+by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x109722: main (interp1.c:197)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 2 errors from 2 contexts ...
+
+=== archive tmparch/mv-foo ===
+
+metric: sample.seconds
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/mv-foo sample.seconds
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+metric: sample.bin
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/mv-foo sample.bin
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+metric: sample.colour
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/mv-foo sample.colour
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+metric: sample.drift
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/mv-foo sample.drift
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+metric: sample.lights
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/mv-foo sample.lights
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+=== archive tmparch/noti-foo ===
+
+metric: sample.seconds
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/noti-foo sample.seconds
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+metric: sample.bin
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/noti-foo sample.bin
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+metric: sample.colour
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/noti-foo sample.colour
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+metric: sample.drift
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/noti-foo sample.drift
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...
+
+metric: sample.lights
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp1 -s 6 -a tmparch/noti-foo sample.lights
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 0 errors from 0 contexts ...

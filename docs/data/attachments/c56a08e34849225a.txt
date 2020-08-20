@@ -1,0 +1,46 @@
+[Thu Aug 20 19:19:57] pmie(1016462) Info: Cannot connect to pmcd no.such.host.pcp.io
+pmie: warning - pmcd via no.such.host.pcp.io is unreachable
+sleepTight: small negative delay (-0.000001). sched=1597951197.741535, cur=1597951197.741536
+This sleepTight() entry: Thu Aug 20 19:19:57.741535 2020
+Harvest children done: Thu Aug 20 19:19:57.741535 2020
+Want sleepTight until: Thu Aug 20 19:19:57.741534 2020
+This Task dump @ 0x55fbf9322080
+  nth=0 delta=12.000 tick=0 next=(nil) prev=(nil)
+  eval time: Thu Aug 20 19:19:57.741534 2020
+  retry delta: 5.000 metric/instances missing
+  host= via=no.such.host.pcp.io (up)
+  rules:
+    expr_1
+Evaluating task:
+Task dump @ 0x55fbf9322080
+  nth=0 delta=12.000 tick=0 next=(nil) prev=(nil)
+  eval time: Thu Aug 20 19:19:57.741534 2020
+  retry delta: 5.000 metric/instances missing
+  host= via=no.such.host.pcp.io (up)
+  rules:
+    expr_1
+cndEq_n_1(0x55fbf9321d80) ...
+Expr dump @ 0x55fbf9321d80
+  op=30 (==) arg1=0x55fbf9321c40 arg2=0x55fbf9321ce0 parent=0x55fbf9321fe0
+  eval=cndEq_n_1 metrics=0x55fbf931e1c0 ring=0x55fbf9321e00
+  valid=0 cardinality[H,I,T]=[1,-1,1] tspan=1
+  nsmpls=1 nvals=1 sem=TRUTH units=
+sleepTight: negative delay (-11.017198). sched=1597951202.741535, cur=1597951213.758733
+Last sleepTight until: Thu Aug 20 19:19:57.741534 2020
+Last Task dump @ 0x55fbf9322080
+  nth=0 delta=12.000 tick=0 next=(nil) prev=(nil)
+  eval time: Thu Aug 20 19:20:02.741534 2020
+  retry delta: 10.000 metric/instances missing
+  host= via=no.such.host.pcp.io (up)
+  rules:
+    expr_1
+This sleepTight() entry: Thu Aug 20 19:20:13.758732 2020
+Harvest children done: Thu Aug 20 19:20:13.758733 2020
+Want sleepTight until: Thu Aug 20 19:20:02.741534 2020
+This Task dump @ 0x55fbf9322080
+  nth=0 delta=12.000 tick=0 next=(nil) prev=(nil)
+  eval time: Thu Aug 20 19:20:02.741534 2020
+  retry delta: 10.000 metric/instances missing
+  host= via=no.such.host.pcp.io (up)
+  rules:
+    expr_1

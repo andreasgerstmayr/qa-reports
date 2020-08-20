@@ -1,0 +1,86 @@
+{
+  "uid" : "2930e8a73582a583",
+  "name" : "QA 1124",
+  "fullName" : "QA #1124 on fedora_rawhide-container",
+  "historyId" : "1124@fedora_rawhide-container",
+  "time" : {
+    "start" : 1597950598000,
+    "stop" : 1597950670000,
+    "duration" : 72000
+  },
+  "description" : "PCP QA Test No. 1124\n\nExercise the BCC PMDA tracepoint hits module - install, remove and values.\n\n\n\nCopyright (c) 2018 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform fedora_rawhide reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 1124</p>\n<p>Exercise the BCC PMDA tracepoint hits module - install, remove and values.</p>\n<p>Copyright (c) 2018 Red Hat.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform fedora_rawhide reproduce\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "[failed, exit status 1] - output mismatch (see 1124.out.bad)\n46,47c46,52\n< === report metric values ===\n< OK\n---\n> [Thu Aug 20 19:10:01] pmdabcc(964135) Error: tracepoint_hits: Failed to compile tracepoint probe 'random:urandom_read', disabling.\n> [Thu Aug 20 19:10:01] pmdabcc(964135) Info: tracepoint_hits: Compiling 0 tracepoints: []\n> modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1034-azure\n> chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory\n> [Thu Aug 20 19:10:01] pmdabcc(964135) Error: tracepoint_hits: Failed to compile BPF module <text>\n> [Thu Aug 20 19:10:01] pmdabcc(964135) Error: tracepoint_hits: Module NOT active!\n> [Thu Aug 20 19:10:01] pmdabcc(964135) Error: Failed to compile module tracepoint_hits, aborting.\n49,54c54,55\n< === remove bcc agent ===\n< Culling the Performance Metrics Name Space ...\n< bcc ... done\n< Updating the PMCD control file, and notifying PMCD ...\n< [...removing files...]\n< Check bcc metrics have gone away ... OK\n---\n> Log finished Thu Aug 20 19:10:01 2020\n> PMDA was not ready in 60 seconds, test failed\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h d6bbf0991c84 -f sample.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f sampledso.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 1124\n\nExercise the BCC PMDA tracepoint hits module - install, remove and values.\n\n\n\nCopyright (c) 2018 Red Hat.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform fedora_rawhide reproduce",
+    "status" : "broken",
+    "statusMessage" : "[failed, exit status 1] - output mismatch (see 1124.out.bad)\n46,47c46,52\n< === report metric values ===\n< OK\n---\n> [Thu Aug 20 19:10:01] pmdabcc(964135) Error: tracepoint_hits: Failed to compile tracepoint probe 'random:urandom_read', disabling.\n> [Thu Aug 20 19:10:01] pmdabcc(964135) Info: tracepoint_hits: Compiling 0 tracepoints: []\n> modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1034-azure\n> chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory\n> [Thu Aug 20 19:10:01] pmdabcc(964135) Error: tracepoint_hits: Failed to compile BPF module <text>\n> [Thu Aug 20 19:10:01] pmdabcc(964135) Error: tracepoint_hits: Module NOT active!\n> [Thu Aug 20 19:10:01] pmdabcc(964135) Error: Failed to compile module tracepoint_hits, aborting.\n49,54c54,55\n< === remove bcc agent ===\n< Culling the Performance Metrics Name Space ...\n< bcc ... done\n< Updating the PMCD control file, and notifying PMCD ...\n< [...removing files...]\n< Check bcc metrics have gone away ... OK\n---\n> Log finished Thu Aug 20 19:10:01 2020\n> PMDA was not ready in 60 seconds, test failed\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h d6bbf0991c84 -f sample.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f sampledso.milliseconds\nPMDA probe: pminfo -h d6bbf0991c84 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7bebdb107bc03db6",
+      "name" : "1124.out.bad",
+      "source" : "7bebdb107bc03db6.txt",
+      "type" : "text/plain",
+      "size" : 2196
+    }, {
+      "uid" : "3d86d703e68025a",
+      "name" : "1124.full",
+      "source" : "3d86d703e68025a.txt",
+      "type" : "text/plain",
+      "size" : 2659
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.bcc"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "python"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1124",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1124.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "2930e8a73582a583.json",
+  "parameterValues" : [ ]
+}

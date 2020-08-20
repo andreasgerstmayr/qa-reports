@@ -1,0 +1,37 @@
+pmdabcc config:
+# Installed by PCP QA test 1156 on Thu Aug 20 19:18:37 UTC 2020
+[pmda]
+modules = execsnoop
+prefix = bcc.
+[execsnoop]
+module = execsnoop
+cluster = 8
+command = echo
+args = PCP
+Log for pmdabcc on d6bbf0991c84 started Thu Aug 20 19:18:39 2020
+
+[Thu Aug 20 19:18:39] pmdabcc(984684) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 19:18:39] pmdabcc(984684) Info: Enabled modules:
+[Thu Aug 20 19:18:39] pmdabcc(984684) Info: ['execsnoop']
+[Thu Aug 20 19:18:39] pmdabcc(984684) Info: Configuring modules:
+[Thu Aug 20 19:18:39] pmdabcc(984684) Info: execsnoop
+[Thu Aug 20 19:18:39] pmdabcc(984684) Info: Modules configured.
+[Thu Aug 20 19:18:39] pmdabcc(984684) Info: Initializing modules:
+[Thu Aug 20 19:18:39] pmdabcc(984684) Info: execsnoop
+[Thu Aug 20 19:18:39] pmdabcc(984684) Info: execsnoop: Initialized.
+[Thu Aug 20 19:18:39] pmdabcc(984684) Info: Modules initialized.
+[Thu Aug 20 19:18:39] pmdabcc(984684) Info: Registering metrics:
+[Thu Aug 20 19:18:39] pmdabcc(984684) Info: execsnoop
+[Thu Aug 20 19:18:39] pmdabcc(984684) Info: Metrics registered.
+[Thu Aug 20 19:18:39] pmdabcc(984684) Info: Registering helpers:
+[Thu Aug 20 19:18:39] pmdabcc(984684) Info: execsnoop
+[Thu Aug 20 19:18:39] pmdabcc(984684) Info: Helpers registered.
+[Thu Aug 20 19:18:39] pmdabcc(984684) Info: Compiling modules:
+[Thu Aug 20 19:18:39] pmdabcc(984684) Info: execsnoop
+modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1034-azure
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 19:18:39] pmdabcc(984684) Error: execsnoop: Failed to compile BPF module <text>
+[Thu Aug 20 19:18:39] pmdabcc(984684) Error: execsnoop: Module NOT active!
+[Thu Aug 20 19:18:39] pmdabcc(984684) Error: Failed to compile module execsnoop, aborting.
+
+Log finished Thu Aug 20 19:18:39 2020

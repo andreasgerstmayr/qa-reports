@@ -1,0 +1,55 @@
+{
+  "uid" : "6254e1f1c147eccf",
+  "name" : "QA 772",
+  "fullName" : "QA #772 on ubuntu1604-container",
+  "historyId" : "772@ubuntu1604-container",
+  "time" : {
+    "start" : 1597947356000,
+    "stop" : 1597947356000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 772\n\npmnsmerge -x checks\n\n\n\nCopyright (c) 2015 Ken McDonell.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 772</p>\n<p>pmnsmerge -x checks</p>\n<p>Copyright (c) 2015 Ken McDonell.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1604-container"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1604-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmns"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/772",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/772.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6254e1f1c147eccf.json",
+  "parameterValues" : [ ]
+}

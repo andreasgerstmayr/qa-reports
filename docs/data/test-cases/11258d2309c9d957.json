@@ -1,0 +1,61 @@
+{
+  "uid" : "11258d2309c9d957",
+  "name" : "QA 794",
+  "fullName" : "QA #794 on ubuntu1604-container",
+  "historyId" : "794@ubuntu1604-container",
+  "time" : {
+    "start" : 1597947398000,
+    "stop" : 1597947399000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 794\n\nCopyright (c) 2015 Red Hat.  All Rights Reserved.\n\n\n\nExercise \"container switching\" using pmStore.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 794</p>\n<p>Copyright (c) 2015 Red Hat.  All Rights Reserved.</p>\n<p>Exercise &quot;container switching&quot; using pmStore.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Cannot find docker image. Use: /usr/bin/sudo -E docker run -it --rm busybox",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu1604-container"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu1604-container"
+  }, {
+    "name" : "epic",
+    "value" : "containers"
+  }, {
+    "name" : "epic",
+    "value" : "pmcd"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.pmcd"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/794",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/794.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "11258d2309c9d957.json",
+  "parameterValues" : [ ]
+}

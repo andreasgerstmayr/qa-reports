@@ -1,0 +1,77 @@
+{
+  "uid" : "98c0fc37afb0a0b1",
+  "name" : "QA 304",
+  "fullName" : "QA #304 on centos6-container",
+  "historyId" : "304@centos6-container",
+  "time" : {
+    "start" : 1597943822000,
+    "stop" : 1597943842000,
+    "duration" : 20000
+  },
+  "description" : "PCP QA Test No. 304\n\nexercise recording session control in pmlooger\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 304</p>\n<p>exercise recording session control in pmlooger</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform centos6 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 304.out.bad)\n12a13,14\n> Log finished DATE\n> \n36a39,40\n> Log finished DATE\n> \n56a61,62\n> Log finished DATE\n> \n79a86,87\n> Log finished DATE\n> \n101a110,111\n> Log finished DATE\n> \n109a120,121\n> Log finished DATE\n> \n134a147,148\n> Log finished DATE\n> \nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 304\n\nexercise recording session control in pmlooger\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 304.out.bad)\n12a13,14\n> Log finished DATE\n> \n36a39,40\n> Log finished DATE\n> \n56a61,62\n> Log finished DATE\n> \n79a86,87\n> Log finished DATE\n> \n101a110,111\n> Log finished DATE\n> \n109a120,121\n> Log finished DATE\n> \n134a147,148\n> Log finished DATE\n> \nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "92db9c0f29592c78",
+      "name" : "304.out.bad",
+      "source" : "92db9c0f29592c78.txt",
+      "type" : "text/plain",
+      "size" : 5659
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos6-container"
+  }, {
+    "name" : "host",
+    "value" : "centos6-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmlogger"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/304",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/304.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "98c0fc37afb0a0b1.json",
+  "parameterValues" : [ ]
+}

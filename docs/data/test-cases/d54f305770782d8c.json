@@ -1,0 +1,55 @@
+{
+  "uid" : "d54f305770782d8c",
+  "name" : "QA 835",
+  "fullName" : "QA #835 on centos7-container",
+  "historyId" : "835@centos7-container",
+  "time" : {
+    "start" : 1597947136000,
+    "stop" : 1597947136000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 835\n\nExercise the memcache PMDA - install, remove and values.\n\n\n\nCopyright (c) 2014-2015 Red Hat.\n\nCopyright (c) 2014 Ken McDonell.  All Rights Reserved.\n\nCopyright (c) 2008 Aconex.  All Rights Reserved. (based on qa/348)\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 835</p>\n<p>Exercise the memcache PMDA - install, remove and values.</p>\n<p>Copyright (c) 2014-2015 Red Hat.</p>\n<p>Copyright (c) 2014 Ken McDonell.  All Rights Reserved.</p>\n<p>Copyright (c) 2008 Aconex.  All Rights Reserved. (based on qa/348)</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Noones home on the default memcached port 11211",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos7-container"
+  }, {
+    "name" : "host",
+    "value" : "centos7-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.memcache"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/835",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/835.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d54f305770782d8c.json",
+  "parameterValues" : [ ]
+}

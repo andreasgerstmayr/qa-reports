@@ -1,0 +1,55 @@
+
+=== postfix agent installation ===
+Updating the Performance Metrics Name Space (PMNS) ...
+Terminate PMDA if already installed ...
+Updating the PMCD control file, and notifying PMCD ...
+Starting pmcd ... [Thu Aug 20 18:01:41] pmcd(26380) Error: Failed to create avahi client: Daemon not running
+
+Check postfix metrics have appeared ... 5 warnings, 7 metrics and 3 values
+=== verify postfix values - postfix-log-001.gz ===
+=== done ===
+
+=== verify postfix values - postfix-log-002.gz ===
+=== done ===
+
+PMDA log file ...
+Log for pmdapostfix on 97d404ba7f88 started Thu Aug 20 18:01:41 2020
+
+[Thu Aug 20 18:01:41] pmdapostfix(26390) Info: qshape cmd: /tmp/805-25660.qshape  <qname>
+[Thu Aug 20 18:01:41] pmdapostfix(26390) Info: logfile: /tmp/805-25660.logfile
+Can't exec "/tmp/805-25660.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Thu Aug 20 18:01:42] pmdapostfix(26390) Info: couldn't execute '/tmp/805-25660.qshape  maildrop'
+Can't exec "/tmp/805-25660.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Thu Aug 20 18:01:42] pmdapostfix(26390) Info: couldn't execute '/tmp/805-25660.qshape  incoming'
+Can't exec "/tmp/805-25660.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Thu Aug 20 18:01:42] pmdapostfix(26390) Info: couldn't execute '/tmp/805-25660.qshape  hold'
+Can't exec "/tmp/805-25660.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Thu Aug 20 18:01:42] pmdapostfix(26390) Info: couldn't execute '/tmp/805-25660.qshape  active'
+Can't exec "/tmp/805-25660.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Thu Aug 20 18:01:42] pmdapostfix(26390) Info: couldn't execute '/tmp/805-25660.qshape  deferred'
+Can't exec "/tmp/805-25660.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Thu Aug 20 18:01:43] pmdapostfix(26390) Info: couldn't execute '/tmp/805-25660.qshape  maildrop'
+Can't exec "/tmp/805-25660.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Thu Aug 20 18:01:43] pmdapostfix(26390) Info: couldn't execute '/tmp/805-25660.qshape  incoming'
+Can't exec "/tmp/805-25660.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Thu Aug 20 18:01:43] pmdapostfix(26390) Info: couldn't execute '/tmp/805-25660.qshape  hold'
+Can't exec "/tmp/805-25660.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Thu Aug 20 18:01:43] pmdapostfix(26390) Info: couldn't execute '/tmp/805-25660.qshape  active'
+Can't exec "/tmp/805-25660.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Thu Aug 20 18:01:43] pmdapostfix(26390) Info: couldn't execute '/tmp/805-25660.qshape  deferred'
+Can't exec "/tmp/805-25660.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Thu Aug 20 18:01:44] pmdapostfix(26390) Info: couldn't execute '/tmp/805-25660.qshape  maildrop'
+Can't exec "/tmp/805-25660.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Thu Aug 20 18:01:44] pmdapostfix(26390) Info: couldn't execute '/tmp/805-25660.qshape  incoming'
+Can't exec "/tmp/805-25660.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Thu Aug 20 18:01:44] pmdapostfix(26390) Info: couldn't execute '/tmp/805-25660.qshape  hold'
+Can't exec "/tmp/805-25660.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Thu Aug 20 18:01:44] pmdapostfix(26390) Info: couldn't execute '/tmp/805-25660.qshape  active'
+Can't exec "/tmp/805-25660.qshape": Permission denied at /var/lib/pcp/pmdas/postfix/pmdapostfix.pl line 65.
+[Thu Aug 20 18:01:44] pmdapostfix(26390) Info: couldn't execute '/tmp/805-25660.qshape  deferred'
+
+=== remove postfix agent ===
+Culling the Performance Metrics Name Space ...
+postfix ... done
+Updating the PMCD control file, and notifying PMCD ...
+Check postfix metrics have gone away ... OK

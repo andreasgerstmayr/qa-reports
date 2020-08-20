@@ -1,0 +1,55 @@
+{
+  "uid" : "98cfe2b184e901c0",
+  "name" : "QA 688",
+  "fullName" : "QA #688 on centos6-container",
+  "historyId" : "688@centos6-container",
+  "time" : {
+    "start" : 1597945989000,
+    "stop" : 1597945989000,
+    "duration" : 0
+  },
+  "description" : "PCP QA Test No. 688\n\nderived metrics & instance filtering - parser checks\n\n\n\nCopyright (c) 2018 Ken McDonell.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 688</p>\n<p>derived metrics &amp; instance filtering - parser checks</p>\n<p>Copyright (c) 2018 Ken McDonell.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos6-container"
+  }, {
+    "name" : "host",
+    "value" : "centos6-container"
+  }, {
+    "name" : "epic",
+    "value" : "derive"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/688",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/688.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "98cfe2b184e901c0.json",
+  "parameterValues" : [ ]
+}

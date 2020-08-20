@@ -1,0 +1,13 @@
+pmdabpftrace config:
+# Installed by PCP QA test 1704 on Thu Aug 20 19:17:35 UTC 2020
+[dynamic_scripts]
+enabled = true
+auth_enabled = false
+Log for pmdabpftrace on 5aea1a73a825 started Thu Aug 20 19:17:36 2020
+
+[Thu Aug 20 19:17:36] pmdabpftrace(1278671) Info: manager: started pmdabpftrace process manager
+[Thu Aug 20 19:17:36] pmdabpftrace(1278671) Info: manager: using bpftrace v0.11.0
+[Thu Aug 20 19:17:39] pmdabpftrace(1278671) Info: script: starting script s0256a59edead4c01a3e745385a00b1ad (name=testscript, user=pcpqa)...
+[Thu Aug 20 19:17:39] pmdabpftrace(1278671) Info: script: started script s0256a59edead4c01a3e745385a00b1ad (name=testscript, user=pcpqa, PID=1278700)
+[Thu Aug 20 19:17:39] pmdabpftrace(1278671) Info: script: stopped script s0256a59edead4c01a3e745385a00b1ad (name=testscript, user=pcpqa, PID=1278700) due to error: definitions.h:13:3: error: unknown type name 'u64'
+definitions.h:14:3: error: unknown type name 's64'

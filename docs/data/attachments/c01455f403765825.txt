@@ -1,0 +1,28 @@
+QA output created by 283
+
+=== PMCD_PORT= pmcd_opt= ===
+[Thu Aug 20 17:13:36] pmcd(87003) Error: Failed to create avahi client: Daemon not running
+--- PMCD_PORT= ---
+__pmConnectPMCD(HOST): pmcd connection port=44321 fd=<n> PDU version=2
+sample.long.one 1 1
+--- PMCD_PORT=9876,4321,44321 ---
+__pmConnectPMCD(HOST): pmcd connection port=44321 fd=<n> PDU version=2
+sample.long.one 1 1
+
+=== PMCD_PORT=9876,44321,4321 pmcd_opt= ===
+[Thu Aug 20 17:13:40] pmcd(87040) Error: Failed to create avahi client: Daemon not running
+pmcd: avahi.c:106: createServices: Assertion `c' failed.
+--- PMCD_PORT= ---
+__pmConnectPMCD(HOST): pmcd connection port=44321 failed: Connection refused
+--- PMCD_PORT=9876,4321,44321 ---
+__pmConnectPMCD(HOST): pmcd connection port=9876,4321,44321 failed: Connection refused
+/usr/libexec/pcp/bin/pmsignal: line 123: kill: (87040) - No such process
+
+=== PMCD_PORT= pmcd_opt=-p 4321 -p 44321 -p 9876 ===
+[Thu Aug 20 17:13:44] pmcd(87069) Error: Failed to create avahi client: Daemon not running
+pmcd: avahi.c:106: createServices: Assertion `c' failed.
+--- PMCD_PORT= ---
+__pmConnectPMCD(HOST): pmcd connection port=44321 failed: Connection refused
+--- PMCD_PORT=9876,4321,44321 ---
+__pmConnectPMCD(HOST): pmcd connection port=9876,4321,44321 failed: Connection refused
+/usr/libexec/pcp/bin/pmsignal: line 123: kill: (87069) - No such process

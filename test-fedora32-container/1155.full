@@ -1,0 +1,42 @@
+pmdabcc config:
+# Installed by PCP QA test 1155 on Thu Aug 20 19:07:21 UTC 2020
+[pmda]
+modules = tcplife
+prefix = bcc.
+[tcplife]
+module = tcplife
+cluster = 3
+dport = 80
+Log for pmdabcc on 4687b293bd5e started Thu Aug 20 19:07:23 2020
+
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: Enabled modules:
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: ['tcplife']
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: Configuring modules:
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: tcplife
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: Modules configured.
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: Initializing modules:
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: tcplife
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: tcplife: Filtering on remote ports: [80].
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: tcplife: Using BPF source file modules/tcplife.bpf.
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: tcplife: Initialized.
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: Modules initialized.
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: Registering metrics:
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: tcplife
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: Metrics registered.
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: Registering helpers:
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: tcplife
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: Helpers registered.
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: Compiling modules:
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: tcplife
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: tcplife: Testing BCC compatilibility, possible errors below are safe to ignore.
+modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1034-azure
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 19:07:23] pmdabcc(990124) Info: tcplife: Tested BCC compatilibility, possible errors above are safe to ignore.
+modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1034-azure
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 19:07:23] pmdabcc(990124) Error: tcplife: Failed to compile BPF module <text>
+[Thu Aug 20 19:07:23] pmdabcc(990124) Error: tcplife: Module NOT active!
+[Thu Aug 20 19:07:23] pmdabcc(990124) Error: Failed to compile module tcplife, aborting.
+
+Log finished Thu Aug 20 19:07:23 2020

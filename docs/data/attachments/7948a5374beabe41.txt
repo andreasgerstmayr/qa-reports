@@ -1,0 +1,45 @@
+QA output created by 1115
+
+=== bcc agent installation ===
+Info: Initializing, currently in 'notready' state.
+Info: Enabled modules:
+Info: ['sysfork']
+Info: Configuring modules:
+Info: sysfork
+Info: Modules configured.
+Info: Initializing modules:
+Info: sysfork
+Info: sysfork: Initialized.
+Info: Modules initialized.
+Info: Registering metrics:
+Info: sysfork
+Info: Metrics registered.
+Info: Registering helpers:
+Info: Helpers registered.
+Info: Initializing, currently in 'notready' state.
+Info: Enabled modules:
+Info: ['sysfork']
+Info: Configuring modules:
+Info: sysfork
+Info: Modules configured.
+Info: Initializing modules:
+Info: sysfork
+Info: sysfork: Initialized.
+Info: Modules initialized.
+Info: Registering metrics:
+Info: sysfork
+Info: Metrics registered.
+Info: Registering helpers:
+Info: Helpers registered.
+Updating the Performance Metrics Name Space (PMNS) ...
+Terminate PMDA if already installed ...
+[...install files, make output...]
+Updating the PMCD control file, and notifying PMCD ...
+Check bcc metrics have appeared ... X metrics and X values
+
+[Thu Aug 20 18:55:38] pmdabcc(965734) Error: sysfork: Failed to compile BPF module b'/var/lib/pcp/pmdas/bcc/modules/sysfork.bpf'
+[Thu Aug 20 18:55:38] pmdabcc(965734) Error: sysfork: Module NOT active!
+[Thu Aug 20 18:55:38] pmdabcc(965734) Error: Failed to compile module sysfork, aborting.
+
+Log finished Thu Aug 20 18:55:38 2020
+PMDA was not ready in 60 seconds, test failed

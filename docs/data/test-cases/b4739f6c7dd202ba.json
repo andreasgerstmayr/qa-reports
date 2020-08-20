@@ -1,0 +1,55 @@
+{
+  "uid" : "b4739f6c7dd202ba",
+  "name" : "QA 862",
+  "fullName" : "QA #862 on fedora32-container",
+  "historyId" : "862@fedora32-container",
+  "time" : {
+    "start" : 1597948020000,
+    "stop" : 1597948022000,
+    "duration" : 2000
+  },
+  "description" : "PCP QA Test No. 862\n\nExercise pmie handling of interactive (stdin) configs.\n\n\n\nCopyright (c) 2015 Red Hat.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 862</p>\n<p>Exercise pmie handling of interactive (stdin) configs.</p>\n<p>Copyright (c) 2015 Red Hat.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora32-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora32-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmie"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/862",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/862.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b4739f6c7dd202ba.json",
+  "parameterValues" : [ ]
+}

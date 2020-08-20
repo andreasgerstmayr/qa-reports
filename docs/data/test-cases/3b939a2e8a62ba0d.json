@@ -1,0 +1,86 @@
+{
+  "uid" : "3b939a2e8a62ba0d",
+  "name" : "QA 581",
+  "fullName" : "QA #581 on centos7-container",
+  "historyId" : "581@centos7-container",
+  "time" : {
+    "start" : 1597945516000,
+    "stop" : 1597945566000,
+    "duration" : 50000
+  },
+  "description" : "PCP QA Test No. 581\n\npmie, #687355\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos7 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 581</p>\n<p>pmie, #687355</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform centos7 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 581.out.bad)\n40a41\n> FILESYS overlay\n42a44,63\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n45a67\n> FILESYS overlay\n50a73\n> FILESYS overlay\n55a79\n> FILESYS overlay\n60a85\n> FILESYS overlay\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 74ebe952d6a4 -f sample.milliseconds\nPMDA probe: pminfo -h 74ebe952d6a4 -f sampledso.milliseconds\nPMDA probe: pminfo -h 74ebe952d6a4 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 581\n\npmie, #687355\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos7 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 581.out.bad)\n40a41\n> FILESYS overlay\n42a44,63\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n> FILESYS overlay\n45a67\n> FILESYS overlay\n50a73\n> FILESYS overlay\n55a79\n> FILESYS overlay\n60a85\n> FILESYS overlay\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 74ebe952d6a4 -f sample.milliseconds\nPMDA probe: pminfo -h 74ebe952d6a4 -f sampledso.milliseconds\nPMDA probe: pminfo -h 74ebe952d6a4 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "15ee25d584bfaea8",
+      "name" : "581.out.bad",
+      "source" : "15ee25d584bfaea8.txt",
+      "type" : "text/plain",
+      "size" : 2609
+    }, {
+      "uid" : "ba5c1729e0dfd197",
+      "name" : "581.full",
+      "source" : "ba5c1729e0dfd197.txt",
+      "type" : "text/plain",
+      "size" : 8752
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos7-container"
+  }, {
+    "name" : "host",
+    "value" : "centos7-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmie"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "kernel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/581",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/581.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "3b939a2e8a62ba0d.json",
+  "parameterValues" : [ ]
+}

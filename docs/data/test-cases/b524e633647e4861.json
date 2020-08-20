@@ -1,0 +1,58 @@
+{
+  "uid" : "b524e633647e4861",
+  "name" : "QA 793",
+  "fullName" : "QA #793 on centos7-container",
+  "historyId" : "793@centos7-container",
+  "time" : {
+    "start" : 1597946905000,
+    "stop" : 1597946910000,
+    "duration" : 5000
+  },
+  "description" : "PCP QA Test No. 793\n\npmlogger_check and pmlogger_daily with shell components in the dir field\n\nof the control file\n\n\n\nCopyright (c) 2015 Ken McDonell.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 793</p>\n<p>pmlogger_check and pmlogger_daily with shell components in the dir field</p>\n<p>of the control file</p>\n<p>Copyright (c) 2015 Ken McDonell.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos7-container"
+  }, {
+    "name" : "host",
+    "value" : "centos7-container"
+  }, {
+    "name" : "epic",
+    "value" : "logutil"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "epic",
+    "value" : "kernel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/793",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/793.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b524e633647e4861.json",
+  "parameterValues" : [ ]
+}

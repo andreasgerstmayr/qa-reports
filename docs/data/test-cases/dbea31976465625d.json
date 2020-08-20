@@ -1,0 +1,61 @@
+{
+  "uid" : "dbea31976465625d",
+  "name" : "QA 1113",
+  "fullName" : "QA #1113 on ubuntu2004-direct",
+  "historyId" : "1113@ubuntu2004-direct",
+  "time" : {
+    "start" : 1597949542000,
+    "stop" : 1597949543000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 1113\n\nExercise the pcp-ipcs(1) command using an archive\n\n\n\nCopyright (c) 2016 fujitsu (wulm.fnst@cn.fujitsu.com) \n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 1113</p>\n<p>Exercise the pcp-ipcs(1) command using an archive</p>\n<p>Copyright (c) 2016 fujitsu (wulm.fnst@cn.fujitsu.com)</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ubuntu2004-direct"
+  }, {
+    "name" : "host",
+    "value" : "ubuntu2004-direct"
+  }, {
+    "name" : "epic",
+    "value" : "pcp"
+  }, {
+    "name" : "epic",
+    "value" : "ipcs"
+  }, {
+    "name" : "epic",
+    "value" : "python"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1113",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1113.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dbea31976465625d.json",
+  "parameterValues" : [ ]
+}

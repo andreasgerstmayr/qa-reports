@@ -1,81 +1,1510 @@
 Group "not_in_container" is empty or not defined; ignored
-PMDA probe: pminfo -h fv-az204 -f sample.milliseconds
-PMDA probe: pminfo -h fv-az204 -f sampledso.milliseconds
-PMDA probe: pminfo -h fv-az204 -f simple.numfetch
+PMDA probe: pminfo -h fv-az213 -f sample.milliseconds
+PMDA probe: pminfo -h fv-az213 -f sampledso.milliseconds
+PMDA probe: pminfo -h fv-az213 -f simple.numfetch
+[0%] 000
 [0%] 001
-[1%] 002 0s ...
-[2%] 004
-[3%] 005
-[5%] 007
-[6%] 010
-[7%] 026
-[9%] 027
-[10%] 031
-[11%] 034
-[13%] 048
-[14%] 055
-[15%] 059
-[17%] 068
-[18%] 074
-[19%] 080
-[21%] 085
-[22%] 087
-[23%] 091
-[25%] 107
-[26%] 112
-[27%] 127
-[28%] 137
-[30%] 146
-[31%] 153
-[32%] 154
-[34%] 155
-[35%] 178
-[36%] 201
-[38%] 207
-[39%] 208
-[40%] 210
-[42%] 213
-[43%] 232
-[44%] 234
-[46%] 249
-[47%] 256
-[48%] 263
-[50%] 278
-[51%] 299
-[52%] 338
-[53%] 345
-[55%] 354
-[56%] 359
-[57%] 369
-[59%] 385
-[60%] 397
-[61%] 401
-[63%] 403
-[64%] 404
-[65%] 407
-[67%] 416
-[68%] 435
-[69%] 436
-[71%] 437
-[72%] 453
-[73%] 548
-[75%] 561
-[76%] 562
-[77%] 567
-[78%] 568
-[80%] 569
-[81%] 574
-[82%] 646
-[84%] 689
-[85%] 702
-[86%] 707
-[88%] 900
-[89%] 970
-[90%] 978
-[92%] 1044
-[93%] 1098
-[94%] 1204
-[96%] 1229
-[97%] 1274
-[98%] 1368
-Passed all 76 tests
+[0%] 002 0s ...
+[0%] 003
+[0%] 004
+[0%] 005
+[0%] 006
+[0%] 007
+[0%] 008 [not run] No qualified results file (008.out.fv-az213) for the localhost
+[0%] 010
+[0%] 011
+[0%] 012
+[0%] 013
+[0%] 014
+[1%] 015
+[1%] 016
+[1%] 017
+[1%] 018
+[1%] 019
+[1%] 020
+[1%] 021
+[1%] 022
+[1%] 023
+[1%] 024 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1 -a sample"
+[1%] 025
+[1%] 026
+[1%] 027
+[1%] 028
+[2%] 029
+[2%] 030
+[2%] 031
+[2%] 032
+[2%] 033
+[2%] 034
+[2%] 035
+[2%] 036
+[2%] 037
+[2%] 038
+[2%] 039
+[2%] 040
+[2%] 041
+[3%] 042 [not run] Cannot find docker image. Use: /usr/bin/sudo -E docker run -it --rm busybox
+[3%] 043
+[3%] 044
+[3%] 045
+[3%] 046
+[3%] 047 [not run] Cannot find docker image. Use: /usr/bin/sudo -E docker run -it --rm busybox
+[3%] 048
+[3%] 049
+[3%] 050
+[3%] 051
+[3%] 052
+[3%] 053
+[3%] 054 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n1"
+[3%] 055
+[4%] 056
+[4%] 057
+[4%] 058
+[4%] 059
+[4%] 060
+[4%] 061
+[4%] 062
+[4%] 063
+[4%] 064
+[4%] 065
+[4%] 066 [not run] Cannot find two remote hosts running pmcd
+[4%] 067
+[4%] 068
+[5%] 069 [not run] Cannot find first remote host running pmcd
+[5%] 070 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[5%] 071
+[5%] 072 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[5%] 073
+[5%] 074
+[5%] 075 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1 -a sample"
+[5%] 076
+[5%] 077 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-n 1 -L"
+[5%] 078
+[5%] 079
+[5%] 080
+[5%] 081 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-p single -n 1 -v pcp>=2"
+[5%] 082
+[6%] 083 [not run] Cannot find first remote host running pmcd v2.x
+[6%] 084
+[6%] 085
+[6%] 086 [not run] Unable to find two other hosts
+[6%] 087
+[6%] 088
+[6%] 089
+[6%] 090
+[6%] 091
+[6%] 092
+[6%] 093
+[6%] 094
+[6%] 095
+[6%] 096
+[7%] 097
+[7%] 098
+[7%] 099
+[7%] 100
+[7%] 101
+[7%] 102
+[7%] 103
+[7%] 104
+[7%] 105
+[7%] 106
+[7%] 107
+[7%] 108
+[7%] 109
+[8%] 110
+[8%] 111
+[8%] 112
+[8%] 113 [not run] System has active loop devices, bailing
+[8%] 114
+[8%] 115 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-n 1 -L"
+[8%] 116 [not run] PCPQA_HYPHEN_HOST is not set in ./common.config
+[8%] 117 [not run] network.ip checks for linux done in test 216
+[8%] 118
+[8%] 119
+[8%] 120
+[8%] 121
+[8%] 122 [not run] Cannot find big endian host running pmdatrace
+[8%] 123
+[9%] 124
+[9%] 125
+[9%] 127
+[9%] 128
+[9%] 129
+[9%] 130 [not run] TODO: Need to reconcile rpc.server metrics for PCP_PLATFORM linux
+[9%] 131 [not run] PCPQA_FAR_PMCD is not set in ./common.config
+[9%] 132
+[9%] 133
+[9%] 134
+[9%] 135
+[9%] 136
+[9%] 137
+[10%] 138
+[10%] 139
+[10%] 140
+[10%] 141
+[10%] 142
+[10%] 143
+[10%] 144
+[10%] 145
+[10%] 146
+[10%] 147
+[10%] 149
+[10%] 150
+[10%] 151 - output mismatch (see 151.out.bad)
+67a68
+> Info: found .NeedRewrite => rewrite all archives
+70a72
+> Info: pmlogrewrite all archives in TMP
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h fv-az213 -f sample.milliseconds
+PMDA probe: pminfo -h fv-az213 -f sampledso.milliseconds
+PMDA probe: pminfo -h fv-az213 -f simple.numfetch
+[10%] 152
+[11%] 153
+[11%] 154
+[11%] 155
+[11%] 156
+[11%] 157
+[11%] 158
+[11%] 159 [not run] No cisco router set via $PCPQA_CISCO_ROUTER in ./common.config
+[11%] 160
+[11%] 161
+[11%] 163
+[11%] 165
+[11%] 166
+[11%] 167
+[11%] 168
+[12%] 169
+[12%] 170
+[12%] 171
+[12%] 172
+[12%] 173
+[12%] 174
+[12%] 175
+[12%] 176
+[12%] 177
+[12%] 178
+[12%] 179
+[12%] 180
+[12%] 181
+[13%] 182
+[13%] 186
+[13%] 187 [not run] Cannot find a remote host running pmcd
+[13%] 188
+[13%] 189
+[13%] 190
+[13%] 191
+[13%] 192
+[13%] 193
+[13%] 194
+[13%] 195
+[13%] 196
+[13%] 197
+[13%] 198
+[14%] 199
+[14%] 200
+[14%] 201
+[14%] 202
+[14%] 203
+[14%] 204
+[14%] 205
+[14%] 206
+[14%] 207
+[14%] 208
+[14%] 209
+[14%] 210
+[14%] 211
+[15%] 213
+[15%] 214
+[15%] 215 [not run] pmsocks is not installed and/or not configured
+[15%] 216
+[15%] 217
+[15%] 218
+[15%] 219 [not run] new style /usr/include/pcp/pmdbg.h, nothing to test
+[15%] 220
+[15%] 221
+[15%] 222
+[15%] 224
+[15%] 225
+[15%] 226
+[15%] 227
+[16%] 228
+[16%] 229
+[16%] 230
+[16%] 231
+[16%] 232
+[16%] 233
+[16%] 234
+[16%] 235
+[16%] 236
+[16%] 237
+[16%] 238
+[16%] 239
+[16%] 240
+[16%] 241
+[17%] 242
+[17%] 243
+[17%] 244 [failed, exit status 2] - output mismatch (see 244.out.bad)
+13,39c13,81
+< Expect "IPC protocol failure" ...
+< hinv.ncpu: pmLookupDesc: IPC protocol failure
+< $PCP_PMCDCONF_PATH now contains:
+< <BEGIN>
+< fake_irix 1 pipe binary dumb_pmda -d 1 fake_irix
+< sample 29 pipe binary ...pmdasample -d 29
+< fake_cisco 5 pipe binary dumb_pmda -d 5 fake_cisco
+< fake_linux 60 pipe binary dumb_pmda -d 60 fake_linux
+< pmcd 2 dso pmcd_init ...pmda_pmcd.$DSO_SUFFIX
+< [access]
+< allow localhost : all;
+< disallow * : all;
+< <END>
+< Expect "Unknown or illegal metric identifier" ...
+< sampledso.control: pmLookupDesc: Unknown or illegal metric identifier
+< Expect "IPC protocol failure" ...
+< hinv.ncpu: pmLookupDesc: IPC protocol failure
+< Expect 9 values available ...
+< sample.bin 9 100 200 300 400 500 600 700 800 900
+< 
+< Deleting, adding and keeping agents test
+< Getting a desriptor from domain 30 (fake_sampledso agent had this domain)
+< 
+< sampledso.control PMID: 30.0.0
+<     Data Type: 32-bit int  InDom: PM_INDOM_NULL 0xffffffff
+<     Semantics: instant  Units: none
+< Log for pmcd on HOST started DATE
+---
+> Thu Aug 20 17:25:01 UTC 2020
+> Arrgghhh ... pmcd at localhost failed to start after 20 seconds
+> === failing pmprobes stdout ===
+> -- 0 --
+> -- 1 --
+> -- 2 --
+> -- 3 --
+> -- 4 --
+> -- 5 --
+> -- 6 --
+> -- 7 --
+> -- 8 --
+> -- 9 --
+> -- 10 --
+> -- 11 --
+> -- 12 --
+> -- 13 --
+> -- 14 --
+> -- 15 --
+> -- 16 --
+> -- 17 --
+> -- 18 --
+> -- 19 --
+> === failing pmprobes stderr ===
+> -- 0 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> -- 1 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> -- 2 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> -- 3 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> -- 4 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> -- 5 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> -- 6 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> -- 7 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> -- 8 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> -- 9 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> -- 10 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> -- 11 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> -- 12 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> -- 13 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> -- 14 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> -- 15 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> -- 16 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> -- 17 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> -- 18 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> -- 19 --
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> ... and now
+> + pmprobe -n /var/lib/pcp/pmns/root_pmcd  pmcd.numclients
+> pmprobe: Cannot connect to PMCD on host "local:": Connection refused
+> === pmcd.log ===
+> Log for pmcd on fv-az213 started Thu Aug 20 17:24:29 2020
+41d82
+< Warning: nports=1 from PMCD_PORT=$port in environment
+45,49c86,90
+< fake_irix 1 A_PID FD FD 2 bin pipe cmd=dumb_pmda -d 1 fake_irix
+< pmcd 2 A_PID dso i:6 lib=...pmda_pmcd.$DSO_SUFFIX entry=pmcd_init
+< fake_cisco 5 A_PID FD FD 2 bin pipe cmd=dumb_pmda -d 5 fake_cisco
+< fake_sampledso 30 A_PID FD FD 2 bin pipe cmd=dumb_pmda -d 30 fake_sampledso
+< fake_linux 60 A_PID FD FD 2 bin pipe cmd=dumb_pmda -d 60 fake_linux
+---
+> fake_irix      1 537611   6   7   2 bin pipe cmd=/var/lib/pcp/testsuite/src/dumb_pmda -d 1 fake_irix
+> fake_sampledso  30 537612   8   9   2 bin pipe cmd=/var/lib/pcp/testsuite/src/dumb_pmda -d 30 fake_sampledso
+> fake_cisco     5 537613  10  11   2 bin pipe cmd=/var/lib/pcp/testsuite/src/dumb_pmda -d 5 fake_cisco
+> fake_linux    60 537614  12  13   2 bin pipe cmd=/var/lib/pcp/testsuite/src/dumb_pmda -d 60 fake_linux
+> pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7f5995aa5150]
+54,56c95,100
+< y y A_PID 0 MYIPADDR MYHOSTMASK 0 localhost
+< n n A_PID 0 0.0.0.0 0.0.0.0 4 .*
+< n n A_PID 0 :: :: 8 :*
+---
+>  y  y     0     0 10.1.0.4                                255.255.255.255                           0 localhost
+>  n  n     0     0 /                                       /                                         1 unix:
+>  n  n     0     0 0.0.0.0                                 0.0.0.0                                   4 .*
+>  n  n     0     0 ::                                      ::                                        8 :*
+> User access list empty: user-based access control turned off
+> Group access list empty: group-based access control turned off
+59c103
+< pmcd: PID = PID
+---
+> pmcd: PID = 537608, PDU version = 2
+63,79c107,127
+< ok FD A_PID inet INADDR_ANY
+< ok FD A_PID ipv6 INADDR_ANY
+< [DATE] pmcd(PID) Warning: pduread: timeout (after 2.000000 sec) while attempting to read 12 bytes out of 12 in HDR on fd=FD
+< Cleanup "fake_irix" agent (dom 1): protocol failure for fd=FD, exit(0)
+< [DATE] pmcd(PID) Info: Auto-restarting agents.
+< [DATE] pmcd(PID) Info: 
+< 
+< pmcd RESTARTED at DATE
+< 
+< 
+< Current PMCD clients ...
+<      fd  client connection from                    ipc ver  operations denied
+<      ==  ========================================  =======  =================
+< 
+< Configuration file '$PCP_PMCDCONF_PATH' unchanged
+< Restarting any deceased agents:
+<     "fake_irix" agent
+---
+>   ok     4       unix   /run/pcp/pmcd.socket
+>   ok     0 44321 inet   INADDR_ANY
+>   ok     3 44321 ipv6   INADDR_ANY
+> access violation from host /run/pcp/pmcd.socket
+> endclient client[0]: (fd 5) No permission to perform requested operation (-12387)
+> likely looking processes ...
+> UID          PID    PPID  C STIME TTY          TIME CMD
+> root         126       2  0 16:15 ?        00:00:00 [tpm_dev_wq]
+> root         773       1  0 16:16 ?        00:00:00 php-fpm: master process (/etc/php/7.4/fpm/php-fpm.conf)
+> www-data     969     773  0 16:16 ?        00:00:00 php-fpm: pool www
+> www-data     970     773  0 16:16 ?        00:00:00 php-fpm: pool www
+> root      537342       1  0 17:24 ?        00:00:00 /bin/sh /etc/init.d/pmcd start-systemd
+> pcp       537608       1  0 17:24 ?        00:00:00 /usr/lib/pcp/bin/pmcd -T 3
+> root      537610  537342  0 17:24 ?        00:00:00 /usr/lib/pcp/bin/pmcd_wait
+> root      537611  537608  0 17:24 ?        00:00:00 /var/lib/pcp/testsuite/src/dumb_pmda -d 1 fake_irix
+> root      537612  537608  0 17:24 ?        00:00:00 /var/lib/pcp/testsuite/src/dumb_pmda -d 30 fake_sampledso
+> root      537613  537608  0 17:24 ?        00:00:00 /var/lib/pcp/testsuite/src/dumb_pmda -d 5 fake_cisco
+> root      537614  537608  0 17:24 ?        00:00:00 /var/lib/pcp/testsuite/src/dumb_pmda -d 60 fake_linux
+> root      537615       1  0 17:24 ?        00:00:00 /bin/sh /etc/init.d/pmie start-systemd
+> root      537694  537615  0 17:24 ?        00:00:00 pmcd_wait
+> /usr/lib/pcp/bin/pmsignal: 123: kill: No such process
+81,139d128
+< 
+< active agent dom   pid  in out ver protocol parameters
+< ============ === ===== === === === ======== ==========
+< fake_irix 1 A_PID FD FD 2 bin pipe cmd=dumb_pmda -d 1 fake_irix
+< pmcd 2 A_PID dso i:6 lib=...pmda_pmcd.$DSO_SUFFIX entry=pmcd_init
+< fake_cisco 5 A_PID FD FD 2 bin pipe cmd=dumb_pmda -d 5 fake_cisco
+< fake_sampledso 30 A_PID FD FD 2 bin pipe cmd=dumb_pmda -d 30 fake_sampledso
+< fake_linux 60 A_PID FD FD 2 bin pipe cmd=dumb_pmda -d 60 fake_linux
+< 
+< Host access list:
+< 00 01 Cur/MaxCons host-spec                               host-mask                               lvl host-name
+< == == =========== ======================================= ======================================= === ==============
+< y y A_PID 0 MYIPADDR MYHOSTMASK 0 localhost
+< n n A_PID 0 0.0.0.0 0.0.0.0 4 .*
+< n n A_PID 0 :: :: 8 :*
+< 
+< [DATE] pmcd(PID) Info: PMNS file "DEFAULT" is unchanged
+< [DATE] pmcd(PID) Info: 
+< 
+< pmcd RESTARTED at DATE
+< 
+< 
+< Current PMCD clients ...
+<      fd  client connection from                    ipc ver  operations denied
+<      ==  ========================================  =======  =================
+< 
+< Cleanup "fake_sampledso" agent (dom 30): unconfigured, exit(0)
+< 
+< active agent dom   pid  in out ver protocol parameters
+< ============ === ===== === === === ======== ==========
+< fake_irix 1 A_PID FD FD 2 bin pipe cmd=dumb_pmda -d 1 fake_irix
+< pmcd 2 A_PID dso i:6 lib=...pmda_pmcd.$DSO_SUFFIX entry=pmcd_init
+< fake_cisco 5 A_PID FD FD 2 bin pipe cmd=dumb_pmda -d 5 fake_cisco
+< sample 29 A_PID FD FD 2 bin pipe cmd=...pmdasample -d 29
+< fake_linux 60 A_PID FD FD 2 bin pipe cmd=dumb_pmda -d 60 fake_linux
+< 
+< Host access list:
+< 00 01 Cur/MaxCons host-spec                               host-mask                               lvl host-name
+< == == =========== ======================================= ======================================= === ==============
+< y y A_PID 0 MYIPADDR MYHOSTMASK 0 localhost
+< n n A_PID 0 0.0.0.0 0.0.0.0 4 .*
+< n n A_PID 0 :: :: 8 :*
+< 
+< [DATE] pmcd(PID) Info: PMNS file "DEFAULT" is unchanged
+< [DATE] pmcd(PID) Warning: pduread: timeout (after 2.000000 sec) while attempting to read 12 bytes out of 12 in HDR on fd=FD
+< Cleanup "fake_irix" agent (dom 1): protocol failure for fd=FD, exit(0)
+< [DATE] pmcd(PID) Info: 
+< 
+< pmcd RESTARTED at DATE
+< 
+< 
+< Current PMCD clients ...
+<      fd  client connection from                    ipc ver  operations denied
+<      ==  ========================================  =======  =================
+< 
+< Cleanup "fake_cisco" agent (dom 5): unconfigured, exit(0)
+< Cleanup "fake_linux" agent (dom 60): unconfigured, exit(0)
+< 
+< ...
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h fv-az213 -f sample.milliseconds
+PMDA probe: pminfo -h fv-az213 -f sampledso.milliseconds
+PMDA probe: pminfo -h fv-az213 -f simple.numfetch
+[17%] 245
+[17%] 246
+[17%] 247
+[17%] 248
+[17%] 249
+[17%] 250
+[17%] 251
+[17%] 252
+[17%] 253
+[17%] 254
+[18%] 255
+[18%] 256
+[18%] 257 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-s linux -b 32 -m pmcd.version>2.0 -n 1 -a sample"
+[18%] 258
+[18%] 259
+[18%] 260
+[18%] 261
+[18%] 262 [not run] pmsocks is not installed and/or not configured
+[18%] 263
+[18%] 264
+[18%] 265
+[18%] 266
+[18%] 267
+[18%] 268
+[19%] 269
+[19%] 270
+[19%] 271
+[19%] 272 [not run] ./getpmcdhosts: unable to get 2 host(s) with options: "-n 2 -L -a sample -v pcp>=2 -s IRIX64"
+[19%] 273
+[19%] 274
+[19%] 275
+[19%] 276 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[19%] 277
+[19%] 278
+[19%] 279
+[19%] 280
+[19%] 281
+[20%] 282
+[20%] 283
+[20%] 285
+[20%] 286
+[20%] 287
+[20%] 288
+[20%] 289
+[20%] 291
+[20%] 292
+[20%] 293
+[20%] 294
+[20%] 295
+[20%] 296
+[20%] 297
+[21%] 298
+[21%] 299
+[21%] 300
+[21%] 301
+[21%] 302
+[21%] 303
+[21%] 304
+[21%] 305
+[21%] 306
+[21%] 307 [not run] metric network.tcp.drops is not available
+[21%] 308 [not run] Cannot get first remote pmcd host with proc.psinfo.ppid metrics
+[21%] 309
+[21%] 310
+[21%] 312
+[22%] 313
+[22%] 314
+[22%] 315
+[22%] 316
+[22%] 317
+[22%] 318
+[22%] 319
+[22%] 320
+[22%] 321
+[22%] 322 [not run] ./getpmcdhosts failed to find a suitable host
+[22%] 323
+[22%] 324
+[22%] 325 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[23%] 326
+[23%] 327
+[23%] 328
+[23%] 334
+[23%] 335
+[23%] 336
+[23%] 337
+[23%] 338
+[23%] 339
+[23%] 340 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-n 1 -L -v pcp>=2"
+[23%] 341
+[23%] 342
+[23%] 343
+[23%] 344
+[24%] 345
+[24%] 346
+[24%] 347
+[24%] 348 [not run] KVM sysfs interface not available
+[24%] 349
+[24%] 350
+[24%] 351
+[24%] 352
+[24%] 353 [not run] pmsocks is not configured
+[24%] 354
+[24%] 355
+[24%] 356
+[24%] 357
+[25%] 358
+[25%] 359
+[25%] 360 [not run] ./getpmcdhosts: unable to get 2 host(s) with options: "-L -v pcp>=2 -n 2 -a sample"
+[25%] 361 [not run] One or more cgroups already in use
+[25%] 362
+[25%] 363
+[25%] 364
+[25%] 365 [not run] Cannot find first remote host running pmcd
+[25%] 367
+[25%] 368
+[25%] 369
+[25%] 370 [not run] no qualified output for sysstat version 12.2.0
+[25%] 371
+[25%] 372
+[26%] 373
+[26%] 374 [not run] Cannot find a 64-bit host running PCP
+[26%] 375 [not run] Cannot find a 64-bit host running PCP
+[26%] 376
+[26%] 377 [not run] HAVE_BITFIELDS_LTOR is false
+[26%] 378
+[26%] 379
+[26%] 380
+[26%] 381 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1 -P -a sample"
+[26%] 382
+[26%] 383
+[26%] 384
+[26%] 385
+[26%] 386
+[27%] 387
+[27%] 388
+[27%] 389
+[27%] 390
+[27%] 391
+[27%] 392
+[27%] 393
+[27%] 394
+[27%] 395
+[27%] 396
+[27%] 397
+[27%] 398
+[27%] 399
+[28%] 400
+[28%] 401
+[28%] 402
+[28%] 403
+[28%] 404
+[28%] 405
+[28%] 406
+[28%] 407
+[28%] 408
+[28%] 409
+[28%] 410
+[28%] 411
+[28%] 412
+[28%] 413
+[29%] 414
+[29%] 415
+[29%] 416
+[29%] 417
+[29%] 418
+[29%] 419
+[29%] 420 [not run] Not yet working - libpcp_gui recording
+[29%] 421
+[29%] 422
+[29%] 423
+[29%] 424
+[29%] 425
+[29%] 426
+[30%] 427
+[30%] 428
+[30%] 429
+[30%] 430 [not run] No entry for hostname of local host in /etc/hosts
+[30%] 431
+[30%] 432
+[30%] 433
+[30%] 434
+[30%] 435
+[30%] 436
+[30%] 437
+[30%] 438
+[30%] 439
+[30%] 440
+[31%] 441
+[31%] 442
+[31%] 443
+[31%] 444 - output mismatch (see 444.out.bad)
+4,5c4,5
+< pmRegisterDerived: register metric[0] event.flags = anon(PM_TYPE_U32)
+< pmRegisterDerived: register metric[1] event.missed = anon(PM_TYPE_U32)
+---
+> pmRegisterDerived: global metric[0] event.flags = anon(PM_TYPE_U32)
+> pmRegisterDerived: global metric[1] event.missed = anon(PM_TYPE_U32)
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h fv-az213 -f sample.milliseconds
+PMDA probe: pminfo -h fv-az213 -f sampledso.milliseconds
+PMDA probe: pminfo -h fv-az213 -f simple.numfetch
+[31%] 445
+[31%] 446
+[31%] 447
+[31%] 448
+[31%] 449
+[31%] 450
+[31%] 451
+[31%] 452
+[31%] 453
+[31%] 454
+[32%] 455
+[32%] 456
+[32%] 457
+[32%] 458
+[32%] 459
+[32%] 460
+[32%] 461
+[32%] 462
+[32%] 463
+[32%] 464
+[32%] 465
+[32%] 466
+[32%] 467
+[33%] 468
+[33%] 469 - output mismatch (see 469.out.bad)
+1a2,11
+> kernel.percpu.softirqs.RCU, full help text is too long: 251
+> kernel.percpu.softirqs.HRTIMER, full help text is too long: 251
+> kernel.percpu.softirqs.SCHED, full help text is too long: 251
+> kernel.percpu.softirqs.TASKLET, full help text is too long: 251
+> kernel.percpu.softirqs.IRQ_POLL, full help text is too long: 251
+> kernel.percpu.softirqs.BLOCK, full help text is too long: 251
+> kernel.percpu.softirqs.NET_RX, full help text is too long: 251
+> kernel.percpu.softirqs.NET_TX, full help text is too long: 251
+> kernel.percpu.softirqs.TIMER, full help text is too long: 251
+> kernel.percpu.softirqs.HI, full help text is too long: 251
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h fv-az213 -f sample.milliseconds
+PMDA probe: pminfo -h fv-az213 -f sampledso.milliseconds
+PMDA probe: pminfo -h fv-az213 -f simple.numfetch
+[33%] 470
+[33%] 471
+[33%] 472
+[33%] 473
+[33%] 474
+[33%] 475
+[33%] 476 [not run] libpcp not built with fault injection enabled
+[33%] 477 [not run] libpcp not built with fault injection enabled
+[33%] 478 [not run] libpcp not built with fault injection enabled
+[33%] 479
+[33%] 480 [not run] libpcp not built with fault injection enabled
+[33%] 481
+[34%] 482
+[34%] 483
+[34%] 484
+[34%] 485
+[34%] 486
+[34%] 487
+[34%] 488
+[34%] 489
+[34%] 490
+[34%] 491
+[34%] 492
+[34%] 493
+[34%] 494
+[35%] 495
+[35%] 496
+[35%] 497
+[35%] 498
+[35%] 499
+[35%] 501
+[35%] 502
+[35%] 503
+[35%] 504 [not run] libpcp not built with fault injection enabled
+[35%] 505
+[35%] 506
+[35%] 507
+[35%] 508
+[35%] 509
+[36%] 510
+[36%] 511
+[36%] 512 [not run] libpcp not built with fault injection & lock tracing enabled
+[36%] 513
+[36%] 514
+[36%] 515
+[36%] 516
+[36%] 517
+[36%] 518
+[36%] 519 [not run] Cannot find first remote host running pmcd
+[36%] 520
+[36%] 521
+[36%] 522
+[36%] 523
+[37%] 524
+[37%] 525
+[37%] 526
+[37%] 527
+[37%] 528
+[37%] 529
+[37%] 530
+[37%] 531
+[37%] 532
+[37%] 533
+[37%] 534
+[37%] 535
+[37%] 536
+[38%] 537
+[38%] 538
+[38%] 539
+[38%] 540 [not run] libpcp not built with fault injection enabled
+[38%] 541
+[38%] 542
+[38%] 543
+[38%] 544
+[38%] 545 [not run] pmsocks is not installed and/or not configured
+[38%] 546
+[38%] 547
+[38%] 548
+[38%] 549
+[38%] 550
+[39%] 551
+[39%] 552
+[39%] 553
+[39%] 554
+[39%] 555 [not run] No /etc/rsyslog.conf -- probably using a different syslog package
+[39%] 556
+[39%] 557
+[39%] 558
+[39%] 559
+[39%] 560
+[39%] 561
+[39%] 562
+[39%] 563
+[40%] 564
+[40%] 565
+[40%] 566
+[40%] 567
+[40%] 568
+[40%] 569
+[40%] 571
+[40%] 572
+[40%] 573 - output mismatch (see 573.out.bad)
+4c4
+<     2.3.3 (pmcd.pmlogger.host): inst [INST] value "HOSTNAME"
+---
+>     2.3.3 (pmcd.pmlogger.host): inst [INST] value "fv-az213.internal.cloudapp.net"
+23c23
+<     2.3.3 (pmcd.pmlogger.host): inst [INST] value "HOSTNAME"
+---
+>     2.3.3 (pmcd.pmlogger.host): inst [INST] value "fv-az213.internal.cloudapp.net"
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h fv-az213 -f sample.milliseconds
+PMDA probe: pminfo -h fv-az213 -f sampledso.milliseconds
+PMDA probe: pminfo -h fv-az213 -f simple.numfetch
+[40%] 574
+[40%] 575
+[40%] 576
+[40%] 577
+[40%] 578
+[41%] 579
+[41%] 580
+[41%] 581
+[41%] 582
+[41%] 583 [not run] Cannot find first remote host running pmcd
+[41%] 585
+[41%] 586
+[41%] 587
+[41%] 588
+[41%] 589 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[41%] 590
+[41%] 591
+[41%] 592
+[41%] 593
+[42%] 594
+[42%] 595
+[42%] 596
+[42%] 597
+[42%] 598
+[42%] 599
+[42%] 600 [not run] Cannot find major version for libc
+[42%] 601
+[42%] 602
+[42%] 603 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[42%] 604
+[42%] 605
+[42%] 606
+[43%] 607
+[43%] 608
+[43%] 609
+[43%] 610
+[43%] 611
+[43%] 612
+[43%] 613
+[43%] 614
+[43%] 615
+[43%] 616
+[43%] 617
+[43%] 618
+[43%] 619
+[43%] 620
+[44%] 621
+[44%] 622 [not run] PCPQA_HYPHEN_HOST is not set in ./common.config
+[44%] 623
+[44%] 624
+[44%] 625
+[44%] 626
+[44%] 627
+[44%] 628
+[44%] 629
+[44%] 630
+[44%] 632
+[44%] 633
+[44%] 634
+[45%] 635 [not run] ./getpmcdhosts: unable to get 1 host(s) with options: "-L -n 1"
+[45%] 636
+[45%] 637
+[45%] 638
+[45%] 639
+[45%] 640
+[45%] 641
+[45%] 642
+[45%] 643
+[45%] 644
+[45%] 645
+[45%] 646
+[45%] 647
+[45%] 648
+[46%] 649
+[46%] 650
+[46%] 651
+[46%] 652
+[46%] 653
+[46%] 654 [not run] no GFS2 module to load and not builtin
+[46%] 655 [not run] no GFS2 module to load and not builtin
+[46%] 656
+[46%] 657
+[46%] 658
+[46%] 659
+[46%] 662
+[46%] 664
+[46%] 665
+[47%] 667
+[47%] 670
+[47%] 671
+[47%] 672
+[47%] 673
+[47%] 674
+[47%] 675
+[47%] 676
+[47%] 677
+[47%] 678
+[47%] 679
+[47%] 680
+[47%] 681
+[48%] 682
+[48%] 683
+[48%] 684
+[48%] 685
+[48%] 686
+[48%] 687
+[48%] 688
+[48%] 689
+[48%] 690
+[48%] 691
+[48%] 692
+[48%] 693
+[48%] 694
+[48%] 695
+[49%] 696
+[49%] 697
+[49%] 698
+[49%] 699
+[49%] 700 [not run] No PCP rpms installed
+[49%] 701
+[49%] 702
+[49%] 703 [not run] weblog PMDA not installed
+[49%] 704
+[49%] 705
+[49%] 706
+[49%] 707
+[49%] 708
+[50%] 710
+[50%] 711
+[50%] 712
+[50%] 713
+[50%] 714
+[50%] 715
+[50%] 716
+[50%] 717
+[50%] 718
+[50%] 719
+[50%] 720
+[50%] 721
+[50%] 722
+[50%] 723
+[51%] 724 [not run] No support for service discovery
+[51%] 725
+[51%] 726
+[51%] 728
+[51%] 729
+[51%] 730
+[51%] 731
+[51%] 732
+[51%] 733
+[51%] 734 [not run] No remote hosts available
+[51%] 735
+[51%] 736
+[51%] 737
+[51%] 738
+[52%] 739
+[52%] 740
+[52%] 741
+[52%] 742
+[52%] 743
+[52%] 744
+[52%] 745
+[52%] 746
+[52%] 747
+[52%] 748
+[52%] 749 [not run] No systemtap stap executable found
+[52%] 750 [not run] pmdarpm not installed
+[52%] 751 [not run] pmdarpm not installed
+[53%] 752
+[53%] 753
+[53%] 754
+[53%] 755
+[53%] 756
+[53%] 757
+[53%] 758
+[53%] 759
+[53%] 760 [not run] Noones home on the default ActiveMQ REST port 8161
+[53%] 761
+[53%] 762
+[53%] 763
+[53%] 764
+[53%] 765
+[54%] 766 [not run] No support for service discovery
+[54%] 767
+[54%] 768
+[54%] 769
+[54%] 770 [not run] libpcp not built with fault injection enabled
+[54%] 771
+[54%] 772
+[54%] 773
+[54%] 774
+[54%] 775 [not run] No support for service discovery
+[54%] 776 [not run] No support for service discovery
+[54%] 777
+[54%] 778 [not run] Cannot run psql as the postgres user, postgresql not installed or running?
+[55%] 779
+[55%] 780
+[55%] 781
+[55%] 783 [not run] pmdarpm not installed
+[55%] 784
+[55%] 785
+[55%] 786
+[55%] 787
+[55%] 788
+[55%] 789 [not run] Zimbra not installed
+[55%] 790
+[55%] 791
+[55%] 792
+[55%] 793
+[56%] 794 [not run] Cannot find docker image. Use: /usr/bin/sudo -E docker run -it --rm busybox
+[56%] 795
+[56%] 796 [not run] Noones home on the default elasticsearch port 9200
+[56%] 797
+[56%] 798
+[56%] 799
+[56%] 800
+[56%] 801
+[56%] 802
+[56%] 803
+[56%] 804
+[56%] 805
+[56%] 806
+[56%] 807
+[57%] 808
+[57%] 810
+[57%] 811
+[57%] 812
+[57%] 813
+[57%] 814
+[57%] 815
+[57%] 816
+[57%] 817
+[57%] 818
+[57%] 819 [not run] Noones home on the default elasticsearch port 9200
+[57%] 820
+[57%] 821
+[58%] 823 [not run] sasldb user-not-found libsasl bug
+[58%] 824
+[58%] 825 [not run] Noones home on the default DS 389 port
+[58%] 826
+[58%] 827
+[58%] 828
+[58%] 829
+[58%] 830
+[58%] 831
+[58%] 832
+[58%] 833
+[58%] 834
+[58%] 835
+[58%] 836
+[59%] 837
+[59%] 838
+[59%] 839
+[59%] 840 [not run] No support for service discovery
+[59%] 841
+[59%] 842
+[59%] 843
+[59%] 844
+[59%] 845
+[59%] 846
+[59%] 847 [not run] no atomic command found
+[59%] 848
+[59%] 849
+[60%] 851
+[60%] 852
+[60%] 853
+[60%] 854
+[60%] 855
+[60%] 856
+[60%] 857
+[60%] 858
+[60%] 859
+[60%] 860
+[60%] 861
+[60%] 862
+[60%] 863
+[60%] 864 [not run] pcp-collectl not installed
+[61%] 865
+[61%] 866 [not run] libpcp not built with fault injection enabled
+[61%] 867
+[61%] 868
+[61%] 869
+[61%] 870
+[61%] 871
+[61%] 872
+[61%] 873 [not run] only tested on single CPU systems
+[61%] 874
+[61%] 875
+[61%] 876 [not run] System has loop devices already, bailing
+[61%] 877
+[61%] 878
+[62%] 879
+[62%] 880
+[62%] 881
+[62%] 882
+[62%] 883
+[62%] 884
+[62%] 885
+[62%] 886
+[62%] 887
+[62%] 888
+[62%] 889
+[62%] 890
+[62%] 891
+[63%] 892
+[63%] 893
+[63%] 894
+[63%] 895
+[63%] 896
+[63%] 897
+[63%] 898
+[63%] 899
+[63%] 900
+[63%] 901
+[63%] 902
+[63%] 903
+[63%] 904
+[63%] 905 [not run] Cannot find a PCP 2.7 QA host
+[64%] 906
+[64%] 907
+[64%] 908
+[64%] 909
+[64%] 910
+[64%] 911
+[64%] 912 [not run] Noone home on default NutCracker port 22222
+[64%] 913 - output mismatch (see 913.out.bad)
+4,7c4
+< Culling the Performance Metrics Name Space ...
+< redis ... not found in Name Space, this is OK
+< Updating the PMCD control file, and notifying PMCD ...
+< Check redis metrics have gone away ... OK
+---
+> Remove: cannot find domain.h (or similar) to determine the Performance Metrics Domain
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h fv-az213 -f sample.milliseconds
+PMDA probe: pminfo -h fv-az213 -f sampledso.milliseconds
+PMDA probe: pminfo -h fv-az213 -f simple.numfetch
+[64%] 914
+[64%] 915
+[64%] 916
+[64%] 917 [not run] sedismod tool not installed (module disassembly)
+[64%] 918
+[65%] 919
+[65%] 920
+[65%] 921
+[65%] 922
+[65%] 923
+[65%] 924
+[65%] 925
+[65%] 926
+[65%] 927
+[65%] 928
+[65%] 929
+[65%] 930
+[65%] 931
+[65%] 932
+[66%] 933
+[66%] 934
+[66%] 935
+[66%] 936
+[66%] 937
+[66%] 938
+[66%] 939
+[66%] 940 [not run] sedismod tool not installed (module disassembly)
+[66%] 941
+[66%] 942
+[66%] 943
+[66%] 944
+[66%] 945
+[66%] 946 [not run] No support for service discovery
+[67%] 947
+[67%] 948
+[67%] 949
+[67%] 950 [not run] No support for service discovery
+[67%] 951
+[67%] 952
+[67%] 953
+[67%] 954 [not run] libpcp not built with -DPM_MULTI_THREAD_DEBUG
+[67%] 955
+[67%] 956
+[67%] 957
+[67%] 958
+[67%] 959
+[68%] 960 [not run] No logconv.pl script installed
+[68%] 961
+[68%] 962
+[68%] 963
+[68%] 964
+[68%] 965
+[68%] 966
+[68%] 967 [not run] No zsh executable
+[68%] 968
+[68%] 969
+[68%] 970
+[68%] 971
+[68%] 972
+[68%] 973
+[69%] 974
+[69%] 975 [failed, exit status 1] - output mismatch (see 975.out.bad)
+5,7c5,7
+< Comparing extended iostat output to PCP archive
+< Verifying sample 1
+< Verifying sample 2
+---
+> [25] loop0            0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00   0.00
+> Device: (new -x format) number of values? expected 23, found 21
+> Arrgh: non-zero exit status from 2nd iostat2pcp
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h fv-az213 -f sample.milliseconds
+PMDA probe: pminfo -h fv-az213 -f sampledso.milliseconds
+PMDA probe: pminfo -h fv-az213 -f simple.numfetch
+[69%] 976
+[69%] 977
+[69%] 978
+[69%] 979
+[69%] 980
+[69%] 981
+[69%] 982
+[69%] 983
+[69%] 984
+[69%] 985
+[69%] 986
+[70%] 987
+[70%] 988
+[70%] 989
+[70%] 990
+[70%] 991
+[70%] 992
+[70%] 993
+[70%] 994
+[70%] 995
+[70%] 996
+[70%] 997
+[70%] 998
+[70%] 999
+[70%] 1000
+[71%] 1001 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1002 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1003 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1004 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1005 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1006 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1007 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1008 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1009 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1010 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1011 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1012 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1013 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[71%] 1014 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1015 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1016 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1021 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1022 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1023 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1024
+[72%] 1025 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1026 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1027 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1028 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1029 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[72%] 1030
+[72%] 1031 [not run] perl Slurm module not installed
+[73%] 1032 [not run] Cannot find docker image. Use: /usr/bin/sudo -E docker run -it --rm busybox
+[73%] 1033
+[73%] 1034 [not run] no named stats file(s)
+[73%] 1035 [not run] Oracle PMDA not configured
+[73%] 1036
+[73%] 1037
+[73%] 1038
+[73%] 1039
+[73%] 1040
+[73%] 1041
+[73%] 1042
+[73%] 1043
+[73%] 1044
+[73%] 1045
+[74%] 1046
+[74%] 1047
+[74%] 1048
+[74%] 1049
+[74%] 1050
+[74%] 1051 - output mismatch (see 1051.out.bad)
+17a18,23
+> Warning - failed to expand action for rule network.listenoverflows
+>   string: "$syslog_prefix$$rule$^ $action_expand$"
+> Warning - failed to expand action for rule network.tcpqfulldocookies
+>   string: "$syslog_prefix$$rule$^ $action_expand$"
+> Warning - failed to expand action for rule network.tcpqfulldrops
+>   string: "$syslog_prefix$$rule$^ $action_expand$"
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h fv-az213 -f sample.milliseconds
+PMDA probe: pminfo -h fv-az213 -f sampledso.milliseconds
+PMDA probe: pminfo -h fv-az213 -f simple.numfetch
+[74%] 1052
+[74%] 1053
+[74%] 1054
+[74%] 1055
+[74%] 1056
+[74%] 1057
+[74%] 1058
+[75%] 1059
+[75%] 1060
+[75%] 1061 [not run] targetcli not installed
+[75%] 1062
+[75%] 1063
+[75%] 1064
+[75%] 1065
+[75%] 1066
+[75%] 1067
+[75%] 1068
+[75%] 1069
+[75%] 1070
+[75%] 1071
+[75%] 1072
+[76%] 1073
+[76%] 1074
+[76%] 1075
+[76%] 1076
+[76%] 1077
+[76%] 1078
+[76%] 1079
+[76%] 1080
+[76%] 1081
+[76%] 1082
+[76%] 1083
+[76%] 1084
+[76%] 1085
+[76%] 1086
+[77%] 1087
+[77%] 1089
+[77%] 1090
+[77%] 1091
+[77%] 1092
+[77%] 1093
+[77%] 1094
+[77%] 1095
+[77%] 1097
+[77%] 1098
+[77%] 1099
+[77%] 1100
+[77%] 1101
+[78%] 1102 - output mismatch (see 1102.out.bad)
+4,8c4
+< Culling the Performance Metrics Name Space ...
+< openmetrics ... done
+< Updating the PMCD control file, and notifying PMCD ...
+< [...removing files...]
+< Check openmetrics metrics have gone away ... OK
+---
+> Remove: cannot find domain.h (or similar) to determine the Performance Metrics Domain
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h fv-az213 -f sample.milliseconds
+PMDA probe: pminfo -h fv-az213 -f sampledso.milliseconds
+PMDA probe: pminfo -h fv-az213 -f simple.numfetch
+[78%] 1103
+[78%] 1104
+[78%] 1105
+[78%] 1106
+[78%] 1107
+[78%] 1108
+[78%] 1109
+[78%] 1110
+[78%] 1111
+[78%] 1112
+[78%] 1113
+[78%] 1114
+[78%] 1115 [not run] bcc may be broken for Debian unstable
+[79%] 1116 [not run] bcc may be broken for Debian unstable
+[79%] 1117 [not run] bcc may be broken for Debian unstable
+[79%] 1118 [not run] bcc may be broken for Debian unstable
+[79%] 1119
+[79%] 1120
+[79%] 1121
+[79%] 1122
+[79%] 1123 [not run] $PCPQA_CLOSE_X_SERVER not set in ./common.config
+[79%] 1124 [not run] bcc may be broken for Debian unstable
+[79%] 1126 [not run] bcc may be broken for Debian unstable
+[79%] 1127 [not run] bcc may be broken for Debian unstable
+[79%] 1128
+[79%] 1129
+[80%] 1130
+[80%] 1131
+[80%] 1132
+[80%] 1133
+[80%] 1134
+[80%] 1135
+[80%] 1136
+[80%] 1137
+[80%] 1138
+[80%] 1139
+[80%] 1140
+[80%] 1141 [not run] sedismod tool not installed (module disassembly)
+[80%] 1142
+[80%] 1143
+[81%] 1144
+[81%] 1145 [not run] libpcp not built with fault injection enabled
+[81%] 1146
+[81%] 1147
+[81%] 1148
+[81%] 1149
+[81%] 1150 [not run] bcc may be broken for Debian unstable
+[81%] 1151 [not run] libjvm.so not found
+[81%] 1152 [not run] libjvm.so not found
+[81%] 1153 [not run] bcc may be broken for Debian unstable
+[81%] 1154 [not run] bcc may be broken for Debian unstable
+[81%] 1155 [not run] bcc may be broken for Debian unstable
+[81%] 1156 [not run] bcc may be broken for Debian unstable
+[81%] 1157 [not run] bcc may be broken for Debian unstable
+[82%] 1158 [not run] bcc may be broken for Debian unstable
+[82%] 1159
+[82%] 1160
+[82%] 1161
+[82%] 1162
+[82%] 1163
+[82%] 1164
+[82%] 1165 [not run] bcc may be broken for Debian unstable
+[82%] 1166
+[82%] 1167
+[82%] 1168 [not run] bcc may be broken for Debian unstable
+[82%] 1169
+[82%] 1170 [not run] bcc may be broken for Debian unstable
+[83%] 1171 [not run] bcc may be broken for Debian unstable
+[83%] 1172
+[83%] 1173 [not run] No Python USDT probes available
+[83%] 1174
+[83%] 1175 [not run] libjvm.so not found
+[83%] 1176 [not run] bcc may be broken for Debian unstable
+[83%] 1177
+[83%] 1178 [not run] bcc may be broken for Debian unstable
+[83%] 1179 [not run] libjvm.so not found
+[83%] 1180
+[83%] 1181 [not run] bcc may be broken for Debian unstable
+[83%] 1182
+[83%] 1183
+[83%] 1184
+[84%] 1185
+[84%] 1186
+[84%] 1187
+[84%] 1188 [not run] no device-mapper devices
+[84%] 1189
+[84%] 1190 - output mismatch (see 1190.out.bad)
+19c19,22
+< $PCP_PMDAS_DIR/pipe/pipe.conf ... OK
+---
+> $PCP_PMDAS_DIR/pipe/pipe.conf ... BAD (QA text found)
+>   empty-line   pcpqa   echo
+>   echo-all     pcpqa   echo $0
+>   echo-two     pcpqa   echo $1 $2
+Check local PMCD is still alive ...
+PMDA probe: pminfo -h fv-az213 -f sample.milliseconds
+PMDA probe: pminfo -h fv-az213 -f sampledso.milliseconds
+PMDA probe: pminfo -h fv-az213 -f simple.numfetch
+[84%] 1191
+[84%] 1192 [not run] no podman varlink socket
+[84%] 1193
+[84%] 1194
+[84%] 1195
+[84%] 1196
+[84%] 1197
+[85%] 1198
+[85%] 1199
+[85%] 1200
+[85%] 1201 [not run] Cannot find remote host running pmcd
+[85%] 1202
+[85%] 1203
+[85%] 1204
+[85%] 1205
+[85%] 1206
+[85%] 1207
+[85%] 1208
+[85%] 1209
+[85%] 1210
+[85%] 1211
+[86%] 1212
+[86%] 1213
+[86%] 1214

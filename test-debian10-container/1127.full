@@ -1,0 +1,38 @@
+pmdabcc config:
+# Installed by PCP QA test 1127 on Thu Aug 20 18:52:47 UTC 2020
+[pmda]
+modules = uprobe_hits
+prefix = bcc.
+[uprobe_hits]
+module = uprobe_hits
+cluster = 102
+uprobes = c:strlen
+Log for pmdabcc on 316bddff7759 started Thu Aug 20 18:52:48 2020
+
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: Enabled modules:
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: ['uprobe_hits']
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: Configuring modules:
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: uprobe_hits
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: Modules configured.
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: Initializing modules:
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: uprobe_hits
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: uprobe_hits: Configured uprobes: ['c:strlen']
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: uprobe_hits: Found 1 uprobes: ['c:strlen'].
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: uprobe_hits: Initialized.
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: Modules initialized.
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: Registering metrics:
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: uprobe_hits
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: Metrics registered.
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: Registering helpers:
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: uprobe_hits
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: Helpers registered.
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: Compiling modules:
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: uprobe_hits
+[Thu Aug 20 18:52:48] pmdabcc(11487) Info: uprobe_hits: Compiling 1 uprobes: ['c:strlen']
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 18:52:48] pmdabcc(11487) Error: uprobe_hits: Failed to compile BPF text
+[Thu Aug 20 18:52:48] pmdabcc(11487) Error: uprobe_hits: Module NOT active!
+[Thu Aug 20 18:52:48] pmdabcc(11487) Error: Failed to compile module uprobe_hits, aborting.
+
+Log finished Thu Aug 20 18:52:48 2020

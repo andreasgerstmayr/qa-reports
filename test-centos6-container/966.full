@@ -1,0 +1,124 @@
+== Creating empty certificate DB
+setup_certificates host details:
+HOST=97d404ba7f88
+QAHOST=localhost.localdomain
+DOMAIN=localhost,dc=localdomain
+== Creating local certificates
+
+
+Generating key.  This may take a few moments...
+
+
+
+Generating key.  This may take a few moments...
+
+== Certificate DB and local certificates created
+-----BEGIN CERTIFICATE-----
+MIIB7jCCAVegAwIBAgIFALWqYrYwDQYJKoZIhvcNAQEFBQAwOzE5MDcGA1UEAxMw
+TG9jYWwgUENQIEluc3RhbGxhdGlvbiwgbG9jYWxob3N0LGRjPWxvY2FsZG9tYWlu
+MB4XDTIwMDgyMDE4MTQwMVoXDTIwMTEyMDE4MTQwMVowOzE5MDcGA1UEAxMwTG9j
+YWwgUENQIEluc3RhbGxhdGlvbiwgbG9jYWxob3N0LGRjPWxvY2FsZG9tYWluMIGf
+MA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDB0tzkKYD2F4QLXOrwY5r09narhznI
+0qZdU0YxB6gxrROjXU0cd3kj438g6cj2Sw4nUU4qWuVkmHgVT43kf6OVW6K0JEcS
+Pf4EpnjENo4mcPQIurFhT1I+No7yIAq6bzw0EhZwg34f5vvfKq1aX2jQnNq9oyjt
+ASqWmAJQSRaiAQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAGj9FI6ne2TctPqDlXsW
+7aNrGbwniMOY97/6tWv182V81cy8RpB5wYCgdlRa4w88tdUoowBo63tQk0exsmeu
+KkF7vfysRYuDIKw+XIef7eg6lBl+mYftqA/bmPRgkwmqS3nYPsR75Wdv6unw7jgZ
+yJHBxEzgY11H/LiPGE2jceW0
+-----END CERTIFICATE-----
+Start pmcd, modified $PCP_PMCDOPTIONS_PATH (pmcd.options):
+Starting pmcd ... 
+Starting pmlogger ... 
+Checking pmcd.log for unexpected messages
+Log for pmcd on 97d404ba7f88 started Thu Aug 20 18:14:02 2020
+
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+root           1 116359   8   9   2 bin pipe cmd=/var/lib/pcp/pmdas/root/pmdaroot
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7f530ede3fd0]
+proc           3 116360  11  12   2 bin pipe cmd=/var/lib/pcp/pmdas/proc/pmdaproc -d 3
+pmproxy        4                 2 dso i:7  lib=/var/lib/pcp/pmdas/mmv/pmda_mmv.so entry=pmproxy_init [0x7f530ebddd00]
+xfs           11 116361  13  14   2 bin pipe cmd=/var/lib/pcp/pmdas/xfs/pmdaxfs -d 11
+sample        29 116362  15  16   2 bin pipe cmd=/var/lib/pcp/pmdas/sample/pmdasample -d 29
+sampledso     30                 2 dso i:7  lib=/var/lib/pcp/pmdas/sample/pmda_sample.so entry=sample_init [0x7f530e9cdf20]
+linux         60 116363  17  18   2 bin pipe cmd=/var/lib/pcp/pmdas/linux/pmdalinux
+mmv           70                 2 dso i:7  lib=/var/lib/pcp/pmdas/mmv/pmda_mmv.so entry=mmv_init [0x7f530ebddcc0]
+kvm           95 116364  19  20   2 bin pipe cmd=/var/lib/pcp/pmdas/kvm/pmdakvm -d 95
+jbd2         122                 2 dso i:4  lib=/var/lib/pcp/pmdas/jbd2/pmda_jbd2.so entry=jbd2_init [0x7f530e7c5800]
+dm           129 116365  21  22   2 bin pipe cmd=/var/lib/pcp/pmdas/dm/pmdadm -d 129
+simple       253 116366  23  24   2 bin pipe cmd=/var/lib/pcp/pmdas/simple/pmdasimple -d 253
+
+Host access list:
+00 01 Cur/MaxCons host-spec                               host-mask                               lvl host-name
+== == =========== ======================================= ======================================= === ==============
+ y  y     0     0 10.88.0.2                               255.255.255.255                           0 localhost
+ y  y     0     0 /                                       /                                         1 unix:
+    n     0     0 0.0.0.0                                 0.0.0.0                                   4 .*
+    n     0     0 ::                                      ::                                        8 :*
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+
+pmcd: PID = 116355, PDU version = 2
+pmcd request port(s):
+  sts fd   port  family address
+  === ==== ===== ====== =======
+  ok     6       unix   /run/pcp/pmcd.socket
+  ok     0 44321 inet   INADDR_ANY
+  ok     3 44321 ipv6   INADDR_ANY
+--- end of pmcd.log ---
+
+hinv.ncpu
+    value 2
+== Creating empty certificate DB
+Start pmcd, modified $PCP_PMCDOPTIONS_PATH (pmcd.options):
+Starting pmcd ... 
+Starting pmlogger ... 
+Checking pmcd.log for unexpected messages
+Log for pmcd on 97d404ba7f88 started Thu Aug 20 18:14:06 2020
+
+
+active agent dom   pid  in out ver protocol parameters
+============ === ===== === === === ======== ==========
+root           1 117294   8   9   2 bin pipe cmd=/var/lib/pcp/pmdas/root/pmdaroot
+pmcd           2                 2 dso i:6  lib=/var/lib/pcp/pmdas/pmcd/pmda_pmcd.so entry=pmcd_init [0x7f1af5648fd0]
+proc           3 117296  11  12   2 bin pipe cmd=/var/lib/pcp/pmdas/proc/pmdaproc -d 3
+pmproxy        4                 2 dso i:7  lib=/var/lib/pcp/pmdas/mmv/pmda_mmv.so entry=pmproxy_init [0x7f1af5442d00]
+xfs           11 117297  13  14   2 bin pipe cmd=/var/lib/pcp/pmdas/xfs/pmdaxfs -d 11
+sample        29 117298  15  16   2 bin pipe cmd=/var/lib/pcp/pmdas/sample/pmdasample -d 29
+sampledso     30                 2 dso i:7  lib=/var/lib/pcp/pmdas/sample/pmda_sample.so entry=sample_init [0x7f1af5232f20]
+linux         60 117299  17  18   2 bin pipe cmd=/var/lib/pcp/pmdas/linux/pmdalinux
+mmv           70                 2 dso i:7  lib=/var/lib/pcp/pmdas/mmv/pmda_mmv.so entry=mmv_init [0x7f1af5442cc0]
+kvm           95 117300  19  20   2 bin pipe cmd=/var/lib/pcp/pmdas/kvm/pmdakvm -d 95
+jbd2         122                 2 dso i:4  lib=/var/lib/pcp/pmdas/jbd2/pmda_jbd2.so entry=jbd2_init [0x7f1af502a800]
+dm           129 117301  21  22   2 bin pipe cmd=/var/lib/pcp/pmdas/dm/pmdadm -d 129
+simple       253 117302  23  24   2 bin pipe cmd=/var/lib/pcp/pmdas/simple/pmdasimple -d 253
+
+Host access list:
+00 01 Cur/MaxCons host-spec                               host-mask                               lvl host-name
+== == =========== ======================================= ======================================= === ==============
+ y  y     0     0 10.88.0.2                               255.255.255.255                           0 localhost
+ y  y     0     0 /                                       /                                         1 unix:
+    n     0     0 0.0.0.0                                 0.0.0.0                                   4 .*
+    n     0     0 ::                                      ::                                        8 :*
+User access list empty: user-based access control turned off
+Group access list empty: group-based access control turned off
+
+
+pmcd: PID = 117291, PDU version = 2
+pmcd request port(s):
+  sts fd   port  family address
+  === ==== ===== ====== =======
+  ok     6       unix   /run/pcp/pmcd.socket
+  ok     0 44321 inet   INADDR_ANY
+  ok     3 44321 ipv6   INADDR_ANY
+--- end of pmcd.log ---
+checking client, secure connection.  should fail...
+pminfo: Cannot connect to PMCD on host "97d404ba7f88": Operation not supported
+
+hinv.ncpu
+    value 2
+
+hinv.ncpu
+    value 2

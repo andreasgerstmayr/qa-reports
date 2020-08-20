@@ -1,0 +1,42 @@
+Stopping pmlogger ...
+Waiting for pmcd to terminate ...
+
+### Expect: connection refused ###
+
+pminfo: Cannot connect to PMCD on host "local:": Connection refused
+
+### Expect: one million retrieved OK from sample.long.million ###
+
+pmcd pid=54851
+UID         PID   PPID  C STIME TTY          TIME CMD
+pcp       54851      1  0 16:42 ?        00:00:00 /usr/libexec/pcp/bin/pmcd -T 3
+root      54854  54851  0 16:42 ?        00:00:00 /var/lib/pcp/pmdas/root/pmdaroot
+pcpqa     55164  54270  0 16:42 ?        00:00:00 egrep PID|54851
+
+### Expect: Forcing termination ###
+
+UID         PID   PPID  C STIME TTY          TIME CMD
+pcp       54851      1  0 16:42 ?        00:00:00 /usr/libexec/pcp/bin/pmcd -T 3
+root      54854  54851  0 16:42 ?        00:00:00 /var/lib/pcp/pmdas/root/pmdaroot
+pcpqa     55178  54270  0 16:42 ?        00:00:00 egrep PID|54851
+$PCP_RC_DIR/pmlogger: Warning: Performance Co-Pilot archive logger(s) not permanently enabled.
+    To enable pmlogger, run the following as root:
+    # /sbin/chkconfig pmlogger on
+....................
+Process ...
+UID         PID   PPID  C STIME TTY          TIME CMD
+pcp       54851      1  0 16:42 ?        00:00:00 /usr/libexec/pcp/bin/pmcd -T 3
+/etc/rc.d/init.d/pmcd: Warning: Forcing pmcd to terminate!
+Starting pmcd ... [Thu Aug 20 16:43:19] pmcd(59381) Error: Failed to create avahi client: Daemon not running
+
+/etc/rc.d/init.d/pmlogger: Warning: Performance Co-Pilot archive logger(s) not permanently enabled.
+    To enable pmlogger, run the following as root:
+    # /sbin/chkconfig pmlogger on
+Starting pmlogger ... 
+
+### Expect: Timeout waiting for a response from PMCD ###
+
+pminfo: Cannot connect to PMCD on host "local:": Timeout waiting for a response from PMCD
+
+### Expect: one million again ###
+

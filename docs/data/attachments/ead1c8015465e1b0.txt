@@ -1,0 +1,36 @@
+pmdabcc config:
+# Installed by PCP QA test 1165 on Thu Aug 20 18:57:57 UTC 2020
+[pmda]
+modules = klockstat
+prefix = bcc.
+[klockstat]
+module = klockstat
+cluster = 31
+process = pmcd
+Log for pmdabcc on 316bddff7759 started Thu Aug 20 18:57:59 2020
+
+[Thu Aug 20 18:57:59] pmdabcc(3831) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 18:57:59] pmdabcc(3831) Info: Enabled modules:
+[Thu Aug 20 18:57:59] pmdabcc(3831) Info: ['klockstat']
+[Thu Aug 20 18:57:59] pmdabcc(3831) Info: Configuring modules:
+[Thu Aug 20 18:57:59] pmdabcc(3831) Info: klockstat
+[Thu Aug 20 18:57:59] pmdabcc(3831) Info: Modules configured.
+[Thu Aug 20 18:57:59] pmdabcc(3831) Info: Initializing modules:
+[Thu Aug 20 18:57:59] pmdabcc(3831) Info: klockstat
+[Thu Aug 20 18:57:59] pmdabcc(3831) Info: klockstat: Tracing PID 2079: /usr/lib/pcp/bin/pmcd -T 3.
+[Thu Aug 20 18:57:59] pmdabcc(3831) Info: klockstat: Initialized.
+[Thu Aug 20 18:57:59] pmdabcc(3831) Info: Modules initialized.
+[Thu Aug 20 18:57:59] pmdabcc(3831) Info: Registering metrics:
+[Thu Aug 20 18:57:59] pmdabcc(3831) Info: klockstat
+[Thu Aug 20 18:57:59] pmdabcc(3831) Info: Metrics registered.
+[Thu Aug 20 18:57:59] pmdabcc(3831) Info: Registering helpers:
+[Thu Aug 20 18:57:59] pmdabcc(3831) Info: klockstat
+[Thu Aug 20 18:57:59] pmdabcc(3831) Info: Helpers registered.
+[Thu Aug 20 18:57:59] pmdabcc(3831) Info: Compiling modules:
+[Thu Aug 20 18:57:59] pmdabcc(3831) Info: klockstat
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 18:57:59] pmdabcc(3831) Error: klockstat: Failed to compile BPF text
+[Thu Aug 20 18:57:59] pmdabcc(3831) Error: klockstat: Module NOT active!
+[Thu Aug 20 18:57:59] pmdabcc(3831) Error: Failed to compile module klockstat, aborting.
+
+Log finished Thu Aug 20 18:57:59 2020

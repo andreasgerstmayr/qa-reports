@@ -1,5 +1,0 @@
-Running pmlogextract archives/multi-xz-1k/20150508.11.44 archives/multi-xz-1k/20150508.11.46 archives/multi-xz-1k/20150508.11.50 archives/multi-xz-1k/20150508.11.57 TMP.44+46+50+57.pmlogextract
-Note: timezone set to local timezone of host "brolley-t530" from archive
-
-Running diff TMP.44+46+50+57.pmlogextract.pmclient_fg.txt TMP.44+46+50+57.pmclient_fg.txt
-Running diff TMP.44+46+50+57.pmlogextract.pmclient_fg.txt TMP.archives/multi-xz-1k.pmclient_fg.txt

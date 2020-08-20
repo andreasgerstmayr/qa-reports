@@ -1,0 +1,171 @@
+QA output created by 393
+
+=== tmparch/bigbin ===
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp2 -a tmparch/bigbin
+24 bytes in 1 blocks are possibly lost in loss record 29 of 78
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x1094CB: main (interp2.c:188)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+872 bytes in 1 blocks are possibly lost in loss record 74 of 78
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)
+by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x1094CB: main (interp2.c:188)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 2 errors from 2 contexts ...
+
+=== tmparch/mv-bigbin ===
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp2 -a tmparch/mv-bigbin
+24 bytes in 1 blocks are possibly lost in loss record 27 of 77
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x1094CB: main (interp2.c:188)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+872 bytes in 1 blocks are possibly lost in loss record 73 of 77
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)
+by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+by 0x488D876: cache_read (interp.c:229)
+by 0x489064B: __pmLogFetch (interp.c:1227)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x1094CB: main (interp2.c:188)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 2 errors from 2 contexts ...
+
+=== tmparch/noti-foo ===
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp2 -a tmparch/noti-foo
+24 bytes in 1 blocks are possibly lost in loss record 26 of 75
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x49EEB97: tsearch (in /usr/lib64/libc-2.32.so)
+by 0x48707A7: __pmFindPDUBuf (pdubuf.c:126)
+by 0x488C2AE: __pmLogRead_ctx (logutil.c:1725)
+by 0x488D876: cache_read (interp.c:229)
+by 0x488F38E: do_roll (interp.c:820)
+by 0x4890211: __pmLogFetch (interp.c:1173)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x10947A: main (interp2.c:178)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:do_roll
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+248 bytes in 1 blocks are possibly lost in loss record 65 of 75
+at 0x4839809: malloc (vg_replace_malloc.c:307)
+by 0x487075B: __pmFindPDUBuf (pdubuf.c:115)
+by 0x4871896: __pmDecodeResult_ctx (p_result.c:386)
+by 0x488C510: __pmLogRead_ctx (logutil.c:1828)
+by 0x488D876: cache_read (interp.c:229)
+by 0x488F38E: do_roll (interp.c:820)
+by 0x4890211: __pmLogFetch (interp.c:1173)
+by 0x4866D9F: pmFetch_ctx (fetch.c:164)
+by 0x10947A: main (interp2.c:178)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   fun:__pmDecodeResult_ctx
+   fun:__pmLogRead_ctx
+   fun:cache_read
+   fun:do_roll
+   fun:__pmLogFetch
+   fun:pmFetch_ctx
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 2 errors from 2 contexts ...

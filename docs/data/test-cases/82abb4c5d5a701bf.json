@@ -1,0 +1,64 @@
+{
+  "uid" : "82abb4c5d5a701bf",
+  "name" : "QA 272",
+  "fullName" : "QA #272 on debian11-container",
+  "historyId" : "272@debian11-container",
+  "time" : {
+    "start" : 1597944241000,
+    "stop" : 1597944242000,
+    "duration" : 1000
+  },
+  "description" : "PCP QA Test No. 272\n\npmcd access control tests (used to be the second half of 051)\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 272</p>\n<p>pmcd access control tests (used to be the second half of 051)</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "./getpmcdhosts: unable to get 2 host(s) with options: \"-n 2 -L -a sample -v pcp>=2 -s IRIX64\"",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian11-container"
+  }, {
+    "name" : "host",
+    "value" : "debian11-container"
+  }, {
+    "name" : "epic",
+    "value" : "pmcd"
+  }, {
+    "name" : "epic",
+    "value" : "pmval"
+  }, {
+    "name" : "epic",
+    "value" : "pmprobe"
+  }, {
+    "name" : "epic",
+    "value" : "remote"
+  }, {
+    "name" : "epic",
+    "value" : "pmstore"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/272",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/272.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "82abb4c5d5a701bf.json",
+  "parameterValues" : [ ]
+}

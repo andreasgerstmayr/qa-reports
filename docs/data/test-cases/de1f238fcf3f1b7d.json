@@ -1,0 +1,86 @@
+{
+  "uid" : "de1f238fcf3f1b7d",
+  "name" : "QA 1232",
+  "fullName" : "QA #1232 on centos6-container",
+  "historyId" : "1232@centos6-container",
+  "time" : {
+    "start" : 1597948488000,
+    "stop" : 1597948492000,
+    "duration" : 4000
+  },
+  "description" : "PCP QA Test No. 1232\n\npmlogger_daily -k 0 tests\n\n\n\nCopyright (c) 2020 Ken McDonell.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+  "descriptionHtml" : "<p>PCP QA Test No. 1232</p>\n<p>pmlogger_daily -k 0 tests</p>\n<p>Copyright (c) 2020 Ken McDonell.  All Rights Reserved.</p>\n<p><strong>To reproduce this test in a container, please run:</strong></p>\n<pre><code>./build/ci/run.py --runner container --platform centos6 reproduce\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "output mismatch (see 1232.out.bad)\n33c33\n<     DATE.0.xz DATE.index DATE.meta.xz\n---\n>     DATE.0 DATE.index DATE.meta\n43c43\n<     DATE.0.xz DATE.index DATE.meta.xz\n---\n>     DATE.0 DATE.index DATE.meta\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "PCP QA Test No. 1232\n\npmlogger_daily -k 0 tests\n\n\n\nCopyright (c) 2020 Ken McDonell.  All Rights Reserved.\n\n\n\n**To reproduce this test in a container, please run:**\n\n    ./build/ci/run.py --runner container --platform centos6 reproduce",
+    "status" : "failed",
+    "statusMessage" : "output mismatch (see 1232.out.bad)\n33c33\n<     DATE.0.xz DATE.index DATE.meta.xz\n---\n>     DATE.0 DATE.index DATE.meta\n43c43\n<     DATE.0.xz DATE.index DATE.meta.xz\n---\n>     DATE.0 DATE.index DATE.meta\nCheck local PMCD is still alive ...\nPMDA probe: pminfo -h 97d404ba7f88 -f sample.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f sampledso.milliseconds\nPMDA probe: pminfo -h 97d404ba7f88 -f simple.numfetch\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "abd608083b170350",
+      "name" : "1232.out.bad",
+      "source" : "abd608083b170350.txt",
+      "type" : "text/plain",
+      "size" : 1485
+    }, {
+      "uid" : "6e2c373aa1c12733",
+      "name" : "1232.full",
+      "source" : "6e2c373aa1c12733.txt",
+      "type" : "text/plain",
+      "size" : 9007
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "centos6-container"
+  }, {
+    "name" : "host",
+    "value" : "centos6-container"
+  }, {
+    "name" : "epic",
+    "value" : "logutil"
+  }, {
+    "name" : "epic",
+    "value" : "pmlogctl"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1232",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/1232.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "de1f238fcf3f1b7d.json",
+  "parameterValues" : [ ]
+}

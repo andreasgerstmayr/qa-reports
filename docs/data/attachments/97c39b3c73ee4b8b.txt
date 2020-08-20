@@ -1,0 +1,183 @@
+QA output created by 393
+
+=== tmparch/bigbin ===
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp2 -a tmparch/bigbin
+24 bytes in 1 blocks are possibly lost in loss record 29 of 78
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x49F80DF: tsearch (tsearch.c:338)
+by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487A403: ??? (in /usr/lib/libpcp.so.3)
+by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)
+by 0x4899B5B: ??? (in /usr/lib/libpcp.so.3)
+by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x1094CB: main (interp2.c:188)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   fun:main
+}
+872 bytes in 1 blocks are possibly lost in loss record 74 of 78
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487A403: ??? (in /usr/lib/libpcp.so.3)
+by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)
+by 0x4899B5B: ??? (in /usr/lib/libpcp.so.3)
+by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x1094CB: main (interp2.c:188)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 2 errors from 2 contexts ...
+
+=== tmparch/mv-bigbin ===
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp2 -a tmparch/mv-bigbin
+24 bytes in 1 blocks are possibly lost in loss record 27 of 77
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x49F80DF: tsearch (tsearch.c:338)
+by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487A403: ??? (in /usr/lib/libpcp.so.3)
+by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)
+by 0x4899B5B: ??? (in /usr/lib/libpcp.so.3)
+by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x1094CB: main (interp2.c:188)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   fun:main
+}
+872 bytes in 1 blocks are possibly lost in loss record 73 of 77
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487A403: ??? (in /usr/lib/libpcp.so.3)
+by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)
+by 0x4899B5B: ??? (in /usr/lib/libpcp.so.3)
+by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x1094CB: main (interp2.c:188)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 2 errors from 2 contexts ...
+
+=== tmparch/noti-foo ===
+=== std err ===
+=== filtered valgrind report ===
+Memcheck, a memory error detector
+Command: src/interp2 -a tmparch/noti-foo
+24 bytes in 1 blocks are possibly lost in loss record 26 of 75
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x49F80DF: tsearch (tsearch.c:338)
+by 0x487E087: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x4893114: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)
+by 0x48980AB: ??? (in /usr/lib/libpcp.so.3)
+by 0x4898E22: ??? (in /usr/lib/libpcp.so.3)
+by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x10947A: main (interp2.c:178)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:tsearch
+   fun:__pmFindPDUBuf
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   fun:main
+}
+248 bytes in 1 blocks are possibly lost in loss record 65 of 75
+at 0x483877F: malloc (vg_replace_malloc.c:307)
+by 0x487E03B: __pmFindPDUBuf (in /usr/lib/libpcp.so.3)
+by 0x487A403: ??? (in /usr/lib/libpcp.so.3)
+by 0x4893346: __pmLogRead_ctx (in /usr/lib/libpcp.so.3)
+by 0x4896B43: ??? (in /usr/lib/libpcp.so.3)
+by 0x48980AB: ??? (in /usr/lib/libpcp.so.3)
+by 0x4898E22: ??? (in /usr/lib/libpcp.so.3)
+by 0x48954FB: __pmLogFetch (in /usr/lib/libpcp.so.3)
+by 0x48713AE: ??? (in /usr/lib/libpcp.so.3)
+by 0x10947A: main (interp2.c:178)
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:__pmFindPDUBuf
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogRead_ctx
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   obj:/usr/lib/libpcp.so.3
+   fun:__pmLogFetch
+   obj:/usr/lib/libpcp.so.3
+   fun:main
+}
+LEAK SUMMARY:
+definitely lost: 0 bytes in 0 blocks
+indirectly lost: 0 bytes in 0 blocks
+ERROR SUMMARY: 2 errors from 2 contexts ...

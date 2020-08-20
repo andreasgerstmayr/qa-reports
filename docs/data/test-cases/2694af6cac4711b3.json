@@ -1,0 +1,58 @@
+{
+  "uid" : "2694af6cac4711b3",
+  "name" : "QA 603",
+  "fullName" : "QA #603 on fedora_rawhide-container",
+  "historyId" : "603@fedora_rawhide-container",
+  "time" : {
+    "start" : 1597946845000,
+    "stop" : 1597946866000,
+    "duration" : 21000
+  },
+  "description" : "PCP QA Test No. 603\n\nPCP 2.2 duplicate of 349 (pmdatrace, pmtrace, and libpcp_trace tests)\n\n\n\nCopyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 603</p>\n<p>PCP 2.2 duplicate of 349 (pmdatrace, pmtrace, and libpcp_trace tests)</p>\n<p>Copyright (c) 1995-2002 Silicon Graphics, Inc.  All Rights Reserved.</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "./getpmcdhosts: unable to get 1 host(s) with options: \"-L -n 1\"",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "host",
+    "value" : "fedora_rawhide-container"
+  }, {
+    "name" : "epic",
+    "value" : "trace"
+  }, {
+    "name" : "epic",
+    "value" : "pmda.install"
+  }, {
+    "name" : "epic",
+    "value" : "remote"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/603",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/603.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2694af6cac4711b3.json",
+  "parameterValues" : [ ]
+}

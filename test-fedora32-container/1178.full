@@ -1,0 +1,42 @@
+pmdabcc config:
+# Installed by PCP QA test 1178 on Thu Aug 20 19:17:05 UTC 2020
+[pmda]
+modules = tcpperpid
+prefix = bcc.
+[tcpperpid]
+module = tcpperpid
+cluster = 11
+dport = 80
+Log for pmdabcc on 4687b293bd5e started Thu Aug 20 19:17:07 2020
+
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: Enabled modules:
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: ['tcpperpid']
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: Configuring modules:
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: tcpperpid
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: Modules configured.
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: Initializing modules:
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: tcpperpid
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: tcpperpid: Filtering on remote ports: [80].
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: tcpperpid: Using BPF source file modules/tcplife.bpf.
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: tcpperpid: Initialized.
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: Modules initialized.
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: Registering metrics:
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: tcpperpid
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: Metrics registered.
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: Registering helpers:
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: tcpperpid
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: Helpers registered.
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: Compiling modules:
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: tcpperpid
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: tcpperpid: Testing BCC compatilibility, possible errors below are safe to ignore.
+modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1034-azure
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Info: tcpperpid: Tested BCC compatilibility, possible errors above are safe to ignore.
+modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1034-azure
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Error: tcpperpid: Failed to compile BPF module <text>
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Error: tcpperpid: Module NOT active!
+[Thu Aug 20 19:17:08] pmdabcc(1011477) Error: Failed to compile module tcpperpid, aborting.
+
+Log finished Thu Aug 20 19:17:08 2020

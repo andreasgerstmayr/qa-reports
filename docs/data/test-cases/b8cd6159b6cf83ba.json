@@ -1,0 +1,55 @@
+{
+  "uid" : "b8cd6159b6cf83ba",
+  "name" : "QA 686",
+  "fullName" : "QA #686 on debian11-container",
+  "historyId" : "686@debian11-container",
+  "time" : {
+    "start" : 1597947128000,
+    "stop" : 1597947130000,
+    "duration" : 2000
+  },
+  "description" : "PCP QA Test No. 686\n\npmlogger_daily ... does culling happen if merging/rewrite fails?\n\n\n\nCopyright (c) 2018 Ken McDonell.  All Rights Reserved.\n\n\n\n",
+  "descriptionHtml" : "<p>PCP QA Test No. 686</p>\n<p>pmlogger_daily ... does culling happen if merging/rewrite fails?</p>\n<p>Copyright (c) 2018 Ken McDonell.  All Rights Reserved.</p>\n",
+  "status" : "passed",
+  "statusMessage" : "",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "debian11-container"
+  }, {
+    "name" : "host",
+    "value" : "debian11-container"
+  }, {
+    "name" : "epic",
+    "value" : "logutil"
+  }, {
+    "name" : "epic",
+    "value" : "local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/686",
+    "type" : "test_case"
+  }, {
+    "name" : "Expected output",
+    "url" : "https://github.com/performancecopilot/pcp/blob/977b170131971d805d68faf1e46c828995282dc8/qa/686.out",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b8cd6159b6cf83ba.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,39 @@
+pmdabcc config:
+# Installed by PCP QA test 1127 on Thu Aug 20 19:01:11 UTC 2020
+[pmda]
+modules = uprobe_hits
+prefix = bcc.
+[uprobe_hits]
+module = uprobe_hits
+cluster = 102
+uprobes = c:strlen
+Log for pmdabcc on 4687b293bd5e started Thu Aug 20 19:01:13 2020
+
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: Initializing, currently in 'notready' state.
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: Enabled modules:
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: ['uprobe_hits']
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: Configuring modules:
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: uprobe_hits
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: Modules configured.
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: Initializing modules:
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: uprobe_hits
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: uprobe_hits: Configured uprobes: ['c:strlen']
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: uprobe_hits: Found 1 uprobes: ['c:strlen'].
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: uprobe_hits: Initialized.
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: Modules initialized.
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: Registering metrics:
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: uprobe_hits
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: Metrics registered.
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: Registering helpers:
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: uprobe_hits
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: Helpers registered.
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: Compiling modules:
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: uprobe_hits
+[Thu Aug 20 19:01:13] pmdabcc(973490) Info: uprobe_hits: Compiling 1 uprobes: ['c:strlen']
+modprobe: FATAL: Module kheaders not found in directory /lib/modules/5.3.0-1034-azure
+chdir(/lib/modules/5.3.0-1034-azure/build): No such file or directory
+[Thu Aug 20 19:01:13] pmdabcc(973490) Error: uprobe_hits: Failed to compile BPF module <text>
+[Thu Aug 20 19:01:13] pmdabcc(973490) Error: uprobe_hits: Module NOT active!
+[Thu Aug 20 19:01:13] pmdabcc(973490) Error: Failed to compile module uprobe_hits, aborting.
+
+Log finished Thu Aug 20 19:01:13 2020
